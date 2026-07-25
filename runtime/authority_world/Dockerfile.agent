@@ -1,0 +1,5 @@
+ARG DOCKER_REGISTRY=docker.m.daocloud.io
+FROM ${DOCKER_REGISTRY}/library/python:3.12-slim
+WORKDIR /app
+COPY agent ./agent
+CMD ["python", "-m", "agent.runner"]

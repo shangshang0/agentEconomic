@@ -1,0 +1,12 @@
+{
+  "schema": "agent-economics-minimal-confirmatory-stage2-v1",
+  "discovery": {
+    "status": "frozen_before_stage2_results",
+    "config": "config/agent_econ_i3_elected_backend_random_human.json",
+    "models": [{"id": "gpt55", "env_file": ".env.gpt55"}],
+    "pilot_seeds": [],
+    "confirmatory_seed_base": 2026074202,
+    "confirmatory_replicates_per_model": 1
+  },
+  "resources": {"agents_per_world": 6, "world_day_real_seconds": 900, "maximum_world_days": 25, "worlds_per_host_concurrently": 1}
+}

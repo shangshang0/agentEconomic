@@ -1,0 +1,228 @@
+name: authority-world-v1
+
+x-agent: &agent
+  build:
+    context: .
+    dockerfile: Dockerfile.codex_agent
+    args:
+      CODEX_CAPABILITY_MODE: ${CODEX_CAPABILITY_MODE:-locked}
+  read_only: true
+  entrypoint: ["python3", "/app/agent_codex/executor.py"]
+  tmpfs: ["/tmp:rw,noexec,nosuid,size=32m"]
+  cap_drop: [ALL]
+  security_opt: [no-new-privileges:true]
+  pids_limit: 64
+  mem_limit: 256m
+  cpus: 0.50
+  restart: always
+  healthcheck:
+    test: [CMD, python3, -c, "import pathlib,time; p=pathlib.Path('/state/executor.heartbeat'); assert p.exists() and time.time()-p.stat().st_mtime < 15 and not pathlib.Path('/state/executor.degraded').exists()"]
+    interval: 10s
+    timeout: 3s
+    retries: 3
+  depends_on:
+    backend: {condition: service_healthy}
+
+services:
+  gateway:
+    build: {context: ., dockerfile: Dockerfile.gateway}
+    environment:
+      GATEWAY_TOKEN: ${GATEWAY_TOKEN:?required}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:?required}
+      OPENAI_BASE_URL: ${OPENAI_BASE_URL:-}
+      MODEL: ${MODEL:-dev/gpt-5.5}
+      OPENAI_API_STYLE: ${OPENAI_API_STYLE:-responses}
+      GATEWAY_DATA_DIR: /gateway-data
+    volumes: [./gateway-data:/gateway-data]
+    networks: [world_control, world_provider]
+    read_only: true
+    tmpfs: ["/tmp:rw,noexec,nosuid,size=64m"]
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    healthcheck:
+      test: [CMD, python, -c, "import os,urllib.request; r=urllib.request.Request('http://127.0.0.1:8101/health',headers={'Authorization':'Bearer '+os.environ['GATEWAY_TOKEN']}); assert urllib.request.urlopen(r,timeout=3).status==200"]
+      interval: 10s
+      timeout: 5s
+      retries: 8
+
+  backend:
+    build: {context: ., dockerfile: Dockerfile.backend}
+    environment:
+      WORLD_DATA_DIR: /world-data
+      # Select a versioned condition at launch; the image contains all
+      # pre-registered configs, while the world state records its hash.
+      WORLD_CONFIG: /app/config/${WORLD_CONFIG_FILE:-world.default.json}
+      AGENT_TOKENS_JSON: ${AGENT_TOKENS_JSON:?required}
+      WORLD_CONTROL_TOKEN: ${WORLD_CONTROL_TOKEN:?required}
+      GATEWAY_URL: http://gateway:8101
+      GATEWAY_TOKEN: ${GATEWAY_TOKEN:?required}
+    volumes: [./data:/world-data]
+    ports: ["127.0.0.1:18100:8100"]
+    networks: [world_control, world_a1, world_a2, world_a3, world_a4, world_a5, world_a6]
+    read_only: true
+    tmpfs: ["/tmp:rw,noexec,nosuid,size=64m"]
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    depends_on:
+      gateway: {condition: service_healthy}
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; assert urllib.request.urlopen('http://127.0.0.1:8100/health',timeout=3).status==200"]
+      interval: 10s
+      timeout: 5s
+      retries: 8
+
+  snapshotter:
+    build: {context: ., dockerfile: Dockerfile.snapshotter}
+    environment:
+      WORLD_DATA_DIR: /world-data
+      AGENT_STATE_DIR: /agent-state
+      GATEWAY_DATA_DIR: /gateway-data
+      WORLD_CONFIG_DIR: /world-config
+      SNAPSHOT_DIR: /snapshots
+      BACKEND_URL: http://backend:8100
+      WORLD_CONTROL_TOKEN: ${WORLD_CONTROL_TOKEN:?required}
+    volumes:
+      - ./data:/world-data:ro
+      - ./agent-state:/agent-state:ro
+      - ./gateway-data:/gateway-data:ro
+      - ./config:/world-config:ro
+      - ./snapshots:/snapshots
+    networks: [world_control]
+    read_only: true
+    tmpfs: ["/tmp:rw,noexec,nosuid,size=32m"]
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    depends_on:
+      backend: {condition: service_healthy}
+
+  # Researcher-only observer. It has read-only audit mounts and shares no
+  # network with an Agent container, so it cannot become a world tool.
+  observer:
+    build: {context: ., dockerfile: Dockerfile.observer}
+    environment:
+      WORLD_DATA_DIR: /world-data
+      GATEWAY_DATA_DIR: /gateway-data
+      OBSERVER_TOKEN: ${OBSERVER_TOKEN:?required}
+    volumes:
+      - ./data:/world-data:ro
+      - ./gateway-data:/gateway-data:ro
+    ports: ["127.0.0.1:18101:8102"]
+    networks: [world_control]
+    read_only: true
+    tmpfs: ["/tmp:rw,noexec,nosuid,size=16m"]
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    mem_limit: 160m
+    cpus: 0.25
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; assert urllib.request.urlopen('http://127.0.0.1:8102/',timeout=3).status==200"]
+      interval: 10s
+      timeout: 5s
+      retries: 8
+
+  supervisor:
+    build: {context: ., dockerfile: Dockerfile.supervisor}
+    environment:
+      BACKEND_URL: http://backend:8100
+      WORLD_CONTROL_TOKEN: ${WORLD_CONTROL_TOKEN:?required}
+    volumes:
+      - ./data:/world-data
+      - ./agent-state/a1:/agent-state/a1:ro
+      - ./agent-state/a2:/agent-state/a2:ro
+      - ./agent-state/a3:/agent-state/a3:ro
+      - ./agent-state/a4:/agent-state/a4:ro
+      - ./agent-state/a5:/agent-state/a5:ro
+      - ./agent-state/a6:/agent-state/a6:ro
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks: [world_control]
+    read_only: true
+    tmpfs: ["/tmp:rw,noexec,nosuid,size=8m"]
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    mem_limit: 32m
+    cpus: 0.05
+    depends_on:
+      backend: {condition: service_healthy}
+
+  agent_a1:
+    <<: *agent
+    environment:
+      BACKEND_URL: http://backend:8100
+      AGENT_ID: A1
+      AGENT_TOKEN: ${A1_TOKEN:?required}
+      OPENAI_API_KEY: ${A1_TOKEN:?required}
+      CODEX_HOME: /state/codex
+      CODEX_MODEL: ${MODEL:-dev/gpt-5.5}
+      CODEX_CAPABILITY_MODE: ${CODEX_CAPABILITY_MODE:-locked}
+    networks: [world_a1]
+    volumes: [./agent-state/a1:/state]
+  agent_a2:
+    <<: *agent
+    environment:
+      BACKEND_URL: http://backend:8100
+      AGENT_ID: A2
+      AGENT_TOKEN: ${A2_TOKEN:?required}
+      OPENAI_API_KEY: ${A2_TOKEN:?required}
+      CODEX_HOME: /state/codex
+      CODEX_MODEL: ${MODEL:-dev/gpt-5.5}
+      CODEX_CAPABILITY_MODE: ${CODEX_CAPABILITY_MODE:-locked}
+    networks: [world_a2]
+    volumes: [./agent-state/a2:/state]
+  agent_a3:
+    <<: *agent
+    environment:
+      BACKEND_URL: http://backend:8100
+      AGENT_ID: A3
+      AGENT_TOKEN: ${A3_TOKEN:?required}
+      OPENAI_API_KEY: ${A3_TOKEN:?required}
+      CODEX_HOME: /state/codex
+      CODEX_MODEL: ${MODEL:-dev/gpt-5.5}
+      CODEX_CAPABILITY_MODE: ${CODEX_CAPABILITY_MODE:-locked}
+    networks: [world_a3]
+    volumes: [./agent-state/a3:/state]
+  agent_a4:
+    <<: *agent
+    environment:
+      BACKEND_URL: http://backend:8100
+      AGENT_ID: A4
+      AGENT_TOKEN: ${A4_TOKEN:?required}
+      OPENAI_API_KEY: ${A4_TOKEN:?required}
+      CODEX_HOME: /state/codex
+      CODEX_MODEL: ${MODEL:-dev/gpt-5.5}
+      CODEX_CAPABILITY_MODE: ${CODEX_CAPABILITY_MODE:-locked}
+    networks: [world_a4]
+    volumes: [./agent-state/a4:/state]
+  agent_a5:
+    <<: *agent
+    environment:
+      BACKEND_URL: http://backend:8100
+      AGENT_ID: A5
+      AGENT_TOKEN: ${A5_TOKEN:?required}
+      OPENAI_API_KEY: ${A5_TOKEN:?required}
+      CODEX_HOME: /state/codex
+      CODEX_MODEL: ${MODEL:-dev/gpt-5.5}
+      CODEX_CAPABILITY_MODE: ${CODEX_CAPABILITY_MODE:-locked}
+    networks: [world_a5]
+    volumes: [./agent-state/a5:/state]
+  agent_a6:
+    <<: *agent
+    environment:
+      BACKEND_URL: http://backend:8100
+      AGENT_ID: A6
+      AGENT_TOKEN: ${A6_TOKEN:?required}
+      OPENAI_API_KEY: ${A6_TOKEN:?required}
+      CODEX_HOME: /state/codex
+      CODEX_MODEL: ${MODEL:-dev/gpt-5.5}
+      CODEX_CAPABILITY_MODE: ${CODEX_CAPABILITY_MODE:-locked}
+    networks: [world_a6]
+    volumes: [./agent-state/a6:/state]
+
+networks:
+  world_control: {internal: true}
+  world_provider: {}
+  world_a1: {internal: true}
+  world_a2: {internal: true}
+  world_a3: {internal: true}
+  world_a4: {internal: true}
+  world_a5: {internal: true}
+  world_a6: {internal: true}

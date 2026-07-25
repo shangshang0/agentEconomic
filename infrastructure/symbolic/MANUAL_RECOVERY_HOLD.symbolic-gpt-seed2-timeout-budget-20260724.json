@@ -1,0 +1,8 @@
+{
+  "schema": "authority-world-v2-manual-recovery-hold-v1",
+  "created_at": "2026-07-24T23:38:00+08:00",
+  "root": "/data/authoritylab/authority-world-v2-symbolic-gpt-2026074002-sixway-v2",
+  "run_id": "v2-2026074002-9f8e3ee32439",
+  "source_trip": "watchdog/trips/trip-20260724T233703.json",
+  "reason": "hold automatic recovery until the gateway retry loop enforces one end-to-end provider timeout budget shorter than the backend and watchdog deadlines"
+}

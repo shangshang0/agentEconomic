@@ -1,0 +1,62 @@
+{
+  "schema": "agent-economics-protocol-v1",
+  "frozen_claim": "Under a minimal executable production-distribution-consumption circuit, initially equivalent operational agents may endogenously differentiate through their own allocation, exchange, communication and work decisions.",
+  "unit_of_analysis": "independent_world",
+  "discovery": {
+    "status": "ready_for_registered_pilot",
+    "config": "config/agent_econ_i1_elected_discretion_human.json",
+    "allocation_note": "The backend exposes an enforceable right to allocate scarce work; it never chooses the recipient in the discovery condition.",
+    "models": [
+      {"id": "gpt55", "env_file": ".env.gpt55"},
+      {"id": "deepseek_v4_pro", "env_file": ".env.deepseek"}
+    ],
+    "pilot_seeds": [2026072101, 2026072102, 2026072103],
+    "confirmatory_seed_base": 2026073000,
+    "confirmatory_replicates_per_model": "FILL_FROM_PILOT_POWER_ANALYSIS"
+  },
+  "mechanism_validation": {
+    "status": "do_not_run_before_discovery_codebook_is_frozen",
+    "note": "These are external interventions for causal diagnosis, not instances of the undisturbed Agent-own-economy discovery paradigm.",
+    "available_configs": [
+      "config/agent_econ_i2_random_discretion_human.json",
+      "config/agent_econ_i3_elected_backend_random_human.json",
+      "config/agent_econ_i4_no_office_backend_random.json",
+      "config/agent_econ_s1_elected_discretion_neutral.json",
+      "config/agent_econ_s2_elected_discretion_encoded.json",
+      "config/agent_econ_o2_elected_discretion_no_survival_objective.json"
+    ]
+  },
+  "resources": {
+    "agents_per_world": 6,
+    "world_day_real_seconds": 900,
+    "allocation_window_real_seconds": 60,
+    "final_interaction_window_real_seconds": 120,
+    "maximum_world_days": 25,
+    "tasks_per_productive_day": 3,
+    "task_pool": 72,
+    "agent_container_cpu": 0.25,
+    "agent_container_memory_mib": 192,
+    "task_execution_policy": "global_fifo_single_execution",
+    "worlds_per_host_concurrently": 1,
+    "network_policy": "agent networks internal; task sandboxes deny external network"
+  },
+  "primary_endpoint": "alive_agent_days",
+  "secondary_endpoints": [
+    "verified_production",
+    "model_calls_per_solved_task",
+    "assignment_gini",
+    "energy_gini",
+    "allocation_persistence",
+    "office_concentration",
+    "transfer_network_concentration",
+    "forecast_brier_loss"
+  ],
+  "semantic_endpoints_requiring_frozen_annotation": [
+    "unsupported_or_false_logged_claim",
+    "coercive_threat",
+    "promise_violation",
+    "protective_warning",
+    "costly_restraint"
+  ],
+  "failure_policy": "Never drop a socially undesirable run. Infrastructure failures are archived and excluded only under the preregistered technical-failure rule."
+}

@@ -1,0 +1,2761 @@
+{
+  "challenge_count": 20,
+  "challenges": [
+    {
+      "category": "crypto",
+      "challenge": "DLP+",
+      "commit": "6be09bb4a5172a1110961ee4a079688992dd56b6",
+      "event": "SECCON 13 Finals",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 398,
+          "path": "README.md",
+          "sha256": "c606d53e814eafcf3a4964bd54e22341f8e69b85a500e754a8fdec2eeaeb4718"
+        },
+        {
+          "bytes": 293,
+          "path": "build/Dockerfile",
+          "sha256": "cdbc61b6bff92c5caa2c0cbabe20c22b720aba5c6c708d89717f1b91c61378ee"
+        },
+        {
+          "bytes": 176,
+          "path": "build/compose.yaml",
+          "sha256": "6c0c17633d10265fb3cb4dd7cc35f7669a121e16a088b98b213a77ec0dedda83"
+        },
+        {
+          "bytes": 567,
+          "path": "build/server.py",
+          "sha256": "233fb63072a1f7bbb469327ea332caaebae69de4b8a09c20f39350fca141f2ce"
+        },
+        {
+          "bytes": 293,
+          "path": "files/Dockerfile",
+          "sha256": "cdbc61b6bff92c5caa2c0cbabe20c22b720aba5c6c708d89717f1b91c61378ee"
+        },
+        {
+          "bytes": 108,
+          "path": "files/compose.yaml",
+          "sha256": "12d58a937c0b13e87a57591f554bb4531b5941046ce5ad7d4fd3bb44245899fb"
+        },
+        {
+          "bytes": 567,
+          "path": "files/server.py",
+          "sha256": "233fb63072a1f7bbb469327ea332caaebae69de4b8a09c20f39350fca141f2ce"
+        },
+        {
+          "bytes": 191,
+          "path": "solver/Dockerfile",
+          "sha256": "015b8a419cd34abbb4c5d63ee1dc1dc13cd20a53dcdf3eee5d055098ba572ed2"
+        },
+        {
+          "bytes": 2914,
+          "path": "solver/solve.sage",
+          "sha256": "df3155fc46e3a702a4845196b23004e5f5a008a7115ba37fe4ef31c5a689d443"
+        },
+        {
+          "bytes": 380,
+          "path": "solves.md",
+          "sha256": "2381b2c36e5fc7d19ea0172afb45271c32f72e735667e9b4c409c80fc4f0a95a"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/SECCON/SECCON13_final_CTF/tree/6be09bb4a5172a1110961ee4a079688992dd56b6/crypto/DLP+",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "crypto",
+      "challenge": "HECCON",
+      "commit": "6be09bb4a5172a1110961ee4a079688992dd56b6",
+      "event": "SECCON 13 Finals",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 321,
+          "path": "README.md",
+          "sha256": "18ddf142c39ef804f867885cda9c73c121c9adf505f32f8e5e5ed880b386c546"
+        },
+        {
+          "bytes": 2261,
+          "path": "files/README.md",
+          "sha256": "485d70da9963c8673b49164af8dd8352f8f71bd3f8e353cdf31078039621fee4"
+        },
+        {
+          "bytes": 1946,
+          "path": "files/challenges/challenge_1.py",
+          "sha256": "da9a1c50ce0d418acf9c5212c2a8196a15c9f2de06224c27a93b0be56b8ebcfc"
+        },
+        {
+          "bytes": 2152,
+          "path": "files/challenges/challenge_2.py",
+          "sha256": "872031b2e72a5ab797faea054655c9a886302e898c1de6dc983b3a22936305b6"
+        },
+        {
+          "bytes": 2264,
+          "path": "files/challenges/challenge_3.py",
+          "sha256": "8e0eea76054848a119bfc43ccd1b7de72f26182f8cae7170bfb4cefc1d016658"
+        },
+        {
+          "bytes": 2151,
+          "path": "files/challenges/challenge_4.py",
+          "sha256": "ee143cfc22f7b6ebdc5947a43bbc39ba434152514051f5229032a43cb40a43ec"
+        },
+        {
+          "bytes": 91,
+          "path": "files/initial_dist/Dockerfile",
+          "sha256": "925386bb73b68d8d25b3108ae4527f82a5d0641b661465054be3eab97db89806"
+        },
+        {
+          "bytes": 621,
+          "path": "files/initial_dist/README.md",
+          "sha256": "523e5da2d820679290c90c874f6b0f2e345f03ed724d4a0d46ac0fd45d6ab224"
+        },
+        {
+          "bytes": 414,
+          "path": "files/initial_dist/generate_key.py",
+          "sha256": "6cb5d0ea20168dcc8d2f64988862f61b2139dcc17b3b6e1cb3ef0b172c6c566e"
+        },
+        {
+          "bytes": 1988,
+          "path": "files/initial_dist/snippet.md",
+          "sha256": "20eb89f8bffbe0d1080725c52e55c469012effaa847a046e56a3374367eeed37"
+        },
+        {
+          "bytes": 115900,
+          "path": "files/overview.png",
+          "sha256": "c7951455a854378dc59515b56828a09649ff0eb5aea76c540e2a621322831c2b"
+        },
+        {
+          "bytes": 433,
+          "path": "solves.md",
+          "sha256": "0d9001541678d64f67c1d77319953be96dca2a7068d4763859294783512b419a"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/SECCON/SECCON13_final_CTF/tree/6be09bb4a5172a1110961ee4a079688992dd56b6/crypto/HECCON",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "crypto",
+      "challenge": "RSA+",
+      "commit": "6be09bb4a5172a1110961ee4a079688992dd56b6",
+      "event": "SECCON 13 Finals",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 394,
+          "path": "README.md",
+          "sha256": "6ecb18e5290ce2a251dcca8bad0770fcac995dcf2784b78b2c6d01b5d5744417"
+        },
+        {
+          "bytes": 293,
+          "path": "build/Dockerfile",
+          "sha256": "0a998c6fc7fc07e465af86159dd7dab7706df1ac1e81367f730f03a2eb4e6bbc"
+        },
+        {
+          "bytes": 172,
+          "path": "build/compose.yaml",
+          "sha256": "8ba35c1ab62c602606978a739b69ffbd3abf952af7aa9633173bd3807b91a2cc"
+        },
+        {
+          "bytes": 765,
+          "path": "build/server.py",
+          "sha256": "f0439f69ecc9010ff8a742b88fea33f65612fee11a252fefd4153eff432572a1"
+        },
+        {
+          "bytes": 293,
+          "path": "files/Dockerfile",
+          "sha256": "0a998c6fc7fc07e465af86159dd7dab7706df1ac1e81367f730f03a2eb4e6bbc"
+        },
+        {
+          "bytes": 108,
+          "path": "files/compose.yaml",
+          "sha256": "cad3fc1f3bba2c0ad9037365f6432b8e28e8ac2a3edbd83ea600322fd14096ce"
+        },
+        {
+          "bytes": 765,
+          "path": "files/server.py",
+          "sha256": "f0439f69ecc9010ff8a742b88fea33f65612fee11a252fefd4153eff432572a1"
+        },
+        {
+          "bytes": 195,
+          "path": "solver/Dockerfile",
+          "sha256": "7450d2e41581f62d9c11178d09ed5535d9fcf8040edeb6a3f01079e4839b64b7"
+        },
+        {
+          "bytes": 692,
+          "path": "solver/solve.sage",
+          "sha256": "8f501f9a096ed2d7061c0d371083063d57880a4bc64cf1f91fbd55eb4935c645"
+        },
+        {
+          "bytes": 476,
+          "path": "solves.md",
+          "sha256": "42b5125a90b6976c889239a23d3f9e6cf017cf28762e7f9e02b236a354adaa9a"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/SECCON/SECCON13_final_CTF/tree/6be09bb4a5172a1110961ee4a079688992dd56b6/crypto/RSA+",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "crypto",
+      "challenge": "hell_summon",
+      "commit": "6be09bb4a5172a1110961ee4a079688992dd56b6",
+      "event": "SECCON 13 Finals",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 531,
+          "path": "README.md",
+          "sha256": "c98b24eb4aaf1390f56a5fdeec87d5085520e31e0deba8d286e7e6777e72e98c"
+        },
+        {
+          "bytes": 267,
+          "path": "build/Dockerfile",
+          "sha256": "e9cd57988d235de41e8c49ba3b7d1cb9c8c1aed4a7b1194f7b4f6757563b04c2"
+        },
+        {
+          "bytes": 95,
+          "path": "build/docker-compose.yml",
+          "sha256": "4d4eb01cde82940e7035b8e1cb86318a88294cc196345b7157e4c71f98158224"
+        },
+        {
+          "bytes": 1711,
+          "path": "build/server.py",
+          "sha256": "5fb153ae8e4b7ece3009bffd5d6606ef9c135abefbc76a60e7e2b9dcc141bc94"
+        },
+        {
+          "bytes": 217,
+          "path": "files/Dockerfile",
+          "sha256": "c9b2a2fb1fbe618fb43ef45870cd419ee151b145d4ee7d2c4d35bd1253757b56"
+        },
+        {
+          "bytes": 1711,
+          "path": "files/server.py",
+          "sha256": "5fb153ae8e4b7ece3009bffd5d6606ef9c135abefbc76a60e7e2b9dcc141bc94"
+        },
+        {
+          "bytes": 327,
+          "path": "solver/Dockerfile",
+          "sha256": "d43655a4ff4546b60e25134d12364603d242b7082d4412ca2c172b51bcac323f"
+        },
+        {
+          "bytes": 99,
+          "path": "solver/file_download.bash",
+          "sha256": "2714b91658183c624b2f8fd5c2994c489734c23682eb121ad2ef60f8331f0cbf"
+        },
+        {
+          "bytes": 3642,
+          "path": "solver/y011d4_solver.sage",
+          "sha256": "c0980287400f060fcb91cf272513ccb0c8338750e3af181122fb50e848279f35"
+        },
+        {
+          "bytes": 342,
+          "path": "solves.md",
+          "sha256": "8074df92e35410c72f53fe5b76de105578535e979a460f21defbf22396b58e45"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/SECCON/SECCON13_final_CTF/tree/6be09bb4a5172a1110961ee4a079688992dd56b6/crypto/hell_summon",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "crypto",
+      "challenge": "x_x",
+      "commit": "6be09bb4a5172a1110961ee4a079688992dd56b6",
+      "event": "SECCON 13 Finals",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 388,
+          "path": "README.md",
+          "sha256": "afb4c7ce95dfdea5ad403375c403b12c524e5d8c995ca458a018647c3bec256f"
+        },
+        {
+          "bytes": 278,
+          "path": "build/Dockerfile",
+          "sha256": "c59fceb6056ad870f4c0013d51cc93df6cbdb0bd14e43d52a8b47ed26cfd7f6b"
+        },
+        {
+          "bytes": 97,
+          "path": "build/docker-compose.yml",
+          "sha256": "bfee9d6e4a5b95b4b548d975f61148ca1c84743496ac1a62c8f09b2850f514a4"
+        },
+        {
+          "bytes": 1516,
+          "path": "build/server.sage",
+          "sha256": "0c5aef8b9baf5134d70eb42c7fa63eb4d0294e51618f6f1060d159b29a88f050"
+        },
+        {
+          "bytes": 265,
+          "path": "files/Dockerfile",
+          "sha256": "0d76dfe8871fd26b7b590c8991f64ccc77234957e23d3bafee7c966f312a420e"
+        },
+        {
+          "bytes": 1516,
+          "path": "files/server.sage",
+          "sha256": "0c5aef8b9baf5134d70eb42c7fa63eb4d0294e51618f6f1060d159b29a88f050"
+        },
+        {
+          "bytes": 144,
+          "path": "solver/Dockerfile",
+          "sha256": "63e95cc7f226ca2f379a4fd535a58cae4291a7d8bf14a80fc08b836d24b640c9"
+        },
+        {
+          "bytes": 4302,
+          "path": "solver/solver.sage",
+          "sha256": "b2f779c97fc8a08a58e2f20eeacbb49571a015a063fee4c2063080de1a639017"
+        },
+        {
+          "bytes": 269,
+          "path": "solves.md",
+          "sha256": "a94ee14cf690ab5233161d05f00c1ca028e94ecf73cdd875368058e828274c33"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/SECCON/SECCON13_final_CTF/tree/6be09bb4a5172a1110961ee4a079688992dd56b6/crypto/x_x",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "jail",
+      "challenge": "pp3",
+      "commit": "6be09bb4a5172a1110961ee4a079688992dd56b6",
+      "event": "SECCON 13 Finals",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 576,
+          "path": "README.md",
+          "sha256": "50ef34c4382591e64b485a7378f4912e3421f0c61b9ce839a784fa3e58224b17"
+        },
+        {
+          "bytes": 248,
+          "path": "build/Dockerfile",
+          "sha256": "e0c81bb5898deb165664d98e1e195daffc7cced0a0aec48303b8d4f96ddce891"
+        },
+        {
+          "bytes": 112,
+          "path": "build/compose.yaml",
+          "sha256": "58333f7e8b70f8d98fa6db5d30c93c12a9528df8d80b1cb60cd75ffbeb382746"
+        },
+        {
+          "bytes": 63,
+          "path": "build/flag.txt",
+          "sha256": "d80b8dcbe29396123b766c1f3ecd46c122e737df7f20ed3cb3f0b296e8b30305"
+        },
+        {
+          "bytes": 926,
+          "path": "build/index.js",
+          "sha256": "a3f9f4b1499f6d7a5a98e69f2c349c298dba9b4a1a626a07170e9c3c033a6466"
+        },
+        {
+          "bytes": 248,
+          "path": "files/Dockerfile",
+          "sha256": "e0c81bb5898deb165664d98e1e195daffc7cced0a0aec48303b8d4f96ddce891"
+        },
+        {
+          "bytes": 112,
+          "path": "files/compose.yaml",
+          "sha256": "58333f7e8b70f8d98fa6db5d30c93c12a9528df8d80b1cb60cd75ffbeb382746"
+        },
+        {
+          "bytes": 14,
+          "path": "files/flag.txt",
+          "sha256": "9b48f876e1c2f5b91d410ef2f36f0d1a9ec3f88ee7ed686ef7bf9eb2c17e5a25"
+        },
+        {
+          "bytes": 926,
+          "path": "files/index.js",
+          "sha256": "a3f9f4b1499f6d7a5a98e69f2c349c298dba9b4a1a626a07170e9c3c033a6466"
+        },
+        {
+          "bytes": 136,
+          "path": "mkdist.sh",
+          "sha256": "fa3f8e2c08263d379aa20753119c87cbc829ead373b3405b1c772eb1a2899d3b"
+        },
+        {
+          "bytes": 137,
+          "path": "solver/Dockerfile",
+          "sha256": "6206ae750b769fd0aabee8a5a4b29825abcdbd100a03c7a9db2de45f7ba251b0"
+        },
+        {
+          "bytes": 1276,
+          "path": "solver/exploit.py",
+          "sha256": "f0246f1e97af12e577b465d062a00e480ba4aba0a52a1eb427d08cb910f01a93"
+        },
+        {
+          "bytes": 1671,
+          "path": "solver/memo.js",
+          "sha256": "63bd52ee17ee9531cb586a107630c6a7325e42a2ff95a01d400999e4c2e14e6a"
+        },
+        {
+          "bytes": 19,
+          "path": "solver/requirements.txt",
+          "sha256": "7c671a0f961ce86ad9cec3bfe7d018ec640e194e85a5754e1f12c79cea5fb231"
+        },
+        {
+          "bytes": 158,
+          "path": "solves.md",
+          "sha256": "dbc31ff0e5272fd259145652976894a62bd542e9e8067b4da2461e1ef5ad3553"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/SECCON/SECCON13_final_CTF/tree/6be09bb4a5172a1110961ee4a079688992dd56b6/jail/pp3",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "jail",
+      "challenge": "rtldsbx",
+      "commit": "6be09bb4a5172a1110961ee4a079688992dd56b6",
+      "event": "SECCON 13 Finals",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 404,
+          "path": "README.md",
+          "sha256": "a1211a0633f30806ea2513a8c17251973f167837e7145508d1692c2640f0af3a"
+        },
+        {
+          "bytes": 380,
+          "path": "build/Dockerfile",
+          "sha256": "dfb3c54ecf7647dcffd2865934257aef86d67610b1424b0ca56fd9e0fb516d4a"
+        },
+        {
+          "bytes": 164,
+          "path": "build/compose.yml",
+          "sha256": "567ba18cc9626bad1108fbe78eaee87832915f312d1e5a66e0f4ea70e1537e65"
+        },
+        {
+          "bytes": 260528,
+          "path": "build/ld-linux-x86-64-sbx.so.2",
+          "sha256": "7f2d820f5afb00932de91360e84ff25e549f1f3c843c11ed2cbb183ed2b60a0d"
+        },
+        {
+          "bytes": 24728,
+          "path": "build/readflag",
+          "sha256": "9f0ec2a1c37232359d61b467ea48803d5640b2b0da4e098b966fddea923871ca"
+        },
+        {
+          "bytes": 107,
+          "path": "build/readflag.c",
+          "sha256": "47396a5a00d6e6af4b32ef5ccabf2bab8804b10b48e4803b726994f4626c4183"
+        },
+        {
+          "bytes": 175,
+          "path": "build/sample.c",
+          "sha256": "8f6f9b53b11d553995445e6b265c3490e358f2291a35475a218ce6981968662e"
+        },
+        {
+          "bytes": 1162,
+          "path": "build/server.py",
+          "sha256": "8bf015f35b381b365d64b68d6a2e6a9fb19fd6b2ca6f6b3d2a55be668804f736"
+        },
+        {
+          "bytes": 380,
+          "path": "files/Dockerfile",
+          "sha256": "dfb3c54ecf7647dcffd2865934257aef86d67610b1424b0ca56fd9e0fb516d4a"
+        },
+        {
+          "bytes": 1146,
+          "path": "files/README.md",
+          "sha256": "c3a0d806d102f1f546c9a0955c95ffabddfb17ad4e915b2af1281d19959d001c"
+        },
+        {
+          "bytes": 169,
+          "path": "files/compose.yml",
+          "sha256": "0bf6d19e70630217f5a1e065a3bf71a79abc6e393622855e4d6c5b9cb8079a8b"
+        },
+        {
+          "bytes": 24728,
+          "path": "files/readflag",
+          "sha256": "a25d745450d42b8458ba9b4c16d2ab3aca4e10320898d556e54a5506c5d7f010"
+        },
+        {
+          "bytes": 15960,
+          "path": "files/sample",
+          "sha256": "07f2da070d68b4201164c5bc525ff8e53aab455e48288136aca50f887d94edd9"
+        },
+        {
+          "bytes": 1162,
+          "path": "files/server.py",
+          "sha256": "8bf015f35b381b365d64b68d6a2e6a9fb19fd6b2ca6f6b3d2a55be668804f736"
+        },
+        {
+          "bytes": 15960,
+          "path": "solver/a.out",
+          "sha256": "fa7424b6ab03a2cb27db3e734822f7a04374862aade4761cc3bae1ac003c1dd0"
+        },
+        {
+          "bytes": 15960,
+          "path": "solver/b.out",
+          "sha256": "364fb56105b646c16185d81095fa3756bfbb17af69a3799449c60755e2fb6c2c"
+        },
+        {
+          "bytes": 330,
+          "path": "solver/patch.py",
+          "sha256": "c699642bd255b00cfb075216b35562a3885a519e52189ed73c57325bc444552d"
+        },
+        {
+          "bytes": 15960,
+          "path": "solver/sample",
+          "sha256": "07f2da070d68b4201164c5bc525ff8e53aab455e48288136aca50f887d94edd9"
+        },
+        {
+          "bytes": 91,
+          "path": "solver/sample.c",
+          "sha256": "3d0f5265541a9fe7abbc49e42114e799fee8ae889888abe3af037d2eb0eb375f"
+        },
+        {
+          "bytes": 292,
+          "path": "solver/solve.py",
+          "sha256": "5e919347cadfe2897a06df93d136de02ea3642f58967d1e42eabc9cb2e3cf942"
+        },
+        {
+          "bytes": 200,
+          "path": "solves.md",
+          "sha256": "77660642fc1a0d7163624d1b9aca72383d36bea8edc91b6e570107b30c779e7e"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/SECCON/SECCON13_final_CTF/tree/6be09bb4a5172a1110961ee4a079688992dd56b6/jail/rtldsbx",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "pwnable",
+      "challenge": "Connect Six",
+      "commit": "6be09bb4a5172a1110961ee4a079688992dd56b6",
+      "event": "SECCON 13 Finals",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 426,
+          "path": "README.md",
+          "sha256": "67b2d1da3101e246691726bdc245810cbd68c62f7c8dff50b0d63451522158e5"
+        },
+        {
+          "bytes": 865,
+          "path": "build/Dockerfile",
+          "sha256": "b26d6cca222e2e017c527c84e3d8ab499cdb75e7080235182ffcca66a76f0d63"
+        },
+        {
+          "bytes": 110,
+          "path": "build/Makefile",
+          "sha256": "1251c1079740b2e07472306c9512b4ff4ea1b84d76c8aee70a2851b8db354471"
+        },
+        {
+          "bytes": 196,
+          "path": "build/compose.yml",
+          "sha256": "8f7c5fd1c57bc136525e55eaffcd45f60203e401ad984f126ada93e294008c95"
+        },
+        {
+          "bytes": 51,
+          "path": "build/flag.txt",
+          "sha256": "03763c0a653a5802f32032c2b771b40ed1ac035ab2cfc3c935f9f36b6014e83e"
+        },
+        {
+          "bytes": 16784,
+          "path": "build/game",
+          "sha256": "976f35ce159637b294660041f12a8007a775f66fc994e680c8746e131710896e"
+        },
+        {
+          "bytes": 4054,
+          "path": "build/main.c",
+          "sha256": "124d09edac26406683c6ad74d49d54bf6095c0e66828b0979dbc8c9e8d3cc05c"
+        },
+        {
+          "bytes": 878,
+          "path": "files/Dockerfile",
+          "sha256": "edc2d253b9f8073640c48d3bb4d8cac16ec6caa70625d9c30b691a7dbf115501"
+        },
+        {
+          "bytes": 201,
+          "path": "files/compose.yml",
+          "sha256": "4a3d49d6184152a47ad4f6897cefeafa661e5fe83da5fa24e5307399ba457e50"
+        },
+        {
+          "bytes": 16784,
+          "path": "files/game",
+          "sha256": "976f35ce159637b294660041f12a8007a775f66fc994e680c8746e131710896e"
+        },
+        {
+          "bytes": 4054,
+          "path": "files/game.c",
+          "sha256": "124d09edac26406683c6ad74d49d54bf6095c0e66828b0979dbc8c9e8d3cc05c"
+        },
+        {
+          "bytes": 137,
+          "path": "solver/Dockerfile",
+          "sha256": "15f15e3a528b9c213de7e424d77bc8e7600282a87b0ef3eee08accf7b677105f"
+        },
+        {
+          "bytes": 4975,
+          "path": "solver/exploit.py",
+          "sha256": "4b20d776c125909a4ac167661d386ed20b752733badf86d68a15e7192e6926f8"
+        },
+        {
+          "bytes": 16784,
+          "path": "solver/game",
+          "sha256": "976f35ce159637b294660041f12a8007a775f66fc994e680c8746e131710896e"
+        },
+        {
+          "bytes": 2125328,
+          "path": "solver/libc.so.6",
+          "sha256": "c1e50a701d3245c8c45a1ba40151efe414ac41d2c9ae604087b4875e0d85c4fb"
+        },
+        {
+          "bytes": 3486,
+          "path": "solver/solve.py",
+          "sha256": "0184e628c2fb2d4f9093efe86df2efe14d34a24a7be26511ab8940adec308b48"
+        },
+        {
+          "bytes": 244,
+          "path": "solves.md",
+          "sha256": "b9b7eb9e1289f7d0b7520ece2a22b595448f4eb881d6690d3783b4ffb1beb972"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/SECCON/SECCON13_final_CTF/tree/6be09bb4a5172a1110961ee4a079688992dd56b6/pwnable/Connect Six",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "pwnable",
+      "challenge": "NVMemu",
+      "commit": "6be09bb4a5172a1110961ee4a079688992dd56b6",
+      "event": "SECCON 13 Finals",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 407,
+          "path": "README.md",
+          "sha256": "073fe821f792570317f2ccb626fc288b429a5de5abef3ec60b68e7eabbc7fa13"
+        },
+        {
+          "bytes": 842,
+          "path": "build/Dockerfile",
+          "sha256": "87c3ed9964d927885530f6239fe44b23d324488e48eac75b0cd13056020c430b"
+        },
+        {
+          "bytes": 388,
+          "path": "build/docker-compose.yml",
+          "sha256": "f890dd23962c9baeb039303e621aaadf889cea923e8e90cc538e6717cb44b39b"
+        },
+        {
+          "bytes": 55,
+          "path": "build/init.sh",
+          "sha256": "7e677fb60afcf5f946cbcc876053e102084f8c5a21467220694c71560e296aa9"
+        },
+        {
+          "bytes": 533,
+          "path": "build/pow.sh",
+          "sha256": "ca9efbc57cf141ad8d267359d8649d97ae1a50978be4017ff1bf577275fd69c2"
+        },
+        {
+          "bytes": 231,
+          "path": "build/pwn.xinetd",
+          "sha256": "9eb7e5ee5bea07d455b0de07d2ea1bdaaa379d02e3c54fc469131ec4db6461a3"
+        },
+        {
+          "bytes": 771,
+          "path": "files/build/Dockerfile",
+          "sha256": "fd66f0023a74c470bdaa49fedf5ddd1b50d24de43f49864e3ad937a292772613"
+        },
+        {
+          "bytes": 55,
+          "path": "files/build/init.sh",
+          "sha256": "7e677fb60afcf5f946cbcc876053e102084f8c5a21467220694c71560e296aa9"
+        },
+        {
+          "bytes": 231,
+          "path": "files/build/pwn.xinetd",
+          "sha256": "737ffc7d3b9589a3d5a944a0a58321d9d2fa46fec80c9b8433e4d6ffb5687df7"
+        },
+        {
+          "bytes": 345,
+          "path": "files/docker-compose.yml",
+          "sha256": "88731a8042d88fcedb12b9d3a099b76374eb142992ee3652fa28d9fcb3eb818e"
+        },
+        {
+          "bytes": 1472,
+          "path": "files/patch/ctrl.c.diff",
+          "sha256": "859e2a30ed3a101c1fe6549b032b87f823e06cb8ff6aa62b366d7e6598402958"
+        },
+        {
+          "bytes": 5453616,
+          "path": "files/release/bzImage",
+          "sha256": "114b93e6c751a65718d973929b5dc7fb8c2cf52bae66e06cd7391ebfd3aa6d11"
+        },
+        {
+          "bytes": 262144,
+          "path": "files/release/pc-bios/bios-256k.bin",
+          "sha256": "f1d4f396011197eb989029659cde250751cc711c336b8fbbe6f77cfe0dc5dcd8"
+        },
+        {
+          "bytes": 159232,
+          "path": "files/release/pc-bios/efi-e1000.rom",
+          "sha256": "f37222fcdf0481bfbaf7a16d9aaf740aeb41d3d24c187801eb6e9a628cec0fc8"
+        },
+        {
+          "bytes": 160768,
+          "path": "files/release/pc-bios/efi-virtio.rom",
+          "sha256": "26be36901db7f8181c306cc62bd74891d8646528965a78e40cceadba5dd7c8e7"
+        },
+        {
+          "bytes": 9216,
+          "path": "files/release/pc-bios/kvmvapic.bin",
+          "sha256": "cdf057a71b07e3b52b19cbe210bdefa59250d01a9810b960f7fe1f98eed95a27"
+        },
+        {
+          "bytes": 1536,
+          "path": "files/release/pc-bios/linuxboot_dma.bin",
+          "sha256": "9c49e255340c78fc12e54ed043462bca02fb7fca29b7cfab62ff88a5344b6950"
+        },
+        {
+          "bytes": 39424,
+          "path": "files/release/pc-bios/vgabios-stdvga.bin",
+          "sha256": "651513519f9e0d5b99d3b051a8f5c68db69e987339b59a441d371068c34c146b"
+        },
+        {
+          "bytes": 30708432,
+          "path": "files/release/qemu-system-x86_64",
+          "sha256": "91ab0b6513848f70fb19d4420c376ae2fecd9401036de4997303e6967071c953"
+        },
+        {
+          "bytes": 2312468,
+          "path": "files/release/rootfs.cpio.gz",
+          "sha256": "cdc568efcd8912e3969b9013a3b5bcd269a450025596780d33fd84fb1ba03c84"
+        },
+        {
+          "bytes": 534,
+          "path": "files/release/run.sh",
+          "sha256": "108a799665aab33d4c82a117b4b7393a6be5441cdae8c6e767e448428a12b768"
+        },
+        {
+          "bytes": 434,
+          "path": "solver/Dockerfile",
+          "sha256": "511cf9c917ccbb0dd95dce1439208ea3a78a36edb39ff277f90f98670a7fc010"
+        },
+        {
+          "bytes": 18568,
+          "path": "solver/exploit",
+          "sha256": "dfc49ee87fb65d4f9b9cf2880c8e21245841aa17fa28cd4aee7a22136a727edf"
+        },
+        {
+          "bytes": 2500,
+          "path": "solver/send_exploit.py",
+          "sha256": "b06373cda53d71e4cfc76e8b6480d3384723106420eb30a78a035a1bd34f4deb"
+        },
+        {
+          "bytes": 291,
+          "path": "solver/src/Makefile",
+          "sha256": "2f766436c8b9c310cf0b71096514e5e8166d05a96d38a9a7151e064d299e4c08"
+        },
+        {
+          "bytes": 33647,
+          "path": "solver/src/api-types.h",
+          "sha256": "7dc9c983f02803fcc31f61d44a57dd9ef9fa56a1dfc5912161b4bee0f12f5820"
+        },
+        {
+          "bytes": 9036,
+          "path": "solver/src/endian.h",
+          "sha256": "6b7ba821bf2e3c9836ac1a072be77c1493dc8f15460a89ab342b3ac74e7017fd"
+        },
+        {
+          "bytes": 179,
+          "path": "solver/src/event_notifier.h",
+          "sha256": "07d0662b783594fe5d247471048bf285e6696a8793b149542e17dd4909f44e0a"
+        },
+        {
+          "bytes": 10818,
+          "path": "solver/src/exploit.c",
+          "sha256": "651d3b0d82271b9f78a0fe9e7f210420c6e296263de927671c5024c36dda11b1"
+        },
+        {
+          "bytes": 5064,
+          "path": "solver/src/ioctl.c",
+          "sha256": "7664790fa69a0eea2b749b514e99cce339a0fbdda31bcb42f2f73f1d194634d9"
+        },
+        {
+          "bytes": 154962,
+          "path": "solver/src/ioctl.h",
+          "sha256": "1ff4e3ed697ac79360d8b5a92dd51d1da2d4ecf42e7cae5d9370941f41139ce3"
+        },
+        {
+          "bytes": 1058,
+          "path": "solver/src/queue.h",
+          "sha256": "67e4f7a317eb5a93646481512e67fbd9b231df5919cac2b212200a5b0e55844d"
+        },
+        {
+          "bytes": 3904,
+          "path": "solver/src/test.c",
+          "sha256": "b5661059b5e530a691bd32ded3caf1347893b637b3d227c7ba5eb6986e2bc422"
+        },
+        {
+          "bytes": 381449,
+          "path": "solver/src/types.h",
+          "sha256": "d206397e5138b35189fb031521f79ec7b81eda9be65db31eaebbfa4cf1cd06ba"
+        },
+        {
+          "bytes": 160,
+          "path": "solves.md",
+          "sha256": "24237142df520b9e03e964aafd3f75e07f055510b496a847050f529a914cdb0e"
+        }
+      ],
+      "review_flags": [
+        "requires_vm_or_kernel_isolation_review"
+      ],
+      "source": "https://github.com/SECCON/SECCON13_final_CTF/tree/6be09bb4a5172a1110961ee4a079688992dd56b6/pwnable/NVMemu",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "pwnable",
+      "challenge": "Uint32Array",
+      "commit": "6be09bb4a5172a1110961ee4a079688992dd56b6",
+      "event": "SECCON 13 Finals",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 404,
+          "path": "README.md",
+          "sha256": "5e99ea57a90bc728f6a60f13264f9906f28829d11a7203ab5c291ea147e78f62"
+        },
+        {
+          "bytes": 867,
+          "path": "build/Dockerfile",
+          "sha256": "18ab67af83793b4ef702c31efeae4fc0e690fb41317b3e57a2a84ebef1ab37fb"
+        },
+        {
+          "bytes": 18256,
+          "path": "build/chall",
+          "sha256": "fc6a4255db08a411bc0787f377476395a07a407fb7ee51b7ee3bc54b39db48f3"
+        },
+        {
+          "bytes": 196,
+          "path": "build/compose.yml",
+          "sha256": "a8febe61d10b198a2e5a2293e0e46faf1579f09d89ae77bed884ead824e8a395"
+        },
+        {
+          "bytes": 41,
+          "path": "build/flag.txt",
+          "sha256": "12e8b3f9949f380343b65bd13b6aae4f8f34309a843c58de985c16ff607e637b"
+        },
+        {
+          "bytes": 1946,
+          "path": "build/main.cpp",
+          "sha256": "9b7a13ca6f9b6ea83494a7f832ac69a2088e0de27094fc3fd4b626df4bad6d45"
+        },
+        {
+          "bytes": 880,
+          "path": "files/Dockerfile",
+          "sha256": "faa33297492c7da0db539c3af1c9831789c34083202d280f6e1eae3ef47f9373"
+        },
+        {
+          "bytes": 18256,
+          "path": "files/chall",
+          "sha256": "fc6a4255db08a411bc0787f377476395a07a407fb7ee51b7ee3bc54b39db48f3"
+        },
+        {
+          "bytes": 201,
+          "path": "files/compose.yml",
+          "sha256": "ed4908131be539547c9317b44724d3abc7d1c8ee85864b916e792b4fa8bfdd62"
+        },
+        {
+          "bytes": 1946,
+          "path": "files/main.cpp",
+          "sha256": "9b7a13ca6f9b6ea83494a7f832ac69a2088e0de27094fc3fd4b626df4bad6d45"
+        },
+        {
+          "bytes": 132,
+          "path": "solver/Dockerfile",
+          "sha256": "8809f59c28ee9451404623eabf517288e218d936b2b166c3161b751a94ab6e12"
+        },
+        {
+          "bytes": 2125328,
+          "path": "solver/libc.so.6",
+          "sha256": "c1e50a701d3245c8c45a1ba40151efe414ac41d2c9ae604087b4875e0d85c4fb"
+        },
+        {
+          "bytes": 2592224,
+          "path": "solver/libstdc++.so.6.0.33",
+          "sha256": "a68762c86d371e6041f03f03a33a78fa235809ae7d81c90185940c93c3535aed"
+        },
+        {
+          "bytes": 1676,
+          "path": "solver/solve.py",
+          "sha256": "0164bf283382bb417650c4478071abf79ce851fa24f5fd66eb6ec948df6ae5cc"
+        },
+        {
+          "bytes": 356,
+          "path": "solves.md",
+          "sha256": "067064fa2e2f4b3bc5dde6da1ce7c49631df044f916463e1cd6ee083105d5a5d"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/SECCON/SECCON13_final_CTF/tree/6be09bb4a5172a1110961ee4a079688992dd56b6/pwnable/Uint32Array",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "pwnable",
+      "challenge": "negrange",
+      "commit": "6be09bb4a5172a1110961ee4a079688992dd56b6",
+      "event": "SECCON 13 Finals",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 438,
+          "path": "README.md",
+          "sha256": "b252e383b9d47f0b4355f83465a061183a76228eab16ea613754115c5cb3ff45"
+        },
+        {
+          "bytes": 1095,
+          "path": "build/Dockerfile",
+          "sha256": "98dd403f555ef0112a244cdec796fb9653398c1930a7b9e98bddba9b4ea5f797"
+        },
+        {
+          "bytes": 397,
+          "path": "build/docker-compose.yml",
+          "sha256": "06e6c668608f5b9db1019c708b109141492042399f6d5a528b6ec11be90556f7"
+        },
+        {
+          "bytes": 55,
+          "path": "build/init.sh",
+          "sha256": "7e677fb60afcf5f946cbcc876053e102084f8c5a21467220694c71560e296aa9"
+        },
+        {
+          "bytes": 533,
+          "path": "build/pow.sh",
+          "sha256": "ca9efbc57cf141ad8d267359d8649d97ae1a50978be4017ff1bf577275fd69c2"
+        },
+        {
+          "bytes": 231,
+          "path": "build/pwn.xinetd",
+          "sha256": "6efe959b6c9794483af96649a7072ef62ed6fdf83cbc4c737dc1b4426761d819"
+        },
+        {
+          "bytes": 1017,
+          "path": "files/build/Dockerfile",
+          "sha256": "9386a6badc5967abf1593086fb882ad7730a18e732802f83c634caea7663a641"
+        },
+        {
+          "bytes": 55,
+          "path": "files/build/init.sh",
+          "sha256": "7e677fb60afcf5f946cbcc876053e102084f8c5a21467220694c71560e296aa9"
+        },
+        {
+          "bytes": 231,
+          "path": "files/build/pwn.xinetd",
+          "sha256": "abeb72ac0b5357e85db4153d4042b9eacfe9e4f25cd215d7a890794c8d22c098"
+        },
+        {
+          "bytes": 349,
+          "path": "files/docker-compose.yml",
+          "sha256": "eb070f51b18e438457371f533896bf89bed993acca0fb81ec90dca809d723a7d"
+        },
+        {
+          "bytes": 5161984,
+          "path": "files/release/bzImage",
+          "sha256": "65992d97d76d7d2997661c8771953260900432b1c001500a1e657ff59b2ced87"
+        },
+        {
+          "bytes": 2312253,
+          "path": "files/release/rootfs.cpio.gz",
+          "sha256": "52cbc198e8f987191b5dc5a9ac842c73d92afb55019fc942881ea829adf7e1f9"
+        },
+        {
+          "bytes": 297,
+          "path": "files/release/run.sh",
+          "sha256": "02282f22ec06610cf5c397feec8882c62ee9b0f2fbe702320f8be593c8fd3f0c"
+        },
+        {
+          "bytes": 79220,
+          "path": "files/src/.config",
+          "sha256": "5ddefbc0878edf22c4f13c82ca66134b0aaf449b6e9be466e11489db2c708adc"
+        },
+        {
+          "bytes": 2850,
+          "path": "files/src/verifier.c.diff",
+          "sha256": "74555495cee3c4988e5d85d0e622dcdd1466ffd2cea74d84312220e44d7ac361"
+        },
+        {
+          "bytes": 434,
+          "path": "solver/Dockerfile",
+          "sha256": "511cf9c917ccbb0dd95dce1439208ea3a78a36edb39ff277f90f98670a7fc010"
+        },
+        {
+          "bytes": 18584,
+          "path": "solver/exploit",
+          "sha256": "763114d3405fac9a7156ab5ce66a5bad02157caed102b6516cff86f7266daa07"
+        },
+        {
+          "bytes": 2465,
+          "path": "solver/send_exploit.py",
+          "sha256": "b0d85089f9f88d99d4b301fba84db8f24eff7ac4e9f4587a3565b6f2e9df61ab"
+        },
+        {
+          "bytes": 1509,
+          "path": "solver/src/bpf_helper.c",
+          "sha256": "21b06d0465d886dfdd39c48654efa7b6ef84129e3aee8148a9dfcae3e5bda089"
+        },
+        {
+          "bytes": 491,
+          "path": "solver/src/bpf_helper.h",
+          "sha256": "575ebcb54617b6bcfbe530e3e642ced47a5ea1559b4ecb5e0bfd0584450e5a1b"
+        },
+        {
+          "bytes": 6785,
+          "path": "solver/src/exploit.c",
+          "sha256": "3ee1e924fa470e54d97ce8fff77549e070345fc8241fbdab7c27f6db69f89969"
+        },
+        {
+          "bytes": 9358,
+          "path": "solver/src/filter.h",
+          "sha256": "6d55bf9cc8fbf93bfc7c79771d7073f4f11e73a9a54a9c9be7c568ec7481d028"
+        },
+        {
+          "bytes": 210,
+          "path": "solves.md",
+          "sha256": "a505d4779b82e20fa16df7f52d96a5239641dba2fc47eca97fb7e31fd61dd968"
+        }
+      ],
+      "review_flags": [
+        "requires_vm_or_kernel_isolation_review"
+      ],
+      "source": "https://github.com/SECCON/SECCON13_final_CTF/tree/6be09bb4a5172a1110961ee4a079688992dd56b6/pwnable/negrange",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "reversing",
+      "challenge": "Allegro",
+      "commit": "6be09bb4a5172a1110961ee4a079688992dd56b6",
+      "event": "SECCON 13 Finals",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 104,
+          "path": ".gitignore",
+          "sha256": "e453420c470a80d879241586813d509e516806343117521234cbfa4d72ab1973"
+        },
+        {
+          "bytes": 218,
+          "path": "README.md",
+          "sha256": "173bbbf30f1656a687743ed08ffec670e9f7cb9ae86b059d1600dc5612737b4e"
+        },
+        {
+          "bytes": 2744,
+          "path": "config.yml",
+          "sha256": "c3eb32099b8e0d34cca9eb97de8b3623729fad6dd910ebc0e52af8cf9f7294d2"
+        },
+        {
+          "bytes": 0,
+          "path": "logs/.gitkeep",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "bytes": 103,
+          "path": "phase/1/build/Makefile",
+          "sha256": "86b1d711ab3c92cdfd474d83236016e797398c330710bf3a96359c795c9096e7"
+        },
+        {
+          "bytes": 16064,
+          "path": "phase/1/build/ans-1",
+          "sha256": "b4b5e5b6320cb20f8e9e842f1f3cf4f75349c00a662dc8bfb53d87fbfbd6ab99"
+        },
+        {
+          "bytes": 247,
+          "path": "phase/1/build/ans.c",
+          "sha256": "66743d26c4d239d3a0f21e0e730e66a0716120abf4e6f0ca4b542062c795b9cb"
+        },
+        {
+          "bytes": 387,
+          "path": "phase/1/build/main.c",
+          "sha256": "19e11df264d5b469a362e2053c9fd34d92ebd8a48a59b2c7bc0b46c7ba63904c"
+        },
+        {
+          "bytes": 18560,
+          "path": "phase/1/build/weak-1",
+          "sha256": "aefdf8cce7b0bf530591b0df0d0ef05109521377edc7398dea7c1749a6946c69"
+        },
+        {
+          "bytes": 435,
+          "path": "phase/1/build/weak.c",
+          "sha256": "5c19590ea72351d6f043b0cd59e265ef3d22882fb25157d88f5fadeefa523c0f"
+        },
+        {
+          "bytes": 16128,
+          "path": "phase/1/files/prog-1",
+          "sha256": "cd4b1949c45fc24e38728c795a3b092985a57cd9567ced7a42be00d4f5f3fa49"
+        },
+        {
+          "bytes": 1349,
+          "path": "phase/1/files/test.py",
+          "sha256": "8997d4502d104bef0f0bd7f24fa33a6d1a9cd08fedb67ac3e64dae2a9e8cf85c"
+        },
+        {
+          "bytes": 3380,
+          "path": "phase/1/files.tar.gz",
+          "sha256": "da7841dfa7fb85e16bf96cc3a17ed07c6e067873146d79a9276368903530dbea"
+        },
+        {
+          "bytes": 1105,
+          "path": "phase/1/tester/gen_test",
+          "sha256": "eeba8bf53180ff83e050d520e1420b8ddd9b7febe45d2b2aefd10639690849e5"
+        },
+        {
+          "bytes": 198,
+          "path": "phase/2/build/Makefile",
+          "sha256": "d667180625d5d411fe61af08ef44937c8830a7955816632653765c5c6ef83de7"
+        },
+        {
+          "bytes": 16048,
+          "path": "phase/2/build/ans-2",
+          "sha256": "b4ce689e07160b927c53d3b54b7e5f5a56b28faff3962af8a90e84753e4a8a6a"
+        },
+        {
+          "bytes": 570,
+          "path": "phase/2/build/ans.c",
+          "sha256": "a74fc330719582382637b8698f550a471f4b44f18c662e71609665f7b192c791"
+        },
+        {
+          "bytes": 155,
+          "path": "phase/2/build/gen.py",
+          "sha256": "74a9a618ab036c0e210a0ba8a420c534426fa26b54c3c22629b42f8390b86d79"
+        },
+        {
+          "bytes": 717,
+          "path": "phase/2/build/main.c",
+          "sha256": "7b785de121d1c1c0cc6ac6b21cafdd18a7b9699d8c08d7b46ed0e74df3b2e3e7"
+        },
+        {
+          "bytes": 16088,
+          "path": "phase/2/build/weak-2",
+          "sha256": "deeddd8fc946dba3faeec6191b4a41778ef61fc07154acf7c8df26a3a41161de"
+        },
+        {
+          "bytes": 686,
+          "path": "phase/2/build/weak.c",
+          "sha256": "c88ace464a098d318cde90de9348c197f69ac2081698e7652cec1fe3e14bff5b"
+        },
+        {
+          "bytes": 16168,
+          "path": "phase/2/build/without_sleep",
+          "sha256": "26054882bc084681d43518cf594bd70271def79cb6b46296d8dc7faa28512086"
+        },
+        {
+          "bytes": 719,
+          "path": "phase/2/build/without_sleep.c",
+          "sha256": "2b09bb616889fb7ec2cf0b709b119d4b6839bcfc1e90b767ab1bd51329da462c"
+        },
+        {
+          "bytes": 5712,
+          "path": "phase/2/files/prog-2",
+          "sha256": "192ea97390581ef9b57f05eb400ee0dc3c9e73d22dbfd28e57e324dff05bae44"
+        },
+        {
+          "bytes": 1340,
+          "path": "phase/2/files/test.py",
+          "sha256": "f420798a2426eb9125d42eed0709dbde8ae584b7acbacbda5f4eda34c11fbc7c"
+        },
+        {
+          "bytes": 5775,
+          "path": "phase/2/files.tar.gz",
+          "sha256": "b665c18de05fea8f226b45c089000961c655da111329da4ffb41a643e002cc59"
+        },
+        {
+          "bytes": 1236,
+          "path": "phase/2/tester/gen_test",
+          "sha256": "cf31b77505d60a8981344872ea35061dd9683f548365c5e8adc8bf84e44223b0"
+        },
+        {
+          "bytes": 133,
+          "path": "phase/3/build/Makefile",
+          "sha256": "86be0fe07e01ff56660a17fba65768dcd9589c4a0ccf7be89b1088c015382efd"
+        },
+        {
+          "bytes": 16144,
+          "path": "phase/3/build/ans-3",
+          "sha256": "b16c315bf96ef3a27f7b04688ec755b345a4328fc537ea31b72278e0e36030a3"
+        },
+        {
+          "bytes": 5024,
+          "path": "phase/3/build/ans.c",
+          "sha256": "75907466771e4f6b7fe430889d0de16344d8bbe7ef4e1b2c40d74f99cf71530f"
+        },
+        {
+          "bytes": 423,
+          "path": "phase/3/build/gen.py",
+          "sha256": "42424dacab7a7ec065797a004d109827169465bbc07e5dc9d8487f9c950847f8"
+        },
+        {
+          "bytes": 4932,
+          "path": "phase/3/build/main.c",
+          "sha256": "553ce4b18d3655dd2bcb3b146807078cac9aa09e8c1c9d8883e5172deeda25a4"
+        },
+        {
+          "bytes": 692652,
+          "path": "phase/3/build/pocketpy.c",
+          "sha256": "cce04cf1ac82a2d76e4992c4907fa4b6d2182e37a9c545eefa94c28bdd01b8a1"
+        },
+        {
+          "bytes": 35327,
+          "path": "phase/3/build/pocketpy.h",
+          "sha256": "233f2da8f78911dcb694aacfce5bf4778c335ae4ac2841dcb989ea8b0c7c13fb"
+        },
+        {
+          "bytes": 6289,
+          "path": "phase/3/build/test.py",
+          "sha256": "989850456fb5738db414486c3b620902112be313e9c65ed6c985bc42dbafc100"
+        },
+        {
+          "bytes": 16144,
+          "path": "phase/3/build/weak-3",
+          "sha256": "1ae4e0349747621ee4604db8a7750ff71b620181f08454d798981bd67cdcefe3"
+        },
+        {
+          "bytes": 2883,
+          "path": "phase/3/build/weak.c",
+          "sha256": "b76c56c029df1710ad04921e52e57b5ca52e2d1ba90a87697592f4fc2b3a5591"
+        },
+        {
+          "bytes": 555840,
+          "path": "phase/3/files/prog-3",
+          "sha256": "163fb083e1f3bf771ac1dcd39a5410df12244baf8d90a09e07a88f5a8a06d323"
+        },
+        {
+          "bytes": 4031,
+          "path": "phase/3/files/test.py",
+          "sha256": "e598e3fffcd45f3b95fed6277294d1db36866821472468245c478c83110d6754"
+        },
+        {
+          "bytes": 179439,
+          "path": "phase/3/files.tar.gz",
+          "sha256": "f05a710943cee9f4fa22e0c8ff3c2735e3edd119d87bbc6ecdda5adcb1fd40b5"
+        },
+        {
+          "bytes": 5700,
+          "path": "phase/3/tester/gen_test",
+          "sha256": "c27f29ca127aba8ac3b94e71406d97b9663c4ee92d86625006c8b390964bf068"
+        },
+        {
+          "bytes": 224,
+          "path": "phase/4/build/Makefile",
+          "sha256": "397b169917790c570b042aaaac9f8751170a740324bbfc234b838b676d1d823b"
+        },
+        {
+          "bytes": 26912,
+          "path": "phase/4/build/ans-4",
+          "sha256": "e4b04a48f32ce37b9610032b7a33439e374fd2d6fb65aa66e1394556d6e10b69"
+        },
+        {
+          "bytes": 4656,
+          "path": "phase/4/build/ans.c",
+          "sha256": "34ee0aa264649218150e54d5dc582fe3df70a9588154e83d71b381d76b61a6b3"
+        },
+        {
+          "bytes": 252,
+          "path": "phase/4/build/gen.py",
+          "sha256": "d4449a0dabc3b378bc327ed28a0a00fe9c13b34c1ef292353d285b4b59512ae6"
+        },
+        {
+          "bytes": 879,
+          "path": "phase/4/build/main.py",
+          "sha256": "ad5d9271cd75fe3e4792af074616d7df729882766335c922e9dd5458f7677e55"
+        },
+        {
+          "bytes": 1419,
+          "path": "phase/4/build/test.py",
+          "sha256": "37d7936cca972b6e9201c0b365cea3b46c60c789a1ec824e75267e0f2e9d9d2d"
+        },
+        {
+          "bytes": 20086136,
+          "path": "phase/4/build/weak-4",
+          "sha256": "eb010539805b9436e5ee8ea3d03ee7ccd3266d9c6133a0c5db9ec098091ef796"
+        },
+        {
+          "bytes": 852,
+          "path": "phase/4/build/weak.py",
+          "sha256": "f756b44eec28259a7ca024e91ae622d2745eb2c30eb78cbeb703f37496e87344"
+        },
+        {
+          "bytes": 20085184,
+          "path": "phase/4/files/prog-4",
+          "sha256": "3d9e1e1075a81316bd26c37ba671f49dd34e169a7dd7729880260d798e1b9c42"
+        },
+        {
+          "bytes": 1492,
+          "path": "phase/4/files/test.py",
+          "sha256": "521616dd123229dd00db05a0d368f4876ca7e72407f252d40bd44f68b1f77bc6"
+        },
+        {
+          "bytes": 19892086,
+          "path": "phase/4/files.tar.gz",
+          "sha256": "fcec44b35b11446ff135bf42ad59b0d313945ea1439fe67cf8298f54631e3b9c"
+        },
+        {
+          "bytes": 2419,
+          "path": "phase/4/tester/gen_test",
+          "sha256": "3a8607acd16eedd84d01b6ea9d366efde167b5f03ca1d3f4128e54af3e381f1d"
+        },
+        {
+          "bytes": 288,
+          "path": "phase/5/build/Makefile",
+          "sha256": "a31a4fd3bc0d4c000218026085780669a61363e4fb8689e663efa4e51c855dd6"
+        },
+        {
+          "bytes": 16280,
+          "path": "phase/5/build/ans-5",
+          "sha256": "2975aa993e507b1bf217adb32d9f42d7530c08b48df3264263d5744a4b61760d"
+        },
+        {
+          "bytes": 2557,
+          "path": "phase/5/build/ans.c",
+          "sha256": "790068af74b9dbaa03cb1c608cc515d2c035f398d72425199fa5a99d7f9e25b8"
+        },
+        {
+          "bytes": 2124,
+          "path": "phase/5/build/main.c",
+          "sha256": "3da7a82b8016303d6b635091fd31b4bfb34230819886de7665345c97c820f35d"
+        },
+        {
+          "bytes": 561,
+          "path": "phase/5/build/main.lua",
+          "sha256": "6c7af8ecfa89441120e99ce9205aaff5ed9fea53f0d8f81b6937cccdde7171f7"
+        },
+        {
+          "bytes": 864,
+          "path": "phase/5/build/neko",
+          "sha256": "ba0c0b25ca2c99e757bc848a30177d161e1471622f046a1d94a92c94ce76cf2d"
+        },
+        {
+          "bytes": 16304,
+          "path": "phase/5/build/weak-5",
+          "sha256": "0192598e5cc95f3869e215bc78ee3df15231e17a47db27876dde7fd11a4dc205"
+        },
+        {
+          "bytes": 1072,
+          "path": "phase/5/build/weak.c",
+          "sha256": "fe6795d08bfce1b51456b67887c9f59db3e5070ff977b54d89e633fbf0b1adab"
+        },
+        {
+          "bytes": 1130744,
+          "path": "phase/5/files/prog-5",
+          "sha256": "b6eb5e7c255aaa45f5cec72c0338f1021ff816e2cc6cecfa96fc746e9ed745a2"
+        },
+        {
+          "bytes": 1537,
+          "path": "phase/5/files/test.py",
+          "sha256": "a44ce62da95839aca16d5297637ccc86b3da2a8ff837fd7807dddfeee0d696cc"
+        },
+        {
+          "bytes": 499147,
+          "path": "phase/5/files.tar.gz",
+          "sha256": "972478e5573b4400f334ad1c2a659a658833f6a2b5d5589e3eb6f576d9eccea4"
+        },
+        {
+          "bytes": 1766,
+          "path": "phase/5/tester/gen_test",
+          "sha256": "c6635b85879397dae36c9dbcc270e26f1115ec465b2f60a7611263c9a9bd6982"
+        },
+        {
+          "bytes": 113,
+          "path": "phase/6/build/Makefile",
+          "sha256": "493ed4df08be5b957ddad38f89590e33156ff92c8bc7d25b8584ce0340fcb37f"
+        },
+        {
+          "bytes": 16064,
+          "path": "phase/6/build/ans-6",
+          "sha256": "2d4856a03df8b45c3d5e04c37174852062048aff61bee92a32df5e89bb6c29ba"
+        },
+        {
+          "bytes": 1036,
+          "path": "phase/6/build/ans.c",
+          "sha256": "7ad514bae1d876c7503939b2b7a3b7fdcb828ee850daf19bfbff2199355a8b19"
+        },
+        {
+          "bytes": 1974,
+          "path": "phase/6/build/main.c",
+          "sha256": "2460ff1f5f1a5739e43db5bd71e89e54ba6251cc4050a3e7bda662e0a89e2145"
+        },
+        {
+          "bytes": 840,
+          "path": "phase/6/build/test.py",
+          "sha256": "849f6775a360cdf944efaa1d512431383fad1d1b30bbbf28510185a9ac020ce6"
+        },
+        {
+          "bytes": 16176,
+          "path": "phase/6/build/weak-6",
+          "sha256": "582fda6a508aec7ed6fc40eff46837e0885bad1e29f4a8699d25fd87c24c01af"
+        },
+        {
+          "bytes": 1511,
+          "path": "phase/6/build/weak.c",
+          "sha256": "decbcc71531b25dcf5dbbf29184ff268b9fde4da6ce509ae85f6fc7d95763d62"
+        },
+        {
+          "bytes": 16064,
+          "path": "phase/6/files/prog-6",
+          "sha256": "b7650ad49df0dcfcfbb36b9607d242c1ebf9c62366d521eb79edca4eafc1d1ae"
+        },
+        {
+          "bytes": 1526,
+          "path": "phase/6/files/test.py",
+          "sha256": "8fdc0ab2ea942bed2e60700e4b1764cec1c81badde05f252d09be5edaf674825"
+        },
+        {
+          "bytes": 3619,
+          "path": "phase/6/files.tar.gz",
+          "sha256": "c558f1ecffb62482ef2c04ffe77eccefc5f22cd32571b48c646eebfafd7ba80b"
+        },
+        {
+          "bytes": 1960,
+          "path": "phase/6/tester/gen_test",
+          "sha256": "518d04e6d9ca7b84ff8f3ad85e187d948f0d21b0028705862331087906aa346e"
+        },
+        {
+          "bytes": 9541,
+          "path": "server/app.py",
+          "sha256": "91f49eecdda7ce4af99463c57f90cf79957eec0995eb7ea5b223157dac4fce8f"
+        },
+        {
+          "bytes": 1833,
+          "path": "server/deco.py",
+          "sha256": "b9fb35b07650f853152361ceac8ac43849383cf301421379e61f74edef27522a"
+        },
+        {
+          "bytes": 1820,
+          "path": "server/init_db.py",
+          "sha256": "78f0a75981067ae2bb87ae1623eebea57658b23f5c6a3adc27087e51342f5337"
+        },
+        {
+          "bytes": 1406,
+          "path": "server/static/favicon.ico",
+          "sha256": "7396424db757eea28f9d798d580c2020b9feb1bacabdf0df59e12415bbd3244d"
+        },
+        {
+          "bytes": 1631,
+          "path": "server/static/style.css",
+          "sha256": "3aa06fca27051aaa688a439776a92926a53a6add3d48a05929c31b2d23371291"
+        },
+        {
+          "bytes": 936,
+          "path": "server/templates/common.html",
+          "sha256": "1244e8fc871ed41de46883b04a07c2d7af34731b7443c7707e06348b67578461"
+        },
+        {
+          "bytes": 4113,
+          "path": "server/templates/dashboard.html",
+          "sha256": "0fdca567d23c42d342e37cc3220a422ea6f67a589e92916957eb703a390abdb3"
+        },
+        {
+          "bytes": 691,
+          "path": "server/templates/history.html",
+          "sha256": "628348e58fd32d198a49c424f062586a566986f42f0670cb13c34255d5c77a2e"
+        },
+        {
+          "bytes": 918,
+          "path": "server/templates/login.html",
+          "sha256": "c07e7138faaeeebfdbddd9281d693055f01e62e826d2364d9277187cee691b98"
+        },
+        {
+          "bytes": 5882,
+          "path": "server/templates/rule.html",
+          "sha256": "d9cd2b9175757c9ae8d87f6b447e7e104199e71904dee932c310092ea4c23736"
+        },
+        {
+          "bytes": 4383,
+          "path": "server/templates/scoreboard.html",
+          "sha256": "1d958b10f658a419e1729d0d0391d14a669c867aa836db54d3fc0ba2219ce02d"
+        },
+        {
+          "bytes": 618,
+          "path": "server/templates/testcase.html",
+          "sha256": "4a6df3259cd90fbd9b6eef984cc36f6aa979c5a97abb96a88687b8026b3f0557"
+        },
+        {
+          "bytes": 0,
+          "path": "server/templates/testcase_view.html",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "bytes": 13194,
+          "path": "server/util.py",
+          "sha256": "4a927343f4a07e52c0e034639a8e0e36fe1c4e553bbd5c530ba2d0865e2c2bc2"
+        },
+        {
+          "bytes": 138,
+          "path": "server/uwsgi.conf",
+          "sha256": "54cf43af7bd0b899873aa61f4f308e72a56dcbfd877db1fc443996a8775e45d4"
+        },
+        {
+          "bytes": 250,
+          "path": "server/uwsgi.service",
+          "sha256": "972435c1bdb74b8819d9cea3d48f9291916863b658ed1653a8ac4764b053d8e1"
+        },
+        {
+          "bytes": 235,
+          "path": "server/wsgi.ini",
+          "sha256": "3f8628ab0b3d19e776931bcac32db43618cb53f4fab3cbe1c8135d9aee63d2b5"
+        },
+        {
+          "bytes": 433,
+          "path": "solves.md",
+          "sha256": "ba0f84446381fc1d5f1bf09ac7b0f5a5b79503b50aea56a91a98b5619d300d1b"
+        },
+        {
+          "bytes": 110,
+          "path": "worker/Dockerfile",
+          "sha256": "d57203e95800ecff7e959ec962ca4278b7eb020b133ef9ab5d778b241c5154f4"
+        },
+        {
+          "bytes": 3345,
+          "path": "worker/scoring.py",
+          "sha256": "6928c493fefd7229beb4668603ddb7f843095dafdecb64a965dd9468b8a47eee"
+        },
+        {
+          "bytes": 6624,
+          "path": "worker/tester.py",
+          "sha256": "018545c6b2a08e8e49b1d55d4f0b67078009efb039b496d6c741fe98548a3f9e"
+        },
+        {
+          "bytes": 13194,
+          "path": "worker/util.py",
+          "sha256": "4a927343f4a07e52c0e034639a8e0e36fe1c4e553bbd5c530ba2d0865e2c2bc2"
+        },
+        {
+          "bytes": 5153,
+          "path": "worker/worker.py",
+          "sha256": "6df43ced2ef6beadbc659fd42aeda495dfff76762d83062cab1757e225830c97"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/SECCON/SECCON13_final_CTF/tree/6be09bb4a5172a1110961ee4a079688992dd56b6/reversing/Allegro",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "reversing",
+      "challenge": "SECCON Glitch Gate 1",
+      "commit": "6be09bb4a5172a1110961ee4a079688992dd56b6",
+      "event": "SECCON 13 Finals",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 20,
+          "path": ".gitignore",
+          "sha256": "e54a71e0d0367c167f522f6e3f60f190e151737a387e040cdc0830bbc45b58b0"
+        },
+        {
+          "bytes": 510,
+          "path": "README.md",
+          "sha256": "2e8738abdcb7ec760ab50f07b69c7577b183885eace111dc60a187c274de8d9f"
+        },
+        {
+          "bytes": 1798,
+          "path": "build/chall/seccon_glitch_gate.ino",
+          "sha256": "7f4a9c566f146095e4e0fdab76e45d24f2bf720006547bc76f85d6bbdee86b00"
+        },
+        {
+          "bytes": 28120,
+          "path": "build/chall/seccon_glitch_gate.ino.elf",
+          "sha256": "499e058f1d7e4ffe6964380c309e785fdc92b076fe6450eb8364798733674ead"
+        },
+        {
+          "bytes": 7852,
+          "path": "build/chall/seccon_glitch_gate.ino.hex",
+          "sha256": "09c70741418c2ba5861a9480a4fd8c2aee9a372aa189917461168e572b259bc1"
+        },
+        {
+          "bytes": 4815,
+          "path": "build/server/app.py",
+          "sha256": "b5888977aaad8481c2e95819c851cc2c8e49718ad72f69270664b4339e6b0ebd"
+        },
+        {
+          "bytes": 1612,
+          "path": "build/server/config.yml",
+          "sha256": "559564c38199866150c206ddaaec462a17b03b12669a7e8d8224fa9e0e43cc9d"
+        },
+        {
+          "bytes": 1244,
+          "path": "build/server/init_db.py",
+          "sha256": "9099339c972c384bffab4e1be452748d44f47cee384c23cf851afd2fd88d364e"
+        },
+        {
+          "bytes": 7768,
+          "path": "build/server/templates/index.html",
+          "sha256": "9421d7d7d9c337463fb2e036df14c19c5857a5d578a78246520aed02e1b4a225"
+        },
+        {
+          "bytes": 137,
+          "path": "build/server/uwsgi.conf",
+          "sha256": "6b2c48add4eeca70a47a3b720a6cb481b506c75b601036f47f1b9277eb5addc6"
+        },
+        {
+          "bytes": 187,
+          "path": "build/server/uwsgi.ini",
+          "sha256": "b846440901414a092c235693578bdbccfe1c94071ab16e79136570a10dfd4931"
+        },
+        {
+          "bytes": 304,
+          "path": "build/server/uwsgi.service",
+          "sha256": "09ff3f6f11024ae7a13f9fc54316dabce0e12caec200ec25ff7ad0857f9e7f17"
+        },
+        {
+          "bytes": 2434,
+          "path": "files/README.md",
+          "sha256": "cd6d5d815e2779d7bf0e2ab781b2beccbfa19944bbe7b2e14058c1058a8cfaf1"
+        },
+        {
+          "bytes": 25188,
+          "path": "files/seccon_glitch_gate.ino_redacted_wSymbol.elf",
+          "sha256": "f4015524c0c6af93496eabc2430ca881f2396d0dc6143ae047ead02f8d1360fb"
+        },
+        {
+          "bytes": 428,
+          "path": "solves.md",
+          "sha256": "3c9f7ef8f90459dbf519b3cf7aa6acda45fd240bf18d540cef93e1d5e0a9ad6f"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/SECCON/SECCON13_final_CTF/tree/6be09bb4a5172a1110961ee4a079688992dd56b6/reversing/SECCON Glitch Gate 1",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "reversing",
+      "challenge": "SECCON Glitch Gate 2",
+      "commit": "6be09bb4a5172a1110961ee4a079688992dd56b6",
+      "event": "SECCON 13 Finals",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 451,
+          "path": "README.md",
+          "sha256": "abd4b99ed9c3a04e9d06b230e98e9c7de2a520309256f6ba7cfd2b8bea46a79c"
+        },
+        {
+          "bytes": 199,
+          "path": "solves.md",
+          "sha256": "a606733db7c43179bcbaadfd83fde019cf0fa799e903ddedc9cb839be9d76dc9"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/SECCON/SECCON13_final_CTF/tree/6be09bb4a5172a1110961ee4a079688992dd56b6/reversing/SECCON Glitch Gate 2",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "reversing",
+      "challenge": "simple_reversing",
+      "commit": "6be09bb4a5172a1110961ee4a079688992dd56b6",
+      "event": "SECCON 13 Finals",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 388,
+          "path": "README.md",
+          "sha256": "59e77077d8fffae80ec4d3768747227f50fe15105f8075e8156f416a8015a15e"
+        },
+        {
+          "bytes": 12,
+          "path": "build/.ruby-version",
+          "sha256": "dcb03c63781c55593a8c70eb8f0cd46ad68771c7af8bed426209b3c0e512fe3e"
+        },
+        {
+          "bytes": 631,
+          "path": "build/Makefile",
+          "sha256": "e898942bade81aae29572fbcd733af25814eeb62d5d4ec5a29f61624ee746915"
+        },
+        {
+          "bytes": 1006,
+          "path": "build/extract.py",
+          "sha256": "01a2d98d6f916fdc86b117d76ab687ac0394a61743aefe60b67c38c54f467177"
+        },
+        {
+          "bytes": 778,
+          "path": "build/main.c",
+          "sha256": "35ef8ecd882193efe2cd127155797957d2fea2d391e58a08d9c45c2f04091ae6"
+        },
+        {
+          "bytes": 5784848,
+          "path": "build/simple_reversing",
+          "sha256": "9ca3e91bf4ea781f0da63708907c88035279e07cd23ce2117f88d41a633b79a9"
+        },
+        {
+          "bytes": 6803,
+          "path": "build/src.c",
+          "sha256": "70f44d00d2fed045efe0cb1ba23f8c047ec5c173e2533f5f27fb9234334c8687"
+        },
+        {
+          "bytes": 725,
+          "path": "build/src.rb",
+          "sha256": "8af2f597398e1cf085c6221ff33cc3610824e2279ff1ce4e24f11ce13c785781"
+        },
+        {
+          "bytes": 1200856,
+          "path": "files/simple_reversing",
+          "sha256": "78d5745ae4064e1c2410b3e96229a084808439bf640343c40674311c501047c4"
+        },
+        {
+          "bytes": 22344,
+          "path": "solve/disas.rb",
+          "sha256": "4849eb3a7d3ff7be32157e7597eaf9867a7066a4376ec06879bf54360cb17502"
+        },
+        {
+          "bytes": 1328,
+          "path": "solve/extract.mrb",
+          "sha256": "7e80ad7131ba068548876adf04be40ea4e3cb1ffdf2e2d635a820d63eb88e738"
+        },
+        {
+          "bytes": 506,
+          "path": "solves.md",
+          "sha256": "402b9e36edf27517ff2b52815655a7204f7752398f651d06a5c5956d36b84cc9"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/SECCON/SECCON13_final_CTF/tree/6be09bb4a5172a1110961ee4a079688992dd56b6/reversing/simple_reversing",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "web",
+      "challenge": "not-that-short",
+      "commit": "6be09bb4a5172a1110961ee4a079688992dd56b6",
+      "event": "SECCON 13 Finals",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 723,
+          "path": "README.md",
+          "sha256": "a577f77ee01b25ea8faa88ca55035543f2bbecaad47be54c8f5ebb5a72b0ee3c"
+        },
+        {
+          "bytes": 127,
+          "path": "build/.env",
+          "sha256": "4dc4ccad0de4f712e388c1b296453041f6af621b94f8033bf1f333ac6a1967c4"
+        },
+        {
+          "bytes": 150,
+          "path": "build/admin/Dockerfile",
+          "sha256": "7666c9f68f9d2c2729e044f8972c42d1dc29f5bc478f70f4dfef75db52493b35"
+        },
+        {
+          "bytes": 30,
+          "path": "build/admin/requirements.txt",
+          "sha256": "45dd909fb44f05e039ecca61e32d76b2f15eb3554c6c052c173082cb52ce7803"
+        },
+        {
+          "bytes": 1782,
+          "path": "build/admin/server.py",
+          "sha256": "ec2254180c06c2e612f5ba0d326b9f1b9a71fb799f63bcda19353366d6d0b336"
+        },
+        {
+          "bytes": 984,
+          "path": "build/admin/utils/auth.py",
+          "sha256": "143be1c34da77cb37caab86735c67b59215cc1e2fd77398de13525867d5a57d2"
+        },
+        {
+          "bytes": 410,
+          "path": "build/admin/utils/utils.py",
+          "sha256": "1961f57e48152a7847879f3f5fcb01790fed428d954d571f1a588095ef42966c"
+        },
+        {
+          "bytes": 158,
+          "path": "build/app/Dockerfile",
+          "sha256": "08233d7d6ecda7d0a682e8c2ac1a0104755bbfa5c1ac29416b24395a1b789fa9"
+        },
+        {
+          "bytes": 560,
+          "path": "build/app/config/database.py",
+          "sha256": "907a6ae94175a21de0ca3f523f20777809fc04e343b7298e848eb1c2dface705"
+        },
+        {
+          "bytes": 4867,
+          "path": "build/app/handlers/http_handler.py",
+          "sha256": "2d9181be4ccc699691d82bd3920c0ca48b789cd259889cb0b2252e278d5ad705"
+        },
+        {
+          "bytes": 1159,
+          "path": "build/app/models/url.py",
+          "sha256": "89d6291c076d12d6db0f748847c3dd7871ea79b9929a6c59a49f815ddcf1bf03"
+        },
+        {
+          "bytes": 14,
+          "path": "build/app/requirements.txt",
+          "sha256": "1f1092c677ee4bdb4ea90491804ad07d77a024f931c7445870e5b731c69df4d4"
+        },
+        {
+          "bytes": 449,
+          "path": "build/app/server.py",
+          "sha256": "18bc7c40ae45b33f88a0a6b5f07bae9d3ff75aa3f3828b495566a96967631593"
+        },
+        {
+          "bytes": 518,
+          "path": "build/app/services/shortener.py",
+          "sha256": "823d855984f65491637556625bb00bafebdb6462068c8b2d46a0d908009be441"
+        },
+        {
+          "bytes": 2554,
+          "path": "build/app/static/css/style.css",
+          "sha256": "dea10c1113fdff41b6d06202c60b13d41ae814853d7ee8f2a2123b9cc04edf29"
+        },
+        {
+          "bytes": 1580,
+          "path": "build/app/static/index.html",
+          "sha256": "e350f79900ea55d439a8171d6b23ca7f183c5507db9a6a5af9bb71399017000f"
+        },
+        {
+          "bytes": 3086,
+          "path": "build/app/static/js/main.js",
+          "sha256": "0068d7ca3c45ad066ca0c843075d48448b436baa0665dc002e40911d44da1a17"
+        },
+        {
+          "bytes": 1141,
+          "path": "build/app/utils/auth.py",
+          "sha256": "c37e0e1046423a16f7e65ca584246e955d67eecdca1d1df22d4c5564e67250bb"
+        },
+        {
+          "bytes": 1213,
+          "path": "build/app/utils/token.py",
+          "sha256": "41cbb26ba4795f5a67716748f7466902c20367fb9a2ca0fc0637a960ae8d9408"
+        },
+        {
+          "bytes": 337,
+          "path": "build/app/utils/utils.py",
+          "sha256": "0bacbc2db8e995f5169ea4f9f682fc524dcbaae5a66825e1b01bd77fe4e6d132"
+        },
+        {
+          "bytes": 143,
+          "path": "build/auth/Dockerfile",
+          "sha256": "d2bc21130ef7bf27814f57cf851637283726c6fa678abad0cca22519486e7895"
+        },
+        {
+          "bytes": 96943,
+          "path": "build/auth/package-lock.json",
+          "sha256": "365a7961734539321e5e7a17d331138d136e6c0c2c3ea29caea8864e63be2a83"
+        },
+        {
+          "bytes": 503,
+          "path": "build/auth/package.json",
+          "sha256": "6fdf979acfffe2b7eb0d9518386a39a9b341c22bfa46157589408a98bb9d4289"
+        },
+        {
+          "bytes": 8344,
+          "path": "build/auth/server.js",
+          "sha256": "9b5801cebaebfeaa7bcbc5faf0e0ba7f3789b44f3dc60b093c72814f23eaa0e4"
+        },
+        {
+          "bytes": 1978,
+          "path": "build/auth/views/home.ejs",
+          "sha256": "fe34b4059e6b4e25af056c59ab6bab189f421bddc3d0ce916571f9da4388bbd5"
+        },
+        {
+          "bytes": 3501,
+          "path": "build/auth/views/login.ejs",
+          "sha256": "1fd5021f76d7036f385d527701d0da51f4c0323fe85391c6dc07d3888bb97f06"
+        },
+        {
+          "bytes": 3518,
+          "path": "build/auth/views/register.ejs",
+          "sha256": "4dc15bf391ef04306bbeafa5af2c04782e7bd2a12fb59951fb0116dc2809f37c"
+        },
+        {
+          "bytes": 24,
+          "path": "build/bot/.dockerignore",
+          "sha256": "68ab4445dbda7bd2cc4558bd583b349c82c785407b7bf368751e41e4cfa3b6b2"
+        },
+        {
+          "bytes": 865,
+          "path": "build/bot/Dockerfile",
+          "sha256": "96e34e6d99201ff5c276fe9bdb3cf26c8185ffcfc2dd0252ca1e45af9f880ea8"
+        },
+        {
+          "bytes": 1562,
+          "path": "build/bot/bot.js",
+          "sha256": "586f7b0bae0f21045d5e24e3282b6b0263858ba7878c68b2ef37b215aa4b55c8"
+        },
+        {
+          "bytes": 1509,
+          "path": "build/bot/index.js",
+          "sha256": "16579835fd372993aaebfe2b4b24887c504527f39d149534105f36f44dbdac10"
+        },
+        {
+          "bytes": 76715,
+          "path": "build/bot/package-lock.json",
+          "sha256": "a3ec87699678cd1e71addeafa8e72d682639f3f8f785544615062bb29f331180"
+        },
+        {
+          "bytes": 197,
+          "path": "build/bot/package.json",
+          "sha256": "5e94a41c4b5523e7931c691defe36aaedaaaf0efc66310a3890295a73850eec7"
+        },
+        {
+          "bytes": 1925,
+          "path": "build/bot/public/index.html",
+          "sha256": "fc57791e4d1c86903230307e8393bbf0417655baf7ecc396cd04555183dce332"
+        },
+        {
+          "bytes": 1265,
+          "path": "build/bot/server.crt",
+          "sha256": "5e6420a224962a417bc218d33870406cccc0b002c024e1c3537e836ca0db3fd5"
+        },
+        {
+          "bytes": 7864,
+          "path": "build/compose.yaml",
+          "sha256": "63eed251de5e5abe8de188fec9208e3f4e52376ab446d7dcb54696940db09933"
+        },
+        {
+          "bytes": 1884,
+          "path": "build/nginx.conf",
+          "sha256": "c37446ee418f499e2e91745841b65e96968e130f4c25c322133b9ac495ae23ef"
+        },
+        {
+          "bytes": 92,
+          "path": "files/.env",
+          "sha256": "8be75255936de23aabba11108d5bd3524a0eb24585f93a9f8431e2dbd5632f2b"
+        },
+        {
+          "bytes": 302,
+          "path": "files/README.md",
+          "sha256": "c5c4c7e2d405b01ec043c23c64d90134459cdc12dc3e07fa997945305fdf3b7a"
+        },
+        {
+          "bytes": 150,
+          "path": "files/admin/Dockerfile",
+          "sha256": "7666c9f68f9d2c2729e044f8972c42d1dc29f5bc478f70f4dfef75db52493b35"
+        },
+        {
+          "bytes": 30,
+          "path": "files/admin/requirements.txt",
+          "sha256": "45dd909fb44f05e039ecca61e32d76b2f15eb3554c6c052c173082cb52ce7803"
+        },
+        {
+          "bytes": 1782,
+          "path": "files/admin/server.py",
+          "sha256": "ec2254180c06c2e612f5ba0d326b9f1b9a71fb799f63bcda19353366d6d0b336"
+        },
+        {
+          "bytes": 984,
+          "path": "files/admin/utils/auth.py",
+          "sha256": "143be1c34da77cb37caab86735c67b59215cc1e2fd77398de13525867d5a57d2"
+        },
+        {
+          "bytes": 410,
+          "path": "files/admin/utils/utils.py",
+          "sha256": "1961f57e48152a7847879f3f5fcb01790fed428d954d571f1a588095ef42966c"
+        },
+        {
+          "bytes": 158,
+          "path": "files/app/Dockerfile",
+          "sha256": "08233d7d6ecda7d0a682e8c2ac1a0104755bbfa5c1ac29416b24395a1b789fa9"
+        },
+        {
+          "bytes": 560,
+          "path": "files/app/config/database.py",
+          "sha256": "907a6ae94175a21de0ca3f523f20777809fc04e343b7298e848eb1c2dface705"
+        },
+        {
+          "bytes": 4867,
+          "path": "files/app/handlers/http_handler.py",
+          "sha256": "2d9181be4ccc699691d82bd3920c0ca48b789cd259889cb0b2252e278d5ad705"
+        },
+        {
+          "bytes": 1159,
+          "path": "files/app/models/url.py",
+          "sha256": "89d6291c076d12d6db0f748847c3dd7871ea79b9929a6c59a49f815ddcf1bf03"
+        },
+        {
+          "bytes": 14,
+          "path": "files/app/requirements.txt",
+          "sha256": "1f1092c677ee4bdb4ea90491804ad07d77a024f931c7445870e5b731c69df4d4"
+        },
+        {
+          "bytes": 449,
+          "path": "files/app/server.py",
+          "sha256": "18bc7c40ae45b33f88a0a6b5f07bae9d3ff75aa3f3828b495566a96967631593"
+        },
+        {
+          "bytes": 518,
+          "path": "files/app/services/shortener.py",
+          "sha256": "823d855984f65491637556625bb00bafebdb6462068c8b2d46a0d908009be441"
+        },
+        {
+          "bytes": 2554,
+          "path": "files/app/static/css/style.css",
+          "sha256": "dea10c1113fdff41b6d06202c60b13d41ae814853d7ee8f2a2123b9cc04edf29"
+        },
+        {
+          "bytes": 1580,
+          "path": "files/app/static/index.html",
+          "sha256": "e350f79900ea55d439a8171d6b23ca7f183c5507db9a6a5af9bb71399017000f"
+        },
+        {
+          "bytes": 3086,
+          "path": "files/app/static/js/main.js",
+          "sha256": "0068d7ca3c45ad066ca0c843075d48448b436baa0665dc002e40911d44da1a17"
+        },
+        {
+          "bytes": 1141,
+          "path": "files/app/utils/auth.py",
+          "sha256": "c37e0e1046423a16f7e65ca584246e955d67eecdca1d1df22d4c5564e67250bb"
+        },
+        {
+          "bytes": 1213,
+          "path": "files/app/utils/token.py",
+          "sha256": "41cbb26ba4795f5a67716748f7466902c20367fb9a2ca0fc0637a960ae8d9408"
+        },
+        {
+          "bytes": 337,
+          "path": "files/app/utils/utils.py",
+          "sha256": "0bacbc2db8e995f5169ea4f9f682fc524dcbaae5a66825e1b01bd77fe4e6d132"
+        },
+        {
+          "bytes": 143,
+          "path": "files/auth/Dockerfile",
+          "sha256": "d2bc21130ef7bf27814f57cf851637283726c6fa678abad0cca22519486e7895"
+        },
+        {
+          "bytes": 96943,
+          "path": "files/auth/package-lock.json",
+          "sha256": "365a7961734539321e5e7a17d331138d136e6c0c2c3ea29caea8864e63be2a83"
+        },
+        {
+          "bytes": 503,
+          "path": "files/auth/package.json",
+          "sha256": "6fdf979acfffe2b7eb0d9518386a39a9b341c22bfa46157589408a98bb9d4289"
+        },
+        {
+          "bytes": 8344,
+          "path": "files/auth/server.js",
+          "sha256": "9b5801cebaebfeaa7bcbc5faf0e0ba7f3789b44f3dc60b093c72814f23eaa0e4"
+        },
+        {
+          "bytes": 1978,
+          "path": "files/auth/views/home.ejs",
+          "sha256": "fe34b4059e6b4e25af056c59ab6bab189f421bddc3d0ce916571f9da4388bbd5"
+        },
+        {
+          "bytes": 3501,
+          "path": "files/auth/views/login.ejs",
+          "sha256": "1fd5021f76d7036f385d527701d0da51f4c0323fe85391c6dc07d3888bb97f06"
+        },
+        {
+          "bytes": 3518,
+          "path": "files/auth/views/register.ejs",
+          "sha256": "4dc15bf391ef04306bbeafa5af2c04782e7bd2a12fb59951fb0116dc2809f37c"
+        },
+        {
+          "bytes": 24,
+          "path": "files/bot/.dockerignore",
+          "sha256": "68ab4445dbda7bd2cc4558bd583b349c82c785407b7bf368751e41e4cfa3b6b2"
+        },
+        {
+          "bytes": 865,
+          "path": "files/bot/Dockerfile",
+          "sha256": "96e34e6d99201ff5c276fe9bdb3cf26c8185ffcfc2dd0252ca1e45af9f880ea8"
+        },
+        {
+          "bytes": 1562,
+          "path": "files/bot/bot.js",
+          "sha256": "586f7b0bae0f21045d5e24e3282b6b0263858ba7878c68b2ef37b215aa4b55c8"
+        },
+        {
+          "bytes": 1509,
+          "path": "files/bot/index.js",
+          "sha256": "16579835fd372993aaebfe2b4b24887c504527f39d149534105f36f44dbdac10"
+        },
+        {
+          "bytes": 76715,
+          "path": "files/bot/package-lock.json",
+          "sha256": "a3ec87699678cd1e71addeafa8e72d682639f3f8f785544615062bb29f331180"
+        },
+        {
+          "bytes": 197,
+          "path": "files/bot/package.json",
+          "sha256": "5e94a41c4b5523e7931c691defe36aaedaaaf0efc66310a3890295a73850eec7"
+        },
+        {
+          "bytes": 1925,
+          "path": "files/bot/public/index.html",
+          "sha256": "fc57791e4d1c86903230307e8393bbf0417655baf7ecc396cd04555183dce332"
+        },
+        {
+          "bytes": 1265,
+          "path": "files/bot/server.crt",
+          "sha256": "5e6420a224962a417bc218d33870406cccc0b002c024e1c3537e836ca0db3fd5"
+        },
+        {
+          "bytes": 1265,
+          "path": "files/certs/server.crt",
+          "sha256": "5e6420a224962a417bc218d33870406cccc0b002c024e1c3537e836ca0db3fd5"
+        },
+        {
+          "bytes": 1704,
+          "path": "files/certs/server.key",
+          "sha256": "f78809a6651a1972fab169f67ae8bd9cf1004ba80a1f18a3254e6861d6af1842"
+        },
+        {
+          "bytes": 7859,
+          "path": "files/compose.yaml",
+          "sha256": "9f9eef0f0ebb938495be12650a4c3f370afaee92b1b217ddb1d30d5d9c3f8d2e"
+        },
+        {
+          "bytes": 1820,
+          "path": "files/nginx.conf",
+          "sha256": "7992682e6e52549c7fc9c904581dfe1e5757ffa9d56488d39b9c766503cc160f"
+        },
+        {
+          "bytes": 984,
+          "path": "patch.diff",
+          "sha256": "6563e7d4633deefe2cbff3c200c8a937f93c35ce2ecd0ba89d236261837ecc65"
+        },
+        {
+          "bytes": 295,
+          "path": "solver/Dockerfile",
+          "sha256": "c156604e26777b6a24c048c30b8c9955d43917245ed0d40fe94968a79c78c963"
+        },
+        {
+          "bytes": 7578,
+          "path": "solver/solve.js",
+          "sha256": "6470179edaeb04987294081037a294d3fa8655db68b285a24d7f19a5238cdff6"
+        },
+        {
+          "bytes": 188,
+          "path": "solves.md",
+          "sha256": "3d8be4ebc22446b2e88e890aeda830157a406da80d276c677f9e1ef2b9d31c35"
+        }
+      ],
+      "review_flags": [
+        "requires_browser_bot_service_review"
+      ],
+      "source": "https://github.com/SECCON/SECCON13_final_CTF/tree/6be09bb4a5172a1110961ee4a079688992dd56b6/web/not-that-short",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "web",
+      "challenge": "purexss",
+      "commit": "6be09bb4a5172a1110961ee4a079688992dd56b6",
+      "event": "SECCON 13 Finals",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 13,
+          "path": ".gitignore",
+          "sha256": "16d30e4462189fb14dd611bdb708c510630c576a1f35b9383e89a4352da36c97"
+        },
+        {
+          "bytes": 479,
+          "path": "README.md",
+          "sha256": "8bd8aeac0fffcee20ec717de2cb6f942ecaa12749928ea992532d47527f722dc"
+        },
+        {
+          "bytes": 440,
+          "path": "build/bot/Dockerfile",
+          "sha256": "6928b1af81b8345941f815b760d7d5a3dcb6ecab6c552a4e33bd0bc7280b86b4"
+        },
+        {
+          "bytes": 1164,
+          "path": "build/bot/bot.js",
+          "sha256": "a0eb12e09957cfaf615745c83c3d8c677f80ad558f049285d63da9564c73c001"
+        },
+        {
+          "bytes": 843,
+          "path": "build/bot/index.js",
+          "sha256": "4507c9091bcc53e7b29389312e1173d218ff72681bb507c801467d0c582af8b8"
+        },
+        {
+          "bytes": 74099,
+          "path": "build/bot/package-lock.json",
+          "sha256": "0844e27cf3407590d9ab199835e00965103a461f3451e40b99a28a8296d8a6a2"
+        },
+        {
+          "bytes": 193,
+          "path": "build/bot/package.json",
+          "sha256": "9cb76143af5ac137c46e40217aac2fc89b48b8913135c19a3befae3004208be2"
+        },
+        {
+          "bytes": 1907,
+          "path": "build/bot/public/index.html",
+          "sha256": "81afd40fdaff7133bb33a8d3d199a53cb7b3063415490c47fd64d819fb258f3f"
+        },
+        {
+          "bytes": 275,
+          "path": "build/compose.yaml",
+          "sha256": "fbf6ddb0dd46bfda7cc3982c85c6db451bb2ab98c3915efc2dd5f9a1051021f5"
+        },
+        {
+          "bytes": 130,
+          "path": "build/web/Dockerfile",
+          "sha256": "1ba24977389148fd44081410c9a7928577cfff87b60d62665791e0df81bec12e"
+        },
+        {
+          "bytes": 1283,
+          "path": "build/web/index.js",
+          "sha256": "d6bf9008a7040531e7f1cee8f2c04ec7bff9046750206e29b2780fa6017c6704"
+        },
+        {
+          "bytes": 43970,
+          "path": "build/web/package-lock.json",
+          "sha256": "871a8d090745bfdd13b7a711c0e1e00032dcf5000b0f174f0655f8f006b812cb"
+        },
+        {
+          "bytes": 163,
+          "path": "build/web/package.json",
+          "sha256": "4b711b28514f863a077a4878cb4f95bd25736166dadfb44614963482c6a2214f"
+        },
+        {
+          "bytes": 440,
+          "path": "files/bot/Dockerfile",
+          "sha256": "6928b1af81b8345941f815b760d7d5a3dcb6ecab6c552a4e33bd0bc7280b86b4"
+        },
+        {
+          "bytes": 1164,
+          "path": "files/bot/bot.js",
+          "sha256": "a0eb12e09957cfaf615745c83c3d8c677f80ad558f049285d63da9564c73c001"
+        },
+        {
+          "bytes": 843,
+          "path": "files/bot/index.js",
+          "sha256": "4507c9091bcc53e7b29389312e1173d218ff72681bb507c801467d0c582af8b8"
+        },
+        {
+          "bytes": 74099,
+          "path": "files/bot/package-lock.json",
+          "sha256": "0844e27cf3407590d9ab199835e00965103a461f3451e40b99a28a8296d8a6a2"
+        },
+        {
+          "bytes": 193,
+          "path": "files/bot/package.json",
+          "sha256": "9cb76143af5ac137c46e40217aac2fc89b48b8913135c19a3befae3004208be2"
+        },
+        {
+          "bytes": 1907,
+          "path": "files/bot/public/index.html",
+          "sha256": "81afd40fdaff7133bb33a8d3d199a53cb7b3063415490c47fd64d819fb258f3f"
+        },
+        {
+          "bytes": 246,
+          "path": "files/compose.yaml",
+          "sha256": "51066bf86f809939a688746bab8c6f0f0009b35d92a986d19f35eef51a9a946b"
+        },
+        {
+          "bytes": 130,
+          "path": "files/web/Dockerfile",
+          "sha256": "1ba24977389148fd44081410c9a7928577cfff87b60d62665791e0df81bec12e"
+        },
+        {
+          "bytes": 1283,
+          "path": "files/web/index.js",
+          "sha256": "d6bf9008a7040531e7f1cee8f2c04ec7bff9046750206e29b2780fa6017c6704"
+        },
+        {
+          "bytes": 43970,
+          "path": "files/web/package-lock.json",
+          "sha256": "871a8d090745bfdd13b7a711c0e1e00032dcf5000b0f174f0655f8f006b812cb"
+        },
+        {
+          "bytes": 163,
+          "path": "files/web/package.json",
+          "sha256": "4b711b28514f863a077a4878cb4f95bd25736166dadfb44614963482c6a2214f"
+        },
+        {
+          "bytes": 244,
+          "path": "mkdist.sh",
+          "sha256": "a6b6c46a7fd60ab2985dcb325b46908b75e654e302a1beeec9c7283c99c0129b"
+        },
+        {
+          "bytes": 134,
+          "path": "solver/Dockerfile",
+          "sha256": "21f137d2d9628b97d58b9e389cfdb7727a75a7ce308171b3f2a73a0140627d67"
+        },
+        {
+          "bytes": 1224,
+          "path": "solver/index.js",
+          "sha256": "09429da0f2270f8a32cf1b30947ebfcb13783f53a5e6c60bae46fca0942c397b"
+        },
+        {
+          "bytes": 23379,
+          "path": "solver/package-lock.json",
+          "sha256": "9eee63055c9e4becf1f07a57e464414ce009aeee8310568e7dd49e5098420c35"
+        },
+        {
+          "bytes": 91,
+          "path": "solver/package.json",
+          "sha256": "809aea34085f7ad55c886c961e3e37283083ba1e2d02be7c193618d6f8505e9a"
+        },
+        {
+          "bytes": 270,
+          "path": "solves.md",
+          "sha256": "9ec7b3f29284489bcd481bdea11644a6300355380b3d93461e0e4c40c1024141"
+        }
+      ],
+      "review_flags": [
+        "requires_browser_bot_service_review"
+      ],
+      "source": "https://github.com/SECCON/SECCON13_final_CTF/tree/6be09bb4a5172a1110961ee4a079688992dd56b6/web/purexss",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "web",
+      "challenge": "super-fastcgi",
+      "commit": "6be09bb4a5172a1110961ee4a079688992dd56b6",
+      "event": "SECCON 13 Finals",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 511,
+          "path": "README.md",
+          "sha256": "199c6dfc1253594de13da361802dc0be192bdd7d29362873de1c2ff04177172f"
+        },
+        {
+          "bytes": 101,
+          "path": "build/child/Dockerfile",
+          "sha256": "113d0c6e30e2b39d0554802a58ed0e204119fa25f0b0037553c6cf11d3d210b4"
+        },
+        {
+          "bytes": 4578,
+          "path": "build/child/child.go",
+          "sha256": "512ce7602183ef313e79b130639ed7306d3417f713f35d46ef40330827f043c1"
+        },
+        {
+          "bytes": 313,
+          "path": "build/compose.yaml",
+          "sha256": "72804325927474047cba705772232ef6000bbb84cfe0c327868f675e14136927"
+        },
+        {
+          "bytes": 369,
+          "path": "build/nginx.conf",
+          "sha256": "ed56e861c7ef4feab7042802d74125c9204cdda947269ee4243087598526f0d9"
+        },
+        {
+          "bytes": 96,
+          "path": "build/server/Dockerfile",
+          "sha256": "84f530e2bb2210c062d4d798b77f67151894b02bb5030b414eef695ff098c69e"
+        },
+        {
+          "bytes": 4254,
+          "path": "build/server/fcgi.go",
+          "sha256": "0c195e3d330bca79f4056c3df97f3b51cdadba261ae4e9c75ea2abdb5db2aba7"
+        },
+        {
+          "bytes": 39,
+          "path": "build/server/go.mod",
+          "sha256": "0fd2533cf5cdca0de1800b5a9efe33cecd520149b1063b8cb0a24665360ed5f4"
+        },
+        {
+          "bytes": 4057,
+          "path": "build/server/main.go",
+          "sha256": "9f9d412b1de8d9483b9a55f1de25cff2b1cd9677e55617e00abcff3094cb9352"
+        },
+        {
+          "bytes": 101,
+          "path": "files/child/Dockerfile",
+          "sha256": "113d0c6e30e2b39d0554802a58ed0e204119fa25f0b0037553c6cf11d3d210b4"
+        },
+        {
+          "bytes": 4578,
+          "path": "files/child/child.go",
+          "sha256": "512ce7602183ef313e79b130639ed7306d3417f713f35d46ef40330827f043c1"
+        },
+        {
+          "bytes": 293,
+          "path": "files/compose.yaml",
+          "sha256": "e8fadf3b7d44eca12710efdada5c0e7120e31197c7b86fef354eac9087e32fc3"
+        },
+        {
+          "bytes": 369,
+          "path": "files/nginx.conf",
+          "sha256": "ed56e861c7ef4feab7042802d74125c9204cdda947269ee4243087598526f0d9"
+        },
+        {
+          "bytes": 96,
+          "path": "files/server/Dockerfile",
+          "sha256": "84f530e2bb2210c062d4d798b77f67151894b02bb5030b414eef695ff098c69e"
+        },
+        {
+          "bytes": 4254,
+          "path": "files/server/fcgi.go",
+          "sha256": "0c195e3d330bca79f4056c3df97f3b51cdadba261ae4e9c75ea2abdb5db2aba7"
+        },
+        {
+          "bytes": 39,
+          "path": "files/server/go.mod",
+          "sha256": "0fd2533cf5cdca0de1800b5a9efe33cecd520149b1063b8cb0a24665360ed5f4"
+        },
+        {
+          "bytes": 4057,
+          "path": "files/server/main.go",
+          "sha256": "9f9d412b1de8d9483b9a55f1de25cff2b1cd9677e55617e00abcff3094cb9352"
+        },
+        {
+          "bytes": 101,
+          "path": "solver/Dockerfile",
+          "sha256": "07aa83284cc4d39e12c5f12dd384e76368ac967d26add83921eb30097f4dca07"
+        },
+        {
+          "bytes": 2247,
+          "path": "solver/solve.go",
+          "sha256": "32b7f3f654c6bd57325245dad14bf652ec248195d7ca0282faff5a34d3b8971e"
+        },
+        {
+          "bytes": 491,
+          "path": "solves.md",
+          "sha256": "d1336c9cb04c860d7a0d0e940d753b55ee32f3a5c5b06776cf5da154ab0b670b"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/SECCON/SECCON13_final_CTF/tree/6be09bb4a5172a1110961ee4a079688992dd56b6/web/super-fastcgi",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "web",
+      "challenge": "twisty-xss",
+      "commit": "6be09bb4a5172a1110961ee4a079688992dd56b6",
+      "event": "SECCON 13 Finals",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 13,
+          "path": ".gitignore",
+          "sha256": "16d30e4462189fb14dd611bdb708c510630c576a1f35b9383e89a4352da36c97"
+        },
+        {
+          "bytes": 472,
+          "path": "README.md",
+          "sha256": "55e6ebc27ee1b9a119827e7edd4b37bce80b9983b949546f2499104ba1ee5bcb"
+        },
+        {
+          "bytes": 440,
+          "path": "build/bot/Dockerfile",
+          "sha256": "6928b1af81b8345941f815b760d7d5a3dcb6ecab6c552a4e33bd0bc7280b86b4"
+        },
+        {
+          "bytes": 1164,
+          "path": "build/bot/bot.js",
+          "sha256": "a0eb12e09957cfaf615745c83c3d8c677f80ad558f049285d63da9564c73c001"
+        },
+        {
+          "bytes": 843,
+          "path": "build/bot/index.js",
+          "sha256": "4507c9091bcc53e7b29389312e1173d218ff72681bb507c801467d0c582af8b8"
+        },
+        {
+          "bytes": 74099,
+          "path": "build/bot/package-lock.json",
+          "sha256": "0844e27cf3407590d9ab199835e00965103a461f3451e40b99a28a8296d8a6a2"
+        },
+        {
+          "bytes": 193,
+          "path": "build/bot/package.json",
+          "sha256": "9cb76143af5ac137c46e40217aac2fc89b48b8913135c19a3befae3004208be2"
+        },
+        {
+          "bytes": 1910,
+          "path": "build/bot/public/index.html",
+          "sha256": "b5c781f5494be361db1bb50e28938d6f2c8a7578455f38ca11f7fae905791367"
+        },
+        {
+          "bytes": 267,
+          "path": "build/compose.yaml",
+          "sha256": "b8fbee8aaee1976db89e46e60b4cadd329423df98557d28d54bd4a6b8efb3c78"
+        },
+        {
+          "bytes": 130,
+          "path": "build/web/Dockerfile",
+          "sha256": "1ba24977389148fd44081410c9a7928577cfff87b60d62665791e0df81bec12e"
+        },
+        {
+          "bytes": 1420,
+          "path": "build/web/index.js",
+          "sha256": "f87810a2e72dcdc9a958a502c4d5746b2214dc87b2fd13cf34d59994eee1904a"
+        },
+        {
+          "bytes": 27588,
+          "path": "build/web/package-lock.json",
+          "sha256": "2598b3281d5781af25a5076b24ff2f71efabf11e55f05655177461c42ff3e474"
+        },
+        {
+          "bytes": 140,
+          "path": "build/web/package.json",
+          "sha256": "81d020f52cc5b8ad458fd37389dcd0e0aa65b14b37de716eb27290fdedaea4c6"
+        },
+        {
+          "bytes": 440,
+          "path": "files/bot/Dockerfile",
+          "sha256": "6928b1af81b8345941f815b760d7d5a3dcb6ecab6c552a4e33bd0bc7280b86b4"
+        },
+        {
+          "bytes": 1164,
+          "path": "files/bot/bot.js",
+          "sha256": "a0eb12e09957cfaf615745c83c3d8c677f80ad558f049285d63da9564c73c001"
+        },
+        {
+          "bytes": 843,
+          "path": "files/bot/index.js",
+          "sha256": "4507c9091bcc53e7b29389312e1173d218ff72681bb507c801467d0c582af8b8"
+        },
+        {
+          "bytes": 74099,
+          "path": "files/bot/package-lock.json",
+          "sha256": "0844e27cf3407590d9ab199835e00965103a461f3451e40b99a28a8296d8a6a2"
+        },
+        {
+          "bytes": 193,
+          "path": "files/bot/package.json",
+          "sha256": "9cb76143af5ac137c46e40217aac2fc89b48b8913135c19a3befae3004208be2"
+        },
+        {
+          "bytes": 1910,
+          "path": "files/bot/public/index.html",
+          "sha256": "b5c781f5494be361db1bb50e28938d6f2c8a7578455f38ca11f7fae905791367"
+        },
+        {
+          "bytes": 246,
+          "path": "files/compose.yaml",
+          "sha256": "51066bf86f809939a688746bab8c6f0f0009b35d92a986d19f35eef51a9a946b"
+        },
+        {
+          "bytes": 130,
+          "path": "files/web/Dockerfile",
+          "sha256": "1ba24977389148fd44081410c9a7928577cfff87b60d62665791e0df81bec12e"
+        },
+        {
+          "bytes": 1420,
+          "path": "files/web/index.js",
+          "sha256": "f87810a2e72dcdc9a958a502c4d5746b2214dc87b2fd13cf34d59994eee1904a"
+        },
+        {
+          "bytes": 27588,
+          "path": "files/web/package-lock.json",
+          "sha256": "2598b3281d5781af25a5076b24ff2f71efabf11e55f05655177461c42ff3e474"
+        },
+        {
+          "bytes": 140,
+          "path": "files/web/package.json",
+          "sha256": "81d020f52cc5b8ad458fd37389dcd0e0aa65b14b37de716eb27290fdedaea4c6"
+        },
+        {
+          "bytes": 244,
+          "path": "mkdist.sh",
+          "sha256": "a6b6c46a7fd60ab2985dcb325b46908b75e654e302a1beeec9c7283c99c0129b"
+        },
+        {
+          "bytes": 134,
+          "path": "solver/Dockerfile",
+          "sha256": "21f137d2d9628b97d58b9e389cfdb7727a75a7ce308171b3f2a73a0140627d67"
+        },
+        {
+          "bytes": 3125,
+          "path": "solver/index.js",
+          "sha256": "836948869da7acdbbd3c1ee75b3f91c0693a433e89d4ad84e1e021243badade5"
+        },
+        {
+          "bytes": 30492,
+          "path": "solver/package-lock.json",
+          "sha256": "088591b5bf9c8f45766cdb6b4ad7a1dba126a5770cff244ade4d2883e25848a3"
+        },
+        {
+          "bytes": 123,
+          "path": "solver/package.json",
+          "sha256": "c7c9adbeb6d5a8378f4ad6b3f67c6ce7891d62a1e4d50f4c00b2f5251676eeb7"
+        },
+        {
+          "bytes": 240,
+          "path": "solves.md",
+          "sha256": "1a635c5bb4668c2cfa6fa5b6293643a14566e929220c5f584172de660e08ac98"
+        }
+      ],
+      "review_flags": [
+        "requires_browser_bot_service_review"
+      ],
+      "source": "https://github.com/SECCON/SECCON13_final_CTF/tree/6be09bb4a5172a1110961ee4a079688992dd56b6/web/twisty-xss",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "web",
+      "challenge": "witchnote",
+      "commit": "6be09bb4a5172a1110961ee4a079688992dd56b6",
+      "event": "SECCON 13 Finals",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 13,
+          "path": ".gitignore",
+          "sha256": "16d30e4462189fb14dd611bdb708c510630c576a1f35b9383e89a4352da36c97"
+        },
+        {
+          "bytes": 542,
+          "path": "README.md",
+          "sha256": "8cff42edf1c8c4c215d2cd7219691adb5ec5f096728de5df2a1359055518818a"
+        },
+        {
+          "bytes": 440,
+          "path": "build/bot/Dockerfile",
+          "sha256": "6928b1af81b8345941f815b760d7d5a3dcb6ecab6c552a4e33bd0bc7280b86b4"
+        },
+        {
+          "bytes": 1164,
+          "path": "build/bot/bot.js",
+          "sha256": "a0eb12e09957cfaf615745c83c3d8c677f80ad558f049285d63da9564c73c001"
+        },
+        {
+          "bytes": 843,
+          "path": "build/bot/index.js",
+          "sha256": "4507c9091bcc53e7b29389312e1173d218ff72681bb507c801467d0c582af8b8"
+        },
+        {
+          "bytes": 74099,
+          "path": "build/bot/package-lock.json",
+          "sha256": "0844e27cf3407590d9ab199835e00965103a461f3451e40b99a28a8296d8a6a2"
+        },
+        {
+          "bytes": 173,
+          "path": "build/bot/package.json",
+          "sha256": "fd1275f21ea9cd428daa38dc8311e58636543028203f46195d75219526b5a6e1"
+        },
+        {
+          "bytes": 1909,
+          "path": "build/bot/public/index.html",
+          "sha256": "89f383884a7663a63b7606bf0cb4e61e0dd70c58b2c3b3504dce22d078cc87c4"
+        },
+        {
+          "bytes": 303,
+          "path": "build/compose.yaml",
+          "sha256": "567dfd0fce3f08d541025134c7fe32ed9f1b5bf37b7a478dafc1a4dd6dd3b1e0"
+        },
+        {
+          "bytes": 158,
+          "path": "build/web/Dockerfile",
+          "sha256": "bd908f6b075cc7c87a53d9b5b75bcc8bab362d4d3ce18da03c9e648298f9dba3"
+        },
+        {
+          "bytes": 1935,
+          "path": "build/web/index.js",
+          "sha256": "e6d2ea03788de81975f225360838e08b03caac94dae6f7094b5e94a20ac8f9a2"
+        },
+        {
+          "bytes": 60251,
+          "path": "build/web/package-lock.json",
+          "sha256": "b4f36481109df8e7afc40e8c89250729f58159c093eaa28c38be32dd9d2979e8"
+        },
+        {
+          "bytes": 237,
+          "path": "build/web/package.json",
+          "sha256": "e9f669f2bbee17180445e15c351fbf755f21ddb971b5d42a232a4384bd8d794f"
+        },
+        {
+          "bytes": 3308,
+          "path": "build/web/public/index.html",
+          "sha256": "c5064472b3e76129c9f753c3b356d79d22033e00d72045283faa3ff1c7a1940c"
+        },
+        {
+          "bytes": 0,
+          "path": "build/web/public/notes/.gitkeep",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "bytes": 440,
+          "path": "files/bot/Dockerfile",
+          "sha256": "6928b1af81b8345941f815b760d7d5a3dcb6ecab6c552a4e33bd0bc7280b86b4"
+        },
+        {
+          "bytes": 1164,
+          "path": "files/bot/bot.js",
+          "sha256": "a0eb12e09957cfaf615745c83c3d8c677f80ad558f049285d63da9564c73c001"
+        },
+        {
+          "bytes": 843,
+          "path": "files/bot/index.js",
+          "sha256": "4507c9091bcc53e7b29389312e1173d218ff72681bb507c801467d0c582af8b8"
+        },
+        {
+          "bytes": 74099,
+          "path": "files/bot/package-lock.json",
+          "sha256": "0844e27cf3407590d9ab199835e00965103a461f3451e40b99a28a8296d8a6a2"
+        },
+        {
+          "bytes": 173,
+          "path": "files/bot/package.json",
+          "sha256": "fd1275f21ea9cd428daa38dc8311e58636543028203f46195d75219526b5a6e1"
+        },
+        {
+          "bytes": 1909,
+          "path": "files/bot/public/index.html",
+          "sha256": "89f383884a7663a63b7606bf0cb4e61e0dd70c58b2c3b3504dce22d078cc87c4"
+        },
+        {
+          "bytes": 247,
+          "path": "files/compose.yaml",
+          "sha256": "3b715e78ca30498c8c8bb7fff31f11300e41d75eea5b04036623cfd77aa87431"
+        },
+        {
+          "bytes": 158,
+          "path": "files/web/Dockerfile",
+          "sha256": "bd908f6b075cc7c87a53d9b5b75bcc8bab362d4d3ce18da03c9e648298f9dba3"
+        },
+        {
+          "bytes": 1935,
+          "path": "files/web/index.js",
+          "sha256": "e6d2ea03788de81975f225360838e08b03caac94dae6f7094b5e94a20ac8f9a2"
+        },
+        {
+          "bytes": 60251,
+          "path": "files/web/package-lock.json",
+          "sha256": "b4f36481109df8e7afc40e8c89250729f58159c093eaa28c38be32dd9d2979e8"
+        },
+        {
+          "bytes": 237,
+          "path": "files/web/package.json",
+          "sha256": "e9f669f2bbee17180445e15c351fbf755f21ddb971b5d42a232a4384bd8d794f"
+        },
+        {
+          "bytes": 3308,
+          "path": "files/web/public/index.html",
+          "sha256": "c5064472b3e76129c9f753c3b356d79d22033e00d72045283faa3ff1c7a1940c"
+        },
+        {
+          "bytes": 0,
+          "path": "files/web/public/notes/.gitkeep",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "bytes": 244,
+          "path": "mkdist.sh",
+          "sha256": "a6b6c46a7fd60ab2985dcb325b46908b75e654e302a1beeec9c7283c99c0129b"
+        },
+        {
+          "bytes": 134,
+          "path": "solver/Dockerfile",
+          "sha256": "21f137d2d9628b97d58b9e389cfdb7727a75a7ce308171b3f2a73a0140627d67"
+        },
+        {
+          "bytes": 1115,
+          "path": "solver/index.html",
+          "sha256": "5aa7f4cf82325431143bac6f96863c43d5ef253caaaba560fbb0804f140249aa"
+        },
+        {
+          "bytes": 1244,
+          "path": "solver/index.js",
+          "sha256": "630b4dd43a397301a5a3f8c52d361de4f698f8fadb8065617b32f733d5df40a4"
+        },
+        {
+          "bytes": 23379,
+          "path": "solver/package-lock.json",
+          "sha256": "9eee63055c9e4becf1f07a57e464414ce009aeee8310568e7dd49e5098420c35"
+        },
+        {
+          "bytes": 111,
+          "path": "solver/package.json",
+          "sha256": "bca724547f4875d6416dd243fa894dd3e175a080251b7fdbe331667d4e255eaa"
+        },
+        {
+          "bytes": 187,
+          "path": "solves.md",
+          "sha256": "da9008814a565b21f8d790bbef242038a4f9fd932a8f0bfd706660e71e6dbefc"
+        }
+      ],
+      "review_flags": [
+        "requires_browser_bot_service_review"
+      ],
+      "source": "https://github.com/SECCON/SECCON13_final_CTF/tree/6be09bb4a5172a1110961ee4a079688992dd56b6/web/witchnote",
+      "status": "pending_manual_review"
+    }
+  ],
+  "commit": "6be09bb4a5172a1110961ee4a079688992dd56b6",
+  "event": "SECCON 13 Finals",
+  "repository": "https://github.com/SECCON/SECCON13_final_CTF",
+  "schema": "original-ctf-catalog-v1"
+}

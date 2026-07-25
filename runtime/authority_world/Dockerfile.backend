@@ -1,0 +1,15 @@
+ARG DOCKER_REGISTRY=docker.m.daocloud.io
+FROM ${DOCKER_REGISTRY}/library/docker:29-cli AS docker_cli
+FROM ${DOCKER_REGISTRY}/library/python:3.12-slim
+WORKDIR /app
+COPY requirements.txt .
+ARG PIP_INDEX_URL=https://mirrors.aliyun.com/pypi/simple
+RUN pip install --no-cache-dir --index-url "$PIP_INDEX_URL" -r requirements.txt
+# v2's trusted backend launches disposable, unnetworked task containers through
+# the host Docker API. Agent containers never receive this client or socket.
+COPY --from=docker_cli /usr/local/bin/docker /usr/local/bin/docker
+COPY backend ./backend
+COPY config ./config
+COPY agent/WORLD_SKILL.md ./agent/WORLD_SKILL.md
+COPY agent/WORLD_SKILL_V2.md ./agent/WORLD_SKILL_V2.md
+CMD ["uvicorn", "backend.app:app", "--host", "0.0.0.0", "--port", "8100"]

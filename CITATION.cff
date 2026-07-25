@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this software or data, cite this repository and the exact public-data release."
+title: "Agent Economic: Auditable Multi-Agent Institutional Economy Experiments"
+type: software
+authors:
+  - family-names: "Shang"
+    given-names: "Shang"
+repository-code: "https://github.com/shangshang0/agentEconomic"
+license: Apache-2.0
+version: 1.0.0
+date-released: 2026-07-25
+

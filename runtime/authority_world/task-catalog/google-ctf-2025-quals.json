@@ -1,0 +1,554 @@
+{
+  "schema": "original-ctf-catalog-v1",
+  "event": "Google CTF 2025 Quals",
+  "repository": "https://github.com/google/google-ctf",
+  "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+  "license": "Apache-2.0",
+  "challenge_count": 30,
+  "challenges": [
+    {
+      "event": "Google CTF 2025 Quals",
+      "challenge": "crypto-filtermaze",
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2025/quals/crypto-filtermaze",
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "files": 23,
+      "attachments": [
+        "attachments/filtermaze.py",
+        "attachments/flag",
+        "attachments/lwe_pub_params.json",
+        "attachments/graph.json"
+      ],
+      "review_flags": [],
+      "status": "pending_manual_review"
+    },
+    {
+      "event": "Google CTF 2025 Quals",
+      "challenge": "crypto-merkurated",
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2025/quals/crypto-merkurated",
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "files": 16,
+      "attachments": [
+        "attachments/requirements.txt",
+        "attachments/chall.py"
+      ],
+      "review_flags": [],
+      "status": "pending_manual_review"
+    },
+    {
+      "event": "Google CTF 2025 Quals",
+      "challenge": "crypto-numerology",
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2025/quals/crypto-numerology",
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "files": 15,
+      "attachments": [
+        "attachments/ctf_challenge_package.json",
+        "attachments/init.sh",
+        "attachments/flag.txt",
+        "attachments/readme.md",
+        "attachments/__pycache__/crypto_numerology.cpython-312.pyc"
+      ],
+      "review_flags": [],
+      "status": "pending_manual_review"
+    },
+    {
+      "event": "Google CTF 2025 Quals",
+      "challenge": "crypto-sphinx",
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2025/quals/crypto-sphinx",
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "files": 15,
+      "attachments": [
+        "attachments/sphinx.py",
+        "attachments/video.mp4",
+        "attachments/manuscript.txt",
+        "attachments/US5003597.pdf"
+      ],
+      "review_flags": [],
+      "status": "pending_manual_review"
+    },
+    {
+      "event": "Google CTF 2025 Quals",
+      "challenge": "crypto-underhanded",
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2025/quals/crypto-underhanded",
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "files": 16,
+      "attachments": [
+        "attachments/aes.py",
+        "attachments/chall.py"
+      ],
+      "review_flags": [],
+      "status": "pending_manual_review"
+    },
+    {
+      "event": "Google CTF 2025 Quals",
+      "challenge": "misc-bpfbox",
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2025/quals/misc-bpfbox",
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "files": 21,
+      "attachments": [
+        "attachments/flake.lock",
+        "attachments/Dockerfile",
+        "attachments/flag.txt",
+        "attachments/flake.nix",
+        "attachments/run_qemu",
+        "attachments/init/go.mod",
+        "attachments/init/main.go"
+      ],
+      "review_flags": [
+        "requires_vm_or_kernel_isolation_review"
+      ],
+      "status": "pending_manual_review"
+    },
+    {
+      "event": "Google CTF 2025 Quals",
+      "challenge": "misc-fishmaze",
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2025/quals/misc-fishmaze",
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "files": 21,
+      "attachments": [],
+      "review_flags": [
+        "no_official_player_attachment_directory",
+        "requires_vm_or_kernel_isolation_review"
+      ],
+      "status": "pending_manual_review"
+    },
+    {
+      "event": "Google CTF 2025 Quals",
+      "challenge": "misc-hwsim",
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2025/quals/misc-hwsim",
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "files": 20,
+      "attachments": [
+        "attachments/chal.py"
+      ],
+      "review_flags": [],
+      "status": "pending_manual_review"
+    },
+    {
+      "event": "Google CTF 2025 Quals",
+      "challenge": "misc-mega-rust-1",
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2025/quals/misc-mega-rust-1",
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "files": 78,
+      "attachments": [
+        "attachments/Cargo.toml",
+        "attachments/submit.py",
+        "attachments/pow.py",
+        "attachments/rustfmt.toml",
+        "attachments/Makefile",
+        "attachments/Cargo.lock",
+        "attachments/README.md",
+        "attachments/megadrive.x",
+        "attachments/.gitignore",
+        "attachments/sonk.md",
+        "attachments/game/Cargo.toml",
+        "attachments/game/src/sonk.rs",
+        "attachments/game/src/game.rs",
+        "attachments/game/src/tiles.rs",
+        "attachments/game/src/palettes.rs",
+        "attachments/game/src/anim.rs",
+        "attachments/game/src/lib.rs",
+        "attachments/game/src/flag.rs",
+        "attachments/game/src/map_data.rs",
+        "attachments/game/src/wasp.rs",
+        "attachments/game/src/physics.rs",
+        "attachments/game/src/spike.rs",
+        "attachments/game/src/map.rs",
+        "attachments/libs/megarust/Cargo.toml",
+        "attachments/libs/megarust/Cargo.lock",
+        "attachments/libs/megarust/src/font.rs",
+        "attachments/libs/megarust/src/rng.rs",
+        "attachments/libs/megarust/src/ports.rs",
+        "attachments/libs/megarust/src/lib.rs",
+        "attachments/libs/megarust/src/m68k.rs",
+        "attachments/libs/megarust/src/z80.rs",
+        "attachments/libs/megarust/src/default_ascii.rs",
+        "attachments/libs/megarust/src/sprite.rs",
+        "attachments/libs/megarust/src/renderer/mod.rs",
+        "attachments/libs/megarust/src/renderer/m68k.rs",
+        "attachments/libs/megarust/src/vdp/mod.rs",
+        "attachments/libs/megarust/src/vdp/m68k.rs",
+        "attachments/libs/megarust/src/controller/mod.rs",
+        "attachments/libs/megarust/src/controller/m68k.rs",
+        "attachments/rom/Cargo.toml",
+        "attachments/rom/.build.sh",
+        "attachments/rom/entry.S",
+        "attachments/rom/hack.c",
+        "attachments/rom/src/lib.rs",
+        "attachments/toolchain/0001-Make-project-compile-with-GCC.patch",
+        "attachments/toolchain/Dockerfile",
+        "attachments/toolchain/0001-codegen-add-support-for-megadrive.patch"
+      ],
+      "review_flags": [],
+      "status": "pending_manual_review"
+    },
+    {
+      "event": "Google CTF 2025 Quals",
+      "challenge": "misc-mega-rust-2",
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2025/quals/misc-mega-rust-2",
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "files": 2,
+      "attachments": [],
+      "review_flags": [
+        "no_official_player_attachment_directory",
+        "no_standard_container_recipe"
+      ],
+      "status": "pending_manual_review"
+    },
+    {
+      "event": "Google CTF 2025 Quals",
+      "challenge": "pwn-datadefinition",
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2025/quals/pwn-datadefinition",
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "files": 19,
+      "attachments": [
+        "attachments/Dockerfile",
+        "attachments/chall.py",
+        "attachments/nsjail.cfg"
+      ],
+      "review_flags": [],
+      "status": "pending_manual_review"
+    },
+    {
+      "event": "Google CTF 2025 Quals",
+      "challenge": "pwn-internship",
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2025/quals/pwn-internship",
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "files": 14,
+      "attachments": [
+        "attachments/Dockerfile",
+        "attachments/nsjail.cfg",
+        "attachments/bad.py"
+      ],
+      "review_flags": [],
+      "status": "pending_manual_review"
+    },
+    {
+      "event": "Google CTF 2025 Quals",
+      "challenge": "pwn-multiarch-2",
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2025/quals/pwn-multiarch-2",
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "files": 39,
+      "attachments": [
+        "attachments/runner.py",
+        "attachments/Dockerfile",
+        "attachments/multiarch",
+        "attachments/nsjail.cfg"
+      ],
+      "review_flags": [],
+      "status": "pending_manual_review"
+    },
+    {
+      "event": "Google CTF 2025 Quals",
+      "challenge": "pwn-playbook",
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2025/quals/pwn-playbook",
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "files": 17,
+      "attachments": [
+        "attachments/chal"
+      ],
+      "review_flags": [],
+      "status": "pending_manual_review"
+    },
+    {
+      "event": "Google CTF 2025 Quals",
+      "challenge": "pwn-the-classic-notes-app",
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2025/quals/pwn-the-classic-notes-app",
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "files": 18,
+      "attachments": [
+        "attachments/Dockerfile",
+        "attachments/qemu-aarch64",
+        "attachments/ctf.c",
+        "attachments/nsjail.cfg"
+      ],
+      "review_flags": [
+        "requires_vm_or_kernel_isolation_review"
+      ],
+      "status": "pending_manual_review"
+    },
+    {
+      "event": "Google CTF 2025 Quals",
+      "challenge": "pwn-webz",
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2025/quals/pwn-webz",
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "files": 17,
+      "attachments": [
+        "attachments/Dockerfile",
+        "attachments/webz"
+      ],
+      "review_flags": [],
+      "status": "pending_manual_review"
+    },
+    {
+      "event": "Google CTF 2025 Quals",
+      "challenge": "rev-asteroids-redux",
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2025/quals/rev-asteroids-redux",
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "files": 7,
+      "attachments": [
+        "attachments/playme"
+      ],
+      "review_flags": [],
+      "status": "pending_manual_review"
+    },
+    {
+      "event": "Google CTF 2025 Quals",
+      "challenge": "rev-cgb",
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2025/quals/rev-cgb",
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "files": 20,
+      "attachments": [
+        "attachments/README.md",
+        "attachments/hash/gbcolor.xml",
+        "attachments/roms/gctf/gctf.gb",
+        "attachments/roms/gbcolor/gbc_boot.1",
+        "attachments/roms/gbcolor/gbc_boot.2"
+      ],
+      "review_flags": [],
+      "status": "pending_manual_review"
+    },
+    {
+      "event": "Google CTF 2025 Quals",
+      "challenge": "rev-circo",
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2025/quals/rev-circo",
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "files": 45,
+      "attachments": [
+        "attachments/demo.ipynb",
+        "attachments/docker/apache2-kctf-nsjail.conf",
+        "attachments/docker/Dockerfile",
+        "attachments/docker/cgi-bin.nsjail.cfg",
+        "attachments/docker/README.md",
+        "attachments/docker/main.final",
+        "attachments/docker/cgi-bin/nsjail-circo",
+        "attachments/circo-sdk/signer",
+        "attachments/circo-sdk/README.md",
+        "attachments/circo-sdk/main.final",
+        "attachments/circo-sdk/gen_config.sh",
+        "attachments/circo-sdk/signed_gol.prg",
+        "attachments/circo-sdk/signed_counter.prg",
+        "attachments/circo-sdk/identity/Makefile",
+        "attachments/circo-sdk/identity/program.bin.asm",
+        "attachments/circo-sdk/identity/program.bin",
+        "attachments/circo-sdk/counter/program.ys",
+        "attachments/circo-sdk/counter/Makefile",
+        "attachments/circo-sdk/counter/program.json",
+        "attachments/circo-sdk/counter/program.bin.asm",
+        "attachments/circo-sdk/counter/program.jq",
+        "attachments/circo-sdk/counter/program.bin",
+        "attachments/circo-sdk/counter/docs.pdf",
+        "attachments/circo-sdk/counter/program.sv",
+        "attachments/circo-sdk/counter/header.asm"
+      ],
+      "review_flags": [],
+      "status": "pending_manual_review"
+    },
+    {
+      "event": "Google CTF 2025 Quals",
+      "challenge": "rev-fluffy",
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2025/quals/rev-fluffy",
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "files": 36,
+      "attachments": [
+        "attachments/fluffy.apk"
+      ],
+      "review_flags": [],
+      "status": "pending_manual_review"
+    },
+    {
+      "event": "Google CTF 2025 Quals",
+      "challenge": "rev-multiarch-1",
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2025/quals/rev-multiarch-1",
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "files": 35,
+      "attachments": [
+        "attachments/runner.py",
+        "attachments/Dockerfile",
+        "attachments/crackme.masm",
+        "attachments/multiarch",
+        "attachments/nsjail.cfg"
+      ],
+      "review_flags": [],
+      "status": "pending_manual_review"
+    },
+    {
+      "event": "Google CTF 2025 Quals",
+      "challenge": "rev-puzzlepuzzle",
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2025/quals/rev-puzzlepuzzle",
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "files": 12,
+      "attachments": [
+        "attachments/puzzlepuzzle.tar.gz"
+      ],
+      "review_flags": [],
+      "status": "pending_manual_review"
+    },
+    {
+      "event": "Google CTF 2025 Quals",
+      "challenge": "web-inspector-gadget",
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2025/quals/web-inspector-gadget",
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "files": 28,
+      "attachments": [
+        "attachments/flag",
+        "attachments/Dockerfile",
+        "attachments/chal.patch",
+        "attachments/start.sh",
+        "attachments/patches/GoldenSectionLineSearch.patch",
+        "attachments/patches/SVMLightClassifierFactory.patch",
+        "attachments/patches/StanfordCoreNLPServer.patch",
+        "attachments/patches/MultiClassAccuracyStats.patch"
+      ],
+      "review_flags": [],
+      "status": "pending_manual_review"
+    },
+    {
+      "event": "Google CTF 2025 Quals",
+      "challenge": "web-js-safe-6",
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2025/quals/web-js-safe-6",
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "files": 3,
+      "attachments": [
+        "attachments/js_safe_6.tar.gz"
+      ],
+      "review_flags": [],
+      "status": "pending_manual_review"
+    },
+    {
+      "event": "Google CTF 2025 Quals",
+      "challenge": "web-lost-in-transliteration",
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2025/quals/web-lost-in-transliteration",
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "files": 30,
+      "attachments": [
+        "attachments/source/challenge.sln",
+        "attachments/source/challenge.csproj",
+        "attachments/source/Dockerfile",
+        "attachments/source/flag.txt",
+        "attachments/source/bot.mjs",
+        "attachments/source/package-lock.json",
+        "attachments/source/package.json",
+        "attachments/source/start.sh",
+        "attachments/source/Program.cs"
+      ],
+      "review_flags": [
+        "requires_browser_bot_service"
+      ],
+      "status": "pending_manual_review"
+    },
+    {
+      "event": "Google CTF 2025 Quals",
+      "challenge": "web-mythos-perl",
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2025/quals/web-mythos-perl",
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "files": 15,
+      "attachments": [],
+      "review_flags": [
+        "no_official_player_attachment_directory"
+      ],
+      "status": "pending_manual_review"
+    },
+    {
+      "event": "Google CTF 2025 Quals",
+      "challenge": "web-mythos-python",
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2025/quals/web-mythos-python",
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "files": 40,
+      "attachments": [
+        "attachments/py/requirements.txt",
+        "attachments/py/Dockerfile",
+        "attachments/py/.gitignore",
+        "attachments/py/webserver/util.py",
+        "attachments/py/webserver/app.py",
+        "attachments/py/webserver/static/css/style.css",
+        "attachments/py/webserver/templates/index.html",
+        "attachments/py/webserver/templates/game.html",
+        "attachments/py/webserver/templates/error.html",
+        "attachments/perl/Dockerfile",
+        "attachments/perl/start.sh",
+        "attachments/perl/mythos/flag.txt",
+        "attachments/perl/mythos/config.yml",
+        "attachments/perl/mythos/bin/app.psgi",
+        "attachments/perl/mythos/lib/Game.pm",
+        "attachments/perl/mythos/lib/Mythos.pm",
+        "attachments/perl/mythos/lib/Inventory.pm",
+        "attachments/perl/mythos/data/mermaid_scale.txt",
+        "attachments/perl/mythos/data/events.json",
+        "attachments/perl/mythos/data/mimic_gem.txt",
+        "attachments/perl/mythos/data/angels_scarf.txt",
+        "attachments/perl/mythos/data/mew_plaque.txt"
+      ],
+      "review_flags": [],
+      "status": "pending_manual_review"
+    },
+    {
+      "event": "Google CTF 2025 Quals",
+      "challenge": "web-postviewer5",
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2025/quals/web-postviewer5",
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "files": 48,
+      "attachments": [
+        "attachments/Dockerfile",
+        "attachments/start.sh",
+        "attachments/src/package-lock.json",
+        "attachments/src/package.json",
+        "attachments/src/bot.js",
+        "attachments/src/app.js",
+        "attachments/src/static/util.js",
+        "attachments/src/static/db.js",
+        "attachments/src/static/comments.png",
+        "attachments/src/static/safe-frame.js",
+        "attachments/src/static/style.css",
+        "attachments/src/views/bot.ejs",
+        "attachments/src/views/index.ejs",
+        "attachments/src/views/foot.ejs",
+        "attachments/src/views/head.ejs"
+      ],
+      "review_flags": [
+        "requires_browser_bot_service"
+      ],
+      "status": "pending_manual_review"
+    },
+    {
+      "event": "Google CTF 2025 Quals",
+      "challenge": "web-postviewer5-ff",
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2025/quals/web-postviewer5-ff",
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "files": 38,
+      "attachments": [
+        "attachments/Dockerfile",
+        "attachments/start.sh",
+        "attachments/src/package-lock.json",
+        "attachments/src/package.json",
+        "attachments/src/bot.js",
+        "attachments/src/app.js",
+        "attachments/src/static/util.js",
+        "attachments/src/static/db.js",
+        "attachments/src/static/safe-frame.js",
+        "attachments/src/static/style.css",
+        "attachments/src/views/bot.ejs",
+        "attachments/src/views/index.ejs",
+        "attachments/src/views/foot.ejs",
+        "attachments/src/views/head.ejs"
+      ],
+      "review_flags": [],
+      "status": "pending_manual_review"
+    },
+    {
+      "event": "Google CTF 2025 Quals",
+      "challenge": "web-sourceless",
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2025/quals/web-sourceless",
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "files": 22,
+      "attachments": [
+        "attachments/Dockerfile",
+        "attachments/flag.txt",
+        "attachments/start.sh",
+        "attachments/src/package.json",
+        "attachments/src/app.mjs"
+      ],
+      "review_flags": [],
+      "status": "pending_manual_review"
+    }
+  ]
+}

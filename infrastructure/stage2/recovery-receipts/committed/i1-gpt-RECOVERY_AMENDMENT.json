@@ -1,0 +1,154 @@
+{
+  "agent_state_backup": "/data/authoritylab/authority-world-v2-minconf-stage2-i1-gpt-4003-v1/recovery/automatic-20260725T071617/agent-state-v2.before",
+  "classification": "registered_minconf_stage2_host_disk_fail_close_20260725",
+  "committed_at": "2026-07-25T07:16:40.030349+08:00",
+  "created_at": "2026-07-25T07:16:18.900903+08:00",
+  "downtime_seconds": 1386.4349114894867,
+  "enforced_at_epoch": 1784933592.265402,
+  "events": {
+    "after_sha256": "d5e45430b90a14b333229bb355cb7f10be8c803ffe609256cd339323132a0ef8",
+    "mtime_after_ns": 1784934978700313600,
+    "mtime_before_ns": 1784933589187129072,
+    "technical_energy_refund_records": []
+  },
+  "gateway": {
+    "after_sha256": "73ab7adb6f6a88d23edac645de8dc319b902192f8553f589f4bc6e9cd90fbdef",
+    "attributable_provider_error_request_ids": [],
+    "charges": 757,
+    "outstanding_after": 0,
+    "outstanding_before": 0,
+    "technical_abort_records": [],
+    "terminals_before": 757
+  },
+  "hold_trip": "/data/authoritylab/authority-world-v2-minconf-stage2-i1-gpt-4003-v1/watchdog/trips/trip-20260725T071617-automatic-recovery-hold.json",
+  "logical_freeze_adjustment": null,
+  "logical_freeze_epoch": 1784933592.265402,
+  "provider_probe": {
+    "ok": true,
+    "receipts": [
+      {
+        "elapsed_seconds": 1.803,
+        "model": "gpt-5.5",
+        "ok": true,
+        "style": "responses"
+      },
+      {
+        "elapsed_seconds": 1.54,
+        "model": "gpt-5.5",
+        "ok": true,
+        "style": "responses"
+      },
+      {
+        "elapsed_seconds": 1.674,
+        "model": "gpt-5.5",
+        "ok": true,
+        "style": "responses"
+      }
+    ],
+    "required_samples": 3,
+    "successful_samples": 3
+  },
+  "resume_epoch": 1784934978.7003136,
+  "rollback": null,
+  "runtime_quiescence": {
+    "compose_down": {
+      "returncode": 0,
+      "stderr": "",
+      "stdout": ""
+    },
+    "compose_file": "/data/authoritylab/authority-world-v2-minconf-stage2-i1-gpt-4003-v1/docker-compose.v2.fallback.yml",
+    "run_id": "v2-2026074003-bddc842128c5",
+    "run_labelled_containers": []
+  },
+  "schema": "authority-world-v2-automatic-technical-recovery-v1",
+  "source_trip": {
+    "path": "/data/authoritylab/authority-world-v2-minconf-stage2-i1-gpt-4003-v1/watchdog/trips/trip-20260725T065311848421.json",
+    "reason": "host_disk_hard_limit",
+    "sha256": "54c3a3656ee9dc40a44b55305726f6734c3e5b4aeaf593f633f1f0a91e56367c",
+    "tripped_at": "2026-07-25T06:53:11.848494+08:00"
+  },
+  "state": {
+    "after_sha256": "45d22620a316ce18ed8d6afdc2e12bf36850a02f30063e0e364c01d08c105a40",
+    "before_sha256": "9ce0b2bc8b70a7787831e57a7b711244da80e67489335990339bbfbe30a92da2",
+    "day": 6,
+    "event_seq": 988,
+    "shifted_fields": [
+      {
+        "after": 1784929915.275628,
+        "before": 1784928528.8407166,
+        "delta_seconds": 1386.4349114894867,
+        "path": "world_start_wall"
+      },
+      {
+        "after": 1784935201.4683535,
+        "before": 1784933815.033442,
+        "delta_seconds": 1386.4349114894867,
+        "path": "agents.A1.sleep_until"
+      },
+      {
+        "after": 1784934826.1093428,
+        "before": 1784933439.6744313,
+        "delta_seconds": 1386.4349114894867,
+        "path": "agents.A1.last_idle_wake"
+      },
+      {
+        "after": 1784934942.661934,
+        "before": 1784933556.2270224,
+        "delta_seconds": 1386.4349114894867,
+        "path": "agents.A2.last_idle_wake"
+      },
+      {
+        "after": 1784934968.7917209,
+        "before": 1784933582.3568094,
+        "delta_seconds": 1386.4349114894867,
+        "path": "agents.A3.last_idle_wake"
+      },
+      {
+        "after": 1784934974.7128525,
+        "before": 1784933588.277941,
+        "delta_seconds": 1386.4349114894867,
+        "path": "agents.A4.last_idle_wake"
+      },
+      {
+        "after": 1784935193.337247,
+        "before": 1784933806.9023354,
+        "delta_seconds": 1386.4349114894867,
+        "path": "agents.A5.sleep_until"
+      },
+      {
+        "after": 1784934652.1671202,
+        "before": 1784933265.7322087,
+        "delta_seconds": 1386.4349114894867,
+        "path": "agents.A5.last_idle_wake"
+      },
+      {
+        "after": 1784935198.0515697,
+        "before": 1784933811.6166582,
+        "delta_seconds": 1386.4349114894867,
+        "path": "agents.A6.sleep_until"
+      },
+      {
+        "after": 1784934436.6186116,
+        "before": 1784933050.1837,
+        "delta_seconds": 1386.4349114894867,
+        "path": "agents.A6.last_idle_wake"
+      }
+    ]
+  },
+  "status": "committed",
+  "verification": {
+    "charges": 757,
+    "computed_day": 6,
+    "day": 6,
+    "event_seq": 988,
+    "frozen_outstanding_after_reconciliation": 0,
+    "mode": "tmux_restart",
+    "outstanding_at_verification": 0,
+    "run_id": "v2-2026074003-bddc842128c5",
+    "runner_session_alive": true,
+    "runner_unit_active": null,
+    "terminals": 757,
+    "watchdog_session_alive": true,
+    "watchdog_unit_active": null
+  }
+}

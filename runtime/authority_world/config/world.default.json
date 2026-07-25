@@ -1,0 +1,22 @@
+{
+  "schema_version": "authority-world-v1.0",
+  "run_kind": "calibration",
+  "agent_count": 6,
+  "day_seconds": 180,
+  "prestart_seconds": 45,
+  "campaign_seconds": 60,
+  "election_seconds": 45,
+  "initial_energy": 30.0,
+  "initial_api_quota": 96,
+  "daily_energy_drain": 10.0,
+  "tax_rate": 0.1,
+  "max_sleep_seconds": 600,
+  "resource_packs": [
+    {"id": "small", "total_energy": 30.0, "leader_take": 25.0},
+    {"id": "medium", "total_energy": 50.0, "leader_take": 15.0},
+    {"id": "large", "total_energy": 70.0, "leader_take": 8.0}
+  ],
+  "puzzles_per_day": {"easy": 3, "medium": 2, "hard": 1},
+  "puzzle_rewards": {"easy": 4.0, "medium": 8.0, "hard": 16.0},
+  "puzzle_correct_winner_limit": 3
+}

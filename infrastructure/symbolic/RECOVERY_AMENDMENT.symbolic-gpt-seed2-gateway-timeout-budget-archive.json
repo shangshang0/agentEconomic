@@ -1,0 +1,61 @@
+{
+  "schema": "authority-world-v2-post-recovery-infrastructure-activation-amendment-v1",
+  "status": "committed",
+  "created_at": "2026-07-24T23:57:19.487825+08:00",
+  "committed_at": "2026-07-25T00:02:00+08:00",
+  "classification": "registered_symbolic_parallel_with_disclosed_uncompensated_gateway_activation_micro_pause",
+  "source_trip": {
+    "path": "/data/authoritylab/authority-world-v2-symbolic-gpt-2026074002-sixway-v2/recovery/manual-gateway-timeout-budget-20260724T235714/ACTIVATION_AMENDMENT.json",
+    "reason": "activate_end_to_end_gateway_provider_timeout_budget_after_repeated_provider_call_deadlock_or_timeout",
+    "sha256": "ae231dbb9d88ae9934e3800df433a683f7ef7e45edf945ca4987907b4f9cba6d"
+  },
+  "resume_epoch": 1784908638.945492,
+  "downtime_seconds": 4.7112345695495605,
+  "logical_freeze_adjustment": {
+    "attempted_seconds": 4.7112345695495605,
+    "persisted": false,
+    "effective_seconds": 0.0,
+    "uncompensated_seconds": 4.7112345695495605,
+    "correction_receipt": "ACTIVATION_AMENDMENT_CORRECTION.json",
+    "correction_sha256": "aa830208d722702c139555fb9e38d0471f1df3f2917cf14da7e03c3f0a3386c3"
+  },
+  "correction": {
+    "reason": "The backend keeps world state in memory. The controller shifted the on-disk state while the backend was paused, but the resumed backend subsequently persisted its pre-shift in-memory state and overwrote that adjustment.",
+    "original_receipt_sha256": "ae231dbb9d88ae9934e3800df433a683f7ef7e45edf945ca4987907b4f9cba6d",
+    "claimed_time_compensation_seconds": 4.7112345695495605,
+    "persisted_time_compensation_seconds": 0.0,
+    "uncompensated_infrastructure_pause_seconds": 4.7112345695495605,
+    "world_start_wall_before_attempted_shift": 1784903544.7900975,
+    "world_start_wall_written_by_controller": 1784903549.501332,
+    "world_start_wall_observed_after_backend_resumed": 1784903544.7900975,
+    "evidence_treatment": "retain with a disclosed uncompensated infrastructure micro-pause and require terminal technical-amendment review"
+  },
+  "gateway": {
+    "source_sha256_before": "67dc5dbdcddee4f42758a0fb934184dd19c935aec1a817634c96447b563f2858",
+    "source_sha256_after": "5e5a95663d6646e21e4e491d16b75bdd3c1c9225302aad61e56333f362f234e1",
+    "outstanding_before": 0,
+    "outstanding_after": 0,
+    "restart_count_after": 0
+  },
+  "tests": {
+    "gateway_retry_budget": "2 passed",
+    "full_suite": "65 passed"
+  },
+  "controller": {
+    "path": "/data/authoritylab/recovery-tools/activate_gateway_timeout_budget.py",
+    "sha256": "5f4e5645a4e122d17b4ea043e63cd4ef1ad8521564fdab178e55a2fc315fb928"
+  },
+  "verification": {
+    "run_id": "v2-2026074002-9f8e3ee32439",
+    "mode": "quiescent_gateway_recreate",
+    "day": 6,
+    "event_seq": 1110,
+    "runner_session_alive": true,
+    "watchdog_session_alive": true,
+    "agent_runtime_expected": 6,
+    "agent_runtime_observed": 6,
+    "provider_errors_after": 0,
+    "gateway_source_sha256": "5e5a95663d6646e21e4e491d16b75bdd3c1c9225302aad61e56333f362f234e1",
+    "time_compensation_persisted": false
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agent Economic Auditor"
+  short_description: "Audit and reproduce agent-economics experiments"
+  default_prompt: "Use $agent-economic-auditor to verify a world and reproduce its registered metrics."

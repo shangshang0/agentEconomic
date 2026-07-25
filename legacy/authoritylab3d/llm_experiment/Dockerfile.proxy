@@ -1,0 +1,7 @@
+FROM docker.1ms.run/library/python:3.12-slim
+WORKDIR /app
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1
+COPY backend/__init__.py backend/tcp_proxy.py ./backend/
+RUN useradd --create-home --uid 10004 observer
+USER observer
+CMD ["python", "-m", "backend.tcp_proxy"]

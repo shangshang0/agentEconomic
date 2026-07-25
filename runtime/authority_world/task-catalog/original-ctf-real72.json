@@ -1,0 +1,2113 @@
+{
+  "audit_sha256": "e7d5fdd62f59a50058bc46dd52fdbe57b391b7425037ca8122491859f54cf3b5",
+  "schema": "authority-world-original-ctf-run-v1",
+  "selection_policy": "Stable event/category/name ordering; first N ready attachments; repeating easy/medium/hard assignment because official difficulty is unavailable.",
+  "task_count": 72,
+  "tasks": [
+    {
+      "category": null,
+      "commit": "9d37e8d0aea3762d76c8b4ca36fce108627ce492",
+      "event": "DEF CON CTF Qualifiers 2023",
+      "handout_paths": [
+        "DEFCON23-kkkkklik/kkkkklik.exe"
+      ],
+      "id": "DEFCON23-kkkkklik",
+      "mode": "original_attachment",
+      "official_flag": "flag{vb6_and_blowfish_fun_from_the_old_days}",
+      "official_name": "kkkkklik",
+      "reward": 14,
+      "sha256": {
+        "DEFCON23-kkkkklik/kkkkklik.exe": "6bfd62f7fc7f23ca7ed2805165e5d6db59d2d378c8c028f1e4b9261a8d5f91e7"
+      },
+      "source": "https://github.com/Nautilus-Institute/quals-2023/tree/9d37e8d0aea3762d76c8b4ca36fce108627ce492/kkkkklik",
+      "tier": "easy"
+    },
+    {
+      "category": null,
+      "commit": "9d37e8d0aea3762d76c8b4ca36fce108627ce492",
+      "event": "DEF CON CTF Qualifiers 2023",
+      "handout_paths": [
+        "DEFCON23-pawan-gupta/handouts/pawan-gupta-a/README.md",
+        "DEFCON23-pawan-gupta/handouts/pawan-gupta-a/handout.py",
+        "DEFCON23-pawan-gupta/handouts/pawan-gupta-b/README.md",
+        "DEFCON23-pawan-gupta/handouts/pawan-gupta-b/handout.c",
+        "DEFCON23-pawan-gupta/handouts/pawan-gupta-b/handout.py",
+        "DEFCON23-pawan-gupta/handouts/pawan-gupta-c/README.md"
+      ],
+      "id": "DEFCON23-pawan-gupta",
+      "mode": "original_attachment",
+      "official_flag": "flag{pawan_gupta_can_you_keep_this_flag_secret?}",
+      "official_name": "pawan_gupta",
+      "reward": 22,
+      "sha256": {
+        "DEFCON23-pawan-gupta/handouts/pawan-gupta-a/README.md": "1af5e34b85fbd442f21e78b1a9be025539b82aa6dc80167eba18de949bca03d7",
+        "DEFCON23-pawan-gupta/handouts/pawan-gupta-a/handout.py": "5936391adab4bda5c4aa02b45cdcc835fe996fadc762f13f639aa8913aa64232",
+        "DEFCON23-pawan-gupta/handouts/pawan-gupta-b/README.md": "865cbe8471681f935719d6d68e1a78e1594dc1f09e0326ec446cf079b4c7a69a",
+        "DEFCON23-pawan-gupta/handouts/pawan-gupta-b/handout.c": "ac125758b34b500d1098301ab50ff16e792ceeedb7befcfae8effeb965970d6c",
+        "DEFCON23-pawan-gupta/handouts/pawan-gupta-b/handout.py": "796f6995a5728bf82ba8a5e3fc4db97df9d351c7fa8856efedbcf77dabaa0603",
+        "DEFCON23-pawan-gupta/handouts/pawan-gupta-c/README.md": "0a6a85bf6c85fca9a694466b29dbf470f51a387c20af2639ce98b368a6f16e39"
+      },
+      "source": "https://github.com/Nautilus-Institute/quals-2023/tree/9d37e8d0aea3762d76c8b4ca36fce108627ce492/pawan_gupta",
+      "tier": "medium"
+    },
+    {
+      "category": null,
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "event": "Google CTF 2021 Quals",
+      "handout_paths": [
+        "GCTF21-crypto-H1/attachments/chall.py",
+        "GCTF21-crypto-H1/attachments/output.txt"
+      ],
+      "id": "GCTF21-crypto-H1",
+      "mode": "original_attachment",
+      "official_flag": "CTF{But_in_real_life_devs_would_never_use_such_a_buggy_RNG_right?}",
+      "official_name": "crypto-H1",
+      "reward": 34,
+      "sha256": {
+        "GCTF21-crypto-H1/attachments/chall.py": "0cf7d2351dbc933ac66f406d7879ae21a5f54690870e58c64274971aa53fcc41",
+        "GCTF21-crypto-H1/attachments/output.txt": "0a37511445b3f95c76ff16afb54d7d5df3a8000b77b64c59976f82cd614528a0"
+      },
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2021/quals/crypto-H1",
+      "tier": "hard"
+    },
+    {
+      "category": null,
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "event": "Google CTF 2021 Quals",
+      "handout_paths": [
+        "GCTF21-hw-parking/attachments/game.py",
+        "GCTF21-hw-parking/attachments/level1",
+        "GCTF21-hw-parking/attachments/level2",
+        "GCTF21-hw-parking/attachments/run.sh"
+      ],
+      "id": "GCTF21-hw-parking",
+      "mode": "original_attachment",
+      "official_flag": "CTF{2TheBr1m}",
+      "official_name": "hw-parking",
+      "reward": 14,
+      "sha256": {
+        "GCTF21-hw-parking/attachments/game.py": "9c3dae13482e3c216e1ec8f1293de5e3fb5005904922f642ea817a9b688f6b12",
+        "GCTF21-hw-parking/attachments/level1": "71e41f30b375f65cdb2fa8823dadf423c0bd0ce0dc5f9be7abb1e474dc4a01c1",
+        "GCTF21-hw-parking/attachments/level2": "43b49c382cc6d90445fd8fae15181d31e720798d77be0fbe109434c21ca12c6f",
+        "GCTF21-hw-parking/attachments/run.sh": "f6aa8406442fcfd5d1715c0a2c20055cf56e34df46fd7dd4018f158f3755ddb5"
+      },
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2021/quals/hw-parking",
+      "tier": "easy"
+    },
+    {
+      "category": null,
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "event": "Google CTF 2021 Quals",
+      "handout_paths": [
+        "GCTF21-misc-raid/attachments/chall.tar.gz"
+      ],
+      "id": "GCTF21-misc-raid",
+      "mode": "original_attachment",
+      "official_flag": "CTF{I_g0t_Str1p3s}",
+      "official_name": "misc-raid",
+      "reward": 22,
+      "sha256": {
+        "GCTF21-misc-raid/attachments/chall.tar.gz": "5f422d18bfc84d21a81f67ec85283e074acd5fe44c227a05d71d73dd521b787b"
+      },
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2021/quals/misc-raid",
+      "tier": "medium"
+    },
+    {
+      "category": null,
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "event": "Google CTF 2021 Quals",
+      "handout_paths": [
+        "GCTF21-misc-zippi/attachments/challenge.zip"
+      ],
+      "id": "GCTF21-misc-zippi",
+      "mode": "original_attachment",
+      "official_flag": "CTF{!-!OLE-E-COM!7RESSION}",
+      "official_name": "misc-zippi",
+      "reward": 34,
+      "sha256": {
+        "GCTF21-misc-zippi/attachments/challenge.zip": "9174278632c877996d43430ee158e78b4c45cf3278991b3c28783c9f7c3237cf"
+      },
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2021/quals/misc-zippi",
+      "tier": "hard"
+    },
+    {
+      "category": null,
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "event": "Google CTF 2021 Quals",
+      "handout_paths": [
+        "GCTF21-rev-cpp/attachments/cpp.c"
+      ],
+      "id": "GCTF21-rev-cpp",
+      "mode": "original_attachment",
+      "official_flag": "CTF{pr3pr0cess0r_pr0fe5sor}",
+      "official_name": "rev-cpp",
+      "reward": 14,
+      "sha256": {
+        "GCTF21-rev-cpp/attachments/cpp.c": "a6e79373421b814b3c0f8e7d40ac7f5bff2eebf2325699370052998396572dde"
+      },
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2021/quals/rev-cpp",
+      "tier": "easy"
+    },
+    {
+      "category": null,
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "event": "Google CTF 2021 Quals",
+      "handout_paths": [
+        "GCTF21-rev-hexagon/attachments/challenge"
+      ],
+      "id": "GCTF21-rev-hexagon",
+      "mode": "original_attachment",
+      "official_flag": "CTF{IDigVLIW}",
+      "official_name": "rev-hexagon",
+      "reward": 22,
+      "sha256": {
+        "GCTF21-rev-hexagon/attachments/challenge": "eb1260dfa8bbc5bba3b85acaae1ac8298cb481ad96e0f795833f551b8228b50f"
+      },
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2021/quals/rev-hexagon",
+      "tier": "medium"
+    },
+    {
+      "category": null,
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "event": "Google CTF 2021 Quals",
+      "handout_paths": [
+        "GCTF21-rev-weather/attachments/weather"
+      ],
+      "id": "GCTF21-rev-weather",
+      "mode": "original_attachment",
+      "official_flag": "CTF{curs3d_r3curs1ve_pr1ntf}",
+      "official_name": "rev-weather",
+      "reward": 34,
+      "sha256": {
+        "GCTF21-rev-weather/attachments/weather": "f4f52e4151221c5dc25e2fb429057afb1dd508a8caae00f13ee1ce94f06cb1ef"
+      },
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2021/quals/rev-weather",
+      "tier": "hard"
+    },
+    {
+      "category": null,
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "event": "Google CTF 2022 Quals",
+      "handout_paths": [
+        "GCTF22-crypto-cycling/attachments/chall.py"
+      ],
+      "id": "GCTF22-crypto-cycling",
+      "mode": "original_attachment",
+      "official_flag": "CTF{Recycling_Is_Great}",
+      "official_name": "crypto-cycling",
+      "reward": 14,
+      "sha256": {
+        "GCTF22-crypto-cycling/attachments/chall.py": "f65513cbc64fd3bbefabc49e976603005ae89d1aa4fdc3a4860150d61b25da37"
+      },
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2022/quals/crypto-cycling",
+      "tier": "easy"
+    },
+    {
+      "category": null,
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "event": "Google CTF 2022 Quals",
+      "handout_paths": [
+        "GCTF22-crypto-enigma/attachments/.bazelrc",
+        "GCTF22-crypto-enigma/attachments/README.md",
+        "GCTF22-crypto-enigma/attachments/WORKSPACE",
+        "GCTF22-crypto-enigma/attachments/encode.py",
+        "GCTF22-crypto-enigma/attachments/encrypt_modern.py",
+        "GCTF22-crypto-enigma/attachments/enigma/BUILD",
+        "GCTF22-crypto-enigma/attachments/enigma/Makefile",
+        "GCTF22-crypto-enigma/attachments/enigma/enigma.h",
+        "GCTF22-crypto-enigma/attachments/enigma/machine.cc",
+        "GCTF22-crypto-enigma/attachments/enigma/plugboard.h",
+        "GCTF22-crypto-enigma/attachments/enigma/reflector.h",
+        "GCTF22-crypto-enigma/attachments/enigma/rotors.h",
+        "GCTF22-crypto-enigma/attachments/messages/may_09_2022/comet.ciphertext.txt",
+        "GCTF22-crypto-enigma/attachments/messages/may_09_2022/comet.fernet.txt",
+        "GCTF22-crypto-enigma/attachments/messages/may_09_2022/comet.original.txt",
+        "GCTF22-crypto-enigma/attachments/messages/may_09_2022/comet.plaintext.txt",
+        "GCTF22-crypto-enigma/attachments/messages/may_09_2022/settings",
+        "GCTF22-crypto-enigma/attachments/messages/may_10_2022/Sidsel_Langroeckchen.ciphertext.txt",
+        "GCTF22-crypto-enigma/attachments/messages/may_10_2022/Sidsel_Langroeckchen.fernet.txt",
+        "GCTF22-crypto-enigma/attachments/messages/may_10_2022/Sidsel_Langroeckchen.original.txt",
+        "GCTF22-crypto-enigma/attachments/messages/may_10_2022/Sidsel_Langroeckchen.plaintext.txt",
+        "GCTF22-crypto-enigma/attachments/messages/may_10_2022/settings",
+        "GCTF22-crypto-enigma/attachments/messages/may_11_2022/Der_Einzige.ciphertext.txt",
+        "GCTF22-crypto-enigma/attachments/messages/may_11_2022/Der_Einzige.fernet.txt",
+        "GCTF22-crypto-enigma/attachments/messages/may_11_2022/Der_Einzige.original.txt",
+        "GCTF22-crypto-enigma/attachments/messages/may_11_2022/Der_Einzige.plaintext.txt",
+        "GCTF22-crypto-enigma/attachments/messages/may_11_2022/settings",
+        "GCTF22-crypto-enigma/attachments/messages/may_12_2022/flag.ciphertext.txt",
+        "GCTF22-crypto-enigma/attachments/messages/may_12_2022/flag.fernet.txt",
+        "GCTF22-crypto-enigma/attachments/messages/may_13_2022/africa.ciphertext.txt",
+        "GCTF22-crypto-enigma/attachments/messages/may_13_2022/africa.fernet.txt",
+        "GCTF22-crypto-enigma/attachments/messages/may_13_2022/africa.original.txt",
+        "GCTF22-crypto-enigma/attachments/messages/may_13_2022/africa.plaintext.txt",
+        "GCTF22-crypto-enigma/attachments/messages/may_13_2022/settings",
+        "GCTF22-crypto-enigma/attachments/messages/may_14_2022/flag2.ciphertext.txt",
+        "GCTF22-crypto-enigma/attachments/messages/may_14_2022/flag2.fernet.txt",
+        "GCTF22-crypto-enigma/attachments/messages/may_15_2022/schuljahresabschluss.ciphertext.txt",
+        "GCTF22-crypto-enigma/attachments/messages/may_15_2022/schuljahresabschluss.fernet.txt",
+        "GCTF22-crypto-enigma/attachments/messages/may_15_2022/schuljahresabschluss.original.txt",
+        "GCTF22-crypto-enigma/attachments/messages/may_15_2022/schuljahresabschluss.plaintext.txt",
+        "GCTF22-crypto-enigma/attachments/messages/may_15_2022/settings"
+      ],
+      "id": "GCTF22-crypto-enigma",
+      "mode": "original_attachment",
+      "official_flag": "CTF{DU HAST GETAN, WAS TURING NICHT KONNTE}",
+      "official_name": "crypto-enigma",
+      "reward": 22,
+      "sha256": {
+        "GCTF22-crypto-enigma/attachments/.bazelrc": "92774cc83ef6da0e1093e583f9f63968129bdbc49611fa3bcbe57089fa85610d",
+        "GCTF22-crypto-enigma/attachments/README.md": "b93cf039f20f67adf8f778a337e2867b9df260f8b1f65779dfed9ba759de75a8",
+        "GCTF22-crypto-enigma/attachments/WORKSPACE": "7137c559a469d77945b978f6434152c30c26d8b8fe6236fb0aeaa7319d176456",
+        "GCTF22-crypto-enigma/attachments/encode.py": "ef3e53a91e4f2ef6c4eaaa2f4766c8c535de220d97205abff1a3d7200169609a",
+        "GCTF22-crypto-enigma/attachments/encrypt_modern.py": "77089a1e481ec691531df9944faf7641425c388b9c3efedaea1f3c9889574045",
+        "GCTF22-crypto-enigma/attachments/enigma/BUILD": "1b130d6bcb511bc82737585faee440911fe5b04206dbaac130eef8a8923b9259",
+        "GCTF22-crypto-enigma/attachments/enigma/Makefile": "b5aa791850e6e0af22ca7ae9ee6813ff219c9670dac6fbf2de9c06578d4d01a2",
+        "GCTF22-crypto-enigma/attachments/enigma/enigma.h": "9741074dddf97224b5662927aeaeb723c185ed988c1a52a9ee9a29411a711dd3",
+        "GCTF22-crypto-enigma/attachments/enigma/machine.cc": "ebd88721483759b43980970a82f7eb2f75d0be0fd373ef47201205729fa5086b",
+        "GCTF22-crypto-enigma/attachments/enigma/plugboard.h": "11ebab566b39a6e49b5d4d48187ec25ac84f6d4e1ff3fb05c2136d53468c3cb1",
+        "GCTF22-crypto-enigma/attachments/enigma/reflector.h": "f6f8fa1f91c8f0bcadbce2ebd00bd86c1284c7816ddd0af984b9d8fc8eda64a5",
+        "GCTF22-crypto-enigma/attachments/enigma/rotors.h": "a750f031cc02e13d0a0067e21c74eb8cdf843f4b429b985e5a902e72abd2ab46",
+        "GCTF22-crypto-enigma/attachments/messages/may_09_2022/comet.ciphertext.txt": "ac89bd774df41a6cd55553e35c83c805ff59a51e7dc03c8aac42eb86c64b39cc",
+        "GCTF22-crypto-enigma/attachments/messages/may_09_2022/comet.fernet.txt": "a96f9cbd051bceffc0fb720c3d64970e4c2a745ea152786cad1c2e9a811245bb",
+        "GCTF22-crypto-enigma/attachments/messages/may_09_2022/comet.original.txt": "55013ebf5895911c038a6e9b8aab74aefdd5fccecdc3d70de96d36bda2bd6d46",
+        "GCTF22-crypto-enigma/attachments/messages/may_09_2022/comet.plaintext.txt": "98d50d93fe708ded02056cad506e2f9b910ed182ebcc60300b2e5845b9dbd7d0",
+        "GCTF22-crypto-enigma/attachments/messages/may_09_2022/settings": "1354eef06bbd13c46790166bc37c691c420e4f47c6d962bdd5df56079a65f296",
+        "GCTF22-crypto-enigma/attachments/messages/may_10_2022/Sidsel_Langroeckchen.ciphertext.txt": "f22aa9c15319e4dddfb22292ea5bc3dc61397ae6b8ce47867fa2684beec5283e",
+        "GCTF22-crypto-enigma/attachments/messages/may_10_2022/Sidsel_Langroeckchen.fernet.txt": "51a379e4f0a858cbebaaeefc1310328ff070fb375aabb11e275aed56b351cf8a",
+        "GCTF22-crypto-enigma/attachments/messages/may_10_2022/Sidsel_Langroeckchen.original.txt": "6e46709b070531ecb8a4271b08e81973ca4b88f698e1d909fcbd80736e585678",
+        "GCTF22-crypto-enigma/attachments/messages/may_10_2022/Sidsel_Langroeckchen.plaintext.txt": "cfa2f6455c645e3a08ae5ce8685de6863007619e15b7fa993e4f6eca62fda576",
+        "GCTF22-crypto-enigma/attachments/messages/may_10_2022/settings": "51ab95ba5155c2e26f895226dbc973040d34fea1858df7e036a0f323c845089f",
+        "GCTF22-crypto-enigma/attachments/messages/may_11_2022/Der_Einzige.ciphertext.txt": "8379af2d44cc928d78c6a0e697198f2428aba13a44aa820eae071e7afd7e7db6",
+        "GCTF22-crypto-enigma/attachments/messages/may_11_2022/Der_Einzige.fernet.txt": "7884f34cd4b3934abed3c21817c41da13482a53ea8b9c9aa09e29f3b49d1b5c3",
+        "GCTF22-crypto-enigma/attachments/messages/may_11_2022/Der_Einzige.original.txt": "4db9cdedcf31f52e6b37b1490fabfb319694ada9a4ff0c8fbffc443484882911",
+        "GCTF22-crypto-enigma/attachments/messages/may_11_2022/Der_Einzige.plaintext.txt": "8d67b004a539a4244d424f4c58713201dfc4aad01565d278988a9b71ce61cd21",
+        "GCTF22-crypto-enigma/attachments/messages/may_11_2022/settings": "91c0dc0660900222f7ee24ee41378b6bb684c0ce53f5f958e55a90281844803c",
+        "GCTF22-crypto-enigma/attachments/messages/may_12_2022/flag.ciphertext.txt": "03c9f2d5813ea5074cc763a54b56a4d2669b0022e8193d695bda90f0b3b25dc8",
+        "GCTF22-crypto-enigma/attachments/messages/may_12_2022/flag.fernet.txt": "feecff29ca6bd309cb37c76c373afd15d8f8b87fde95c943967f425abb6cc1e9",
+        "GCTF22-crypto-enigma/attachments/messages/may_13_2022/africa.ciphertext.txt": "dfef169327e0129a9a8c6043cc3f7dbbfe28f4624fa0709e59faa6f173731fb9",
+        "GCTF22-crypto-enigma/attachments/messages/may_13_2022/africa.fernet.txt": "25c6610521c2104668b3e0270cbd02115c5855f57c3755d65da5ded29f9a26ad",
+        "GCTF22-crypto-enigma/attachments/messages/may_13_2022/africa.original.txt": "238c7f2345fdd703390875f50e3336b4a8fbaf0c1fb41301a0282e2de45847b6",
+        "GCTF22-crypto-enigma/attachments/messages/may_13_2022/africa.plaintext.txt": "2634e5223a39543bd9a0dcfb95dd035ea371d247c3b8fcad6d016bfd57d67f74",
+        "GCTF22-crypto-enigma/attachments/messages/may_13_2022/settings": "b3579bb4f9755c7016c208a9b074f83c1090c3e1fe376fcaa68518ed1dbfe36a",
+        "GCTF22-crypto-enigma/attachments/messages/may_14_2022/flag2.ciphertext.txt": "121b268647374089268b3f914b998d414239d2ff1802d9141a135d04f62d9abf",
+        "GCTF22-crypto-enigma/attachments/messages/may_14_2022/flag2.fernet.txt": "ea189e7ccc94723265325d82f5bc8878d50136df64dc7d3b548321b806113637",
+        "GCTF22-crypto-enigma/attachments/messages/may_15_2022/schuljahresabschluss.ciphertext.txt": "0d8e7f4dba03d4458e310ef4a28d2b9772ce34a5a049fe9847364bf998aebd01",
+        "GCTF22-crypto-enigma/attachments/messages/may_15_2022/schuljahresabschluss.fernet.txt": "d42f54765e386f3e266b02824efc4130ae0714f487f2620c99a79a4d75d6ee16",
+        "GCTF22-crypto-enigma/attachments/messages/may_15_2022/schuljahresabschluss.original.txt": "78a53cca57cbbde077f4e403426809bbb82a19a8f638cd638f31b9c6f96f07a9",
+        "GCTF22-crypto-enigma/attachments/messages/may_15_2022/schuljahresabschluss.plaintext.txt": "66885dc072d9adc30115421b9d555e37ce6809b5b294dabaf1784a1f42b046a6",
+        "GCTF22-crypto-enigma/attachments/messages/may_15_2022/settings": "8e77f0464bce5df3fe70006c91f3720c6bd0044848ddc8911e7d37c738d25774"
+      },
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2022/quals/crypto-enigma",
+      "tier": "medium"
+    },
+    {
+      "category": null,
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "event": "Google CTF 2022 Quals",
+      "handout_paths": [
+        "GCTF22-hardware-engraver/attachments/engraver.pcapng",
+        "GCTF22-hardware-engraver/attachments/robot.jpg",
+        "GCTF22-hardware-engraver/attachments/robot_engraving.jpg"
+      ],
+      "id": "GCTF22-hardware-engraver",
+      "mode": "original_attachment",
+      "official_flag": "CTF{6_D3GREES_OF_FR3EDOM}",
+      "official_name": "hardware-engraver",
+      "reward": 34,
+      "sha256": {
+        "GCTF22-hardware-engraver/attachments/engraver.pcapng": "7eff7c6c7aaed582054076e0cc1c8353b39d7135f881834ff3688afba35378b4",
+        "GCTF22-hardware-engraver/attachments/robot.jpg": "15b583ce365618fe066cfae77766f3f222f151b6249f6f5cdf42be741047f1ae",
+        "GCTF22-hardware-engraver/attachments/robot_engraving.jpg": "5173e6459fdeb29688cbeeb30233c72022a359ef21adb95b939c79c22dd3da97"
+      },
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2022/quals/hardware-engraver",
+      "tier": "hard"
+    },
+    {
+      "category": null,
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "event": "Google CTF 2022 Quals",
+      "handout_paths": [
+        "GCTF22-hardware-iliketrains/attachments/challenge.sav"
+      ],
+      "id": "GCTF22-hardware-iliketrains",
+      "mode": "original_attachment",
+      "official_flag": "CTF{11100010101000111000101010100011}",
+      "official_name": "hardware-iliketrains",
+      "reward": 14,
+      "sha256": {
+        "GCTF22-hardware-iliketrains/attachments/challenge.sav": "d9aac968297f3d0e777c1673228dd418209fd5f46b67489f5d1d58147651071a"
+      },
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2022/quals/hardware-iliketrains",
+      "tier": "easy"
+    },
+    {
+      "category": null,
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "event": "Google CTF 2022 Quals",
+      "handout_paths": [
+        "GCTF22-misc-appnote/attachments/dump.zip"
+      ],
+      "id": "GCTF22-misc-appnote",
+      "mode": "original_attachment",
+      "official_flag": "CTF{p0s7m0d3rn_z1p}",
+      "official_name": "misc-appnote",
+      "reward": 22,
+      "sha256": {
+        "GCTF22-misc-appnote/attachments/dump.zip": "d6f941e8633906b8e6299ee5756ad4579c55078ac34a1ab55651c8794cf0b902"
+      },
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2022/quals/misc-appnote",
+      "tier": "medium"
+    },
+    {
+      "category": null,
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "event": "Google CTF 2022 Quals",
+      "handout_paths": [
+        "GCTF22-rev-eldar/attachments/Makefile",
+        "GCTF22-rev-eldar/attachments/eldar",
+        "GCTF22-rev-eldar/attachments/serial.c"
+      ],
+      "id": "GCTF22-rev-eldar",
+      "mode": "original_attachment",
+      "official_flag": "CTF{H0p3_y0u_l1k3_3LF_m4g1c}",
+      "official_name": "rev-eldar",
+      "reward": 34,
+      "sha256": {
+        "GCTF22-rev-eldar/attachments/Makefile": "fec116a70a70e3adbd28dbfd6e4fd47651da268ba29cfeeafabe3827e6048fcf",
+        "GCTF22-rev-eldar/attachments/eldar": "c42350794fb8f707e1a6f93c59d78402d542da9f6c3859658bfe4a6cb4bd0441",
+        "GCTF22-rev-eldar/attachments/serial.c": "dc167575a3a4f0e1e8eb176cf899247277ce178027be63a0d32249949551d9ad"
+      },
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2022/quals/rev-eldar",
+      "tier": "hard"
+    },
+    {
+      "category": null,
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "event": "Google CTF 2022 Quals",
+      "handout_paths": [
+        "GCTF22-rev-js-safe-4/attachments/LICENCE.gift-box.txt",
+        "GCTF22-rev-js-safe-4/attachments/LICENCE.txt",
+        "GCTF22-rev-js-safe-4/attachments/js_safe_4.html"
+      ],
+      "id": "GCTF22-rev-js-safe-4",
+      "mode": "original_attachment",
+      "official_flag": "CTF{W0w_5ucH_N1c3_d3bU9_sK1lLz_Br0w53R_Bu9s_C4Nt_s70p_Y0u}",
+      "official_name": "rev-js-safe-4",
+      "reward": 14,
+      "sha256": {
+        "GCTF22-rev-js-safe-4/attachments/LICENCE.gift-box.txt": "ce00a4e4474766d314aabd7d917fe80e41c1cc2da3cf6e3e8d471c55d3c77378",
+        "GCTF22-rev-js-safe-4/attachments/LICENCE.txt": "6952f6f5478287a2efb7dce1c2d50a7cbd8917c2f1ed5a7e0f156fd4cde2b749",
+        "GCTF22-rev-js-safe-4/attachments/js_safe_4.html": "aabdafa02aae6d17be07f74131e948d24c25e5ff36bc7221f2c9a182ced368a6"
+      },
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2022/quals/rev-js-safe-4",
+      "tier": "easy"
+    },
+    {
+      "category": null,
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "event": "Google CTF 2022 Quals",
+      "handout_paths": [
+        "GCTF22-rev-mixed/attachments/patch",
+        "GCTF22-rev-mixed/attachments/x.pyc"
+      ],
+      "id": "GCTF22-rev-mixed",
+      "mode": "original_attachment",
+      "official_flag": "CTF{4t_l3ast_1t_w4s_n0t_4n_x86_opc0d3_p3rmut4tion}",
+      "official_name": "rev-mixed",
+      "reward": 22,
+      "sha256": {
+        "GCTF22-rev-mixed/attachments/patch": "78d055784868a37c9673deb28235ffb4593b619a7d47efdb0f77793960646cde",
+        "GCTF22-rev-mixed/attachments/x.pyc": "487d26df326d3eed6829e59cc3e29a862afec531046d2de487fca8756a05f320"
+      },
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2022/quals/rev-mixed",
+      "tier": "medium"
+    },
+    {
+      "category": null,
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "event": "Google CTF 2022 Quals",
+      "handout_paths": [
+        "GCTF22-rev-rewinden/attachments/art.js",
+        "GCTF22-rev-rewinden/attachments/ca.js",
+        "GCTF22-rev-rewinden/attachments/data.png",
+        "GCTF22-rev-rewinden/attachments/index.html"
+      ],
+      "id": "GCTF22-rev-rewinden",
+      "mode": "original_attachment",
+      "official_flag": "CTF{IReversedAShaderAndAllIGotWasThisBoringFlag}",
+      "official_name": "rev-rewinden",
+      "reward": 34,
+      "sha256": {
+        "GCTF22-rev-rewinden/attachments/art.js": "113ee35eabd5d1a39ef4d4aa277909015bee0531872e5b0d875baa6937f34dc9",
+        "GCTF22-rev-rewinden/attachments/ca.js": "6d3f72317fbe24c560a20e6880087e82f8a89ec5add5f7b2a4f2f3e0ca8263ce",
+        "GCTF22-rev-rewinden/attachments/data.png": "606cb8a4252810636430ed1b38550e4160f0d54405cdd36245157bdb03e12f80",
+        "GCTF22-rev-rewinden/attachments/index.html": "b62b13ef2f992a7970549eee4fec6ec611762b85833a7f9aeca7e0090a3295e9"
+      },
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2022/quals/rev-rewinden",
+      "tier": "hard"
+    },
+    {
+      "category": null,
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "event": "Google CTF 2022 Quals",
+      "handout_paths": [
+        "GCTF22-rev-whitecube/attachments/Whitecube.exe",
+        "GCTF22-rev-whitecube/attachments/flag.enc"
+      ],
+      "id": "GCTF22-rev-whitecube",
+      "mode": "original_attachment",
+      "official_flag": "CTF{n0rma1_encrypt1on!}",
+      "official_name": "rev-whitecube",
+      "reward": 14,
+      "sha256": {
+        "GCTF22-rev-whitecube/attachments/Whitecube.exe": "21ca8bd010828a427089edc4691d6948812e22a60a8f612708cf8867ddbb83dc",
+        "GCTF22-rev-whitecube/attachments/flag.enc": "36729274ad0483dcccef89dba45f6223223782d429f4606b7c591478f6bcf4f1"
+      },
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2022/quals/rev-whitecube",
+      "tier": "easy"
+    },
+    {
+      "category": null,
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "event": "Google CTF 2023 Quals",
+      "handout_paths": [
+        "GCTF23-crypto-lcg/attachments/dump.txt",
+        "GCTF23-crypto-lcg/attachments/flag.txt",
+        "GCTF23-crypto-lcg/attachments/generate.py",
+        "GCTF23-crypto-lcg/attachments/public.pem"
+      ],
+      "id": "GCTF23-crypto-lcg",
+      "mode": "original_attachment",
+      "official_flag": "CTF{C0nGr@tz_RiV35t_5h4MiR_nD_Ad13MaN_W0ulD_b_h@pPy}",
+      "official_name": "crypto-lcg",
+      "reward": 22,
+      "sha256": {
+        "GCTF23-crypto-lcg/attachments/dump.txt": "a20f2927b8e7f5f40bb56f15a2b42cdf2b2290b35b810e7f42de114f324a603e",
+        "GCTF23-crypto-lcg/attachments/flag.txt": "408b0df8d1181a9f80aa818aa9ef9595216bb6c17b4e72816280b102f10f2aed",
+        "GCTF23-crypto-lcg/attachments/generate.py": "f28608e73e46490af4ff83d8fb5c4ac92beb035fc2219383c9de3b99e238a1f6",
+        "GCTF23-crypto-lcg/attachments/public.pem": "a23866f154f5dca7bbf39c19994d1e114ac1b4f2be225638f0c94cc7559d7924"
+      },
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2023/quals/crypto-lcg",
+      "tier": "medium"
+    },
+    {
+      "category": null,
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "event": "Google CTF 2023 Quals",
+      "handout_paths": [
+        "GCTF23-crypto-mhk2/attachments/MHK2.sage",
+        "GCTF23-crypto-mhk2/attachments/output.txt"
+      ],
+      "id": "GCTF23-crypto-mhk2",
+      "mode": "original_attachment",
+      "official_flag": "CTF{faNNYPAcKs_ARe_4maZiNg_AnD_und3Rr@t3d}",
+      "official_name": "crypto-mhk2",
+      "reward": 34,
+      "sha256": {
+        "GCTF23-crypto-mhk2/attachments/MHK2.sage": "17607edb0182f437486df8d158b3a051f24952b5cd11d524c4d93665e1ee4764",
+        "GCTF23-crypto-mhk2/attachments/output.txt": "023b7f54d22ad4f58352ed59357a18e7d74515d7e8e8a81a14223ba7150421f0"
+      },
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2023/quals/crypto-mhk2",
+      "tier": "hard"
+    },
+    {
+      "category": null,
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "event": "Google CTF 2023 Quals",
+      "handout_paths": [
+        "GCTF23-crypto-primes/attachments/chal.sage"
+      ],
+      "id": "GCTF23-crypto-primes",
+      "mode": "original_attachment",
+      "official_flag": "CTF{w0W_c0Nt1nUed_fr4Ct10ns_suR3_Ar3_fUn_Huh}",
+      "official_name": "crypto-primes",
+      "reward": 14,
+      "sha256": {
+        "GCTF23-crypto-primes/attachments/chal.sage": "4ca22b0acecc3175c73cabf59e6913a7edca84b1cc5c8b64060030dee366a5e7"
+      },
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2023/quals/crypto-primes",
+      "tier": "easy"
+    },
+    {
+      "category": null,
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "event": "Google CTF 2023 Quals",
+      "handout_paths": [
+        "GCTF23-crypto-ziphard/attachments/hard.py",
+        "GCTF23-crypto-ziphard/attachments/hard.zip"
+      ],
+      "id": "GCTF23-crypto-ziphard",
+      "mode": "original_attachment",
+      "official_flag": "CTF{y0u_u5ed_3xtr@_pl@1nt3xt_t0_d3t3rm1n3_k3ys}",
+      "official_name": "crypto-ziphard",
+      "reward": 22,
+      "sha256": {
+        "GCTF23-crypto-ziphard/attachments/hard.py": "21d64571636278da55e3251f8c50beb8c29eec5f022fa2aa57a1269429754a46",
+        "GCTF23-crypto-ziphard/attachments/hard.zip": "bd7584ab7b1f403e2385a529eac054dc150fe67125769be23e36d73dbe13cf96"
+      },
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2023/quals/crypto-ziphard",
+      "tier": "medium"
+    },
+    {
+      "category": null,
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "event": "Google CTF 2023 Quals",
+      "handout_paths": [
+        "GCTF23-misc-papapapa/attachments/white.jpg"
+      ],
+      "id": "GCTF23-misc-papapapa",
+      "mode": "original_attachment",
+      "official_flag": "CTF{rearview-monorail-mullets-backroom-stopped}",
+      "official_name": "misc-papapapa",
+      "reward": 34,
+      "sha256": {
+        "GCTF23-misc-papapapa/attachments/white.jpg": "be9d0aaeb17ba5959c7ab414cb6987452c751b8ade4a3445bc878851b471a907"
+      },
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2023/quals/misc-papapapa",
+      "tier": "hard"
+    },
+    {
+      "category": null,
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "event": "Google CTF 2023 Quals",
+      "handout_paths": [
+        "GCTF23-rev-jxl/attachments/README.md",
+        "GCTF23-rev-jxl/attachments/flag.jxl"
+      ],
+      "id": "GCTF23-rev-jxl",
+      "mode": "original_attachment",
+      "official_flag": "CTF{JPEG_XL_1s_tur1ng_c0mplet3!}",
+      "official_name": "rev-jxl",
+      "reward": 14,
+      "sha256": {
+        "GCTF23-rev-jxl/attachments/README.md": "0ebf49d221cbf0015407e4d9eea13c4c3149e1cd8a9b233192ba4de24c48ba62",
+        "GCTF23-rev-jxl/attachments/flag.jxl": "ee62f60b890ddecaae1965ce78ea7bcae6f7624ed6fc406f496dc60f5c7ad947"
+      },
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2023/quals/rev-jxl",
+      "tier": "easy"
+    },
+    {
+      "category": null,
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "event": "Google CTF 2023 Quals",
+      "handout_paths": [
+        "GCTF23-rev-oldschool/attachments/flag_maker.py"
+      ],
+      "id": "GCTF23-rev-oldschool",
+      "mode": "original_attachment",
+      "official_flag": "CTF{991d90ed198acc794d6dacd7e304f761c142acab}",
+      "official_name": "rev-oldschool",
+      "reward": 22,
+      "sha256": {
+        "GCTF23-rev-oldschool/attachments/flag_maker.py": "a66fc40185a4f016a7d2af8cac0509b8224691bcf9fbadf2d35dbe362e44a261"
+      },
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2023/quals/rev-oldschool",
+      "tier": "medium"
+    },
+    {
+      "category": null,
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "event": "Google CTF 2023 Quals",
+      "handout_paths": [
+        "GCTF23-rev-turtle/attachments/c.png",
+        "GCTF23-rev-turtle/attachments/m.png",
+        "GCTF23-rev-turtle/attachments/turt.py"
+      ],
+      "id": "GCTF23-rev-turtle",
+      "mode": "original_attachment",
+      "official_flag": "CTF{iT5_E-tUr+1es/AlL.7h3;waY:d0Wn}",
+      "official_name": "rev-turtle",
+      "reward": 34,
+      "sha256": {
+        "GCTF23-rev-turtle/attachments/c.png": "93fc64039bfabdcb63ae2d2fb0b9d971f3d8611e1d592cf136b4d348cc33e76f",
+        "GCTF23-rev-turtle/attachments/m.png": "362e0b5c82b331df38ea0560c9469da3ca603490924a01ab84687f347920e518",
+        "GCTF23-rev-turtle/attachments/turt.py": "e9ba509e45f76fb591c59dbb23e41940159ad55a1282637cdde542181e981af4"
+      },
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2023/quals/rev-turtle",
+      "tier": "hard"
+    },
+    {
+      "category": null,
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "event": "Google CTF 2023 Quals",
+      "handout_paths": [
+        "GCTF23-rev-zermatt/attachments/zermatt.lua"
+      ],
+      "id": "GCTF23-rev-zermatt",
+      "mode": "original_attachment",
+      "official_flag": "CTF{At_least_it_was_not_a_bytecode_base_sandbox_escape}",
+      "official_name": "rev-zermatt",
+      "reward": 14,
+      "sha256": {
+        "GCTF23-rev-zermatt/attachments/zermatt.lua": "b2dc7e3bd17a82445bd6610fe847135cb4745bdf496ff4e6ad95aabff68e43fe"
+      },
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2023/quals/rev-zermatt",
+      "tier": "easy"
+    },
+    {
+      "category": null,
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "event": "Google CTF 2024 Quals",
+      "handout_paths": [
+        "GCTF24-crypto-mceliece/attachments/chall.sage",
+        "GCTF24-crypto-mceliece/attachments/flag_enc.sobj",
+        "GCTF24-crypto-mceliece/attachments/params.sobj",
+        "GCTF24-crypto-mceliece/attachments/pubkey.sobj"
+      ],
+      "id": "GCTF24-crypto-mceliece",
+      "mode": "original_attachment",
+      "official_flag": "CTF{1f_0nly_th3r3_w45_50m3_c0d3_1nd1st1ngu15h4bl3_fr0m_r4nd0mn355_70c2decd2dd58446e825}",
+      "official_name": "crypto-mceliece",
+      "reward": 22,
+      "sha256": {
+        "GCTF24-crypto-mceliece/attachments/chall.sage": "91084a5225d4742b3483fa63a00637aff3369c79d44c633dd934528f4331cdca",
+        "GCTF24-crypto-mceliece/attachments/flag_enc.sobj": "27b51622f2cb72d7803a405be4651da632493422d482857316e9a6b726513019",
+        "GCTF24-crypto-mceliece/attachments/params.sobj": "eee414c4343662dbab150697b9eb371d108c2cfb19c5422a9761a455ff2a1ec7",
+        "GCTF24-crypto-mceliece/attachments/pubkey.sobj": "f92125ca83e16afaa5ba2efda4ea8a083d8d846eae6a0cf5fdf6befb0707113d"
+      },
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2024/quals/crypto-mceliece",
+      "tier": "medium"
+    },
+    {
+      "category": null,
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "event": "Google CTF 2024 Quals",
+      "handout_paths": [
+        "GCTF24-crypto-otp/attachments/README.md",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd00.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd01.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd02.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd03.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd04.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd05.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd06.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd07.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd08.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd09.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd10.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd11.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd12.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd13.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd14.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd15.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd16.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd17.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd18.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd19.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd20.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd21.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd22.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd23.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd24.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd25.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd26.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd27.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd28.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd29.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd30.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd31.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd32.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd33.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd34.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd35.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd36.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd37.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd38.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd39.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd40.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd41.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd42.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd43.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd44.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd45.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd46.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd47.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd48.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd49.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd50.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd51.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd52.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd53.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd54.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd55.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd56.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd57.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd58.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd59.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd60.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd61.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd62.png",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd63.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd00.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd01.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd02.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd03.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd04.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd05.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd06.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd07.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd08.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd09.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd10.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd11.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd12.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd13.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd14.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd15.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd16.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd17.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd18.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd19.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd20.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd21.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd22.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd23.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd24.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd25.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd26.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd27.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd28.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd29.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd30.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd31.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd32.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd33.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd34.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd35.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd36.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd37.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd38.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd39.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd40.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd41.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd42.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd43.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd44.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd45.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd46.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd47.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd48.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd49.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd50.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd51.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd52.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd53.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd54.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd55.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd56.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd57.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd58.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd59.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd60.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd61.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd62.png",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd63.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th00.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th01.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th02.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th03.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th04.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th05.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th06.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th07.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th08.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th09.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th10.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th11.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th12.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th13.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th14.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th15.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th16.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th17.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th18.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th19.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th20.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th21.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th22.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th23.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th24.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th25.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th26.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th27.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th28.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th29.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th30.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th31.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th32.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th33.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th34.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th35.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th36.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th37.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th38.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th39.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th40.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th41.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th42.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th43.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th44.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th45.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th46.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th47.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th48.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th49.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th50.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th51.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th52.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th53.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th54.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th55.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th56.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th57.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th58.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th59.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th60.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th61.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th62.png",
+        "GCTF24-crypto-otp/attachments/encrypted/4th63.png",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag00.png",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag01.png",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag02.png",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag03.png",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag04.png",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag05.png",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag06.png",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag07.png",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag08.png",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag09.png",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag10.png",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag11.png",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag12.png",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag13.png",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag14.png",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag15.png",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag16.png",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag17.png",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag18.png",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag19.png",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag20.png",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag21.png",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag22.png",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag23.png",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag24.png",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag25.png",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag26.png",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag27.png",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag28.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt00.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt01.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt02.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt03.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt04.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt05.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt06.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt07.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt08.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt09.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt10.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt11.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt12.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt13.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt14.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt15.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt16.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt17.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt18.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt19.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt20.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt21.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt22.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt23.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt24.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt25.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt26.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt27.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt28.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt29.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt30.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt31.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt32.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt33.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt34.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt35.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt36.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt37.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt38.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt39.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt40.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt41.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt42.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt43.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt44.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt45.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt46.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt47.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt48.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt49.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt50.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt51.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt52.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt53.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt54.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt55.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt56.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt57.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt58.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt59.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt60.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt61.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt62.png",
+        "GCTF24-crypto-otp/attachments/encrypted/alt63.png",
+        "GCTF24-crypto-otp/attachments/otp.py"
+      ],
+      "id": "GCTF24-crypto-otp",
+      "mode": "original_attachment",
+      "official_flag": "CTF{I_THOUGHT_OTP_WAS_SECURE}",
+      "official_name": "crypto-otp",
+      "reward": 34,
+      "sha256": {
+        "GCTF24-crypto-otp/attachments/README.md": "ff6884aa6eb5d2be04f15059942170f7728571a347f658d16402a2808a2adb4f",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd00.png": "d5ea175e7f1c5df7ce574128409c9c757d39f3f1c41fecc7d78d4a8b345d360d",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd01.png": "657e8dccd5b74bf1b034ac9682369bc982fe4a88c830647e04d93f484135b7dd",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd02.png": "035e4fe1039ca96865cfba4f78e8e935024104814c405c68d8cb02ab9cf63f8f",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd03.png": "56b1ca1a61d60f31b52d6f98bcc481cbda6234fb39c5af0c7ba10f1b2a7ebadd",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd04.png": "9c325ef5163bffc37dffd08dec56d497ef78eb7a76da522be9e31a69c0d10372",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd05.png": "3420c67000d724149ba3454d695ec66f0403409a23a951a43e3453c97e07c126",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd06.png": "92ae9772daa5c71cb82a6cad22d6e0ece4367f680549f8a9ef635f621e0ea003",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd07.png": "964332c9718d5b7009a63545804d43e004779a0d3c8dbb0fecf5c05d00c316d2",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd08.png": "58c2f5d4d57941317acf716005b9062b533d8f218ba3c3527bbe2bdfbd019a27",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd09.png": "e373a9f6fea20db74d88c38989a6d4ff27efae3c0d76ade1510ecb04a9e82077",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd10.png": "f075fc84ae2316ea3b0e7791e263e14a7c59d70821508d8ef96ee0feca8820a8",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd11.png": "4007cadf1b7befc80fb277b8ff8aa1f0d7edc2465707b97e8b8cb84d76b68295",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd12.png": "f18ea86b2daf1d0f87295d52fb9d4e7d3064f8396c7c7755de3dc624674f9230",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd13.png": "d3f94e22f43b25688b452f9ef9ea231883a8ac22b1bd43fc012029e2eb7c2c81",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd14.png": "8db5b58c34df82d43a57c298171d106db99ebd652443eb10ef47acbd49252fb3",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd15.png": "c87ea91d4e3e0263a82442e0580aa52081cd4d600a684fd9d97171ef046fded8",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd16.png": "1a46ff693e0f3b068ea8061b646557dbad53ce6613e5d28c3d2e00e38105cb98",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd17.png": "2f978f3bb2021a759b28f6a21153a5b1a3f4727958d8a4889bfd88f98a277054",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd18.png": "f7bd454e46e3736c213f790f02186a6b577950145178446ed98f9784e924de65",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd19.png": "71de629a0397d6ff37f303429adbffda8fc95266e516898dc62a7178c22b45d2",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd20.png": "08b59d25e75466258d06514100587aaf920e461b8e54627606af882d75c02ae0",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd21.png": "e1e32fa91e2d8b38becc963f5d618c902c472131c503d53f8d4c6089643e4f51",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd22.png": "dff2dfca5cc2154ab8c6352b648582288c84c97dc873492dda6bb9914c50efd4",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd23.png": "7d5f0c2e323577088b013ec189b63b57d279ce1188b4e57f8bada3ad61915ce7",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd24.png": "e5a4f6b6a7357c86891336f6a61abbacbd64355a0748e68617f98d45f7148d75",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd25.png": "2911af6d7040302a8a5618c9a0634ccd75776ad6c56ab796c15ae9570605e305",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd26.png": "f41397e75811d2bbed297a85d44c4bedd73a497973f22963888766615dab546f",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd27.png": "8716dc526eb9f599f80094ad239f7da09d95530b57dbff64206f73fc8af22637",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd28.png": "0319e0c1cbe6187f288f2faaf2a3cde4e6e94830aeebc491e62aa70125efeee9",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd29.png": "263b8f4e8daf3461996e7e0ec9fc6558fcc2e941143fa4f5244d91cdfd3d69d3",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd30.png": "960c5a0ab436dbd5c842957373edc5d7d934c67a959e6e6bbfae58aba14d0aa9",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd31.png": "1560f84306fb1b79f9d26cec69ea797a535034edc1cd77b4b4a7c7c2e564a991",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd32.png": "74bec3c794e9a892447b66e3ac22c38a93f7a29a3313187b6189c8d6a7679878",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd33.png": "c3f04577eff44dc3a8e8b22a276c32e01bfc21924b53b51631fe6a15f85c90db",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd34.png": "3ea3e12e2234c134e290095ea054d4dfe3aca09051ce482f7dc3cd23aaa9ad07",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd35.png": "5e15c4ed9afe3138851803df7ce8431b5746b4ce419a3f4d6d3ef557b11b7f48",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd36.png": "77bc478d90fa20255707a52bbcb0733e9bd475f58573327d53a5a3dc626d5b9b",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd37.png": "ded04877dc8efc9d539bb5208d296bce60f475b39f3b9c29e291a469e6f74f26",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd38.png": "1b69a45dab2bd2b76d906b34fb9455cc2b1d133260fd94605c70c8e8ce3ab832",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd39.png": "e235557c8f1cefffcbb94b148ef2290387e3a062b11632a53d7db4f6e3c009d9",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd40.png": "4a8d311a9b7a0a9a50f7ee4ffb459a73a3a99da6dbf3a4dc8b1b58aa62d5c537",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd41.png": "ab2fb9164fbc760d11f2c10db1b1ccc0ed9718f5e6b70057ce154527598f5050",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd42.png": "fa8e20032cb5f2c945ce7a951445a5295fcbdba11009c3d336b9d0a77326bb89",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd43.png": "ac8456062960a4facc254f09e7f3bf552ff3be16a00198df586e5445a43775a6",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd44.png": "1cb2d9ddeb2d49cb0ec267d9f6a7f9c0d39e95df71cb415f5702916ebbbf34a5",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd45.png": "c943fa6c55545591303e9dc4bf764c3c30bfc2f86aa4f8ec08290256ebb2cb4d",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd46.png": "e6d8bc2c4e16be255d088d35082bada3b2c4a36b8a02f17b3600e997ec95c57d",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd47.png": "0cdf0f060e1e75cba829cd1bc61f5049c3bb619c4cab98574bb74e4b270df94d",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd48.png": "34eb7e265b750d238fe794b8df569ac7177939469ff6d4269a257683d9692d12",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd49.png": "0fc5d5522921901acf7d8052b7b644a6c48f8904566d0907d148e5c28b996e78",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd50.png": "0c0a75183a27739a93517e931c50331eade3d9b5511a5b4edeea072390e6824e",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd51.png": "c728da14ff21b50c9410514ce548a0681e20dd2ae9e5e84b8d12047a49ec1afe",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd52.png": "0a946e4500109ab4fc544673d25f731865af50eb4becc99d9803918c73c43c77",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd53.png": "3672191233ebc7ada678c58f2e4db66b1b436ca14697dcb9b8d5b29205a26385",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd54.png": "3404a369ab1b6cc00268423dbfc0dbdd3afc4e6ce82eb08a8301c1954361298a",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd55.png": "d68d9bf30e290803e7a4d71f820b93be2a9b8b0c18dcc77f00a98416f8ab93a9",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd56.png": "a9f632e1f101d223fd4b79c185985d582969cbf0ab4101d8d20de3ebfa5e6799",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd57.png": "3392977cab857bc5bceb01cba5483582ad9179e22f2eda689e7561fb770791b5",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd58.png": "bcb8b79d6f52b4db6244633c2b8ab49a31ba4f9997f6a85f42019859bc1a8548",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd59.png": "65420454be60a0cea935bf5aa07b10411eb1bb52301f6b06d813d306fca9452a",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd60.png": "dde2fe4953967f68351da7727a95d7dd09e19b5ec0dee4cf30480801271fed30",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd61.png": "e7581935852797a308d309aa0897dc427d6b333efe4d2efb36098b13b5de79da",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd62.png": "f4eb7a54b9de157f9cfd8b2c747838617eb2272b63f1430f192d35a57359bd70",
+        "GCTF24-crypto-otp/attachments/encrypted/2nd63.png": "de215ff6624604733716163ed64179c604454aa48baf3c2ffa2baebfbad5b513",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd00.png": "c26b49f7d8805ed5f38b1663e4b18bd95ffc6e251fc365642e105d1eab83d236",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd01.png": "1c7bceebcd336ae296e9685b1c8a8d6244e79d93b99c8e77f9bd2e4451b2246c",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd02.png": "5747ddc513dd20d74003e0645a7cd70e61e8832a75103cd7702f8fa27a182fa5",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd03.png": "4dcddf9a193704481e83ea32249fa3cbf1b75ecbefc0755812a74aa132d05ae8",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd04.png": "215927adbb6507d004131f81f5e79bbb4db0928eebc6308b78298fc975b05b6d",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd05.png": "e1ba2f3c51579ce54384094320abb85ccd34179f559f647db6af909f2baa999f",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd06.png": "67a0ef1589e857305cf638397290544777cf48e948659695e87e4fdeb6a93574",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd07.png": "6004802ac8a5d5f50147d8731303898fc8d08c820ac9b48fe5e7e43653916402",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd08.png": "b1394f5eae0935b463743e33df9b61670aeda65f08f46e15123364d9aa3376d7",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd09.png": "7179a32bb2d06e39e33c8fa33afa539dcd9ab9e7f5a859c1b7115557fd06260c",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd10.png": "8998f3727ed3dd9c5bcface4dc586ffc41ef45caab8ac904a3b1d2ef87770fcf",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd11.png": "041cb99c806407cb947a4f2424457ec941eab950109021adcf2894f52ca66f4d",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd12.png": "968faf6b832814513c543a414f0f75f9271ace4ebf98c5b13ea6806996c6e5e4",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd13.png": "b140efb5cf9beae561ddb7735c7324fd55240120e2a4f77b2019175d62674928",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd14.png": "52f32e54ca785e732a282b039dfd568d29759353b163f3a65da5fd787570233f",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd15.png": "dbab077856e14e2a68ade60e29c07b6d203aac2caae7111decfb249328f8083b",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd16.png": "dd2fc4394d613be51efb1308b05d3e037ac9f85ffea0793bb7d08193080b9715",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd17.png": "4304342a73e517d8550d6cf985554d6f47a356176b17c78fd555f9dc4ada5542",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd18.png": "343202432bd58ff2139b65cb102cc0258060dfa63821ecec255b1c1e824ab47e",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd19.png": "a375e862bc7d1d8d9986cf056cb12aba410ecf8053e6893134acebc7300f8e9e",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd20.png": "5c74deec8c81baf1b321bbef251d19bc8d4b928e506f30e6fc1ae2e4d04a2c15",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd21.png": "a8b835b85ed36fc0d327c4ee010acc26a6350b2def5a55da006fce00beecb007",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd22.png": "47047acf4d05f7150c060f9d992ca8236bf65390131eb1b386b21e4369e11f2d",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd23.png": "4abcf271c7a81449a206fe6790307e95d4dd2770d880f62b5151faf82c0d0dab",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd24.png": "fccfcad07f3269c601250bd8894935de7b816c620493e40a9f300d456c7a3c82",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd25.png": "90efc3e07307d23289a660ec0b3fd52fbaedf59308140ef99937df4aa7789063",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd26.png": "a0e18886b42c963e5dcf47607c83adc54d445fe850041e5d9eee3d09e938b85e",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd27.png": "774e32074035c5244b84910c7567359a79314a56a9a003575193c8f8301b4b0c",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd28.png": "973f0704a5fbdb8648e4fb73ff376e88e5dbccb6ff46e373b9094cec6be25f9c",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd29.png": "70a7197249340b75dfadf369548f0a3fc5a7397016f02b5d4ff61f6f175663ad",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd30.png": "bddccbb89fc9ad9aaa3790c810b16e838603a936d7abb9c2085be67121c93935",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd31.png": "a46e08375fb3bc85fa93aa5561800473db27a0bf13880e2ff96ede2093061240",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd32.png": "90a3f9acb047329566c8f80be600e8f512518ff5dd71cad3fbf50733efb6db1e",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd33.png": "98567303d13a19dcd682d8852643a8626978821133d11ac6af39978c95075f40",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd34.png": "3148a1e40bd86b70834aed0cc1eae4a0a874d29f69a210eff18ea7bccd9485f9",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd35.png": "feeef690cb5960d99848ff6c3b1cb3f6e0929a33662ed5010ad2e26533f85be8",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd36.png": "bc4aeb834e5b2e67d1e421b623ef47179e9065bf98cbee8246dce57feca8dd88",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd37.png": "472e08450535284086902d6c9391dd7e2c3052d95c7c6e22c94c1194e4b8b755",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd38.png": "fdef6814509a0bd5f056560c29f260d19b4bdd208265b8b8a7836322748f4a6c",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd39.png": "d8b45c46954c07656634db54466c23d21920c2abb60dcfe7a03f86cffa6a27cf",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd40.png": "b5c773b51c1b901a870b5d944d764da40fb90fd6d3452828e36564ae54be2dd2",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd41.png": "1c31be0ff90d582a6bfec70d8a04df6a982d3ed7b6dbc3aec06b112703af72b5",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd42.png": "3cc0addaf9833875e948db12fad8ee2f7282f7464db91c7f8b2cbd879b12b728",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd43.png": "045918d5f746b6a79370b17a1e712504a572406997d88ec1971d0afc0dce48bb",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd44.png": "aad9f523ca899ff6acd423bea9a42a4667f01eca4b118ea11205fe9285ed3719",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd45.png": "81d1f680e3c0373672891cb495f08189519e17e7bdfcfc178fe127fa1794f684",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd46.png": "201728a785b9075e428fcc8060e3116991253271d16cb4d8d99ba04d2864704e",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd47.png": "f8a51c00fe9390975b68fb165f8399ecc9993622c3a55e456c60b415d0bcd648",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd48.png": "06cfe07b15fa53dad1b73f074e36e4592852043e7d93e216c10b75b7697cd777",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd49.png": "1d1a900fdafed81d63451a66709281f9804f3ae5d5e0580010e62c1edacb5d72",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd50.png": "bd64cf7081c33674b3443938326e632f2d4b8c74780a56b9253a0da7b5159e46",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd51.png": "b007c60cd5dde4158e1a56baee5dd96b5c1e1244aa2054382750141a385caba8",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd52.png": "9ba70d1ccf60aa72eb4a341a6542fb66b752df50a44ce2502a599b2e2e752cdf",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd53.png": "630357f80c8c2affd6376d4a038dbe5cfd738cba1a96ac913845a7a30b3d6a84",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd54.png": "a14c2e97ee95da38e0cc2151bad877e4425dc1bd62b8d9ba5a0e84a5b663c4ab",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd55.png": "53b1cb5c110e36ab4ea4670cedcf4f39d7d8594a83422ad3fba55b24e1bb8856",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd56.png": "dc6f2ac292812eff13859120e68c795d18ab788ae91b4f2558822053a03284cd",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd57.png": "7d6d069eae52bd11a9cee71e6f4cfff84486e490175d0881fdcdf914fcec603c",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd58.png": "cf818bc050b9cc2a66fead161b0e832e0dbf76d4d27f230f4216419b494b818a",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd59.png": "edd82a9237f607507644f489d7f9244da5f1ec0f16304c56268212d1d9fef8d5",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd60.png": "e55ea4f45ea509559f1ec34a70653f200368ea9db1feb7b256b507583fd041d1",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd61.png": "ecc3007679c3e8ce62f66fe6eb3952ecda88f315288d9c2326c78ca39ece812d",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd62.png": "9185db24d171f91144321a9053dca1ab48c6e74476819866414dd82ea71f3945",
+        "GCTF24-crypto-otp/attachments/encrypted/3rd63.png": "f6d20e1f22271bc0a848c08e8b6a8c29a74c658fbb87ce536a9091cc342d5be8",
+        "GCTF24-crypto-otp/attachments/encrypted/4th00.png": "e0f1eb80418c333adbf9d3d8b867e74eb31c3f00b087641611138d521b91d48c",
+        "GCTF24-crypto-otp/attachments/encrypted/4th01.png": "bcbefe3626a2f8b939e9b0641dc1f86ccaba5d752492d72bcdce3575b09bb7b7",
+        "GCTF24-crypto-otp/attachments/encrypted/4th02.png": "b751464e49a2a0f4a51b842d214decd8c1235101a3ca58e22fa96f446d6fe743",
+        "GCTF24-crypto-otp/attachments/encrypted/4th03.png": "a6d45d041788a16fd8ff91af6a065e2dd76221462411fafb6128fabd49197c95",
+        "GCTF24-crypto-otp/attachments/encrypted/4th04.png": "a1afc1b2306a63510f543353005fd921521b7978dacf8ea4328a5df0afca8c73",
+        "GCTF24-crypto-otp/attachments/encrypted/4th05.png": "53fe622b93b6bd053de75eebc9696c3140dabf97f1b8e7547324eea4124aaac6",
+        "GCTF24-crypto-otp/attachments/encrypted/4th06.png": "960268fd1864bbde5e5a283aff2bc6398f2d3d0ea67ec84b2bc5732e230005ce",
+        "GCTF24-crypto-otp/attachments/encrypted/4th07.png": "9d17ad7cbb80155a8961d45c3b2c25ba76577de5dbb8628f585f47b90ba0c3c2",
+        "GCTF24-crypto-otp/attachments/encrypted/4th08.png": "df0a4354ed167a116bd0cb451da662012502f0d2bfbce4a69bfe79115d1086be",
+        "GCTF24-crypto-otp/attachments/encrypted/4th09.png": "1abb41feec4411ec3d233c56ada2c237d72270ddddd968aa9193b4ac6ddc0e30",
+        "GCTF24-crypto-otp/attachments/encrypted/4th10.png": "f510f3904a326bbd72a1d96ffc458dff15b9d353ef9ddef49c07e6be7389109e",
+        "GCTF24-crypto-otp/attachments/encrypted/4th11.png": "02f78ded8c3a2d9897b2fe6ea34102f876c62a97a7bf9e8e006125891e8e0d22",
+        "GCTF24-crypto-otp/attachments/encrypted/4th12.png": "35bdecab6fdbf92077d7a0af064a118053847cbd4c14eec49c3159f24b364a06",
+        "GCTF24-crypto-otp/attachments/encrypted/4th13.png": "131da558585f353575f3c5c9693d50575c1faa8b054c6cb8e86483fedaf289b9",
+        "GCTF24-crypto-otp/attachments/encrypted/4th14.png": "1002a70d3c294562a885c673fa02f86e11a47efe00bb7319d1addd2715d530eb",
+        "GCTF24-crypto-otp/attachments/encrypted/4th15.png": "8e4dafe1256e5211a7e3d9f6c36f0ed92af2ae405bfd205bcb0727fd629b3dd4",
+        "GCTF24-crypto-otp/attachments/encrypted/4th16.png": "9397d83a46c710e16015e2beea6e9f5328d6e37c118c788221f2915ef9134881",
+        "GCTF24-crypto-otp/attachments/encrypted/4th17.png": "22a3e3f0fbb6335e5261dadeb00225d5737bd1b24e2ffb625a18f93669414fcf",
+        "GCTF24-crypto-otp/attachments/encrypted/4th18.png": "7969931d890f572759182309d7ae8ba9949877c43c7195913ebb6dfc814c5139",
+        "GCTF24-crypto-otp/attachments/encrypted/4th19.png": "d8e6d437930ca1157ca1f24fe2870c2a952736d40444c9148ccf1ea8d0fe2ac8",
+        "GCTF24-crypto-otp/attachments/encrypted/4th20.png": "51563f13cc9c930c48251718fa5e0d0adf3c5ecb77c408f88ce7f12b3f19efe1",
+        "GCTF24-crypto-otp/attachments/encrypted/4th21.png": "2afe8a8677c169977d56738380cab29c78a89bb76f13bb73d0c502fe88c7a904",
+        "GCTF24-crypto-otp/attachments/encrypted/4th22.png": "b18688aa593c4ba07e11918ea2c49428df75076c2b5c0497f1aa719c665c9519",
+        "GCTF24-crypto-otp/attachments/encrypted/4th23.png": "d68e101fe6f64fc377bfecf33503cdec524730490c9a23e43a1066a493b82f98",
+        "GCTF24-crypto-otp/attachments/encrypted/4th24.png": "2aa3c3ad754713c42a424216a8aec2f830e6928480733b3a4fa535e01735aeba",
+        "GCTF24-crypto-otp/attachments/encrypted/4th25.png": "ad57a952d0c15e3f1c8eb3fabe35969df939b1dfd397195667bee0f1037003a7",
+        "GCTF24-crypto-otp/attachments/encrypted/4th26.png": "0ad027459a70587526fc287a6b2e099b5d1cdc31fea3ec283edac2717e68931f",
+        "GCTF24-crypto-otp/attachments/encrypted/4th27.png": "321e47cd009c53290961c2217b97df6591981e3dc3396352b13648f11ef07239",
+        "GCTF24-crypto-otp/attachments/encrypted/4th28.png": "8e8dd44632059782252f94b0c270e9bf17a0565195d403357636d3840aace1b7",
+        "GCTF24-crypto-otp/attachments/encrypted/4th29.png": "e43ffde73aaaf8815e909c5b2c54bf29eb692fa1bb9d8af7e5dee79c87a6b67d",
+        "GCTF24-crypto-otp/attachments/encrypted/4th30.png": "24bf879c904323fd484409bc230c0aa223c373a0d031d0945a0a278a534d2416",
+        "GCTF24-crypto-otp/attachments/encrypted/4th31.png": "e4d44ab96e4c5bd12c1494e98a03a0b83fb801efd05648fd9560f52f4aa0fde3",
+        "GCTF24-crypto-otp/attachments/encrypted/4th32.png": "ae61d90e8b2a81cd9f24091472aff65727874f07f827214e60311de973ffb3c4",
+        "GCTF24-crypto-otp/attachments/encrypted/4th33.png": "68ffc8cb5c1ccb96db9c8a8044a1f38558eefbfbb096bea30fe37c01fe74bfb8",
+        "GCTF24-crypto-otp/attachments/encrypted/4th34.png": "a2b914ad1154dff711f928246c34bcf675aad3438b296aadc9d1a082ca45c1f5",
+        "GCTF24-crypto-otp/attachments/encrypted/4th35.png": "e70bfe481adc481793f60388bc20ea4b17e4144bc9999bbc4a11a950415e1e69",
+        "GCTF24-crypto-otp/attachments/encrypted/4th36.png": "b9417ca7fd6be28344e0890a982e798c58409be0656b0d7cce3f23b4f00c0967",
+        "GCTF24-crypto-otp/attachments/encrypted/4th37.png": "a34851d9114eec91f5fd9e7d4b076d5bf224369393dfebe1436ab2658960715c",
+        "GCTF24-crypto-otp/attachments/encrypted/4th38.png": "c66ba9ae8459c245eff8472f551757dc0c9fbb4df0b82183531dc92bd07afa94",
+        "GCTF24-crypto-otp/attachments/encrypted/4th39.png": "816ede94f8d3eb2fdb417b9a4e5c09dbd0fc47c57ab4321a85e74a058adbea47",
+        "GCTF24-crypto-otp/attachments/encrypted/4th40.png": "75962924baa4bbcd787c6be7661fd7f96aefc19ea2141e3bb586fbd020859261",
+        "GCTF24-crypto-otp/attachments/encrypted/4th41.png": "965d36d1b471f9edf4ef9ad35b7789ad31fbc4f99d341a0606da635ba6ca6dbb",
+        "GCTF24-crypto-otp/attachments/encrypted/4th42.png": "f9858f447a6618b6f7813968d6ad3d6da773e4158de36b3d1296f0f379836f96",
+        "GCTF24-crypto-otp/attachments/encrypted/4th43.png": "e43fdfe4c0969810979c8c9fd6f99dd68be76f3915b489e49379a5ab127ea8bc",
+        "GCTF24-crypto-otp/attachments/encrypted/4th44.png": "8d8e18d73596dc3f77298c02cda43503ad78b4f92d2974cdf01311a6b87d44b5",
+        "GCTF24-crypto-otp/attachments/encrypted/4th45.png": "e8d03f9c2276fb0b6f889942796a51835cc6e27a4f036a97fee51cd02853e49e",
+        "GCTF24-crypto-otp/attachments/encrypted/4th46.png": "85cd25485e9e9b1bdbc133a9ca2482f7b214efbb44586f590435714f42f15999",
+        "GCTF24-crypto-otp/attachments/encrypted/4th47.png": "78fca2178876e4018e27f494481c710cfd509d3604a657e4fb07e6fed84e8561",
+        "GCTF24-crypto-otp/attachments/encrypted/4th48.png": "01ef1bb10f748c53dc0bca4a07d3a2573c220902746dd3de0faecb0263b5973a",
+        "GCTF24-crypto-otp/attachments/encrypted/4th49.png": "d86c360be1aad42ea7a28c64ca5f7985054f32ee2b5d0190c8e504147e8b1e94",
+        "GCTF24-crypto-otp/attachments/encrypted/4th50.png": "5c94e70a31f3827b2d8d88f26d0148e2e7cb1e699f765a5ced74f8ada9906bf7",
+        "GCTF24-crypto-otp/attachments/encrypted/4th51.png": "b246e89ab46900e1f2c42fd0cc02bd5450165bd064b174de97158d170b864772",
+        "GCTF24-crypto-otp/attachments/encrypted/4th52.png": "442b0e6334acc94980db89a2e48a5c0447dbe70819121b82aad58385404f4d10",
+        "GCTF24-crypto-otp/attachments/encrypted/4th53.png": "ebe912ab6adac7936cd8dde40b8a0a423579d5098a466ea1ddf5d2f6a46def2e",
+        "GCTF24-crypto-otp/attachments/encrypted/4th54.png": "3e071de6eb0a9697ec9b38acb5bf9bec0ee6d52f08ac1f4c9129245a7aa731db",
+        "GCTF24-crypto-otp/attachments/encrypted/4th55.png": "c9dd3cffcd5ae1e8077f152366c064ab7de8439ae2382c3b31f12774a0b0326a",
+        "GCTF24-crypto-otp/attachments/encrypted/4th56.png": "7e48f073b322fb175af8c9dfcdb58ab3879916701b12cec910ab9dc19743650f",
+        "GCTF24-crypto-otp/attachments/encrypted/4th57.png": "2da9b8e1b20073b39a151c3568f4aa70568ccddc9a92dd4e0d36815d8337c233",
+        "GCTF24-crypto-otp/attachments/encrypted/4th58.png": "71218a689866adef388d07971701acccfc4fb73dd2c79069202d4a395f1ada9b",
+        "GCTF24-crypto-otp/attachments/encrypted/4th59.png": "da925367324c520275f66c55f6890317273eb0ecddce7d23df4ae1786a03638d",
+        "GCTF24-crypto-otp/attachments/encrypted/4th60.png": "331524c5d7fdecb7bc08514add7a6e9cb6a7af26288dd67e1d8c0d76ebc345f9",
+        "GCTF24-crypto-otp/attachments/encrypted/4th61.png": "6399e86d7c69832553a241164c034312ce8bb3c330036a75e7590e3c2fc0ab91",
+        "GCTF24-crypto-otp/attachments/encrypted/4th62.png": "022118f4e121b13fd5314e7bce2b9273352bddefd20c20c4f9766c6823cdb2cf",
+        "GCTF24-crypto-otp/attachments/encrypted/4th63.png": "283c81a627ef5591c82a44c1dd29231beb7b3ffd2c48644f02877d6bb5efb1ac",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag00.png": "6e7038d8d11ca1907a2fc6e0d13fbe704948ddac521cc534d383389bbb61e83f",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag01.png": "8e0df5fe8dd6df679493bc582c0c2ac5cac243ff0cf6e2d9aa630e55ffb545b7",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag02.png": "5146c3afc3e3c5513dc0e3640da6f63cc7a39afe232aea82bedfe92d67a100c3",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag03.png": "7e335faac297411c1fd4eb07dbe3820d8a9b59926eedb5fe3f7cea4a3fc50868",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag04.png": "5636e62aa59caff420115c784c1322fa23d9f66bd71026070eb79f4694affd85",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag05.png": "df32ac125c22d147ba07fb87fbb87565ec15320822a5840b6cc466ee6f401ebd",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag06.png": "425a4341a65ee4e9ec0a977cdb50dbb554febd07168a426237d94701541b3dc3",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag07.png": "3cbaf2f4997e18eec256d4dc0d6aa1c8269b2dec07838fd983b5bafd2aea4831",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag08.png": "0cfe1ce4ef8f84924d3e9a7bafcc403d31986b85bf76dd51b0f1c3ba1ceb0a21",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag09.png": "6c7043e19a1892045a5bdb5fdcac3ee717b58512ff2d2e82cf126af54e6ca578",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag10.png": "9823391d12a523127526a1d4979ffe74f9ea0a0a3ee0e247280a3a26cf3c2254",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag11.png": "417c95dc325fe38709c2c955bc64d921e9b4547ba67786409e2854fa265f6ee2",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag12.png": "2d85658bc073a7c9e345e8423fed16b6b7f5817bd58c50709b0209b617315c23",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag13.png": "9c6ffefbeb1ec8538df992735a844d991c813e95acee488bb59daf0ac219e377",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag14.png": "02c6b8bc91f705114aa25411b1ea467ee86f4c46836b21a7b21b2f52e6e8e7ad",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag15.png": "bfa30bf6b5ad47163926426453185e0f49909327b34340df4d9b3fcaa32b481b",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag16.png": "4b893c30e17c220bab9effa5cd6e7af906f9d10c5962570badefb263e3312ddb",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag17.png": "e129567fdcc94c2c63d4e0dffb8d15f051d80d7f1a43b28e4892832d9d8e15d8",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag18.png": "098ae5ee9cfcb52da33443a397b6474c4290033d6a1d9f7eae70c740882a4207",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag19.png": "e2b81d5e76e5052a3692b9057e03bc856200d0266a3fc7614bacb0f178b6eb82",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag20.png": "39621744d2b4d080963bf7a698abe0e05fdd7ec90d0408ef67981be8b04bf9df",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag21.png": "235793b457426d24ec0d2021403224ed207bb07bf6c6b6817f95cc23bfe88803",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag22.png": "527faebd0de2e5f98f93692d7a799fc7b549d3ff374657d20a734c3af10b88c2",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag23.png": "223689151baca3789a73cf5ddd93db43529d04a28d31635aadd17010e1ea2265",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag24.png": "767dede4a371956f86ccdd11894dbb3bfef830651f46e48af4ddc3f37f56c123",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag25.png": "b6640ead6f0e430b9d762ff455841358b95dc36131afb6cd13f1f7f97c7ccd92",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag26.png": "b696412a207f81ad20db366f152e97560c292ef3a5bc64fbadb64ae31f7e39e0",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag27.png": "f199e9526c2e9ddedef5844be61b4bd1dde3b219b8168dff8b18cc040ece0481",
+        "GCTF24-crypto-otp/attachments/encrypted/_flag28.png": "719b7345c5377b128d3fff374250f303516cce35cf1f4f480ec03a5ca212a502",
+        "GCTF24-crypto-otp/attachments/encrypted/alt00.png": "ee20eedcdc0b39ec41ac4203ff08dac9be2587026362a4851a3d8305c0110d3d",
+        "GCTF24-crypto-otp/attachments/encrypted/alt01.png": "52d94e25dac2dff4fcc3d91b7dede028cfdf9e6b06a0b31e0b99af18c5bed4eb",
+        "GCTF24-crypto-otp/attachments/encrypted/alt02.png": "ddca474d7bd40de24a95915e7348118acf1fea63dce909938cb1ec3f219a8a15",
+        "GCTF24-crypto-otp/attachments/encrypted/alt03.png": "b15066dd9f662b524934f01af353af082030d1ccd20eeb2787c3189b80085db7",
+        "GCTF24-crypto-otp/attachments/encrypted/alt04.png": "d78a9758e7dfece3f636406d3e9e7081480a642cdf17f4089de64b62ca4bc8f7",
+        "GCTF24-crypto-otp/attachments/encrypted/alt05.png": "d41263f8745baeef03ecfd8792c14436c01df0f976b1407ba4b67a182b46ff16",
+        "GCTF24-crypto-otp/attachments/encrypted/alt06.png": "409a2964260f177315dc8b15208b40817008ef140a655b55f0b15b3203e50165",
+        "GCTF24-crypto-otp/attachments/encrypted/alt07.png": "abea303f2fd2b2238bbe5cde9f0073cd3d4f7fad0df8da19e0884209272cdb0e",
+        "GCTF24-crypto-otp/attachments/encrypted/alt08.png": "ba486ba98aacb42f003d4d9460021afcc666532f92a4e09937b977a3e274f2cb",
+        "GCTF24-crypto-otp/attachments/encrypted/alt09.png": "a67375fc964c618afddb2d2ba5310a6813c5e5925a4cc2c523da3903cae401d6",
+        "GCTF24-crypto-otp/attachments/encrypted/alt10.png": "766dc8c0d98cfb701f0a95fa61c5fb06273912be950780798fea86254fa3f8ea",
+        "GCTF24-crypto-otp/attachments/encrypted/alt11.png": "f50cb984f7329bbeeaa27daadcb5edaef9d079979485d8521e278c1726bc9309",
+        "GCTF24-crypto-otp/attachments/encrypted/alt12.png": "fe22890b0fcea2b9a9c6a371a5aa0cfdc7a318aab1a7402c9fa40d32360ae9ac",
+        "GCTF24-crypto-otp/attachments/encrypted/alt13.png": "3ad4b9d6e5f1128b7cb2c14e3775cc6977ec0fab41884d207e42320b344929c5",
+        "GCTF24-crypto-otp/attachments/encrypted/alt14.png": "48f2546d6a3ea39279b858635ff82e7912e1322f600e113384707765e9de2088",
+        "GCTF24-crypto-otp/attachments/encrypted/alt15.png": "07a8751d1f617461651e70dcf91bbbb0654c9742c003d65c74fa986e49a901a8",
+        "GCTF24-crypto-otp/attachments/encrypted/alt16.png": "3d25b1d83d6b434afe5f6b729e3c811133380c077e53a85ddd23a37e67b63c99",
+        "GCTF24-crypto-otp/attachments/encrypted/alt17.png": "6ca41177b4b37f89fca6c52c1f5b5696da646497c9224c158a04f43c7c4745f8",
+        "GCTF24-crypto-otp/attachments/encrypted/alt18.png": "7e6c33f5010c7a11fdd0cc7a044d94d739e465a0541cda4f84d1b890db16f4d2",
+        "GCTF24-crypto-otp/attachments/encrypted/alt19.png": "cb88ccaf1b4fd04991cd3a5498d22add52ca8bef00c51fc734e305e436d14630",
+        "GCTF24-crypto-otp/attachments/encrypted/alt20.png": "f366f19f4ac316f8a37bd10586875b5b634f7b4b47a4649cc00a9ba35e90157f",
+        "GCTF24-crypto-otp/attachments/encrypted/alt21.png": "f24e602b0de8988453c1cd8287a0d669720a2cb2d848322a72b12fe46de87ac3",
+        "GCTF24-crypto-otp/attachments/encrypted/alt22.png": "541d590a2da8957ea3d031e10ca14c654a1722162013a5973c6373e8d2ee2ab6",
+        "GCTF24-crypto-otp/attachments/encrypted/alt23.png": "2d1b454c401c8639d41352bae5db5b13e4f201f77630e27e43048e93afbcbc1d",
+        "GCTF24-crypto-otp/attachments/encrypted/alt24.png": "eef82d6da0969c69dcd6e38216be0587c8dbb0c0eacef374057022dcef5fad11",
+        "GCTF24-crypto-otp/attachments/encrypted/alt25.png": "37d7544941a877adbe99efbcda5a9e4e0a5db9332cef9fb85f54f84ab24854ed",
+        "GCTF24-crypto-otp/attachments/encrypted/alt26.png": "74d01edd88d9172173d22275c916a5b23ed824b62846a4e4fea8aa6e27d21d03",
+        "GCTF24-crypto-otp/attachments/encrypted/alt27.png": "025469db914855ddd9a5c482a317d5190a1ab51b96fb0f7eec3138b17f49487c",
+        "GCTF24-crypto-otp/attachments/encrypted/alt28.png": "7a06d35a15d8247d70c45e080267dbde0cafb81f3b0d7bb74269e159376a8736",
+        "GCTF24-crypto-otp/attachments/encrypted/alt29.png": "59c54eacca5fd7f661e62980adabb625f95951523369178cdd47a04dca73e8ed",
+        "GCTF24-crypto-otp/attachments/encrypted/alt30.png": "a912e255cbb5de34526af77ac4bf69e7fc7d4d0078ad1d7876b6c0b2e9d7be78",
+        "GCTF24-crypto-otp/attachments/encrypted/alt31.png": "210eda2e806c7c893ac2d88fc18d471b57e466adc6b63bf46158060c8fd5e624",
+        "GCTF24-crypto-otp/attachments/encrypted/alt32.png": "ee777136c551f98e4c428c4abea7af43e587d5f947e8a820ff7d4bf9e66c7fb1",
+        "GCTF24-crypto-otp/attachments/encrypted/alt33.png": "f6d250377b3658e97dcd3c0053fda2c9f6a603d60dcd99c8c2f5275231b3a863",
+        "GCTF24-crypto-otp/attachments/encrypted/alt34.png": "cface11066c43f3364848a7e48d32562e5310adb2db68b4226ba6f0dfdf4fcf6",
+        "GCTF24-crypto-otp/attachments/encrypted/alt35.png": "66928bd8676fa1ef52a34b6ab25e4e638ee341092df3e5d635ea819c821bf6f2",
+        "GCTF24-crypto-otp/attachments/encrypted/alt36.png": "47cff0db5ee16bb953ab5b1054b8e46f53a0b990fd3e9d31780050619b6b00b6",
+        "GCTF24-crypto-otp/attachments/encrypted/alt37.png": "438a95b45cd412d39e38ba58272d0891762154f78f9e99a3293c5e3d02423bec",
+        "GCTF24-crypto-otp/attachments/encrypted/alt38.png": "db093107910520a383d6b34e054fdcc6e2fa783a6c7472ca8523ae1b870c6c87",
+        "GCTF24-crypto-otp/attachments/encrypted/alt39.png": "c6c597b56e80467b4af024ada5b6c5774fd55a76446df8396b49073b5cc4f3b9",
+        "GCTF24-crypto-otp/attachments/encrypted/alt40.png": "9542860e19c5719f8ed04950997446221ca9c3a2e6607c9f8c6d366ea21eef3e",
+        "GCTF24-crypto-otp/attachments/encrypted/alt41.png": "a232aa41cfbc75c06bca9cec707f798af622bf89c9111caa1f3b678531d4dcfe",
+        "GCTF24-crypto-otp/attachments/encrypted/alt42.png": "e22f58817e91b3eb8fc2999b95506a787dff58dc97f7fbf69f5930153e4ad41f",
+        "GCTF24-crypto-otp/attachments/encrypted/alt43.png": "305031f341d98d1c178b1663ba9a6c3c9387a7547547a034a9e4b35f7700bb0c",
+        "GCTF24-crypto-otp/attachments/encrypted/alt44.png": "7f3ce99ef5981e4a8504d54ea2982103930ec3b6a36b49150e2416b2737f146f",
+        "GCTF24-crypto-otp/attachments/encrypted/alt45.png": "a8b7296b172b39735712abafc1ec469b6c57dae7ed2e2fb0b378c8b62a0f8008",
+        "GCTF24-crypto-otp/attachments/encrypted/alt46.png": "a432b005bd2bfac2e2369e8c6a8dc3489d5bb74a943f009a82b0f1559555c51e",
+        "GCTF24-crypto-otp/attachments/encrypted/alt47.png": "b83cd7f963bb69d59eea42c3c634132b402571ecd314c5113d96b3deb17aedb8",
+        "GCTF24-crypto-otp/attachments/encrypted/alt48.png": "8e727f5de2e21dbed6f7e8cdb7e361c61d7c1817120aaf197c6b86f24dc35bef",
+        "GCTF24-crypto-otp/attachments/encrypted/alt49.png": "b0b5f0f282fa0cb9e8a89351d1b84752c4d25d00a38e58d0d61cae01ab6520e1",
+        "GCTF24-crypto-otp/attachments/encrypted/alt50.png": "a9f4fcb5d9a2d2e0289470cc776c39c63281ccf0fddd43c0bd30afbe8d1c9ba0",
+        "GCTF24-crypto-otp/attachments/encrypted/alt51.png": "3aa9fb6f9b93142a6a23cbe966a9b7a3d2be753e878c03951234306adcddafc5",
+        "GCTF24-crypto-otp/attachments/encrypted/alt52.png": "8dbd79bb174aca88eaa427707f25459a9a6f407aeb292d1af872d8657592064d",
+        "GCTF24-crypto-otp/attachments/encrypted/alt53.png": "40aa57076a171f70f6fe507304b89ac409df1dd682fca3e476528f95eafef852",
+        "GCTF24-crypto-otp/attachments/encrypted/alt54.png": "31bc15de1d848f9e75e5e4b645533a28247ac1d6fb35e521d1b17f0cc79e34f7",
+        "GCTF24-crypto-otp/attachments/encrypted/alt55.png": "3aa86b42701bac016fcc8c7eb79dfa257e23e9c4bb5b3a00e17945234ad9b832",
+        "GCTF24-crypto-otp/attachments/encrypted/alt56.png": "63b9649dff3b9651a6e0c1e4c7c81476cdf057e1d11db2802fc5189ac0fb0817",
+        "GCTF24-crypto-otp/attachments/encrypted/alt57.png": "4bd6bfadc91039dc3b82520c407f4bd9da5bd5b994718b4f312f4ee7301cdd2a",
+        "GCTF24-crypto-otp/attachments/encrypted/alt58.png": "260994682c0ce5086d2326c8edd5c7d897a8630cf38169177a2e1f2f0a7e61e3",
+        "GCTF24-crypto-otp/attachments/encrypted/alt59.png": "f14e69829d423826aee4d938e1b2dcc14974eeda134232ad7df4986296faa5d7",
+        "GCTF24-crypto-otp/attachments/encrypted/alt60.png": "9543a5474955c880ac692e77a7eda42226182123b56186305a29b3f7cdd8c072",
+        "GCTF24-crypto-otp/attachments/encrypted/alt61.png": "a7017002781b26aadb7182d8109ce070a2488455b385040be4d9b20fa9b46728",
+        "GCTF24-crypto-otp/attachments/encrypted/alt62.png": "4ccf1361a7d96722d326ca48cf42725a9a77fdb1bb333f3799d93ff745c8f7aa",
+        "GCTF24-crypto-otp/attachments/encrypted/alt63.png": "e39992c267e089e054e4fd17b2c1f6f9569da9b6ac709bf9c73adbfb3b03db7f",
+        "GCTF24-crypto-otp/attachments/otp.py": "ada0448bddd4062bdcb0fbbb1c56610149585707fa56685dc10a533b6b4ed525"
+      },
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2024/quals/crypto-otp",
+      "tier": "hard"
+    },
+    {
+      "category": null,
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "event": "Google CTF 2024 Quals",
+      "handout_paths": [
+        "GCTF24-rev-arcade/attachments/README",
+        "GCTF24-rev-arcade/attachments/hash/neogeo.xml",
+        "GCTF24-rev-arcade/attachments/roms/gctf.zip",
+        "GCTF24-rev-arcade/attachments/roms/neogeo.zip"
+      ],
+      "id": "GCTF24-rev-arcade",
+      "mode": "original_attachment",
+      "official_flag": "CTF{h@cK1ng_r3tr0_gAm32_F0r_fuN}",
+      "official_name": "rev-arcade",
+      "reward": 14,
+      "sha256": {
+        "GCTF24-rev-arcade/attachments/README": "3afbd05991749c752197a8f38b614f941faa4a3092c2fc97b4c8066eab15782c",
+        "GCTF24-rev-arcade/attachments/hash/neogeo.xml": "6728106a3d7f1281451aec8476d9b965fd22014baf02d581ba28a99c150a7c36",
+        "GCTF24-rev-arcade/attachments/roms/gctf.zip": "3ba7129f9750a0f9c323ce4af289fc49636d62d9f12a791a89e52a9c3f5041dc",
+        "GCTF24-rev-arcade/attachments/roms/neogeo.zip": "7a1f74c70322e80ee7aa2091fa31d7770e8b557d661cd96301c83894546d3e55"
+      },
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2024/quals/rev-arcade",
+      "tier": "easy"
+    },
+    {
+      "category": null,
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "event": "Google CTF 2024 Quals",
+      "handout_paths": [
+        "GCTF24-rev-bomberman/attachments/assets/bomb.png",
+        "GCTF24-rev-bomberman/attachments/assets/bomb_ignited.png",
+        "GCTF24-rev-bomberman/attachments/assets/explosion.png",
+        "GCTF24-rev-bomberman/attachments/assets/flag.png",
+        "GCTF24-rev-bomberman/attachments/assets/ground.png",
+        "GCTF24-rev-bomberman/attachments/assets/pillar.png",
+        "GCTF24-rev-bomberman/attachments/assets/player.png",
+        "GCTF24-rev-bomberman/attachments/assets/void.png",
+        "GCTF24-rev-bomberman/attachments/assets/wall.png",
+        "GCTF24-rev-bomberman/attachments/assets/wall_destructible.png",
+        "GCTF24-rev-bomberman/attachments/challenge.tar.gz"
+      ],
+      "id": "GCTF24-rev-bomberman",
+      "mode": "original_attachment",
+      "official_flag": "CTF{NowWriteACPUInIt3727-5479}",
+      "official_name": "rev-bomberman",
+      "reward": 22,
+      "sha256": {
+        "GCTF24-rev-bomberman/attachments/assets/bomb.png": "af0a9fd8960153ed67563c172be2323b26b7dd76c52ce269c01f92dc8720473e",
+        "GCTF24-rev-bomberman/attachments/assets/bomb_ignited.png": "6dad8bd5e41b43c39a64e4dbbfe205ab2cfc3f24f460999ccb4e9cda8731f7e7",
+        "GCTF24-rev-bomberman/attachments/assets/explosion.png": "ac3ee0d094bc299758b9f15afbe9fd7137582d8833827b8462e93a546c02fb2c",
+        "GCTF24-rev-bomberman/attachments/assets/flag.png": "edc1409e1603c046645d2054b7fd132722ff8283a7f47813f5b91e90994bf537",
+        "GCTF24-rev-bomberman/attachments/assets/ground.png": "bf4337ded8c0c89fb8a1863189066255c1b1cf5636173eb1d134c7f47a4c6879",
+        "GCTF24-rev-bomberman/attachments/assets/pillar.png": "9296fc05ce5a6eda4c4bc63b44d82bcd82d86d3719df359b7ac93fd54dc20581",
+        "GCTF24-rev-bomberman/attachments/assets/player.png": "0f81108d72bf3655acda5f5a4d9912235e612945264c5a24424dace69e208ae6",
+        "GCTF24-rev-bomberman/attachments/assets/void.png": "c609d4a70ffcd0d661146a855dfe29ddc6b306358582fecc520257552cf304c6",
+        "GCTF24-rev-bomberman/attachments/assets/wall.png": "5bd2bca65dda5b45904aeb2a86b2a673a05d48ae0cf0d4fd70790a2a1a4a75c5",
+        "GCTF24-rev-bomberman/attachments/assets/wall_destructible.png": "c3b021e83a2b00d68ddc692364708898e8ec242e685235248316acea636bba6d",
+        "GCTF24-rev-bomberman/attachments/challenge.tar.gz": "cd821d367dc52cbb8116e84d06997a359b5e810742927281987f9fe7e8291453"
+      },
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2024/quals/rev-bomberman",
+      "tier": "medium"
+    },
+    {
+      "category": null,
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "event": "Google CTF 2024 Quals",
+      "handout_paths": [
+        "GCTF24-rev-ieee/attachments/ieee"
+      ],
+      "id": "GCTF24-rev-ieee",
+      "mode": "original_attachment",
+      "official_flag": "CTF{5ign3d_z3r0_NaNs_and_infiniti3s_rock_but_den0rmal5_4re_meh}",
+      "official_name": "rev-ieee",
+      "reward": 34,
+      "sha256": {
+        "GCTF24-rev-ieee/attachments/ieee": "2da77a7186d544308fe3ad63ea5175da25406c69338fdca8e2ae9fa79cb53361"
+      },
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2024/quals/rev-ieee",
+      "tier": "hard"
+    },
+    {
+      "category": null,
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "event": "Google CTF 2024 Quals",
+      "handout_paths": [
+        "GCTF24-rev-notobfuscated/attachments/challenge"
+      ],
+      "id": "GCTF24-rev-notobfuscated",
+      "mode": "original_attachment",
+      "official_flag": "CTF{I_pr0mize_its_jUsT_mAtriCeS}",
+      "official_name": "rev-notobfuscated",
+      "reward": 14,
+      "sha256": {
+        "GCTF24-rev-notobfuscated/attachments/challenge": "8e4941cda80bdebafb027f4a8e08b6f7aefcb3b0bb9cfaa2306a808786b95249"
+      },
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2024/quals/rev-notobfuscated",
+      "tier": "easy"
+    },
+    {
+      "category": null,
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "event": "Google CTF 2024 Quals",
+      "handout_paths": [
+        "GCTF24-rev-rustyschool/attachments/flag.txt.encrypted",
+        "GCTF24-rev-rustyschool/attachments/rustyschool"
+      ],
+      "id": "GCTF24-rev-rustyschool",
+      "mode": "original_attachment",
+      "official_flag": "CTF{I_4m_1nd33d_rUs7y_I_f0rg0t_h0w_t0_d3z1gN_g00d_crYpt0_alg0z}",
+      "official_name": "rev-rustyschool",
+      "reward": 22,
+      "sha256": {
+        "GCTF24-rev-rustyschool/attachments/flag.txt.encrypted": "6cb968ed8cf5eb0d270f9278a7a7de10b84bbab5ef10ed2cf8ddb54a5e05c25b",
+        "GCTF24-rev-rustyschool/attachments/rustyschool": "5c6c0d4cfc445c71a165fc992df7f76e94d5d55917b8dff78de40b21fd5dafac"
+      },
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2024/quals/rev-rustyschool",
+      "tier": "medium"
+    },
+    {
+      "category": null,
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "event": "Google CTF 2024 Quals",
+      "handout_paths": [
+        "GCTF24-rev-x86perm/attachments/binary"
+      ],
+      "id": "GCTF24-rev-x86perm",
+      "mode": "original_attachment",
+      "official_flag": "CTF{l0oks_l1k3_x86p3rm_pr07ector_i5_n0t_5ecur3}",
+      "official_name": "rev-x86perm",
+      "reward": 34,
+      "sha256": {
+        "GCTF24-rev-x86perm/attachments/binary": "f6237ff2714f0e1866e7a11423e3198e8ed5e3f4dfabbe9145b70a3180bb04a2"
+      },
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2024/quals/rev-x86perm",
+      "tier": "hard"
+    },
+    {
+      "category": null,
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "event": "Google CTF 2025 Quals",
+      "handout_paths": [
+        "GCTF25-crypto-numerology/attachments/__pycache__/crypto_numerology.cpython-312.pyc",
+        "GCTF25-crypto-numerology/attachments/ctf_challenge_package.json",
+        "GCTF25-crypto-numerology/attachments/flag.txt",
+        "GCTF25-crypto-numerology/attachments/init.sh",
+        "GCTF25-crypto-numerology/attachments/readme.md"
+      ],
+      "id": "GCTF25-crypto-numerology",
+      "mode": "original_attachment",
+      "official_flag": "CTF{w3_aRe_g0Nn@_ge7_MY_FuncKee_monkey_!!}",
+      "official_name": "crypto-numerology",
+      "reward": 14,
+      "sha256": {
+        "GCTF25-crypto-numerology/attachments/__pycache__/crypto_numerology.cpython-312.pyc": "65cae6413d1a3396b8ffe387b1ffc85d736e0b1abcf3540ae5177f91d970cb4b",
+        "GCTF25-crypto-numerology/attachments/ctf_challenge_package.json": "c088a9227cff73fa9f41d5e010fc691ee796d45113546f885665312d71197ed7",
+        "GCTF25-crypto-numerology/attachments/flag.txt": "c74b4ae3922aeeb43adc04eead8400cc595ae5fa8323d69aa6a8e3b7b0e961ce",
+        "GCTF25-crypto-numerology/attachments/init.sh": "e3d3c72a700ce258fa86f136276a525785c6e0b4cbe90831722c40fbe21f61f7",
+        "GCTF25-crypto-numerology/attachments/readme.md": "737199d17d0fec9bc719fb2c4878f6a2bba0e6bb0ceb33cbc105e3ccde850a28"
+      },
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2025/quals/crypto-numerology",
+      "tier": "easy"
+    },
+    {
+      "category": null,
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "event": "Google CTF 2025 Quals",
+      "handout_paths": [
+        "GCTF25-rev-asteroids-redux/attachments/playme"
+      ],
+      "id": "GCTF25-rev-asteroids-redux",
+      "mode": "original_attachment",
+      "official_flag": "CTF{upDN_B_a_im_ur_pRoOf_0f_p1y}",
+      "official_name": "rev-asteroids-redux",
+      "reward": 22,
+      "sha256": {
+        "GCTF25-rev-asteroids-redux/attachments/playme": "f701472174419ed2e70dbf32ac2481de42a0a1dbe2de7fd99be9b11d8108e7c3"
+      },
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2025/quals/rev-asteroids-redux",
+      "tier": "medium"
+    },
+    {
+      "category": null,
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "event": "Google CTF 2025 Quals",
+      "handout_paths": [
+        "GCTF25-rev-cgb/attachments/README.md",
+        "GCTF25-rev-cgb/attachments/hash/gbcolor.xml",
+        "GCTF25-rev-cgb/attachments/roms/gbcolor/gbc_boot.1",
+        "GCTF25-rev-cgb/attachments/roms/gbcolor/gbc_boot.2",
+        "GCTF25-rev-cgb/attachments/roms/gctf/gctf.gb"
+      ],
+      "id": "GCTF25-rev-cgb",
+      "mode": "original_attachment",
+      "official_flag": "CTF{i_H@d_fuN_L3aRniNG_cGB_h0w_@B0u7_u?}",
+      "official_name": "rev-cgb",
+      "reward": 34,
+      "sha256": {
+        "GCTF25-rev-cgb/attachments/README.md": "41090bc094a71a67f49e9b143910e9f1b99d93929eea6d85bf660d168d0fd4a1",
+        "GCTF25-rev-cgb/attachments/hash/gbcolor.xml": "9e27a126fd13599cde32b275c036e7c75825fa7e25a590af0891c63921c38468",
+        "GCTF25-rev-cgb/attachments/roms/gbcolor/gbc_boot.1": "77be79df66355edfb15b1a5ef6a754753b9f34e4fd65b96669465e2fdac212e6",
+        "GCTF25-rev-cgb/attachments/roms/gbcolor/gbc_boot.2": "f19cbe67ff50a13a8e7751ff98291f4523fb730073244e8e5b08bc88da21a758",
+        "GCTF25-rev-cgb/attachments/roms/gctf/gctf.gb": "33cdbb022938f32d02248a4888003a21b0242714e2fc1c0bd24eaaf6607626f6"
+      },
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2025/quals/rev-cgb",
+      "tier": "hard"
+    },
+    {
+      "category": null,
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "event": "Google CTF 2025 Quals",
+      "handout_paths": [
+        "GCTF25-rev-fluffy/attachments/fluffy.apk"
+      ],
+      "id": "GCTF25-rev-fluffy",
+      "mode": "original_attachment",
+      "official_flag": "CTF{Ok4y_h4v3_u_0ptim1zed_brUt3_f0rcE_0R_y0u_jUst_uSeD_a_l0t_0f_c0Res?}",
+      "official_name": "rev-fluffy",
+      "reward": 14,
+      "sha256": {
+        "GCTF25-rev-fluffy/attachments/fluffy.apk": "ec1e5e85f17acd4513473167d5c90689c936c2f66584acd1b8d6bdf61740090a"
+      },
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2025/quals/rev-fluffy",
+      "tier": "easy"
+    },
+    {
+      "category": null,
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "event": "Google CTF 2025 Quals",
+      "handout_paths": [
+        "GCTF25-rev-puzzlepuzzle/attachments/puzzlepuzzle.tar.gz"
+      ],
+      "id": "GCTF25-rev-puzzlepuzzle",
+      "mode": "original_attachment",
+      "official_flag": "CTF{n0w_Imag1ne_iF_th1s_w3r3_A_Mystery_Hunt_PuzZlE}",
+      "official_name": "rev-puzzlepuzzle",
+      "reward": 22,
+      "sha256": {
+        "GCTF25-rev-puzzlepuzzle/attachments/puzzlepuzzle.tar.gz": "8e48361af4d03447ac84eb0ba5b49538ff7c407909732a2bbb2b7ed43ea0e223"
+      },
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2025/quals/rev-puzzlepuzzle",
+      "tier": "medium"
+    },
+    {
+      "category": null,
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "event": "Google CTF 2025 Quals",
+      "handout_paths": [
+        "GCTF25-web-js-safe-6/attachments/js_safe_6.tar.gz"
+      ],
+      "id": "GCTF25-web-js-safe-6",
+      "mode": "original_attachment",
+      "official_flag": "CTF{1M_4_C7F_p14y32_4N71_d38U9_721cK5_d0n7_w02K_0n_m3}",
+      "official_name": "web-js-safe-6",
+      "reward": 34,
+      "sha256": {
+        "GCTF25-web-js-safe-6/attachments/js_safe_6.tar.gz": "13dd832424c4c800d92b8b07fb6718f23c40af144d29418511158d7a0b5aaf99"
+      },
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2025/quals/web-js-safe-6",
+      "tier": "hard"
+    },
+    {
+      "category": null,
+      "commit": "6be09bb4a5172a1110961ee4a079688992dd56b6",
+      "event": "SECCON 13 Finals",
+      "handout_paths": [
+        "SECCON00-simple-reversing/files/simple_reversing"
+      ],
+      "id": "SECCON00-simple-reversing",
+      "mode": "original_attachment",
+      "official_flag": "SECCON{Sh3_w0uld_n3v3r_s4y_wh3r3_sh3_c4m3_fr0m}",
+      "official_name": "simple_reversing",
+      "reward": 14,
+      "sha256": {
+        "SECCON00-simple-reversing/files/simple_reversing": "78d5745ae4064e1c2410b3e96229a084808439bf640343c40674311c501047c4"
+      },
+      "source": "https://github.com/SECCON/SECCON13_final_CTF/tree/6be09bb4a5172a1110961ee4a079688992dd56b6/reversing/simple_reversing",
+      "tier": "easy"
+    },
+    {
+      "category": null,
+      "commit": "32d98bc7af7159877dd90d96b44f93d00f9e49b3",
+      "event": "SECCON 13 Online CTF",
+      "handout_paths": [
+        "SECCON00-Jump/files/jump"
+      ],
+      "id": "SECCON00-Jump",
+      "mode": "original_attachment",
+      "official_flag": "SECCON{5h4k3_1t_up_5h-5h-5h5hk3}",
+      "official_name": "Jump",
+      "reward": 22,
+      "sha256": {
+        "SECCON00-Jump/files/jump": "1f4493a3fb2b11917fc15d2d15bf708370f23ef5e90c8c4ccd324c2e29da36ab"
+      },
+      "source": "https://github.com/SECCON/SECCON13_online_CTF/tree/32d98bc7af7159877dd90d96b44f93d00f9e49b3/reversing/Jump",
+      "tier": "medium"
+    },
+    {
+      "category": null,
+      "commit": "32d98bc7af7159877dd90d96b44f93d00f9e49b3",
+      "event": "SECCON 13 Online CTF",
+      "handout_paths": [
+        "SECCON00-Tidal-wave/files/chall.sage",
+        "SECCON00-Tidal-wave/files/output.txt"
+      ],
+      "id": "SECCON00-Tidal-wave",
+      "mode": "original_attachment",
+      "official_flag": "SECCON{There__4re_many_w4ys_t0_use_m4tr1x:)}",
+      "official_name": "Tidal wave",
+      "reward": 34,
+      "sha256": {
+        "SECCON00-Tidal-wave/files/chall.sage": "6ae783ab2558842b8c96084745fb437e55045231e99c61827d18bd10d2a6f5fd",
+        "SECCON00-Tidal-wave/files/output.txt": "82a42cb8efb42938be659278a766e7d2b0ccd49ea2c1a1aa352bd2c31d64143d"
+      },
+      "source": "https://github.com/SECCON/SECCON13_online_CTF/tree/32d98bc7af7159877dd90d96b44f93d00f9e49b3/crypto/Tidal wave",
+      "tier": "hard"
+    },
+    {
+      "category": null,
+      "commit": "32d98bc7af7159877dd90d96b44f93d00f9e49b3",
+      "event": "SECCON 13 Online CTF",
+      "handout_paths": [
+        "SECCON00-packed/files/a.out"
+      ],
+      "id": "SECCON00-packed",
+      "mode": "original_attachment",
+      "official_flag": "SECCON{UPX_s7ub_1s_a_g0od_pl4c3_f0r_h1din6_c0d3}",
+      "official_name": "packed",
+      "reward": 14,
+      "sha256": {
+        "SECCON00-packed/files/a.out": "616fba4b4cfe6eec88867946ffa814fdd3c5269fbd2c52ce5c17a98a45be9d58"
+      },
+      "source": "https://github.com/SECCON/SECCON13_online_CTF/tree/32d98bc7af7159877dd90d96b44f93d00f9e49b3/reversing/packed",
+      "tier": "easy"
+    },
+    {
+      "category": null,
+      "commit": "32d98bc7af7159877dd90d96b44f93d00f9e49b3",
+      "event": "SECCON 13 Online CTF",
+      "handout_paths": [
+        "SECCON00-reiwa-rot13/files/chall.py",
+        "SECCON00-reiwa-rot13/files/output.txt"
+      ],
+      "id": "SECCON00-reiwa-rot13",
+      "mode": "original_attachment",
+      "official_flag": "SECCON{Vim_has_a_command_to_do_rot13._g?_is_possible_to_do_so!!}",
+      "official_name": "reiwa_rot13",
+      "reward": 22,
+      "sha256": {
+        "SECCON00-reiwa-rot13/files/chall.py": "8804f56d0c8e865881eb9ffaace3c7690364f8db0cce4b7f8389a6251f8cdc3f",
+        "SECCON00-reiwa-rot13/files/output.txt": "0f24eb397c463a4e9f3f9fa3e2b7df979068568a685f8153a20eecf8865f35a4"
+      },
+      "source": "https://github.com/SECCON/SECCON13_online_CTF/tree/32d98bc7af7159877dd90d96b44f93d00f9e49b3/crypto/reiwa_rot13",
+      "tier": "medium"
+    },
+    {
+      "category": null,
+      "commit": "628008ae2d150723352aed2c95abff41501c51f2",
+      "event": "SECCON 2021 Online CTF",
+      "handout_paths": [
+        "SECCON21-Sign-Wars/files/README.md",
+        "SECCON21-Sign-Wars/files/Sign_Wars/challenge.sage",
+        "SECCON21-Sign-Wars/files/Sign_Wars/output.txt"
+      ],
+      "id": "SECCON21-Sign-Wars",
+      "mode": "original_attachment",
+      "official_flag": "SECCON{New_STARWARS_Spin-Off_The_Book_Of_Boba_Fett_Will_Premiere_On_December_29-107c360aab}",
+      "official_name": "Sign_Wars",
+      "reward": 34,
+      "sha256": {
+        "SECCON21-Sign-Wars/files/README.md": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "SECCON21-Sign-Wars/files/Sign_Wars/challenge.sage": "2bcc92d3e33a278c8d41ca49158db645fbb29c5a9581dc6ef1b31668fceb488f",
+        "SECCON21-Sign-Wars/files/Sign_Wars/output.txt": "6453aacccc34512f12b21e4d7d20f467efc0c05a226e85f6ca15c44100b79296"
+      },
+      "source": "https://github.com/SECCON/SECCON2021_online_CTF/tree/628008ae2d150723352aed2c95abff41501c51f2/crypto/Sign_Wars",
+      "tier": "hard"
+    },
+    {
+      "category": null,
+      "commit": "628008ae2d150723352aed2c95abff41501c51f2",
+      "event": "SECCON 2021 Online CTF",
+      "handout_paths": [
+        "SECCON21-XXX/files/output.txt",
+        "SECCON21-XXX/files/task.sage"
+      ],
+      "id": "SECCON21-XXX",
+      "mode": "original_attachment",
+      "official_flag": "SECCON{9dd4e461268c8034f5c8564e155c67a6}",
+      "official_name": "XXX",
+      "reward": 14,
+      "sha256": {
+        "SECCON21-XXX/files/output.txt": "b2a2c4cc1487ee9d2d594df9d7470cfd44ab28fa33625f233dfee91ba00ff654",
+        "SECCON21-XXX/files/task.sage": "50b6c0d519c8343385504f0647586397172403074265e39660569923f1baa3c5"
+      },
+      "source": "https://github.com/SECCON/SECCON2021_online_CTF/tree/628008ae2d150723352aed2c95abff41501c51f2/crypto/XXX",
+      "tier": "easy"
+    },
+    {
+      "category": null,
+      "commit": "628008ae2d150723352aed2c95abff41501c51f2",
+      "event": "SECCON 2021 Online CTF",
+      "handout_paths": [
+        "SECCON21-corrupted-flag/files/corrupted_flag/corrupt",
+        "SECCON21-corrupted-flag/files/corrupted_flag/flag.txt.enc"
+      ],
+      "id": "SECCON21-corrupted-flag",
+      "mode": "original_attachment",
+      "official_flag": "SECCON{9e469af5f60e7f0c98854ebf0afd254c102154587a7491594900a8d186df4801}",
+      "official_name": "corrupted_flag",
+      "reward": 22,
+      "sha256": {
+        "SECCON21-corrupted-flag/files/corrupted_flag/corrupt": "d85cfa55e24670b108dcea1d9974fdbbcfe5a4d708c379ae8e437a751125384f",
+        "SECCON21-corrupted-flag/files/corrupted_flag/flag.txt.enc": "828ee5506196e751203d3002f0e3c93c32c3b3f5516d8b82ce84b375ccffcb17"
+      },
+      "source": "https://github.com/SECCON/SECCON2021_online_CTF/tree/628008ae2d150723352aed2c95abff41501c51f2/reversing/corrupted_flag",
+      "tier": "medium"
+    },
+    {
+      "category": null,
+      "commit": "628008ae2d150723352aed2c95abff41501c51f2",
+      "event": "SECCON 2021 Online CTF",
+      "handout_paths": [
+        "SECCON21-pppp/files/output.txt",
+        "SECCON21-pppp/files/problem.sage"
+      ],
+      "id": "SECCON21-pppp",
+      "mode": "original_attachment",
+      "official_flag": "SECCON{C4n_y0u_prove_why_decryptable?}",
+      "official_name": "pppp",
+      "reward": 34,
+      "sha256": {
+        "SECCON21-pppp/files/output.txt": "e1bfa3298047e456c903d569484e81116a384251447647503f5e923c10b68f88",
+        "SECCON21-pppp/files/problem.sage": "901c706b72c52b67b8f9611749dd39a3b8f4802cd211cf488e7bc95ae9af7ce3"
+      },
+      "source": "https://github.com/SECCON/SECCON2021_online_CTF/tree/628008ae2d150723352aed2c95abff41501c51f2/crypto/pppp",
+      "tier": "hard"
+    },
+    {
+      "category": null,
+      "commit": "628008ae2d150723352aed2c95abff41501c51f2",
+      "event": "SECCON 2021 Online CTF",
+      "handout_paths": [
+        "SECCON21-pyast64---rev/files/pyast64.rev/README.md",
+        "SECCON21-pyast64---rev/files/pyast64.rev/chall.elf",
+        "SECCON21-pyast64---rev/files/pyast64.rev/pyast64.py"
+      ],
+      "id": "SECCON21-pyast64---rev",
+      "mode": "original_attachment",
+      "official_flag": "SECCON{r3c3nt_d3c0mp1l3rs_R_g00d_4t_0pt1m1z1ng_PUSH-POP_p41rs}",
+      "official_name": "pyast64++.rev",
+      "reward": 14,
+      "sha256": {
+        "SECCON21-pyast64---rev/files/pyast64.rev/README.md": "08dbfb4f894e99c95c852e2bc6851ed933d87cea5ed9d7e082baa6e5061672cd",
+        "SECCON21-pyast64---rev/files/pyast64.rev/chall.elf": "5a4aa52258a8201dd02de80334c22606456ddffe3c3cf0768b907a193feda06a",
+        "SECCON21-pyast64---rev/files/pyast64.rev/pyast64.py": "cc0d5c1e9e574a26d3b361a9e1db1f960b9756812203eb513f344da12e719428"
+      },
+      "source": "https://github.com/SECCON/SECCON2021_online_CTF/tree/628008ae2d150723352aed2c95abff41501c51f2/reversing/pyast64++.rev",
+      "tier": "easy"
+    },
+    {
+      "category": null,
+      "commit": "628008ae2d150723352aed2c95abff41501c51f2",
+      "event": "SECCON 2021 Online CTF",
+      "handout_paths": [
+        "SECCON21-s-script-gi/files/flag/flag.tar.gz",
+        "SECCON21-s-script-gi/files/flag/small.txt"
+      ],
+      "id": "SECCON21-s-script-gi",
+      "mode": "original_attachment",
+      "official_flag": "SECCON{sanitizing_is_not_so_good><_escaping_is_better_iPt><SCript<ScrIpT<scRIp<scRI<Sc<scr!pt>}",
+      "official_name": "s_script_gi",
+      "reward": 22,
+      "sha256": {
+        "SECCON21-s-script-gi/files/flag/flag.tar.gz": "8579b19dc559827f7501be29f32d262cb094d8a733d77ac576fbe2fb038f9684",
+        "SECCON21-s-script-gi/files/flag/small.txt": "10258f6169f7a222a57598654e412a06d84ef4a4d1c3eb5c509a94293138252b"
+      },
+      "source": "https://github.com/SECCON/SECCON2021_online_CTF/tree/628008ae2d150723352aed2c95abff41501c51f2/misc/s_script_gi",
+      "tier": "medium"
+    },
+    {
+      "category": null,
+      "commit": "46742099d094a69c214f35498718b5c9ba900b26",
+      "event": "SECCON 2022 Online CTF",
+      "handout_paths": [
+        "SECCON22-baby-cmp/files/chall.baby"
+      ],
+      "id": "SECCON22-baby-cmp",
+      "mode": "original_attachment",
+      "official_flag": "SECCON{y0u_f0und_7h3_baby_flag_YaY}",
+      "official_name": "baby_cmp",
+      "reward": 34,
+      "sha256": {
+        "SECCON22-baby-cmp/files/chall.baby": "d69a769f91c32f5ab94eeb6cea8d28fd7d3da5bba791ac91af61cf85465de239"
+      },
+      "source": "https://github.com/SECCON/SECCON2022_online_CTF/tree/46742099d094a69c214f35498718b5c9ba900b26/reversing/baby_cmp",
+      "tier": "hard"
+    },
+    {
+      "category": null,
+      "commit": "46742099d094a69c214f35498718b5c9ba900b26",
+      "event": "SECCON 2022 Online CTF",
+      "handout_paths": [
+        "SECCON22-devil-hunter/files/devil_hunter/check.sh",
+        "SECCON22-devil-hunter/files/devil_hunter/flag.cbc"
+      ],
+      "id": "SECCON22-devil-hunter",
+      "mode": "original_attachment",
+      "official_flag": "SECCON{byT3c0d3_1nT3rpr3T3r_1s_4_L0T_0f_fun}",
+      "official_name": "devil_hunter",
+      "reward": 14,
+      "sha256": {
+        "SECCON22-devil-hunter/files/devil_hunter/check.sh": "46a536b6b82bd8bdc98a77c7716acaa9cf8c5c437c94dc3d2183156f694b1c74",
+        "SECCON22-devil-hunter/files/devil_hunter/flag.cbc": "19f317e22b11766636245902b4e04b95b0e747366aa05b4608c6883b7c37be62"
+      },
+      "source": "https://github.com/SECCON/SECCON2022_online_CTF/tree/46742099d094a69c214f35498718b5c9ba900b26/reversing/devil_hunter",
+      "tier": "easy"
+    },
+    {
+      "category": null,
+      "commit": "46742099d094a69c214f35498718b5c9ba900b26",
+      "event": "SECCON 2022 Online CTF",
+      "handout_paths": [
+        "SECCON22-doroboh/files/doroboh/README.txt",
+        "SECCON22-doroboh/files/doroboh/araiguma.DMP",
+        "SECCON22-doroboh/files/doroboh/araiguma.exe.bin",
+        "SECCON22-doroboh/files/doroboh/network.pcap"
+      ],
+      "id": "SECCON22-doroboh",
+      "mode": "original_attachment",
+      "official_flag": "SECCON{M3m0ry_Dump+P4ck3t_C4ptur3=S0ph1st1c4t3d_F0r3ns1cs}",
+      "official_name": "doroboh",
+      "reward": 22,
+      "sha256": {
+        "SECCON22-doroboh/files/doroboh/README.txt": "24e81576c0943de39d8d751bdd12f10a2ce673786ffb76c638c0ea3781c46b90",
+        "SECCON22-doroboh/files/doroboh/araiguma.DMP": "dea74e0631089901b2f47eee0852704576757cfa0f6e37a49ccdd92db7fd019f",
+        "SECCON22-doroboh/files/doroboh/araiguma.exe.bin": "9182ffdad78772d97df7a14ddefc2abfb5f1c7b166e5e277db0c99881e5d76f2",
+        "SECCON22-doroboh/files/doroboh/network.pcap": "a1623660da424dc2734277f307b105d13eb1e6a0f3a6e2236f6c3b20dc548923"
+      },
+      "source": "https://github.com/SECCON/SECCON2022_online_CTF/tree/46742099d094a69c214f35498718b5c9ba900b26/reversing/doroboh",
+      "tier": "medium"
+    },
+    {
+      "category": null,
+      "commit": "46742099d094a69c214f35498718b5c9ba900b26",
+      "event": "SECCON 2022 Online CTF",
+      "handout_paths": [
+        "SECCON22-elder-cmp/files/chall.elder"
+      ],
+      "id": "SECCON22-elder-cmp",
+      "mode": "original_attachment",
+      "official_flag": "SECCON{TWINE_wr1tt3n_1n_3xc3pt10n_0r13nt3d_pr0gr4mm1ng}",
+      "official_name": "elder_cmp",
+      "reward": 34,
+      "sha256": {
+        "SECCON22-elder-cmp/files/chall.elder": "4e76e67b835fb7384a0fe3eef08e779ecfc494096a5bfd65029dce6f10be75e7"
+      },
+      "source": "https://github.com/SECCON/SECCON2022_online_CTF/tree/46742099d094a69c214f35498718b5c9ba900b26/reversing/elder_cmp",
+      "tier": "hard"
+    },
+    {
+      "category": null,
+      "commit": "46742099d094a69c214f35498718b5c9ba900b26",
+      "event": "SECCON 2022 Online CTF",
+      "handout_paths": [
+        "SECCON22-insufficient/files/README.md",
+        "SECCON22-insufficient/files/dist/output.txt",
+        "SECCON22-insufficient/files/dist/problem.py"
+      ],
+      "id": "SECCON22-insufficient",
+      "mode": "original_attachment",
+      "official_flag": "SECCON{Unfortunately_I_could_not_come_up_with_a_more_difficult_problem_than_last_year_sorry...-6fc18307d3ed2e7673a249abc2e0e22c}",
+      "official_name": "insufficient",
+      "reward": 14,
+      "sha256": {
+        "SECCON22-insufficient/files/README.md": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "SECCON22-insufficient/files/dist/output.txt": "7c247b5b2d27e513659a82e325f54f8f1cfa198125732b5cb542452550bb1cd2",
+        "SECCON22-insufficient/files/dist/problem.py": "a9fe94d34916da7c34859d8e36c2c71582c70dbcf9c9856c4e8e1016f551b880"
+      },
+      "source": "https://github.com/SECCON/SECCON2022_online_CTF/tree/46742099d094a69c214f35498718b5c9ba900b26/crypto/insufficient",
+      "tier": "easy"
+    },
+    {
+      "category": null,
+      "commit": "46742099d094a69c214f35498718b5c9ba900b26",
+      "event": "SECCON 2022 Online CTF",
+      "handout_paths": [
+        "SECCON22-pqpq/files/output.txt",
+        "SECCON22-pqpq/files/problem.py"
+      ],
+      "id": "SECCON22-pqpq",
+      "mode": "original_attachment",
+      "official_flag": "SECCON{being_able_to_s0lve_this_1s_great!}",
+      "official_name": "pqpq",
+      "reward": 22,
+      "sha256": {
+        "SECCON22-pqpq/files/output.txt": "3c2ac5c7c61b495a8f58d061b6d8a06d9cccb92dc0ac41ebea91f97a0f550d55",
+        "SECCON22-pqpq/files/problem.py": "9f82e22372adc4e25153184fad67fa1397271a1d1eac02abfeef114712543640"
+      },
+      "source": "https://github.com/SECCON/SECCON2022_online_CTF/tree/46742099d094a69c214f35498718b5c9ba900b26/crypto/pqpq",
+      "tier": "medium"
+    },
+    {
+      "category": null,
+      "commit": "f7920f4f6f0beed0db271a86758aeb5d7cfad020",
+      "event": "SECCON 2023 Finals",
+      "handout_paths": [
+        "SECCON23-Paillier-4-0/files/dist/output.txt",
+        "SECCON23-Paillier-4-0/files/dist/problem.sage"
+      ],
+      "id": "SECCON23-Paillier-4-0",
+      "mode": "original_attachment",
+      "official_flag": "SECCON{Please help me to improve and make it secure, Paillier 4.1...}",
+      "official_name": "Paillier 4.0",
+      "reward": 34,
+      "sha256": {
+        "SECCON23-Paillier-4-0/files/dist/output.txt": "d170dfced8aca8dd4994acec9a54aa8d6251d43a9711517623cb853c12db4d25",
+        "SECCON23-Paillier-4-0/files/dist/problem.sage": "3ddd3cbb954ea9eefd96491d5a5d1282c1d9f155b54b436bc6b3426973e33267"
+      },
+      "source": "https://github.com/SECCON/SECCON2023_final_CTF/tree/f7920f4f6f0beed0db271a86758aeb5d7cfad020/crypto/Paillier 4.0",
+      "tier": "hard"
+    },
+    {
+      "category": null,
+      "commit": "f7920f4f6f0beed0db271a86758aeb5d7cfad020",
+      "event": "SECCON 2023 Finals",
+      "handout_paths": [
+        "SECCON23-ReMOV/files/remov"
+      ],
+      "id": "SECCON23-ReMOV",
+      "mode": "original_attachment",
+      "official_flag": "SECCON{y3t_4n0th3r_m0vfu5c4t0r?}",
+      "official_name": "ReMOV",
+      "reward": 14,
+      "sha256": {
+        "SECCON23-ReMOV/files/remov": "95d691df02055a8d7e37633401a0987525f705c45b0905bc37f32c2919e27ef8"
+      },
+      "source": "https://github.com/SECCON/SECCON2023_final_CTF/tree/f7920f4f6f0beed0db271a86758aeb5d7cfad020/reversing/ReMOV",
+      "tier": "easy"
+    },
+    {
+      "category": null,
+      "commit": "f7920f4f6f0beed0db271a86758aeb5d7cfad020",
+      "event": "SECCON 2023 Finals",
+      "handout_paths": [
+        "SECCON23-digicake/files/digicake.7z"
+      ],
+      "id": "SECCON23-digicake",
+      "mode": "original_attachment",
+      "official_flag": "SECCON{How_many_solutions_did_you_find?}",
+      "official_name": "digicake",
+      "reward": 22,
+      "sha256": {
+        "SECCON23-digicake/files/digicake.7z": "dc58961ccf1de71113a32eea50aea9fd7b6ffd0e2b5f4aae705000ea873ed78d"
+      },
+      "source": "https://github.com/SECCON/SECCON2023_final_CTF/tree/f7920f4f6f0beed0db271a86758aeb5d7cfad020/misc/digicake",
+      "tier": "medium"
+    },
+    {
+      "category": null,
+      "commit": "f7920f4f6f0beed0db271a86758aeb5d7cfad020",
+      "event": "SECCON 2023 Finals",
+      "handout_paths": [
+        "SECCON23-efsbk/files/flag.bin"
+      ],
+      "id": "SECCON23-efsbk",
+      "mode": "original_attachment",
+      "official_flag": "SECCON{c33f407edefbda181faf764126df90cd28fa467750d25ff5aab80c1ea1108ec4}",
+      "official_name": "efsbk",
+      "reward": 34,
+      "sha256": {
+        "SECCON23-efsbk/files/flag.bin": "3ca6fe17b885d48dc02adec6356fe69fdeefb627ef577d91f3de70cf44c16888"
+      },
+      "source": "https://github.com/SECCON/SECCON2023_final_CTF/tree/f7920f4f6f0beed0db271a86758aeb5d7cfad020/reversing/efsbk",
+      "tier": "hard"
+    },
+    {
+      "category": null,
+      "commit": "f7920f4f6f0beed0db271a86758aeb5d7cfad020",
+      "event": "SECCON 2023 Finals",
+      "handout_paths": [
+        "SECCON23-okihai/files/okihai/okihai-linux",
+        "SECCON23-okihai/files/okihai/okihai-win.exe"
+      ],
+      "id": "SECCON23-okihai",
+      "mode": "original_attachment",
+      "official_flag": "SECCON{d0n7_0p3n_my_d3l1v3ry_b0x_w17h0u7_p3rm15510n}",
+      "official_name": "okihai",
+      "reward": 14,
+      "sha256": {
+        "SECCON23-okihai/files/okihai/okihai-linux": "312a09366695d938c4354d85dab1e5684865061e8f7f025c76cd7188a862271a",
+        "SECCON23-okihai/files/okihai/okihai-win.exe": "6a9772c7ba9477024d7146f93fe6e91494d08546ad10f83b139041be0d5fac3c"
+      },
+      "source": "https://github.com/SECCON/SECCON2023_final_CTF/tree/f7920f4f6f0beed0db271a86758aeb5d7cfad020/reversing/okihai",
+      "tier": "easy"
+    },
+    {
+      "category": null,
+      "commit": "0fcc88e38a007b974bbb93686dc9c02d7f62bd07",
+      "event": "SECCON 2023 Online CTF",
+      "handout_paths": [
+        "SECCON23-CIGISICGICGICG/files/dist/output.txt",
+        "SECCON23-CIGISICGICGICG/files/dist/problem.py"
+      ],
+      "id": "SECCON23-CIGISICGICGICG",
+      "mode": "original_attachment",
+      "official_flag": "SECCON{ICG1c6iC6icgic6icgcIgIcg1C6ic6ICGICG1cGicG1C61CG1cG1c61cgIcg}",
+      "official_name": "CIGISICGICGICG",
+      "reward": 22,
+      "sha256": {
+        "SECCON23-CIGISICGICGICG/files/dist/output.txt": "a14319789d091f5d23024bb9fa84a600723860904ebaaf5ff8f2e1f464dbd0c4",
+        "SECCON23-CIGISICGICGICG/files/dist/problem.py": "cc7a1f935f70eabf8682effa9aa69a3575cdcda80b8772da323e604d9f8993ea"
+      },
+      "source": "https://github.com/SECCON/SECCON2023_online_CTF/tree/0fcc88e38a007b974bbb93686dc9c02d7f62bd07/crypto/CIGISICGICGICG",
+      "tier": "medium"
+    },
+    {
+      "category": null,
+      "commit": "0fcc88e38a007b974bbb93686dc9c02d7f62bd07",
+      "event": "SECCON 2023 Online CTF",
+      "handout_paths": [
+        "SECCON23-Increasing-Entropoid/files/dist/output.txt",
+        "SECCON23-Increasing-Entropoid/files/dist/problem.sage"
+      ],
+      "id": "SECCON23-Increasing-Entropoid",
+      "mode": "original_attachment",
+      "official_flag": "SECCON{The law of entropoid increase postulates the existence of irreversible processes in crypto: the bit numbers of a safe cryptosystem based on DELP can increase, but cannot decrease.}",
+      "official_name": "Increasing Entropoid",
+      "reward": 34,
+      "sha256": {
+        "SECCON23-Increasing-Entropoid/files/dist/output.txt": "4424f8bf24c1489b28ad45b9b31e1ee97be2ba16da1c9ab380896d7b281a30ee",
+        "SECCON23-Increasing-Entropoid/files/dist/problem.sage": "38592f82484b942a1c4dbdb68910211a9250c19940245b5107ce838d84ef80bb"
+      },
+      "source": "https://github.com/SECCON/SECCON2023_online_CTF/tree/0fcc88e38a007b974bbb93686dc9c02d7f62bd07/crypto/Increasing Entropoid",
+      "tier": "hard"
+    },
+    {
+      "category": null,
+      "commit": "0fcc88e38a007b974bbb93686dc9c02d7f62bd07",
+      "event": "SECCON 2023 Online CTF",
+      "handout_paths": [
+        "SECCON23-Perfect-Blu/files/perfect-blu/perfect-blu.iso"
+      ],
+      "id": "SECCON23-Perfect-Blu",
+      "mode": "original_attachment",
+      "official_flag": "SECCON{JWBH-58EL-QWRL-CLSW-UFRI-XUY3-YHKK-KFBV}",
+      "official_name": "Perfect Blu",
+      "reward": 14,
+      "sha256": {
+        "SECCON23-Perfect-Blu/files/perfect-blu/perfect-blu.iso": "780886d5f9bf91a4f1932317d3dd5e106acfc4306c24d3b5736d0c50a64bb596"
+      },
+      "source": "https://github.com/SECCON/SECCON2023_online_CTF/tree/0fcc88e38a007b974bbb93686dc9c02d7f62bd07/reversing/Perfect Blu",
+      "tier": "easy"
+    },
+    {
+      "category": null,
+      "commit": "0fcc88e38a007b974bbb93686dc9c02d7f62bd07",
+      "event": "SECCON 2023 Online CTF",
+      "handout_paths": [
+        "SECCON23-RSA-4-0/files/dist/output.txt",
+        "SECCON23-RSA-4-0/files/dist/problem.sage"
+      ],
+      "id": "SECCON23-RSA-4-0",
+      "mode": "original_attachment",
+      "official_flag": "SECCON{pr0m153_m3!d0_n07_3ncryp7_p_0r_q_3v3n_w17h_r54_4.0}",
+      "official_name": "RSA 4.0",
+      "reward": 22,
+      "sha256": {
+        "SECCON23-RSA-4-0/files/dist/output.txt": "92a798b881776448cffa499b79e1e668a7e0349f56160163676aa1bbb046bef9",
+        "SECCON23-RSA-4-0/files/dist/problem.sage": "827e9684d8ae61d67207f44757727ba9a3d629c0afaff930f3cbb0bd92ce8d39"
+      },
+      "source": "https://github.com/SECCON/SECCON2023_online_CTF/tree/0fcc88e38a007b974bbb93686dc9c02d7f62bd07/crypto/RSA 4.0",
+      "tier": "medium"
+    },
+    {
+      "category": null,
+      "commit": "0fcc88e38a007b974bbb93686dc9c02d7f62bd07",
+      "event": "SECCON 2023 Online CTF",
+      "handout_paths": [
+        "SECCON23-Sickle/files/problem.py"
+      ],
+      "id": "SECCON23-Sickle",
+      "mode": "original_attachment",
+      "official_flag": "SECCON{Can_someone_please_make_a_debugger_for_Pickle_bytecode??}",
+      "official_name": "Sickle",
+      "reward": 34,
+      "sha256": {
+        "SECCON23-Sickle/files/problem.py": "ced4e286f75118922ab73501ac78cbbb8f7827e340ad1058fade19aa52c98057"
+      },
+      "source": "https://github.com/SECCON/SECCON2023_online_CTF/tree/0fcc88e38a007b974bbb93686dc9c02d7f62bd07/reversing/Sickle",
+      "tier": "hard"
+    },
+    {
+      "category": null,
+      "commit": "0fcc88e38a007b974bbb93686dc9c02d7f62bd07",
+      "event": "SECCON 2023 Online CTF",
+      "handout_paths": [
+        "SECCON23-jumpout/files/jumpout"
+      ],
+      "id": "SECCON23-jumpout",
+      "mode": "original_attachment",
+      "official_flag": "SECCON{jump_table_everywhere}",
+      "official_name": "jumpout",
+      "reward": 14,
+      "sha256": {
+        "SECCON23-jumpout/files/jumpout": "7f2996bc9b2e0e6872e2cf8ec673e75313a3db66aa7badd5a7740085c5080aa1"
+      },
+      "source": "https://github.com/SECCON/SECCON2023_online_CTF/tree/0fcc88e38a007b974bbb93686dc9c02d7f62bd07/reversing/jumpout",
+      "tier": "easy"
+    },
+    {
+      "category": null,
+      "commit": "0fcc88e38a007b974bbb93686dc9c02d7f62bd07",
+      "event": "SECCON 2023 Online CTF",
+      "handout_paths": [
+        "SECCON23-optinimize/files/optinimize/main"
+      ],
+      "id": "SECCON23-optinimize",
+      "mode": "original_attachment",
+      "official_flag": "SECCON{3b4297373223a58ccf3dc06a6102846f}",
+      "official_name": "optinimize",
+      "reward": 22,
+      "sha256": {
+        "SECCON23-optinimize/files/optinimize/main": "7784e04d8bdc07c5d2ade11bd3ed3e1a77058d0cab71bdc839b9c1eebab255bb"
+      },
+      "source": "https://github.com/SECCON/SECCON2023_online_CTF/tree/0fcc88e38a007b974bbb93686dc9c02d7f62bd07/reversing/optinimize",
+      "tier": "medium"
+    },
+    {
+      "category": null,
+      "commit": "0fcc88e38a007b974bbb93686dc9c02d7f62bd07",
+      "event": "SECCON 2023 Online CTF",
+      "handout_paths": [
+        "SECCON23-plai-n-rsa/files/dist/output.txt",
+        "SECCON23-plai-n-rsa/files/dist/problem.py"
+      ],
+      "id": "SECCON23-plai-n-rsa",
+      "mode": "original_attachment",
+      "official_flag": "SECCON{thank_you_for_finding_my_n!!!_GOOD_LUCK_IN_SECCON_CTF}",
+      "official_name": "plai_n_rsa",
+      "reward": 34,
+      "sha256": {
+        "SECCON23-plai-n-rsa/files/dist/output.txt": "7df7d52639d27dec8d83877faa899e1dfe3ccdc891b8221e92ee3c703ab77a62",
+        "SECCON23-plai-n-rsa/files/dist/problem.py": "27415b92265cec4246831c7b38c4943ee3e943895a0951cef058079b4b36183f"
+      },
+      "source": "https://github.com/SECCON/SECCON2023_online_CTF/tree/0fcc88e38a007b974bbb93686dc9c02d7f62bd07/crypto/plai_n_rsa",
+      "tier": "hard"
+    }
+  ],
+  "tier_counts": {
+    "easy": 24,
+    "hard": 24,
+    "medium": 24
+  }
+}

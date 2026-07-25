@@ -1,0 +1,202 @@
+{
+  "catalogs": [
+    {
+      "catalog": "google-ctf-2021-2025-quals.json",
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "records": 165,
+      "repository": "https://github.com/google/google-ctf"
+    },
+    {
+      "catalog": "defcon-ctf-quals-2022.json",
+      "commit": "b71ad8a555dea27498fa5173c0489333ddfb9359",
+      "records": 17,
+      "repository": "https://github.com/Nautilus-Institute/quals-2022"
+    },
+    {
+      "catalog": "defcon-ctf-quals-2023.json",
+      "commit": "9d37e8d0aea3762d76c8b4ca36fce108627ce492",
+      "records": 20,
+      "repository": "https://github.com/Nautilus-Institute/quals-2023"
+    },
+    {
+      "catalog": "defcon-ctf-quals-2024.json",
+      "commit": "5e15c5e1a2cb100f86c22e759536327e23af5bf8",
+      "records": 16,
+      "repository": "https://github.com/Nautilus-Institute/quals-2024"
+    },
+    {
+      "catalog": "defcon-ctf-quals-2025.json",
+      "commit": "94ef8d5614c0b7dd49135e2bbc15e0a947e6ee2d",
+      "records": 19,
+      "repository": "https://github.com/Nautilus-Institute/quals-2025"
+    },
+    {
+      "catalog": "seccon-2021-online.json",
+      "commit": "628008ae2d150723352aed2c95abff41501c51f2",
+      "records": 27,
+      "repository": "https://github.com/SECCON/SECCON2021_online_CTF"
+    },
+    {
+      "catalog": "seccon-2022-online.json",
+      "commit": "46742099d094a69c214f35498718b5c9ba900b26",
+      "records": 26,
+      "repository": "https://github.com/SECCON/SECCON2022_online_CTF"
+    },
+    {
+      "catalog": "seccon-2022-finals.json",
+      "commit": "1698664cc662f8c01fe079d2d02d87816f19d6c1",
+      "records": 6,
+      "repository": "https://github.com/SECCON/SECCON2022_final_CTF"
+    },
+    {
+      "catalog": "seccon-2023-online.json",
+      "commit": "0fcc88e38a007b974bbb93686dc9c02d7f62bd07",
+      "records": 27,
+      "repository": "https://github.com/SECCON/SECCON2023_online_CTF"
+    },
+    {
+      "catalog": "seccon-2023-finals.json",
+      "commit": "f7920f4f6f0beed0db271a86758aeb5d7cfad020",
+      "records": 22,
+      "repository": "https://github.com/SECCON/SECCON2023_final_CTF"
+    },
+    {
+      "catalog": "seccon-13-online.json",
+      "commit": "32d98bc7af7159877dd90d96b44f93d00f9e49b3",
+      "records": 26,
+      "repository": "https://github.com/SECCON/SECCON13_online_CTF"
+    },
+    {
+      "catalog": "seccon-13-finals.json",
+      "commit": "6be09bb4a5172a1110961ee4a079688992dd56b6",
+      "records": 20,
+      "repository": "https://github.com/SECCON/SECCON13_final_CTF"
+    },
+    {
+      "catalog": "rwctf-3.json",
+      "commit": "236c83bb8a0170b6d6c0cc769f6eb810555b2d1d",
+      "records": 14,
+      "repository": "https://github.com/chaitin/Real-World-CTF-3rd-Challenge-Attachments"
+    },
+    {
+      "catalog": "rwctf-4.json",
+      "commit": "559fae98edc61d022386f882285ce1b89ad29010",
+      "records": 16,
+      "repository": "https://github.com/chaitin/Real-World-CTF-4th-Challenge-Attachments"
+    },
+    {
+      "catalog": "rwctf-5.json",
+      "commit": "779ad53f81b87642479eb13faf42fd85449e6a32",
+      "records": 20,
+      "repository": "https://github.com/chaitin/Real-World-CTF-5th-Challenges"
+    },
+    {
+      "catalog": "rwctf-6.json",
+      "commit": "b0e013f97f38055ea006a5b193ec6d27bab207ec",
+      "records": 21,
+      "repository": "https://github.com/chaitin/Real-World-CTF-6th-Challenges"
+    }
+  ],
+  "category_counts": {
+    "0kpr00f": 1,
+    "api6": 1,
+    "astlibra": 1,
+    "billboard": 1,
+    "black": 1,
+    "blockchain": 2,
+    "box escape": 1,
+    "chat": 1,
+    "chatterbox": 1,
+    "chatuwu": 1,
+    "checkin": 1,
+    "corrupted gi": 1,
+    "crypto": 60,
+    "dbaasadge": 1,
+    "desperate": 1,
+    "druid's selection": 1,
+    "easy defi": 1,
+    "easy escape": 1,
+    "easyworks": 1,
+    "extremely buggy service": 1,
+    "ferris' proxy": 1,
+    "flag": 1,
+    "geoserver jive\uf03a the rce hive": 1,
+    "grandma's laptop": 1,
+    "hack": 1,
+    "happycard": 1,
+    "hardened redis": 1,
+    "hardware": 7,
+    "homebrewed curve": 1,
+    "hoshmonster": 1,
+    "hso": 1,
+    "jail": 7,
+    "jeopardy": 5,
+    "junkav": 1,
+    "kctf": 2,
+    "koh": 1,
+    "let's party in the house": 1,
+    "llm sanitizer": 1,
+    "long range": 1,
+    "long range 2": 1,
+    "minioday": 1,
+    "misc": 40,
+    "mop2021": 1,
+    "nightmail": 1,
+    "nonheavyftp": 1,
+    "old curse": 1,
+    "old system": 1,
+    "paddle": 1,
+    "personal proxy": 1,
+    "pgsum": 1,
+    "printer2": 1,
+    "protected by java se": 1,
+    "pwn": 28,
+    "pwnable": 31,
+    "pyghost": 1,
+    "qlaas": 1,
+    "realwrap": 1,
+    "remontagy": 1,
+    "reversing": 58,
+    "riptc": 1,
+    "router3": 1,
+    "router4": 1,
+    "rwdn": 1,
+    "safebridge": 1,
+    "sandbox": 12,
+    "sealunseal": 1,
+    "secured": 1,
+    "shellfind": 1,
+    "svme": 1,
+    "t": 1,
+    "teewars": 1,
+    "the": 1,
+    "the cult of 8 bit": 1,
+    "the dark portal": 1,
+    "the truth of plain": 1,
+    "tinyvm": 1,
+    "treasure": 1,
+    "trust": 1,
+    "unknown": 72,
+    "untrustzone": 1,
+    "web": 66,
+    "wheels": 1,
+    "who": 1,
+    "youknowhowtofuzz!": 1,
+    "\u70eb\u70eb\u70eb": 1
+  },
+  "caveat": "Directory-level records include official service/support components until per-entry review resolves standalone challenge identity.",
+  "directory_level_records": 462,
+  "pending_source_verification": [
+    "PlaidCTF",
+    "HITCON CTF",
+    "0CTF/TCTF"
+  ],
+  "policy": "Original challenge files only. Every discovered challenge is retained in the catalog; unusable entries receive an explicit exclusion reason.",
+  "schema": "original-ctf-catalog-report-v1",
+  "source_series": [
+    "Google CTF Quals",
+    "DEF CON CTF Qualifiers",
+    "SECCON CTF",
+    "Real World CTF"
+  ]
+}

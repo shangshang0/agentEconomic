@@ -1,0 +1,51 @@
+{
+  "schema": "authority-agent-economics-infrastructure-invalidation-v1",
+  "classified_at": "2026-07-24T21:19:09+08:00",
+  "classification": "infrastructure_invalid_clean_rerun_required",
+  "scope": "symbolic-energy GPT seed1 world only",
+  "reason": "Agent A3's valid JSONL context contained raw U+0085 bytes from binary task output. The fallback runner used Unicode splitlines(), split one valid physical JSON record into invalid fragments, and restarted repeatedly while the other five agents and the world continued.",
+  "source_evidence_is_immutable": true,
+  "invalid_run": {
+    "lane": "symbolic-energy-gpt-seed1",
+    "run_id": "v2-2026074001-6338e1584e8a",
+    "seed": 2026074001,
+    "observed_status_at_stop": "running",
+    "stopped_for_invalidation": true,
+    "state_at_stop": {
+      "day": 6,
+      "event_seq": 987
+    },
+    "first_failed_context_observation": {
+      "context_mtime": "2026-07-24T20:51:32.087442+08:00",
+      "supervisor_day": 4,
+      "supervisor_event_seq_after_failure": 622,
+      "agent_container_restart_count_when_detected": 31
+    },
+    "asymmetric_progress_after_failure_events": 365,
+    "provider_terminals_at_stop": 710,
+    "provider_errors_at_stop": 0,
+    "a3_context": {
+      "physical_json_records": 169,
+      "invalid_physical_json_records": 0,
+      "raw_u0085_count": 16,
+      "sha256": "3d0386d990b382eb700b89abba954b667b34d4fa894670254382df3e89b69e89"
+    },
+    "preserved_root": "/data/authoritylab/authority-world-v2-symbolic-gpt-2026074001-sixway-v2-invalid-a3-context-nel-20260724T2115"
+  },
+  "repair": {
+    "description": "Parse JSONL by the physical LF delimiter instead of Unicode splitlines(); no experimental world mechanism or model-visible value is changed.",
+    "runner_v2_sha256": "784b854672ff6aff113a8345a0234116b9b82abcb835598c85a29861575f89fe",
+    "tests_passed": 63,
+    "frozen_semantic_hashes_reverified": 7
+  },
+  "replacement_run": {
+    "run_id": "v2-2026074001-bd9e77d4d9fb",
+    "seed": 2026074001,
+    "provider_preflight": "passed",
+    "initial_status": "running",
+    "initial_event_seq": 8,
+    "provider_errors": 0,
+    "trip_reason": null,
+    "active_root": "/data/authoritylab/authority-world-v2-symbolic-gpt-2026074001-sixway-v2"
+  }
+}

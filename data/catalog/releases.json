@@ -1,0 +1,131 @@
+{
+  "releases": [
+    {
+      "assets": [
+        {
+          "bytes": 51953564,
+          "extract": true,
+          "name": "v2-2026074001-723220e4928f.tar.gz",
+          "sha256": "60a6000eb33366b8fe6787cbb000e78585251e0e36d09b003c9f0accdcd56586"
+        },
+        {
+          "bytes": 58914521,
+          "extract": true,
+          "name": "v2-2026074001-781c74a2fcf9.tar.gz",
+          "sha256": "19cb82e1425efb2fae8cb270c765337d8529f8750223a1fa0589ce8da20bc505"
+        },
+        {
+          "bytes": 81455215,
+          "extract": true,
+          "name": "v2-2026074001-b6e9badd2971.tar.gz",
+          "sha256": "a85772de15ec500d21a0d2720b7ecf933e53421021ff1232dcfe337a1d6261d7"
+        },
+        {
+          "bytes": 146498089,
+          "extract": true,
+          "name": "v2-2026074001-bd9e77d4d9fb.tar.gz",
+          "sha256": "62e47defa77905508e37ee06092705d12cf23172bf6096ddf7c235f5a78b5563"
+        },
+        {
+          "bytes": 62316849,
+          "extract": true,
+          "name": "v2-2026074002-0298faa9cdc0.tar.gz",
+          "sha256": "9728e107a98cf73620e04fd3fcde5ca18bbd320cd9b0adbb8096a25546af4052"
+        },
+        {
+          "bytes": 41846424,
+          "extract": true,
+          "name": "v2-2026074002-0ad83b141155.tar.gz",
+          "sha256": "58825435a926bb7c1292ad0a3967af3cacda6d43be2c594082196b43ad576bd2"
+        },
+        {
+          "bytes": 141880961,
+          "extract": true,
+          "name": "v2-2026074002-9f8e3ee32439.tar.gz",
+          "sha256": "89fe7a77657c86f1f34955f7f6efec8a78b9485e9832ace827853e64db48515b"
+        },
+        {
+          "bytes": 56037431,
+          "extract": true,
+          "name": "v2-2026074002-b36c94b9f03d.tar.gz",
+          "sha256": "dd9ef7fd5f1656ffd2cfefc3044504e8d7f0feccc5c2a40f2f3b294c64c30843"
+        },
+        {
+          "bytes": 66219172,
+          "extract": true,
+          "name": "v2-2026074101-505f7c6b692c.tar.gz",
+          "sha256": "aa5c415ac291a8f14bb36789686ebf6de102e23fd3fb90355fd636caa2e2117e"
+        },
+        {
+          "bytes": 129291629,
+          "extract": true,
+          "name": "v2-2026074101-5fab751a635a.tar.gz",
+          "sha256": "af97a924bee73590a7fad1a21792377d8ba8eb2af878632ab58e92f67f7cc7e9"
+        },
+        {
+          "bytes": 48393252,
+          "extract": true,
+          "name": "v2-2026074101-ccc1196be2f0.tar.gz",
+          "sha256": "0fa1b9687390a500c2bf3e77df6a1cd65c5ae32526c4bb8e8507f61b92aacb6b"
+        },
+        {
+          "bytes": 42927449,
+          "extract": true,
+          "name": "v2-2026074101-fb453f8b983b.tar.gz",
+          "sha256": "646980055dcaa66a268f3478371a97fa476741dec12126c42ce00293bcdf1f96"
+        },
+        {
+          "bytes": 47096992,
+          "extract": true,
+          "name": "v2-2026074102-13f0d2b0e943.tar.gz",
+          "sha256": "192d0e8c2e4a548fd9f7684c6773920e9f6ba1ecae7042333f0f0b6e35ebe82a"
+        },
+        {
+          "bytes": 237300844,
+          "extract": true,
+          "name": "v2-2026074102-316694fc8d5b.tar.gz",
+          "sha256": "8f4381d22e865a3ecb626e6fc78023631f8d03439004cca1f1f4ee147e677f2e"
+        },
+        {
+          "bytes": 65205043,
+          "extract": true,
+          "name": "v2-2026074102-3835110f3425.tar.gz",
+          "sha256": "7a47a0299ee433e25e02c7a949b4894a820dc88e5234a9d62df56dfbfd9998a4"
+        },
+        {
+          "bytes": 72008762,
+          "extract": true,
+          "name": "v2-2026074102-d5c6ff72c971.tar.gz",
+          "sha256": "9153726a797012b4ea06182161471275f2a1d8309adf6405b7a42218d8fe1af3"
+        },
+        {
+          "bytes": 33360170,
+          "extract": true,
+          "name": "v2-2026074201-6ec8ab953f00.tar.gz",
+          "sha256": "c7546ae63714d8c045cc96960c0987eea7e4d101f7ae6341f86f14187520c807"
+        },
+        {
+          "bytes": 40803759,
+          "extract": true,
+          "name": "v2-2026074202-ebd76e6c85a1.tar.gz",
+          "sha256": "d1b1b128141964aef9b731584455311f299f0226da06e9238ff57b6c0b61208d"
+        },
+        {
+          "bytes": 36919579,
+          "extract": true,
+          "name": "v2-2026074301-26881fca8fc1.tar.gz",
+          "sha256": "3b4861b8f0ffa1388f93209355770a21eaa8ea1bf148e8abb97173f30795ed6c"
+        },
+        {
+          "bytes": 54428837,
+          "extract": true,
+          "name": "v2-2026074302-0aefd8ef2718.tar.gz",
+          "sha256": "64ed5bd336d66dfe7d893d00263c16abd0e3476370e06c3c321735dcd8b804bf"
+        }
+      ],
+      "tag": "public-data-v1"
+    }
+  ],
+  "repository": "shangshang0/agentEconomic",
+  "schema_version": 1
+}

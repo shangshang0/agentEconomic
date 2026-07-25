@@ -1,0 +1,209 @@
+{
+  "schema": "original-ctf-catalog-v1",
+  "event": "DEF CON CTF Qualifiers 2024",
+  "repository": "https://github.com/Nautilus-Institute/quals-2024",
+  "commit": "5e15c5e1a2cb100f86c22e759536327e23af5bf8",
+  "directory_count": 16,
+  "challenges": [
+    {
+      "event": "DEF CON CTF Qualifiers 2024",
+      "year": 2024,
+      "challenge_directory": "amib",
+      "source": "https://github.com/Nautilus-Institute/quals-2024/tree/5e15c5e1a2cb100f86c22e759536327e23af5bf8/amib",
+      "commit": "5e15c5e1a2cb100f86c22e759536327e23af5bf8",
+      "file_count": 22,
+      "review_flags": [],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2024",
+      "year": 2024,
+      "challenge_directory": "chatgpt_wasi",
+      "source": "https://github.com/Nautilus-Institute/quals-2024/tree/5e15c5e1a2cb100f86c22e759536327e23af5bf8/chatgpt_wasi",
+      "commit": "5e15c5e1a2cb100f86c22e759536327e23af5bf8",
+      "file_count": 8,
+      "review_flags": [
+        "challenge_description_location_requires_review"
+      ],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2024",
+      "year": 2024,
+      "challenge_directory": "deenzone",
+      "source": "https://github.com/Nautilus-Institute/quals-2024/tree/5e15c5e1a2cb100f86c22e759536327e23af5bf8/deenzone",
+      "commit": "5e15c5e1a2cb100f86c22e759536327e23af5bf8",
+      "file_count": 7,
+      "review_flags": [
+        "challenge_description_location_requires_review"
+      ],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2024",
+      "year": 2024,
+      "challenge_directory": "dotcom-airbag",
+      "source": "https://github.com/Nautilus-Institute/quals-2024/tree/5e15c5e1a2cb100f86c22e759536327e23af5bf8/dotcom-airbag",
+      "commit": "5e15c5e1a2cb100f86c22e759536327e23af5bf8",
+      "file_count": 26,
+      "review_flags": [
+        "challenge_description_location_requires_review"
+      ],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2024",
+      "year": 2024,
+      "challenge_directory": "gilroy",
+      "source": "https://github.com/Nautilus-Institute/quals-2024/tree/5e15c5e1a2cb100f86c22e759536327e23af5bf8/gilroy",
+      "commit": "5e15c5e1a2cb100f86c22e759536327e23af5bf8",
+      "file_count": 1088,
+      "review_flags": [
+        "requires_browser_bot_service_review"
+      ],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2024",
+      "year": 2024,
+      "challenge_directory": "hikarrro",
+      "source": "https://github.com/Nautilus-Institute/quals-2024/tree/5e15c5e1a2cb100f86c22e759536327e23af5bf8/hikarrro",
+      "commit": "5e15c5e1a2cb100f86c22e759536327e23af5bf8",
+      "file_count": 27,
+      "review_flags": [
+        "challenge_description_location_requires_review"
+      ],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2024",
+      "year": 2024,
+      "challenge_directory": "libprce3",
+      "source": "https://github.com/Nautilus-Institute/quals-2024/tree/5e15c5e1a2cb100f86c22e759536327e23af5bf8/libprce3",
+      "commit": "5e15c5e1a2cb100f86c22e759536327e23af5bf8",
+      "file_count": 16,
+      "review_flags": [
+        "challenge_description_location_requires_review"
+      ],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2024",
+      "year": 2024,
+      "challenge_directory": "ligma",
+      "source": "https://github.com/Nautilus-Institute/quals-2024/tree/5e15c5e1a2cb100f86c22e759536327e23af5bf8/ligma",
+      "commit": "5e15c5e1a2cb100f86c22e759536327e23af5bf8",
+      "file_count": 12,
+      "review_flags": [
+        "challenge_description_location_requires_review"
+      ],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2024",
+      "year": 2024,
+      "challenge_directory": "nirai",
+      "source": "https://github.com/Nautilus-Institute/quals-2024/tree/5e15c5e1a2cb100f86c22e759536327e23af5bf8/nirai",
+      "commit": "5e15c5e1a2cb100f86c22e759536327e23af5bf8",
+      "file_count": 17,
+      "review_flags": [],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2024",
+      "year": 2024,
+      "challenge_directory": "nloads",
+      "source": "https://github.com/Nautilus-Institute/quals-2024/tree/5e15c5e1a2cb100f86c22e759536327e23af5bf8/nloads",
+      "commit": "5e15c5e1a2cb100f86c22e759536327e23af5bf8",
+      "file_count": 38,
+      "review_flags": [],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2024",
+      "year": 2024,
+      "challenge_directory": "npc-ua",
+      "source": "https://github.com/Nautilus-Institute/quals-2024/tree/5e15c5e1a2cb100f86c22e759536327e23af5bf8/npc-ua",
+      "commit": "5e15c5e1a2cb100f86c22e759536327e23af5bf8",
+      "file_count": 25,
+      "review_flags": [
+        "challenge_description_location_requires_review"
+      ],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2024",
+      "year": 2024,
+      "challenge_directory": "pass-it-on",
+      "source": "https://github.com/Nautilus-Institute/quals-2024/tree/5e15c5e1a2cb100f86c22e759536327e23af5bf8/pass-it-on",
+      "commit": "5e15c5e1a2cb100f86c22e759536327e23af5bf8",
+      "file_count": 14,
+      "review_flags": [
+        "challenge_description_location_requires_review"
+      ],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2024",
+      "year": 2024,
+      "challenge_directory": "saferrrust",
+      "source": "https://github.com/Nautilus-Institute/quals-2024/tree/5e15c5e1a2cb100f86c22e759536327e23af5bf8/saferrrust",
+      "commit": "5e15c5e1a2cb100f86c22e759536327e23af5bf8",
+      "file_count": 22,
+      "review_flags": [
+        "challenge_description_location_requires_review"
+      ],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2024",
+      "year": 2024,
+      "challenge_directory": "suscall",
+      "source": "https://github.com/Nautilus-Institute/quals-2024/tree/5e15c5e1a2cb100f86c22e759536327e23af5bf8/suscall",
+      "commit": "5e15c5e1a2cb100f86c22e759536327e23af5bf8",
+      "file_count": 15,
+      "review_flags": [],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2024",
+      "year": 2024,
+      "challenge_directory": "walker",
+      "source": "https://github.com/Nautilus-Institute/quals-2024/tree/5e15c5e1a2cb100f86c22e759536327e23af5bf8/walker",
+      "commit": "5e15c5e1a2cb100f86c22e759536327e23af5bf8",
+      "file_count": 7,
+      "review_flags": [
+        "challenge_description_location_requires_review"
+      ],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2024",
+      "year": 2024,
+      "challenge_directory": "\ud83c\udf0c",
+      "source": "https://github.com/Nautilus-Institute/quals-2024/tree/5e15c5e1a2cb100f86c22e759536327e23af5bf8/\ud83c\udf0c",
+      "commit": "5e15c5e1a2cb100f86c22e759536327e23af5bf8",
+      "file_count": 30,
+      "review_flags": [
+        "challenge_description_location_requires_review"
+      ],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    }
+  ]
+}

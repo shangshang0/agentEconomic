@@ -1,0 +1,136 @@
+{
+  "agent_state_backup": "/data/authoritylab/authority-world-v2-minconf-stage2-i1-ds-4103-v1/recovery/automatic-20260725T071616/agent-state-v2.before",
+  "classification": "registered_minconf_stage2_host_disk_fail_close_20260725",
+  "committed_at": "2026-07-25T07:16:39.403024+08:00",
+  "created_at": "2026-07-25T07:16:17.714589+08:00",
+  "downtime_seconds": 1211.8759920597076,
+  "enforced_at_epoch": 1784933765.649554,
+  "events": {
+    "after_sha256": "7b7167b3bf51633e2af469769b41522e00ef44a757a76a94004a7e1ca9c772d2",
+    "mtime_after_ns": 1784934977525545984,
+    "mtime_before_ns": 1784933765531216201,
+    "technical_energy_refund_records": []
+  },
+  "gateway": {
+    "after_sha256": "344e1c6c0b4648bcf1f347928574701ba4fb2d7eb3ff9f4feafd07c874e81f65",
+    "attributable_provider_error_request_ids": [],
+    "charges": 923,
+    "outstanding_after": 0,
+    "outstanding_before": 0,
+    "technical_abort_records": [],
+    "terminals_before": 923
+  },
+  "hold_trip": "/data/authoritylab/authority-world-v2-minconf-stage2-i1-ds-4103-v1/watchdog/trips/trip-20260725T071616-automatic-recovery-hold.json",
+  "logical_freeze_adjustment": null,
+  "logical_freeze_epoch": 1784933765.649554,
+  "provider_probe": {
+    "ok": true,
+    "receipts": [
+      {
+        "elapsed_seconds": 0.88,
+        "model": "deepseek-v4-pro",
+        "ok": true,
+        "style": "chat_completions"
+      },
+      {
+        "elapsed_seconds": 1.219,
+        "model": "deepseek-v4-pro",
+        "ok": true,
+        "style": "chat_completions"
+      },
+      {
+        "elapsed_seconds": 0.979,
+        "model": "deepseek-v4-pro",
+        "ok": true,
+        "style": "chat_completions"
+      }
+    ],
+    "required_samples": 3,
+    "successful_samples": 3
+  },
+  "resume_epoch": 1784934977.525546,
+  "rollback": null,
+  "runtime_quiescence": {
+    "compose_down": {
+      "returncode": 0,
+      "stderr": "",
+      "stdout": ""
+    },
+    "compose_file": "/data/authoritylab/authority-world-v2-minconf-stage2-i1-ds-4103-v1/docker-compose.v2.fallback.yml",
+    "run_id": "v2-2026074103-012aa056d4b9",
+    "run_labelled_containers": []
+  },
+  "schema": "authority-world-v2-automatic-technical-recovery-v1",
+  "source_trip": {
+    "path": "/data/authoritylab/authority-world-v2-minconf-stage2-i1-ds-4103-v1/watchdog/trips/trip-20260725T065605636853.json",
+    "reason": "host_disk_hard_limit",
+    "sha256": "6f19d960c4c703644871ea93c9a3c6d02e8220503412cd927563e467e0f6d0b0",
+    "tripped_at": "2026-07-25T06:56:05.636890+08:00"
+  },
+  "state": {
+    "after_sha256": "66907180a68882ca43b97e0fb812925e30da4a37c8f74ac72d9ceb427212ec23",
+    "before_sha256": "52ae6bd3a89732843fbe0bbf9c12c2eef30c22c82b1be45186ea4265a1049e89",
+    "day": 6,
+    "event_seq": 1154,
+    "shifted_fields": [
+      {
+        "after": 1784929736.4499037,
+        "before": 1784928524.5739117,
+        "delta_seconds": 1211.8759920597076,
+        "path": "world_start_wall"
+      },
+      {
+        "after": 1784934977.0391467,
+        "before": 1784933765.1631546,
+        "delta_seconds": 1211.8759920597076,
+        "path": "agents.A1.last_idle_wake"
+      },
+      {
+        "after": 1784934973.0032034,
+        "before": 1784933761.1272113,
+        "delta_seconds": 1211.8759920597076,
+        "path": "agents.A2.last_idle_wake"
+      },
+      {
+        "after": 1784934940.7589364,
+        "before": 1784933728.8829443,
+        "delta_seconds": 1211.8759920597076,
+        "path": "agents.A3.last_idle_wake"
+      },
+      {
+        "after": 1784934938.683866,
+        "before": 1784933726.807874,
+        "delta_seconds": 1211.8759920597076,
+        "path": "agents.A4.last_idle_wake"
+      },
+      {
+        "after": 1784934962.1882634,
+        "before": 1784933750.3122714,
+        "delta_seconds": 1211.8759920597076,
+        "path": "agents.A5.last_idle_wake"
+      },
+      {
+        "after": 1784934922.1692145,
+        "before": 1784933710.2932224,
+        "delta_seconds": 1211.8759920597076,
+        "path": "agents.A6.last_idle_wake"
+      }
+    ]
+  },
+  "status": "committed",
+  "verification": {
+    "charges": 923,
+    "computed_day": 6,
+    "day": 6,
+    "event_seq": 1154,
+    "frozen_outstanding_after_reconciliation": 0,
+    "mode": "tmux_restart",
+    "outstanding_at_verification": 0,
+    "run_id": "v2-2026074103-012aa056d4b9",
+    "runner_session_alive": true,
+    "runner_unit_active": null,
+    "terminals": 923,
+    "watchdog_session_alive": true,
+    "watchdog_unit_active": null
+  }
+}

@@ -1,0 +1,1498 @@
+{
+  "decisions": {
+    "2020/crypto-chunk-norris": {
+      "reason": "official_flag_or_standalone_metadata_requires_manual_resolution",
+      "status": "pending"
+    },
+    "2020/crypto-sharky": {
+      "reason": "official_flag_or_standalone_metadata_requires_manual_resolution",
+      "status": "pending"
+    },
+    "2020/crypto-yafm": {
+      "reason": "official_flag_or_standalone_metadata_requires_manual_resolution",
+      "status": "pending"
+    },
+    "2020/hardware-avr": {
+      "reason": "official_flag_or_standalone_metadata_requires_manual_resolution",
+      "status": "pending"
+    },
+    "2020/hardware-basics": {
+      "reason": "official_flag_or_standalone_metadata_requires_manual_resolution",
+      "status": "pending"
+    },
+    "2020/hardware-registers": {
+      "reason": "official_flag_or_standalone_metadata_requires_manual_resolution",
+      "status": "pending"
+    },
+    "2020/pwn-app-ads": {
+      "reason": "official_flag_or_standalone_metadata_requires_manual_resolution",
+      "status": "pending"
+    },
+    "2020/pwn-echo": {
+      "reason": "official_flag_or_standalone_metadata_requires_manual_resolution",
+      "status": "pending"
+    },
+    "2020/pwn-exceptional": {
+      "reason": "official_flag_or_standalone_metadata_requires_manual_resolution",
+      "status": "pending"
+    },
+    "2020/pwn-gatekey": {
+      "reason": "official_flag_or_standalone_metadata_requires_manual_resolution",
+      "status": "pending"
+    },
+    "2020/pwn-tracing": {
+      "reason": "official_flag_or_standalone_metadata_requires_manual_resolution",
+      "status": "pending"
+    },
+    "2020/reversing-android": {
+      "reason": "official_flag_or_standalone_metadata_requires_manual_resolution",
+      "status": "pending"
+    },
+    "2020/reversing-beginner": {
+      "reason": "official_flag_or_standalone_metadata_requires_manual_resolution",
+      "status": "pending"
+    },
+    "2020/reversing-dotnet": {
+      "reason": "official_flag_or_standalone_metadata_requires_manual_resolution",
+      "status": "pending"
+    },
+    "2020/reversing-sprint": {
+      "reason": "official_flag_or_standalone_metadata_requires_manual_resolution",
+      "status": "pending"
+    },
+    "2020/sandbox-namespacefs": {
+      "reason": "official_flag_or_standalone_metadata_requires_manual_resolution",
+      "status": "pending"
+    },
+    "2020/sandbox-teleport": {
+      "reason": "official_flag_or_standalone_metadata_requires_manual_resolution",
+      "status": "pending"
+    },
+    "2020/sandbox-threading": {
+      "reason": "official_flag_or_standalone_metadata_requires_manual_resolution",
+      "status": "pending"
+    },
+    "2020/sandbox-writeonly": {
+      "reason": "official_flag_or_standalone_metadata_requires_manual_resolution",
+      "status": "pending"
+    },
+    "2020/web-littlethings": {
+      "reason": "official_flag_or_standalone_metadata_requires_manual_resolution",
+      "status": "pending"
+    },
+    "2020/web-littlethings-fixed": {
+      "reason": "official_flag_or_standalone_metadata_requires_manual_resolution",
+      "status": "pending"
+    },
+    "2020/web-littlethings-public": {
+      "reason": "official_flag_or_standalone_metadata_requires_manual_resolution",
+      "status": "pending"
+    },
+    "2020/web-log-me-in": {
+      "reason": "official_flag_or_standalone_metadata_requires_manual_resolution",
+      "status": "pending"
+    },
+    "2020/web-pasteurize": {
+      "reason": "official_flag_or_standalone_metadata_requires_manual_resolution",
+      "status": "pending"
+    },
+    "2020/web-typeselfsub": {
+      "reason": "official_flag_or_standalone_metadata_requires_manual_resolution",
+      "status": "pending"
+    },
+    "2020/web-typeselfsub-support": {
+      "reason": "official_flag_or_standalone_metadata_requires_manual_resolution",
+      "status": "pending"
+    },
+    "2021/crypto-H1": {
+      "handout_paths": [
+        "attachments/chall.py",
+        "attachments/output.txt"
+      ],
+      "mode": "original_attachment",
+      "reason": "official_offline_handout_and_flag_available",
+      "status": "included",
+      "tier": "medium"
+    },
+    "2021/crypto-pythia": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2021/crypto-story": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2021/crypto-tiramisu": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2021/crypto-tonality": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2021/hw-comlink": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2021/hw-parking": {
+      "handout_paths": [
+        "attachments/game.py",
+        "attachments/level1",
+        "attachments/level2",
+        "attachments/run.sh"
+      ],
+      "mode": "original_attachment",
+      "reason": "official_offline_handout_and_flag_available",
+      "status": "included",
+      "tier": "hard"
+    },
+    "2021/hw-pcivault": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2021/hw-pcivault2": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2021/kctf": {
+      "reason": "official_repository_shared_component_not_a_standalone_challenge",
+      "status": "excluded"
+    },
+    "2021/misc-filestore": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2021/misc-raid": {
+      "handout_paths": [
+        "attachments/chall.tar.gz"
+      ],
+      "mode": "original_attachment",
+      "reason": "official_offline_handout_and_flag_available",
+      "status": "included",
+      "tier": "easy"
+    },
+    "2021/misc-shellcode": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2021/misc-steps": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2021/misc-zippi": {
+      "handout_paths": [
+        "attachments/challenge.zip"
+      ],
+      "mode": "original_attachment",
+      "reason": "official_offline_handout_and_flag_available",
+      "status": "included",
+      "tier": "easy"
+    },
+    "2021/pwn-atheris": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2021/pwn-compression": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2021/pwn-ebpf": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2021/pwn-fullchain": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2021/pwn-memsafety": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2021/pwn-tridroid": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2021/rev-adspam": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2021/rev-cpp": {
+      "handout_paths": [
+        "attachments/cpp.c"
+      ],
+      "mode": "original_attachment",
+      "reason": "official_offline_handout_and_flag_available",
+      "status": "included",
+      "tier": "medium"
+    },
+    "2021/rev-hexagon": {
+      "handout_paths": [
+        "attachments/challenge"
+      ],
+      "mode": "original_attachment",
+      "reason": "official_offline_handout_and_flag_available",
+      "status": "included",
+      "tier": "medium"
+    },
+    "2021/rev-polymorph": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2021/rev-weather": {
+      "handout_paths": [
+        "attachments/weather"
+      ],
+      "mode": "original_attachment",
+      "reason": "official_offline_handout_and_flag_available",
+      "status": "included",
+      "tier": "medium"
+    },
+    "2021/web-empty-ls": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2021/web-empty-ls-admin": {
+      "reason": "official_flag_or_standalone_metadata_requires_manual_resolution",
+      "status": "pending"
+    },
+    "2021/web-empty-ls-xss-bot": {
+      "reason": "official_flag_or_standalone_metadata_requires_manual_resolution",
+      "status": "pending"
+    },
+    "2021/web-letschatmessages": {
+      "reason": "official_flag_or_standalone_metadata_requires_manual_resolution",
+      "status": "pending"
+    },
+    "2021/web-letschatserver": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2021/web-security-driven": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2022/crypto-custom-protocol": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2022/crypto-cycling": {
+      "handout_paths": [
+        "attachments/chall.py"
+      ],
+      "mode": "original_attachment",
+      "reason": "official_offline_handout_and_flag_available",
+      "status": "included",
+      "tier": "medium"
+    },
+    "2022/crypto-electric-mayhem-cls": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2022/crypto-electric-mayhem-pqc": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2022/crypto-enigma": {
+      "handout_paths": [
+        "attachments/.bazelrc",
+        "attachments/README.md",
+        "attachments/WORKSPACE",
+        "attachments/encode.py",
+        "attachments/encrypt_modern.py"
+      ],
+      "mode": "original_attachment",
+      "reason": "official_offline_handout_and_flag_available",
+      "status": "included",
+      "tier": "medium"
+    },
+    "2022/crypto-maybe-someday": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2022/hardware-engraver": {
+      "handout_paths": [
+        "attachments/engraver.pcapng",
+        "attachments/robot.jpg",
+        "attachments/robot_engraving.jpg"
+      ],
+      "mode": "original_attachment",
+      "reason": "official_offline_handout_and_flag_available",
+      "status": "included",
+      "tier": "hard"
+    },
+    "2022/hardware-iliketrains": {
+      "handout_paths": [
+        "attachments/challenge.sav"
+      ],
+      "mode": "original_attachment",
+      "reason": "official_offline_handout_and_flag_available",
+      "status": "included",
+      "tier": "hard"
+    },
+    "2022/hardware-weather": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2022/kctf": {
+      "reason": "official_repository_shared_component_not_a_standalone_challenge",
+      "status": "excluded"
+    },
+    "2022/misc-appnote": {
+      "handout_paths": [
+        "attachments/dump.zip"
+      ],
+      "mode": "original_attachment",
+      "reason": "official_offline_handout_and_flag_available",
+      "status": "included",
+      "tier": "easy"
+    },
+    "2022/misc-legit": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2022/misc-ml-steal": {
+      "reason": "official_flag_or_standalone_metadata_requires_manual_resolution",
+      "status": "pending"
+    },
+    "2022/misc-ocr": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2022/misc-segfault-labyrinth": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2022/pwn-d8": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2022/pwn-fixedaslr": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2022/pwn-madcore": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2022/rev-eldar": {
+      "handout_paths": [
+        "attachments/Makefile",
+        "attachments/eldar",
+        "attachments/serial.c"
+      ],
+      "mode": "original_attachment",
+      "reason": "official_offline_handout_and_flag_available",
+      "status": "included",
+      "tier": "medium"
+    },
+    "2022/rev-js-safe-4": {
+      "handout_paths": [
+        "attachments/LICENCE.gift-box.txt",
+        "attachments/LICENCE.txt",
+        "attachments/js_safe_4.html"
+      ],
+      "mode": "original_attachment",
+      "reason": "official_offline_handout_and_flag_available",
+      "status": "included",
+      "tier": "medium"
+    },
+    "2022/rev-mixed": {
+      "handout_paths": [
+        "attachments/patch",
+        "attachments/x.pyc"
+      ],
+      "mode": "original_attachment",
+      "reason": "official_offline_handout_and_flag_available",
+      "status": "included",
+      "tier": "medium"
+    },
+    "2022/rev-rewinden": {
+      "handout_paths": [
+        "attachments/art.js",
+        "attachments/ca.js",
+        "attachments/data.png",
+        "attachments/index.html"
+      ],
+      "mode": "original_attachment",
+      "reason": "official_offline_handout_and_flag_available",
+      "status": "included",
+      "tier": "medium"
+    },
+    "2022/rev-whitecube": {
+      "handout_paths": [
+        "attachments/Whitecube.exe",
+        "attachments/flag.enc"
+      ],
+      "mode": "original_attachment",
+      "reason": "official_offline_handout_and_flag_available",
+      "status": "included",
+      "tier": "medium"
+    },
+    "2022/sandbox-ipcz": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2022/sandbox-s2": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2022/sandbox-sendbox": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2022/sandbox-treebox": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2022/web-gpushop": {
+      "reason": "official_flag_or_standalone_metadata_requires_manual_resolution",
+      "status": "pending"
+    },
+    "2022/web-horkos": {
+      "reason": "official_flag_or_standalone_metadata_requires_manual_resolution",
+      "status": "pending"
+    },
+    "2022/web-log4j": {
+      "reason": "official_flag_or_standalone_metadata_requires_manual_resolution",
+      "status": "pending"
+    },
+    "2022/web-postviewer": {
+      "reason": "official_flag_or_standalone_metadata_requires_manual_resolution",
+      "status": "pending"
+    },
+    "2022/web-postviewer-bot": {
+      "reason": "official_flag_or_standalone_metadata_requires_manual_resolution",
+      "status": "pending"
+    },
+    "2023/crypto-cursved": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2023/crypto-lcg": {
+      "handout_paths": [
+        "attachments/dump.txt",
+        "attachments/flag.txt",
+        "attachments/generate.py",
+        "attachments/public.pem"
+      ],
+      "mode": "original_attachment",
+      "reason": "official_offline_handout_and_flag_available",
+      "status": "included",
+      "tier": "medium"
+    },
+    "2023/crypto-mhk2": {
+      "handout_paths": [
+        "attachments/MHK2.sage",
+        "attachments/output.txt"
+      ],
+      "mode": "original_attachment",
+      "reason": "official_offline_handout_and_flag_available",
+      "status": "included",
+      "tier": "medium"
+    },
+    "2023/crypto-mytls": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2023/crypto-primes": {
+      "handout_paths": [
+        "attachments/chal.sage"
+      ],
+      "mode": "original_attachment",
+      "reason": "official_offline_handout_and_flag_available",
+      "status": "included",
+      "tier": "medium"
+    },
+    "2023/crypto-ziphard": {
+      "handout_paths": [
+        "attachments/hard.py",
+        "attachments/hard.zip"
+      ],
+      "mode": "original_attachment",
+      "reason": "official_offline_handout_and_flag_available",
+      "status": "included",
+      "tier": "medium"
+    },
+    "2023/misc-mine-the-gap": {
+      "reason": "official_player_handout_requires_manual_identification",
+      "status": "pending"
+    },
+    "2023/misc-npc": {
+      "reason": "official_player_handout_requires_manual_identification",
+      "status": "pending"
+    },
+    "2023/misc-papapapa": {
+      "handout_paths": [
+        "attachments/white.jpg"
+      ],
+      "mode": "original_attachment",
+      "reason": "official_offline_handout_and_flag_available",
+      "status": "included",
+      "tier": "easy"
+    },
+    "2023/misc-symatrix": {
+      "reason": "official_player_handout_requires_manual_identification",
+      "status": "pending"
+    },
+    "2023/misc-totallynotbruteforce": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2023/pwn-gradebook": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2023/pwn-kconcat": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2023/pwn-storygen": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2023/pwn-ubf": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2023/pwn-watthewasm": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2023/pwn-write-flag-where": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2023/pwn-write-flag-where2": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2023/pwn-write-flag-where3": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2023/rev-auxin": {
+      "reason": "official_player_handout_requires_manual_identification",
+      "status": "pending"
+    },
+    "2023/rev-flangton": {
+      "reason": "official_player_handout_requires_manual_identification",
+      "status": "pending"
+    },
+    "2023/rev-jxl": {
+      "handout_paths": [
+        "attachments/README.md",
+        "attachments/flag.jxl"
+      ],
+      "mode": "original_attachment",
+      "reason": "official_offline_handout_and_flag_available",
+      "status": "included",
+      "tier": "medium"
+    },
+    "2023/rev-oldschool": {
+      "handout_paths": [
+        "attachments/flag_maker.py"
+      ],
+      "mode": "original_attachment",
+      "reason": "official_offline_handout_and_flag_available",
+      "status": "included",
+      "tier": "medium"
+    },
+    "2023/rev-png2": {
+      "reason": "official_player_handout_requires_manual_identification",
+      "status": "pending"
+    },
+    "2023/rev-turtle": {
+      "handout_paths": [
+        "attachments/c.png",
+        "attachments/m.png",
+        "attachments/turt.py"
+      ],
+      "mode": "original_attachment",
+      "reason": "official_offline_handout_and_flag_available",
+      "status": "included",
+      "tier": "medium"
+    },
+    "2023/rev-zermatt": {
+      "handout_paths": [
+        "attachments/zermatt.lua"
+      ],
+      "mode": "original_attachment",
+      "reason": "official_offline_handout_and_flag_available",
+      "status": "included",
+      "tier": "medium"
+    },
+    "2023/sandbox-fastbox": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2023/sandbox-gvisor": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2023/sandbox-lightbox": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2023/sandbox-v8box": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2023/web-biohazard": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2023/web-noteninja": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2023/web-postviewer2": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2023/web-under-construction": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2023/web-under-construction-php": {
+      "reason": "official_flag_or_standalone_metadata_requires_manual_resolution",
+      "status": "pending"
+    },
+    "2023/web-vegsoda": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2024/crypto-blinders": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2024/crypto-desfunctional": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2024/crypto-idea": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2024/crypto-mceliece": {
+      "handout_paths": [
+        "attachments/chall.sage",
+        "attachments/flag_enc.sobj",
+        "attachments/params.sobj",
+        "attachments/pubkey.sobj"
+      ],
+      "mode": "original_attachment",
+      "reason": "official_offline_handout_and_flag_available",
+      "status": "included",
+      "tier": "medium"
+    },
+    "2024/crypto-otp": {
+      "handout_paths": [
+        "attachments/README.md",
+        "attachments/encrypted/2nd00.png",
+        "attachments/encrypted/2nd01.png",
+        "attachments/encrypted/2nd02.png",
+        "attachments/encrypted/2nd03.png",
+        "attachments/encrypted/2nd04.png",
+        "attachments/encrypted/2nd05.png",
+        "attachments/encrypted/2nd06.png",
+        "attachments/encrypted/2nd07.png",
+        "attachments/encrypted/2nd08.png",
+        "attachments/encrypted/2nd09.png",
+        "attachments/encrypted/2nd10.png",
+        "attachments/encrypted/2nd11.png",
+        "attachments/encrypted/2nd12.png",
+        "attachments/encrypted/2nd13.png",
+        "attachments/encrypted/2nd14.png",
+        "attachments/encrypted/2nd15.png",
+        "attachments/encrypted/2nd16.png",
+        "attachments/encrypted/2nd17.png",
+        "attachments/encrypted/2nd18.png",
+        "attachments/encrypted/2nd19.png",
+        "attachments/encrypted/2nd20.png",
+        "attachments/encrypted/2nd21.png",
+        "attachments/encrypted/2nd22.png",
+        "attachments/encrypted/2nd23.png",
+        "attachments/encrypted/2nd24.png",
+        "attachments/encrypted/2nd25.png",
+        "attachments/encrypted/2nd26.png",
+        "attachments/encrypted/2nd27.png",
+        "attachments/encrypted/2nd28.png",
+        "attachments/encrypted/2nd29.png",
+        "attachments/encrypted/2nd30.png",
+        "attachments/encrypted/2nd31.png",
+        "attachments/encrypted/2nd32.png",
+        "attachments/encrypted/2nd33.png",
+        "attachments/encrypted/2nd34.png",
+        "attachments/encrypted/2nd35.png",
+        "attachments/encrypted/2nd36.png",
+        "attachments/encrypted/2nd37.png",
+        "attachments/encrypted/2nd38.png",
+        "attachments/encrypted/2nd39.png",
+        "attachments/encrypted/2nd40.png",
+        "attachments/encrypted/2nd41.png",
+        "attachments/encrypted/2nd42.png",
+        "attachments/encrypted/2nd43.png",
+        "attachments/encrypted/2nd44.png",
+        "attachments/encrypted/2nd45.png",
+        "attachments/encrypted/2nd46.png",
+        "attachments/encrypted/2nd47.png",
+        "attachments/encrypted/2nd48.png",
+        "attachments/encrypted/2nd49.png",
+        "attachments/encrypted/2nd50.png",
+        "attachments/encrypted/2nd51.png",
+        "attachments/encrypted/2nd52.png",
+        "attachments/encrypted/2nd53.png",
+        "attachments/encrypted/2nd54.png",
+        "attachments/encrypted/2nd55.png",
+        "attachments/encrypted/2nd56.png",
+        "attachments/encrypted/2nd57.png",
+        "attachments/encrypted/2nd58.png",
+        "attachments/encrypted/2nd59.png",
+        "attachments/encrypted/2nd60.png",
+        "attachments/encrypted/2nd61.png",
+        "attachments/encrypted/2nd62.png",
+        "attachments/encrypted/2nd63.png",
+        "attachments/encrypted/3rd00.png",
+        "attachments/encrypted/3rd01.png",
+        "attachments/encrypted/3rd02.png",
+        "attachments/encrypted/3rd03.png",
+        "attachments/encrypted/3rd04.png",
+        "attachments/encrypted/3rd05.png",
+        "attachments/encrypted/3rd06.png",
+        "attachments/encrypted/3rd07.png",
+        "attachments/encrypted/3rd08.png",
+        "attachments/encrypted/3rd09.png",
+        "attachments/encrypted/3rd10.png",
+        "attachments/encrypted/3rd11.png",
+        "attachments/encrypted/3rd12.png",
+        "attachments/encrypted/3rd13.png",
+        "attachments/encrypted/3rd14.png",
+        "attachments/encrypted/3rd15.png",
+        "attachments/encrypted/3rd16.png",
+        "attachments/encrypted/3rd17.png",
+        "attachments/encrypted/3rd18.png",
+        "attachments/encrypted/3rd19.png",
+        "attachments/encrypted/3rd20.png",
+        "attachments/encrypted/3rd21.png",
+        "attachments/encrypted/3rd22.png",
+        "attachments/encrypted/3rd23.png",
+        "attachments/encrypted/3rd24.png",
+        "attachments/encrypted/3rd25.png",
+        "attachments/encrypted/3rd26.png",
+        "attachments/encrypted/3rd27.png",
+        "attachments/encrypted/3rd28.png",
+        "attachments/encrypted/3rd29.png",
+        "attachments/encrypted/3rd30.png",
+        "attachments/encrypted/3rd31.png",
+        "attachments/encrypted/3rd32.png",
+        "attachments/encrypted/3rd33.png",
+        "attachments/encrypted/3rd34.png",
+        "attachments/encrypted/3rd35.png",
+        "attachments/encrypted/3rd36.png",
+        "attachments/encrypted/3rd37.png",
+        "attachments/encrypted/3rd38.png",
+        "attachments/encrypted/3rd39.png",
+        "attachments/encrypted/3rd40.png",
+        "attachments/encrypted/3rd41.png",
+        "attachments/encrypted/3rd42.png",
+        "attachments/encrypted/3rd43.png",
+        "attachments/encrypted/3rd44.png",
+        "attachments/encrypted/3rd45.png",
+        "attachments/encrypted/3rd46.png",
+        "attachments/encrypted/3rd47.png",
+        "attachments/encrypted/3rd48.png",
+        "attachments/encrypted/3rd49.png",
+        "attachments/encrypted/3rd50.png",
+        "attachments/encrypted/3rd51.png",
+        "attachments/encrypted/3rd52.png",
+        "attachments/encrypted/3rd53.png",
+        "attachments/encrypted/3rd54.png",
+        "attachments/encrypted/3rd55.png",
+        "attachments/encrypted/3rd56.png",
+        "attachments/encrypted/3rd57.png",
+        "attachments/encrypted/3rd58.png",
+        "attachments/encrypted/3rd59.png",
+        "attachments/encrypted/3rd60.png",
+        "attachments/encrypted/3rd61.png",
+        "attachments/encrypted/3rd62.png",
+        "attachments/encrypted/3rd63.png",
+        "attachments/encrypted/4th00.png",
+        "attachments/encrypted/4th01.png",
+        "attachments/encrypted/4th02.png",
+        "attachments/encrypted/4th03.png",
+        "attachments/encrypted/4th04.png",
+        "attachments/encrypted/4th05.png",
+        "attachments/encrypted/4th06.png",
+        "attachments/encrypted/4th07.png",
+        "attachments/encrypted/4th08.png",
+        "attachments/encrypted/4th09.png",
+        "attachments/encrypted/4th10.png",
+        "attachments/encrypted/4th11.png",
+        "attachments/encrypted/4th12.png",
+        "attachments/encrypted/4th13.png",
+        "attachments/encrypted/4th14.png",
+        "attachments/encrypted/4th15.png",
+        "attachments/encrypted/4th16.png",
+        "attachments/encrypted/4th17.png",
+        "attachments/encrypted/4th18.png",
+        "attachments/encrypted/4th19.png",
+        "attachments/encrypted/4th20.png",
+        "attachments/encrypted/4th21.png",
+        "attachments/encrypted/4th22.png",
+        "attachments/encrypted/4th23.png",
+        "attachments/encrypted/4th24.png",
+        "attachments/encrypted/4th25.png",
+        "attachments/encrypted/4th26.png",
+        "attachments/encrypted/4th27.png",
+        "attachments/encrypted/4th28.png",
+        "attachments/encrypted/4th29.png",
+        "attachments/encrypted/4th30.png",
+        "attachments/encrypted/4th31.png",
+        "attachments/encrypted/4th32.png",
+        "attachments/encrypted/4th33.png",
+        "attachments/encrypted/4th34.png",
+        "attachments/encrypted/4th35.png",
+        "attachments/encrypted/4th36.png",
+        "attachments/encrypted/4th37.png",
+        "attachments/encrypted/4th38.png",
+        "attachments/encrypted/4th39.png",
+        "attachments/encrypted/4th40.png",
+        "attachments/encrypted/4th41.png",
+        "attachments/encrypted/4th42.png",
+        "attachments/encrypted/4th43.png",
+        "attachments/encrypted/4th44.png",
+        "attachments/encrypted/4th45.png",
+        "attachments/encrypted/4th46.png",
+        "attachments/encrypted/4th47.png",
+        "attachments/encrypted/4th48.png",
+        "attachments/encrypted/4th49.png",
+        "attachments/encrypted/4th50.png",
+        "attachments/encrypted/4th51.png",
+        "attachments/encrypted/4th52.png",
+        "attachments/encrypted/4th53.png",
+        "attachments/encrypted/4th54.png",
+        "attachments/encrypted/4th55.png",
+        "attachments/encrypted/4th56.png",
+        "attachments/encrypted/4th57.png",
+        "attachments/encrypted/4th58.png",
+        "attachments/encrypted/4th59.png",
+        "attachments/encrypted/4th60.png",
+        "attachments/encrypted/4th61.png",
+        "attachments/encrypted/4th62.png",
+        "attachments/encrypted/4th63.png",
+        "attachments/encrypted/_flag00.png",
+        "attachments/encrypted/_flag01.png",
+        "attachments/encrypted/_flag02.png",
+        "attachments/encrypted/_flag03.png",
+        "attachments/encrypted/_flag04.png",
+        "attachments/encrypted/_flag05.png",
+        "attachments/encrypted/_flag06.png",
+        "attachments/encrypted/_flag07.png",
+        "attachments/encrypted/_flag08.png",
+        "attachments/encrypted/_flag09.png",
+        "attachments/encrypted/_flag10.png",
+        "attachments/encrypted/_flag11.png",
+        "attachments/encrypted/_flag12.png",
+        "attachments/encrypted/_flag13.png",
+        "attachments/encrypted/_flag14.png",
+        "attachments/encrypted/_flag15.png",
+        "attachments/encrypted/_flag16.png",
+        "attachments/encrypted/_flag17.png",
+        "attachments/encrypted/_flag18.png",
+        "attachments/encrypted/_flag19.png",
+        "attachments/encrypted/_flag20.png",
+        "attachments/encrypted/_flag21.png",
+        "attachments/encrypted/_flag22.png",
+        "attachments/encrypted/_flag23.png",
+        "attachments/encrypted/_flag24.png",
+        "attachments/encrypted/_flag25.png",
+        "attachments/encrypted/_flag26.png",
+        "attachments/encrypted/_flag27.png",
+        "attachments/encrypted/_flag28.png",
+        "attachments/encrypted/alt00.png",
+        "attachments/encrypted/alt01.png",
+        "attachments/encrypted/alt02.png",
+        "attachments/encrypted/alt03.png",
+        "attachments/encrypted/alt04.png",
+        "attachments/encrypted/alt05.png",
+        "attachments/encrypted/alt06.png",
+        "attachments/encrypted/alt07.png",
+        "attachments/encrypted/alt08.png",
+        "attachments/encrypted/alt09.png",
+        "attachments/encrypted/alt10.png",
+        "attachments/encrypted/alt11.png",
+        "attachments/encrypted/alt12.png",
+        "attachments/encrypted/alt13.png",
+        "attachments/encrypted/alt14.png",
+        "attachments/encrypted/alt15.png",
+        "attachments/encrypted/alt16.png",
+        "attachments/encrypted/alt17.png",
+        "attachments/encrypted/alt18.png",
+        "attachments/encrypted/alt19.png",
+        "attachments/encrypted/alt20.png",
+        "attachments/encrypted/alt21.png",
+        "attachments/encrypted/alt22.png",
+        "attachments/encrypted/alt23.png",
+        "attachments/encrypted/alt24.png",
+        "attachments/encrypted/alt25.png",
+        "attachments/encrypted/alt26.png",
+        "attachments/encrypted/alt27.png",
+        "attachments/encrypted/alt28.png",
+        "attachments/encrypted/alt29.png",
+        "attachments/encrypted/alt30.png",
+        "attachments/encrypted/alt31.png",
+        "attachments/encrypted/alt32.png",
+        "attachments/encrypted/alt33.png",
+        "attachments/encrypted/alt34.png",
+        "attachments/encrypted/alt35.png",
+        "attachments/encrypted/alt36.png",
+        "attachments/encrypted/alt37.png",
+        "attachments/encrypted/alt38.png",
+        "attachments/encrypted/alt39.png",
+        "attachments/encrypted/alt40.png",
+        "attachments/encrypted/alt41.png",
+        "attachments/encrypted/alt42.png",
+        "attachments/encrypted/alt43.png",
+        "attachments/encrypted/alt44.png",
+        "attachments/encrypted/alt45.png",
+        "attachments/encrypted/alt46.png",
+        "attachments/encrypted/alt47.png",
+        "attachments/encrypted/alt48.png",
+        "attachments/encrypted/alt49.png",
+        "attachments/encrypted/alt50.png",
+        "attachments/encrypted/alt51.png",
+        "attachments/encrypted/alt52.png",
+        "attachments/encrypted/alt53.png",
+        "attachments/encrypted/alt54.png",
+        "attachments/encrypted/alt55.png",
+        "attachments/encrypted/alt56.png",
+        "attachments/encrypted/alt57.png",
+        "attachments/encrypted/alt58.png",
+        "attachments/encrypted/alt59.png",
+        "attachments/encrypted/alt60.png",
+        "attachments/encrypted/alt61.png",
+        "attachments/encrypted/alt62.png",
+        "attachments/encrypted/alt63.png",
+        "attachments/otp.py"
+      ],
+      "mode": "original_attachment",
+      "reason": "official_offline_handout_and_flag_available",
+      "status": "included",
+      "tier": "medium"
+    },
+    "2024/crypto-zkpok": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2024/misc-auxin2": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2024/misc-h8-teaser": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2024/misc-h8-teaser-2": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2024/misc-hwsim": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2024/misc-onlyecho": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2024/misc-py-storage": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2024/misc-pycalc": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2024/pwn-encrypted-runner": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2024/pwn-fasterbox": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2024/pwn-heat": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2024/pwn-knife": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2024/pwn-unicornel": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2024/rev-arcade": {
+      "handout_paths": [
+        "attachments/README",
+        "attachments/roms/gctf.zip",
+        "attachments/roms/neogeo.zip"
+      ],
+      "mode": "original_attachment",
+      "reason": "official_offline_handout_and_flag_available",
+      "status": "included",
+      "tier": "medium"
+    },
+    "2024/rev-bomberman": {
+      "handout_paths": [
+        "attachments/assets/bomb.png",
+        "attachments/assets/bomb_ignited.png",
+        "attachments/assets/explosion.png",
+        "attachments/assets/flag.png",
+        "attachments/assets/ground.png",
+        "attachments/assets/pillar.png",
+        "attachments/assets/player.png",
+        "attachments/assets/void.png",
+        "attachments/assets/wall.png",
+        "attachments/assets/wall_destructible.png",
+        "attachments/challenge.tar.gz"
+      ],
+      "mode": "original_attachment",
+      "reason": "official_offline_handout_and_flag_available",
+      "status": "included",
+      "tier": "medium"
+    },
+    "2024/rev-ieee": {
+      "handout_paths": [
+        "attachments/ieee"
+      ],
+      "mode": "original_attachment",
+      "reason": "official_offline_handout_and_flag_available",
+      "status": "included",
+      "tier": "medium"
+    },
+    "2024/rev-ilovecrackmes": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2024/rev-notobfuscated": {
+      "handout_paths": [
+        "attachments/challenge"
+      ],
+      "mode": "original_attachment",
+      "reason": "official_offline_handout_and_flag_available",
+      "status": "included",
+      "tier": "medium"
+    },
+    "2024/rev-rustyschool": {
+      "handout_paths": [
+        "attachments/flag.txt.encrypted",
+        "attachments/rustyschool"
+      ],
+      "mode": "original_attachment",
+      "reason": "official_offline_handout_and_flag_available",
+      "status": "included",
+      "tier": "medium"
+    },
+    "2024/rev-x86perm": {
+      "handout_paths": [
+        "attachments/binary"
+      ],
+      "mode": "original_attachment",
+      "reason": "official_offline_handout_and_flag_available",
+      "status": "included",
+      "tier": "medium"
+    },
+    "2024/web-game-arcade": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2024/web-game-arcade-bot": {
+      "reason": "official_flag_or_standalone_metadata_requires_manual_resolution",
+      "status": "pending"
+    },
+    "2024/web-grandprixheaven": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2024/web-grandprixheaven-bot": {
+      "reason": "official_flag_or_standalone_metadata_requires_manual_resolution",
+      "status": "pending"
+    },
+    "2024/web-in-the-shadows": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2024/web-in-the-shadows-bot": {
+      "reason": "official_flag_or_standalone_metadata_requires_manual_resolution",
+      "status": "pending"
+    },
+    "2024/web-postviewer3": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2024/web-postviewer3-bot": {
+      "reason": "official_flag_or_standalone_metadata_requires_manual_resolution",
+      "status": "pending"
+    },
+    "2024/web-sappy": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2024/web-sappy-bot": {
+      "reason": "official_flag_or_standalone_metadata_requires_manual_resolution",
+      "status": "pending"
+    },
+    "2025/crypto-filtermaze": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2025/crypto-merkurated": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2025/crypto-numerology": {
+      "handout_paths": [
+        "attachments/__pycache__/crypto_numerology.cpython-312.pyc",
+        "attachments/ctf_challenge_package.json",
+        "attachments/flag.txt",
+        "attachments/init.sh",
+        "attachments/readme.md"
+      ],
+      "mode": "original_attachment",
+      "reason": "official_offline_handout_and_flag_available",
+      "status": "included",
+      "tier": "medium"
+    },
+    "2025/crypto-sphinx": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2025/crypto-underhanded": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2025/misc-bpfbox": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2025/misc-fishmaze": {
+      "reason": "official_player_handout_requires_manual_identification",
+      "status": "pending"
+    },
+    "2025/misc-hwsim": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2025/misc-mega-rust-1": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2025/misc-mega-rust-2": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2025/pwn-datadefinition": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2025/pwn-internship": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2025/pwn-multiarch-2": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2025/pwn-playbook": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2025/pwn-the-classic-notes-app": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2025/pwn-webz": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2025/rev-asteroids-redux": {
+      "handout_paths": [
+        "attachments/playme"
+      ],
+      "mode": "original_attachment",
+      "reason": "official_offline_handout_and_flag_available",
+      "status": "included",
+      "tier": "medium"
+    },
+    "2025/rev-cgb": {
+      "handout_paths": [
+        "attachments/README.md",
+        "attachments/hash/gbcolor.xml",
+        "attachments/roms/gbcolor/gbc_boot.1",
+        "attachments/roms/gbcolor/gbc_boot.2",
+        "attachments/roms/gctf/gctf.gb"
+      ],
+      "mode": "original_attachment",
+      "reason": "official_offline_handout_and_flag_available",
+      "status": "included",
+      "tier": "medium"
+    },
+    "2025/rev-circo": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2025/rev-fluffy": {
+      "handout_paths": [
+        "attachments/fluffy.apk"
+      ],
+      "mode": "original_attachment",
+      "reason": "official_offline_handout_and_flag_available",
+      "status": "included",
+      "tier": "medium"
+    },
+    "2025/rev-multiarch-1": {
+      "proposed_mode": "original_service",
+      "reason": "requires_original_service_runtime",
+      "status": "pending"
+    },
+    "2025/rev-puzzlepuzzle": {
+      "handout_paths": [
+        "attachments/puzzlepuzzle.tar.gz"
+      ],
+      "mode": "original_attachment",
+      "reason": "official_offline_handout_and_flag_available",
+      "status": "included",
+      "tier": "medium"
+    },
+    "2025/web-inspector-gadget": {
+      "handout_paths": [
+        "attachments/Dockerfile",
+        "attachments/chal.patch",
+        "attachments/flag",
+        "attachments/patches/GoldenSectionLineSearch.patch",
+        "attachments/patches/MultiClassAccuracyStats.patch",
+        "attachments/patches/SVMLightClassifierFactory.patch",
+        "attachments/patches/StanfordCoreNLPServer.patch",
+        "attachments/start.sh"
+      ],
+      "mode": "original_attachment",
+      "reason": "official_offline_handout_and_flag_available",
+      "status": "included",
+      "tier": "medium"
+    },
+    "2025/web-js-safe-6": {
+      "handout_paths": [
+        "attachments/js_safe_6.tar.gz"
+      ],
+      "mode": "original_attachment",
+      "reason": "official_offline_handout_and_flag_available",
+      "status": "included",
+      "tier": "medium"
+    },
+    "2025/web-lost-in-transliteration": {
+      "handout_paths": [
+        "attachments/source/Dockerfile",
+        "attachments/source/Program.cs",
+        "attachments/source/bot.mjs",
+        "attachments/source/challenge.csproj",
+        "attachments/source/challenge.sln",
+        "attachments/source/flag.txt",
+        "attachments/source/package-lock.json",
+        "attachments/source/package.json",
+        "attachments/source/start.sh"
+      ],
+      "mode": "original_attachment",
+      "reason": "official_offline_handout_and_flag_available",
+      "status": "included",
+      "tier": "medium"
+    },
+    "2025/web-mythos-perl": {
+      "reason": "official_flag_or_standalone_metadata_requires_manual_resolution",
+      "status": "pending"
+    },
+    "2025/web-mythos-python": {
+      "handout_paths": [
+        "attachments/perl/Dockerfile",
+        "attachments/perl/mythos/bin/app.psgi",
+        "attachments/perl/mythos/config.yml",
+        "attachments/perl/mythos/data/angels_scarf.txt",
+        "attachments/perl/mythos/data/events.json",
+        "attachments/perl/mythos/data/mermaid_scale.txt",
+        "attachments/perl/mythos/data/mew_plaque.txt",
+        "attachments/perl/mythos/data/mimic_gem.txt",
+        "attachments/perl/mythos/flag.txt",
+        "attachments/perl/mythos/lib/Game.pm",
+        "attachments/perl/mythos/lib/Inventory.pm",
+        "attachments/perl/mythos/lib/Mythos.pm",
+        "attachments/perl/start.sh",
+        "attachments/py/.gitignore",
+        "attachments/py/Dockerfile",
+        "attachments/py/requirements.txt",
+        "attachments/py/webserver/app.py",
+        "attachments/py/webserver/static/css/style.css",
+        "attachments/py/webserver/templates/error.html",
+        "attachments/py/webserver/templates/game.html",
+        "attachments/py/webserver/templates/index.html",
+        "attachments/py/webserver/util.py"
+      ],
+      "mode": "original_attachment",
+      "reason": "official_offline_handout_and_flag_available",
+      "status": "included",
+      "tier": "medium"
+    },
+    "2025/web-postviewer5": {
+      "handout_paths": [
+        "attachments/Dockerfile",
+        "attachments/src/app.js",
+        "attachments/src/bot.js",
+        "attachments/src/package-lock.json",
+        "attachments/src/package.json",
+        "attachments/src/static/comments.png",
+        "attachments/src/static/db.js",
+        "attachments/src/static/safe-frame.js",
+        "attachments/src/static/style.css",
+        "attachments/src/static/util.js",
+        "attachments/src/views/bot.ejs",
+        "attachments/src/views/foot.ejs",
+        "attachments/src/views/head.ejs",
+        "attachments/src/views/index.ejs",
+        "attachments/start.sh"
+      ],
+      "mode": "original_attachment",
+      "reason": "official_offline_handout_and_flag_available",
+      "status": "included",
+      "tier": "medium"
+    },
+    "2025/web-postviewer5-ff": {
+      "handout_paths": [
+        "attachments/Dockerfile",
+        "attachments/src/app.js",
+        "attachments/src/bot.js",
+        "attachments/src/package-lock.json",
+        "attachments/src/package.json",
+        "attachments/src/static/db.js",
+        "attachments/src/static/safe-frame.js",
+        "attachments/src/static/style.css",
+        "attachments/src/static/util.js",
+        "attachments/src/views/bot.ejs",
+        "attachments/src/views/foot.ejs",
+        "attachments/src/views/head.ejs",
+        "attachments/src/views/index.ejs",
+        "attachments/start.sh"
+      ],
+      "mode": "original_attachment",
+      "reason": "official_offline_handout_and_flag_available",
+      "status": "included",
+      "tier": "medium"
+    },
+    "2025/web-sourceless": {
+      "handout_paths": [
+        "attachments/Dockerfile",
+        "attachments/flag.txt",
+        "attachments/src/app.mjs",
+        "attachments/src/package.json",
+        "attachments/start.sh"
+      ],
+      "mode": "original_attachment",
+      "reason": "official_offline_handout_and_flag_available",
+      "status": "included",
+      "tier": "medium"
+    }
+  },
+  "policy": "Automated first pass; pending entries remain in the mother catalog and require a dedicated original runtime or manual handout identification.",
+  "schema": "original-ctf-review-v1"
+}

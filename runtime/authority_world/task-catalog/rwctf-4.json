@@ -1,0 +1,336 @@
+{
+  "challenge_count": 16,
+  "challenges": [
+    {
+      "category": "api6",
+      "challenge": "API6",
+      "commit": "559fae98edc61d022386f882285ce1b89ad29010",
+      "event": "Real World CTF 4th",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 1258,
+          "path": "API6_77ba5ac86cf4ab83411a3cf3f08ddff4.tar.gz",
+          "sha256": "04ca593116a98ac4e5464d185cabb4bad17f03322da663f7b175e18a59ac97c8"
+        }
+      ],
+      "review_flags": [
+        "challenge_description_location_requires_review"
+      ],
+      "source": "https://github.com/chaitin/Real-World-CTF-4th-Challenge-Attachments/tree/559fae98edc61d022386f882285ce1b89ad29010/API6",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "black",
+      "challenge": "Black-Box",
+      "commit": "559fae98edc61d022386f882285ce1b89ad29010",
+      "event": "Real World CTF 4th",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 0,
+          "path": "None",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "review_flags": [
+        "challenge_description_location_requires_review"
+      ],
+      "source": "https://github.com/chaitin/Real-World-CTF-4th-Challenge-Attachments/tree/559fae98edc61d022386f882285ce1b89ad29010/Black-Box",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "desperate",
+      "challenge": "Desperate-Cat",
+      "commit": "559fae98edc61d022386f882285ce1b89ad29010",
+      "event": "Real World CTF 4th",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 52428800,
+          "path": "DesperateCat_06de0713d3d9e5ba2dd66e25ea350b8d.tar.gz.00",
+          "sha256": "30a1eeff4e1aae8e106911d5d67ca7773338ce6ae61410a979d0d4f4af5d2f85"
+        },
+        {
+          "bytes": 52428800,
+          "path": "DesperateCat_06de0713d3d9e5ba2dd66e25ea350b8d.tar.gz.01",
+          "sha256": "61dd4416604c284d6913c4a76070d959bd71ae15ffe5eaea05e7950a055444cc"
+        },
+        {
+          "bytes": 52428800,
+          "path": "DesperateCat_06de0713d3d9e5ba2dd66e25ea350b8d.tar.gz.02",
+          "sha256": "c6958c0ed95aa52864e453cb3254b7fe66d258211afbfe3a4e97effb92ba72d7"
+        },
+        {
+          "bytes": 826233,
+          "path": "DesperateCat_06de0713d3d9e5ba2dd66e25ea350b8d.tar.gz.03",
+          "sha256": "20b2ac6478b9636066149b44357fa5486b95b24e618b17e4c21e828d7ac8ba67"
+        },
+        {
+          "bytes": 96,
+          "path": "readme",
+          "sha256": "b54f62285d2d90cb1ea66fc06b140cc939d8d3dfd525af3448be92a7eec45836"
+        },
+        {
+          "bytes": 10,
+          "path": "readme~",
+          "sha256": "14ff1e0fbfdc46b3609f82ac08468f2d57249f526f55136d68041286e37b105a"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/chaitin/Real-World-CTF-4th-Challenge-Attachments/tree/559fae98edc61d022386f882285ce1b89ad29010/Desperate-Cat",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "flag",
+      "challenge": "FLAG",
+      "commit": "559fae98edc61d022386f882285ce1b89ad29010",
+      "event": "Real World CTF 4th",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 4026673,
+          "path": "flag_36a6ce00a9bf39c377b0e1d0a2c1f358.tar.gz",
+          "sha256": "9dae62d861ffdc437d5f5659d399f5a150641bd6a729bd7fc9eaa41139ef9f7b"
+        }
+      ],
+      "review_flags": [
+        "challenge_description_location_requires_review"
+      ],
+      "source": "https://github.com/chaitin/Real-World-CTF-4th-Challenge-Attachments/tree/559fae98edc61d022386f882285ce1b89ad29010/FLAG",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "hack",
+      "challenge": "Hack-into-Skynet",
+      "commit": "559fae98edc61d022386f882285ce1b89ad29010",
+      "event": "Real World CTF 4th",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 1578,
+          "path": "hack_into_skynet_843e0c58997f52e3a65ca9b4c64f2cec.tar.gz",
+          "sha256": "2f2761793b2580a179b6f2660fb3ac4bc498eaa3fea3538f95920f7b31280b43"
+        }
+      ],
+      "review_flags": [
+        "challenge_description_location_requires_review"
+      ],
+      "source": "https://github.com/chaitin/Real-World-CTF-4th-Challenge-Attachments/tree/559fae98edc61d022386f882285ce1b89ad29010/Hack-into-Skynet",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "qlaas",
+      "challenge": "QLaaS",
+      "commit": "559fae98edc61d022386f882285ce1b89ad29010",
+      "event": "Real World CTF 4th",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 447,
+          "path": "QLaaS_61a8e641694e10ce360554241bdda977.tar.gz",
+          "sha256": "05938dce543fc4f430b8554924d7c24ea2a525326054f717f72246df3d5553ac"
+        }
+      ],
+      "review_flags": [
+        "challenge_description_location_requires_review"
+      ],
+      "source": "https://github.com/chaitin/Real-World-CTF-4th-Challenge-Attachments/tree/559fae98edc61d022386f882285ce1b89ad29010/QLaaS",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "rwdn",
+      "challenge": "RWDN",
+      "commit": "559fae98edc61d022386f882285ce1b89ad29010",
+      "event": "Real World CTF 4th",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 0,
+          "path": "None",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "review_flags": [
+        "challenge_description_location_requires_review"
+      ],
+      "source": "https://github.com/chaitin/Real-World-CTF-4th-Challenge-Attachments/tree/559fae98edc61d022386f882285ce1b89ad29010/RWDN",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "svme",
+      "challenge": "SVME",
+      "commit": "559fae98edc61d022386f882285ce1b89ad29010",
+      "event": "Real World CTF 4th",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 868500,
+          "path": "svme_9495bfd34dcaea7af748f1138d5fc25e.tar.gz",
+          "sha256": "a97698aca84b6bcbd6de0fed467d4d0a3f913484f7b08ade65450b5f0b2eeb5b"
+        }
+      ],
+      "review_flags": [
+        "challenge_description_location_requires_review"
+      ],
+      "source": "https://github.com/chaitin/Real-World-CTF-4th-Challenge-Attachments/tree/559fae98edc61d022386f882285ce1b89ad29010/SVME",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "secured",
+      "challenge": "Secured-Java",
+      "commit": "559fae98edc61d022386f882285ce1b89ad29010",
+      "event": "Real World CTF 4th",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 753,
+          "path": "secured-java_2e1e157c03d1dc96be8113ac21269059.tar.gz",
+          "sha256": "351a54267a4a29def359ae59d710d53241aacf7a3856ee63635c1f1166a86e91"
+        }
+      ],
+      "review_flags": [
+        "challenge_description_location_requires_review"
+      ],
+      "source": "https://github.com/chaitin/Real-World-CTF-4th-Challenge-Attachments/tree/559fae98edc61d022386f882285ce1b89ad29010/Secured-Java",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "the",
+      "challenge": "The-Rise-of-Sky",
+      "commit": "559fae98edc61d022386f882285ce1b89ad29010",
+      "event": "Real World CTF 4th",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 15966208,
+          "path": "TheRiseOfSky_243b31708c56461abf307e572c3c4472.bin",
+          "sha256": "6f994d42628aa49b3b00b2e8c8eb6016a2a2da2c61c4f00926b03efa7c50f316"
+        }
+      ],
+      "review_flags": [
+        "challenge_description_location_requires_review"
+      ],
+      "source": "https://github.com/chaitin/Real-World-CTF-4th-Challenge-Attachments/tree/559fae98edc61d022386f882285ce1b89ad29010/The-Rise-of-Sky",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "treasure",
+      "challenge": "Treasure-Hunter",
+      "commit": "559fae98edc61d022386f882285ce1b89ad29010",
+      "event": "Real World CTF 4th",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 0,
+          "path": "None",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "review_flags": [
+        "challenge_description_location_requires_review"
+      ],
+      "source": "https://github.com/chaitin/Real-World-CTF-4th-Challenge-Attachments/tree/559fae98edc61d022386f882285ce1b89ad29010/Treasure-Hunter",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "trust",
+      "challenge": "Trust-or-Not",
+      "commit": "559fae98edc61d022386f882285ce1b89ad29010",
+      "event": "Real World CTF 4th",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 19198509,
+          "path": "Trust_or_not_fa542592446c43678f685913495da668.tar.gz",
+          "sha256": "6c4beb0971dbc529acba61212e6d0148ae02232855dd2d8c0a8248c4dd54861d"
+        }
+      ],
+      "review_flags": [
+        "challenge_description_location_requires_review"
+      ],
+      "source": "https://github.com/chaitin/Real-World-CTF-4th-Challenge-Attachments/tree/559fae98edc61d022386f882285ce1b89ad29010/Trust-or-Not",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "untrustzone",
+      "challenge": "UntrustZone",
+      "commit": "559fae98edc61d022386f882285ce1b89ad29010",
+      "event": "Real World CTF 4th",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 19202851,
+          "path": "UnstrustZone_d9d2151c29fa340f80f38197492001fe.tar.gz",
+          "sha256": "bfe73a0c02bf08fc007600215d5efa3957232cee52bfda88abab4cc009b60ca5"
+        }
+      ],
+      "review_flags": [
+        "challenge_description_location_requires_review"
+      ],
+      "source": "https://github.com/chaitin/Real-World-CTF-4th-Challenge-Attachments/tree/559fae98edc61d022386f882285ce1b89ad29010/UntrustZone",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "wheels",
+      "challenge": "Wheels-on-the-Bus",
+      "commit": "559fae98edc61d022386f882285ce1b89ad29010",
+      "event": "Real World CTF 4th",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 0,
+          "path": "None",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "review_flags": [
+        "challenge_description_location_requires_review"
+      ],
+      "source": "https://github.com/chaitin/Real-World-CTF-4th-Challenge-Attachments/tree/559fae98edc61d022386f882285ce1b89ad29010/Wheels-on-the-Bus",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "who",
+      "challenge": "Who-Moved-My-Block",
+      "commit": "559fae98edc61d022386f882285ce1b89ad29010",
+      "event": "Real World CTF 4th",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 801097,
+          "path": "WhoMovedMyBlock_471d96239f86cb3f7c61991b44d74623.zip",
+          "sha256": "baab05bd28b75bb5a779e6390543ce7eda7252ace6860370f0e8940928824b8a"
+        }
+      ],
+      "review_flags": [
+        "challenge_description_location_requires_review"
+      ],
+      "source": "https://github.com/chaitin/Real-World-CTF-4th-Challenge-Attachments/tree/559fae98edc61d022386f882285ce1b89ad29010/Who-Moved-My-Block",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "hso",
+      "challenge": "hso-groupie",
+      "commit": "559fae98edc61d022386f882285ce1b89ad29010",
+      "event": "Real World CTF 4th",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 1731076,
+          "path": "hso-groupie_e12364e01f315138be56450b27487d09715774d769cfacac33f834fe05a02f28.tar.gz",
+          "sha256": "e12364e01f315138be56450b27487d09715774d769cfacac33f834fe05a02f28"
+        }
+      ],
+      "review_flags": [
+        "challenge_description_location_requires_review"
+      ],
+      "source": "https://github.com/chaitin/Real-World-CTF-4th-Challenge-Attachments/tree/559fae98edc61d022386f882285ce1b89ad29010/hso-groupie",
+      "status": "pending_manual_review"
+    }
+  ],
+  "commit": "559fae98edc61d022386f882285ce1b89ad29010",
+  "event": "Real World CTF 4th",
+  "repository": "https://github.com/chaitin/Real-World-CTF-4th-Challenge-Attachments",
+  "schema": "original-ctf-catalog-v1"
+}

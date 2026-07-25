@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -euo pipefail
+exec python3 /data/authoritylab/watchdogs/llm_api_watchdog.symbolic-clean-v2.py world \
+  --root /data/authoritylab/authority-world-v2-minconf-stage2-i1-ds-4103-v1 \
+  --session al-minconf2-i1-ds-4103 \
+  --process-pattern run_agent_economics_experiment.py --require-root-in-cmdline \
+  --interval 15 --heartbeat-seconds 60 --startup-grace-seconds 180 \
+  --max-consecutive-errors 6 --max-error-rate 0.5 --min-rate-window-calls 6 \
+  --rate-window-seconds 900 --max-calls-per-window 250 \
+  --max-stall-seconds 1200 --max-outstanding-seconds 300 --arm

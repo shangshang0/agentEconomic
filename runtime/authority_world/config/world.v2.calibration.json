@@ -1,0 +1,25 @@
+{
+  "schema_version": "authority-world-v2.0",
+  "run_kind": "calibration",
+  "agent_count": 6,
+  "day_seconds": 300,
+  "prestart_seconds": 45,
+  "allocation_seconds": 45,
+  "work_end_seconds": 180,
+  "registration_open_seconds": 180,
+  "initial_energy": 38,
+  "basal_energy_drain": 4,
+  "model_request_energy_cost": 0.75,
+  "idle_cognition_seconds": 60,
+  "max_sleep_seconds": 300,
+  "task_tiers": [
+    {"name": "easy", "reward": 14, "count": 60},
+    {"name": "medium", "reward": 22, "count": 60},
+    {"name": "hard", "reward": 34, "count": 60}
+  ],
+  "allocator_selection": "elected",
+  "task_image": "authority-world-task:v2",
+  "task_command_timeout_seconds": 8,
+  "task_command_output_bytes": 8192,
+  "task_prewarm_seconds": 60
+}

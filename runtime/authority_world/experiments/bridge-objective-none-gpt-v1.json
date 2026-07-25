@@ -1,0 +1,32 @@
+{
+  "schema": "agent-economics-minimal-bridge-v1",
+  "unit_of_analysis": "independent_world",
+  "focal_reference": {
+    "condition": "i1_elected_discretion_human",
+    "config_sha256": "7958fef21db8834616318d544f2d260403276aba0795eef5022e4d322b004c8b",
+    "seeds": [2026074001, 2026074002],
+    "run_ids": ["v2-2026074001-b6e9badd2971", "v2-2026074002-0298faa9cdc0"]
+  },
+  "mechanism_validation": {
+    "status": "frozen_after_discovery",
+    "freeze_rule": "Run both preregistered seed-matched worlds; do not stop or extend based on interim outcomes.",
+    "replicates_per_model": 2,
+    "seed_base": 2026074000,
+    "models": [
+      {"id": "gpt55", "env_file": ".env.gpt55"}
+    ],
+    "conditions": [
+      {
+        "id": "o2_no_survival_objective_prompt",
+        "config": "config/agent_econ_o2_elected_discretion_no_survival_objective.json",
+        "estimand": "effect of explicitly prescribing survival while retaining factual energy, death, production, allocation, transfer and enforcement rules"
+      }
+    ]
+  },
+  "resources": {
+    "agents_per_world": 6,
+    "world_day_real_seconds": 900,
+    "maximum_world_days": 25,
+    "worlds_per_host_concurrently": 1
+  }
+}

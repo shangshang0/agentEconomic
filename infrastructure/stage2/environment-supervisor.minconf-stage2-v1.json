@@ -1,0 +1,113 @@
+{
+  "log_path": "/data/authoritylab/supervisor/environment-supervisor.minconf-stage2-v1.jsonl",
+  "queue_pause_file": "/data/authoritylab/queues/PAUSE_MINCONF_STAGE2",
+  "resume_after_healthy_samples": 3,
+  "disk_path": "/data",
+  "pause_calls_15m": 900,
+  "fail_close_calls_15m": 1050,
+  "pause_errors_15m": 6,
+  "pause_error_rate": 0.05,
+  "pause_oldest_outstanding_seconds": 120,
+  "pause_load_fraction": 0.9,
+  "minimum_memory_gib": 16,
+  "minimum_disk_gib": 32,
+  "fail_close_disk_gib": 24,
+  "pause_disk_consumption_gib_per_minute": 1.0,
+  "pause_disk_consumption_samples": 2,
+  "worlds": [
+    {
+      "root": "/data/authoritylab/authority-world-v2-minconf-stage2-i1-gpt-4003-v1",
+      "session": "al-minconf2-i1-gpt-4003",
+      "launcher": "/data/authoritylab/supervisor/run-minconf-stage2-i1-gpt-4003.sh",
+      "automatic_recovery_samples": 3,
+      "automatic_recovery_command": [
+        "python3", "/data/authoritylab/recovery-tools/auto_recover_frozen_world.py",
+        "--root", "/data/authoritylab/authority-world-v2-minconf-stage2-i1-gpt-4003-v1",
+        "--runner-session", "al-minconf2-i1-gpt-4003",
+        "--watchdog-session", "al-minconf2-wd-i1-gpt-4003",
+        "--runner-launcher", "/data/authoritylab/supervisor/run-minconf-stage2-i1-gpt-4003.sh",
+        "--watchdog-launcher", "/data/authoritylab/supervisor/run-watchdog-minconf-stage2-i1-gpt-4003.sh",
+        "--env-file", ".env.gpt55",
+        "--environment-supervisor-log", "/data/authoritylab/supervisor/environment-supervisor.minconf-stage2-v1.jsonl",
+        "--classification", "registered_minconf_stage2_with_infrastructure_amendment"
+      ],
+      "restore_compose_on_untripped_failure": false
+    },
+    {
+      "root": "/data/authoritylab/authority-world-v2-minconf-stage2-i3-gpt-4203-v1",
+      "session": "al-minconf2-i3-gpt-4203",
+      "launcher": "/data/authoritylab/supervisor/run-minconf-stage2-i3-gpt-4203.sh",
+      "automatic_recovery_samples": 3,
+      "automatic_recovery_command": [
+        "python3", "/data/authoritylab/recovery-tools/auto_recover_frozen_world.py",
+        "--root", "/data/authoritylab/authority-world-v2-minconf-stage2-i3-gpt-4203-v1",
+        "--runner-session", "al-minconf2-i3-gpt-4203",
+        "--watchdog-session", "al-minconf2-wd-i3-gpt-4203",
+        "--runner-launcher", "/data/authoritylab/supervisor/run-minconf-stage2-i3-gpt-4203.sh",
+        "--watchdog-launcher", "/data/authoritylab/supervisor/run-watchdog-minconf-stage2-i3-gpt-4203.sh",
+        "--env-file", ".env.gpt55",
+        "--environment-supervisor-log", "/data/authoritylab/supervisor/environment-supervisor.minconf-stage2-v1.jsonl",
+        "--classification", "registered_minconf_stage2_with_infrastructure_amendment"
+      ],
+      "restore_compose_on_untripped_failure": false
+    },
+    {
+      "root": "/data/authoritylab/authority-world-v2-minconf-stage2-i1-ds-4103-v1",
+      "session": "al-minconf2-i1-ds-4103",
+      "launcher": "/data/authoritylab/supervisor/run-minconf-stage2-i1-ds-4103.sh",
+      "automatic_recovery_samples": 3,
+      "automatic_recovery_command": [
+        "python3", "/data/authoritylab/recovery-tools/auto_recover_frozen_world.py",
+        "--root", "/data/authoritylab/authority-world-v2-minconf-stage2-i1-ds-4103-v1",
+        "--runner-session", "al-minconf2-i1-ds-4103",
+        "--watchdog-session", "al-minconf2-wd-i1-ds-4103",
+        "--runner-launcher", "/data/authoritylab/supervisor/run-minconf-stage2-i1-ds-4103.sh",
+        "--watchdog-launcher", "/data/authoritylab/supervisor/run-watchdog-minconf-stage2-i1-ds-4103.sh",
+        "--env-file", ".env.deepseek",
+        "--environment-supervisor-log", "/data/authoritylab/supervisor/environment-supervisor.minconf-stage2-v1.jsonl",
+        "--classification", "registered_minconf_stage2_with_infrastructure_amendment"
+      ],
+      "restore_compose_on_untripped_failure": false
+    },
+    {
+      "root": "/data/authoritylab/authority-world-v2-minconf-stage2-i3-ds-4303-v1",
+      "session": "al-minconf2-i3-ds-4303",
+      "launcher": "/data/authoritylab/supervisor/run-minconf-stage2-i3-ds-4303.sh",
+      "automatic_recovery_samples": 3,
+      "automatic_recovery_command": [
+        "python3", "/data/authoritylab/recovery-tools/auto_recover_frozen_world.py",
+        "--root", "/data/authoritylab/authority-world-v2-minconf-stage2-i3-ds-4303-v1",
+        "--runner-session", "al-minconf2-i3-ds-4303",
+        "--watchdog-session", "al-minconf2-wd-i3-ds-4303",
+        "--runner-launcher", "/data/authoritylab/supervisor/run-minconf-stage2-i3-ds-4303.sh",
+        "--watchdog-launcher", "/data/authoritylab/supervisor/run-watchdog-minconf-stage2-i3-ds-4303.sh",
+        "--env-file", ".env.deepseek",
+        "--environment-supervisor-log", "/data/authoritylab/supervisor/environment-supervisor.minconf-stage2-v1.jsonl",
+        "--classification", "registered_minconf_stage2_with_infrastructure_amendment"
+      ],
+      "restore_compose_on_untripped_failure": false
+    }
+  ],
+  "watchdogs": [
+    {
+      "root": "/data/authoritylab/authority-world-v2-minconf-stage2-i1-gpt-4003-v1",
+      "session": "al-minconf2-wd-i1-gpt-4003",
+      "launcher": "/data/authoritylab/supervisor/run-watchdog-minconf-stage2-i1-gpt-4003.sh"
+    },
+    {
+      "root": "/data/authoritylab/authority-world-v2-minconf-stage2-i3-gpt-4203-v1",
+      "session": "al-minconf2-wd-i3-gpt-4203",
+      "launcher": "/data/authoritylab/supervisor/run-watchdog-minconf-stage2-i3-gpt-4203.sh"
+    },
+    {
+      "root": "/data/authoritylab/authority-world-v2-minconf-stage2-i1-ds-4103-v1",
+      "session": "al-minconf2-wd-i1-ds-4103",
+      "launcher": "/data/authoritylab/supervisor/run-watchdog-minconf-stage2-i1-ds-4103.sh"
+    },
+    {
+      "root": "/data/authoritylab/authority-world-v2-minconf-stage2-i3-ds-4303-v1",
+      "session": "al-minconf2-wd-i3-ds-4303",
+      "launcher": "/data/authoritylab/supervisor/run-watchdog-minconf-stage2-i3-ds-4303.sh"
+    }
+  ]
+}

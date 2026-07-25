@@ -1,0 +1,128 @@
+{
+  "audit_sha256": "e7d5fdd62f59a50058bc46dd52fdbe57b391b7425037ca8122491859f54cf3b5",
+  "difficulty_evidence_sha256": "53d0d72a7d9466297ef9b445d35e2b20f495ed64623b46d71fd50e40ea05b361",
+  "schema": "authority-world-original-ctf-run-v1",
+  "selection_policy": "Evidence-first global ranking: official solve counts/final points, then CTFtime points, then explicit low-confidence technical heuristics; exact 24/24/24 quantile tiers; daily queue order interleaves easy/medium/hard.",
+  "task_count": 72,
+  "tasks": [
+    {
+      "category": null,
+      "commit": "46742099d094a69c214f35498718b5c9ba900b26",
+      "event": "SECCON 2022 Online CTF",
+      "handout_paths": [
+        "SECCON22-baby-cmp/files/chall.baby"
+      ],
+      "id": "SECCON22-baby-cmp",
+      "mode": "original_attachment",
+      "official_flag": "SECCON{y0u_f0und_7h3_baby_flag_YaY}",
+      "official_name": "baby_cmp",
+      "reward": 14,
+      "sha256": {
+        "SECCON22-baby-cmp/files/chall.baby": "d69a769f91c32f5ab94eeb6cea8d28fd7d3da5bba791ac91af61cf85465de239"
+      },
+      "source": "https://github.com/SECCON/SECCON2022_online_CTF/tree/46742099d094a69c214f35498718b5c9ba900b26/reversing/baby_cmp",
+      "tier": "easy"
+    },
+    {
+      "category": null,
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83",
+      "event": "Google CTF 2022 Quals",
+      "handout_paths": [
+        "GCTF22-misc-appnote/attachments/dump.zip"
+      ],
+      "id": "GCTF22-misc-appnote",
+      "mode": "original_attachment",
+      "official_flag": "CTF{p0s7m0d3rn_z1p}",
+      "official_name": "misc-appnote",
+      "reward": 14,
+      "sha256": {
+        "GCTF22-misc-appnote/attachments/dump.zip": "d6f941e8633906b8e6299ee5756ad4579c55078ac34a1ab55651c8794cf0b902"
+      },
+      "source": "https://github.com/google/google-ctf/tree/067421eb7e918c29e39f187fac5a0f0d72a6ab83/2022/quals/misc-appnote",
+      "tier": "easy"
+    },
+    {
+      "category": null,
+      "commit": "46742099d094a69c214f35498718b5c9ba900b26",
+      "event": "SECCON 2022 Online CTF",
+      "handout_paths": [
+        "SECCON22-pqpq/files/output.txt",
+        "SECCON22-pqpq/files/problem.py"
+      ],
+      "id": "SECCON22-pqpq",
+      "mode": "original_attachment",
+      "official_flag": "SECCON{being_able_to_s0lve_this_1s_great!}",
+      "official_name": "pqpq",
+      "reward": 14,
+      "sha256": {
+        "SECCON22-pqpq/files/output.txt": "3c2ac5c7c61b495a8f58d061b6d8a06d9cccb92dc0ac41ebea91f97a0f550d55",
+        "SECCON22-pqpq/files/problem.py": "9f82e22372adc4e25153184fad67fa1397271a1d1eac02abfeef114712543640"
+      },
+      "source": "https://github.com/SECCON/SECCON2022_online_CTF/tree/46742099d094a69c214f35498718b5c9ba900b26/crypto/pqpq",
+      "tier": "easy"
+    },
+    {
+      "category": null,
+      "commit": "0fcc88e38a007b974bbb93686dc9c02d7f62bd07",
+      "event": "SECCON 2023 Online CTF",
+      "handout_paths": [
+        "SECCON23-RSA-4-0/files/dist/output.txt",
+        "SECCON23-RSA-4-0/files/dist/problem.sage"
+      ],
+      "id": "SECCON23-RSA-4-0",
+      "mode": "original_attachment",
+      "official_flag": "SECCON{pr0m153_m3!d0_n07_3ncryp7_p_0r_q_3v3n_w17h_r54_4.0}",
+      "official_name": "RSA 4.0",
+      "reward": 22,
+      "sha256": {
+        "SECCON23-RSA-4-0/files/dist/output.txt": "92a798b881776448cffa499b79e1e668a7e0349f56160163676aa1bbb046bef9",
+        "SECCON23-RSA-4-0/files/dist/problem.sage": "827e9684d8ae61d67207f44757727ba9a3d629c0afaff930f3cbb0bd92ce8d39"
+      },
+      "source": "https://github.com/SECCON/SECCON2023_online_CTF/tree/0fcc88e38a007b974bbb93686dc9c02d7f62bd07/crypto/RSA 4.0",
+      "tier": "medium"
+    },
+    {
+      "category": null,
+      "commit": "0fcc88e38a007b974bbb93686dc9c02d7f62bd07",
+      "event": "SECCON 2023 Online CTF",
+      "handout_paths": [
+        "SECCON23-plai-n-rsa/files/dist/output.txt",
+        "SECCON23-plai-n-rsa/files/dist/problem.py"
+      ],
+      "id": "SECCON23-plai-n-rsa",
+      "mode": "original_attachment",
+      "official_flag": "SECCON{thank_you_for_finding_my_n!!!_GOOD_LUCK_IN_SECCON_CTF}",
+      "official_name": "plai_n_rsa",
+      "reward": 14,
+      "sha256": {
+        "SECCON23-plai-n-rsa/files/dist/output.txt": "7df7d52639d27dec8d83877faa899e1dfe3ccdc891b8221e92ee3c703ab77a62",
+        "SECCON23-plai-n-rsa/files/dist/problem.py": "27415b92265cec4246831c7b38c4943ee3e943895a0951cef058079b4b36183f"
+      },
+      "source": "https://github.com/SECCON/SECCON2023_online_CTF/tree/0fcc88e38a007b974bbb93686dc9c02d7f62bd07/crypto/plai_n_rsa",
+      "tier": "easy"
+    },
+    {
+      "category": null,
+      "commit": "0fcc88e38a007b974bbb93686dc9c02d7f62bd07",
+      "event": "SECCON 2023 Online CTF",
+      "handout_paths": [
+        "SECCON23-jumpout/files/jumpout"
+      ],
+      "id": "SECCON23-jumpout",
+      "mode": "original_attachment",
+      "official_flag": "SECCON{jump_table_everywhere}",
+      "official_name": "jumpout",
+      "reward": 14,
+      "sha256": {
+        "SECCON23-jumpout/files/jumpout": "7f2996bc9b2e0e6872e2cf8ec673e75313a3db66aa7badd5a7740085c5080aa1"
+      },
+      "source": "https://github.com/SECCON/SECCON2023_online_CTF/tree/0fcc88e38a007b974bbb93686dc9c02d7f62bd07/reversing/jumpout",
+      "tier": "easy"
+    }
+  ],
+  "tier_counts": {
+    "easy": 24,
+    "hard": 24,
+    "medium": 24
+  }
+}

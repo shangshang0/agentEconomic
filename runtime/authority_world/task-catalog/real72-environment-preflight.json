@@ -1,0 +1,515 @@
+{
+  "schema": "authority-world-real72-environment-preflight-v1",
+  "image": "authority-world-task:real72-v3",
+  "runtime_source": "next-round-prep/source/backend/artifact_runtime.py",
+  "passed": 72,
+  "failed": 0,
+  "results": [
+    {
+      "id": "SECCON22-baby-cmp",
+      "tier": "easy",
+      "ok": true,
+      "seconds": 0.466,
+      "files": 1
+    },
+    {
+      "id": "SECCON22-devil-hunter",
+      "tier": "medium",
+      "ok": true,
+      "seconds": 0.425,
+      "files": 2
+    },
+    {
+      "id": "GCTF22-crypto-enigma",
+      "tier": "hard",
+      "ok": true,
+      "seconds": 0.679,
+      "files": 41
+    },
+    {
+      "id": "GCTF22-misc-appnote",
+      "tier": "easy",
+      "ok": true,
+      "seconds": 0.455,
+      "files": 1
+    },
+    {
+      "id": "SECCON23-optinimize",
+      "tier": "medium",
+      "ok": true,
+      "seconds": 0.447,
+      "files": 1
+    },
+    {
+      "id": "GCTF23-crypto-primes",
+      "tier": "hard",
+      "ok": true,
+      "seconds": 0.449,
+      "files": 1
+    },
+    {
+      "id": "GCTF23-crypto-lcg",
+      "tier": "easy",
+      "ok": true,
+      "seconds": 0.451,
+      "files": 4
+    },
+    {
+      "id": "GCTF21-hw-parking",
+      "tier": "medium",
+      "ok": true,
+      "seconds": 0.762,
+      "files": 4
+    },
+    {
+      "id": "SECCON23-CIGISICGICGICG",
+      "tier": "hard",
+      "ok": true,
+      "seconds": 0.419,
+      "files": 2
+    },
+    {
+      "id": "GCTF25-crypto-numerology",
+      "tier": "easy",
+      "ok": true,
+      "seconds": 0.466,
+      "files": 5
+    },
+    {
+      "id": "SECCON22-doroboh",
+      "tier": "medium",
+      "ok": true,
+      "seconds": 3.254,
+      "files": 4
+    },
+    {
+      "id": "SECCON23-efsbk",
+      "tier": "hard",
+      "ok": true,
+      "seconds": 0.801,
+      "files": 1
+    },
+    {
+      "id": "SECCON22-pqpq",
+      "tier": "easy",
+      "ok": true,
+      "seconds": 0.675,
+      "files": 2
+    },
+    {
+      "id": "SECCON23-RSA-4-0",
+      "tier": "medium",
+      "ok": true,
+      "seconds": 0.527,
+      "files": 2
+    },
+    {
+      "id": "GCTF22-rev-rewinden",
+      "tier": "hard",
+      "ok": true,
+      "seconds": 0.63,
+      "files": 4
+    },
+    {
+      "id": "GCTF21-rev-cpp",
+      "tier": "easy",
+      "ok": true,
+      "seconds": 0.476,
+      "files": 1
+    },
+    {
+      "id": "GCTF24-rev-arcade",
+      "tier": "medium",
+      "ok": true,
+      "seconds": 0.465,
+      "files": 4
+    },
+    {
+      "id": "GCTF23-rev-oldschool",
+      "tier": "hard",
+      "ok": true,
+      "seconds": 0.433,
+      "files": 1
+    },
+    {
+      "id": "SECCON21-pppp",
+      "tier": "easy",
+      "ok": true,
+      "seconds": 0.479,
+      "files": 2
+    },
+    {
+      "id": "GCTF21-misc-zippi",
+      "tier": "medium",
+      "ok": true,
+      "seconds": 0.45,
+      "files": 1
+    },
+    {
+      "id": "GCTF24-rev-rustyschool",
+      "tier": "hard",
+      "ok": true,
+      "seconds": 0.787,
+      "files": 2
+    },
+    {
+      "id": "GCTF23-misc-papapapa",
+      "tier": "easy",
+      "ok": true,
+      "seconds": 0.448,
+      "files": 1
+    },
+    {
+      "id": "GCTF24-rev-notobfuscated",
+      "tier": "medium",
+      "ok": true,
+      "seconds": 0.442,
+      "files": 1
+    },
+    {
+      "id": "GCTF22-hardware-iliketrains",
+      "tier": "hard",
+      "ok": true,
+      "seconds": 0.517,
+      "files": 1
+    },
+    {
+      "id": "SECCON21-corrupted-flag",
+      "tier": "easy",
+      "ok": true,
+      "seconds": 0.682,
+      "files": 2
+    },
+    {
+      "id": "SECCON21-pyast64---rev",
+      "tier": "medium",
+      "ok": true,
+      "seconds": 0.442,
+      "files": 3
+    },
+    {
+      "id": "GCTF23-rev-jxl",
+      "tier": "hard",
+      "ok": true,
+      "seconds": 0.571,
+      "files": 2
+    },
+    {
+      "id": "SECCON23-plai-n-rsa",
+      "tier": "easy",
+      "ok": true,
+      "seconds": 0.844,
+      "files": 2
+    },
+    {
+      "id": "SECCON22-elder-cmp",
+      "tier": "medium",
+      "ok": true,
+      "seconds": 1.022,
+      "files": 1
+    },
+    {
+      "id": "GCTF24-rev-x86perm",
+      "tier": "hard",
+      "ok": true,
+      "seconds": 0.505,
+      "files": 1
+    },
+    {
+      "id": "SECCON23-jumpout",
+      "tier": "easy",
+      "ok": true,
+      "seconds": 0.75,
+      "files": 1
+    },
+    {
+      "id": "SECCON23-ReMOV",
+      "tier": "medium",
+      "ok": true,
+      "seconds": 0.458,
+      "files": 1
+    },
+    {
+      "id": "SECCON23-Paillier-4-0",
+      "tier": "hard",
+      "ok": true,
+      "seconds": 0.46,
+      "files": 2
+    },
+    {
+      "id": "SECCON21-s-script-gi",
+      "tier": "easy",
+      "ok": true,
+      "seconds": 1.48,
+      "files": 2
+    },
+    {
+      "id": "GCTF22-rev-eldar",
+      "tier": "medium",
+      "ok": true,
+      "seconds": 0.467,
+      "files": 3
+    },
+    {
+      "id": "SECCON23-digicake",
+      "tier": "hard",
+      "ok": true,
+      "seconds": 0.509,
+      "expected_encryption": true,
+      "note": "Encrypted official 7z; archive listing succeeds, extraction intentionally requires challenge password."
+    },
+    {
+      "id": "SECCON00-reiwa-rot13",
+      "tier": "easy",
+      "ok": true,
+      "seconds": 0.562,
+      "files": 2
+    },
+    {
+      "id": "GCTF25-rev-fluffy",
+      "tier": "medium",
+      "ok": true,
+      "seconds": 0.952,
+      "files": 1
+    },
+    {
+      "id": "GCTF24-rev-ieee",
+      "tier": "hard",
+      "ok": true,
+      "seconds": 0.654,
+      "files": 1
+    },
+    {
+      "id": "SECCON00-packed",
+      "tier": "easy",
+      "ok": true,
+      "seconds": 0.792,
+      "files": 1
+    },
+    {
+      "id": "GCTF23-rev-turtle",
+      "tier": "medium",
+      "ok": true,
+      "seconds": 0.441,
+      "files": 3
+    },
+    {
+      "id": "SECCON21-Sign-Wars",
+      "tier": "hard",
+      "ok": true,
+      "seconds": 0.421,
+      "files": 3
+    },
+    {
+      "id": "GCTF21-rev-hexagon",
+      "tier": "easy",
+      "ok": true,
+      "seconds": 0.503,
+      "files": 1
+    },
+    {
+      "id": "GCTF23-crypto-mhk2",
+      "tier": "medium",
+      "ok": true,
+      "seconds": 0.512,
+      "files": 2
+    },
+    {
+      "id": "GCTF22-rev-mixed",
+      "tier": "hard",
+      "ok": true,
+      "seconds": 0.485,
+      "files": 2
+    },
+    {
+      "id": "SECCON23-Sickle",
+      "tier": "easy",
+      "ok": true,
+      "seconds": 0.504,
+      "files": 1
+    },
+    {
+      "id": "GCTF24-crypto-otp",
+      "tier": "medium",
+      "ok": true,
+      "seconds": 1.37,
+      "files": 287
+    },
+    {
+      "id": "DEFCON23-kkkkklik",
+      "tier": "hard",
+      "ok": true,
+      "seconds": 0.545,
+      "files": 1
+    },
+    {
+      "id": "GCTF21-rev-weather",
+      "tier": "easy",
+      "ok": true,
+      "seconds": 0.586,
+      "files": 1
+    },
+    {
+      "id": "GCTF25-rev-cgb",
+      "tier": "medium",
+      "ok": true,
+      "seconds": 0.808,
+      "files": 5
+    },
+    {
+      "id": "GCTF23-rev-zermatt",
+      "tier": "hard",
+      "ok": true,
+      "seconds": 0.57,
+      "files": 1
+    },
+    {
+      "id": "SECCON00-Jump",
+      "tier": "easy",
+      "ok": true,
+      "seconds": 0.537,
+      "files": 1
+    },
+    {
+      "id": "SECCON00-Tidal-wave",
+      "tier": "medium",
+      "ok": true,
+      "seconds": 0.811,
+      "files": 2
+    },
+    {
+      "id": "SECCON23-Increasing-Entropoid",
+      "tier": "hard",
+      "ok": true,
+      "seconds": 0.567,
+      "files": 2
+    },
+    {
+      "id": "GCTF22-hardware-engraver",
+      "tier": "easy",
+      "ok": true,
+      "seconds": 0.455,
+      "files": 3
+    },
+    {
+      "id": "GCTF21-crypto-H1",
+      "tier": "medium",
+      "ok": true,
+      "seconds": 0.426,
+      "files": 2
+    },
+    {
+      "id": "DEFCON23-pawan-gupta",
+      "tier": "hard",
+      "ok": true,
+      "seconds": 0.467,
+      "files": 6
+    },
+    {
+      "id": "GCTF21-misc-raid",
+      "tier": "easy",
+      "ok": true,
+      "seconds": 0.959,
+      "files": 1
+    },
+    {
+      "id": "GCTF22-rev-whitecube",
+      "tier": "medium",
+      "ok": true,
+      "seconds": 0.559,
+      "files": 2
+    },
+    {
+      "id": "GCTF25-rev-asteroids-redux",
+      "tier": "hard",
+      "ok": true,
+      "seconds": 0.514,
+      "files": 1
+    },
+    {
+      "id": "GCTF22-crypto-cycling",
+      "tier": "easy",
+      "ok": true,
+      "seconds": 0.504,
+      "files": 1
+    },
+    {
+      "id": "GCTF24-rev-bomberman",
+      "tier": "medium",
+      "ok": true,
+      "seconds": 2.171,
+      "files": 11
+    },
+    {
+      "id": "GCTF25-rev-puzzlepuzzle",
+      "tier": "hard",
+      "ok": true,
+      "seconds": 0.667,
+      "files": 1
+    },
+    {
+      "id": "SECCON23-Perfect-Blu",
+      "tier": "easy",
+      "ok": true,
+      "seconds": 1.571,
+      "files": 1
+    },
+    {
+      "id": "SECCON21-XXX",
+      "tier": "medium",
+      "ok": true,
+      "seconds": 0.88,
+      "files": 2
+    },
+    {
+      "id": "GCTF23-crypto-ziphard",
+      "tier": "hard",
+      "ok": true,
+      "seconds": 0.608,
+      "expected_encryption": true,
+      "note": "Encrypted official ZIP; member listing succeeds, extraction intentionally requires challenge password."
+    },
+    {
+      "id": "GCTF25-web-js-safe-6",
+      "tier": "easy",
+      "ok": true,
+      "seconds": 0.421,
+      "files": 1
+    },
+    {
+      "id": "GCTF22-rev-js-safe-4",
+      "tier": "medium",
+      "ok": true,
+      "seconds": 0.419,
+      "files": 3
+    },
+    {
+      "id": "SECCON23-okihai",
+      "tier": "hard",
+      "ok": true,
+      "seconds": 1.885,
+      "files": 2
+    },
+    {
+      "id": "SECCON22-insufficient",
+      "tier": "easy",
+      "ok": true,
+      "seconds": 0.453,
+      "files": 3
+    },
+    {
+      "id": "SECCON00-simple-reversing",
+      "tier": "medium",
+      "ok": true,
+      "seconds": 0.479,
+      "files": 1
+    },
+    {
+      "id": "GCTF24-crypto-mceliece",
+      "tier": "hard",
+      "ok": true,
+      "seconds": 0.517,
+      "files": 4
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "log_path": "/data/authoritylab/supervisor/environment-supervisor.symbolic-sixway-v2.jsonl",
+  "queue_pause_file": "/data/authoritylab/queues/PAUSE_SYMBOLIC_SIXWAY",
+  "resume_after_healthy_samples": 3,
+  "disk_path": "/data",
+  "pause_calls_15m": 780,
+  "fail_close_calls_15m": 850,
+  "pause_errors_15m": 6,
+  "pause_error_rate": 0.05,
+  "pause_oldest_outstanding_seconds": 120,
+  "pause_load_fraction": 0.9,
+  "minimum_memory_gib": 16,
+  "minimum_disk_gib": 30,
+  "fail_close_disk_gib": 20,
+  "pause_disk_consumption_gib_per_minute": 1.0,
+  "pause_disk_consumption_samples": 2,
+  "worlds": [
+    {
+      "root": "/data/authoritylab/authority-world-v2-bridge-rerun-objective-none-gpt-seed2-v1",
+      "session": "authority-bridge-rerun-objective-none-gpt-seed2-v1",
+      "launcher": "/data/authoritylab/supervisor/run-bridge-rerun-objective-none-gpt-seed2-v1.sh",
+      "restore_compose_on_untripped_failure": false
+    },
+    {
+      "root": "/data/authoritylab/authority-world-v2-bridge-rerun-neutral-gpt-seed2-v1",
+      "session": "authority-bridge-rerun-neutral-gpt-seed2-v1",
+      "launcher": "/data/authoritylab/supervisor/run-bridge-rerun-neutral-gpt-seed2-v1.sh",
+      "restore_compose_on_untripped_failure": false
+    },
+    {
+      "root": "/data/authoritylab/authority-world-v2-symbolic-gpt-2026074001-sixway-v2",
+      "session": "authority-symbolic-sixway-gpt-4001-v2",
+      "launcher": "/data/authoritylab/supervisor/run-symbolic-sixway-gpt-4001-v2.sh",
+      "automatic_recovery_samples": 3,
+      "automatic_recovery_command": [
+        "python3", "/data/authoritylab/recovery-tools/auto_recover_frozen_world.py",
+        "--root", "/data/authoritylab/authority-world-v2-symbolic-gpt-2026074001-sixway-v2",
+        "--runner-session", "authority-symbolic-sixway-gpt-4001-v2",
+        "--watchdog-session", "authority-symbolic-sixway-wd-gpt-4001-v2",
+        "--runner-launcher", "/data/authoritylab/supervisor/run-symbolic-sixway-gpt-4001-v2.sh",
+        "--watchdog-launcher", "/data/authoritylab/supervisor/run-watchdog-symbolic-sixway-gpt-4001-v2.sh",
+        "--env-file", ".env.gpt55",
+        "--classification", "registered_symbolic_parallel_with_infrastructure_amendment"
+      ],
+      "restore_compose_on_untripped_failure": false
+    },
+    {
+      "root": "/data/authoritylab/authority-world-v2-symbolic-gpt-2026074002-sixway-v2",
+      "session": "authority-symbolic-sixway-gpt-4002-v2",
+      "launcher": "/data/authoritylab/supervisor/run-symbolic-sixway-gpt-4002-v2.sh",
+      "automatic_recovery_samples": 3,
+      "automatic_recovery_command": [
+        "python3", "/data/authoritylab/recovery-tools/auto_recover_frozen_world.py",
+        "--root", "/data/authoritylab/authority-world-v2-symbolic-gpt-2026074002-sixway-v2",
+        "--runner-session", "authority-symbolic-sixway-gpt-4002-v2",
+        "--watchdog-session", "authority-symbolic-sixway-wd-gpt-4002-v2",
+        "--runner-launcher", "/data/authoritylab/supervisor/run-symbolic-sixway-gpt-4002-v2.sh",
+        "--watchdog-launcher", "/data/authoritylab/supervisor/run-watchdog-symbolic-sixway-gpt-4002-v2.sh",
+        "--env-file", ".env.gpt55",
+        "--classification", "registered_symbolic_parallel_with_infrastructure_amendment"
+      ],
+      "restore_compose_on_untripped_failure": false
+    },
+    {
+      "root": "/data/authoritylab/authority-world-v2-symbolic-ds-2026074101-sixway-v2",
+      "session": "authority-symbolic-sixway-ds-4101-v2",
+      "launcher": "/data/authoritylab/supervisor/run-symbolic-sixway-ds-4101-v2.sh",
+      "automatic_recovery_samples": 3,
+      "automatic_recovery_command": [
+        "python3", "/data/authoritylab/recovery-tools/auto_recover_frozen_world.py",
+        "--root", "/data/authoritylab/authority-world-v2-symbolic-ds-2026074101-sixway-v2",
+        "--runner-session", "authority-symbolic-sixway-ds-4101-v2",
+        "--watchdog-session", "authority-symbolic-sixway-wd-ds-4101-v2",
+        "--runner-launcher", "/data/authoritylab/supervisor/run-symbolic-sixway-ds-4101-v2.sh",
+        "--watchdog-launcher", "/data/authoritylab/supervisor/run-watchdog-symbolic-sixway-ds-4101-v2.sh",
+        "--env-file", ".env.deepseek",
+        "--classification", "registered_symbolic_parallel_with_infrastructure_amendment"
+      ],
+      "restore_compose_on_untripped_failure": false
+    },
+    {
+      "root": "/data/authoritylab/authority-world-v2-symbolic-ds-2026074102-sixway-v2",
+      "session": "authority-symbolic-sixway-ds-4102-v2",
+      "launcher": "/data/authoritylab/supervisor/run-symbolic-sixway-ds-4102-v2.sh",
+      "automatic_recovery_samples": 3,
+      "automatic_recovery_command": [
+        "python3", "/data/authoritylab/recovery-tools/auto_recover_frozen_world.py",
+        "--root", "/data/authoritylab/authority-world-v2-symbolic-ds-2026074102-sixway-v2",
+        "--runner-session", "authority-symbolic-sixway-ds-4102-v2",
+        "--watchdog-session", "authority-symbolic-sixway-wd-ds-4102-v2",
+        "--runner-launcher", "/data/authoritylab/supervisor/run-symbolic-sixway-ds-4102-v2.sh",
+        "--watchdog-launcher", "/data/authoritylab/supervisor/run-watchdog-symbolic-sixway-ds-4102-v2.sh",
+        "--env-file", ".env.deepseek",
+        "--classification", "registered_symbolic_parallel_with_infrastructure_amendment"
+      ],
+      "restore_compose_on_untripped_failure": false
+    }
+  ],
+  "watchdogs": [
+    {
+      "root": "/data/authoritylab/authority-world-v2-bridge-rerun-objective-none-gpt-seed2-v1",
+      "session": "authority-bridge-rerun-wd-objective-none-gpt-seed2-v1",
+      "launcher": "/data/authoritylab/supervisor/run-watchdog-bridge-rerun-objective-none-gpt-seed2-v1.sh"
+    },
+    {
+      "root": "/data/authoritylab/authority-world-v2-bridge-rerun-neutral-gpt-seed2-v1",
+      "session": "authority-bridge-rerun-wd-neutral-gpt-seed2-v1",
+      "launcher": "/data/authoritylab/supervisor/run-watchdog-bridge-rerun-neutral-gpt-seed2-v1.sh"
+    },
+    {
+      "root": "/data/authoritylab/authority-world-v2-symbolic-gpt-2026074001-sixway-v2",
+      "session": "authority-symbolic-sixway-wd-gpt-4001-v2",
+      "launcher": "/data/authoritylab/supervisor/run-watchdog-symbolic-sixway-gpt-4001-v2.sh"
+    },
+    {
+      "root": "/data/authoritylab/authority-world-v2-symbolic-gpt-2026074002-sixway-v2",
+      "session": "authority-symbolic-sixway-wd-gpt-4002-v2",
+      "launcher": "/data/authoritylab/supervisor/run-watchdog-symbolic-sixway-gpt-4002-v2.sh"
+    },
+    {
+      "root": "/data/authoritylab/authority-world-v2-symbolic-ds-2026074101-sixway-v2",
+      "session": "authority-symbolic-sixway-wd-ds-4101-v2",
+      "launcher": "/data/authoritylab/supervisor/run-watchdog-symbolic-sixway-ds-4101-v2.sh"
+    },
+    {
+      "root": "/data/authoritylab/authority-world-v2-symbolic-ds-2026074102-sixway-v2",
+      "session": "authority-symbolic-sixway-wd-ds-4102-v2",
+      "launcher": "/data/authoritylab/supervisor/run-watchdog-symbolic-sixway-ds-4102-v2.sh"
+    }
+  ]
+}

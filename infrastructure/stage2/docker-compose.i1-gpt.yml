@@ -1,0 +1,63 @@
+name: al-minconf2-i1-gpt-4003
+services:
+  backend:
+    build: {context: ., dockerfile: Dockerfile.backend}
+    command: ["uvicorn", "backend.app_v2:app", "--host", "0.0.0.0", "--port", "8100"]
+    environment:
+      WORLD_DATA_DIR: /world-data
+      WORLD_CONFIG: /app/config/${WORLD_CONFIG_FILE:-world.v2.calibration.json}
+      AGENT_TOKENS_JSON: ${AGENT_TOKENS_JSON:?required}
+      WORLD_CONTROL_TOKEN: ${WORLD_CONTROL_TOKEN:?required}
+      GATEWAY_URL: http://gateway:8101
+      GATEWAY_TOKEN: ${GATEWAY_TOKEN:?required}
+      TASK_WORK_DIR: /world-data/tasks
+      # Source paths passed to Docker are interpreted by the host daemon, not
+      # by the backend container. PWD is expanded by Compose on the host.
+      TASK_HOST_WORK_DIR: ${PWD}/data-v2/tasks
+      CTF_RUN_MANIFEST: ${CTF_RUN_MANIFEST:-}
+      CTF_SOURCE_ROOT: /ctf-source
+    volumes:
+      - ./data-v2:/world-data
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ${CTF_SOURCE_HOST_ROOT:-./ctf-originals/google-ctf}:/ctf-source:ro
+      - ./task-catalog:/app/task-catalog:ro
+    networks: [control, a1, a2, a3, a4, a5, a6]
+  gateway:
+    build: {context: ., dockerfile: Dockerfile.gateway}
+    environment:
+      GATEWAY_TOKEN: ${GATEWAY_TOKEN:?required}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:?required}
+      OPENAI_BASE_URL: ${OPENAI_BASE_URL:-}
+      OPENAI_API_STYLE: ${OPENAI_API_STYLE:-responses}
+      MODEL: ${MODEL:-dev/gpt-5.5}
+      GATEWAY_DATA_DIR: /gateway-data
+    volumes: [./gateway-data-v2:/gateway-data]
+    networks: [control, provider]
+  agent_a1: &agent
+    build: {context: ., dockerfile: Dockerfile.agent}
+    command: ["python", "-m", "agent.runner_v2"]
+    environment: {BACKEND_URL: "http://backend:8100", AGENT_ID: "A1", AGENT_TOKEN: "${A1_TOKEN:?required}", RUNNER_CONTEXT_EVENTS: "${RUNNER_CONTEXT_EVENTS:-36}", RUNNER_CONTEXT_CHARS: "${RUNNER_CONTEXT_CHARS:-12000}"}
+    volumes: [./agent-state-v2/a1:/state]
+    networks: [a1]
+    read_only: true
+    tmpfs: ["/tmp:rw,noexec,nosuid,size=16m"]
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    pids_limit: 64
+    mem_limit: 192m
+    cpus: 0.25
+    restart: unless-stopped
+  agent_a2: {<<: *agent, environment: {BACKEND_URL: "http://backend:8100", AGENT_ID: "A2", AGENT_TOKEN: "${A2_TOKEN:?required}", RUNNER_CONTEXT_EVENTS: "${RUNNER_CONTEXT_EVENTS:-36}", RUNNER_CONTEXT_CHARS: "${RUNNER_CONTEXT_CHARS:-12000}"}, volumes: [./agent-state-v2/a2:/state], networks: [a2]}
+  agent_a3: {<<: *agent, environment: {BACKEND_URL: "http://backend:8100", AGENT_ID: "A3", AGENT_TOKEN: "${A3_TOKEN:?required}", RUNNER_CONTEXT_EVENTS: "${RUNNER_CONTEXT_EVENTS:-36}", RUNNER_CONTEXT_CHARS: "${RUNNER_CONTEXT_CHARS:-12000}"}, volumes: [./agent-state-v2/a3:/state], networks: [a3]}
+  agent_a4: {<<: *agent, environment: {BACKEND_URL: "http://backend:8100", AGENT_ID: "A4", AGENT_TOKEN: "${A4_TOKEN:?required}", RUNNER_CONTEXT_EVENTS: "${RUNNER_CONTEXT_EVENTS:-36}", RUNNER_CONTEXT_CHARS: "${RUNNER_CONTEXT_CHARS:-12000}"}, volumes: [./agent-state-v2/a4:/state], networks: [a4]}
+  agent_a5: {<<: *agent, environment: {BACKEND_URL: "http://backend:8100", AGENT_ID: "A5", AGENT_TOKEN: "${A5_TOKEN:?required}", RUNNER_CONTEXT_EVENTS: "${RUNNER_CONTEXT_EVENTS:-36}", RUNNER_CONTEXT_CHARS: "${RUNNER_CONTEXT_CHARS:-12000}"}, volumes: [./agent-state-v2/a5:/state], networks: [a5]}
+  agent_a6: {<<: *agent, environment: {BACKEND_URL: "http://backend:8100", AGENT_ID: "A6", AGENT_TOKEN: "${A6_TOKEN:?required}", RUNNER_CONTEXT_EVENTS: "${RUNNER_CONTEXT_EVENTS:-36}", RUNNER_CONTEXT_CHARS: "${RUNNER_CONTEXT_CHARS:-12000}"}, volumes: [./agent-state-v2/a6:/state], networks: [a6]}
+networks:
+  control: {internal: true, ipam: {config: [{subnet: 10.252.0.0/29}]}}
+  provider: {ipam: {config: [{subnet: 10.252.0.8/29}]}}
+  a1: {internal: true, ipam: {config: [{subnet: 10.252.0.16/29}]}}
+  a2: {internal: true, ipam: {config: [{subnet: 10.252.0.24/29}]}}
+  a3: {internal: true, ipam: {config: [{subnet: 10.252.0.32/29}]}}
+  a4: {internal: true, ipam: {config: [{subnet: 10.252.0.40/29}]}}
+  a5: {internal: true, ipam: {config: [{subnet: 10.252.0.48/29}]}}
+  a6: {internal: true, ipam: {config: [{subnet: 10.252.0.56/29}]}}

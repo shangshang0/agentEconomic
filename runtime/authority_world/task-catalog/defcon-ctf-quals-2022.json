@@ -1,0 +1,204 @@
+{
+  "schema": "original-ctf-catalog-v1",
+  "event": "DEF CON CTF Qualifiers 2022",
+  "repository": "https://github.com/Nautilus-Institute/quals-2022",
+  "commit": "b71ad8a555dea27498fa5173c0489333ddfb9359",
+  "directory_count": 17,
+  "challenges": [
+    {
+      "event": "DEF CON CTF Qualifiers 2022",
+      "year": 2022,
+      "challenge_directory": "adamd",
+      "source": "https://github.com/Nautilus-Institute/quals-2022/tree/b71ad8a555dea27498fa5173c0489333ddfb9359/adamd",
+      "commit": "b71ad8a555dea27498fa5173c0489333ddfb9359",
+      "file_count": 7,
+      "review_flags": [],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2022",
+      "year": 2022,
+      "challenge_directory": "bios",
+      "source": "https://github.com/Nautilus-Institute/quals-2022/tree/b71ad8a555dea27498fa5173c0489333ddfb9359/bios",
+      "commit": "b71ad8a555dea27498fa5173c0489333ddfb9359",
+      "file_count": 38,
+      "review_flags": [
+        "challenge_description_location_requires_review"
+      ],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2022",
+      "year": 2022,
+      "challenge_directory": "constricted",
+      "source": "https://github.com/Nautilus-Institute/quals-2022/tree/b71ad8a555dea27498fa5173c0489333ddfb9359/constricted",
+      "commit": "b71ad8a555dea27498fa5173c0489333ddfb9359",
+      "file_count": 9,
+      "review_flags": [],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2022",
+      "year": 2022,
+      "challenge_directory": "cryptochall",
+      "source": "https://github.com/Nautilus-Institute/quals-2022/tree/b71ad8a555dea27498fa5173c0489333ddfb9359/cryptochall",
+      "commit": "b71ad8a555dea27498fa5173c0489333ddfb9359",
+      "file_count": 15,
+      "review_flags": [],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2022",
+      "year": 2022,
+      "challenge_directory": "discoteq",
+      "source": "https://github.com/Nautilus-Institute/quals-2022/tree/b71ad8a555dea27498fa5173c0489333ddfb9359/discoteq",
+      "commit": "b71ad8a555dea27498fa5173c0489333ddfb9359",
+      "file_count": 561,
+      "review_flags": [],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2022",
+      "year": 2022,
+      "challenge_directory": "hash-it",
+      "source": "https://github.com/Nautilus-Institute/quals-2022/tree/b71ad8a555dea27498fa5173c0489333ddfb9359/hash-it",
+      "commit": "b71ad8a555dea27498fa5173c0489333ddfb9359",
+      "file_count": 5,
+      "review_flags": [],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2022",
+      "year": 2022,
+      "challenge_directory": "ncuts",
+      "source": "https://github.com/Nautilus-Institute/quals-2022/tree/b71ad8a555dea27498fa5173c0489333ddfb9359/ncuts",
+      "commit": "b71ad8a555dea27498fa5173c0489333ddfb9359",
+      "file_count": 4,
+      "review_flags": [],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2022",
+      "year": 2022,
+      "challenge_directory": "not-so-advanced",
+      "source": "https://github.com/Nautilus-Institute/quals-2022/tree/b71ad8a555dea27498fa5173c0489333ddfb9359/not-so-advanced",
+      "commit": "b71ad8a555dea27498fa5173c0489333ddfb9359",
+      "file_count": 10,
+      "review_flags": [],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2022",
+      "year": 2022,
+      "challenge_directory": "old-school",
+      "source": "https://github.com/Nautilus-Institute/quals-2022/tree/b71ad8a555dea27498fa5173c0489333ddfb9359/old-school",
+      "commit": "b71ad8a555dea27498fa5173c0489333ddfb9359",
+      "file_count": 6,
+      "review_flags": [
+        "challenge_description_location_requires_review"
+      ],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2022",
+      "year": 2022,
+      "challenge_directory": "pretty-random-function",
+      "source": "https://github.com/Nautilus-Institute/quals-2022/tree/b71ad8a555dea27498fa5173c0489333ddfb9359/pretty-random-function",
+      "commit": "b71ad8a555dea27498fa5173c0489333ddfb9359",
+      "file_count": 19,
+      "review_flags": [],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2022",
+      "year": 2022,
+      "challenge_directory": "router",
+      "source": "https://github.com/Nautilus-Institute/quals-2022/tree/b71ad8a555dea27498fa5173c0489333ddfb9359/router",
+      "commit": "b71ad8a555dea27498fa5173c0489333ddfb9359",
+      "file_count": 42,
+      "review_flags": [],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2022",
+      "year": 2022,
+      "challenge_directory": "sameold",
+      "source": "https://github.com/Nautilus-Institute/quals-2022/tree/b71ad8a555dea27498fa5173c0489333ddfb9359/sameold",
+      "commit": "b71ad8a555dea27498fa5173c0489333ddfb9359",
+      "file_count": 4,
+      "review_flags": [],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2022",
+      "year": 2022,
+      "challenge_directory": "secrecy",
+      "source": "https://github.com/Nautilus-Institute/quals-2022/tree/b71ad8a555dea27498fa5173c0489333ddfb9359/secrecy",
+      "commit": "b71ad8a555dea27498fa5173c0489333ddfb9359",
+      "file_count": 22,
+      "review_flags": [
+        "challenge_description_location_requires_review"
+      ],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2022",
+      "year": 2022,
+      "challenge_directory": "simple-service",
+      "source": "https://github.com/Nautilus-Institute/quals-2022/tree/b71ad8a555dea27498fa5173c0489333ddfb9359/simple-service",
+      "commit": "b71ad8a555dea27498fa5173c0489333ddfb9359",
+      "file_count": 9,
+      "review_flags": [],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2022",
+      "year": 2022,
+      "challenge_directory": "smugglers-cove",
+      "source": "https://github.com/Nautilus-Institute/quals-2022/tree/b71ad8a555dea27498fa5173c0489333ddfb9359/smugglers-cove",
+      "commit": "b71ad8a555dea27498fa5173c0489333ddfb9359",
+      "file_count": 33,
+      "review_flags": [],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2022",
+      "year": 2022,
+      "challenge_directory": "teedium-wallet",
+      "source": "https://github.com/Nautilus-Institute/quals-2022/tree/b71ad8a555dea27498fa5173c0489333ddfb9359/teedium-wallet",
+      "commit": "b71ad8a555dea27498fa5173c0489333ddfb9359",
+      "file_count": 8,
+      "review_flags": [],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2022",
+      "year": 2022,
+      "challenge_directory": "twisty",
+      "source": "https://github.com/Nautilus-Institute/quals-2022/tree/b71ad8a555dea27498fa5173c0489333ddfb9359/twisty",
+      "commit": "b71ad8a555dea27498fa5173c0489333ddfb9359",
+      "file_count": 2,
+      "review_flags": [
+        "challenge_description_location_requires_review"
+      ],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    }
+  ]
+}

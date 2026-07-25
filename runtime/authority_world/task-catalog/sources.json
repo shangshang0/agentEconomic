@@ -1,0 +1,45 @@
+{
+  "schema": "original-ctf-source-registry-v1",
+  "window": "2021-2025",
+  "policy": "Original challenge files only. Every discovered challenge is retained in the catalog; unusable entries receive an explicit exclusion reason.",
+  "sources": [
+    {
+      "series": "Google CTF Quals",
+      "repository": "https://github.com/google/google-ctf",
+      "years": [2021, 2022, 2023, 2024, 2025],
+      "commit": "067421eb7e918c29e39f187fac5a0f0d72a6ab83"
+    },
+    {
+      "series": "DEF CON CTF Qualifiers",
+      "organization": "Nautilus-Institute",
+      "years": [2022, 2023, 2024, 2025],
+      "repositories": ["quals-2022", "quals-2023", "quals-2024", "quals-2025"]
+    },
+    {
+      "series": "SECCON CTF",
+      "organization": "SECCON",
+      "years": [2021, 2022, 2023, 2024, 2025],
+      "repositories": [
+        "SECCON2021_online_CTF",
+        "SECCON2022_online_CTF",
+        "SECCON2022_final_CTF",
+        "SECCON2023_online_CTF",
+        "SECCON2023_final_CTF",
+        "SECCON13_online_CTF",
+        "SECCON13_final_CTF"
+      ]
+    },
+    {
+      "series": "Real World CTF",
+      "organization": "chaitin",
+      "editions": [3, 4, 5, 6],
+      "repositories": [
+        "Real-World-CTF-3rd-Challenge-Attachments",
+        "Real-World-CTF-4th-Challenge-Attachments",
+        "Real-World-CTF-5th-Challenges",
+        "Real-World-CTF-6th-Challenges"
+      ]
+    }
+  ],
+  "pending_source_verification": ["PlaidCTF", "HITCON CTF", "0CTF/TCTF"]
+}

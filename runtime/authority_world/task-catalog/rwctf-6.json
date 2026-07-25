@@ -1,0 +1,441 @@
+{
+  "challenge_count": 21,
+  "challenges": [
+    {
+      "category": "chatterbox",
+      "challenge": "ChatterBox",
+      "commit": "b0e013f97f38055ea006a5b193ec6d27bab207ec",
+      "event": "Real World CTF 6th",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 26148535,
+          "path": "ChatterBox-Attachment-Fix-20240127_782dab8bbebe2f058abb04119eadfe88.zip",
+          "sha256": "e48d8ac01b711648ff19e129115ae77fb68d14ea6b4f234cb31fabbc79a36a7c"
+        },
+        {
+          "bytes": 549,
+          "path": "readme.md",
+          "sha256": "6d8a7ac3d96c86a6888a3a820693a3e35662dc5ba4994e5239dad3cc15b60335"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/chaitin/Real-World-CTF-6th-Challenges/tree/b0e013f97f38055ea006a5b193ec6d27bab207ec/ChatterBox",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "corrupted gi",
+      "challenge": "Corrupted GI",
+      "commit": "b0e013f97f38055ea006a5b193ec6d27bab207ec",
+      "event": "Real World CTF 6th",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 176621,
+          "path": "Corrupted-GI_a67212e62fe38bb2acdf8c873a21d187.tar.gz",
+          "sha256": "daf36eb5aef7054e60bd4f2e452716cb4c14d90b456ec0c5d0423884a6f29297"
+        },
+        {
+          "bytes": 473,
+          "path": "readme.md",
+          "sha256": "208bdcffc6c896e61232237dea9885aa66f5cdaa57bc0d351cc36667a5d21640"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/chaitin/Real-World-CTF-6th-Challenges/tree/b0e013f97f38055ea006a5b193ec6d27bab207ec/Corrupted GI",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "geoserver jive\uf03a the rce hive",
+      "challenge": "GeoServer Jive\uf03a The RCE Hive",
+      "commit": "b0e013f97f38055ea006a5b193ec6d27bab207ec",
+      "event": "Real World CTF 6th",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 1890,
+          "path": "readme.md",
+          "sha256": "98f4cd7f39328927905f76b880180ce25eb88d55deac5b07a8dc17397c685849"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/chaitin/Real-World-CTF-6th-Challenges/tree/b0e013f97f38055ea006a5b193ec6d27bab207ec/GeoServer Jive\uf03a The RCE Hive",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "grandma's laptop",
+      "challenge": "Grandma's Laptop",
+      "commit": "b0e013f97f38055ea006a5b193ec6d27bab207ec",
+      "event": "Real World CTF 6th",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 3722191,
+          "path": "grandmas-laptop_1d06ddeced66222099193de75ec7eed7.zip",
+          "sha256": "1dd735d12ad4df95b0143dc9e3ba883a3e058b8e7990c318ad99722bad5d6d50"
+        },
+        {
+          "bytes": 690,
+          "path": "readme.md",
+          "sha256": "9497647e565f487f471aaafffdfa24597a7f718a65ab84b26d6d93b440f29e6a"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/chaitin/Real-World-CTF-6th-Challenges/tree/b0e013f97f38055ea006a5b193ec6d27bab207ec/Grandma's Laptop",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "llm sanitizer",
+      "challenge": "LLM sanitizer",
+      "commit": "b0e013f97f38055ea006a5b193ec6d27bab207ec",
+      "event": "Real World CTF 6th",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 1963,
+          "path": "llm-sanitizer_393145a890eafc0b310189d8f8a2a8c1.tar.gz",
+          "sha256": "cdef57cbd6564834317fde5212c0cc86e9b91d275d1825c6f110714c9333403c"
+        },
+        {
+          "bytes": 250,
+          "path": "readme.md",
+          "sha256": "76a77f64a3e2e3ca1c1bd6c6de4b89f8255719d48facdd3a57578b9e81690c9c"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/chaitin/Real-World-CTF-6th-Challenges/tree/b0e013f97f38055ea006a5b193ec6d27bab207ec/LLM sanitizer",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "let's party in the house",
+      "challenge": "Let's party in the house",
+      "commit": "b0e013f97f38055ea006a5b193ec6d27bab207ec",
+      "event": "Real World CTF 6th",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 47680384,
+          "path": "Lets-party-in-the-house_2cd37ebed31d41afb6bbe094659985d9.tar.gz",
+          "sha256": "7738e7d6222f17b8d7f0a950bcd3cc5f819ab9928636a834ea8a84c09e65a9fa"
+        },
+        {
+          "bytes": 416,
+          "path": "readme.md",
+          "sha256": "d935c60fd92581d69327828c4f76686a764d63a0363b50061900f69e845490b8"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/chaitin/Real-World-CTF-6th-Challenges/tree/b0e013f97f38055ea006a5b193ec6d27bab207ec/Let's party in the house",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "long range 2",
+      "challenge": "Long Range 2",
+      "commit": "b0e013f97f38055ea006a5b193ec6d27bab207ec",
+      "event": "Real World CTF 6th",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 384,
+          "path": "readme.md",
+          "sha256": "8fdf4ec3a551165b0f0cd9b420b959f15febcda870be8df8af031837022cad7e"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/chaitin/Real-World-CTF-6th-Challenges/tree/b0e013f97f38055ea006a5b193ec6d27bab207ec/Long Range 2",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "nightmail",
+      "challenge": "Nightmail",
+      "commit": "b0e013f97f38055ea006a5b193ec6d27bab207ec",
+      "event": "Real World CTF 6th",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 1541,
+          "path": "readme.md",
+          "sha256": "78e72e0bc952275ef90a1a765333ae2122d322235e61723a40b2dd434e1caf80"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/chaitin/Real-World-CTF-6th-Challenges/tree/b0e013f97f38055ea006a5b193ec6d27bab207ec/Nightmail",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "protected by java se",
+      "challenge": "Protected by Java SE",
+      "commit": "b0e013f97f38055ea006a5b193ec6d27bab207ec",
+      "event": "Real World CTF 6th",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 1284322,
+          "path": "Protected-by-Java-SE_d49cacf1624e44ca3d0cfa15fff59572.tar.gz",
+          "sha256": "69a2a2c5de063d315c671afdd18ac7d60086da9b4449ef69e18e5f0c077e2349"
+        },
+        {
+          "bytes": 357,
+          "path": "readme.md",
+          "sha256": "5ac5db1ac6a76cffc645971d182cfea621c945e389d3785059db84b0ba28909b"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/chaitin/Real-World-CTF-6th-Challenges/tree/b0e013f97f38055ea006a5b193ec6d27bab207ec/Protected by Java SE",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "pyghost",
+      "challenge": "PyGhost",
+      "commit": "b0e013f97f38055ea006a5b193ec6d27bab207ec",
+      "event": "Real World CTF 6th",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 36211765,
+          "path": "PyGhost_5878b9faae5d9992014e5a7da12c9317.zip",
+          "sha256": "73f01efbd260afa7bb290c421fb982d3b6b179c821c663e8838291154a2082f1"
+        },
+        {
+          "bytes": 2152,
+          "path": "readme.md",
+          "sha256": "8e38a0cdc1bbbd09d1c1eaed82767c96b53827f263accb3f517d1e4ac6d42d38"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/chaitin/Real-World-CTF-6th-Challenges/tree/b0e013f97f38055ea006a5b193ec6d27bab207ec/PyGhost",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "riptc",
+      "challenge": "RIPTC",
+      "commit": "b0e013f97f38055ea006a5b193ec6d27bab207ec",
+      "event": "Real World CTF 6th",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 961,
+          "path": "readme.md",
+          "sha256": "5c9de14cbbad6a52bed1bdd9cec326d19a0cfc80213c83a9410560a3dd066e67"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/chaitin/Real-World-CTF-6th-Challenges/tree/b0e013f97f38055ea006a5b193ec6d27bab207ec/RIPTC",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "router4",
+      "challenge": "Router4",
+      "commit": "b0e013f97f38055ea006a5b193ec6d27bab207ec",
+      "event": "Real World CTF 6th",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 604,
+          "path": "readme.md",
+          "sha256": "70d3d62333d02ff2e0ef9e1b5ad455a256af7d6ee56464be72a17e3a22ad816b"
+        },
+        {
+          "bytes": 62185718,
+          "path": "router4_2024-01-27_3688a0d4db759a71e0a43408108c5eae.tar.gz",
+          "sha256": "abac99331af23be5ea3f1eb91bc5b35b1b43d792f4e273cf3f755187a52a7204"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/chaitin/Real-World-CTF-6th-Challenges/tree/b0e013f97f38055ea006a5b193ec6d27bab207ec/Router4",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "safebridge",
+      "challenge": "SafeBridge",
+      "commit": "b0e013f97f38055ea006a5b193ec6d27bab207ec",
+      "event": "Real World CTF 6th",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 289,
+          "path": "readme.md",
+          "sha256": "73f45faa095d7aa48b849c186eb9933a04bc1de21d3a019cc350b35b1169a72d"
+        },
+        {
+          "bytes": 159266,
+          "path": "rwctf-6th-safebridge-main_c062eea503d4a1e2c08a2fd2a76b8208.zip",
+          "sha256": "a02a1c11b3f5577843f29c130aad88c7411b5bf89d4c8816963bdcf6970b38c5"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/chaitin/Real-World-CTF-6th-Challenges/tree/b0e013f97f38055ea006a5b193ec6d27bab207ec/SafeBridge",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "t",
+      "challenge": "T-Box",
+      "commit": "b0e013f97f38055ea006a5b193ec6d27bab207ec",
+      "event": "Real World CTF 6th",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 387,
+          "path": "readme.md",
+          "sha256": "733d7d2f7e50f84daae6cc8ef0fa253f852525a131c8c1b9cccc27ad0b42dea8"
+        },
+        {
+          "bytes": 82339840,
+          "path": "tbox_aebbd1a4615c0ae40283c825d0323f3a.tar.gz",
+          "sha256": "1898a881b352e6f4d0e4305f3825100dde117cf15c59354846a1984720f56a34"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/chaitin/Real-World-CTF-6th-Challenges/tree/b0e013f97f38055ea006a5b193ec6d27bab207ec/T-Box",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "the truth of plain",
+      "challenge": "The truth of Plain",
+      "commit": "b0e013f97f38055ea006a5b193ec6d27bab207ec",
+      "event": "Real World CTF 6th",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 6569,
+          "path": "The-truth-of-Plain_7b3fc647885f3723efd0a67418548f05.tar.gz",
+          "sha256": "b618242d351e90d6c9cdd5ef4de22af0117753c1a699f9bfaec42c988e8ea2ae"
+        },
+        {
+          "bytes": 715,
+          "path": "readme.md",
+          "sha256": "78144348a79d442398ea6d7ac64b99f6523d425d7d0415df239fa3feb40e44f6"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/chaitin/Real-World-CTF-6th-Challenges/tree/b0e013f97f38055ea006a5b193ec6d27bab207ec/The truth of Plain",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "youknowhowtofuzz!",
+      "challenge": "YouKnowHowToFuzz!",
+      "commit": "b0e013f97f38055ea006a5b193ec6d27bab207ec",
+      "event": "Real World CTF 6th",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 908,
+          "path": "YouKnowHowToFuzz_c1096481538d6a5677edb9259746baee.tar.gz",
+          "sha256": "6b655e25497d45926d6d0c8e8ba006cf86bbb06f4934a473e219f15ac8ccd060"
+        },
+        {
+          "bytes": 282,
+          "path": "readme.md",
+          "sha256": "60a877653095cc52bb9022cbadcc9fa126941ffcbc3917887f37d42661034c23"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/chaitin/Real-World-CTF-6th-Challenges/tree/b0e013f97f38055ea006a5b193ec6d27bab207ec/YouKnowHowToFuzz!",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "checkin",
+      "challenge": "checkin",
+      "commit": "b0e013f97f38055ea006a5b193ec6d27bab207ec",
+      "event": "Real World CTF 6th",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 81,
+          "path": "readme.md",
+          "sha256": "2f2336b33622b5a4c533f8f8f7570ca81d6f578564ed34719ee57f2bb52865cf"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/chaitin/Real-World-CTF-6th-Challenges/tree/b0e013f97f38055ea006a5b193ec6d27bab207ec/checkin",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "hoshmonster",
+      "challenge": "hoshmonster",
+      "commit": "b0e013f97f38055ea006a5b193ec6d27bab207ec",
+      "event": "Real World CTF 6th",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 2627,
+          "path": "hoshmonstar-96d726b8c98b345490dc8d6e5c9e1139db380090dbbd0f5fd9592bfd184b99f5.tar.zst",
+          "sha256": "96d726b8c98b345490dc8d6e5c9e1139db380090dbbd0f5fd9592bfd184b99f5"
+        },
+        {
+          "bytes": 299,
+          "path": "readme.md",
+          "sha256": "4e186006f0971df139cd7927695df546b5b79bc05ad766985fbb9ece0f98b994"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/chaitin/Real-World-CTF-6th-Challenges/tree/b0e013f97f38055ea006a5b193ec6d27bab207ec/hoshmonster",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "minioday",
+      "challenge": "minioday",
+      "commit": "b0e013f97f38055ea006a5b193ec6d27bab207ec",
+      "event": "Real World CTF 6th",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 10309,
+          "path": "minioday_ae840a8753beaa379e6269bd750e3145.tar.gz",
+          "sha256": "c634d1c6933989e6dd9484d618d11afdf4a83a97ab623ba6213845ce54536b9d"
+        },
+        {
+          "bytes": 220,
+          "path": "readme.md",
+          "sha256": "974968a556fa138617e9dac9e5070615253c5b2e0fc07909843b2db90b3996ea"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/chaitin/Real-World-CTF-6th-Challenges/tree/b0e013f97f38055ea006a5b193ec6d27bab207ec/minioday",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "pgsum",
+      "challenge": "pgsum",
+      "commit": "b0e013f97f38055ea006a5b193ec6d27bab207ec",
+      "event": "Real World CTF 6th",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 8443689,
+          "path": "pgsum_6fae44ea2a073cf398ca931cffeb5f44.tar.gz",
+          "sha256": "9d68e9811c88f32b3f2e1e173a1fa0714129e5ab21dc3776e2534e8855357320"
+        },
+        {
+          "bytes": 250,
+          "path": "readme.md",
+          "sha256": "d94efa4b4dde95a4415b941a78beca5e3d1d2b2425e2abfb03a62c17e9d84f5e"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/chaitin/Real-World-CTF-6th-Challenges/tree/b0e013f97f38055ea006a5b193ec6d27bab207ec/pgsum",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "\u70eb\u70eb\u70eb",
+      "challenge": "\u70eb\u70eb\u70eb",
+      "commit": "b0e013f97f38055ea006a5b193ec6d27bab207ec",
+      "event": "Real World CTF 6th",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 374,
+          "path": "readme.md",
+          "sha256": "e2be6eb0c56cb4219a2fc721615f0e027d2b135dbdca89bec6c09720170851a8"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/chaitin/Real-World-CTF-6th-Challenges/tree/b0e013f97f38055ea006a5b193ec6d27bab207ec/\u70eb\u70eb\u70eb",
+      "status": "pending_manual_review"
+    }
+  ],
+  "commit": "b0e013f97f38055ea006a5b193ec6d27bab207ec",
+  "event": "Real World CTF 6th",
+  "repository": "https://github.com/chaitin/Real-World-CTF-6th-Challenges",
+  "schema": "original-ctf-catalog-v1"
+}

@@ -1,0 +1,37 @@
+{
+  "schema": "authority-agent-economics-infrastructure-invalidation-v1",
+  "classified_at": "2026-07-24T16:20:00+08:00",
+  "classification": "infrastructure_invalid_clean_rerun_required",
+  "scope": "two GPT bridge seed2 worlds only",
+  "reason": "Docker task-container startup was interrupted after create and before running during external Docker maintenance; the world fail-closed at SECCON21-pppp with zero provider errors.",
+  "source_evidence_is_immutable": true,
+  "runs": [
+    {
+      "lane": "objective-none-gpt",
+      "run_id": "v2-2026074002-6c0982594c47",
+      "seed": 2026074002,
+      "terminal_status": "technical_failed",
+      "day": 7,
+      "event_seq": 1289,
+      "provider_calls": 971,
+      "provider_errors": 0,
+      "technical_failure_seq": 1281,
+      "technical_failure": "could not prewarm SECCON21-pppp: original CTF task container could not start",
+      "source_result": "/data/authoritylab/minimal-condition-ablation-v1/objective-none-gpt/mechanism-validation-o2_no_survival_objective_prompt-gpt55-2026074002"
+    },
+    {
+      "lane": "neutral-gpt",
+      "run_id": "v2-2026074002-99ff32bc9176",
+      "seed": 2026074002,
+      "terminal_status": "technical_failed",
+      "day": 7,
+      "event_seq": 1224,
+      "provider_calls": 858,
+      "provider_errors": 0,
+      "technical_failure_seq": 1223,
+      "technical_failure": "could not prewarm SECCON21-pppp: original CTF task container could not start",
+      "source_result": "/data/authoritylab/minimal-condition-ablation-v1/neutral-gpt/mechanism-validation-s1_elected_discretion_neutral-gpt55-2026074002"
+    }
+  ],
+  "supporting_snapshot": "/data/authoritylab/incidents/nonconsequence-symbolic-invalid-20260724T1536/orphan-task-containers-20260724T161244.json"
+}

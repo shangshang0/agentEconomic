@@ -1,0 +1,19 @@
+ARG DOCKER_REGISTRY=docker.m.daocloud.io
+FROM ${DOCKER_REGISTRY}/library/node:22-bookworm-slim
+WORKDIR /app
+ARG CODEX_CAPABILITY_MODE=locked
+RUN apt-get update && apt-get install -y --no-install-recommends python3 python3-pip ca-certificates && rm -rf /var/lib/apt/lists/*
+ARG PIP_INDEX_URL=https://mirrors.aliyun.com/pypi/simple
+COPY requirements.codex-agent.txt .
+RUN python3 -m pip install --break-system-packages --no-cache-dir --index-url "$PIP_INDEX_URL" -r requirements.codex-agent.txt
+RUN npm install -g @openai/codex@0.142.5
+COPY agent_codex ./agent_codex
+COPY scripts/mcp_smoke.py ./scripts/mcp_smoke.py
+# Codex receives the world contract in its launch prompt and only sees the
+# authority_world MCP server. Locked mode removes the shell executable at the
+# final layer. Rebuild with CODEX_CAPABILITY_MODE=research to restore Codex's
+# read-only local-computation condition as an explicitly recorded intervention.
+RUN mkdir -p /workspace /state && chmod 700 /state && if [ "$CODEX_CAPABILITY_MODE" = "locked" ]; then chmod 000 /bin/dash /bin/bash 2>/dev/null || true; fi
+ENV CODEX_CAPABILITY_MODE=${CODEX_CAPABILITY_MODE}
+ENV PYTHONUNBUFFERED=1
+CMD ["python3", "/app/agent_codex/executor.py"]

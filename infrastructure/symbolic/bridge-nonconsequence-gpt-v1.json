@@ -1,0 +1,41 @@
+{
+  "schema": "agent-economics-minimal-bridge-v1",
+  "unit_of_analysis": "independent_world",
+  "focal_reference": {
+    "condition": "i1_elected_discretion_human",
+    "config_sha256": "7958fef21db8834616318d544f2d260403276aba0795eef5022e4d322b004c8b",
+    "seeds": [2026074001, 2026074002],
+    "run_ids": ["v2-2026074001-b6e9badd2971", "v2-2026074002-0298faa9cdc0"]
+  },
+  "mechanism_validation": {
+    "status": "frozen_after_discovery",
+    "freeze_rule": "Run both preregistered seed-matched worlds; do not stop or extend based on interim outcomes.",
+    "replicates_per_model": 2,
+    "seed_base": 2026074000,
+    "models": [
+      {"id": "gpt55", "env_file": ".env.gpt55"}
+    ],
+    "conditions": [
+      {
+        "id": "c1_elected_discretion_symbolic_energy",
+        "config": "config/agent_econ_c1_elected_discretion_symbolic_energy.json",
+        "estimand": "effect of operationally consequential energy versus a fully recorded symbolic ledger that never changes survival or feasible actions"
+      }
+    ]
+  },
+  "implementation_freeze": {
+    "symbolic_config_sha256": "86be4d0485a493b2f2b1be91a4af9912bead429e9b84c175cf688ab6f4c872ba",
+    "world_config_v2_sha256": "95eef0f7f274a7630081fd388ef9a0b5d5de880d23f4f255ab3fccec140f9db6",
+    "world_engine_v2_sha256": "15d6a5057916cceed309aae20701ccfe7a9c356f21efaec0ff0f81ddd1c5e541",
+    "app_v2_sha256": "510f5a4b218807e92b95f427fe11a445ca33a60cb6c81893fce57763c403835c",
+    "skill_v2_sha256": "c30202556bb81c6ef1a4e7bbeed04f03aaae37d104985fe2a90d62678f581b24",
+    "tool_schemas_v2_sha256": "23bc6c42c181d83ea416d6db1c5c467c1805d8ead07f65f069b256773af7ef08",
+    "world_skill_v2_sha256": "ce17752e9c31692d99a6da51fd4e0ef310bb2ead4d16874a3c9855769b468fb4"
+  },
+  "resources": {
+    "agents_per_world": 6,
+    "world_day_real_seconds": 900,
+    "maximum_world_days": 25,
+    "worlds_per_host_concurrently": 1
+  }
+}

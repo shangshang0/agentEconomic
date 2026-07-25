@@ -1,0 +1,14 @@
+{
+  "schema": "agent-economics-confirmatory-power-plan-v1",
+  "frozen_before_pilot_results": true,
+  "primary_endpoint": "alive_agent_days",
+  "contrast": "two_sided_difference_between_registered_model_families",
+  "minimum_detectable_difference": 15.0,
+  "alpha": 0.05,
+  "target_power": 0.8,
+  "simulation_draws": 20000,
+  "simulation_seed": 2026072107,
+  "minimum_replicates_per_model": 2,
+  "maximum_replicates_per_model": 40,
+  "note": "Fifteen alive-agent-days is ten percent of the six-agent, 25-day maximum. Pilot worlds estimate world-level dispersion only and are never pooled with confirmation."
+}

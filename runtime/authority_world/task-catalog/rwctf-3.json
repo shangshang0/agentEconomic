@@ -1,0 +1,392 @@
+{
+  "challenge_count": 14,
+  "challenges": [
+    {
+      "category": "billboard",
+      "challenge": "Billboard",
+      "commit": "236c83bb8a0170b6d6c0cc769f6eb810555b2d1d",
+      "event": "Real World CTF 3rd",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 79991,
+          "path": "Billboard-c6ef484de3903a4f87a406327610a6888a5e4fae.zip",
+          "sha256": "f4fa3bedc6a729384b7bfaa082701f35c8b32306f4baac2f329e0c26b33837ce"
+        },
+        {
+          "bytes": 1121,
+          "path": "Billboard_readme-46610fc3cb8013e0ab255a8c15e14cad3998618b.md",
+          "sha256": "d5882be683353ad9a89d57ea2200917e287aa11ae66a214350a45149ad96eb93"
+        },
+        {
+          "bytes": 526,
+          "path": "readme.md",
+          "sha256": "cf4436b7a193c35fa958d7b4a4800721b45e73705ef99e9fb77f408a33eba28e"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/chaitin/Real-World-CTF-3rd-Challenge-Attachments/tree/236c83bb8a0170b6d6c0cc769f6eb810555b2d1d/Billboard",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "box escape",
+      "challenge": "Box Escape",
+      "commit": "236c83bb8a0170b6d6c0cc769f6eb810555b2d1d",
+      "event": "Real World CTF 3rd",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 5159,
+          "path": "Box_Escape_v2-60411550e3ec4ae6cc8195dcd03be6b9.md",
+          "sha256": "491b5b5c7965bd399a898f9b71df13c5af3be49917bb655db0b21423ca3834c9"
+        },
+        {
+          "bytes": 357,
+          "path": "readme.md",
+          "sha256": "53274e5b26be0b33ea0b7f0eabe79178c1a720904b534f6b8f63c6da09250d71"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/chaitin/Real-World-CTF-3rd-Challenge-Attachments/tree/236c83bb8a0170b6d6c0cc769f6eb810555b2d1d/Box Escape",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "dbaasadge",
+      "challenge": "DBaaSadge",
+      "commit": "236c83bb8a0170b6d6c0cc769f6eb810555b2d1d",
+      "event": "Real World CTF 3rd",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 3527,
+          "path": "DBaaSadge-6c3e211a035259fbd40e7484d4ab29ed3f6bae15.tgz",
+          "sha256": "15eb757496be816a0997f5660c804ea36404dd9edb9fdcc3fe262b8801b5d930"
+        },
+        {
+          "bytes": 313,
+          "path": "readme.md",
+          "sha256": "ba8c6462881066e34fd07efc05bc928515aa8e7d459531c35b2cf6caaf47a756"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/chaitin/Real-World-CTF-3rd-Challenge-Attachments/tree/236c83bb8a0170b6d6c0cc769f6eb810555b2d1d/DBaaSadge",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "easy defi",
+      "challenge": "Easy Defi",
+      "commit": "236c83bb8a0170b6d6c0cc769f6eb810555b2d1d",
+      "event": "Real World CTF 3rd",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 33184,
+          "path": "EasyDefi-c320a83e462010d515a6ee66681145b413794f99.zip",
+          "sha256": "7ea95ef13860750716862541ff26fc9a07f194d4c5c3bc936a20d2ec112cf279"
+        },
+        {
+          "bytes": 454,
+          "path": "readme.md",
+          "sha256": "f6c1da8a5e1d44eb1f96ec0e3ce11f8465d607fd48181c462b51a773d74f0cd0"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/chaitin/Real-World-CTF-3rd-Challenge-Attachments/tree/236c83bb8a0170b6d6c0cc769f6eb810555b2d1d/Easy Defi",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "easy escape",
+      "challenge": "Easy Escape",
+      "commit": "236c83bb8a0170b6d6c0cc769f6eb810555b2d1d",
+      "event": "Real World CTF 3rd",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 28872435,
+          "path": "Easy_Escape-8d5ece9b06d837ee7271378771e23fbdad7dab9a.tgz",
+          "sha256": "bfe8f5c506a6541cef9667e3722924c2b8327dcdc712046a0acb91702458fa24"
+        },
+        {
+          "bytes": 222,
+          "path": "readme.md",
+          "sha256": "dfffeae25f493100b8ba854dbe5d147ee5798476eb76ef1ea2f5555ac96636d6"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/chaitin/Real-World-CTF-3rd-Challenge-Attachments/tree/236c83bb8a0170b6d6c0cc769f6eb810555b2d1d/Easy Escape",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "easyworks",
+      "challenge": "EasyWorks",
+      "commit": "236c83bb8a0170b6d6c0cc769f6eb810555b2d1d",
+      "event": "Real World CTF 3rd",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 884422,
+          "path": "EasyWorks-f5af091d2a070849f92f8bc4b255bc52310551eb.tgz",
+          "sha256": "465d2d193c08d7e0899da35d0782ff18beed4bc4bc6033b35f9aed5f701e49ab"
+        },
+        {
+          "bytes": 162,
+          "path": "readme.md",
+          "sha256": "0a1c18e8d2716c6056a882a77a41a5557e25cb6ae3c54b59ffbb43e2d4d1fb79"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/chaitin/Real-World-CTF-3rd-Challenge-Attachments/tree/236c83bb8a0170b6d6c0cc769f6eb810555b2d1d/EasyWorks",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "homebrewed curve",
+      "challenge": "Homebrewed Curve",
+      "commit": "236c83bb8a0170b6d6c0cc769f6eb810555b2d1d",
+      "event": "Real World CTF 3rd",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 3628,
+          "path": "Homebrewed_Curve-595bda1ae64cf16708f283fa0a56588cd9062e1b.tgz",
+          "sha256": "26dfa18b56851e0c46e78d7bd0ed905a90763b919a6b462a6be32aecc104ad15"
+        },
+        {
+          "bytes": 320,
+          "path": "readme.md",
+          "sha256": "f88fd3ec7a9a57b9d993e77471ebc5561ab22a828d936d44588c171892216061"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/chaitin/Real-World-CTF-3rd-Challenge-Attachments/tree/236c83bb8a0170b6d6c0cc769f6eb810555b2d1d/Homebrewed Curve",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "junkav",
+      "challenge": "JunkAV",
+      "commit": "236c83bb8a0170b6d6c0cc769f6eb810555b2d1d",
+      "event": "Real World CTF 3rd",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 393879,
+          "path": "JunkAV-67a67158814f0a7f156131f78ac0ba6bfe3f1b76.tgz",
+          "sha256": "c5585ae30c69b9b39c167a2d0f4257805b377e83efc3e0ca8eb3f4152abb72b1"
+        },
+        {
+          "bytes": 293,
+          "path": "readme.md",
+          "sha256": "e5f4880979620fa277e0a59dd0cecde1f7b7970f3ce9aedde7426a6231512449"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/chaitin/Real-World-CTF-3rd-Challenge-Attachments/tree/236c83bb8a0170b6d6c0cc769f6eb810555b2d1d/JunkAV",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "mop2021",
+      "challenge": "MoP2021",
+      "commit": "236c83bb8a0170b6d6c0cc769f6eb810555b2d1d",
+      "event": "Real World CTF 3rd",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 28842,
+          "path": "MoP2021-4aa5c7832afef1660f04a107b1603495e47a6af4.zip",
+          "sha256": "f35a278117f118391f8f6e84d650a0ee78dbf8325dcd767b5de8b6bdad1a7174"
+        },
+        {
+          "bytes": 309,
+          "path": "readme.md",
+          "sha256": "266eb6c7f7217ae17fa2076237917b8f77b9272b75619427018f3ea4ea15177c"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/chaitin/Real-World-CTF-3rd-Challenge-Attachments/tree/236c83bb8a0170b6d6c0cc769f6eb810555b2d1d/MoP2021",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "old curse",
+      "challenge": "Old Curse",
+      "commit": "236c83bb8a0170b6d6c0cc769f6eb810555b2d1d",
+      "event": "Real World CTF 3rd",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 1664,
+          "path": "Old_Curse-46b7a225bb995b2c21733b3bde9edb16fe2c2982.tgz",
+          "sha256": "2fc8ee3560de989f6b9bc6ad77fc410e3651846df5dc92c66d89967d78f07862"
+        },
+        {
+          "bytes": 620,
+          "path": "readme.md",
+          "sha256": "5b62f8149031299017ae4c4ddbb063aa4c808c0ea0eb3048ec2f9e776a4f25f6"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/chaitin/Real-World-CTF-3rd-Challenge-Attachments/tree/236c83bb8a0170b6d6c0cc769f6eb810555b2d1d/Old Curse",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "old system",
+      "challenge": "Old System",
+      "commit": "236c83bb8a0170b6d6c0cc769f6eb810555b2d1d",
+      "event": "Real World CTF 3rd",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 597271,
+          "path": "Old_System-68e281e94fcb3c7bb65d60d49a8d8ac41d9d386b.tgz",
+          "sha256": "c29f9a87b25b610fdb56279a13bba06087ad3717292c26dc4a7c702068b6eca4"
+        },
+        {
+          "bytes": 445,
+          "path": "readme.md",
+          "sha256": "0bd5b55859078c50fd566994ffe02bb7e0f08b025187fb4e8ea701644ee75990"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/chaitin/Real-World-CTF-3rd-Challenge-Attachments/tree/236c83bb8a0170b6d6c0cc769f6eb810555b2d1d/Old System",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "personal proxy",
+      "challenge": "Personal Proxy",
+      "commit": "236c83bb8a0170b6d6c0cc769f6eb810555b2d1d",
+      "event": "Real World CTF 3rd",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 5057,
+          "path": "Personal_Proxy-4b2de305b8f17e7ec9c53d6fe913d226edb83066.zip",
+          "sha256": "0fadd6db72b53606785a0e3e4677a924c5d9d965dc99fe43378fb2b8979c17ef"
+        },
+        {
+          "bytes": 563,
+          "path": "readme.md",
+          "sha256": "74910807581b52bf3ef930f48dc16c7679780977007e17cfa1acc96148ec5673"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/chaitin/Real-World-CTF-3rd-Challenge-Attachments/tree/236c83bb8a0170b6d6c0cc769f6eb810555b2d1d/Personal Proxy",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "remontagy",
+      "challenge": "ReMontagy",
+      "commit": "236c83bb8a0170b6d6c0cc769f6eb810555b2d1d",
+      "event": "Real World CTF 3rd",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 1479,
+          "path": "Re-Montagy_forplayers-f292511818d501e1d084faadfff71ece2837ae0e.tar",
+          "sha256": "c5281e5646f0c114481daae077f7660dac40c02fa89c0f3e68fd1e34484c18de"
+        },
+        {
+          "bytes": 792,
+          "path": "readme.md",
+          "sha256": "e7dad9e9b16193c82a986bf67154d83aeeb886fe5395b3e277c9c98ad76ed11c"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/chaitin/Real-World-CTF-3rd-Challenge-Attachments/tree/236c83bb8a0170b6d6c0cc769f6eb810555b2d1d/ReMontagy",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "router3",
+      "challenge": "router3",
+      "commit": "236c83bb8a0170b6d6c0cc769f6eb810555b2d1d",
+      "event": "Real World CTF 3rd",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 53336,
+          "path": "pic/1minute.jpg",
+          "sha256": "7be814a546462232f25b20a709ec3cf62a6adaa48693836460e9cf9cb4dae8b5"
+        },
+        {
+          "bytes": 14121,
+          "path": "pic/MVC.svg",
+          "sha256": "31fe789c3de986b327d88c47790eca0fafdc67f52c548d260548591d3ba03a51"
+        },
+        {
+          "bytes": 13482,
+          "path": "pic/bushwhackers.png",
+          "sha256": "9e4b686e9d85b629edb810ee53bbf1ec37ff05fe736886c4018518e139ca3c47"
+        },
+        {
+          "bytes": 129655,
+          "path": "pic/coder00t.png",
+          "sha256": "4bbf1ceeefa353ec9e17ae51ec0b03b291c3b69c57c12e552e5653cbb5e8776f"
+        },
+        {
+          "bytes": 13948,
+          "path": "pic/coder00t_exp.png",
+          "sha256": "00f247998a1a87526ddda511cf12de6e8fd385a8ad4fd40cabe29486c9e4d7c6"
+        },
+        {
+          "bytes": 64602,
+          "path": "pic/demo.png",
+          "sha256": "12fff783c175b6689f3843f88cf4910691068136b305d66d91ab9cdbaf472473"
+        },
+        {
+          "bytes": 16784,
+          "path": "pic/fail.png",
+          "sha256": "fd53f45eb73492e4b8d5c4726201fff161d02eaed49097758cc64e992c3e563b"
+        },
+        {
+          "bytes": 23834,
+          "path": "pic/hardlink.png",
+          "sha256": "620362197269fb10589117cbd6aeac4cf2dc78e00803b32bd35ce17fca566a88"
+        },
+        {
+          "bytes": 26384,
+          "path": "pic/lua.png",
+          "sha256": "f58e8f6e1c0b1d4cfb4e1894ef4054db41c57eddcddd9a586729ec9472a591d9"
+        },
+        {
+          "bytes": 21741,
+          "path": "pic/normal.png",
+          "sha256": "aa97c14988c26e40c4f168daf6a7521198a51007314671e5d1339fbb86dbfc75"
+        },
+        {
+          "bytes": 29901,
+          "path": "pic/race.png",
+          "sha256": "53df36af10e016b02268d0a209599fd82babb106ca220965be968033d2c0a96d"
+        },
+        {
+          "bytes": 65026,
+          "path": "pic/sauercloud.png",
+          "sha256": "5230f9ef4a9aa00193e13f0ee17cff71be225d273c4a7d799c8bb0b31f5c16cc"
+        },
+        {
+          "bytes": 432,
+          "path": "readme.md",
+          "sha256": "9a7f292b7ddd80da42aa66a093c0974542dddfc6826309f65fcbbf7514a40ade"
+        },
+        {
+          "bytes": 5297324,
+          "path": "router3-a2dcb2d91d0654c87ffce982a86b8794723e76d6.tar.gz",
+          "sha256": "1ea51ca61501c502874528c12307d4414df343301aac411449c4406ef058a9cc"
+        },
+        {
+          "bytes": 16815,
+          "path": "writeup.md",
+          "sha256": "71a5917c1fff5d893c21a2e46c462d264ea9c7323876ad0a0b9962e0c2f3ce1e"
+        },
+        {
+          "bytes": 16841,
+          "path": "writeup_zh.md",
+          "sha256": "c43aa218f17408393b2c20d69dd8c10245f13e89a6cdd73e32560812bf43916c"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/chaitin/Real-World-CTF-3rd-Challenge-Attachments/tree/236c83bb8a0170b6d6c0cc769f6eb810555b2d1d/router3",
+      "status": "pending_manual_review"
+    }
+  ],
+  "commit": "236c83bb8a0170b6d6c0cc769f6eb810555b2d1d",
+  "event": "Real World CTF 3rd",
+  "repository": "https://github.com/chaitin/Real-World-CTF-3rd-Challenge-Attachments",
+  "schema": "original-ctf-catalog-v1"
+}

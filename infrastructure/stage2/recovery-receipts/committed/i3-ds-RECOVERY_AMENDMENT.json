@@ -1,0 +1,167 @@
+{
+  "agent_state_backup": "/data/authoritylab/authority-world-v2-minconf-stage2-i3-ds-4303-v1/recovery/automatic-20260725T071616/agent-state-v2.before",
+  "classification": "registered_minconf_stage2_host_disk_fail_close_20260725",
+  "committed_at": "2026-07-25T07:16:38.353946+08:00",
+  "created_at": "2026-07-25T07:16:17.143408+08:00",
+  "downtime_seconds": 1199.291475534439,
+  "enforced_at_epoch": 1784933777.704107,
+  "events": {
+    "after_sha256": "e9830d0d91a75ec93d2b90bba5f149dc7ba25ea49e4fb13a0cdc6c7ba87ab59c",
+    "mtime_after_ns": 1784934976995582464,
+    "mtime_before_ns": 1784934976593976747,
+    "technical_energy_refund_records": [
+      {
+        "actor": "A5",
+        "at": "2026-07-24T23:16:16.595078+00:00",
+        "at_wall": 1784934976.5950902,
+        "data": {
+          "amount": 0.08,
+          "energy_after": 11.24000000000021,
+          "energy_before": 11.16000000000021,
+          "original_charge_seq": 1084,
+          "reason": "technical_abort_at_watchdog_trip",
+          "technical_abort_request_id": "automatic-recovery-abort:v2-2026074303-bc9733d127ab:1084:0"
+        },
+        "day": 6,
+        "kind": "technical_model_request_energy_refunded",
+        "phase": "work",
+        "run_id": "v2-2026074303-bc9733d127ab",
+        "seq": 1085
+      }
+    ]
+  },
+  "gateway": {
+    "after_sha256": "72305d562ee01042e5dc5698f8e6463e212c3ecb5b2de6389589a4b113aceca7",
+    "attributable_provider_error_request_ids": [],
+    "charges": 853,
+    "outstanding_after": 0,
+    "outstanding_before": 1,
+    "technical_abort_records": [
+      {
+        "agent_id": "A5",
+        "at": "2026-07-24T23:16:16.592040+00:00",
+        "error": "technical_abort_at_watchdog_trip; charged request had no provider terminal record",
+        "kind": "provider_error",
+        "recovery": {
+          "trip_receipt": "/data/authoritylab/authority-world-v2-minconf-stage2-i3-ds-4303-v1/watchdog/trips/trip-20260725T065617690372.json",
+          "trip_sha256": "27e1e4f9652f0b72ef3244a998bded9f3b76000733e786f9d1b564316cafa5b0"
+        },
+        "request_id": "automatic-recovery-abort:v2-2026074303-bc9733d127ab:1084:0"
+      }
+    ],
+    "terminals_before": 852
+  },
+  "hold_trip": "/data/authoritylab/authority-world-v2-minconf-stage2-i3-ds-4303-v1/watchdog/trips/trip-20260725T071616-automatic-recovery-hold.json",
+  "logical_freeze_adjustment": null,
+  "logical_freeze_epoch": 1784933777.704107,
+  "provider_probe": {
+    "ok": true,
+    "receipts": [
+      {
+        "elapsed_seconds": 1.07,
+        "model": "deepseek-v4-pro",
+        "ok": true,
+        "style": "chat_completions"
+      },
+      {
+        "elapsed_seconds": 1.08,
+        "model": "deepseek-v4-pro",
+        "ok": true,
+        "style": "chat_completions"
+      },
+      {
+        "elapsed_seconds": 1.039,
+        "model": "deepseek-v4-pro",
+        "ok": true,
+        "style": "chat_completions"
+      }
+    ],
+    "required_samples": 3,
+    "successful_samples": 3
+  },
+  "resume_epoch": 1784934976.9955826,
+  "rollback": null,
+  "runtime_quiescence": {
+    "compose_down": {
+      "returncode": 0,
+      "stderr": "",
+      "stdout": ""
+    },
+    "compose_file": "/data/authoritylab/authority-world-v2-minconf-stage2-i3-ds-4303-v1/docker-compose.v2.fallback.yml",
+    "run_id": "v2-2026074303-bc9733d127ab",
+    "run_labelled_containers": []
+  },
+  "schema": "authority-world-v2-automatic-technical-recovery-v1",
+  "source_trip": {
+    "path": "/data/authoritylab/authority-world-v2-minconf-stage2-i3-ds-4303-v1/watchdog/trips/trip-20260725T065617690372.json",
+    "reason": "host_disk_hard_limit",
+    "sha256": "27e1e4f9652f0b72ef3244a998bded9f3b76000733e786f9d1b564316cafa5b0",
+    "tripped_at": "2026-07-25T06:56:17.690411+08:00"
+  },
+  "state": {
+    "after_sha256": "47d94a086bd212937c4e1847830e461280df8ed9cab0fe28b0543f13e5c0e2cb",
+    "before_sha256": "6385a0809720d712ceb093246f04137e1bb892fd7b3acc883ab636babeb8f209",
+    "day": 6,
+    "event_seq": 1085,
+    "shifted_fields": [
+      {
+        "after": 1784929723.8654106,
+        "before": 1784928524.573935,
+        "delta_seconds": 1199.291475534439,
+        "path": "world_start_wall"
+      },
+      {
+        "after": 1784934949.0190835,
+        "before": 1784933749.727608,
+        "delta_seconds": 1199.291475534439,
+        "path": "agents.A1.last_idle_wake"
+      },
+      {
+        "after": 1784934953.9605901,
+        "before": 1784933754.6691146,
+        "delta_seconds": 1199.291475534439,
+        "path": "agents.A2.last_idle_wake"
+      },
+      {
+        "after": 1784934928.446585,
+        "before": 1784933729.1551094,
+        "delta_seconds": 1199.291475534439,
+        "path": "agents.A3.last_idle_wake"
+      },
+      {
+        "after": 1784934962.818203,
+        "before": 1784933763.5267274,
+        "delta_seconds": 1199.291475534439,
+        "path": "agents.A4.last_idle_wake"
+      },
+      {
+        "after": 1784934973.6379642,
+        "before": 1784933774.3464887,
+        "delta_seconds": 1199.291475534439,
+        "path": "agents.A5.last_idle_wake"
+      },
+      {
+        "after": 1784934968.9002528,
+        "before": 1784933769.6087773,
+        "delta_seconds": 1199.291475534439,
+        "path": "agents.A6.last_idle_wake"
+      }
+    ]
+  },
+  "status": "committed",
+  "verification": {
+    "charges": 853,
+    "computed_day": 6,
+    "day": 6,
+    "event_seq": 1085,
+    "frozen_outstanding_after_reconciliation": 0,
+    "mode": "tmux_restart",
+    "outstanding_at_verification": 0,
+    "run_id": "v2-2026074303-bc9733d127ab",
+    "runner_session_alive": true,
+    "runner_unit_active": null,
+    "terminals": 853,
+    "watchdog_session_alive": true,
+    "watchdog_unit_active": null
+  }
+}

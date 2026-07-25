@@ -1,0 +1,226 @@
+{
+  "schema": "original-ctf-catalog-v1",
+  "event": "DEF CON CTF Qualifiers 2025",
+  "repository": "https://github.com/Nautilus-Institute/quals-2025",
+  "commit": "94ef8d5614c0b7dd49135e2bbc15e0a947e6ee2d",
+  "directory_count": 19,
+  "challenges": [
+    {
+      "event": "DEF CON CTF Qualifiers 2025",
+      "year": 2025,
+      "challenge_directory": "NautilusInstituteContinuousIntegrationAndContinuousDelivery",
+      "source": "https://github.com/Nautilus-Institute/quals-2025/tree/94ef8d5614c0b7dd49135e2bbc15e0a947e6ee2d/NautilusInstituteContinuousIntegrationAndContinuousDelivery",
+      "commit": "94ef8d5614c0b7dd49135e2bbc15e0a947e6ee2d",
+      "file_count": 26,
+      "review_flags": [],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2025",
+      "year": 2025,
+      "challenge_directory": "callmerust",
+      "source": "https://github.com/Nautilus-Institute/quals-2025/tree/94ef8d5614c0b7dd49135e2bbc15e0a947e6ee2d/callmerust",
+      "commit": "94ef8d5614c0b7dd49135e2bbc15e0a947e6ee2d",
+      "file_count": 16,
+      "review_flags": [],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2025",
+      "year": 2025,
+      "challenge_directory": "dialects",
+      "source": "https://github.com/Nautilus-Institute/quals-2025/tree/94ef8d5614c0b7dd49135e2bbc15e0a947e6ee2d/dialects",
+      "commit": "94ef8d5614c0b7dd49135e2bbc15e0a947e6ee2d",
+      "file_count": 4,
+      "review_flags": [
+        "challenge_description_location_requires_review"
+      ],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2025",
+      "year": 2025,
+      "challenge_directory": "echoid",
+      "source": "https://github.com/Nautilus-Institute/quals-2025/tree/94ef8d5614c0b7dd49135e2bbc15e0a947e6ee2d/echoid",
+      "commit": "94ef8d5614c0b7dd49135e2bbc15e0a947e6ee2d",
+      "file_count": 10,
+      "review_flags": [],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2025",
+      "year": 2025,
+      "challenge_directory": "holographic",
+      "source": "https://github.com/Nautilus-Institute/quals-2025/tree/94ef8d5614c0b7dd49135e2bbc15e0a947e6ee2d/holographic",
+      "commit": "94ef8d5614c0b7dd49135e2bbc15e0a947e6ee2d",
+      "file_count": 19,
+      "review_flags": [],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2025",
+      "year": 2025,
+      "challenge_directory": "im-pio-ssible",
+      "source": "https://github.com/Nautilus-Institute/quals-2025/tree/94ef8d5614c0b7dd49135e2bbc15e0a947e6ee2d/im-pio-ssible",
+      "commit": "94ef8d5614c0b7dd49135e2bbc15e0a947e6ee2d",
+      "file_count": 8,
+      "review_flags": [],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2025",
+      "year": 2025,
+      "challenge_directory": "jxl4fun",
+      "source": "https://github.com/Nautilus-Institute/quals-2025/tree/94ef8d5614c0b7dd49135e2bbc15e0a947e6ee2d/jxl4fun",
+      "commit": "94ef8d5614c0b7dd49135e2bbc15e0a947e6ee2d",
+      "file_count": 19,
+      "review_flags": [],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2025",
+      "year": 2025,
+      "challenge_directory": "memorybank",
+      "source": "https://github.com/Nautilus-Institute/quals-2025/tree/94ef8d5614c0b7dd49135e2bbc15e0a947e6ee2d/memorybank",
+      "commit": "94ef8d5614c0b7dd49135e2bbc15e0a947e6ee2d",
+      "file_count": 6,
+      "review_flags": [],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2025",
+      "year": 2025,
+      "challenge_directory": "nfuncs",
+      "source": "https://github.com/Nautilus-Institute/quals-2025/tree/94ef8d5614c0b7dd49135e2bbc15e0a947e6ee2d/nfuncs",
+      "commit": "94ef8d5614c0b7dd49135e2bbc15e0a947e6ee2d",
+      "file_count": 22,
+      "review_flags": [],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2025",
+      "year": 2025,
+      "challenge_directory": "petshop",
+      "source": "https://github.com/Nautilus-Institute/quals-2025/tree/94ef8d5614c0b7dd49135e2bbc15e0a947e6ee2d/petshop",
+      "commit": "94ef8d5614c0b7dd49135e2bbc15e0a947e6ee2d",
+      "file_count": 10,
+      "review_flags": [],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2025",
+      "year": 2025,
+      "challenge_directory": "petshop_gate",
+      "source": "https://github.com/Nautilus-Institute/quals-2025/tree/94ef8d5614c0b7dd49135e2bbc15e0a947e6ee2d/petshop_gate",
+      "commit": "94ef8d5614c0b7dd49135e2bbc15e0a947e6ee2d",
+      "file_count": 4,
+      "review_flags": [],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2025",
+      "year": 2025,
+      "challenge_directory": "rbm",
+      "source": "https://github.com/Nautilus-Institute/quals-2025/tree/94ef8d5614c0b7dd49135e2bbc15e0a947e6ee2d/rbm",
+      "commit": "94ef8d5614c0b7dd49135e2bbc15e0a947e6ee2d",
+      "file_count": 18,
+      "review_flags": [],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2025",
+      "year": 2025,
+      "challenge_directory": "seven_el_bee",
+      "source": "https://github.com/Nautilus-Institute/quals-2025/tree/94ef8d5614c0b7dd49135e2bbc15e0a947e6ee2d/seven_el_bee",
+      "commit": "94ef8d5614c0b7dd49135e2bbc15e0a947e6ee2d",
+      "file_count": 957,
+      "review_flags": [],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2025",
+      "year": 2025,
+      "challenge_directory": "tenspades",
+      "source": "https://github.com/Nautilus-Institute/quals-2025/tree/94ef8d5614c0b7dd49135e2bbc15e0a947e6ee2d/tenspades",
+      "commit": "94ef8d5614c0b7dd49135e2bbc15e0a947e6ee2d",
+      "file_count": 19,
+      "review_flags": [],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2025",
+      "year": 2025,
+      "challenge_directory": "tetrx",
+      "source": "https://github.com/Nautilus-Institute/quals-2025/tree/94ef8d5614c0b7dd49135e2bbc15e0a947e6ee2d/tetrx",
+      "commit": "94ef8d5614c0b7dd49135e2bbc15e0a947e6ee2d",
+      "file_count": 3,
+      "review_flags": [],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2025",
+      "year": 2025,
+      "challenge_directory": "tiniii",
+      "source": "https://github.com/Nautilus-Institute/quals-2025/tree/94ef8d5614c0b7dd49135e2bbc15e0a947e6ee2d/tiniii",
+      "commit": "94ef8d5614c0b7dd49135e2bbc15e0a947e6ee2d",
+      "file_count": 10,
+      "review_flags": [],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2025",
+      "year": 2025,
+      "challenge_directory": "totem1",
+      "source": "https://github.com/Nautilus-Institute/quals-2025/tree/94ef8d5614c0b7dd49135e2bbc15e0a947e6ee2d/totem1",
+      "commit": "94ef8d5614c0b7dd49135e2bbc15e0a947e6ee2d",
+      "file_count": 6,
+      "review_flags": [
+        "challenge_description_location_requires_review"
+      ],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2025",
+      "year": 2025,
+      "challenge_directory": "vibe",
+      "source": "https://github.com/Nautilus-Institute/quals-2025/tree/94ef8d5614c0b7dd49135e2bbc15e0a947e6ee2d/vibe",
+      "commit": "94ef8d5614c0b7dd49135e2bbc15e0a947e6ee2d",
+      "file_count": 1,
+      "review_flags": [
+        "challenge_description_location_requires_review"
+      ],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    },
+    {
+      "event": "DEF CON CTF Qualifiers 2025",
+      "year": 2025,
+      "challenge_directory": "ywdap",
+      "source": "https://github.com/Nautilus-Institute/quals-2025/tree/94ef8d5614c0b7dd49135e2bbc15e0a947e6ee2d/ywdap",
+      "commit": "94ef8d5614c0b7dd49135e2bbc15e0a947e6ee2d",
+      "file_count": 4,
+      "review_flags": [
+        "challenge_description_location_requires_review"
+      ],
+      "status": "pending_manual_review",
+      "exclusion_reason": null
+    }
+  ]
+}

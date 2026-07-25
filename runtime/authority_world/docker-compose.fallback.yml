@@ -1,0 +1,12 @@
+# Explicit execution-mode override for constrained hosts.  It preserves the
+# same per-Agent network/token isolation but uses the previously validated
+# lightweight runner rather than a Codex CLI process.
+services:
+  agent_a1: &fallback
+    build: {context: ., dockerfile: Dockerfile.agent}
+    entrypoint: ["python", "-m", "agent.runner"]
+  agent_a2: *fallback
+  agent_a3: *fallback
+  agent_a4: *fallback
+  agent_a5: *fallback
+  agent_a6: *fallback

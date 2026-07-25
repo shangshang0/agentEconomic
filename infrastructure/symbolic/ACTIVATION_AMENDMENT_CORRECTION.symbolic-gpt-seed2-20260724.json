@@ -1,0 +1,23 @@
+{
+  "schema": "authority-world-v2-gateway-activation-amendment-correction-v1",
+  "status": "committed",
+  "created_at": "2026-07-25T00:02:00+08:00",
+  "root": "/data/authoritylab/authority-world-v2-symbolic-gpt-2026074002-sixway-v2",
+  "run_id": "v2-2026074002-9f8e3ee32439",
+  "original_receipt": {
+    "path": "recovery/manual-gateway-timeout-budget-20260724T235714/ACTIVATION_AMENDMENT.json",
+    "sha256": "ae231dbb9d88ae9934e3800df433a683f7ef7e45edf945ca4987907b4f9cba6d"
+  },
+  "correction_reason": "The backend keeps the world state in memory. The activation controller shifted the on-disk state while the backend process was paused, but the resumed backend subsequently persisted its pre-shift in-memory state and overwrote that file adjustment.",
+  "gateway_activation_succeeded": true,
+  "gateway_source_sha256_before": "67dc5dbdcddee4f42758a0fb934184dd19c935aec1a817634c96447b563f2858",
+  "gateway_source_sha256_after": "5e5a95663d6646e21e4e491d16b75bdd3c1c9225302aad61e56333f362f234e1",
+  "pause_seconds": 4.7112345695495605,
+  "claimed_time_compensation_seconds_in_original_receipt": 4.7112345695495605,
+  "persisted_time_compensation_seconds": 0.0,
+  "uncompensated_infrastructure_pause_seconds": 4.7112345695495605,
+  "world_start_wall_before_attempted_shift": 1784903544.7900975,
+  "world_start_wall_written_by_activation_controller": 1784903549.501332,
+  "world_start_wall_observed_after_backend_resumed": 1784903544.7900975,
+  "evidence_treatment": "retain the run with a disclosed 4.7112345695495605-second uncompensated infrastructure micro-pause; require terminal technical-amendment review and do not describe the pause as time-compensated"
+}

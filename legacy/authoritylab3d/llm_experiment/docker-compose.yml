@@ -1,0 +1,133 @@
+name: authoritylab
+
+x-agent: &agent
+  build: {context: ., dockerfile: Dockerfile.agent}
+  read_only: true
+  tmpfs: ["/tmp:rw,noexec,nosuid,size=32m"]
+  cap_drop: [ALL]
+  security_opt: [no-new-privileges:true]
+  pids_limit: 64
+  mem_limit: 256m
+  cpus: 0.50
+  restart: unless-stopped
+  depends_on:
+    backend: {condition: service_healthy}
+  healthcheck:
+    test: [CMD, python, -c, "import pathlib; assert b'agent.runner' in pathlib.Path('/proc/1/cmdline').read_bytes()"]
+    interval: 15s
+    timeout: 5s
+    retries: 3
+
+services:
+  gateway:
+    build: {context: ., dockerfile: Dockerfile.gateway}
+    container_name: authoritylab-gateway
+    environment:
+      DATA_DIR: /data
+      GATEWAY_TOKEN: ${GATEWAY_TOKEN:?required}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      OPENAI_BASE_URL: ${OPENAI_BASE_URL:-}
+      MODEL: ${MODEL:-dev/gpt-5.5}
+      MODEL_PROFILES_JSON: ${MODEL_PROFILES_JSON:-}
+      MOCK_MODEL: ${MOCK_MODEL:-0}
+    volumes: [./data:/data]
+    networks: [control, provider_egress]
+    read_only: true
+    tmpfs: ["/tmp:rw,noexec,nosuid,size=64m"]
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    pids_limit: 256
+    mem_limit: 768m
+    cpus: 1.00
+    restart: unless-stopped
+    healthcheck:
+      test: [CMD, python, -c, "import os,urllib.request; r=urllib.request.Request('http://127.0.0.1:8001/health',headers={'Authorization':'Bearer '+os.environ['GATEWAY_TOKEN']}); assert urllib.request.urlopen(r,timeout=3).status==200"]
+      interval: 10s
+      timeout: 5s
+      retries: 8
+
+  backend:
+    build: {context: ., dockerfile: Dockerfile.backend}
+    container_name: authoritylab-backend
+    environment:
+      DATA_DIR: /data
+      AGENT_TOKENS_JSON: ${AGENT_TOKENS_JSON:?required}
+      CONTROL_TOKEN: ${CONTROL_TOKEN:?required}
+      DASHBOARD_TOKEN: ${DASHBOARD_TOKEN:?required}
+      GATEWAY_URL: http://gateway:8001
+      GATEWAY_TOKEN: ${GATEWAY_TOKEN:?required}
+      MAX_PROVIDER_FAILURES: ${MAX_PROVIDER_FAILURES:-3}
+    volumes: [./data:/data]
+    networks: [control, p1_net, p2_net, p3_net, p4_net, p5_net]
+    read_only: true
+    tmpfs: ["/tmp:rw,noexec,nosuid,size=64m"]
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    pids_limit: 256
+    mem_limit: 768m
+    cpus: 1.00
+    restart: unless-stopped
+    depends_on:
+      gateway: {condition: service_healthy}
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; assert urllib.request.urlopen('http://127.0.0.1:8000/health',timeout=3).status==200"]
+      interval: 10s
+      timeout: 5s
+      retries: 8
+
+  observer_proxy:
+    build: {context: ., dockerfile: Dockerfile.proxy}
+    container_name: authoritylab-observer-proxy
+    ports: ["127.0.0.1:8126:8002"]
+    networks: [control, observer_bridge]
+    read_only: true
+    tmpfs: ["/tmp:rw,noexec,nosuid,size=16m"]
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    pids_limit: 64
+    mem_limit: 128m
+    cpus: 0.25
+    restart: unless-stopped
+    depends_on:
+      backend: {condition: service_healthy}
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; assert urllib.request.urlopen('http://127.0.0.1:8002/health',timeout=3).status==200"]
+      interval: 10s
+      timeout: 5s
+      retries: 8
+
+  agent_p1:
+    <<: *agent
+    container_name: authoritylab-agent-p1
+    environment: {AGENT_ID: P1, AGENT_TOKEN: "${P1_TOKEN:?required}", BACKEND_URL: http://backend:8000, POLL_INTERVAL: "${AGENT_POLL_INTERVAL:-0.8}"}
+    networks: [p1_net]
+  agent_p2:
+    <<: *agent
+    container_name: authoritylab-agent-p2
+    environment: {AGENT_ID: P2, AGENT_TOKEN: "${P2_TOKEN:?required}", BACKEND_URL: http://backend:8000, POLL_INTERVAL: "${AGENT_POLL_INTERVAL:-0.8}"}
+    networks: [p2_net]
+  agent_p3:
+    <<: *agent
+    container_name: authoritylab-agent-p3
+    environment: {AGENT_ID: P3, AGENT_TOKEN: "${P3_TOKEN:?required}", BACKEND_URL: http://backend:8000, POLL_INTERVAL: "${AGENT_POLL_INTERVAL:-0.8}"}
+    networks: [p3_net]
+  agent_p4:
+    <<: *agent
+    container_name: authoritylab-agent-p4
+    environment: {AGENT_ID: P4, AGENT_TOKEN: "${P4_TOKEN:?required}", BACKEND_URL: http://backend:8000, POLL_INTERVAL: "${AGENT_POLL_INTERVAL:-0.8}"}
+    networks: [p4_net]
+  agent_p5:
+    <<: *agent
+    container_name: authoritylab-agent-p5
+    environment: {AGENT_ID: P5, AGENT_TOKEN: "${P5_TOKEN:?required}", BACKEND_URL: http://backend:8000, POLL_INTERVAL: "${AGENT_POLL_INTERVAL:-0.8}"}
+    networks: [p5_net]
+
+networks:
+  control: {internal: true}
+  p1_net: {internal: true}
+  p2_net: {internal: true}
+  p3_net: {internal: true}
+  p4_net: {internal: true}
+  p5_net: {internal: true}
+  provider_egress: {}
+  observer_bridge: {}

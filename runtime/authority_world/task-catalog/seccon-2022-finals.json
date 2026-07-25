@@ -1,0 +1,4095 @@
+{
+  "challenge_count": 6,
+  "challenges": [
+    {
+      "category": "jeopardy",
+      "challenge": "crypto",
+      "commit": "1698664cc662f8c01fe079d2d02d87816f19d6c1",
+      "event": "SECCON 2022 Finals",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 276,
+          "path": "authenticator/README.md",
+          "sha256": "54637739a5d4273d93695472b6c3f7ca5b23515a75ce3452295fc8c4725eaf5f"
+        },
+        {
+          "bytes": 226,
+          "path": "authenticator/build/Dockerfile",
+          "sha256": "6b283c19ca717c2a42d9f03f420eb0b0a27a142264f3881c79ba3cb32c147749"
+        },
+        {
+          "bytes": 1078,
+          "path": "authenticator/build/server.py",
+          "sha256": "3b493ea79f73d03fe9f096b9bdf919b5d85302ed4e55968c81b3278af428f612"
+        },
+        {
+          "bytes": 175,
+          "path": "authenticator/docker-compose.yml",
+          "sha256": "00a84030ff49da2cc8e5051eb49b43010a5f215e32fb7ca84ea18a29326a606b"
+        },
+        {
+          "bytes": 1078,
+          "path": "authenticator/files/server.py",
+          "sha256": "3b493ea79f73d03fe9f096b9bdf919b5d85302ed4e55968c81b3278af428f612"
+        },
+        {
+          "bytes": 92,
+          "path": "authenticator/solver/Dockerfile",
+          "sha256": "4cef69d7950e8e5cd4df5690e4c5b018e825011a9cbb94c2283c944cdc854605"
+        },
+        {
+          "bytes": 1255,
+          "path": "authenticator/solver/solve.sage",
+          "sha256": "74a087ab5044c8352b724410d96872542332628dee568ed936bb3fd64224daf1"
+        },
+        {
+          "bytes": 270,
+          "path": "hell/README.md",
+          "sha256": "a331011ad015753b125e28c9657f1807db309456b1e6c1c11bbd72e4c6fea4be"
+        },
+        {
+          "bytes": 2086,
+          "path": "hell/files/output.txt",
+          "sha256": "de134ce8a6d2e235244e9714ca64d9a8550c103d04831aaacf1dc529d46cbd65"
+        },
+        {
+          "bytes": 467,
+          "path": "hell/files/task.sage",
+          "sha256": "38bf85df2e45ae0f820a1d521404f2dbf496cf425c8f8a1916a6e7ae51d22d1b"
+        },
+        {
+          "bytes": 634,
+          "path": "hell/solver/solve.sage",
+          "sha256": "b2e600051dd2788e9542e1cdf216755188b8690e7014c91108c704f9278d521e"
+        },
+        {
+          "bytes": 275,
+          "path": "not_new_prng/README.md",
+          "sha256": "ee821a200b9b77dff65acb233cfc7497bf51e471c3127e2420312108abf0408b"
+        },
+        {
+          "bytes": 1054,
+          "path": "not_new_prng/files/dist/chall.py",
+          "sha256": "04e70a0535cca720d709b172959692481a705028331e25505046405edf9e5cac"
+        },
+        {
+          "bytes": 586,
+          "path": "not_new_prng/files/dist/output.txt",
+          "sha256": "bd03491f3f4c8b8fd99984e96e659110054c6782e78ce6198b8e42352f7b491d"
+        },
+        {
+          "bytes": 130,
+          "path": "not_new_prng/solver/Dockerfile",
+          "sha256": "8d7aadb044218de09c68a91d637da7e9af1c675154816818ecdf906e4c661a32"
+        },
+        {
+          "bytes": 4407,
+          "path": "not_new_prng/solver/exploit.sage",
+          "sha256": "eab4fcc72ff52607b7dd44178ffed492ef390012fa6825be890aeef745ac5392"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/SECCON/SECCON2022_final_CTF/tree/1698664cc662f8c01fe079d2d02d87816f19d6c1/jeopardy/crypto",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "jeopardy",
+      "challenge": "misc",
+      "commit": "1698664cc662f8c01fe079d2d02d87816f19d6c1",
+      "event": "SECCON 2022 Finals",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 314,
+          "path": "sniffer1/README.md",
+          "sha256": "b71c93d83e49a8bc6917b2cc07d344f0ddac43f594c05a5bd716aba22f9e5228"
+        },
+        {
+          "bytes": 2809,
+          "path": "sniffer1/build/alice.py",
+          "sha256": "1413cd5ab2defd25aaac3727d327d5cf1fb27806f2e5e9f5e9ba0847d8129fc7"
+        },
+        {
+          "bytes": 173,
+          "path": "sniffer1/build/alice.sh",
+          "sha256": "2a4e98bcca5b80ca1aa44b497860c554072a3a96c3cc49ef6a334ea0c7f36219"
+        },
+        {
+          "bytes": 2786,
+          "path": "sniffer1/build/bob.py",
+          "sha256": "f16b2dcd750b561020c0c7c90b14517c2577efe9f57353fe9acb736ea9a0e163"
+        },
+        {
+          "bytes": 45,
+          "path": "sniffer1/build/bob.sh",
+          "sha256": "1c538630453b84fff02bc58af595486e01f5ed23f02730dc857e9e82708d3468"
+        },
+        {
+          "bytes": 57900,
+          "path": "sniffer1/build/rule.odt",
+          "sha256": "bc215b3956da32e9d13bbbd094c1f61f52bd6355a86dd17eb606ef7f804d3d53"
+        },
+        {
+          "bytes": 38253,
+          "path": "sniffer1/build/rule.pdf",
+          "sha256": "81d13f3fc8a51d4ad6b73090d9787132f15dbc9a0f47bc55cb5e59514b68357e"
+        },
+        {
+          "bytes": 2443,
+          "path": "sniffer1/build/solve.py",
+          "sha256": "e297562778fa804e40b65980549a0040e646acce8cc7a66954cf29dfd55382a8"
+        },
+        {
+          "bytes": 55785,
+          "path": "sniffer1/build/timetable.odt",
+          "sha256": "5cb01fedf964c5253fc6cf8f403ec2a5246cd717186e5edd514a60c831f52067"
+        },
+        {
+          "bytes": 1174,
+          "path": "sniffer1/build/timetable.pdf",
+          "sha256": "00be4db65a13b666ab5fecab1aba6991fae05c7f6a31cb3dc36a45c0f5a72ee9"
+        },
+        {
+          "bytes": 1314,
+          "path": "sniffer1/files/a.7z",
+          "sha256": "a754252245550f1e2213f8f74ada765ff83cecdbc5f87e6b6dfba003f6df7147"
+        },
+        {
+          "bytes": 283,
+          "path": "sniffer2/README.md",
+          "sha256": "e7ad3c9c1f0cc58249462165b62717e1dc717c6c3d0643a40e34b289bc102aad"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/SECCON/SECCON2022_final_CTF/tree/1698664cc662f8c01fe079d2d02d87816f19d6c1/jeopardy/misc",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "jeopardy",
+      "challenge": "pwnable",
+      "commit": "1698664cc662f8c01fe079d2d02d87816f19d6c1",
+      "event": "SECCON 2022 Finals",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 249,
+          "path": "babyescape/README.md",
+          "sha256": "0d59838bdacb5e0f50e32cb3ac347b36aaf2a4a874c471c783d37b685a4d28ac"
+        },
+        {
+          "bytes": 193,
+          "path": "babyescape/build/pwn.xinetd",
+          "sha256": "a4474f09dd0d6fbfece7aeb2f5ef2390c659455a94fc7badebca282f3502d837"
+        },
+        {
+          "bytes": 5228720,
+          "path": "babyescape/build/qemu/bzImage",
+          "sha256": "f8ec808b522b98df4df90a3c3c67bfacf5cac8916659d3aff810ed4e469cc75e"
+        },
+        {
+          "bytes": 3708416,
+          "path": "babyescape/build/qemu/rootfs.cpio",
+          "sha256": "d48187534c3601a020a17060b4bf4d34b7ea215047f6bbb027e8abed13a088c8"
+        },
+        {
+          "bytes": 827,
+          "path": "babyescape/build/qemu/run.sh",
+          "sha256": "2284e9691490b762be3aab92a00c166850ba22727f034c73edae8ca3b586a9a0"
+        },
+        {
+          "bytes": 120,
+          "path": "babyescape/build/sandbox/Makefile",
+          "sha256": "32d22b955d3d28cefc914319a0a56afda515bf4bb84b0f8868176b8cdb00f7d6"
+        },
+        {
+          "bytes": 422,
+          "path": "babyescape/build/sandbox/filter.S",
+          "sha256": "3b7c86b5d6710f6c52dc3c793159c2fe448169ed47c912708b05241fdea03291"
+        },
+        {
+          "bytes": 1014,
+          "path": "babyescape/build/sandbox/sandbox.c",
+          "sha256": "d3311077ed1636a011e529e416dc7717c0a7e49e2ae8fe117f9945b02d7fb26d"
+        },
+        {
+          "bytes": 5228720,
+          "path": "babyescape/files/babyescape/bzImage",
+          "sha256": "f8ec808b522b98df4df90a3c3c67bfacf5cac8916659d3aff810ed4e469cc75e"
+        },
+        {
+          "bytes": 3707904,
+          "path": "babyescape/files/babyescape/rootfs.cpio",
+          "sha256": "b159dc720f71759d4837a8aea230244151a663016383abc85daaf087369e5fa9"
+        },
+        {
+          "bytes": 301,
+          "path": "babyescape/files/babyescape/run.sh",
+          "sha256": "0f0f52897bda1a0c0860470ea4ec44671604f9344ec4ebc6a5405f080788fc8e"
+        },
+        {
+          "bytes": 1014,
+          "path": "babyescape/files/babyescape/sandbox.c",
+          "sha256": "d3311077ed1636a011e529e416dc7717c0a7e49e2ae8fe117f9945b02d7fb26d"
+        },
+        {
+          "bytes": 228,
+          "path": "babyescape/solver/driver/Makefile",
+          "sha256": "5147d666b5c26d85d7420b5d2b1466db74f7329d4ff841910f197d83af1055a6"
+        },
+        {
+          "bytes": 1161,
+          "path": "babyescape/solver/driver/pwn.c",
+          "sha256": "2e894dfa23bb2a06db4b14a3b80df5b779522397da19843c615b2b591418683c"
+        },
+        {
+          "bytes": 6240,
+          "path": "babyescape/solver/driver/pwn.ko",
+          "sha256": "85206626d9e76b2f575960f76bc6b37b267ff834e35613dc35a6cbb58e0ed812"
+        },
+        {
+          "bytes": 579,
+          "path": "babyescape/solver/solve.py",
+          "sha256": "4c5f886e9809379abb40b3a8308dd83187e8673859884416ebdbede0810b2f70"
+        },
+        {
+          "bytes": 699,
+          "path": "conversation_starter/Dockerfile",
+          "sha256": "06f12c371e7017ad5483fb7f556d9183bde1357adf26addc8a12dd052069a7c9"
+        },
+        {
+          "bytes": 271,
+          "path": "conversation_starter/README.md",
+          "sha256": "45d3d2b2920cb92bbfefd99302a2f8251b97f3860edacc0aba6cebfb4b2b9df6"
+        },
+        {
+          "bytes": 112,
+          "path": "conversation_starter/builds/Makefile",
+          "sha256": "c3b96c65abcdceea20a20d452e686f0ca729a68bde5a077c4d982c0764079544"
+        },
+        {
+          "bytes": 181,
+          "path": "conversation_starter/builds/filter.S",
+          "sha256": "e443e7c97434fe373053310b4ff1378b41994bed125f14fd2c41bc050f5e59e0"
+        },
+        {
+          "bytes": 54,
+          "path": "conversation_starter/builds/flag.txt",
+          "sha256": "b26071d8a3483e5f7be59fbd707690381ebcc8f7a80205f2ccb97e8ac23b7b17"
+        },
+        {
+          "bytes": 3990,
+          "path": "conversation_starter/builds/main.c",
+          "sha256": "d4ed5116bd897c6f66c6c8672af7c317cf6c1d3871057eb64b5b16f1e1a48884"
+        },
+        {
+          "bytes": 253,
+          "path": "conversation_starter/docker-compose.yml",
+          "sha256": "d6077839ebcc648692bf867a5c4d9ea470bdc1478c592b9c52bb89ccfdd8c7c3"
+        },
+        {
+          "bytes": 610,
+          "path": "conversation_starter/files/conversation_starter/Dockerfile",
+          "sha256": "e89abe375f9cbfaf28e1e8b4fbb6777653866bd2de7f495ca1988b5fbc358cdc"
+        },
+        {
+          "bytes": 17864,
+          "path": "conversation_starter/files/conversation_starter/bin/chall",
+          "sha256": "0eafcc31741b67944dd9697c85cd3a801b3f71fe9f467b765b3a24671225eee8"
+        },
+        {
+          "bytes": 263,
+          "path": "conversation_starter/files/conversation_starter/docker-compose.yml",
+          "sha256": "85011bc2a4e83cfce903b73edf368434a3effbf9822d992e9094eadc98ef7d51"
+        },
+        {
+          "bytes": 59,
+          "path": "conversation_starter/files/conversation_starter/etc/init.sh",
+          "sha256": "83c33a0f3fce734b4f73595158379b3f2c9cc87b42e992a9ccf987ca6efa8e38"
+        },
+        {
+          "bytes": 167,
+          "path": "conversation_starter/files/conversation_starter/etc/pwn.xinetd",
+          "sha256": "0621976f39cc5ec374fd6059ee6a5919854752cd767beddf176b84f93cd2eb9b"
+        },
+        {
+          "bytes": 37,
+          "path": "conversation_starter/files/conversation_starter/etc/redir.sh",
+          "sha256": "3eebaf02e281e7d24d4349dc3131719794f42d6d4d0d94635f66eec874979eea"
+        },
+        {
+          "bytes": 3990,
+          "path": "conversation_starter/files/conversation_starter/src/main.c",
+          "sha256": "d4ed5116bd897c6f66c6c8672af7c317cf6c1d3871057eb64b5b16f1e1a48884"
+        },
+        {
+          "bytes": 2029592,
+          "path": "conversation_starter/solver/libc-2.31.so",
+          "sha256": "80378c2017456829f32645e6a8f33b4c40c8efa87db7e8c931a229afa7bf6712"
+        },
+        {
+          "bytes": 3744,
+          "path": "conversation_starter/solver/solve.py",
+          "sha256": "6953a8441a1b676b521b4be1eb9fc8c36dd6173c86254342d55c8cc5646ce0da"
+        },
+        {
+          "bytes": 848,
+          "path": "diagemu/Dockerfile",
+          "sha256": "99ec51031b75e7f80ee09adf6a6a792c6ff202767d60be8a0128891006d00d1b"
+        },
+        {
+          "bytes": 306,
+          "path": "diagemu/README.md",
+          "sha256": "85aab0baa4511ca987ed885e99327aded5b9c12594ae11de2a0295a2f3bb500b"
+        },
+        {
+          "bytes": 36,
+          "path": "diagemu/build/Makefile",
+          "sha256": "bfe4eea08e0dff7cb3782fd0cce40c967184efdab1eeb9615382c8fdf2df993c"
+        },
+        {
+          "bytes": 65,
+          "path": "diagemu/build/flag.txt",
+          "sha256": "b65419b3d998972888bc290dc6a45134f7a4426a7881e7ae889fb341f605e3b3"
+        },
+        {
+          "bytes": 2410,
+          "path": "diagemu/build/main.c",
+          "sha256": "c0a33bb05c3a167a78e747ffc40057f1c5ab120ac85a1fbf09fd441f13cb55e2"
+        },
+        {
+          "bytes": 243,
+          "path": "diagemu/docker-compose.yml",
+          "sha256": "69f2712e725751fbc4b6104f422b456d6b2435fff710271589103938761e1457"
+        },
+        {
+          "bytes": 797,
+          "path": "diagemu/files/diagemu/Dockerfile",
+          "sha256": "e10461c25790a0bfe76bb2a22fb18bc33ea20d2452f0c1290d124d428dcbc4f2"
+        },
+        {
+          "bytes": 16816,
+          "path": "diagemu/files/diagemu/bin/diagemu",
+          "sha256": "d70f769cc6f56e032e18d3d6583e84dc6e3c0b89b68ff7d34fe7e7e517a59dc9"
+        },
+        {
+          "bytes": 28750664,
+          "path": "diagemu/files/diagemu/bin/libunicorn.so.2",
+          "sha256": "58d2bb1993678b52783a9a1c8faa5255123eb2aff401c3d8e6e4acdc48d937d0"
+        },
+        {
+          "bytes": 253,
+          "path": "diagemu/files/diagemu/docker-compose.yml",
+          "sha256": "1d92e5246715356633a479630561bff577bdb0358d6598836d5998c2dc1fefb3"
+        },
+        {
+          "bytes": 59,
+          "path": "diagemu/files/diagemu/etc/init.sh",
+          "sha256": "83c33a0f3fce734b4f73595158379b3f2c9cc87b42e992a9ccf987ca6efa8e38"
+        },
+        {
+          "bytes": 167,
+          "path": "diagemu/files/diagemu/etc/pwn.xinetd",
+          "sha256": "0621976f39cc5ec374fd6059ee6a5919854752cd767beddf176b84f93cd2eb9b"
+        },
+        {
+          "bytes": 39,
+          "path": "diagemu/files/diagemu/etc/redir.sh",
+          "sha256": "069d1aae6adc297831615ee2a77efa9a2d6e5a0b307f83b21ce480531d664741"
+        },
+        {
+          "bytes": 2508,
+          "path": "diagemu/files/diagemu/src/emulator.c",
+          "sha256": "2db1d78b45bd36a3dbc4954395f72bf6b0d08485d3215e637c0f5f1868123aa6"
+        },
+        {
+          "bytes": 2216304,
+          "path": "diagemu/solver/libc.so.6",
+          "sha256": "568740b06a8afa26db4874f8cf61985ecbc6dd127f4229416fe95da8f9ec13fb"
+        },
+        {
+          "bytes": 1140,
+          "path": "diagemu/solver/solve.py",
+          "sha256": "c61d12ff76db0d4d96f36f6165972f8ba66dfd73c1c4b6ab12a7ba110cb0efca"
+        },
+        {
+          "bytes": 696,
+          "path": "husk/Dockerfile",
+          "sha256": "c8bd0f517036614e87b4f214cf90d445efefe74b6fc075c98082cb041f6eb04b"
+        },
+        {
+          "bytes": 176,
+          "path": "husk/README.md",
+          "sha256": "35db3490b29e1c2db0cfbef3cd95e2cd313df2c788582c1de87165ca724fcf13"
+        },
+        {
+          "bytes": 30,
+          "path": "husk/build/Makefile",
+          "sha256": "985d46ebbc30eff080783b875863b31032cc8b9a272f37201e84cc68847f17ea"
+        },
+        {
+          "bytes": 43,
+          "path": "husk/build/flag.txt",
+          "sha256": "ea72b415ee0c9c498ff58cac38b7ca9c12d0455dc822125bb8f045eae5180d00"
+        },
+        {
+          "bytes": 2865,
+          "path": "husk/build/main.c",
+          "sha256": "1e938b70264b0af195e08b7208db840a276785de0ffda2cb552d6c04958d334b"
+        },
+        {
+          "bytes": 237,
+          "path": "husk/docker-compose.yml",
+          "sha256": "4426e58cfe1b9a62aa8a39d9ba3935df8c935a323561ad3ba2708873e3cb0fc9"
+        },
+        {
+          "bytes": 670,
+          "path": "husk/files/dust/Dockerfile",
+          "sha256": "cbe1adbb12e0c49dbcb85847952474756c8a523b09cfbc1cde3f98cdf4b96d16"
+        },
+        {
+          "bytes": 16760,
+          "path": "husk/files/dust/bin/chall",
+          "sha256": "6949f0cd364f527d62a4b3dd750dcae9279398f2ebed45c3e85000cf370ae400"
+        },
+        {
+          "bytes": 240936,
+          "path": "husk/files/dust/bin/ld-linux-x86-64.so.2",
+          "sha256": "ee7aa16bd8443a946286c9ab84a0af0cbc47aa53a8f00477bf8ada5c38580a36"
+        },
+        {
+          "bytes": 2216304,
+          "path": "husk/files/dust/bin/libc.so.6",
+          "sha256": "568740b06a8afa26db4874f8cf61985ecbc6dd127f4229416fe95da8f9ec13fb"
+        },
+        {
+          "bytes": 247,
+          "path": "husk/files/dust/docker-compose.yml",
+          "sha256": "46ab24d75e38831a91767fbcda6624885f23fe309739b54764d8e293b11a44cf"
+        },
+        {
+          "bytes": 59,
+          "path": "husk/files/dust/etc/init.sh",
+          "sha256": "83c33a0f3fce734b4f73595158379b3f2c9cc87b42e992a9ccf987ca6efa8e38"
+        },
+        {
+          "bytes": 168,
+          "path": "husk/files/dust/etc/pwn.xinetd",
+          "sha256": "de4bc56db8a7c163bd83e4660e0850fbfd95e022e295c40fe3cca01e23ccd8c0"
+        },
+        {
+          "bytes": 37,
+          "path": "husk/files/dust/etc/redir.sh",
+          "sha256": "3eebaf02e281e7d24d4349dc3131719794f42d6d4d0d94635f66eec874979eea"
+        },
+        {
+          "bytes": 44,
+          "path": "husk/files/dust/run.sh",
+          "sha256": "6b6a5209d75d07b90dd2b50a5b9c7bf32021a514bb61866824be592c26da220b"
+        },
+        {
+          "bytes": 2865,
+          "path": "husk/files/dust/src/main.c",
+          "sha256": "1e938b70264b0af195e08b7208db840a276785de0ffda2cb552d6c04958d334b"
+        },
+        {
+          "bytes": 2345,
+          "path": "husk/solver/solve.py",
+          "sha256": "00d1ed4b40b313380c728c5be56620bec38614e125ccd2968bde404eb63ded58"
+        }
+      ],
+      "review_flags": [
+        "requires_vm_or_kernel_isolation_review"
+      ],
+      "source": "https://github.com/SECCON/SECCON2022_final_CTF/tree/1698664cc662f8c01fe079d2d02d87816f19d6c1/jeopardy/pwnable",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "jeopardy",
+      "challenge": "reversing",
+      "commit": "1698664cc662f8c01fe079d2d02d87816f19d6c1",
+      "event": "SECCON 2022 Finals",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 277,
+          "path": "abyss/README.md",
+          "sha256": "b1d849e234d8d6d0721954da3a37487658e9fc0b33dba439a31ed3af47be69b0"
+        },
+        {
+          "bytes": 54,
+          "path": "abyss/builds/FLAG.txt",
+          "sha256": "d3b9517de5aa16023ca04d4f1a32100259a85a1e6e9b068672bbc0a27925aae0"
+        },
+        {
+          "bytes": 209,
+          "path": "abyss/builds/Makefile",
+          "sha256": "7adec7063d30221034e5bd952f58e4ba206abddd4abe390b1d44832ad92f4a42"
+        },
+        {
+          "bytes": 489,
+          "path": "abyss/builds/gen.py",
+          "sha256": "b1dcc6aaa85e52a2d603ac8a560f399235e7d19fcb330d8f1891ba1442923c49"
+        },
+        {
+          "bytes": 262144,
+          "path": "abyss/builds/qemu/bios.bin",
+          "sha256": "5e6a2409436473f3e259d761a518693ff2224cafebbb704586b31eb710d532f3"
+        },
+        {
+          "bytes": 5415568,
+          "path": "abyss/builds/qemu/bzImage",
+          "sha256": "ab6ee1c13731e9a32b5d23f4d7e91e839df2258b12233db292deefc6a7240d59"
+        },
+        {
+          "bytes": 6640640,
+          "path": "abyss/builds/qemu/rootfs.cpio",
+          "sha256": "72940ebb2f5a3c67e684cf086fafef837a4be5453c24154dae1352e88410e461"
+        },
+        {
+          "bytes": 373,
+          "path": "abyss/builds/run.sh",
+          "sha256": "9dffd10c1e488e7819925b42426cec0ecbd189b4227cd64f49e3aca6d06a8e39"
+        },
+        {
+          "bytes": 1785,
+          "path": "abyss/builds/seabios.diff",
+          "sha256": "7d452134903b1e5f971c6c592e727c73cedd5817c629be3e581f5ecdd08b503e"
+        },
+        {
+          "bytes": 149,
+          "path": "abyss/builds/src/Makefile",
+          "sha256": "b5ff633a5d59387ceffbaa633376d11106762e18aeb1d3782468ae3544b3c05a"
+        },
+        {
+          "bytes": 1032,
+          "path": "abyss/builds/src/main.c",
+          "sha256": "221fea08c12b964376d7db6000290f53daa913b8cfe2d3aae283ae0b83a80b6c"
+        },
+        {
+          "bytes": 262144,
+          "path": "abyss/files/check_in_abyss/bios.bin",
+          "sha256": "5e6a2409436473f3e259d761a518693ff2224cafebbb704586b31eb710d532f3"
+        },
+        {
+          "bytes": 5415568,
+          "path": "abyss/files/check_in_abyss/bzImage",
+          "sha256": "ab6ee1c13731e9a32b5d23f4d7e91e839df2258b12233db292deefc6a7240d59"
+        },
+        {
+          "bytes": 6640640,
+          "path": "abyss/files/check_in_abyss/rootfs.cpio",
+          "sha256": "72940ebb2f5a3c67e684cf086fafef837a4be5453c24154dae1352e88410e461"
+        },
+        {
+          "bytes": 305,
+          "path": "abyss/files/check_in_abyss/run.sh",
+          "sha256": "a27a123552230d02b1ad5861505dee610fa774948f3eca13ff4cf027cf0dfe54"
+        },
+        {
+          "bytes": 426,
+          "path": "paper_house/README.md",
+          "sha256": "7367ebeab9d9ea301b810486de7ae8d0d32404b9c9afa289b61aa20dc7a1a290"
+        },
+        {
+          "bytes": 390,
+          "path": "paper_house/build/gen.py",
+          "sha256": "0b484f74ea807e913e97345188472b509ce6ea8f7656cfb9ec1602c9052fee2a"
+        },
+        {
+          "bytes": 3785,
+          "path": "paper_house/build/seccon.c",
+          "sha256": "84bd2a9d158c57e88d7412ad1117d3a7e4e1ecb7b7b6356b97bff408fd655b98"
+        },
+        {
+          "bytes": 44544,
+          "path": "paper_house/files/paper_house/safe.uf2",
+          "sha256": "ab198563766a2ce950a1f0f0c88cf7bebe78594ef3212d0c82cdafa94330308a"
+        },
+        {
+          "bytes": 152514,
+          "path": "paper_house/files/paper_house/schematics.png",
+          "sha256": "076d56faebf60d7e5212c2a5b69affa5b9175274ee3e0ffaed83d129c79b7c3a"
+        },
+        {
+          "bytes": 516,
+          "path": "whisky/Dockerfile",
+          "sha256": "d60841b339fc2d65768c7b8c9e5008a26b927ad5e01b1d6c37683e1cd5af7779"
+        },
+        {
+          "bytes": 281,
+          "path": "whisky/README.md",
+          "sha256": "673406a1495f0341c6140e1973997dec77fb83cd9db5dc01b7fd44f8ffa6f277"
+        },
+        {
+          "bytes": 1902,
+          "path": "whisky/build/backdoor/plugin/backdoor_plugin.c",
+          "sha256": "30f4d4e89323a1ea916d72709e6a8c1bb4a16ee3b162854e6a2ad6cf71085474"
+        },
+        {
+          "bytes": 85,
+          "path": "whisky/build/backdoor/plugin/uwsgiplugin.py",
+          "sha256": "7fb67837512296aa5ae5645f2584bdfa171bf4cb9d6a30e41eb6c1ec89200884"
+        },
+        {
+          "bytes": 50,
+          "path": "whisky/build/flag.txt",
+          "sha256": "f3ebb636173d09b439fa5c296aca6729cf9a2a9e1b13224e35b701603461e0da"
+        },
+        {
+          "bytes": 100,
+          "path": "whisky/build/server/uwsgi.ini",
+          "sha256": "b05cc04430e3ee8e03f71f72e36e9a4e46b3deae61fffd63ac7f76749444445b"
+        },
+        {
+          "bytes": 189,
+          "path": "whisky/docker-compose.yml",
+          "sha256": "8f5b2358a5000a2ecc619c0c84fa7192805db9383f4d3049f759074418d1099b"
+        },
+        {
+          "bytes": 17064,
+          "path": "whisky/files/backdoor_plugin.so",
+          "sha256": "bfdebb1046dba04d52704e8b7dc9972286061fafb470ac9834d20aac9d1fbaad"
+        },
+        {
+          "bytes": 453,
+          "path": "whisky/solver/solve.py",
+          "sha256": "3641b93b9bce63cf3d33611ff8b1dfb8281d9d10857f05a625aa6ccb4a2a9417"
+        }
+      ],
+      "review_flags": [
+        "requires_vm_or_kernel_isolation_review"
+      ],
+      "source": "https://github.com/SECCON/SECCON2022_final_CTF/tree/1698664cc662f8c01fe079d2d02d87816f19d6c1/jeopardy/reversing",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "jeopardy",
+      "challenge": "web",
+      "commit": "1698664cc662f8c01fe079d2d02d87816f19d6c1",
+      "event": "SECCON 2022 Finals",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 213,
+          "path": "babybox/README.md",
+          "sha256": "f76eb27558a892d0d7b2f9515f8a9c5ecfc42e2147f92ed9dbaf0e65cae8bf8d"
+        },
+        {
+          "bytes": 133,
+          "path": "babybox/build/docker-compose.yml",
+          "sha256": "c4feae3cd8a12f68a1da7c604a952399a45017a083af8cc11167b18c318be260"
+        },
+        {
+          "bytes": 242,
+          "path": "babybox/build/web/Dockerfile",
+          "sha256": "dfe8ad7f2c17de9f5b270a4001f259b96f773e2f3aba3906552be5e1e69cfbbe"
+        },
+        {
+          "bytes": 121,
+          "path": "babybox/build/web/calc.js",
+          "sha256": "9e89bddfccdde0edd5c4e3137a12b5120367468f0d5370f2847368436346e80b"
+        },
+        {
+          "bytes": 41,
+          "path": "babybox/build/web/flag.txt",
+          "sha256": "036d851bf87b9c413a8b8fb2b728770d439463f1dbe86235c7a1eb60347682e9"
+        },
+        {
+          "bytes": 1125,
+          "path": "babybox/build/web/index.html",
+          "sha256": "32c0a8d1cac0327c884570ef4ccd80bdccd6600b0786d795639b330d70f83610"
+        },
+        {
+          "bytes": 707,
+          "path": "babybox/build/web/index.js",
+          "sha256": "8727ba241ca037e0219ebd893884413e1dccbef8bd43c0b42825d09fb5e0cc56"
+        },
+        {
+          "bytes": 41415,
+          "path": "babybox/build/web/package-lock.json",
+          "sha256": "cb61e1e171c0c496874a028d57f79f3f603f0f9a605b0aa7ac1e3819f3e0b748"
+        },
+        {
+          "bytes": 160,
+          "path": "babybox/build/web/package.json",
+          "sha256": "68ec0a7e4d6a3a589773cbe0d1a036961053f27f07bf69adc2d3dc2949a598a5"
+        },
+        {
+          "bytes": 133,
+          "path": "babybox/files/babybox/docker-compose.yml",
+          "sha256": "c4feae3cd8a12f68a1da7c604a952399a45017a083af8cc11167b18c318be260"
+        },
+        {
+          "bytes": 242,
+          "path": "babybox/files/babybox/web/Dockerfile",
+          "sha256": "dfe8ad7f2c17de9f5b270a4001f259b96f773e2f3aba3906552be5e1e69cfbbe"
+        },
+        {
+          "bytes": 121,
+          "path": "babybox/files/babybox/web/calc.js",
+          "sha256": "9e89bddfccdde0edd5c4e3137a12b5120367468f0d5370f2847368436346e80b"
+        },
+        {
+          "bytes": 19,
+          "path": "babybox/files/babybox/web/flag.txt",
+          "sha256": "536f8258d769e50b84fc6cc8f8cc20998d3d549a48fef1a0578f552c55277a2c"
+        },
+        {
+          "bytes": 1125,
+          "path": "babybox/files/babybox/web/index.html",
+          "sha256": "32c0a8d1cac0327c884570ef4ccd80bdccd6600b0786d795639b330d70f83610"
+        },
+        {
+          "bytes": 707,
+          "path": "babybox/files/babybox/web/index.js",
+          "sha256": "8727ba241ca037e0219ebd893884413e1dccbef8bd43c0b42825d09fb5e0cc56"
+        },
+        {
+          "bytes": 41415,
+          "path": "babybox/files/babybox/web/package-lock.json",
+          "sha256": "cb61e1e171c0c496874a028d57f79f3f603f0f9a605b0aa7ac1e3819f3e0b748"
+        },
+        {
+          "bytes": 160,
+          "path": "babybox/files/babybox/web/package.json",
+          "sha256": "68ec0a7e4d6a3a589773cbe0d1a036961053f27f07bf69adc2d3dc2949a598a5"
+        },
+        {
+          "bytes": 262,
+          "path": "babybox/mkdist.sh",
+          "sha256": "63268abfa6c493fccc1c66d027a3a02b93e500789feec87e60b03acd0826dc5b"
+        },
+        {
+          "bytes": 140,
+          "path": "babybox/solver/Dockerfile",
+          "sha256": "6f7e4926810e3472dc77917dbdcab9369764398bb89b8b83b3c83d02cd51f085"
+        },
+        {
+          "bytes": 16,
+          "path": "babybox/solver/requirements.txt",
+          "sha256": "74e50a8c2d9a80bc2cc83ae1bd0012cff32dc7c3e2451260676c24a8e5ac7ae1"
+        },
+        {
+          "bytes": 621,
+          "path": "babybox/solver/solver.py",
+          "sha256": "cc59e2ea77f47860e346f929772083d200974ccb5e2fe6788df487a6c5b21a45"
+        },
+        {
+          "bytes": 329,
+          "path": "dark-note/README.md",
+          "sha256": "57217f2794f62b364433246b5296c1610e284da6f96b218724fd5be7a19d37b1"
+        },
+        {
+          "bytes": 24,
+          "path": "dark-note/build/bot/.dockerignore",
+          "sha256": "68ab4445dbda7bd2cc4558bd583b349c82c785407b7bf368751e41e4cfa3b6b2"
+        },
+        {
+          "bytes": 1194,
+          "path": "dark-note/build/bot/Dockerfile",
+          "sha256": "59adb0c26d9c493c40ded3bded29033121bf30cf80ddc96b430bc5c92bc4e204"
+        },
+        {
+          "bytes": 3557,
+          "path": "dark-note/build/bot/index.js",
+          "sha256": "1dbaf0ed6d2db37f2556615d4f4705252e3e79457851afc19030c10bfd7862f4"
+        },
+        {
+          "bytes": 52300,
+          "path": "dark-note/build/bot/package-lock.json",
+          "sha256": "7885847e328b255f614480877efe3b7ddf1f6252ddb68b9149ad984cac9981ba"
+        },
+        {
+          "bytes": 135,
+          "path": "dark-note/build/bot/package.json",
+          "sha256": "d110d658da658b09e5d9a7baf162e231da30858eef08214e2b39cb3f20e74b40"
+        },
+        {
+          "bytes": 552,
+          "path": "dark-note/build/docker-compose.local.yml",
+          "sha256": "2b52c7ab9d97f9d8c23f923aeb8bff8a8f9b84fc010f228344931dd34526fb46"
+        },
+        {
+          "bytes": 371,
+          "path": "dark-note/build/docker-compose.yml",
+          "sha256": "16b80ea63345f2757847c94a269c315320b8841824c8d6861d9739d86172cff3"
+        },
+        {
+          "bytes": 24,
+          "path": "dark-note/build/web/.dockerignore",
+          "sha256": "68ab4445dbda7bd2cc4558bd583b349c82c785407b7bf368751e41e4cfa3b6b2"
+        },
+        {
+          "bytes": 250,
+          "path": "dark-note/build/web/Dockerfile",
+          "sha256": "50af20dadf452e18c3a5da48071ca6be3c7f1e64e4f638300435468838fe7b7c"
+        },
+        {
+          "bytes": 1891,
+          "path": "dark-note/build/web/db.js",
+          "sha256": "30e269e3ae12d4c992e456bc44a4b180c1b887e4f70ce41ee0c1695a6cd4253b"
+        },
+        {
+          "bytes": 4834,
+          "path": "dark-note/build/web/index.js",
+          "sha256": "5eee0c7f6b8a56bd83c6503b93f3b7c933e0b946c50b2f5c604189f5004f68b3"
+        },
+        {
+          "bytes": 2780,
+          "path": "dark-note/build/web/instancer/instancer.js",
+          "sha256": "b4b22766074745b2cc8c1c5fe72c2451a1a5252af5db77a49ae8c72cd5270473"
+        },
+        {
+          "bytes": 69188,
+          "path": "dark-note/build/web/package-lock.json",
+          "sha256": "aef1a0645def0c1574435f3e4325c1552217eca9fe3a7a8493d629206e64ef36"
+        },
+        {
+          "bytes": 332,
+          "path": "dark-note/build/web/package.json",
+          "sha256": "6ba61318b09851840b2b76b0c19d41e8a3951b5e97f7406022b2fdced21a2378"
+        },
+        {
+          "bytes": 4254,
+          "path": "dark-note/build/web/public/index.html",
+          "sha256": "65c7ff0822a19040aa580faf6399c3b0b89b14b125179bf528115e74bd794f09"
+        },
+        {
+          "bytes": 738,
+          "path": "dark-note/build/web/public/login.html",
+          "sha256": "bf402e8a91ea8a282929dd70a1ebf104ee2b4da69aed5fc96d019dd2636483c8"
+        },
+        {
+          "bytes": 1335,
+          "path": "dark-note/build/web/public/signup.html",
+          "sha256": "9c328dfd8fb8fcd1d0755d277aab804e8069ecedfef9228e02f6bd36cde79696"
+        },
+        {
+          "bytes": 1541,
+          "path": "dark-note/build/web/report.js",
+          "sha256": "7c8445103c0dab55b7a4b04aee3acaf4c8f8480d9436d6e4a482a411621c0900"
+        },
+        {
+          "bytes": 24,
+          "path": "dark-note/files/dark-note/bot/.dockerignore",
+          "sha256": "68ab4445dbda7bd2cc4558bd583b349c82c785407b7bf368751e41e4cfa3b6b2"
+        },
+        {
+          "bytes": 1194,
+          "path": "dark-note/files/dark-note/bot/Dockerfile",
+          "sha256": "59adb0c26d9c493c40ded3bded29033121bf30cf80ddc96b430bc5c92bc4e204"
+        },
+        {
+          "bytes": 3557,
+          "path": "dark-note/files/dark-note/bot/index.js",
+          "sha256": "1dbaf0ed6d2db37f2556615d4f4705252e3e79457851afc19030c10bfd7862f4"
+        },
+        {
+          "bytes": 52300,
+          "path": "dark-note/files/dark-note/bot/package-lock.json",
+          "sha256": "7885847e328b255f614480877efe3b7ddf1f6252ddb68b9149ad984cac9981ba"
+        },
+        {
+          "bytes": 135,
+          "path": "dark-note/files/dark-note/bot/package.json",
+          "sha256": "d110d658da658b09e5d9a7baf162e231da30858eef08214e2b39cb3f20e74b40"
+        },
+        {
+          "bytes": 552,
+          "path": "dark-note/files/dark-note/docker-compose.yml",
+          "sha256": "2b52c7ab9d97f9d8c23f923aeb8bff8a8f9b84fc010f228344931dd34526fb46"
+        },
+        {
+          "bytes": 24,
+          "path": "dark-note/files/dark-note/web/.dockerignore",
+          "sha256": "68ab4445dbda7bd2cc4558bd583b349c82c785407b7bf368751e41e4cfa3b6b2"
+        },
+        {
+          "bytes": 250,
+          "path": "dark-note/files/dark-note/web/Dockerfile",
+          "sha256": "50af20dadf452e18c3a5da48071ca6be3c7f1e64e4f638300435468838fe7b7c"
+        },
+        {
+          "bytes": 1891,
+          "path": "dark-note/files/dark-note/web/db.js",
+          "sha256": "30e269e3ae12d4c992e456bc44a4b180c1b887e4f70ce41ee0c1695a6cd4253b"
+        },
+        {
+          "bytes": 4834,
+          "path": "dark-note/files/dark-note/web/index.js",
+          "sha256": "5eee0c7f6b8a56bd83c6503b93f3b7c933e0b946c50b2f5c604189f5004f68b3"
+        },
+        {
+          "bytes": 2780,
+          "path": "dark-note/files/dark-note/web/instancer/instancer.js",
+          "sha256": "b4b22766074745b2cc8c1c5fe72c2451a1a5252af5db77a49ae8c72cd5270473"
+        },
+        {
+          "bytes": 69188,
+          "path": "dark-note/files/dark-note/web/package-lock.json",
+          "sha256": "aef1a0645def0c1574435f3e4325c1552217eca9fe3a7a8493d629206e64ef36"
+        },
+        {
+          "bytes": 332,
+          "path": "dark-note/files/dark-note/web/package.json",
+          "sha256": "6ba61318b09851840b2b76b0c19d41e8a3951b5e97f7406022b2fdced21a2378"
+        },
+        {
+          "bytes": 4254,
+          "path": "dark-note/files/dark-note/web/public/index.html",
+          "sha256": "65c7ff0822a19040aa580faf6399c3b0b89b14b125179bf528115e74bd794f09"
+        },
+        {
+          "bytes": 738,
+          "path": "dark-note/files/dark-note/web/public/login.html",
+          "sha256": "bf402e8a91ea8a282929dd70a1ebf104ee2b4da69aed5fc96d019dd2636483c8"
+        },
+        {
+          "bytes": 1335,
+          "path": "dark-note/files/dark-note/web/public/signup.html",
+          "sha256": "9c328dfd8fb8fcd1d0755d277aab804e8069ecedfef9228e02f6bd36cde79696"
+        },
+        {
+          "bytes": 1541,
+          "path": "dark-note/files/dark-note/web/report.js",
+          "sha256": "7c8445103c0dab55b7a4b04aee3acaf4c8f8480d9436d6e4a482a411621c0900"
+        },
+        {
+          "bytes": 266,
+          "path": "dark-note/mkdist.sh",
+          "sha256": "498cf4c61b512735369e36c58dd148264898eb8b82703f135276094d657cf51d"
+        },
+        {
+          "bytes": 263,
+          "path": "dark-note/solver/Dockerfile",
+          "sha256": "096f33c905a22f6c1146666cbcd76b24fba2a38ea1deab57c6c783a4efd40ff9"
+        },
+        {
+          "bytes": 2020,
+          "path": "dark-note/solver/index.html",
+          "sha256": "85287917167f2102442c84ad9fbb7cff805543d473f28f10ef5a4935bc086ac2"
+        },
+        {
+          "bytes": 4177,
+          "path": "dark-note/solver/index.js",
+          "sha256": "2b7a9a96f2b64edb96e244f8cf203ec2fc370365559d9bb279152b602e4db1eb"
+        },
+        {
+          "bytes": 40916,
+          "path": "dark-note/solver/package-lock.json",
+          "sha256": "7a9252bb04fc905e6c9174a78bc7094ba11c7ce350b36125cbbf7181d2fbf4b5"
+        },
+        {
+          "bytes": 137,
+          "path": "dark-note/solver/package.json",
+          "sha256": "638706e709f139ce40b3fe0527cf973c371e557de86da25a12730526ff72aa00"
+        },
+        {
+          "bytes": 939,
+          "path": "dark-note/solver/pow.py",
+          "sha256": "1e2a722656313f468e46d80d0e85ed6cc13a4ca342532ab00a53c323fddb9e26"
+        },
+        {
+          "bytes": 18,
+          "path": "dark-note/solver/requirements.txt",
+          "sha256": "ecb20007238aaf54b23ef5e6edfedf505176f80f02f7bb3891032baf8f9a506b"
+        },
+        {
+          "bytes": 331,
+          "path": "easylfi2/README.md",
+          "sha256": "bc23b0fac79ccea12a7f8da10ec9fd5b4b07ff86c6b35fdc3d8633dccb5054c3"
+        },
+        {
+          "bytes": 99,
+          "path": "easylfi2/build/docker-compose.yml",
+          "sha256": "dd120b30bad04e5de4c01eee6010f012064a13fbc1177f6825a6cdf9dd1ce758"
+        },
+        {
+          "bytes": 250,
+          "path": "easylfi2/build/web/Dockerfile",
+          "sha256": "6b9662247e9750505786df220c781118fa5836ea7180d2072836af197b5456ed"
+        },
+        {
+          "bytes": 43,
+          "path": "easylfi2/build/web/flag.txt",
+          "sha256": "c4d41c94e60ec0f82b42bc27e3ceadbda2dfa96f7ebd8d5c3e718ec4da1725ec"
+        },
+        {
+          "bytes": 657,
+          "path": "easylfi2/build/web/index.js",
+          "sha256": "97fbcdf5b0eb4a3fac79267e4df267a13e05ecd21e2bfb9a39881844b33b1d80"
+        },
+        {
+          "bytes": 15676,
+          "path": "easylfi2/build/web/package-lock.json",
+          "sha256": "c5a4f1376085dd5ce39613467379f6715e9c43f174e5085275ecbb9cca3108b1"
+        },
+        {
+          "bytes": 129,
+          "path": "easylfi2/build/web/package.json",
+          "sha256": "d4aba9af22b7808a748eba54cedd0c7caa9cf3d2080d84d32f3c12f116c7c599"
+        },
+        {
+          "bytes": 256,
+          "path": "easylfi2/build/web/public/hello.html",
+          "sha256": "1872461e3b74b7779da8fea9991c7bd2cf7d1bcf54841152e15c605333ff0fa5"
+        },
+        {
+          "bytes": 277,
+          "path": "easylfi2/build/web/public/index.html",
+          "sha256": "260e39686471433cbc9dd45408c1074db0361f042ce3fa38aae09b910473d235"
+        },
+        {
+          "bytes": 99,
+          "path": "easylfi2/files/easylfi2/docker-compose.yml",
+          "sha256": "dd120b30bad04e5de4c01eee6010f012064a13fbc1177f6825a6cdf9dd1ce758"
+        },
+        {
+          "bytes": 250,
+          "path": "easylfi2/files/easylfi2/web/Dockerfile",
+          "sha256": "6b9662247e9750505786df220c781118fa5836ea7180d2072836af197b5456ed"
+        },
+        {
+          "bytes": 19,
+          "path": "easylfi2/files/easylfi2/web/flag.txt",
+          "sha256": "536f8258d769e50b84fc6cc8f8cc20998d3d549a48fef1a0578f552c55277a2c"
+        },
+        {
+          "bytes": 657,
+          "path": "easylfi2/files/easylfi2/web/index.js",
+          "sha256": "97fbcdf5b0eb4a3fac79267e4df267a13e05ecd21e2bfb9a39881844b33b1d80"
+        },
+        {
+          "bytes": 15676,
+          "path": "easylfi2/files/easylfi2/web/package-lock.json",
+          "sha256": "c5a4f1376085dd5ce39613467379f6715e9c43f174e5085275ecbb9cca3108b1"
+        },
+        {
+          "bytes": 129,
+          "path": "easylfi2/files/easylfi2/web/package.json",
+          "sha256": "d4aba9af22b7808a748eba54cedd0c7caa9cf3d2080d84d32f3c12f116c7c599"
+        },
+        {
+          "bytes": 256,
+          "path": "easylfi2/files/easylfi2/web/public/hello.html",
+          "sha256": "1872461e3b74b7779da8fea9991c7bd2cf7d1bcf54841152e15c605333ff0fa5"
+        },
+        {
+          "bytes": 277,
+          "path": "easylfi2/files/easylfi2/web/public/index.html",
+          "sha256": "260e39686471433cbc9dd45408c1074db0361f042ce3fa38aae09b910473d235"
+        },
+        {
+          "bytes": 263,
+          "path": "easylfi2/mkdist.sh",
+          "sha256": "3d92b2d1f2c910e38754c132588bb26c2cae8eca00ab377ea627fc834d875f38"
+        },
+        {
+          "bytes": 107,
+          "path": "easylfi2/solver/Dockerfile",
+          "sha256": "a7a9508e004f967914731510010811fe7e4c5e497a6cc31334fe9fe3695b33c1"
+        },
+        {
+          "bytes": 956,
+          "path": "easylfi2/solver/solver.py",
+          "sha256": "68aa05895fdd67a6bbe7b78a8e393c7740131baeddbaab2752eb5325c2be84d0"
+        },
+        {
+          "bytes": 242,
+          "path": "light-note/README.md",
+          "sha256": "10b9886512aaacc2dca23bb1818f863f83392c373f6e8c8b0ea746d8b1d7c858"
+        },
+        {
+          "bytes": 1457,
+          "path": "light-note/build/Dockerfile",
+          "sha256": "9ee62ab1d1aa2573d5d346cffafdbc6bc78272e1253e4b12d0d707178b1d8547"
+        },
+        {
+          "bytes": 2374,
+          "path": "light-note/build/bot/index.js",
+          "sha256": "1651f43ceb4b8dc626d5341bd118b19de0142720874ec8d4294ab3265f390a11"
+        },
+        {
+          "bytes": 52300,
+          "path": "light-note/build/bot/package-lock.json",
+          "sha256": "f1fea1e6e5021b7c401bad80cc65d17a09b0bed06b74d301da2b438660c9455b"
+        },
+        {
+          "bytes": 135,
+          "path": "light-note/build/bot/package.json",
+          "sha256": "d110d658da658b09e5d9a7baf162e231da30858eef08214e2b39cb3f20e74b40"
+        },
+        {
+          "bytes": 550,
+          "path": "light-note/build/docker-compose.local.yml",
+          "sha256": "ad7a7f685960375f6e3ed065f1e423b4bb4eae17df6b250a8bcdbce5332b1a63"
+        },
+        {
+          "bytes": 526,
+          "path": "light-note/build/docker-compose.yml",
+          "sha256": "fe990e75f8b3216153ce14ba868c183c27ff9d278662fa3094e59d47007c4477"
+        },
+        {
+          "bytes": 111,
+          "path": "light-note/build/entrypoint.sh",
+          "sha256": "8580cdda9e30b5ddf39e3ee5320f92e596a214ce1d710148ddf9f16a479c5da0"
+        },
+        {
+          "bytes": 602,
+          "path": "light-note/build/nginx/default.conf",
+          "sha256": "6b9d24b4f578b5e3a4fedb35f82c71abaa9eb46156d3432ca156f64bc31402fb"
+        },
+        {
+          "bytes": 937,
+          "path": "light-note/build/web/db.js",
+          "sha256": "987b65ca027122dc3027876cbd8216d9d7888190ddf982c6785914abecd0afa7"
+        },
+        {
+          "bytes": 3893,
+          "path": "light-note/build/web/index.html",
+          "sha256": "eff1e6f693aa6071c531ad16e17590865fe63839fd31f03d574647f573a04aee"
+        },
+        {
+          "bytes": 1823,
+          "path": "light-note/build/web/index.js",
+          "sha256": "a4b6d1dec69bf229839c3989681a095b6ee1c0b73033d2f3d01cf230506cd244"
+        },
+        {
+          "bytes": 43787,
+          "path": "light-note/build/web/package-lock.json",
+          "sha256": "3862a5d4c43af1bde634b59125a66d496c332639eed500649c0288a1b0240725"
+        },
+        {
+          "bytes": 236,
+          "path": "light-note/build/web/package.json",
+          "sha256": "4794be468b8cd0d66132389e30c38465ea8a332e12590e12371abdc7e5eb4f11"
+        },
+        {
+          "bytes": 1310,
+          "path": "light-note/build/web/report.js",
+          "sha256": "8aef915255c42466d7c8a33eeaff42795973b9db14718e8feaa215e9ca1df814"
+        },
+        {
+          "bytes": 1457,
+          "path": "light-note/files/light-note/Dockerfile",
+          "sha256": "9ee62ab1d1aa2573d5d346cffafdbc6bc78272e1253e4b12d0d707178b1d8547"
+        },
+        {
+          "bytes": 2374,
+          "path": "light-note/files/light-note/bot/index.js",
+          "sha256": "1651f43ceb4b8dc626d5341bd118b19de0142720874ec8d4294ab3265f390a11"
+        },
+        {
+          "bytes": 52300,
+          "path": "light-note/files/light-note/bot/package-lock.json",
+          "sha256": "f1fea1e6e5021b7c401bad80cc65d17a09b0bed06b74d301da2b438660c9455b"
+        },
+        {
+          "bytes": 135,
+          "path": "light-note/files/light-note/bot/package.json",
+          "sha256": "d110d658da658b09e5d9a7baf162e231da30858eef08214e2b39cb3f20e74b40"
+        },
+        {
+          "bytes": 550,
+          "path": "light-note/files/light-note/docker-compose.yml",
+          "sha256": "ad7a7f685960375f6e3ed065f1e423b4bb4eae17df6b250a8bcdbce5332b1a63"
+        },
+        {
+          "bytes": 111,
+          "path": "light-note/files/light-note/entrypoint.sh",
+          "sha256": "8580cdda9e30b5ddf39e3ee5320f92e596a214ce1d710148ddf9f16a479c5da0"
+        },
+        {
+          "bytes": 602,
+          "path": "light-note/files/light-note/nginx/default.conf",
+          "sha256": "6b9d24b4f578b5e3a4fedb35f82c71abaa9eb46156d3432ca156f64bc31402fb"
+        },
+        {
+          "bytes": 937,
+          "path": "light-note/files/light-note/web/db.js",
+          "sha256": "987b65ca027122dc3027876cbd8216d9d7888190ddf982c6785914abecd0afa7"
+        },
+        {
+          "bytes": 3893,
+          "path": "light-note/files/light-note/web/index.html",
+          "sha256": "eff1e6f693aa6071c531ad16e17590865fe63839fd31f03d574647f573a04aee"
+        },
+        {
+          "bytes": 1823,
+          "path": "light-note/files/light-note/web/index.js",
+          "sha256": "a4b6d1dec69bf229839c3989681a095b6ee1c0b73033d2f3d01cf230506cd244"
+        },
+        {
+          "bytes": 43787,
+          "path": "light-note/files/light-note/web/package-lock.json",
+          "sha256": "3862a5d4c43af1bde634b59125a66d496c332639eed500649c0288a1b0240725"
+        },
+        {
+          "bytes": 236,
+          "path": "light-note/files/light-note/web/package.json",
+          "sha256": "4794be468b8cd0d66132389e30c38465ea8a332e12590e12371abdc7e5eb4f11"
+        },
+        {
+          "bytes": 1310,
+          "path": "light-note/files/light-note/web/report.js",
+          "sha256": "8aef915255c42466d7c8a33eeaff42795973b9db14718e8feaa215e9ca1df814"
+        },
+        {
+          "bytes": 268,
+          "path": "light-note/mkdist.sh",
+          "sha256": "5091b916b20e3769038a5fd1ce54872df04295341e626945d58abfaa56038d20"
+        },
+        {
+          "bytes": 173,
+          "path": "light-note/solver/Dockerfile",
+          "sha256": "bfe1333c72959dedaa22f75d3d3be2d52b9097ca92694e47b5b0cd5fba6a13dd"
+        },
+        {
+          "bytes": 1254,
+          "path": "light-note/solver/index.html",
+          "sha256": "8dd8098df480a5cdd3a03503b319c2f492919ecf7ae8451a6b72a10596aed862"
+        },
+        {
+          "bytes": 1500,
+          "path": "light-note/solver/index.js",
+          "sha256": "f9f83e8bcfab1d477a97d2aa9c7925ac304fc150680c578c5306ffe09df269d3"
+        },
+        {
+          "bytes": 22360,
+          "path": "light-note/solver/package-lock.json",
+          "sha256": "c7a37a6c5d3ae4a7a51f9bf43251cf8e9115b6e1b89166121e9f976d83b0b885"
+        },
+        {
+          "bytes": 136,
+          "path": "light-note/solver/package.json",
+          "sha256": "42bb6b5a67fc0d251cd99fbb9c8a65a21f03cd9bcef7be702fa9a58237cf5cb3"
+        },
+        {
+          "bytes": 212,
+          "path": "maas/README.md",
+          "sha256": "43bb9fb89b8ffceebcbf65b2a9802a2e48cf7894b6c7f6c3734380d05428e1f8"
+        },
+        {
+          "bytes": 24,
+          "path": "maas/build/bot/.dockerignore",
+          "sha256": "68ab4445dbda7bd2cc4558bd583b349c82c785407b7bf368751e41e4cfa3b6b2"
+        },
+        {
+          "bytes": 1194,
+          "path": "maas/build/bot/Dockerfile",
+          "sha256": "59adb0c26d9c493c40ded3bded29033121bf30cf80ddc96b430bc5c92bc4e204"
+        },
+        {
+          "bytes": 2121,
+          "path": "maas/build/bot/index.js",
+          "sha256": "50cceb55783a875cecd750db34a3c2ab8f0e8079d89578738b0115e464919a55"
+        },
+        {
+          "bytes": 52300,
+          "path": "maas/build/bot/package-lock.json",
+          "sha256": "0de5291abf039a24d9ecb06753b060dd2d4cfddddd8388146c09255d33179101"
+        },
+        {
+          "bytes": 135,
+          "path": "maas/build/bot/package.json",
+          "sha256": "d110d658da658b09e5d9a7baf162e231da30858eef08214e2b39cb3f20e74b40"
+        },
+        {
+          "bytes": 368,
+          "path": "maas/build/docker-compose.yml",
+          "sha256": "3f27a1cde02caf0c23e10343a2e59ead18eb159a9c520db26e89c59c6eaf3dbf"
+        },
+        {
+          "bytes": 24,
+          "path": "maas/build/web/.dockerignore",
+          "sha256": "68ab4445dbda7bd2cc4558bd583b349c82c785407b7bf368751e41e4cfa3b6b2"
+        },
+        {
+          "bytes": 185,
+          "path": "maas/build/web/Dockerfile",
+          "sha256": "1f2d43a838bf62ed237acd55e1140b54edbeac6fe36e2b5e563f022ee6f1fde5"
+        },
+        {
+          "bytes": 2287,
+          "path": "maas/build/web/index.js",
+          "sha256": "6d05a6e16f13ae5b70b53f77d88e14caf98f311e01a01a4924f30cb0ae14b7cd"
+        },
+        {
+          "bytes": 42202,
+          "path": "maas/build/web/package-lock.json",
+          "sha256": "232a88e0dd72a0beaa8d8ac5984e003a67dbdae0bc3c51ec2abb3616f7a43aac"
+        },
+        {
+          "bytes": 168,
+          "path": "maas/build/web/package.json",
+          "sha256": "5114d7b1e8aff77b091cf4c543be214a302199bfa61f6df2fba4b88a2ecfecbb"
+        },
+        {
+          "bytes": 1229,
+          "path": "maas/build/web/report.js",
+          "sha256": "f6160245f4f408b90e2a07358590eec1bc6f8f4df2ce17aed62d73564d418e62"
+        },
+        {
+          "bytes": 2007,
+          "path": "maas/build/web/views/index.html",
+          "sha256": "576ece1720c74e69b3af50d185c931795a1f87f57d879a646d0bb388affe1a9f"
+        },
+        {
+          "bytes": 994,
+          "path": "maas/build/web/views/result.html",
+          "sha256": "2adbea48e9362f4f965fedba7656f7d86231a3d9336223a2920589d9866d1fb6"
+        },
+        {
+          "bytes": 24,
+          "path": "maas/files/maas/bot/.dockerignore",
+          "sha256": "68ab4445dbda7bd2cc4558bd583b349c82c785407b7bf368751e41e4cfa3b6b2"
+        },
+        {
+          "bytes": 1194,
+          "path": "maas/files/maas/bot/Dockerfile",
+          "sha256": "59adb0c26d9c493c40ded3bded29033121bf30cf80ddc96b430bc5c92bc4e204"
+        },
+        {
+          "bytes": 2121,
+          "path": "maas/files/maas/bot/index.js",
+          "sha256": "50cceb55783a875cecd750db34a3c2ab8f0e8079d89578738b0115e464919a55"
+        },
+        {
+          "bytes": 52300,
+          "path": "maas/files/maas/bot/package-lock.json",
+          "sha256": "0de5291abf039a24d9ecb06753b060dd2d4cfddddd8388146c09255d33179101"
+        },
+        {
+          "bytes": 135,
+          "path": "maas/files/maas/bot/package.json",
+          "sha256": "d110d658da658b09e5d9a7baf162e231da30858eef08214e2b39cb3f20e74b40"
+        },
+        {
+          "bytes": 330,
+          "path": "maas/files/maas/docker-compose.yml",
+          "sha256": "d233d0d8da528164b061f89ed064d4257bfca6c2334316606041aa9100f3a48e"
+        },
+        {
+          "bytes": 24,
+          "path": "maas/files/maas/web/.dockerignore",
+          "sha256": "68ab4445dbda7bd2cc4558bd583b349c82c785407b7bf368751e41e4cfa3b6b2"
+        },
+        {
+          "bytes": 185,
+          "path": "maas/files/maas/web/Dockerfile",
+          "sha256": "1f2d43a838bf62ed237acd55e1140b54edbeac6fe36e2b5e563f022ee6f1fde5"
+        },
+        {
+          "bytes": 2287,
+          "path": "maas/files/maas/web/index.js",
+          "sha256": "6d05a6e16f13ae5b70b53f77d88e14caf98f311e01a01a4924f30cb0ae14b7cd"
+        },
+        {
+          "bytes": 42202,
+          "path": "maas/files/maas/web/package-lock.json",
+          "sha256": "232a88e0dd72a0beaa8d8ac5984e003a67dbdae0bc3c51ec2abb3616f7a43aac"
+        },
+        {
+          "bytes": 168,
+          "path": "maas/files/maas/web/package.json",
+          "sha256": "5114d7b1e8aff77b091cf4c543be214a302199bfa61f6df2fba4b88a2ecfecbb"
+        },
+        {
+          "bytes": 1229,
+          "path": "maas/files/maas/web/report.js",
+          "sha256": "f6160245f4f408b90e2a07358590eec1bc6f8f4df2ce17aed62d73564d418e62"
+        },
+        {
+          "bytes": 2007,
+          "path": "maas/files/maas/web/views/index.html",
+          "sha256": "576ece1720c74e69b3af50d185c931795a1f87f57d879a646d0bb388affe1a9f"
+        },
+        {
+          "bytes": 994,
+          "path": "maas/files/maas/web/views/result.html",
+          "sha256": "2adbea48e9362f4f965fedba7656f7d86231a3d9336223a2920589d9866d1fb6"
+        },
+        {
+          "bytes": 262,
+          "path": "maas/mkdist.sh",
+          "sha256": "6149645ca969138d471b05f0710f1688f8b221ca961904798f36060c2353f5af"
+        },
+        {
+          "bytes": 137,
+          "path": "maas/solver/Dockerfile",
+          "sha256": "3f4e367be9a7e44241bc85f992959b84d069033a4e61a3f5663bf808f235b9f5"
+        },
+        {
+          "bytes": 1019,
+          "path": "maas/solver/index.html",
+          "sha256": "94a3b26beb46a0a8e5114496e3d17a1b6097d399154133e58609a6561824cefe"
+        },
+        {
+          "bytes": 1633,
+          "path": "maas/solver/index.js",
+          "sha256": "7971ae0f29a54029942246198e463c7a3928f13b15f3edf273b5957a4000c098"
+        },
+        {
+          "bytes": 40881,
+          "path": "maas/solver/package-lock.json",
+          "sha256": "8576a7726d60f2fb2180ba2ac24e07279518eb8e0e1728a2d5cd3e334056da1c"
+        },
+        {
+          "bytes": 137,
+          "path": "maas/solver/package.json",
+          "sha256": "638706e709f139ce40b3fe0527cf973c371e557de86da25a12730526ff72aa00"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/SECCON/SECCON2022_final_CTF/tree/1698664cc662f8c01fe079d2d02d87816f19d6c1/jeopardy/web",
+      "status": "pending_manual_review"
+    },
+    {
+      "category": "koh",
+      "challenge": "koh",
+      "commit": "1698664cc662f8c01fe079d2d02d87816f19d6c1",
+      "event": "SECCON 2022 Finals",
+      "exclusion_reason": null,
+      "files": [
+        {
+          "bytes": 0,
+          "path": ".gitkeep",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "bytes": 3026,
+          "path": "heptarchy/README.md",
+          "sha256": "8c5219ad329525f90d8d416cd7363075c28a202b0f6ff3fe8e61500134cdc8fb"
+        },
+        {
+          "bytes": 34,
+          "path": "heptarchy/challenge/.gitignore",
+          "sha256": "e407a505aa883731c939b5278e015ea4b477b3e25717ab3e000efb24546fbfc7"
+        },
+        {
+          "bytes": 206,
+          "path": "heptarchy/challenge/comparator/Dockerfile",
+          "sha256": "ac1445749a2cbbc4a5dc487cd8a84f20b35cab1c3fb29c91c7342e66582c562e"
+        },
+        {
+          "bytes": 87,
+          "path": "heptarchy/challenge/comparator/Makefile",
+          "sha256": "7838fbf766e21531a7678e4ed952f57eff994f2f73a521e4bcacb333080cd06c"
+        },
+        {
+          "bytes": 39,
+          "path": "heptarchy/challenge/comparator/build.sh",
+          "sha256": "477b407f41333d42367a00a01731831bfd2bf0026d2a5f6c223661dcfd0f7aeb"
+        },
+        {
+          "bytes": 909800,
+          "path": "heptarchy/challenge/comparator/compare",
+          "sha256": "f3ef3c8f0874e175efb3a4693d820084cb1d53878e6b451b39ee77b99a520c75"
+        },
+        {
+          "bytes": 1714,
+          "path": "heptarchy/challenge/comparator/compare.c",
+          "sha256": "ec407368cb0c365f85ce200268ae57840d9e376c1e1a3cf890e8a961bbf46619"
+        },
+        {
+          "bytes": 53760,
+          "path": "heptarchy/challenge/figure.odg",
+          "sha256": "5e0ac5768205cc28bbf1807518ba2efb3a1b8999eaa8cbb20bff9e17391d1de2"
+        },
+        {
+          "bytes": 200,
+          "path": "heptarchy/challenge/langs/c/compiler_c/Dockerfile",
+          "sha256": "f25fbf8c77e29937a79ad833aaadd43f02b04abbf9fe26887632b4874575663f"
+        },
+        {
+          "bytes": 865,
+          "path": "heptarchy/challenge/langs/c/compiler_c/compile.sh",
+          "sha256": "a17e5ea12574b531520969463285fbd03bbf8852c26dd610286f61935b981d43"
+        },
+        {
+          "bytes": 1135,
+          "path": "heptarchy/challenge/langs/c/compiler_c.zip",
+          "sha256": "2dcfacb9344b2beee510d9f01f2ab9ad356979def5b6ef7664428279255b416c"
+        },
+        {
+          "bytes": 1714,
+          "path": "heptarchy/challenge/langs/c/main.c",
+          "sha256": "ec407368cb0c365f85ce200268ae57840d9e376c1e1a3cf890e8a961bbf46619"
+        },
+        {
+          "bytes": 16576,
+          "path": "heptarchy/challenge/langs/c/mission-1",
+          "sha256": "623581a012b0e177fd3fff30307c940ebf39d6a08080af30702d0ce337ca44b7"
+        },
+        {
+          "bytes": 200,
+          "path": "heptarchy/challenge/langs/c++/compiler_cpp/Dockerfile",
+          "sha256": "27dbca047092f7eb89ff61d2b5766102406ad795f480c5b93918eb435fd0c7d4"
+        },
+        {
+          "bytes": 877,
+          "path": "heptarchy/challenge/langs/c++/compiler_cpp/compile.sh",
+          "sha256": "4ffe50dc48b9151f4432c4218888561f76c07d2e26dfb2145a44cfad526ce1cc"
+        },
+        {
+          "bytes": 1155,
+          "path": "heptarchy/challenge/langs/c++/compiler_cpp.zip",
+          "sha256": "814b34037f50de1a0d5129f56c7ada796c6fa3b9ed28415dcc468443f42df495"
+        },
+        {
+          "bytes": 1170,
+          "path": "heptarchy/challenge/langs/c++/main.cpp",
+          "sha256": "b3724667887342306d278c80da248eabfa7885b17ffc3d7818f367c07b6dce84"
+        },
+        {
+          "bytes": 31672,
+          "path": "heptarchy/challenge/langs/c++/mission-2",
+          "sha256": "46119c0f50f3d45b1234f48ba2091d0df718095c8156e908ffafa611c0317adc"
+        },
+        {
+          "bytes": 336,
+          "path": "heptarchy/challenge/langs/d/compiler_d/Dockerfile",
+          "sha256": "879f0efe8df0ff9c51bc0f7719dd13c2f7a1386fd97ef1eaf55d00285824f506"
+        },
+        {
+          "bytes": 1182,
+          "path": "heptarchy/challenge/langs/d/compiler_d/compile.sh",
+          "sha256": "fdcad0dc670a3db8437d12e5869befba978b51f0b143a355c51f30942b72d367"
+        },
+        {
+          "bytes": 1327,
+          "path": "heptarchy/challenge/langs/d/compiler_d.zip",
+          "sha256": "81704b8d52b75ac1cdd92db04884a6990df7da822c0a806feff2f66eeeb9d69f"
+        },
+        {
+          "bytes": 764,
+          "path": "heptarchy/challenge/langs/d/main.d",
+          "sha256": "92fbbb15eb8c97ff1ba2c7f054e3091152a1c5b2f3c02c0560e78746b6beb678"
+        },
+        {
+          "bytes": 1070312,
+          "path": "heptarchy/challenge/langs/d/mission-6",
+          "sha256": "a2db35f61fa250a1ce70dbef2fcd5dd71f6fa4774f25b2520ad194d0d05bcd02"
+        },
+        {
+          "bytes": 271372,
+          "path": "heptarchy/challenge/langs/d/mission-6.text",
+          "sha256": "03ec0a9add3c56638b404e229e0088ea11d3879795dc3e65a6f1999895868157"
+        },
+        {
+          "bytes": 394,
+          "path": "heptarchy/challenge/langs/go/compiler_go/Dockerfile",
+          "sha256": "4c60f0592c591f712aa4aaf58e665a08cf129fba29bd15b98fb6eed66527300a"
+        },
+        {
+          "bytes": 1188,
+          "path": "heptarchy/challenge/langs/go/compiler_go/compile.sh",
+          "sha256": "c94daa7a877dea2c7e86d25739eb7251d78828f88dbde23b3d929a01024a1a9c"
+        },
+        {
+          "bytes": 1354,
+          "path": "heptarchy/challenge/langs/go/compiler_go.zip",
+          "sha256": "80c3908a02ff8da3300ac8b5bb78d416cb791c51f3a4296ea215db98bab98a17"
+        },
+        {
+          "bytes": 851,
+          "path": "heptarchy/challenge/langs/go/main.go",
+          "sha256": "419d5241b81c4d2c085bdabd5919ffa55457b83c33bb38e949411b9268db32b8"
+        },
+        {
+          "bytes": 1969814,
+          "path": "heptarchy/challenge/langs/go/mission-4",
+          "sha256": "2fb24300bede59d18b0ca15e813fbf7a99fb962ea9c0fbb0e4ffb60965f8371c"
+        },
+        {
+          "bytes": 579276,
+          "path": "heptarchy/challenge/langs/go/mission-4.text",
+          "sha256": "8f9dba0696751e488e47655cf6e22ec8b4e1aff369311d9f84a25c6afeae524d"
+        },
+        {
+          "bytes": 9,
+          "path": "heptarchy/challenge/langs/python/compiler_python/.gitignore",
+          "sha256": "3195bc0ae1e103369400af4b1daba669d136e8191f6a41f8b0dbb9ccd7f84c2d"
+        },
+        {
+          "bytes": 522,
+          "path": "heptarchy/challenge/langs/python/compiler_python/Dockerfile",
+          "sha256": "8051905063b18efb502a50f09b8f9002730af6246bba68be263237d788ec7998"
+        },
+        {
+          "bytes": 972,
+          "path": "heptarchy/challenge/langs/python/compiler_python/compile.sh",
+          "sha256": "4b960eb3ec914faac389b6f506743ba596bea12955a58a4c3089df3f7179a310"
+        },
+        {
+          "bytes": 58324803,
+          "path": "heptarchy/challenge/langs/python/compiler_python.zip",
+          "sha256": "dd936e6bb328bf639696c8631ff6fb394209f345dcf45e5797342034afeb4705"
+        },
+        {
+          "bytes": 1010,
+          "path": "heptarchy/challenge/langs/python/main.py",
+          "sha256": "78a32d071c6640ff313f7c6857863fd6e0fb31e9627f971d4d7f04d932f68aa2"
+        },
+        {
+          "bytes": 315,
+          "path": "heptarchy/challenge/langs/rust/compiler_rust/Dockerfile",
+          "sha256": "80d1ff58e0c565365f7792e084f1d280cf15ac0f9aadba8b4ac15652e6a82660"
+        },
+        {
+          "bytes": 1194,
+          "path": "heptarchy/challenge/langs/rust/compiler_rust/compile.sh",
+          "sha256": "60d35d9c846fb5644a9bb9a32b507558478c0f253d2b0b97a2212bbb0572bbde"
+        },
+        {
+          "bytes": 1339,
+          "path": "heptarchy/challenge/langs/rust/compiler_rust.zip",
+          "sha256": "30897b744f55a4a586ec13065ac64d91ee54c66de2ea004288796e12e97571e6"
+        },
+        {
+          "bytes": 678,
+          "path": "heptarchy/challenge/langs/rust/main.rs",
+          "sha256": "7ea8645a9cef846ed385323dc85687a1dbd5d715d80d8b30143d20a0126f4a77"
+        },
+        {
+          "bytes": 4225368,
+          "path": "heptarchy/challenge/langs/rust/mission-3",
+          "sha256": "8ba3288526126fedabc87aea00d5b399ba17c248d806ad8eca5c6db576d441a8"
+        },
+        {
+          "bytes": 249383,
+          "path": "heptarchy/challenge/langs/rust/mission-3.text",
+          "sha256": "34e83733bd3febb93b9901eacaf3e1f97ae391b7801d9801bdea6b36ef5fa55e"
+        },
+        {
+          "bytes": 429,
+          "path": "heptarchy/challenge/langs/webassembly/compiler_wasm/Dockerfile",
+          "sha256": "62dc2e89ec2375a1dcccfbadebee7b3fab39159becf3b27c0c4c9418f99af904"
+        },
+        {
+          "bytes": 943,
+          "path": "heptarchy/challenge/langs/webassembly/compiler_wasm/compile.sh",
+          "sha256": "c157f5a1f9b43f1b1a7e7a305d6b815044a068843abea8a2a936bca2ea4c7cce"
+        },
+        {
+          "bytes": 1280,
+          "path": "heptarchy/challenge/langs/webassembly/compiler_wasm.zip",
+          "sha256": "c8248966a58a7411e2cb38995fe7ddd797643fd3b035ac56f98c659394cc9ab6"
+        },
+        {
+          "bytes": 39712,
+          "path": "heptarchy/challenge/langs/webassembly/mission-7.js",
+          "sha256": "446854a3aaddc3ad625cc1bd314b78901dc0548a0fb1f165ab84574d6ba60f3f"
+        },
+        {
+          "bytes": 15443,
+          "path": "heptarchy/challenge/langs/webassembly/mission-7.wasm",
+          "sha256": "7b28507b79368971e9e2a67bc63fb65beeb16ee6f0bb27cf1154055378117a20"
+        },
+        {
+          "bytes": 19767,
+          "path": "heptarchy/challenge/langs/webassembly/mission-7.zip",
+          "sha256": "14f37adcb64126e1c2bbccaf9b8184b20ff3dfb5144ee9910755c29bd3da567b"
+        },
+        {
+          "bytes": 1044,
+          "path": "heptarchy/challenge/langs/webassembly/wmain.c",
+          "sha256": "1f1a82cbf935ae057bfbf7b555615606fdd7750d94498f03a14f536e14384156"
+        },
+        {
+          "bytes": 7383,
+          "path": "heptarchy/challenge/server/app.py",
+          "sha256": "3e87597053a610b86e845189e164b5a67836c9dbf1600ac07fcb76eb798aa27b"
+        },
+        {
+          "bytes": 1587,
+          "path": "heptarchy/challenge/server/config.json",
+          "sha256": "15bb6fef96438018c095020ac1a9509fdc08d0be602c8f7a137d2a61463e3dbd"
+        },
+        {
+          "bytes": 4216,
+          "path": "heptarchy/challenge/server/gen_teams.py",
+          "sha256": "92f6df9835aee1158c4057ab9dd60a16681aee208c57d67fca740a9cc572a2c8"
+        },
+        {
+          "bytes": 2357,
+          "path": "heptarchy/challenge/server/static/img/c.svg",
+          "sha256": "a3b8ffbb565fd90ee2c12e519e188cb849887bbae67f9ce49f1f0e45aa2484b4"
+        },
+        {
+          "bytes": 1919,
+          "path": "heptarchy/challenge/server/static/img/cpp.svg",
+          "sha256": "7a16311bf5df3b6ec7e4f307d8a2ea339fbf8f03b68590a5372e4de72fc587c6"
+        },
+        {
+          "bytes": 6784,
+          "path": "heptarchy/challenge/server/static/img/d.png",
+          "sha256": "1634348e26d6473ff1fa37a664441dcb1aaeaaf3fecb83a20d2612d1bd39d261"
+        },
+        {
+          "bytes": 70571,
+          "path": "heptarchy/challenge/server/static/img/fig.png",
+          "sha256": "a79a3b996f975092e1c38c9f252a72368b0ff49a9c46c059e8821d0753b0d612"
+        },
+        {
+          "bytes": 11687,
+          "path": "heptarchy/challenge/server/static/img/go.png",
+          "sha256": "9dff764d33a596822021108baa15b87bffe049fd2ff9b169d8888900b37f04f8"
+        },
+        {
+          "bytes": 6899,
+          "path": "heptarchy/challenge/server/static/img/python.png",
+          "sha256": "00b5a26b4fe24fb12436c2ee37bb87902171240d6eea74f6b5752bcaac437a60"
+        },
+        {
+          "bytes": 3252,
+          "path": "heptarchy/challenge/server/static/img/rust.svg",
+          "sha256": "ea9dec17616adda14a96c76ed5602df971eeb116cd03591b46dee5260c3b5a25"
+        },
+        {
+          "bytes": 709,
+          "path": "heptarchy/challenge/server/static/img/wasm.svg",
+          "sha256": "201ef6570d2967b299cf5ab8f946f061d5db523c106bc90f72729693b798f431"
+        },
+        {
+          "bytes": 7184,
+          "path": "heptarchy/challenge/server/templates/dashboard.html",
+          "sha256": "dca534cd421d8750d122a9ad392b1d2dfcaf4a33f194bb3cd9b80424fc7e6e16"
+        },
+        {
+          "bytes": 2429,
+          "path": "heptarchy/challenge/server/templates/index.html",
+          "sha256": "b737e7a61dc5f0a657b0238d7cd99027f102ca4f42684a6658ff194f48ca4b07"
+        },
+        {
+          "bytes": 3901,
+          "path": "heptarchy/challenge/server/templates/log.html",
+          "sha256": "bcc6342ab2752af4a084a00a36774bce671d13e344e7655a468c3acdd06de39a"
+        },
+        {
+          "bytes": 5221,
+          "path": "heptarchy/challenge/server/templates/rule.html",
+          "sha256": "138ed6a6ff021942cb408c5363e99244483bea1f52fc5f2508857efeac2cc391"
+        },
+        {
+          "bytes": 212,
+          "path": "heptarchy/challenge/server/uwsgi.ini",
+          "sha256": "3b5cc3ceb833400f27158f815ae0a1befc8e2f391b08ddfa31e2a229d6a76ca8"
+        },
+        {
+          "bytes": 11768624,
+          "path": "heptarchy/challenge/worker/kothcli-client",
+          "sha256": "d29a8211c6e701b465bbe9710fb8a2470fb17f61cc48f96a1b6feb57017b0c8b"
+        },
+        {
+          "bytes": 9638,
+          "path": "heptarchy/challenge/worker/worker.py",
+          "sha256": "0e08a2617df7f95a65c2ba2eb6915fac5c36605903fdbb940562c27612f22053"
+        },
+        {
+          "bytes": 75,
+          "path": "heptarchy/challenge/worker/worker.sh",
+          "sha256": "323a77c540cc671dafbc1376014db3bb36e46fafe5d948502962322821c84ba3"
+        },
+        {
+          "bytes": 206,
+          "path": "heptarchy/distfiles/scoring_system/Dockerfile",
+          "sha256": "ac1445749a2cbbc4a5dc487cd8a84f20b35cab1c3fb29c91c7342e66582c562e"
+        },
+        {
+          "bytes": 39,
+          "path": "heptarchy/distfiles/scoring_system/build_docker.sh",
+          "sha256": "477b407f41333d42367a00a01731831bfd2bf0026d2a5f6c223661dcfd0f7aeb"
+        },
+        {
+          "bytes": 909800,
+          "path": "heptarchy/distfiles/scoring_system/compare",
+          "sha256": "f3ef3c8f0874e175efb3a4693d820084cb1d53878e6b451b39ee77b99a520c75"
+        },
+        {
+          "bytes": 2444,
+          "path": "seclang/README.md",
+          "sha256": "692b8ebb57485cf08af69f8298eee3c12ea34a44a49f34aba73d160a4ca3bc8d"
+        },
+        {
+          "bytes": 106268,
+          "path": "seclang/challenge/docs/figure.odg",
+          "sha256": "0fc4528064efd1a5f035728db868684011549891e0047822d87c43f95cda6861"
+        },
+        {
+          "bytes": 47894,
+          "path": "seclang/challenge/docs/language.odt",
+          "sha256": "3ca8bf367a1039562e81127ae40cadf8a1b23125b981046e0703b9a0c2bea641"
+        },
+        {
+          "bytes": 395,
+          "path": "seclang/challenge/engine/01_build_docker.sh",
+          "sha256": "d8013e73ed40ead55b7c7cf11eed1cf8f5feb6c3b1b0e7afc88db19bad5f9abf"
+        },
+        {
+          "bytes": 1202,
+          "path": "seclang/challenge/engine/02_compile.sh",
+          "sha256": "c23e80a4ad752ebc7cc0dc502642e7fb45ccfc29a90f8f76768e89974a8c794b"
+        },
+        {
+          "bytes": 183,
+          "path": "seclang/challenge/engine/03_execute.sh",
+          "sha256": "229190ba0e5eba5da2674bb49ba586af287a9ba3a0daca6d817f1af81a68c1bc"
+        },
+        {
+          "bytes": 261,
+          "path": "seclang/challenge/engine/assembler/Dockerfile",
+          "sha256": "b1e51643aac4fa128f5464878d42bf1880e105b49fed888c919e426dfe66ed38"
+        },
+        {
+          "bytes": 139,
+          "path": "seclang/challenge/engine/assembler/assemble",
+          "sha256": "3a3c16b052ec730cd001c2eebe66b95455a0abb97f494c9d80c16e32b10ae644"
+        },
+        {
+          "bytes": 533,
+          "path": "seclang/challenge/engine/compiler/Dockerfile",
+          "sha256": "4b62ba56e72b42b79238abd96fce7ec973f6f8ff22bcbfa8087892a707eb8c96"
+        },
+        {
+          "bytes": 55,
+          "path": "seclang/challenge/engine/compiler/container/builtin/exit.asm",
+          "sha256": "f207aa331e5a41d53d25a1f4a59da0a9984423710098687b2064366dd2341d30"
+        },
+        {
+          "bytes": 2954,
+          "path": "seclang/challenge/engine/compiler/container/builtin/print.asm",
+          "sha256": "656ade44ebd6cd213db49809cc67bfeab63862c2be4125ed48984e17bffccfbb"
+        },
+        {
+          "bytes": 1032,
+          "path": "seclang/challenge/engine/compiler/container/builtin/scan.asm",
+          "sha256": "9728a737a19acb4cac3af35dcd2d8a5402e20de4dd5f9f384be385bca6bf6045"
+        },
+        {
+          "bytes": 93,
+          "path": "seclang/challenge/engine/compiler/container/entry.sh",
+          "sha256": "368ae0c898f97ce141788c12338d87542c653f07e355c80b7b053a47aca86cfa"
+        },
+        {
+          "bytes": 108,
+          "path": "seclang/challenge/engine/compiler/container/init.sh",
+          "sha256": "e0365aebb769c08058c13d6857df7ae7e574527cae34dad61f8ab8362d028ef9"
+        },
+        {
+          "bytes": 2677,
+          "path": "seclang/challenge/engine/compiler/container/seclang.lark",
+          "sha256": "310793daaa25d2c5345dad1b184590b5b21468e07fca4b8a203037a9d1987bd4"
+        },
+        {
+          "bytes": 24479,
+          "path": "seclang/challenge/engine/compiler/container/seclang.py",
+          "sha256": "4d3b6cad7717351e57aa159ea830a40080434ca3d33d1aa1590dbb601dbee8e3"
+        },
+        {
+          "bytes": 212,
+          "path": "seclang/challenge/engine/executor/Dockerfile",
+          "sha256": "9e10f0c039a6570aea2a5a93e83b6c24c78c2c7d8af9fd082e2d4d6b9bdbd9e6"
+        },
+        {
+          "bytes": 16896,
+          "path": "seclang/challenge/engine/executor/sandbox",
+          "sha256": "ee6cda2f789abfcfeb4a9d8df7985d307b05d3cf005c1fbbed5b07c509e0996f"
+        },
+        {
+          "bytes": 933,
+          "path": "seclang/challenge/engine/executor/sandbox.c",
+          "sha256": "59b62db80556bbe9a2f13ef6fc0f3118f54afbf82017b72ff13f79b70b145c57"
+        },
+        {
+          "bytes": 314,
+          "path": "seclang/challenge/engine/interpreter/Dockerfile",
+          "sha256": "bff736270270c9dc0c00e0c4ae01fe040d8c4d20b16b6381091645d4bb1b5c76"
+        },
+        {
+          "bytes": 248,
+          "path": "seclang/challenge/engine/interpreter/container/Dockerfile",
+          "sha256": "37aff3dbeca7c3bbb2426f3a8dc9a80ed41a7b0de2a1d266cc3977b3c2c6fd84"
+        },
+        {
+          "bytes": 64,
+          "path": "seclang/challenge/engine/interpreter/container/interpreter/__init__.py",
+          "sha256": "ff2a970dc7ec4a928c7b53d2dc340c24ec8b72b2671811d26dbe3861a06a3c26"
+        },
+        {
+          "bytes": 2614,
+          "path": "seclang/challenge/engine/interpreter/container/interpreter/scope.py",
+          "sha256": "aa2610e7ed0498fc6019345c56dacee09388805a2e7f10377a6ddc4e9ab1a458"
+        },
+        {
+          "bytes": 236,
+          "path": "seclang/challenge/engine/interpreter/container/interpreter/types/__init__.py",
+          "sha256": "eadf8efb096f396d5afce04fddf42a272045beaad88bbaa25562e0a7b1dfb279"
+        },
+        {
+          "bytes": 3922,
+          "path": "seclang/challenge/engine/interpreter/container/interpreter/types/array.py",
+          "sha256": "39dca4c3ce2166e2aace02588b657c232b3e8b25cf1397a66a38d7c7a025a41a"
+        },
+        {
+          "bytes": 2782,
+          "path": "seclang/challenge/engine/interpreter/container/interpreter/types/boolean.py",
+          "sha256": "3ad9357ecebcee46363f3f5a66212ceeb68f2592d13d5d3916991aac50ae1f6e"
+        },
+        {
+          "bytes": 4777,
+          "path": "seclang/challenge/engine/interpreter/container/interpreter/types/byte.py",
+          "sha256": "6d6a7ca4c7b5b90fb0f4ee4c1bde7c999aadaa7049e45d35b2f10a92b9e5b62b"
+        },
+        {
+          "bytes": 3905,
+          "path": "seclang/challenge/engine/interpreter/container/interpreter/types/function.py",
+          "sha256": "d8c691f4b8da33e90a240970dc81f839e4879b8293819f631924384ff4482249"
+        },
+        {
+          "bytes": 5313,
+          "path": "seclang/challenge/engine/interpreter/container/interpreter/types/signed.py",
+          "sha256": "aac04c097cd8a0ebf42760ff51f53889a60fa1b2d1f6548af71e8ca7f76f0204"
+        },
+        {
+          "bytes": 4926,
+          "path": "seclang/challenge/engine/interpreter/container/interpreter/types/unsigned.py",
+          "sha256": "672304be99126ed6cd9f99ad62cdb069b3902d92d1a2c081c220c67a4e54cd13"
+        },
+        {
+          "bytes": 12,
+          "path": "seclang/challenge/engine/interpreter/container/requirements.txt",
+          "sha256": "6da78561a822ec93d3dafbd63f582d0b776db5daa616120b4fc54f12e5b581fb"
+        },
+        {
+          "bytes": 2677,
+          "path": "seclang/challenge/engine/interpreter/container/seclang.lark",
+          "sha256": "310793daaa25d2c5345dad1b184590b5b21468e07fca4b8a203037a9d1987bd4"
+        },
+        {
+          "bytes": 15097,
+          "path": "seclang/challenge/engine/interpreter/container/seclang.py",
+          "sha256": "e0b1691044b1c6fc51f6e6f755110c49e4ce36582fe23fe2ec2f1ae46d1263e3"
+        },
+        {
+          "bytes": 109,
+          "path": "seclang/challenge/engine/interpreter/docker-compose.yml",
+          "sha256": "4d90611ff19636c805c6415be3c6e222569999d59f1df822199254ed51837f14"
+        },
+        {
+          "bytes": 459,
+          "path": "seclang/challenge/engine/interpreter/interpreter.py",
+          "sha256": "3e801c88171779ebf1811754f454fe8ef266454958b69dd6bd59da18b9daded5"
+        },
+        {
+          "bytes": 384,
+          "path": "seclang/challenge/engine/sample/advanced/01_fizzbuzz.sec",
+          "sha256": "b2f0cd618d8d75ceb633f8b103fc2d69480d1f096f16ce6ca174da27c3b6b469"
+        },
+        {
+          "bytes": 311,
+          "path": "seclang/challenge/engine/sample/advanced/02_fib.sec",
+          "sha256": "c8aaf6af37987c57044217ccefd21a905fe072d914cd787155a54fded6ea3ec7"
+        },
+        {
+          "bytes": 436,
+          "path": "seclang/challenge/engine/sample/advanced/03_nsieve.sec",
+          "sha256": "faa7bfb3740e30dc26784aa38e1c70875206e89eab86610a25476b11566f277e"
+        },
+        {
+          "bytes": 292,
+          "path": "seclang/challenge/engine/sample/advanced/04_gcd.sec",
+          "sha256": "0742ca68cb0e55887b133cb3bfece3054cb80d5d3bae034f0b780d63ee042cb3"
+        },
+        {
+          "bytes": 1259,
+          "path": "seclang/challenge/engine/sample/advanced/05_rc4.sec",
+          "sha256": "1299c38b7aea6a63df20b277495d608c5d1c4a8bc23a6f58080a69784e32d656"
+        },
+        {
+          "bytes": 1320,
+          "path": "seclang/challenge/engine/sample/advanced/06_crc.sec",
+          "sha256": "07d60cb4df8255cdae5debb70473d5cfb2b3ec0291bce55e433ee9bd4ef8ddb3"
+        },
+        {
+          "bytes": 61,
+          "path": "seclang/challenge/engine/sample/basic/01_print.sec",
+          "sha256": "3ca2491294477c716ecff533e70a245e2894b9804f45c4b5cf3cb264bf0a4869"
+        },
+        {
+          "bytes": 69,
+          "path": "seclang/challenge/engine/sample/basic/02_echo.sec",
+          "sha256": "7158f90d3474c1f7192087208df9fcdffdb884338d893579a8fc55c7e0e20b6f"
+        },
+        {
+          "bytes": 46,
+          "path": "seclang/challenge/engine/sample/basic/03_arith.sec",
+          "sha256": "fa1906fd4ade45185c39f8868d29c795f8953d3c7010d3a9f8a14a630d14c4a4"
+        },
+        {
+          "bytes": 105,
+          "path": "seclang/challenge/engine/sample/basic/04_logic.sec",
+          "sha256": "603bdcafdfb2d6ea35c8c46d80ea5459beb431cedbdde8823249ba17da78b97c"
+        },
+        {
+          "bytes": 128,
+          "path": "seclang/challenge/engine/sample/basic/05_func.sec",
+          "sha256": "35c23f73d7acca8e96b231c3ded763f123510bb15467ed53ee6bf872a875cfae"
+        },
+        {
+          "bytes": 325,
+          "path": "seclang/challenge/engine/sample/basic/06_if.sec",
+          "sha256": "facc8d1e55127512b538c41bbcf2f2662307b774417e1538bfd13441fff97950"
+        },
+        {
+          "bytes": 243,
+          "path": "seclang/challenge/engine/sample/basic/07_while.sec",
+          "sha256": "20e4718520d4de08c4d9ea874ba158f9e52c3f807f605a335c39e609f7559a20"
+        },
+        {
+          "bytes": 288,
+          "path": "seclang/challenge/engine/sample/basic/08_recfunc.sec",
+          "sha256": "559762d2ce109d3e310914305e66f1484ba33f5b8c71bddebbdd862f1ba29930"
+        },
+        {
+          "bytes": 326,
+          "path": "seclang/challenge/engine/sample/basic/09_array.sec",
+          "sha256": "d666248902dc3e970b05805e4788de0006fe6bf111754883b9ffe999bfd2f6f5"
+        },
+        {
+          "bytes": 478,
+          "path": "seclang/challenge/engine/sample/basic/10_cast.sec",
+          "sha256": "f5a2fe0e688be80a1a1a53dd345163fdf004da6a260c6a8a1b6fe1738326797b"
+        },
+        {
+          "bytes": 543,
+          "path": "seclang/challenge/engine/sample/basic/11_args.sec",
+          "sha256": "d9448ae8866e75d57d22b0f03f6b6eef5dae387f8884a5f89803e7b3566794b0"
+        },
+        {
+          "bytes": 259,
+          "path": "seclang/challenge/engine/sample/basic/12_func.sec",
+          "sha256": "8b8c6b1f0d8e6932a68c98c16fe89bc20dd4199f016990b70c9338101cce911d"
+        },
+        {
+          "bytes": 16162,
+          "path": "seclang/challenge/server/app.py",
+          "sha256": "3d757445bd68874972b2109dad0efae79c7ef63c71dd9e10e0617f470e6c1942"
+        },
+        {
+          "bytes": 102,
+          "path": "seclang/challenge/server/config.json",
+          "sha256": "28e4d773b66e059bc9be9c21051b68b30fc636d8772c1201032405fcbe79f05d"
+        },
+        {
+          "bytes": 533,
+          "path": "seclang/challenge/server/container/Dockerfile",
+          "sha256": "4b62ba56e72b42b79238abd96fce7ec973f6f8ff22bcbfa8087892a707eb8c96"
+        },
+        {
+          "bytes": 7659,
+          "path": "seclang/challenge/server/default_container.zip",
+          "sha256": "81046d915b097dc46cb899ecb301ef8ea7ddafce53de8aaf43c56b70c2d0fe2e"
+        },
+        {
+          "bytes": 514,
+          "path": "seclang/challenge/server/gen_report.py",
+          "sha256": "4405ed8edabeb988d850e67d90f2b2cf18726397a480b89afa98d371d150ff8c"
+        },
+        {
+          "bytes": 4966,
+          "path": "seclang/challenge/server/gen_testcase.py",
+          "sha256": "ca4dbc3019862a54f4ea10c0032daf6fa7d6986e593fb04d0d8d85e76d5504ef"
+        },
+        {
+          "bytes": 599,
+          "path": "seclang/challenge/server/prepare_container.py",
+          "sha256": "43743f0d19ac23f238fc8b03febd7214a7e156f4f400699980f4d162f4240767"
+        },
+        {
+          "bytes": 47956,
+          "path": "seclang/challenge/server/static/img/fig1.png",
+          "sha256": "8accefc955456d3e70aa0fe4abd6392c1085d401ca523fd43fe6414aa319cd3f"
+        },
+        {
+          "bytes": 62614,
+          "path": "seclang/challenge/server/static/img/fig2.png",
+          "sha256": "4b8f5f1d28bb9665e1921f7e28eca897b97bc17c1e6f7689a0ec3a33c3262933"
+        },
+        {
+          "bytes": 10811,
+          "path": "seclang/challenge/server/templates/dashboard.html",
+          "sha256": "a60a70284c9e3f4ceae63eeec5756cba252e1f390eaecd5a7037fd9d3dffcc8e"
+        },
+        {
+          "bytes": 3117,
+          "path": "seclang/challenge/server/templates/index.html",
+          "sha256": "76d4407bbf1625227b1cf373b7e48f8e83bd1de2741d5ae33b7d949a7e6e7bbb"
+        },
+        {
+          "bytes": 11855,
+          "path": "seclang/challenge/server/templates/playground.html",
+          "sha256": "c8f5aec7f8b5556b2cbbb09c7982db07786340179df8b23ffa85a1e34f859588"
+        },
+        {
+          "bytes": 4506,
+          "path": "seclang/challenge/server/templates/result_compile.html",
+          "sha256": "25cad56dc1701befbd4cae7b3c984cbe5b1a01f82280a62f3b8648a1d9439239"
+        },
+        {
+          "bytes": 3581,
+          "path": "seclang/challenge/server/templates/result_execute.html",
+          "sha256": "77e29c5fb73520d2e549676a96c3c349cfaa26897559d77079b25f54b244cd4c"
+        },
+        {
+          "bytes": 9441,
+          "path": "seclang/challenge/server/templates/rule.html",
+          "sha256": "799b3352a2c98b3becf22433ef98ac72cfac787f43f995e8765da79ed73e5a6e"
+        },
+        {
+          "bytes": 7049,
+          "path": "seclang/challenge/server/templates/testcase.html",
+          "sha256": "8e219a434ee2428dafdfa0925e121366a938cdf044f6f5ba3b889f6b5f4dac15"
+        },
+        {
+          "bytes": 208,
+          "path": "seclang/challenge/server/uwsgi.ini",
+          "sha256": "4d159b34c79694a4a993e6370341b0eb133fd9949f9b4868f116e66c2c756c98"
+        },
+        {
+          "bytes": 7496,
+          "path": "seclang/challenge/simulator/01/a.zip",
+          "sha256": "8f8e796000aee10d4095c5e82b16b68f5abc2c13c6af17a373e74e051e5ed55a"
+        },
+        {
+          "bytes": 7496,
+          "path": "seclang/challenge/simulator/01/b.zip",
+          "sha256": "d54a58fdaa686b5906a66d91649723f8f39ac8baf840d73c58d3cd2debf0b5dc"
+        },
+        {
+          "bytes": 55,
+          "path": "seclang/challenge/simulator/01/dir/builtin/exit.asm",
+          "sha256": "f207aa331e5a41d53d25a1f4a59da0a9984423710098687b2064366dd2341d30"
+        },
+        {
+          "bytes": 2954,
+          "path": "seclang/challenge/simulator/01/dir/builtin/print.asm",
+          "sha256": "656ade44ebd6cd213db49809cc67bfeab63862c2be4125ed48984e17bffccfbb"
+        },
+        {
+          "bytes": 1032,
+          "path": "seclang/challenge/simulator/01/dir/builtin/scan.asm",
+          "sha256": "9728a737a19acb4cac3af35dcd2d8a5402e20de4dd5f9f384be385bca6bf6045"
+        },
+        {
+          "bytes": 93,
+          "path": "seclang/challenge/simulator/01/dir/entry.sh",
+          "sha256": "368ae0c898f97ce141788c12338d87542c653f07e355c80b7b053a47aca86cfa"
+        },
+        {
+          "bytes": 108,
+          "path": "seclang/challenge/simulator/01/dir/init.sh",
+          "sha256": "e0365aebb769c08058c13d6857df7ae7e574527cae34dad61f8ab8362d028ef9"
+        },
+        {
+          "bytes": 2677,
+          "path": "seclang/challenge/simulator/01/dir/seclang.lark",
+          "sha256": "310793daaa25d2c5345dad1b184590b5b21468e07fca4b8a203037a9d1987bd4"
+        },
+        {
+          "bytes": 23716,
+          "path": "seclang/challenge/simulator/01/dir/seclang.py",
+          "sha256": "7e01c7c67d2c9cfc1036ebfd9c28723336bd43393cf681a08d11af19b02dc850"
+        },
+        {
+          "bytes": 440217,
+          "path": "seclang/challenge/simulator/01/log.txt",
+          "sha256": "6c46f2bb5e23ce4479a25000571f85df00cd2486c6a28bf1fae107dd3fecb2a4"
+        },
+        {
+          "bytes": 9421,
+          "path": "seclang/challenge/simulator/01/simulator.py",
+          "sha256": "3db7d52d4d5bc8da7745bffb1ee2ad6c0300f009444cd1bc06ba13323284ab52"
+        },
+        {
+          "bytes": 99,
+          "path": "seclang/challenge/simulator/01/x.sec",
+          "sha256": "8e9edbbf7c7f98b04863496235780e6ff8b4e249af2bae503b1487aa75876e57"
+        },
+        {
+          "bytes": 7496,
+          "path": "seclang/challenge/simulator/02/a.zip",
+          "sha256": "8f8e796000aee10d4095c5e82b16b68f5abc2c13c6af17a373e74e051e5ed55a"
+        },
+        {
+          "bytes": 5467,
+          "path": "seclang/challenge/simulator/02/b.zip",
+          "sha256": "afb3b968806f08ef3277bd259322446d88e0f9c60af19a3f2f63ee1d7fbc33eb"
+        },
+        {
+          "bytes": 55,
+          "path": "seclang/challenge/simulator/02/dir/builtin/exit.asm",
+          "sha256": "f207aa331e5a41d53d25a1f4a59da0a9984423710098687b2064366dd2341d30"
+        },
+        {
+          "bytes": 2954,
+          "path": "seclang/challenge/simulator/02/dir/builtin/print.asm",
+          "sha256": "656ade44ebd6cd213db49809cc67bfeab63862c2be4125ed48984e17bffccfbb"
+        },
+        {
+          "bytes": 1032,
+          "path": "seclang/challenge/simulator/02/dir/builtin/scan.asm",
+          "sha256": "9728a737a19acb4cac3af35dcd2d8a5402e20de4dd5f9f384be385bca6bf6045"
+        },
+        {
+          "bytes": 93,
+          "path": "seclang/challenge/simulator/02/dir/entry.sh",
+          "sha256": "368ae0c898f97ce141788c12338d87542c653f07e355c80b7b053a47aca86cfa"
+        },
+        {
+          "bytes": 108,
+          "path": "seclang/challenge/simulator/02/dir/init.sh",
+          "sha256": "e0365aebb769c08058c13d6857df7ae7e574527cae34dad61f8ab8362d028ef9"
+        },
+        {
+          "bytes": 2677,
+          "path": "seclang/challenge/simulator/02/dir/seclang.lark",
+          "sha256": "310793daaa25d2c5345dad1b184590b5b21468e07fca4b8a203037a9d1987bd4"
+        },
+        {
+          "bytes": 23716,
+          "path": "seclang/challenge/simulator/02/dir/seclang.py",
+          "sha256": "7e01c7c67d2c9cfc1036ebfd9c28723336bd43393cf681a08d11af19b02dc850"
+        },
+        {
+          "bytes": 260687,
+          "path": "seclang/challenge/simulator/02/log.txt",
+          "sha256": "929b9291cb309c315234e1e9f6a0272918a5649101b0bd6912e9ad1b0e8981de"
+        },
+        {
+          "bytes": 9422,
+          "path": "seclang/challenge/simulator/02/simulator.py",
+          "sha256": "28f4dd5e262927ad63ce51fd6768c7491b7b908b40413e625ec6fd9ca535e4c4"
+        },
+        {
+          "bytes": 99,
+          "path": "seclang/challenge/simulator/02/x.sec",
+          "sha256": "8e9edbbf7c7f98b04863496235780e6ff8b4e249af2bae503b1487aa75876e57"
+        },
+        {
+          "bytes": 7496,
+          "path": "seclang/challenge/simulator/03/a.zip",
+          "sha256": "8f8e796000aee10d4095c5e82b16b68f5abc2c13c6af17a373e74e051e5ed55a"
+        },
+        {
+          "bytes": 7496,
+          "path": "seclang/challenge/simulator/03/b.zip",
+          "sha256": "d54a58fdaa686b5906a66d91649723f8f39ac8baf840d73c58d3cd2debf0b5dc"
+        },
+        {
+          "bytes": 55,
+          "path": "seclang/challenge/simulator/03/dir/builtin/exit.asm",
+          "sha256": "f207aa331e5a41d53d25a1f4a59da0a9984423710098687b2064366dd2341d30"
+        },
+        {
+          "bytes": 2954,
+          "path": "seclang/challenge/simulator/03/dir/builtin/print.asm",
+          "sha256": "656ade44ebd6cd213db49809cc67bfeab63862c2be4125ed48984e17bffccfbb"
+        },
+        {
+          "bytes": 1032,
+          "path": "seclang/challenge/simulator/03/dir/builtin/scan.asm",
+          "sha256": "9728a737a19acb4cac3af35dcd2d8a5402e20de4dd5f9f384be385bca6bf6045"
+        },
+        {
+          "bytes": 93,
+          "path": "seclang/challenge/simulator/03/dir/entry.sh",
+          "sha256": "368ae0c898f97ce141788c12338d87542c653f07e355c80b7b053a47aca86cfa"
+        },
+        {
+          "bytes": 108,
+          "path": "seclang/challenge/simulator/03/dir/init.sh",
+          "sha256": "e0365aebb769c08058c13d6857df7ae7e574527cae34dad61f8ab8362d028ef9"
+        },
+        {
+          "bytes": 2677,
+          "path": "seclang/challenge/simulator/03/dir/seclang.lark",
+          "sha256": "310793daaa25d2c5345dad1b184590b5b21468e07fca4b8a203037a9d1987bd4"
+        },
+        {
+          "bytes": 23716,
+          "path": "seclang/challenge/simulator/03/dir/seclang.py",
+          "sha256": "7e01c7c67d2c9cfc1036ebfd9c28723336bd43393cf681a08d11af19b02dc850"
+        },
+        {
+          "bytes": 252622,
+          "path": "seclang/challenge/simulator/03/log.txt",
+          "sha256": "b78029770ffcb8db0490903ab8f454ab91adef4a9ac978470dc5b461b3a52c10"
+        },
+        {
+          "bytes": 9424,
+          "path": "seclang/challenge/simulator/03/simulator.py",
+          "sha256": "7cfae35059f53c12bd2b8c1b8aa2a4c2c2db93750894b440ffbcd2bd4e06c5a7"
+        },
+        {
+          "bytes": 99,
+          "path": "seclang/challenge/simulator/03/x.sec",
+          "sha256": "8e9edbbf7c7f98b04863496235780e6ff8b4e249af2bae503b1487aa75876e57"
+        },
+        {
+          "bytes": 7496,
+          "path": "seclang/challenge/simulator/04/a.zip",
+          "sha256": "8f8e796000aee10d4095c5e82b16b68f5abc2c13c6af17a373e74e051e5ed55a"
+        },
+        {
+          "bytes": 5467,
+          "path": "seclang/challenge/simulator/04/b.zip",
+          "sha256": "afb3b968806f08ef3277bd259322446d88e0f9c60af19a3f2f63ee1d7fbc33eb"
+        },
+        {
+          "bytes": 55,
+          "path": "seclang/challenge/simulator/04/dir/builtin/exit.asm",
+          "sha256": "f207aa331e5a41d53d25a1f4a59da0a9984423710098687b2064366dd2341d30"
+        },
+        {
+          "bytes": 2954,
+          "path": "seclang/challenge/simulator/04/dir/builtin/print.asm",
+          "sha256": "656ade44ebd6cd213db49809cc67bfeab63862c2be4125ed48984e17bffccfbb"
+        },
+        {
+          "bytes": 1032,
+          "path": "seclang/challenge/simulator/04/dir/builtin/scan.asm",
+          "sha256": "9728a737a19acb4cac3af35dcd2d8a5402e20de4dd5f9f384be385bca6bf6045"
+        },
+        {
+          "bytes": 93,
+          "path": "seclang/challenge/simulator/04/dir/entry.sh",
+          "sha256": "368ae0c898f97ce141788c12338d87542c653f07e355c80b7b053a47aca86cfa"
+        },
+        {
+          "bytes": 108,
+          "path": "seclang/challenge/simulator/04/dir/init.sh",
+          "sha256": "e0365aebb769c08058c13d6857df7ae7e574527cae34dad61f8ab8362d028ef9"
+        },
+        {
+          "bytes": 2677,
+          "path": "seclang/challenge/simulator/04/dir/seclang.lark",
+          "sha256": "310793daaa25d2c5345dad1b184590b5b21468e07fca4b8a203037a9d1987bd4"
+        },
+        {
+          "bytes": 23716,
+          "path": "seclang/challenge/simulator/04/dir/seclang.py",
+          "sha256": "7e01c7c67d2c9cfc1036ebfd9c28723336bd43393cf681a08d11af19b02dc850"
+        },
+        {
+          "bytes": 155034,
+          "path": "seclang/challenge/simulator/04/log.txt",
+          "sha256": "de70b651d0f72f7dbb5ec58f44e32216ab02eecf4e8939cffada8ee191bd4da6"
+        },
+        {
+          "bytes": 9422,
+          "path": "seclang/challenge/simulator/04/simulator.py",
+          "sha256": "ecaffc0c80237bfd926372b7e472ffe6faec845a4dd7116a881d8b299cc015a6"
+        },
+        {
+          "bytes": 99,
+          "path": "seclang/challenge/simulator/04/x.sec",
+          "sha256": "8e9edbbf7c7f98b04863496235780e6ff8b4e249af2bae503b1487aa75876e57"
+        },
+        {
+          "bytes": 7496,
+          "path": "seclang/challenge/simulator/05/a.zip",
+          "sha256": "8f8e796000aee10d4095c5e82b16b68f5abc2c13c6af17a373e74e051e5ed55a"
+        },
+        {
+          "bytes": 7496,
+          "path": "seclang/challenge/simulator/05/b.zip",
+          "sha256": "d54a58fdaa686b5906a66d91649723f8f39ac8baf840d73c58d3cd2debf0b5dc"
+        },
+        {
+          "bytes": 55,
+          "path": "seclang/challenge/simulator/05/dir/builtin/exit.asm",
+          "sha256": "f207aa331e5a41d53d25a1f4a59da0a9984423710098687b2064366dd2341d30"
+        },
+        {
+          "bytes": 2954,
+          "path": "seclang/challenge/simulator/05/dir/builtin/print.asm",
+          "sha256": "656ade44ebd6cd213db49809cc67bfeab63862c2be4125ed48984e17bffccfbb"
+        },
+        {
+          "bytes": 1032,
+          "path": "seclang/challenge/simulator/05/dir/builtin/scan.asm",
+          "sha256": "9728a737a19acb4cac3af35dcd2d8a5402e20de4dd5f9f384be385bca6bf6045"
+        },
+        {
+          "bytes": 93,
+          "path": "seclang/challenge/simulator/05/dir/entry.sh",
+          "sha256": "368ae0c898f97ce141788c12338d87542c653f07e355c80b7b053a47aca86cfa"
+        },
+        {
+          "bytes": 108,
+          "path": "seclang/challenge/simulator/05/dir/init.sh",
+          "sha256": "e0365aebb769c08058c13d6857df7ae7e574527cae34dad61f8ab8362d028ef9"
+        },
+        {
+          "bytes": 2677,
+          "path": "seclang/challenge/simulator/05/dir/seclang.lark",
+          "sha256": "310793daaa25d2c5345dad1b184590b5b21468e07fca4b8a203037a9d1987bd4"
+        },
+        {
+          "bytes": 23716,
+          "path": "seclang/challenge/simulator/05/dir/seclang.py",
+          "sha256": "7e01c7c67d2c9cfc1036ebfd9c28723336bd43393cf681a08d11af19b02dc850"
+        },
+        {
+          "bytes": 97908,
+          "path": "seclang/challenge/simulator/05/log.txt",
+          "sha256": "b66a1dc4cf0a372d105d0e748f32001ab259bc1e7ab9e6232f51fa2052f43a55"
+        },
+        {
+          "bytes": 9507,
+          "path": "seclang/challenge/simulator/05/simulator.py",
+          "sha256": "5f638f05e89e03ab8073d12159536727d7506d3f06123c423013b708807c9194"
+        },
+        {
+          "bytes": 99,
+          "path": "seclang/challenge/simulator/05/x.sec",
+          "sha256": "8e9edbbf7c7f98b04863496235780e6ff8b4e249af2bae503b1487aa75876e57"
+        },
+        {
+          "bytes": 7496,
+          "path": "seclang/challenge/simulator/06/a.zip",
+          "sha256": "8f8e796000aee10d4095c5e82b16b68f5abc2c13c6af17a373e74e051e5ed55a"
+        },
+        {
+          "bytes": 5467,
+          "path": "seclang/challenge/simulator/06/b.zip",
+          "sha256": "afb3b968806f08ef3277bd259322446d88e0f9c60af19a3f2f63ee1d7fbc33eb"
+        },
+        {
+          "bytes": 55,
+          "path": "seclang/challenge/simulator/06/dir/builtin/exit.asm",
+          "sha256": "f207aa331e5a41d53d25a1f4a59da0a9984423710098687b2064366dd2341d30"
+        },
+        {
+          "bytes": 2954,
+          "path": "seclang/challenge/simulator/06/dir/builtin/print.asm",
+          "sha256": "656ade44ebd6cd213db49809cc67bfeab63862c2be4125ed48984e17bffccfbb"
+        },
+        {
+          "bytes": 1032,
+          "path": "seclang/challenge/simulator/06/dir/builtin/scan.asm",
+          "sha256": "9728a737a19acb4cac3af35dcd2d8a5402e20de4dd5f9f384be385bca6bf6045"
+        },
+        {
+          "bytes": 93,
+          "path": "seclang/challenge/simulator/06/dir/entry.sh",
+          "sha256": "368ae0c898f97ce141788c12338d87542c653f07e355c80b7b053a47aca86cfa"
+        },
+        {
+          "bytes": 108,
+          "path": "seclang/challenge/simulator/06/dir/init.sh",
+          "sha256": "e0365aebb769c08058c13d6857df7ae7e574527cae34dad61f8ab8362d028ef9"
+        },
+        {
+          "bytes": 2677,
+          "path": "seclang/challenge/simulator/06/dir/seclang.lark",
+          "sha256": "310793daaa25d2c5345dad1b184590b5b21468e07fca4b8a203037a9d1987bd4"
+        },
+        {
+          "bytes": 23716,
+          "path": "seclang/challenge/simulator/06/dir/seclang.py",
+          "sha256": "7e01c7c67d2c9cfc1036ebfd9c28723336bd43393cf681a08d11af19b02dc850"
+        },
+        {
+          "bytes": 73201,
+          "path": "seclang/challenge/simulator/06/log.txt",
+          "sha256": "b4e15324091d7d17d6b650a7c0c38207e9f10ce8a890d83d9736724e6b7d7203"
+        },
+        {
+          "bytes": 9507,
+          "path": "seclang/challenge/simulator/06/simulator.py",
+          "sha256": "427af3fd4c4b71956efb5eafaf7107c3eacf415c80a2da59dd50ed1bc0ca77e7"
+        },
+        {
+          "bytes": 99,
+          "path": "seclang/challenge/simulator/06/x.sec",
+          "sha256": "8e9edbbf7c7f98b04863496235780e6ff8b4e249af2bae503b1487aa75876e57"
+        },
+        {
+          "bytes": 7496,
+          "path": "seclang/challenge/simulator/07/a.zip",
+          "sha256": "8f8e796000aee10d4095c5e82b16b68f5abc2c13c6af17a373e74e051e5ed55a"
+        },
+        {
+          "bytes": 7496,
+          "path": "seclang/challenge/simulator/07/b.zip",
+          "sha256": "d54a58fdaa686b5906a66d91649723f8f39ac8baf840d73c58d3cd2debf0b5dc"
+        },
+        {
+          "bytes": 55,
+          "path": "seclang/challenge/simulator/07/dir/builtin/exit.asm",
+          "sha256": "f207aa331e5a41d53d25a1f4a59da0a9984423710098687b2064366dd2341d30"
+        },
+        {
+          "bytes": 2954,
+          "path": "seclang/challenge/simulator/07/dir/builtin/print.asm",
+          "sha256": "656ade44ebd6cd213db49809cc67bfeab63862c2be4125ed48984e17bffccfbb"
+        },
+        {
+          "bytes": 1032,
+          "path": "seclang/challenge/simulator/07/dir/builtin/scan.asm",
+          "sha256": "9728a737a19acb4cac3af35dcd2d8a5402e20de4dd5f9f384be385bca6bf6045"
+        },
+        {
+          "bytes": 93,
+          "path": "seclang/challenge/simulator/07/dir/entry.sh",
+          "sha256": "368ae0c898f97ce141788c12338d87542c653f07e355c80b7b053a47aca86cfa"
+        },
+        {
+          "bytes": 108,
+          "path": "seclang/challenge/simulator/07/dir/init.sh",
+          "sha256": "e0365aebb769c08058c13d6857df7ae7e574527cae34dad61f8ab8362d028ef9"
+        },
+        {
+          "bytes": 2677,
+          "path": "seclang/challenge/simulator/07/dir/seclang.lark",
+          "sha256": "310793daaa25d2c5345dad1b184590b5b21468e07fca4b8a203037a9d1987bd4"
+        },
+        {
+          "bytes": 23716,
+          "path": "seclang/challenge/simulator/07/dir/seclang.py",
+          "sha256": "7e01c7c67d2c9cfc1036ebfd9c28723336bd43393cf681a08d11af19b02dc850"
+        },
+        {
+          "bytes": 32566,
+          "path": "seclang/challenge/simulator/07/log.txt",
+          "sha256": "5800390f6109a7e9a6d8bb3736a8bed915103007a8dc220b6350272a38c02775"
+        },
+        {
+          "bytes": 9511,
+          "path": "seclang/challenge/simulator/07/simulator.py",
+          "sha256": "980023b343320e1c645c3686a2d883052f3c784bde96bb642cf0f674eee0c7dd"
+        },
+        {
+          "bytes": 99,
+          "path": "seclang/challenge/simulator/07/x.sec",
+          "sha256": "8e9edbbf7c7f98b04863496235780e6ff8b4e249af2bae503b1487aa75876e57"
+        },
+        {
+          "bytes": 7496,
+          "path": "seclang/challenge/simulator/08/a.zip",
+          "sha256": "8f8e796000aee10d4095c5e82b16b68f5abc2c13c6af17a373e74e051e5ed55a"
+        },
+        {
+          "bytes": 5467,
+          "path": "seclang/challenge/simulator/08/b.zip",
+          "sha256": "afb3b968806f08ef3277bd259322446d88e0f9c60af19a3f2f63ee1d7fbc33eb"
+        },
+        {
+          "bytes": 55,
+          "path": "seclang/challenge/simulator/08/dir/builtin/exit.asm",
+          "sha256": "f207aa331e5a41d53d25a1f4a59da0a9984423710098687b2064366dd2341d30"
+        },
+        {
+          "bytes": 2954,
+          "path": "seclang/challenge/simulator/08/dir/builtin/print.asm",
+          "sha256": "656ade44ebd6cd213db49809cc67bfeab63862c2be4125ed48984e17bffccfbb"
+        },
+        {
+          "bytes": 1032,
+          "path": "seclang/challenge/simulator/08/dir/builtin/scan.asm",
+          "sha256": "9728a737a19acb4cac3af35dcd2d8a5402e20de4dd5f9f384be385bca6bf6045"
+        },
+        {
+          "bytes": 93,
+          "path": "seclang/challenge/simulator/08/dir/entry.sh",
+          "sha256": "368ae0c898f97ce141788c12338d87542c653f07e355c80b7b053a47aca86cfa"
+        },
+        {
+          "bytes": 108,
+          "path": "seclang/challenge/simulator/08/dir/init.sh",
+          "sha256": "e0365aebb769c08058c13d6857df7ae7e574527cae34dad61f8ab8362d028ef9"
+        },
+        {
+          "bytes": 2677,
+          "path": "seclang/challenge/simulator/08/dir/seclang.lark",
+          "sha256": "310793daaa25d2c5345dad1b184590b5b21468e07fca4b8a203037a9d1987bd4"
+        },
+        {
+          "bytes": 23716,
+          "path": "seclang/challenge/simulator/08/dir/seclang.py",
+          "sha256": "7e01c7c67d2c9cfc1036ebfd9c28723336bd43393cf681a08d11af19b02dc850"
+        },
+        {
+          "bytes": 342416,
+          "path": "seclang/challenge/simulator/08/log.txt",
+          "sha256": "68e64ee8750b70dc32387b3513ca86e72d706e872c97bd206d5221545329e90a"
+        },
+        {
+          "bytes": 9500,
+          "path": "seclang/challenge/simulator/08/simulator.py",
+          "sha256": "f89d603e7d81c723fc6be2f2f8ab582fc23547f5d3a7f3ad3f0dbbd9963ae7c0"
+        },
+        {
+          "bytes": 99,
+          "path": "seclang/challenge/simulator/08/x.sec",
+          "sha256": "8e9edbbf7c7f98b04863496235780e6ff8b4e249af2bae503b1487aa75876e57"
+        },
+        {
+          "bytes": 7496,
+          "path": "seclang/challenge/simulator/09/a.zip",
+          "sha256": "8f8e796000aee10d4095c5e82b16b68f5abc2c13c6af17a373e74e051e5ed55a"
+        },
+        {
+          "bytes": 7496,
+          "path": "seclang/challenge/simulator/09/b.zip",
+          "sha256": "d54a58fdaa686b5906a66d91649723f8f39ac8baf840d73c58d3cd2debf0b5dc"
+        },
+        {
+          "bytes": 55,
+          "path": "seclang/challenge/simulator/09/dir/builtin/exit.asm",
+          "sha256": "f207aa331e5a41d53d25a1f4a59da0a9984423710098687b2064366dd2341d30"
+        },
+        {
+          "bytes": 2954,
+          "path": "seclang/challenge/simulator/09/dir/builtin/print.asm",
+          "sha256": "656ade44ebd6cd213db49809cc67bfeab63862c2be4125ed48984e17bffccfbb"
+        },
+        {
+          "bytes": 1032,
+          "path": "seclang/challenge/simulator/09/dir/builtin/scan.asm",
+          "sha256": "9728a737a19acb4cac3af35dcd2d8a5402e20de4dd5f9f384be385bca6bf6045"
+        },
+        {
+          "bytes": 93,
+          "path": "seclang/challenge/simulator/09/dir/entry.sh",
+          "sha256": "368ae0c898f97ce141788c12338d87542c653f07e355c80b7b053a47aca86cfa"
+        },
+        {
+          "bytes": 108,
+          "path": "seclang/challenge/simulator/09/dir/init.sh",
+          "sha256": "e0365aebb769c08058c13d6857df7ae7e574527cae34dad61f8ab8362d028ef9"
+        },
+        {
+          "bytes": 2677,
+          "path": "seclang/challenge/simulator/09/dir/seclang.lark",
+          "sha256": "310793daaa25d2c5345dad1b184590b5b21468e07fca4b8a203037a9d1987bd4"
+        },
+        {
+          "bytes": 23716,
+          "path": "seclang/challenge/simulator/09/dir/seclang.py",
+          "sha256": "7e01c7c67d2c9cfc1036ebfd9c28723336bd43393cf681a08d11af19b02dc850"
+        },
+        {
+          "bytes": 13155745,
+          "path": "seclang/challenge/simulator/09/log.txt",
+          "sha256": "b3d704306a0ba5d097b7c5a635835b6e6cb24516907ba2cbff623c3ae045a5b9"
+        },
+        {
+          "bytes": 9504,
+          "path": "seclang/challenge/simulator/09/simulator.py",
+          "sha256": "5f99b602a8b2de25208820112efca0d1f0542cc7ceaced01a9eb928851596cbb"
+        },
+        {
+          "bytes": 99,
+          "path": "seclang/challenge/simulator/09/x.sec",
+          "sha256": "8e9edbbf7c7f98b04863496235780e6ff8b4e249af2bae503b1487aa75876e57"
+        },
+        {
+          "bytes": 7496,
+          "path": "seclang/challenge/simulator/10/a.zip",
+          "sha256": "8f8e796000aee10d4095c5e82b16b68f5abc2c13c6af17a373e74e051e5ed55a"
+        },
+        {
+          "bytes": 5467,
+          "path": "seclang/challenge/simulator/10/b.zip",
+          "sha256": "afb3b968806f08ef3277bd259322446d88e0f9c60af19a3f2f63ee1d7fbc33eb"
+        },
+        {
+          "bytes": 55,
+          "path": "seclang/challenge/simulator/10/dir/builtin/exit.asm",
+          "sha256": "f207aa331e5a41d53d25a1f4a59da0a9984423710098687b2064366dd2341d30"
+        },
+        {
+          "bytes": 2954,
+          "path": "seclang/challenge/simulator/10/dir/builtin/print.asm",
+          "sha256": "656ade44ebd6cd213db49809cc67bfeab63862c2be4125ed48984e17bffccfbb"
+        },
+        {
+          "bytes": 1032,
+          "path": "seclang/challenge/simulator/10/dir/builtin/scan.asm",
+          "sha256": "9728a737a19acb4cac3af35dcd2d8a5402e20de4dd5f9f384be385bca6bf6045"
+        },
+        {
+          "bytes": 93,
+          "path": "seclang/challenge/simulator/10/dir/entry.sh",
+          "sha256": "368ae0c898f97ce141788c12338d87542c653f07e355c80b7b053a47aca86cfa"
+        },
+        {
+          "bytes": 108,
+          "path": "seclang/challenge/simulator/10/dir/init.sh",
+          "sha256": "e0365aebb769c08058c13d6857df7ae7e574527cae34dad61f8ab8362d028ef9"
+        },
+        {
+          "bytes": 2677,
+          "path": "seclang/challenge/simulator/10/dir/seclang.lark",
+          "sha256": "310793daaa25d2c5345dad1b184590b5b21468e07fca4b8a203037a9d1987bd4"
+        },
+        {
+          "bytes": 23716,
+          "path": "seclang/challenge/simulator/10/dir/seclang.py",
+          "sha256": "7e01c7c67d2c9cfc1036ebfd9c28723336bd43393cf681a08d11af19b02dc850"
+        },
+        {
+          "bytes": 1092538,
+          "path": "seclang/challenge/simulator/10/log.txt",
+          "sha256": "4a486a943b34f7c0fb9e767de549d4c0793f7747f4c920ce08faff3f1a45f4b4"
+        },
+        {
+          "bytes": 9510,
+          "path": "seclang/challenge/simulator/10/simulator.py",
+          "sha256": "207b336181bdba2e21b51d7d23530a39762dbde7fb49968602063a193c2dc5b9"
+        },
+        {
+          "bytes": 99,
+          "path": "seclang/challenge/simulator/10/x.sec",
+          "sha256": "8e9edbbf7c7f98b04863496235780e6ff8b4e249af2bae503b1487aa75876e57"
+        },
+        {
+          "bytes": 7496,
+          "path": "seclang/challenge/simulator/11/a.zip",
+          "sha256": "8f8e796000aee10d4095c5e82b16b68f5abc2c13c6af17a373e74e051e5ed55a"
+        },
+        {
+          "bytes": 7496,
+          "path": "seclang/challenge/simulator/11/b.zip",
+          "sha256": "d54a58fdaa686b5906a66d91649723f8f39ac8baf840d73c58d3cd2debf0b5dc"
+        },
+        {
+          "bytes": 55,
+          "path": "seclang/challenge/simulator/11/dir/builtin/exit.asm",
+          "sha256": "f207aa331e5a41d53d25a1f4a59da0a9984423710098687b2064366dd2341d30"
+        },
+        {
+          "bytes": 2954,
+          "path": "seclang/challenge/simulator/11/dir/builtin/print.asm",
+          "sha256": "656ade44ebd6cd213db49809cc67bfeab63862c2be4125ed48984e17bffccfbb"
+        },
+        {
+          "bytes": 1032,
+          "path": "seclang/challenge/simulator/11/dir/builtin/scan.asm",
+          "sha256": "9728a737a19acb4cac3af35dcd2d8a5402e20de4dd5f9f384be385bca6bf6045"
+        },
+        {
+          "bytes": 93,
+          "path": "seclang/challenge/simulator/11/dir/entry.sh",
+          "sha256": "368ae0c898f97ce141788c12338d87542c653f07e355c80b7b053a47aca86cfa"
+        },
+        {
+          "bytes": 108,
+          "path": "seclang/challenge/simulator/11/dir/init.sh",
+          "sha256": "e0365aebb769c08058c13d6857df7ae7e574527cae34dad61f8ab8362d028ef9"
+        },
+        {
+          "bytes": 2677,
+          "path": "seclang/challenge/simulator/11/dir/seclang.lark",
+          "sha256": "310793daaa25d2c5345dad1b184590b5b21468e07fca4b8a203037a9d1987bd4"
+        },
+        {
+          "bytes": 23716,
+          "path": "seclang/challenge/simulator/11/dir/seclang.py",
+          "sha256": "7e01c7c67d2c9cfc1036ebfd9c28723336bd43393cf681a08d11af19b02dc850"
+        },
+        {
+          "bytes": 65286,
+          "path": "seclang/challenge/simulator/11/log.txt",
+          "sha256": "c99d44f6a07835568edfe2d6206e514617ace8f34f2d3ed0d5135d6cfc1ce3db"
+        },
+        {
+          "bytes": 9511,
+          "path": "seclang/challenge/simulator/11/simulator.py",
+          "sha256": "c0c12bae8a3b47abdf6ebe8efd95d16dedbfce04a9b87eb8d349eee8dea6611d"
+        },
+        {
+          "bytes": 99,
+          "path": "seclang/challenge/simulator/11/x.sec",
+          "sha256": "8e9edbbf7c7f98b04863496235780e6ff8b4e249af2bae503b1487aa75876e57"
+        },
+        {
+          "bytes": 7496,
+          "path": "seclang/challenge/simulator/12/a.zip",
+          "sha256": "8f8e796000aee10d4095c5e82b16b68f5abc2c13c6af17a373e74e051e5ed55a"
+        },
+        {
+          "bytes": 5467,
+          "path": "seclang/challenge/simulator/12/b.zip",
+          "sha256": "afb3b968806f08ef3277bd259322446d88e0f9c60af19a3f2f63ee1d7fbc33eb"
+        },
+        {
+          "bytes": 55,
+          "path": "seclang/challenge/simulator/12/dir/builtin/exit.asm",
+          "sha256": "f207aa331e5a41d53d25a1f4a59da0a9984423710098687b2064366dd2341d30"
+        },
+        {
+          "bytes": 2954,
+          "path": "seclang/challenge/simulator/12/dir/builtin/print.asm",
+          "sha256": "656ade44ebd6cd213db49809cc67bfeab63862c2be4125ed48984e17bffccfbb"
+        },
+        {
+          "bytes": 1032,
+          "path": "seclang/challenge/simulator/12/dir/builtin/scan.asm",
+          "sha256": "9728a737a19acb4cac3af35dcd2d8a5402e20de4dd5f9f384be385bca6bf6045"
+        },
+        {
+          "bytes": 93,
+          "path": "seclang/challenge/simulator/12/dir/entry.sh",
+          "sha256": "368ae0c898f97ce141788c12338d87542c653f07e355c80b7b053a47aca86cfa"
+        },
+        {
+          "bytes": 108,
+          "path": "seclang/challenge/simulator/12/dir/init.sh",
+          "sha256": "e0365aebb769c08058c13d6857df7ae7e574527cae34dad61f8ab8362d028ef9"
+        },
+        {
+          "bytes": 2677,
+          "path": "seclang/challenge/simulator/12/dir/seclang.lark",
+          "sha256": "310793daaa25d2c5345dad1b184590b5b21468e07fca4b8a203037a9d1987bd4"
+        },
+        {
+          "bytes": 23716,
+          "path": "seclang/challenge/simulator/12/dir/seclang.py",
+          "sha256": "7e01c7c67d2c9cfc1036ebfd9c28723336bd43393cf681a08d11af19b02dc850"
+        },
+        {
+          "bytes": 3836566,
+          "path": "seclang/challenge/simulator/12/log.txt",
+          "sha256": "184661aa8b588a80c6b98794eb1392bd5f1b2738b1e03a6bb1cf8d3b4f5080e2"
+        },
+        {
+          "bytes": 9506,
+          "path": "seclang/challenge/simulator/12/simulator.py",
+          "sha256": "d001aa38924414c4fd6d6b23036a4a746b27e828c911d462f4e8e227286e5857"
+        },
+        {
+          "bytes": 99,
+          "path": "seclang/challenge/simulator/12/x.sec",
+          "sha256": "8e9edbbf7c7f98b04863496235780e6ff8b4e249af2bae503b1487aa75876e57"
+        },
+        {
+          "bytes": 36,
+          "path": "seclang/challenge/simulator/config.json",
+          "sha256": "af49e0697d6a9ab747754873680e5be9737dc1a7dbfabdc7af0e2883606da77a"
+        },
+        {
+          "bytes": 580,
+          "path": "seclang/challenge/simulator/flag_submit.py",
+          "sha256": "f9361479536ed3e4bfe0e287d0c3b6854210e6863553bac35448c133852d2c4a"
+        },
+        {
+          "bytes": 1099,
+          "path": "seclang/challenge/testcase/01_rot13/input.txt",
+          "sha256": "b7ba97b55cc8ae55626233dd529dd81b95c81e32e41b878bab141c37812a1588"
+        },
+        {
+          "bytes": 1011,
+          "path": "seclang/challenge/testcase/01_rot13/program.sec",
+          "sha256": "a0efa6c8a37207e87e0812d0ffc509bd75ff44a7b46075b7f1a735668d1eaf6c"
+        },
+        {
+          "bytes": 1069,
+          "path": "seclang/challenge/testcase/01_rot13/variant.sec",
+          "sha256": "b15fc9828be9b322b0791e8d71dd969d4c7703332ae8e7664ef5cecaddaf620a"
+        },
+        {
+          "bytes": 52,
+          "path": "seclang/challenge/testcase/02_arith/input.txt",
+          "sha256": "37ff22de0cb3f95991a57e6e2f6fa5328c3c7cbf326ec68f42539191e8d388fc"
+        },
+        {
+          "bytes": 429,
+          "path": "seclang/challenge/testcase/02_arith/program.sec",
+          "sha256": "91fd07cf331ea79762a0b283dd5deb4d242cba053a1af3b742180aa3a1e1082a"
+        },
+        {
+          "bytes": 546,
+          "path": "seclang/challenge/testcase/02_arith/variant.sec",
+          "sha256": "73c6019c0d40c4e7a36150c468406c063c2d16ad7a8a2227962c9d726dc3675c"
+        },
+        {
+          "bytes": 75,
+          "path": "seclang/challenge/testcase/03_logical/input.txt",
+          "sha256": "c0b9a0740cdd8709d7f87809f423b5b0d7591198110b042258dd76768b156d75"
+        },
+        {
+          "bytes": 353,
+          "path": "seclang/challenge/testcase/03_logical/program.sec",
+          "sha256": "0a0a9459d305fc9be3cc2e4a8b23d3c9ec3e371832e0a61572dd396458042d4a"
+        },
+        {
+          "bytes": 230,
+          "path": "seclang/challenge/testcase/03_logical/variant.sec",
+          "sha256": "24e4bb4852c69e89e2c1a9f9a65a447b5b6216b9f94b2cb7ed4e59b0a5612521"
+        },
+        {
+          "bytes": 2104,
+          "path": "seclang/challenge/testcase/04_sort/input.txt",
+          "sha256": "c51280ce5d9f8bd0a6040394d2d7e019154b7903d22a70ae17b8329e37a5b8b2"
+        },
+        {
+          "bytes": 641,
+          "path": "seclang/challenge/testcase/04_sort/program.sec",
+          "sha256": "c014c3377104e6e50457238454dec490426b78d3194df38faf352cd98cc0bd69"
+        },
+        {
+          "bytes": 991,
+          "path": "seclang/challenge/testcase/04_sort/variant.sec",
+          "sha256": "044dba6c45416a229e7967d6ddffac7d9471bf190e8ba059b05bc4b928e63c6d"
+        },
+        {
+          "bytes": 2104,
+          "path": "seclang/challenge/testcase/05_sum_rec/input.txt",
+          "sha256": "c51280ce5d9f8bd0a6040394d2d7e019154b7903d22a70ae17b8329e37a5b8b2"
+        },
+        {
+          "bytes": 169,
+          "path": "seclang/challenge/testcase/05_sum_rec/program.sec",
+          "sha256": "5a1697839063c4ca9a62473363fdf9ebd00b9cac600f6006df5c044ae4f1cd3b"
+        },
+        {
+          "bytes": 1079,
+          "path": "seclang/challenge/testcase/05_sum_rec/variant.sec",
+          "sha256": "c8fa4cceae95b47e004fd3446d5be22f4b42bb8c778eb8b0d999fed0b3b20f86"
+        },
+        {
+          "bytes": 77,
+          "path": "seclang/challenge/testcase/06_crt/input.txt",
+          "sha256": "35853fd3b8bb007fe4d98b1251bd3995b45cc5d8244f7ac57fe6de8df8814843"
+        },
+        {
+          "bytes": 946,
+          "path": "seclang/challenge/testcase/06_crt/program.sec",
+          "sha256": "a91c7c5aa92231bc1fb3e47a66800ff2f65b8f86ec57e04c161d57c7f4925fa0"
+        },
+        {
+          "bytes": 1247,
+          "path": "seclang/challenge/testcase/06_crt/variant.sec",
+          "sha256": "5b00549eabca7104d5c7c1b54fbf81a5584a3e0fab6ecdc9363c1232ba0f5f51"
+        },
+        {
+          "bytes": 45,
+          "path": "seclang/challenge/testcase/07_hello_wolrd/input.txt",
+          "sha256": "f0dbd2ca59c12dfa0783e90525881aa66512ffad43a3c7b601165ab8a5050683"
+        },
+        {
+          "bytes": 190,
+          "path": "seclang/challenge/testcase/07_hello_wolrd/program.sec",
+          "sha256": "79247e3b07c9eb3d3471f9f16ea4ceb149b41c2d965509160447fe2cbd527930"
+        },
+        {
+          "bytes": 189,
+          "path": "seclang/challenge/testcase/07_hello_wolrd/variant.sec",
+          "sha256": "1b926ca7414ee844d6aa36ea2bb8893e13443ef6cefb41bb298b68a8441fe0ee"
+        },
+        {
+          "bytes": 342,
+          "path": "seclang/challenge/testcase/08_matrix_mul/input.txt",
+          "sha256": "c321b577ef8a6b5b2982512d85c3a97f57800a6e5292aa74b943f0aca9b28d98"
+        },
+        {
+          "bytes": 751,
+          "path": "seclang/challenge/testcase/08_matrix_mul/program.sec",
+          "sha256": "7acfbc39335c4e1b8a04d3bc0a1aa907d308dbc36cc8726cbfa7909f32483503"
+        },
+        {
+          "bytes": 708,
+          "path": "seclang/challenge/testcase/08_matrix_mul/variant.sec",
+          "sha256": "052efb8afeeff4b3f58b32b0c54f1e0e2a053b7afd219926151c64022a7e14ed"
+        },
+        {
+          "bytes": 22,
+          "path": "seclang/challenge/testcase/09_return_in_while/input.txt",
+          "sha256": "14edaf818a9222215cc677853c30d5a20045cb18f570b6ea8ad9e4dacc7d910e"
+        },
+        {
+          "bytes": 227,
+          "path": "seclang/challenge/testcase/09_return_in_while/program.sec",
+          "sha256": "da1dcb8091ec93d9a23eb0cacb165550bba9fee3c86d919ae79bbeae66e2abb4"
+        },
+        {
+          "bytes": 419,
+          "path": "seclang/challenge/testcase/09_return_in_while/variant.sec",
+          "sha256": "d326f999d1b45face7a21657cf98573c74ef3885d637ed6536d3ef3da8ac6291"
+        },
+        {
+          "bytes": 45,
+          "path": "seclang/challenge/testcase/10/input.txt",
+          "sha256": "a8c83a477a54d9baaffb98d0f583ce8f9faa0ff28892a5a90de99a2d7f23b2f0"
+        },
+        {
+          "bytes": 163,
+          "path": "seclang/challenge/testcase/10/program.sec",
+          "sha256": "b7c3b3a16c7002664914a980faa238d3e594fe417fc50ddcbe821c9cefe60a25"
+        },
+        {
+          "bytes": 368,
+          "path": "seclang/challenge/testcase/10/variant.sec",
+          "sha256": "a6a42daba4fef67c13bee24c545fe2e7847b36aa978e065a4546934cb94b77ab"
+        },
+        {
+          "bytes": 43,
+          "path": "seclang/challenge/testcase/11/input.txt",
+          "sha256": "1e55db16191635c793e3ec7b8a7e16e3fc4c700cfe2972449d4113f857186ceb"
+        },
+        {
+          "bytes": 116,
+          "path": "seclang/challenge/testcase/11/program.sec",
+          "sha256": "24de6af5bc222d4c08c7d7ccc9bf8501d931ce36650898335292b753f0575948"
+        },
+        {
+          "bytes": 181,
+          "path": "seclang/challenge/testcase/11/variant.sec",
+          "sha256": "076cf02a4f0e295cd69f62f4f9af89a78c9290d49888a7445ac253c9f23e0b94"
+        },
+        {
+          "bytes": 183,
+          "path": "seclang/challenge/testcase/12/input.txt",
+          "sha256": "8090a2e83c222f40f9b1b07bbc7bac56403aa6a6c0795c567546e11f407d9d68"
+        },
+        {
+          "bytes": 335,
+          "path": "seclang/challenge/testcase/12/program.sec",
+          "sha256": "a95f844b935b1f5afcc4118dd014ffcdbe3748bd7b33568857a4b6045e8a35c6"
+        },
+        {
+          "bytes": 384,
+          "path": "seclang/challenge/testcase/12/variant.sec",
+          "sha256": "165819a2e5bfd66670f21d02ad2c2f7a8118b9db35f5a689171fcb2df5433577"
+        },
+        {
+          "bytes": 24,
+          "path": "seclang/challenge/testcase/13/input.txt",
+          "sha256": "311ccb24f0d5930811d61bfd820a3712bb20a5fc333ca36a6afe2850c50d1dee"
+        },
+        {
+          "bytes": 192,
+          "path": "seclang/challenge/testcase/13/program.sec",
+          "sha256": "c0199b81bda7a82019016394ae1f08f4ce8c6c2d160fc5a9918c4af2c118b5e7"
+        },
+        {
+          "bytes": 236,
+          "path": "seclang/challenge/testcase/13/variant.sec",
+          "sha256": "ef601ed81b8fd8598532d6260e2d750eaff33265a82c98ecd55b116b00bc045a"
+        },
+        {
+          "bytes": 21,
+          "path": "seclang/challenge/testcase/14/input.txt",
+          "sha256": "c6209c8c7bf12b835272a4f2c37100ed7569717e6dc2b45092b224c99dd6815f"
+        },
+        {
+          "bytes": 347,
+          "path": "seclang/challenge/testcase/14/program.sec",
+          "sha256": "888dccfba069bed6c9f155b3226ba281271b4d45c2d745e0be4b251e85a942af"
+        },
+        {
+          "bytes": 444,
+          "path": "seclang/challenge/testcase/14/variant.sec",
+          "sha256": "3c278141e6203f9861a951b29f6c539dee162e5c31b5da2a8da940daba17fca4"
+        },
+        {
+          "bytes": 162,
+          "path": "seclang/challenge/testcase/15/input.txt",
+          "sha256": "9a0128460186b242ca8632a278785a52e368e82ab2a8765db7d48c37c847dc93"
+        },
+        {
+          "bytes": 371,
+          "path": "seclang/challenge/testcase/15/program.sec",
+          "sha256": "8039cbe637efc13e0fdaf7ad22e34ee6133befba001960f085e44d270495b94c"
+        },
+        {
+          "bytes": 733,
+          "path": "seclang/challenge/testcase/15/variant.sec",
+          "sha256": "c9e26ee65073d99317913f3e5d8be55734c032f590c08ba65f625fee32668e9f"
+        },
+        {
+          "bytes": 360,
+          "path": "seclang/challenge/testcase/16/input.txt",
+          "sha256": "affbe8d05501d7939c49d3bafe2faff445ba40f87926cc9251e7e2d119f00bdd"
+        },
+        {
+          "bytes": 317,
+          "path": "seclang/challenge/testcase/16/program.sec",
+          "sha256": "3786ba2b89e52b10f7e255b4531250d271b982ce053b7de2cd48138927330da0"
+        },
+        {
+          "bytes": 509,
+          "path": "seclang/challenge/testcase/16/variant.sec",
+          "sha256": "96b1cb6a8b31d205292800f35fff8de8835b115f82cfc755f90aab000e8738f7"
+        },
+        {
+          "bytes": 279,
+          "path": "seclang/challenge/testcase/17/input.txt",
+          "sha256": "ed6edbbadf15ec578c571956978e5a8c5365e81c69c2992acba5ed3501f0876c"
+        },
+        {
+          "bytes": 173,
+          "path": "seclang/challenge/testcase/17/program.sec",
+          "sha256": "50696b3b2a742ed27002d0019b5c3fc0c4dfd338900ce81113945ece29fb0d4e"
+        },
+        {
+          "bytes": 361,
+          "path": "seclang/challenge/testcase/17/variant.sec",
+          "sha256": "402db84841ac95e02f9c0a897fde302e68dfa25ef24f0a82a3e4cecba27e679c"
+        },
+        {
+          "bytes": 383,
+          "path": "seclang/challenge/testcase/18/input.txt",
+          "sha256": "65b3990a06117959fe512da79989dadd42657f8a8f2c304e98fdfc087e0b16b9"
+        },
+        {
+          "bytes": 348,
+          "path": "seclang/challenge/testcase/18/program.sec",
+          "sha256": "b9e7d8e8f27cfebc747414ede8da3880ef2658096db8c6ec7966082298177f98"
+        },
+        {
+          "bytes": 334,
+          "path": "seclang/challenge/testcase/18/variant.sec",
+          "sha256": "c5907a7d19981286da040b62b1ddf696994801b198342af644f4a37b4eec447e"
+        },
+        {
+          "bytes": 40,
+          "path": "seclang/challenge/testcase/19/input.txt",
+          "sha256": "c38169af44691887e53dc6b413725a36386c539e1d3b9e95705057ba12737389"
+        },
+        {
+          "bytes": 608,
+          "path": "seclang/challenge/testcase/19/program.sec",
+          "sha256": "99f3f6840ff732181473fc946d9cb6d35d8a66d2cc5b84cac144ed0ef6519b0a"
+        },
+        {
+          "bytes": 855,
+          "path": "seclang/challenge/testcase/19/variant.sec",
+          "sha256": "e5c6dc0870eb51752469d67d520d0f530ded17598376054dfd62248173b2c505"
+        },
+        {
+          "bytes": 48,
+          "path": "seclang/challenge/testcase/20/input.txt",
+          "sha256": "6314355f8e754f783889db8e0c836a932bbe7a8217c080ba28016a26e7d27868"
+        },
+        {
+          "bytes": 327,
+          "path": "seclang/challenge/testcase/20/program.sec",
+          "sha256": "dcd32bc36360cf01079d493bf8a48502227ad4ca5696cc3f6225a7719159d5f6"
+        },
+        {
+          "bytes": 447,
+          "path": "seclang/challenge/testcase/20/variant.sec",
+          "sha256": "ab6e863812060b911586636fd6f7e379b0bb289e8f05d64fa64c25f9cfe1b793"
+        },
+        {
+          "bytes": 39,
+          "path": "seclang/challenge/testcase/21/input.txt",
+          "sha256": "3812b7d7f6eba5a84d56c9f41eed8cd3772836c139f31f6965cb38012d561bcd"
+        },
+        {
+          "bytes": 236,
+          "path": "seclang/challenge/testcase/21/program.sec",
+          "sha256": "bb1f44869ad653ca4d46ed8ed2b65b00713d705c329594ce7f238c496fb21197"
+        },
+        {
+          "bytes": 458,
+          "path": "seclang/challenge/testcase/21/variant.sec",
+          "sha256": "c5aeffaa9a8cd2334e153cca8158027d7c1f64c8a56f14db5865e5bdd19f1c2c"
+        },
+        {
+          "bytes": 183,
+          "path": "seclang/challenge/testcase/22/input.txt",
+          "sha256": "1db158ff5fa8badecc90799f27af052a95c4cbab5a1b79dbe731f7f80a3a251a"
+        },
+        {
+          "bytes": 455,
+          "path": "seclang/challenge/testcase/22/program.sec",
+          "sha256": "ce8606c7330b76da96acb06de5ba16df6fb43c94cd44a5790417111a52b309b8"
+        },
+        {
+          "bytes": 365,
+          "path": "seclang/challenge/testcase/22/variant.sec",
+          "sha256": "7837ab67c0ca29293bd07b5e95e5eed4c7e3317ac0772c34b9ae6da7fae53c45"
+        },
+        {
+          "bytes": 23,
+          "path": "seclang/challenge/testcase/23/input.txt",
+          "sha256": "910157049ccf5f174cf103fc3c5711de7c6007b5bc0eaeac622fdd79474efdd1"
+        },
+        {
+          "bytes": 139,
+          "path": "seclang/challenge/testcase/23/program.sec",
+          "sha256": "87b8a5209a6c0287204365efc6bb4255cd9fb1200b0130694198e33824a34c40"
+        },
+        {
+          "bytes": 217,
+          "path": "seclang/challenge/testcase/23/variant.sec",
+          "sha256": "08517c13153a45fa4e29f76e35a2e6c79dd278756d9b7ed5c33fa20fb75f6277"
+        },
+        {
+          "bytes": 190,
+          "path": "seclang/challenge/testcase/24/input.txt",
+          "sha256": "c68ec04744d6f4e6da5179e5d96bcca6f65d48134b3bd17c9653e1be927dfdde"
+        },
+        {
+          "bytes": 253,
+          "path": "seclang/challenge/testcase/24/program.sec",
+          "sha256": "76cea4dce9685354527dbd6c97f68bbba9ab00d14d82bf9684b6230db568d72a"
+        },
+        {
+          "bytes": 326,
+          "path": "seclang/challenge/testcase/24/variant.sec",
+          "sha256": "1f19bb2f9b9e1f6f35dd6545b00644a292adc51cd4b5d6207c7cace71c369c2f"
+        },
+        {
+          "bytes": 37,
+          "path": "seclang/challenge/testcase/25/input.txt",
+          "sha256": "3f60a9c2d1ca6aaf4682884691b6f9485de3571c2e99bda219d5b6cf6b379c55"
+        },
+        {
+          "bytes": 416,
+          "path": "seclang/challenge/testcase/25/program.sec",
+          "sha256": "ccb5b5d45bbbd043050a204e9c202c7b643d36befd2ba98187c5ecfea71bd101"
+        },
+        {
+          "bytes": 526,
+          "path": "seclang/challenge/testcase/25/variant.sec",
+          "sha256": "aae9cf0e0461bb2444e81d8fb24ea7496695f9b6a6affb0a50ffab9211ee0533"
+        },
+        {
+          "bytes": 34,
+          "path": "seclang/challenge/testcase/26/input.txt",
+          "sha256": "dfd91dec59e3b3f106b59f9c40fad574b675588b2c955c122871e91f49503cfc"
+        },
+        {
+          "bytes": 274,
+          "path": "seclang/challenge/testcase/26/program.sec",
+          "sha256": "752b99a5c82955b598b282d1553f0fe55e867b499236065c53c603741856f6e8"
+        },
+        {
+          "bytes": 588,
+          "path": "seclang/challenge/testcase/26/variant.sec",
+          "sha256": "7f41cefb27e3b5cfb11a6d881da7cec25ce7dbdfeffe8e6df26f21c70afd40ca"
+        },
+        {
+          "bytes": 88,
+          "path": "seclang/challenge/testcase/27/input.txt",
+          "sha256": "97f33def295614ac100aa384992f0f7a144311398b29943c318ee6e2bdbf6816"
+        },
+        {
+          "bytes": 176,
+          "path": "seclang/challenge/testcase/27/program.sec",
+          "sha256": "fa0a987b9a6193d8c218306de5e9ca2ef1e4a241fc899cb29cc7e3cfdfd5c409"
+        },
+        {
+          "bytes": 180,
+          "path": "seclang/challenge/testcase/27/variant.sec",
+          "sha256": "c2edaa590f272faa270dcba368269deda8d689b22938a450ca86b4a4e4c8c202"
+        },
+        {
+          "bytes": 513,
+          "path": "seclang/challenge/testcase/28/input.txt",
+          "sha256": "3748da4740d2089def23adce099c40007670832046ed6895eb6e2313a351582c"
+        },
+        {
+          "bytes": 290,
+          "path": "seclang/challenge/testcase/28/program.sec",
+          "sha256": "3808f97c0b1933a6f4fcd6650ff84cf8ff2104c75a8dfc3f1d54b88200a70619"
+        },
+        {
+          "bytes": 300,
+          "path": "seclang/challenge/testcase/28/variant.sec",
+          "sha256": "f8e9a69353579ae74d812661e21e19dde5a7ad0b68cab129931c279fb97109e9"
+        },
+        {
+          "bytes": 0,
+          "path": "seclang/challenge/testcase/99_mixed_type/input.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "bytes": 267,
+          "path": "seclang/challenge/testcase/99_mixed_type/program.sec",
+          "sha256": "c26695f42117d64bf543d950950164e99718701472f21b74e05ca46bbaab5334"
+        },
+        {
+          "bytes": 242,
+          "path": "seclang/challenge/testcase/99_mixed_type/variant.sec",
+          "sha256": "2bdda310d83fe5825984e72c27fe7663d63bb14657e1cf5c2b3bc9204437d66e"
+        },
+        {
+          "bytes": 3854,
+          "path": "seclang/challenge/testcase/check.py",
+          "sha256": "4d2278aa6aa7b73a2145958ade056ca438e46be973e1bd2122303faeae661538"
+        },
+        {
+          "bytes": 1938,
+          "path": "seclang/challenge/testcase/test.py",
+          "sha256": "a67483a5f358891e716f1bcbeb14f77861fa4314937ad8fa3ea170804d21c253"
+        },
+        {
+          "bytes": 2337,
+          "path": "seclang/challenge/worker/api_compile.py",
+          "sha256": "41406988c93e42fafe53442d08a3debc9b0ed2f67ab091f4f7e2761194f4db39"
+        },
+        {
+          "bytes": 1954,
+          "path": "seclang/challenge/worker/api_execute.py",
+          "sha256": "a573de215923803cc92a2e17f0cece5d07d9e2026277ec1ea45ec5283997e3e9"
+        },
+        {
+          "bytes": 4578,
+          "path": "seclang/challenge/worker/api_update.py",
+          "sha256": "4d3a83d2f9a92ba1b2baed2651309fe53c4a87c8d7511ae3fbb7ceb5398b25ae"
+        },
+        {
+          "bytes": 11768624,
+          "path": "seclang/challenge/worker/kothcli-client",
+          "sha256": "d29a8211c6e701b465bbe9710fb8a2470fb17f61cc48f96a1b6feb57017b0c8b"
+        },
+        {
+          "bytes": 12068,
+          "path": "seclang/challenge/worker/testcase.py",
+          "sha256": "e86e720036bcc521a71fe31d95a2f045a7067602b9a49d4c3f54350c060ad04b"
+        },
+        {
+          "bytes": 791,
+          "path": "seclang/challenge/worker/update_flag.py",
+          "sha256": "b3573be0a62740ecdac6baab26c5f83642809c070c3733d1d5d6beaa1684a644"
+        },
+        {
+          "bytes": 6723,
+          "path": "seclang/challenge/worker/worker.py",
+          "sha256": "d5a08a28c5851482395226005b1c642c0c7e2f215c6976a103d6eabae0629463"
+        },
+        {
+          "bytes": 72,
+          "path": "seclang/challenge/worker/worker.sh",
+          "sha256": "bf3375c1883dccf93ea2f66f2a9b7314a17376306aa1b3ef46a7a9e77cf8fa2d"
+        },
+        {
+          "bytes": 407,
+          "path": "seclang/distfiles/01_build_docker.sh",
+          "sha256": "ca12b404f8b807f541f3c0e16e1e1389bda625e454a4eecb7fe181f4348c244f"
+        },
+        {
+          "bytes": 1415,
+          "path": "seclang/distfiles/02_compiler.sh",
+          "sha256": "5bc76dbc832d7bde7b2ce3585946f5fa6dff26a2cb0fb90b59c26e3e3de050e1"
+        },
+        {
+          "bytes": 790,
+          "path": "seclang/distfiles/03_interpreter.py",
+          "sha256": "ddaed2d1cbfb5332fcfd8e03ffc150269204d1606621c3304ad4a21f03dceb9e"
+        },
+        {
+          "bytes": 261,
+          "path": "seclang/distfiles/assembler/Dockerfile",
+          "sha256": "b1e51643aac4fa128f5464878d42bf1880e105b49fed888c919e426dfe66ed38"
+        },
+        {
+          "bytes": 139,
+          "path": "seclang/distfiles/assembler/assemble",
+          "sha256": "3a3c16b052ec730cd001c2eebe66b95455a0abb97f494c9d80c16e32b10ae644"
+        },
+        {
+          "bytes": 533,
+          "path": "seclang/distfiles/compiler/Dockerfile",
+          "sha256": "4b62ba56e72b42b79238abd96fce7ec973f6f8ff22bcbfa8087892a707eb8c96"
+        },
+        {
+          "bytes": 55,
+          "path": "seclang/distfiles/compiler/container/builtin/exit.asm",
+          "sha256": "f207aa331e5a41d53d25a1f4a59da0a9984423710098687b2064366dd2341d30"
+        },
+        {
+          "bytes": 2954,
+          "path": "seclang/distfiles/compiler/container/builtin/print.asm",
+          "sha256": "656ade44ebd6cd213db49809cc67bfeab63862c2be4125ed48984e17bffccfbb"
+        },
+        {
+          "bytes": 1032,
+          "path": "seclang/distfiles/compiler/container/builtin/scan.asm",
+          "sha256": "9728a737a19acb4cac3af35dcd2d8a5402e20de4dd5f9f384be385bca6bf6045"
+        },
+        {
+          "bytes": 93,
+          "path": "seclang/distfiles/compiler/container/entry.sh",
+          "sha256": "368ae0c898f97ce141788c12338d87542c653f07e355c80b7b053a47aca86cfa"
+        },
+        {
+          "bytes": 108,
+          "path": "seclang/distfiles/compiler/container/init.sh",
+          "sha256": "e0365aebb769c08058c13d6857df7ae7e574527cae34dad61f8ab8362d028ef9"
+        },
+        {
+          "bytes": 2677,
+          "path": "seclang/distfiles/compiler/container/seclang.lark",
+          "sha256": "310793daaa25d2c5345dad1b184590b5b21468e07fca4b8a203037a9d1987bd4"
+        },
+        {
+          "bytes": 23963,
+          "path": "seclang/distfiles/compiler/container/seclang.py",
+          "sha256": "3d24e23f155201d5a183bda5d0dadd5ae36fb004f83c09267022bd38edcb3f0c"
+        },
+        {
+          "bytes": 384,
+          "path": "seclang/distfiles/sample/advanced/01_fizzbuzz.sec",
+          "sha256": "b2f0cd618d8d75ceb633f8b103fc2d69480d1f096f16ce6ca174da27c3b6b469"
+        },
+        {
+          "bytes": 311,
+          "path": "seclang/distfiles/sample/advanced/02_fib.sec",
+          "sha256": "c8aaf6af37987c57044217ccefd21a905fe072d914cd787155a54fded6ea3ec7"
+        },
+        {
+          "bytes": 436,
+          "path": "seclang/distfiles/sample/advanced/03_nsieve.sec",
+          "sha256": "faa7bfb3740e30dc26784aa38e1c70875206e89eab86610a25476b11566f277e"
+        },
+        {
+          "bytes": 292,
+          "path": "seclang/distfiles/sample/advanced/04_gcd.sec",
+          "sha256": "0742ca68cb0e55887b133cb3bfece3054cb80d5d3bae034f0b780d63ee042cb3"
+        },
+        {
+          "bytes": 1259,
+          "path": "seclang/distfiles/sample/advanced/05_rc4.sec",
+          "sha256": "1299c38b7aea6a63df20b277495d608c5d1c4a8bc23a6f58080a69784e32d656"
+        },
+        {
+          "bytes": 1320,
+          "path": "seclang/distfiles/sample/advanced/06_crc.sec",
+          "sha256": "07d60cb4df8255cdae5debb70473d5cfb2b3ec0291bce55e433ee9bd4ef8ddb3"
+        },
+        {
+          "bytes": 61,
+          "path": "seclang/distfiles/sample/basic/01_print.sec",
+          "sha256": "3ca2491294477c716ecff533e70a245e2894b9804f45c4b5cf3cb264bf0a4869"
+        },
+        {
+          "bytes": 69,
+          "path": "seclang/distfiles/sample/basic/02_echo.sec",
+          "sha256": "7158f90d3474c1f7192087208df9fcdffdb884338d893579a8fc55c7e0e20b6f"
+        },
+        {
+          "bytes": 46,
+          "path": "seclang/distfiles/sample/basic/03_arith.sec",
+          "sha256": "fa1906fd4ade45185c39f8868d29c795f8953d3c7010d3a9f8a14a630d14c4a4"
+        },
+        {
+          "bytes": 105,
+          "path": "seclang/distfiles/sample/basic/04_logic.sec",
+          "sha256": "603bdcafdfb2d6ea35c8c46d80ea5459beb431cedbdde8823249ba17da78b97c"
+        },
+        {
+          "bytes": 128,
+          "path": "seclang/distfiles/sample/basic/05_func.sec",
+          "sha256": "35c23f73d7acca8e96b231c3ded763f123510bb15467ed53ee6bf872a875cfae"
+        },
+        {
+          "bytes": 325,
+          "path": "seclang/distfiles/sample/basic/06_if.sec",
+          "sha256": "facc8d1e55127512b538c41bbcf2f2662307b774417e1538bfd13441fff97950"
+        },
+        {
+          "bytes": 243,
+          "path": "seclang/distfiles/sample/basic/07_while.sec",
+          "sha256": "20e4718520d4de08c4d9ea874ba158f9e52c3f807f605a335c39e609f7559a20"
+        },
+        {
+          "bytes": 288,
+          "path": "seclang/distfiles/sample/basic/08_recfunc.sec",
+          "sha256": "559762d2ce109d3e310914305e66f1484ba33f5b8c71bddebbdd862f1ba29930"
+        },
+        {
+          "bytes": 326,
+          "path": "seclang/distfiles/sample/basic/09_array.sec",
+          "sha256": "d666248902dc3e970b05805e4788de0006fe6bf111754883b9ffe999bfd2f6f5"
+        },
+        {
+          "bytes": 478,
+          "path": "seclang/distfiles/sample/basic/10_cast.sec",
+          "sha256": "f5a2fe0e688be80a1a1a53dd345163fdf004da6a260c6a8a1b6fe1738326797b"
+        },
+        {
+          "bytes": 543,
+          "path": "seclang/distfiles/sample/basic/11_args.sec",
+          "sha256": "d9448ae8866e75d57d22b0f03f6b6eef5dae387f8884a5f89803e7b3566794b0"
+        },
+        {
+          "bytes": 259,
+          "path": "seclang/distfiles/sample/basic/12_func.sec",
+          "sha256": "8b8c6b1f0d8e6932a68c98c16fe89bc20dd4199f016990b70c9338101cce911d"
+        },
+        {
+          "bytes": 98275,
+          "path": "seclang/distfiles/seclang-doc.pdf",
+          "sha256": "9b51e2b7e845974fb456a2bd047ff2b664856f9a180438e9232d1ec6be0c4ad3"
+        },
+        {
+          "bytes": 1094,
+          "path": "witchquiz/README.md",
+          "sha256": "86caea3a1c19a1e470f869cf058dbaad022b5b6c6710106d45ff2bb3343841b0"
+        },
+        {
+          "bytes": 683,
+          "path": "witchquiz/solver/ec/a.py",
+          "sha256": "e8ab4b1cbdeedc82b62559687cba7a30b3b3bde070064af52b7396dd2382aee3"
+        },
+        {
+          "bytes": 4766,
+          "path": "witchquiz/solver/ec/ec.py",
+          "sha256": "1f43cf3653892d315d169f0428a2cc32f047c8342105e844e0167a4d34b7552b"
+        },
+        {
+          "bytes": 4815,
+          "path": "witchquiz/solver/ec/ec2.py",
+          "sha256": "3e9995c66232d1064ad8d6093ca4c525fdee8162e48b7fdb9b0a1c6cb5c3b508"
+        },
+        {
+          "bytes": 4876,
+          "path": "witchquiz/solver/ec/hoge/1.py",
+          "sha256": "c10e0d08b3821d3ef1922e162867c46544d7dfaafaeeb6a222450420ef1a6a3e"
+        },
+        {
+          "bytes": 4798,
+          "path": "witchquiz/solver/ec/hoge/10.py",
+          "sha256": "008c516561b5d8a92ddc9573b56aad571ab69e468461febff009d6d8779abe73"
+        },
+        {
+          "bytes": 4798,
+          "path": "witchquiz/solver/ec/hoge/11.py",
+          "sha256": "5bbdb3e8e7d91244ffcdf045e4ddad0e9e94c2602d1a10079cffce355c3c1098"
+        },
+        {
+          "bytes": 4798,
+          "path": "witchquiz/solver/ec/hoge/12.py",
+          "sha256": "a9b0f76107fa1e39fb2032464c49f9ad276deb208d1e8eff8355d1eee6f25451"
+        },
+        {
+          "bytes": 4798,
+          "path": "witchquiz/solver/ec/hoge/2.py",
+          "sha256": "442353448bd4ef9397b76d4d3412d4b2a80908d90c907d0955428f2057aaf208"
+        },
+        {
+          "bytes": 4798,
+          "path": "witchquiz/solver/ec/hoge/3.py",
+          "sha256": "c444e7f4d29b52f80136261eb8511ccfb2bd8b19104d78397edede200902b6b5"
+        },
+        {
+          "bytes": 4798,
+          "path": "witchquiz/solver/ec/hoge/4.py",
+          "sha256": "ec9568994b84e320bb1864c5af220306c68268db6c89707089d7f9dcc6499444"
+        },
+        {
+          "bytes": 4798,
+          "path": "witchquiz/solver/ec/hoge/5.py",
+          "sha256": "e244eac0a02e74ad1196b1573e886c1da40c50269ec6766117df6d40220e0425"
+        },
+        {
+          "bytes": 4798,
+          "path": "witchquiz/solver/ec/hoge/6.py",
+          "sha256": "78a711b4ebe92cd43913d2e58bc35d065a407e4d9d806c9565931deabe3c7e25"
+        },
+        {
+          "bytes": 4803,
+          "path": "witchquiz/solver/ec/hoge/7.py",
+          "sha256": "8e7de18556036314cd6c5bf6b2a830344908b22e84aa8ed925af04d0d19d9850"
+        },
+        {
+          "bytes": 4798,
+          "path": "witchquiz/solver/ec/hoge/8.py",
+          "sha256": "c4a063f34a4e124d860afa417e5135b51c8f0acf2edb0486b59ebf069fcbdac3"
+        },
+        {
+          "bytes": 4798,
+          "path": "witchquiz/solver/ec/hoge/9.py",
+          "sha256": "c5e6d91b2cf05d8a36d798ac696dd43d3783a6d1c6e7e655e4624054661139af"
+        },
+        {
+          "bytes": 157,
+          "path": "witchquiz/solver/ec/hoge/a.bash",
+          "sha256": "9f0c1a553a443c89ce7cce85a14b8390c7ff616e0d3290b68da160d9df70eed3"
+        },
+        {
+          "bytes": 696,
+          "path": "witchquiz/solver/ec/hoge/tokens",
+          "sha256": "b4c903eb9ea15ce81a42f6febba1651558cbb8b26ffac54bc2148a260ffd09d9"
+        },
+        {
+          "bytes": 568,
+          "path": "witchquiz/solver/phase/a.py",
+          "sha256": "83457a9f2a6fbed5d6e893486b3c1ca2d6bfaaa1eddd6d8fb0f75a837f0bd9bc"
+        },
+        {
+          "bytes": 603737,
+          "path": "witchquiz/solver/phase/phase.py",
+          "sha256": "3526b059b7392b895f8219c1a3fbea3e6f14e6ce4bde79e2cb38e5eb65b418cb"
+        },
+        {
+          "bytes": 819,
+          "path": "witchquiz/solver/phase/test.py",
+          "sha256": "4cc50e66a98d2a5a2997fc499ebcdfc073a80d7a01a70288bf75af631983433e"
+        },
+        {
+          "bytes": 497664,
+          "path": "witchquiz/solver/purerandom/out.html",
+          "sha256": "8da3114f9442c0c527984cdaf78990e3d83166113c632bbfc098c71ab7e574a7"
+        },
+        {
+          "bytes": 1315,
+          "path": "witchquiz/solver/purerandom/problem_1.py",
+          "sha256": "480cf40eb2e8b8a57e88aa016242da23f6f6fa046de4ce8fa4f210eea57c98ad"
+        },
+        {
+          "bytes": 1142,
+          "path": "witchquiz/solver/purerandom/solver.py",
+          "sha256": "f85957d025e1e89672a30612da74847e45c0a422c31397247fdea64805844097"
+        },
+        {
+          "bytes": 1103,
+          "path": "witchquiz/solver/purerandom/solver2.py",
+          "sha256": "4344787330656b95cac017ff27032bceca679f2a7a93053b4563d132c616aad6"
+        },
+        {
+          "bytes": 700,
+          "path": "witchquiz/solver/purerandom/solver3.py",
+          "sha256": "411211cdb7280f25bc0254641f227dfe47deb9f47cc36a7a1e885a61d1215204"
+        },
+        {
+          "bytes": 0,
+          "path": "witchquiz/solver/purerandom/test.py",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "bytes": 2049,
+          "path": "witchquiz/solver/randomrotate/a.py",
+          "sha256": "74d878ad237e7f429f430510b6a368116c545470add383eb536e118e71cd664a"
+        },
+        {
+          "bytes": 2061,
+          "path": "witchquiz/solver/randomrotate/b.py",
+          "sha256": "e85a73d0b28d3663669ec4565fd7088fb71f30a6d6a04f2cd68abcfd65b9913d"
+        },
+        {
+          "bytes": 2537,
+          "path": "witchquiz/solver/randomrotate/backup.py",
+          "sha256": "d2dfac0021703e388bbcd2f536f341956a4cbe47f786c9110dc6fc2a162a1869"
+        },
+        {
+          "bytes": 645,
+          "path": "witchquiz/solver/randomrotate/c.py",
+          "sha256": "80ae4a64d6c4438f72c6f3c8b1a318f18f0c2ae87a358fe15d2ba0982ac63977"
+        },
+        {
+          "bytes": 2091,
+          "path": "witchquiz/solver/randomrotate/randomrotate_solver.py",
+          "sha256": "e8afdb49a69a84f41961b4d90d4e2d77ce8965b302e9e0c97e6c4dec5b636861"
+        },
+        {
+          "bytes": 2138,
+          "path": "witchquiz/solver/randomrotate/randomrotate_solver2.py",
+          "sha256": "216f1b72352b4dd4b0a498680215e68e8e070934975638700a5b71f376e63190"
+        },
+        {
+          "bytes": 696,
+          "path": "witchquiz/solver/randomrotate/tokens",
+          "sha256": "11e52cfa67a04be904ec69fd48ec9b4fcc9f30e1882058b001d2e66055c0cd4b"
+        },
+        {
+          "bytes": 171,
+          "path": "witchquiz/solver/test/a.bash",
+          "sha256": "0683c40e76ed51bae1869c5864795158e36fd337c6926a7cdb3ffd58332e2418"
+        },
+        {
+          "bytes": 740,
+          "path": "witchquiz/solver/test/a.py",
+          "sha256": "57331847ca6f5c928173358f1ea4dc35a5377e3f968dbdce6adcb803e92e266a"
+        },
+        {
+          "bytes": 760,
+          "path": "witchquiz/solver/test/b.py",
+          "sha256": "714a2a252e459164e51e52535bc805e9455bfeed17a4954d8d35efc914924710"
+        },
+        {
+          "bytes": 725,
+          "path": "witchquiz/solver/test/c.py",
+          "sha256": "8b62312717a76603dc0188e3c78f67159b80d4fbd66665856bcf4aa3ee8731cc"
+        },
+        {
+          "bytes": 0,
+          "path": "witchquiz/solver/test/out",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "bytes": 100781,
+          "path": "witchquiz/solver/test/out.html",
+          "sha256": "8b8255e4bb24c477d7008e4ab1313adb993677f1b14b49874036041244d0f0aa"
+        },
+        {
+          "bytes": 471,
+          "path": "witchquiz/solver/test/solver.py",
+          "sha256": "26ba336c3ad20766c8ef30c0a8f631816dbb0bf13fe74481130210a32cf169d1"
+        },
+        {
+          "bytes": 647,
+          "path": "witchquiz/solver/test/solver2.py",
+          "sha256": "cb29bd03a17ec1c3ccb2d0fd47d8ad96d82f045b94c1ab9a8ef4b6e2d8c31ebb"
+        },
+        {
+          "bytes": 674,
+          "path": "witchquiz/solver/test/solver3.py",
+          "sha256": "ed42284c0ee18de5d1f7b787e5bbfdb791e62e713819b0ec78ec92ecbd621745"
+        },
+        {
+          "bytes": 672,
+          "path": "witchquiz/solver/test/solver4.py",
+          "sha256": "7b98d6687911689c7f41b02973ff5f9c85b84055b92fcfb8d4301a838407210c"
+        },
+        {
+          "bytes": 49,
+          "path": "witchquiz/witchquiz/.gitignore",
+          "sha256": "53737d69d9adcf5c5dfdc0814ded2e310a61e53fff4e001aded3d1d1a218dc18"
+        },
+        {
+          "bytes": 426,
+          "path": "witchquiz/witchquiz/Dockerfile",
+          "sha256": "0e9d6ac014aced6ea36d8e96280998783adb76303c58919103d75a01add03d11"
+        },
+        {
+          "bytes": 375,
+          "path": "witchquiz/witchquiz/Dockerfile.dev",
+          "sha256": "315269185d6c75ebdcdcb2bc4af7e24a11ab07eaa92fee934e8707cded1de4be"
+        },
+        {
+          "bytes": 466,
+          "path": "witchquiz/witchquiz/Makefile",
+          "sha256": "205e76916984eed1be0a3091acbdf96dfd5b5636e17d495f9f4d4c358676c0b2"
+        },
+        {
+          "bytes": 1143,
+          "path": "witchquiz/witchquiz/README.md",
+          "sha256": "08849e5ae8dd81967184bdd2a876291df26381c6ee164d4b193287299e830f8a"
+        },
+        {
+          "bytes": 163,
+          "path": "witchquiz/witchquiz/docker-compose.dev.yml",
+          "sha256": "fc086e54703e3879b6937a0ef942539406ba64af7bde60c7000284507d64f3bc"
+        },
+        {
+          "bytes": 157,
+          "path": "witchquiz/witchquiz/docker-compose.yml",
+          "sha256": "752e0cf7fc58be40a99750a25105ee264010c0417e4bfc7b712344f05e68b23d"
+        },
+        {
+          "bytes": 10881,
+          "path": "witchquiz/witchquiz/ec_problem.ans",
+          "sha256": "a4791c1d1f9d02541405e1445d589f1843e410fef9e6230cf8191cbcd882d283"
+        },
+        {
+          "bytes": 49,
+          "path": "witchquiz/witchquiz/initialdb_setup.bash",
+          "sha256": "f1535ebcd9284afd7f42055e39962f93a14fd29e980b0f967fb744ee7b90a48b"
+        },
+        {
+          "bytes": 665,
+          "path": "witchquiz/witchquiz/manage.py",
+          "sha256": "c1f8c5400f9c849d6f3e84702a49a2398b3a4e2d118d0bfb55008497b8cc6a7d"
+        },
+        {
+          "bytes": 200241,
+          "path": "witchquiz/witchquiz/phase_problem.ans",
+          "sha256": "68ac15d015d0e08386d2ebcf5b7ec408f4597a356c63a2a7362e74af349e2e96"
+        },
+        {
+          "bytes": 4048,
+          "path": "witchquiz/witchquiz/problemFiles/ec.py",
+          "sha256": "3d60c1e48cd6b15af28ed016c0b9e3666555a7219d28e6a3c3b6015636721409"
+        },
+        {
+          "bytes": 4044,
+          "path": "witchquiz/witchquiz/problemFiles/ec_problem.py",
+          "sha256": "474420192968236c172f7ed0d9ca029ee98fbebea3689261b78e3dff44b1c648"
+        },
+        {
+          "bytes": 601352,
+          "path": "witchquiz/witchquiz/problemFiles/phase.py",
+          "sha256": "adb8b85a4a2e8e7debdffabdc698b670c2af4a2cd6569666e542df454f6937a5"
+        },
+        {
+          "bytes": 1371,
+          "path": "witchquiz/witchquiz/problemFiles/purerandom.py",
+          "sha256": "c7c3ffb8da993f8570f70ebaeddef6b135b312d7ea7fd66ad59512792c55fa84"
+        },
+        {
+          "bytes": 2023,
+          "path": "witchquiz/witchquiz/problemFiles/randomrotate.py",
+          "sha256": "f288b30c0a3ecc30f9b6494c460fdda8960a1f3d87fda85b44a91f6446a16aae"
+        },
+        {
+          "bytes": 1096,
+          "path": "witchquiz/witchquiz/purerandom.ans",
+          "sha256": "39762b83c0dcfc5162b605c5d5d5e379b57e0a2cbf7be8584d9f97f96d5769a8"
+        },
+        {
+          "bytes": 380,
+          "path": "witchquiz/witchquiz/pyproject.toml",
+          "sha256": "6e9bb8bfb03a1d33f3d2a17ae6fa48c7aaa73b707bf49c2b6394a34d81df87d1"
+        },
+        {
+          "bytes": 226549,
+          "path": "witchquiz/witchquiz/randomrotate.ans",
+          "sha256": "f37589d65722233b1e7936f75e56b7733b24d2f020e791bb6b10b0a1dfae787b"
+        },
+        {
+          "bytes": 936,
+          "path": "witchquiz/witchquiz/set_rounddata.py",
+          "sha256": "3b3e18335e396cf017127756fb28e530f5e7b9ab9b32264a1309ae644603ea34"
+        },
+        {
+          "bytes": 0,
+          "path": "witchquiz/witchquiz/witchquiz/__init__.py",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "bytes": 6050,
+          "path": "witchquiz/witchquiz/witchquiz/apis/api.py",
+          "sha256": "e5da8f4c278f1e1f469db04f22272cab2812e4cbb6a3ba55f5b5fcaa41af1301"
+        },
+        {
+          "bytes": 192,
+          "path": "witchquiz/witchquiz/witchquiz/apps.py",
+          "sha256": "47a63131810e28d27e604deba45d7cc79362d27b3ccb0833d501481e24992bc2"
+        },
+        {
+          "bytes": 395,
+          "path": "witchquiz/witchquiz/witchquiz/asgi.py",
+          "sha256": "75e8354439fb7e8448b8d6197239126dfbf5481a40529a7ceb09ad6bdb637c45"
+        },
+        {
+          "bytes": 520,
+          "path": "witchquiz/witchquiz/witchquiz/backends.py",
+          "sha256": "3081a91d61820bac956aefead44742de79ae183821e0ae3a9245bee521b37d94"
+        },
+        {
+          "bytes": 855,
+          "path": "witchquiz/witchquiz/witchquiz/datas/problems.json",
+          "sha256": "b6cc671b310419f4cd45d425b6f57a38b7d9dd36cac8b4ddf4976a1b1255ad1d"
+        },
+        {
+          "bytes": 246,
+          "path": "witchquiz/witchquiz/witchquiz/datas/tokens.json",
+          "sha256": "f0354bdce999bbdbc4e79c0d60630ec8ff0c3ace88ce8c53039f729f296fbdcd"
+        },
+        {
+          "bytes": 1182,
+          "path": "witchquiz/witchquiz/witchquiz/datas/users.json",
+          "sha256": "4215fc9f0757e6200654520fcc9be8673a777ebc32d56acb80c34eb7116b19b7"
+        },
+        {
+          "bytes": 10899,
+          "path": "witchquiz/witchquiz/witchquiz/ec_problem.ans",
+          "sha256": "b4ae6b6d4fe1301beeaaa8d9d64435072d790a40ca3e00a6948b6775767c0664"
+        },
+        {
+          "bytes": 0,
+          "path": "witchquiz/witchquiz/witchquiz/logic/__init__.py",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "bytes": 4795,
+          "path": "witchquiz/witchquiz/witchquiz/logic/common.py",
+          "sha256": "f208dc4ab438c48cd9bfe0dcee381beb2d834cb517734b1b27dc96194ea40783"
+        },
+        {
+          "bytes": 4224,
+          "path": "witchquiz/witchquiz/witchquiz/migrations/0001_initial.py",
+          "sha256": "2202663e50ca37149bdd903fed8d77e37addb7407a2f16680c94b566b724b613"
+        },
+        {
+          "bytes": 581,
+          "path": "witchquiz/witchquiz/witchquiz/migrations/0002_roundstageticktime_checked_and_more.py",
+          "sha256": "564466844975b102bb71815aadcb974544112bd920142cbf7ff3b6bfb137f72b"
+        },
+        {
+          "bytes": 0,
+          "path": "witchquiz/witchquiz/witchquiz/migrations/__init__.py",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "bytes": 1256,
+          "path": "witchquiz/witchquiz/witchquiz/models.py",
+          "sha256": "ecabd6f3447c63cbf569710328a1060eb8d1d77729a8f76cf9bf789994cf60bb"
+        },
+        {
+          "bytes": 200241,
+          "path": "witchquiz/witchquiz/witchquiz/phase_problem.ans",
+          "sha256": "6e4502821c6ca043fe881691efe1cab03ecb74487610512eb93031fce35713b3"
+        },
+        {
+          "bytes": 1096,
+          "path": "witchquiz/witchquiz/witchquiz/purerandom.ans",
+          "sha256": "4dc2dadb7ecc04249755c9d19538958fc70ba7d3a1250b63ee990293bf6c9d99"
+        },
+        {
+          "bytes": 0,
+          "path": "witchquiz/witchquiz/witchquiz/quiz/__init__.py",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "bytes": 1833,
+          "path": "witchquiz/witchquiz/witchquiz/quiz/cossin.py",
+          "sha256": "8a2ee3f6dd65102ea631a812c9acc4771a9b332d23d1cb001581e8f3993b03cf"
+        },
+        {
+          "bytes": 47,
+          "path": "witchquiz/witchquiz/witchquiz/quiz/cossin_secrets.py",
+          "sha256": "0a9c19bd7ac5a8d6cc32432179a9e33b719c66d7008340525c6a62704b9f9017"
+        },
+        {
+          "bytes": 5762,
+          "path": "witchquiz/witchquiz/witchquiz/quiz/ec.py",
+          "sha256": "d075c407b65381778c753338979bda0385f33d0e0d8a3e78cc5f258c204b5ecc"
+        },
+        {
+          "bytes": 4139,
+          "path": "witchquiz/witchquiz/witchquiz/quiz/ec_problem.py",
+          "sha256": "e2bb2101acd1f457156ee62a0071a5085ce16dde3ab0eeca0ee7b41c48493139"
+        },
+        {
+          "bytes": 174,
+          "path": "witchquiz/witchquiz/witchquiz/quiz/iproblem.py",
+          "sha256": "5f02659506562fa2334203e47a0689ea6adc306fd21a1bc036bc4b9af8bb4cbb"
+        },
+        {
+          "bytes": 601446,
+          "path": "witchquiz/witchquiz/witchquiz/quiz/phase_problem.py",
+          "sha256": "8211cb44003b11e0575fa932840cd0a7505d93822965ef26599be4c5bcda8741"
+        },
+        {
+          "bytes": 327,
+          "path": "witchquiz/witchquiz/witchquiz/quiz/problem1.py",
+          "sha256": "785837f251893e840d5479f13a25de9f6063ead8c522cc1e348e4290e7c5491d"
+        },
+        {
+          "bytes": 250,
+          "path": "witchquiz/witchquiz/witchquiz/quiz/problemlist.py",
+          "sha256": "bf17dd511f979b68ffa695a9f52314e7d3cc4e2ea8b61212013d18b0fe7c0ffe"
+        },
+        {
+          "bytes": 1502,
+          "path": "witchquiz/witchquiz/witchquiz/quiz/purerandom.py",
+          "sha256": "60a291d27fe3f7a601c964d9f8a15fcd0023a4c9f86f865b729d13ccab6736f4"
+        },
+        {
+          "bytes": 2110,
+          "path": "witchquiz/witchquiz/witchquiz/quiz/randomrotate.py",
+          "sha256": "eaba4636a52f3ccb457fba4500cb918d9af10c2f78ce8d4c8f3e41d7d415c9ab"
+        },
+        {
+          "bytes": 226542,
+          "path": "witchquiz/witchquiz/witchquiz/randomrotate.ans",
+          "sha256": "0c0dfde735fc573892ca74549a7fe73f444c64d52a3ef7fbf98740e44ba94021"
+        },
+        {
+          "bytes": 3347,
+          "path": "witchquiz/witchquiz/witchquiz/scoreing.py",
+          "sha256": "ac9e4ccc834a4d9994b6ef9e0ad69d61854758d1f9e801ab3615fe66ab86094c"
+        },
+        {
+          "bytes": 4608,
+          "path": "witchquiz/witchquiz/witchquiz/settings.py",
+          "sha256": "5df913a42f6654492d8c5232fb1e37a150aa6ff0c2262de6198a2b55ec1e3548"
+        },
+        {
+          "bytes": 469,
+          "path": "witchquiz/witchquiz/witchquiz/signals.py",
+          "sha256": "9d889b3d93d281ff2126cd29532fc3fd409c20990c2b048fddd8e912114770b9"
+        },
+        {
+          "bytes": 584,
+          "path": "witchquiz/witchquiz/witchquiz/templates/witchquiz/base.html",
+          "sha256": "ee2911a0153a8b7e908c1007d9597b6432c0417cdf7b88356791bcf7fd6e47f7"
+        },
+        {
+          "bytes": 3038,
+          "path": "witchquiz/witchquiz/witchquiz/templates/witchquiz/home.html",
+          "sha256": "8db4a630fb6a779c778e22d7ee196451b60377bb8411c989dd9d024ac1bb9315"
+        },
+        {
+          "bytes": 9903,
+          "path": "witchquiz/witchquiz/witchquiz/templates/witchquiz/howto.html",
+          "sha256": "544ca642b30d3783ab0824bb435b19c16a1d92fb43d2076d3453e758546a91e7"
+        },
+        {
+          "bytes": 1629,
+          "path": "witchquiz/witchquiz/witchquiz/templates/witchquiz/login.html",
+          "sha256": "d0630cc388d75bfea609d163ec37adc8e62dd2ccff998094d84f4e1c557501c1"
+        },
+        {
+          "bytes": 5755,
+          "path": "witchquiz/witchquiz/witchquiz/templates/witchquiz/stage.html",
+          "sha256": "6bd4543cc3f9893734a88b9449de2987b2d3b5baa6fcb198e3b0a8ea8aab05d0"
+        },
+        {
+          "bytes": 1438,
+          "path": "witchquiz/witchquiz/witchquiz/urls.py",
+          "sha256": "810e684157f1d33661945126c39ff530a6c712872fa89656102a12da21ca15e7"
+        },
+        {
+          "bytes": 0,
+          "path": "witchquiz/witchquiz/witchquiz/views/__init__.py",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "bytes": 1101,
+          "path": "witchquiz/witchquiz/witchquiz/views/download.py",
+          "sha256": "25060ca524c3f0a1f2412ce53f96b4f1cab7ac3002ef88c882979e9fa51997f2"
+        },
+        {
+          "bytes": 2647,
+          "path": "witchquiz/witchquiz/witchquiz/views/home.py",
+          "sha256": "3b92ba7ed302873f4eb739ccab8f03370a3e2737ed5224c9169b2a4a1fa225b7"
+        },
+        {
+          "bytes": 282,
+          "path": "witchquiz/witchquiz/witchquiz/views/howto.py",
+          "sha256": "31c978ce0329ec21f84f81338a06609ecb94de7a83820b0835c17d1a9a7c22ac"
+        },
+        {
+          "bytes": 924,
+          "path": "witchquiz/witchquiz/witchquiz/views/login.py",
+          "sha256": "66c2ad76b910a5cff80190a6a7272e5a9b0ef0632d68b6a2c0a78426853e1d70"
+        },
+        {
+          "bytes": 2998,
+          "path": "witchquiz/witchquiz/witchquiz/views/stage.py",
+          "sha256": "a0738eddcfbf927fc343ba724a8a0d8c2081f9a2d480fe1e9dff46436dbc8221"
+        },
+        {
+          "bytes": 935,
+          "path": "witchquiz/witchquiz/witchquiz/views/tick.py",
+          "sha256": "dca766e5cc9710a31c051017d2641635b145b973ae6f9c7ed0868c47b29211b0"
+        },
+        {
+          "bytes": 395,
+          "path": "witchquiz/witchquiz/witchquiz/wsgi.py",
+          "sha256": "fe74d2eac4056200b8084ce285f09adeea1815d16fe8b23b630cb0ed8f7737e2"
+        }
+      ],
+      "review_flags": [],
+      "source": "https://github.com/SECCON/SECCON2022_final_CTF/tree/1698664cc662f8c01fe079d2d02d87816f19d6c1/koh",
+      "status": "pending_manual_review"
+    }
+  ],
+  "commit": "1698664cc662f8c01fe079d2d02d87816f19d6c1",
+  "event": "SECCON 2022 Finals",
+  "repository": "https://github.com/SECCON/SECCON2022_final_CTF",
+  "schema": "original-ctf-catalog-v1"
+}
