@@ -20,6 +20,12 @@ The other `agent_econ_*` configurations are mechanism interventions. They must n
 
 The machine-readable source of truth is `experiments/agent_economics_protocol.json` plus the selected world configuration hash.
 
+## Trace and context capture
+
+Each future v2 model turn is linked by `(run_id, agent_id, turn_seq, request_id, checkpoint_id)`. The backend appends a durable `authority-world-v2.model-trace.jsonl` record before and after the provider call, preserving the exact panel, complete context list actually submitted, system/user input, tool schemas, model response and SHA-256 digests. Agent `audit.raw.jsonl` preserves the submitted context and tool receipts; `context.jsonl` remains the bounded sequence used to build later prompts. Gateway exchanges and provider retries carry the same run/turn/checkpoint identity. Every immutable snapshot includes a `TRACE_INDEX.json` mapping trace files to turns and checkpoint provenance, and its regular manifest hashes the index and trace files.
+
+This captures the model-visible autoregressive context and outputs, not hidden model activations. Older archives are not rewritten; they retain their original evidence limits. Trace files contain full prompts, panels and private-message context, so archive access should be restricted like the raw experiment data.
+
 ## Before any provider call
 
 ```bash

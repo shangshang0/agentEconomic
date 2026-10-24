@@ -7,13 +7,14 @@ context and transports tool calls selected by the model.
 
 from __future__ import annotations
 
-import json, os, time, urllib.error, urllib.request, uuid
+import hashlib, json, os, time, urllib.error, urllib.request, uuid
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from typing import Any
 
 BASE = os.environ["BACKEND_URL"].rstrip("/"); AGENT_ID = os.environ["AGENT_ID"]; TOKEN = os.environ["AGENT_TOKEN"]
 STATE = Path(os.getenv("RUNNER_STATE_DIR", "/state/runner-v2")); RUN_ID: str | None = None
+TURN_META: dict[str, Any] = {}
 MAX_EVENTS = int(os.getenv("RUNNER_CONTEXT_EVENTS", "36")); MAX_CHARS = int(os.getenv("RUNNER_CONTEXT_CHARS", "12000"))
 TOOL_TIMEOUT_SECONDS = int(os.getenv("RUNNER_TOOL_TIMEOUT_SECONDS", "1200"))
 
@@ -51,12 +52,18 @@ def event(kind: str, value: dict[str, Any], context_value: dict[str, Any] | None
     if RUN_ID is None:
         return
     folder = _run_dir(); folder.mkdir(parents=True, exist_ok=True)
-    raw = {"at": time.time(), "kind": kind, **value}
+    raw = {"at": time.time(), **TURN_META, "kind": kind, **value}
+    if TURN_META:
+        raw["trace_schema"] = "authority-world-agent-trace-v1"
     with _path("audit.raw.jsonl").open("a", encoding="utf-8") as stream:
         stream.write(json.dumps(raw, ensure_ascii=False) + "\n")
-    compact = {"at": raw["at"], "kind": kind, **(context_value if context_value is not None else value)}
+        stream.flush(); os.fsync(stream.fileno())
+    compact = {"at": raw["at"], **TURN_META, "kind": kind, **(context_value if context_value is not None else value)}
+    if TURN_META:
+        compact["trace_schema"] = raw["trace_schema"]
     with _path("context.jsonl").open("a", encoding="utf-8") as stream:
         stream.write(json.dumps(compact, ensure_ascii=False) + "\n")
+        stream.flush(); os.fsync(stream.fileno())
 
 def context() -> list[dict[str, Any]]:
     if RUN_ID is None or not _path("context.jsonl").exists(): return []
@@ -76,30 +83,50 @@ def receipt_for_context(name: str, ok: bool, result: dict[str, Any]) -> dict[str
     receipt = {key: result[key] for key in keep if key in result}
     return {"name": name, "ok": ok, "receipt": receipt}
 
-def turn() -> None:
+def turn(wake_panel: dict[str, Any] | None = None) -> None:
+    global TURN_META
     request_id = "v2:" + AGENT_ID + ":" + uuid.uuid4().hex
-    ok, model = request("POST", "/v2/agents/" + AGENT_ID + "/model-response", {"request_id": request_id, "model_profile": os.getenv("MODEL_PROFILE", "default"), "agent_context": context()})
-    if not ok: event("model_error", {"request_id": request_id, **model}); return
-    calls = model.get("function_calls", []); event("model_response", {"request_id": request_id, "text": model.get("text", ""), "function_calls": calls})
-    if not isinstance(calls, list): return
-    def execute(call: dict[str, Any]) -> tuple[str, str, bool, dict[str, Any]]:
-        try: args = json.loads(call.get("arguments", "{}"))
-        except (TypeError, json.JSONDecodeError): args = {}
-        call_id = str(call.get("call_id") or uuid.uuid4().hex)
-        ok, result = request("POST", "/v2/agents/" + AGENT_ID + "/tools", {"call_id": call_id, "name": call.get("name"), "arguments": args}, TOOL_TIMEOUT_SECONDS)
-        return str(call.get("name")), call_id, ok, result
-    with ThreadPoolExecutor(max_workers=max(1, len(calls))) as pool:
-        futures = [pool.submit(execute, call) for call in calls if isinstance(call, dict)]
-        for future in as_completed(futures):
-            name, call_id, ok, result = future.result()
-            event("tool_result", {"request_id": request_id, "call_id": call_id, "name": name, "ok": ok, "result": result}, receipt_for_context(name, ok, result))
+    opened, turn_info = request("POST", "/v2/agents/" + AGENT_ID + "/turn/start", {"request_id": request_id}, timeout=15)
+    if not opened:
+        time.sleep(0.5)
+        return
+    TURN_META = {key: turn_info.get(key) for key in ("run_id", "agent_id", "turn_seq", "checkpoint_id", "checkpointed_day", "start_event_seq", "start_day")}
+    TURN_META["request_id"] = request_id
+    try:
+        agent_context = context()
+        context_json = json.dumps(agent_context, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+        context_hash = hashlib.sha256(context_json.encode("utf-8")).hexdigest()
+        request_context = {**TURN_META, "wake_panel": wake_panel, "agent_context": agent_context,
+                           "agent_context_sha256": context_hash, "context_rows": len(agent_context),
+                           "context_event_limit": MAX_EVENTS, "context_char_budget": MAX_CHARS}
+        event("model_request", request_context, {"agent_context_sha256": context_hash, "context_rows": len(agent_context)})
+        ok, model = request("POST", "/v2/agents/" + AGENT_ID + "/model-response", {"request_id": request_id, "model_profile": os.getenv("MODEL_PROFILE", "default"), "agent_context": agent_context, "agent_context_sha256": context_hash})
+        if not ok:
+            event("model_error", {"request_id": request_id, **model})
+            return
+        calls = model.get("function_calls", []); event("model_response", {"request_id": request_id, "text": model.get("text", ""), "function_calls": calls, "backend_trace_meta": model.get("trace_meta")})
+        if not isinstance(calls, list): return
+        def execute(call: dict[str, Any]) -> tuple[str, str, bool, dict[str, Any]]:
+            try: args = json.loads(call.get("arguments", "{}"))
+            except (TypeError, json.JSONDecodeError): args = {}
+            call_id = str(call.get("call_id") or uuid.uuid4().hex)
+            ok, result = request("POST", "/v2/agents/" + AGENT_ID + "/tools", {"request_id": request_id, "call_id": call_id, "turn_seq": TURN_META.get("turn_seq"), "name": call.get("name"), "arguments": args}, TOOL_TIMEOUT_SECONDS)
+            return str(call.get("name")), call_id, ok, result
+        with ThreadPoolExecutor(max_workers=max(1, len(calls))) as pool:
+            futures = [pool.submit(execute, call) for call in calls if isinstance(call, dict)]
+            for future in as_completed(futures):
+                name, call_id, ok, result = future.result()
+                event("tool_result", {"request_id": request_id, "call_id": call_id, "name": name, "ok": ok, "result": result}, receipt_for_context(name, ok, result))
+    finally:
+        request("POST", "/v2/agents/" + AGENT_ID + "/turn/complete", {"request_id": request_id}, timeout=15)
+        TURN_META = {}
 
 def main() -> None:
     while True:
         ok, status = request("GET", "/v2/agents/" + AGENT_ID + "/wake", timeout=15)
         if ok:
             set_run(status.get("panel"))
-            if status.get("ready"): turn()
+            if status.get("ready"): turn(status.get("panel"))
             time.sleep(0.5)
         elif status.get("status") == 409:
             # Before the controller creates a world, polling must not turn a

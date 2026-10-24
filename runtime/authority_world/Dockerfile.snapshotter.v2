@@ -1,0 +1,5 @@
+ARG DOCKER_REGISTRY=docker.m.daocloud.io
+FROM ${DOCKER_REGISTRY}/library/python:3.12-slim
+WORKDIR /app
+COPY snapshotter/service_v2.py /app/snapshotter/service_v2.py
+ENTRYPOINT ["python3", "/app/snapshotter/service_v2.py"]

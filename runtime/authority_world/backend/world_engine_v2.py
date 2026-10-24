@@ -169,7 +169,7 @@ def create_world(config: WorldConfigV2, seed: int, start_wall: float, scheduled_
         "config": config.canonical_dict(), "config_hash": config.config_hash, "task_manifest_hash": task_manifest_hash, "seed": seed,
         "world_start_wall": start, "status": "scheduled" if start > start_wall else "running", "day": 1,
         "settled_through_day": 0, "next_leader": None, "tasks": tasks, "daily": _new_daily(None),
-        "agents": {agent_id: {"status": "alive", "energy": config.initial_energy, "sleep_until": None, "private_messages": [], "lifetime_energy_received": 0.0, "lifetime_energy_sent": 0.0, "public_notice_seq": 0, "private_notice_seq": 0, "last_wake_public_notice": -1, "last_wake_private_notice": -1, "task_notice_seq": 0, "last_wake_task_notice": -1, "continuation_seq": 0, "last_wake_continuation": -1, "last_wake_phase": "", "last_idle_wake": 0.0} for agent_id in _ids(config)},
+        "agents": {agent_id: {"status": "alive", "energy": config.initial_energy, "sleep_until": None, "private_messages": [], "lifetime_energy_received": 0.0, "lifetime_energy_sent": 0.0, "public_notice_seq": 0, "private_notice_seq": 0, "last_wake_public_notice": -1, "last_wake_private_notice": -1, "task_notice_seq": 0, "last_wake_task_notice": -1, "continuation_seq": 0, "last_wake_continuation": -1, "last_wake_phase": "", "last_idle_wake": 0.0, "model_turn_seq": 0} for agent_id in _ids(config)},
         "forum": [], "notice_seq": 0, "event_seq": 0, "audit": [], "tool_receipts": {},
     }
     if state["status"] == "running":

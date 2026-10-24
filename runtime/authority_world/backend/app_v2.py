@@ -34,6 +34,7 @@ GATEWAY_TOKEN = os.environ["GATEWAY_TOKEN"]
 SKILL = render_skill(CONFIG)
 STATE_PATH = DATA_DIR / "authority-world-v2.state.json"
 AUDIT_PATH = DATA_DIR / "authority-world-v2.events.jsonl"
+MODEL_TRACE_PATH = DATA_DIR / "authority-world-v2.model-trace.jsonl"
 TASK_WORK_DIR = Path(os.getenv("TASK_WORK_DIR", "/world-data/tasks"))
 TASK_MANIFEST_PATH = Path(os.environ["CTF_RUN_MANIFEST"]) if os.getenv("CTF_RUN_MANIFEST") else None
 TASK_SOURCE_ROOT = Path(os.getenv("CTF_SOURCE_ROOT", "/ctf-source"))
@@ -47,6 +48,13 @@ TASK_EXECUTION_SLOTS = max(1, int(os.getenv("TASK_EXECUTION_SLOTS", "2")))
 TASK_EXECUTION_SEMAPHORE = asyncio.Semaphore(TASK_EXECUTION_SLOTS)
 TASK_EXECUTION_LOCKS: dict[str, asyncio.Lock] = {}
 FLUSHED = 0
+# Experiments must never run without a durable snapshotter. This is deliberately
+# not configurable through an environment variable: a misconfigured Compose
+# file must fail closed instead of silently allowing an uncheckpointed run.
+SNAPSHOTS_REQUIRED = True
+SNAPSHOTTER_READY_AT = 0.0
+ACTIVE_TURNS: dict[str, str] = {}
+ACTIVE_TURN_META: dict[str, dict[str, Any]] = {}
 
 
 def fail(code: int, message: str) -> None: raise HTTPException(code, message)
@@ -60,6 +68,23 @@ def auth_control(token: str | None) -> None:
 def state() -> dict[str, Any]:
     if STATE is None: fail(409, "world has not started")
     return STATE
+
+def mark_checkpoint_if_day_changed(value: dict[str, Any], previous_day: int, previous_status: str, now: float) -> bool:
+    day_changed = value.get("day") != previous_day
+    terminal_changed = previous_status in {"scheduled", "running"} and value.get("status") not in {"scheduled", "running"}
+    if (day_changed or terminal_changed) and not value.get("checkpoint_pending"):
+        value["checkpoint_pending"] = {
+            "snapshot_id": f"{value['run_id']}-day-{value['day']}-seq-{value['event_seq']}",
+            "kind": "terminal" if terminal_changed else "day_boundary", "day": value["day"], "event_seq": value["event_seq"], "requested_at": now,
+        }
+        return True
+    return False
+
+def active_turn(agent_id: str, request_id: str | None) -> bool:
+    return bool(request_id) and ACTIVE_TURNS.get(agent_id) == request_id
+
+def checkpoint_ready() -> bool:
+    return SNAPSHOTTER_READY_AT > 0 and time.time() - SNAPSHOTTER_READY_AT < 30
 
 def persist(value: dict[str, Any]) -> None:
     global FLUSHED
@@ -75,6 +100,14 @@ def persist(value: dict[str, Any]) -> None:
         with AUDIT_PATH.open("a", encoding="utf-8") as stream:
             for row in rows: stream.write(json.dumps(row, ensure_ascii=False, sort_keys=True) + "\n")
         FLUSHED = rows[-1]["seq"]
+
+def append_model_trace(record: dict[str, Any]) -> None:
+    """Durably append the exact model I/O with immutable run/turn provenance."""
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    with MODEL_TRACE_PATH.open("a", encoding="utf-8") as stream:
+        stream.write(json.dumps({"trace_schema": "authority-world-model-trace-v1", "at": time.time(), **record}, ensure_ascii=False, sort_keys=True) + "\n")
+        stream.flush()
+        os.fsync(stream.fileno())
 
 def load_state() -> dict[str, Any] | None:
     global FLUSHED
@@ -124,8 +157,13 @@ async def tick() -> None:
         await asyncio.sleep(0.5)
         async with LOCK:
             if STATE is not None:
-                before = STATE["event_seq"]; now = time.time(); advance(STATE, now); provision_offered_tasks(STATE); prewarm_next_day_tasks(STATE, now); reconcile_tasks(STATE)
-                if before != STATE["event_seq"]: persist(STATE)
+                if STATE.get("checkpoint_pending"):
+                    continue
+                before = STATE["event_seq"]; previous_day = int(STATE["day"]); previous_status = str(STATE["status"]); now = time.time()
+                advance(STATE, now); marked = mark_checkpoint_if_day_changed(STATE, previous_day, previous_status, now)
+                if not STATE.get("checkpoint_pending"):
+                    provision_offered_tasks(STATE); prewarm_next_day_tasks(STATE, now); reconcile_tasks(STATE)
+                if marked or before != STATE["event_seq"]: persist(STATE)
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -154,26 +192,110 @@ async def start(request: Request, x_world_control_token: str | None = Header(def
     async with LOCK:
         global STATE
         if STATE is not None: fail(409, "world already exists; runs are immutable")
+        if SNAPSHOTS_REQUIRED and not checkpoint_ready(): fail(503, "required v2 snapshotter is not registered; experiment start refused")
         now = time.time(); delay = body.get("start_delay_seconds", CONFIG.prestart_seconds)
         if not isinstance(delay, (int, float)) or isinstance(delay, bool) or delay < 0 or delay > 600: fail(400, "invalid start delay")
         task_specs = TASK_MANIFEST.get("tasks") if TASK_MANIFEST else None
-        STATE = create_world(CONFIG, seed, now, now + float(delay), task_specs, TASK_MANIFEST_HASH); persist(STATE)
+        STATE = create_world(CONFIG, seed, now, now + float(delay), task_specs, TASK_MANIFEST_HASH)
+        STATE["checkpoint_pending"] = {"snapshot_id": f"{STATE['run_id']}-initial-seq-{STATE['event_seq']}", "kind": "initial", "day": STATE["day"], "event_seq": STATE["event_seq"], "requested_at": now}
+        persist(STATE)
         return {"ok": True, "run_id": STATE["run_id"], "config_hash": CONFIG.config_hash, "game_starts_in_real_seconds": delay}
+
+@app.post("/v2/control/checkpoints/register")
+async def checkpoint_register(x_world_control_token: str | None = Header(default=None)) -> dict[str, Any]:
+    auth_control(x_world_control_token)
+    global SNAPSHOTTER_READY_AT
+    SNAPSHOTTER_READY_AT = time.time()
+    return {"ok": True, "required": SNAPSHOTS_REQUIRED}
+
+@app.get("/v2/control/checkpoints/status")
+async def checkpoint_status(x_world_control_token: str | None = Header(default=None)) -> dict[str, Any]:
+    auth_control(x_world_control_token)
+    async with LOCK:
+        value = STATE
+        return {"required": SNAPSHOTS_REQUIRED, "snapshotter_ready": checkpoint_ready(), "pending": copy.deepcopy(value.get("checkpoint_pending")) if value else None,
+                "last_checkpoint_id": value.get("last_checkpoint_id") if value else None,
+                "checkpointed_day": value.get("checkpointed_day") if value else None,
+                "active_turns": len(ACTIVE_TURNS), "day": value.get("day") if value else None,
+                "event_seq": value.get("event_seq") if value else None}
+
+@app.get("/v2/control/checkpoints/pending")
+async def checkpoint_pending(x_world_control_token: str | None = Header(default=None)) -> dict[str, Any]:
+    auth_control(x_world_control_token)
+    async with LOCK:
+        value = STATE
+        pending = copy.deepcopy(value.get("checkpoint_pending")) if value else None
+        return {"pending": pending if not ACTIVE_TURNS else None, "active_turns": len(ACTIVE_TURNS)}
+
+@app.post("/v2/control/checkpoints/complete")
+async def checkpoint_complete(request: Request, x_world_control_token: str | None = Header(default=None)) -> dict[str, Any]:
+    auth_control(x_world_control_token); body = await request.json(); snapshot_id = body.get("snapshot_id")
+    if not isinstance(snapshot_id, str): fail(400, "snapshot_id is required")
+    async with LOCK:
+        value = state(); pending = value.get("checkpoint_pending")
+        if not isinstance(pending, dict) or pending.get("snapshot_id") != snapshot_id: fail(409, "no matching v2 checkpoint is pending")
+        if ACTIVE_TURNS: fail(409, "active agent turns remain; checkpoint barrier is not quiescent")
+        value["last_checkpoint_id"] = snapshot_id; value["checkpointed_day"] = int(pending["day"])
+        value.pop("checkpoint_pending", None); persist(value)
+        return {"ok": True, "snapshot_id": snapshot_id}
 
 @app.get("/v2/control/snapshot")
 async def snapshot(x_world_control_token: str | None = Header(default=None)) -> dict[str, Any]:
     auth_control(x_world_control_token)
     async with LOCK:
-        value = state(); now = time.time(); advance(value, now); provision_offered_tasks(value); prewarm_next_day_tasks(value, now); reconcile_tasks(value); persist(value)
+        value = state(); now = time.time()
+        if value.get("checkpoint_pending"): fail(409, "a durable checkpoint is in progress")
+        previous_day = int(value["day"]); previous_status = str(value["status"]); advance(value, now); marked = mark_checkpoint_if_day_changed(value, previous_day, previous_status, now)
+        if not value.get("checkpoint_pending"):
+            provision_offered_tasks(value); prewarm_next_day_tasks(value, now); reconcile_tasks(value)
+        persist(value)
+        if marked: fail(409, "day-boundary checkpoint requested; retry after snapshot completion")
         return {"run_id": value["run_id"], "day": value["day"], "phase": value["daily"], "status": value["status"], "agents": {x: {"status": y["status"], "energy": y["energy"]} for x, y in value["agents"].items()}, "recent_forum": value["forum"][-80:], "recent_events": value["audit"][-160:], "invariant_errors": invariant_errors(value)}
+
+@app.post("/v2/agents/{agent_id}/turn/start")
+async def turn_start(agent_id: str, request: Request, authorization: str | None = Header(default=None), x_agent_id: str | None = Header(default=None)) -> dict[str, Any]:
+    auth_agent(agent_id, authorization, x_agent_id); body = await request.json(); request_id = body.get("request_id")
+    if not isinstance(request_id, str) or not request_id: fail(400, "request_id is required")
+    async with LOCK:
+        value = state()
+        if SNAPSHOTS_REQUIRED and not checkpoint_ready(): fail(503, "required v2 snapshotter is not registered; agent turn refused")
+        if value.get("checkpoint_pending"): fail(409, "durable checkpoint in progress")
+        if agent_id in ACTIVE_TURNS: fail(409, "agent already has an active cognition turn")
+        entry = value["agents"][agent_id]
+        entry["model_turn_seq"] = int(entry.get("model_turn_seq", 0)) + 1
+        turn_seq = entry["model_turn_seq"]
+        ACTIVE_TURNS[agent_id] = request_id
+        meta = {"run_id": value["run_id"], "agent_id": agent_id, "turn_seq": turn_seq,
+                "checkpoint_id": value.get("last_checkpoint_id"), "checkpointed_day": value.get("checkpointed_day"),
+                "start_event_seq": value["event_seq"], "start_day": value["day"]}
+        ACTIVE_TURN_META[agent_id] = meta
+        persist(value)
+        return {"ok": True, "request_id": request_id, **meta}
+
+@app.post("/v2/agents/{agent_id}/turn/complete")
+async def turn_complete(agent_id: str, request: Request, authorization: str | None = Header(default=None), x_agent_id: str | None = Header(default=None)) -> dict[str, Any]:
+    auth_agent(agent_id, authorization, x_agent_id); body = await request.json(); request_id = body.get("request_id")
+    async with LOCK:
+        if ACTIVE_TURNS.get(agent_id) == request_id:
+            ACTIVE_TURNS.pop(agent_id, None)
+            ACTIVE_TURN_META.pop(agent_id, None)
+        return {"ok": True, "checkpoint_pending": bool(STATE and STATE.get("checkpoint_pending"))}
 
 @app.get("/v2/agents/{agent_id}/wake")
 async def wake(agent_id: str, authorization: str | None = Header(default=None), x_agent_id: str | None = Header(default=None)) -> dict[str, Any]:
     auth_agent(agent_id, authorization, x_agent_id)
     async with LOCK:
         value = state(); now = time.time()
+        if SNAPSHOTS_REQUIRED and not checkpoint_ready():
+            return {"ready": False, "panel": None, "snapshotter_unavailable": True}
+        if value.get("checkpoint_pending"):
+            return {"ready": False, "panel": None, "checkpoint_pending": True}
         checkpoint_before = (value.get("day"), value.get("event_seq"), value.get("status"), value.get("settled_through_day"))
-        advance(value, now); provision_offered_tasks(value); prewarm_next_day_tasks(value, now); reconcile_tasks(value); entry = value["agents"][agent_id]; config = CONFIG
+        previous_day = int(value["day"]); previous_status = str(value["status"]); advance(value, now); marked = mark_checkpoint_if_day_changed(value, previous_day, previous_status, now)
+        if marked:
+            persist(value)
+            return {"ready": False, "panel": None, "checkpoint_pending": True}
+        provision_offered_tasks(value); prewarm_next_day_tasks(value, now); reconcile_tasks(value); entry = value["agents"][agent_id]; config = CONFIG
         # A message is a social attention event: its sender has already paid
         # for producing it, while recipients may now pay a model turn to read
         # and respond. Multiple arrivals before a wake coalesce into one turn.
@@ -194,21 +316,57 @@ async def model_response(agent_id: str, request: Request, authorization: str | N
     if not isinstance(request_id, str) or not request_id: fail(400, "request_id is required")
     async with LOCK:
         value = state()
+        if SNAPSHOTS_REQUIRED and not active_turn(agent_id, request_id): fail(409, "model turn was not opened by the snapshot-aware runner")
+        if value.get("checkpoint_pending") and not active_turn(agent_id, request_id): fail(409, "durable checkpoint in progress")
+        previous_day = int(value["day"]); previous_status = str(value["status"]); now = time.time(); advance(value, now); marked = mark_checkpoint_if_day_changed(value, previous_day, previous_status, now)
         try: current = consume_model_energy(value, agent_id, time.time())
         except WorldError as error: persist(value); fail(409, str(error))
+        if marked: persist(value)
         persist(value)
     context = body.get("agent_context", []); context = context if isinstance(context, list) else []
+    meta = dict(ACTIVE_TURN_META.get(agent_id, {}))
+    meta.update({"request_id": request_id, "agent_id": agent_id, "run_id": value["run_id"],
+                 "request_event_seq": value["event_seq"], "request_day": value["day"]})
+    model_input = [{"role": "system", "content": SKILL}, {"role": "user", "content": json.dumps({"your_id": agent_id, "panel": current, "auditable_recent_context": context}, ensure_ascii=False)}]
+    model_tools = schemas(CONFIG)
+    model_profile = body.get("model_profile", "default")
+    context_hash = hashlib.sha256(json.dumps(context, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")).hexdigest()
+    if body.get("agent_context_sha256") and body["agent_context_sha256"] != context_hash:
+        fail(400, "agent context digest does not match submitted context")
+    model_input_hash = hashlib.sha256(json.dumps(model_input, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")).hexdigest()
+    model_payload = {"request_id": request_id, "run_id": value["run_id"], "agent_id": agent_id,
+                     "turn_seq": meta.get("turn_seq"), "checkpoint_id": meta.get("checkpoint_id"),
+                     "checkpointed_day": meta.get("checkpointed_day"), "model_profile": model_profile,
+                     "input": model_input, "tools": model_tools,
+                     "metadata": {"world": "authority-world-v2", **meta}}
+    append_model_trace({**meta, "kind": "model_request", "panel": current,
+                        "agent_context": context, "model_input": model_input, "tools": model_tools,
+                        "model_profile": model_profile, "agent_context_sha256": context_hash,
+                        "model_input_sha256": model_input_hash})
     try:
-        result = await asyncio.to_thread(gateway, {"request_id": request_id, "run_id": "authority-world-v2", "agent_id": agent_id, "model_profile": body.get("model_profile", "default"), "input": [{"role": "system", "content": SKILL}, {"role": "user", "content": json.dumps({"your_id": agent_id, "panel": current, "auditable_recent_context": context}, ensure_ascii=False)}], "tools": schemas(CONFIG), "metadata": {"world": "authority-world-v2"}})
-    except RuntimeError as error: fail(502, str(error))
-    return {"text": result.get("text", ""), "function_calls": result.get("function_calls", []), "panel": current}
+        result = await asyncio.to_thread(gateway, model_payload)
+    except RuntimeError as error:
+        append_model_trace({**meta, "kind": "model_error", "error": str(error), "panel": current,
+                            "agent_context_sha256": context_hash, "model_input_sha256": model_input_hash})
+        fail(502, str(error))
+    answer = {"text": result.get("text", ""), "function_calls": result.get("function_calls", []), "panel": current,
+              "trace_meta": meta}
+    append_model_trace({**meta, "kind": "model_response", "text": answer["text"],
+                        "function_calls": answer["function_calls"], "model": result.get("model"),
+                        "response_sha256": hashlib.sha256(json.dumps({"text": answer["text"], "function_calls": answer["function_calls"]}, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")).hexdigest()})
+    return answer
 
 @app.post("/v2/agents/{agent_id}/tools")
 async def tool(agent_id: str, request: Request, authorization: str | None = Header(default=None), x_agent_id: str | None = Header(default=None)) -> dict[str, Any]:
-    auth_agent(agent_id, authorization, x_agent_id); body = await request.json(); name = body.get("name"); args = body.get("arguments", {}); call_id = body.get("call_id")
+    auth_agent(agent_id, authorization, x_agent_id); body = await request.json(); name = body.get("name"); args = body.get("arguments", {}); call_id = body.get("call_id"); request_id = body.get("request_id")
     if not isinstance(name, str) or not isinstance(args, dict) or not isinstance(call_id, str): fail(400, "name, arguments and call_id are required")
+    if SNAPSHOTS_REQUIRED and not active_turn(agent_id, request_id): fail(409, "tool call is not part of an open snapshot-aware turn")
     async with LOCK:
-        value = state(); now = time.time(); advance(value, now); provision_offered_tasks(value); prewarm_next_day_tasks(value, now); reconcile_tasks(value); key = agent_id + ":" + call_id
+        value = state(); now = time.time()
+        if value.get("checkpoint_pending") and not active_turn(agent_id, request_id): fail(409, "durable checkpoint in progress")
+        previous_day = int(value["day"]); previous_status = str(value["status"]); advance(value, now); marked = mark_checkpoint_if_day_changed(value, previous_day, previous_status, now)
+        if marked: persist(value)
+        provision_offered_tasks(value); prewarm_next_day_tasks(value, now); reconcile_tasks(value); key = agent_id + ":" + call_id
         if name == "get_panel": return {"panel": panel(value, agent_id, now)}
         if key in value["tool_receipts"]: return {**copy.deepcopy(value["tool_receipts"][key]), "panel": panel(value, agent_id, now)}
         try:

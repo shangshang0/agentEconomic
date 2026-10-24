@@ -5,6 +5,7 @@ services:
     command: ["uvicorn", "backend.app_v2:app", "--host", "0.0.0.0", "--port", "8100"]
     environment:
       WORLD_DATA_DIR: /world-data
+      SNAPSHOTS_REQUIRED: "1"
       WORLD_CONFIG: /app/config/${WORLD_CONFIG_FILE:-world.v2.calibration.json}
       AGENT_TOKENS_JSON: ${AGENT_TOKENS_JSON:?required}
       WORLD_CONTROL_TOKEN: ${WORLD_CONTROL_TOKEN:?required}
@@ -33,6 +34,27 @@ services:
       GATEWAY_DATA_DIR: /gateway-data
     volumes: [./gateway-data-v2:/gateway-data]
     networks: [control, provider]
+  snapshotter:
+    build: {context: ., dockerfile: Dockerfile.snapshotter.v2}
+    environment:
+      WORLD_DATA_DIR: /world-data
+      AGENT_STATE_DIR: /agent-state
+      GATEWAY_DATA_DIR: /gateway-data
+      WORLD_CONFIG_DIR: /world-config
+      SNAPSHOT_DIR: /snapshots
+      BACKEND_URL: http://backend:8100
+      WORLD_CONTROL_TOKEN: ${WORLD_CONTROL_TOKEN:?required}
+    volumes:
+      - ./data-v2:/world-data:ro
+      - ./agent-state-v2:/agent-state:ro
+      - ./gateway-data-v2:/gateway-data:ro
+      - ./config:/world-config:ro
+      - ./snapshots-v2:/snapshots
+    networks: [control]
+    read_only: true
+    tmpfs: ["/tmp:rw,noexec,nosuid,size=32m"]
+    security_opt: ["no-new-privileges:true"]
+    restart: unless-stopped
   agent_a1: &agent
     build: {context: ., dockerfile: Dockerfile.agent}
     command: ["python", "-m", "agent.runner_v2"]

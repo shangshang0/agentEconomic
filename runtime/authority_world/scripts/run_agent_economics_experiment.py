@@ -59,6 +59,48 @@ def wait_health(env_file: Path, config: str, timeout: float = 180) -> None:
     raise RuntimeError("backend health timeout")
 
 
+def require_snapshot_compose(env_file: Path, config: str) -> None:
+    """Fail before provider probing or world creation if snapshots are absent."""
+    if not COMPOSE.exists():
+        raise RuntimeError(f"required Compose file is missing: {COMPOSE}")
+    text = COMPOSE.read_text(encoding="utf-8")
+    for required in ("snapshotter:", "SNAPSHOTS_REQUIRED: \"1\"", "./snapshots-v2:/snapshots"):
+        if required not in text:
+            raise RuntimeError(f"experiment start refused: Compose does not enable required snapshot component ({required})")
+    result = compose(env_file, config, "config", "--services", check=False)
+    if result.returncode != 0:
+        raise RuntimeError("experiment start refused: Compose configuration is invalid: " + result.stderr[-1000:])
+    if "snapshotter" not in result.stdout.split():
+        raise RuntimeError("experiment start refused: resolved Compose services omit snapshotter")
+
+
+def checkpoint_status(env_file: Path, config: str) -> dict[str, Any] | None:
+    code = (
+        "import json,os,urllib.request;"
+        "req=urllib.request.Request('http://127.0.0.1:8100/v2/control/checkpoints/status',"
+        "headers={'X-World-Control-Token':os.environ['WORLD_CONTROL_TOKEN']});"
+        "print(json.dumps(json.load(urllib.request.urlopen(req,timeout=5))))"
+    )
+    result = compose(env_file, config, "exec", "-T", "backend", "python", "-c", code, check=False)
+    if result.returncode != 0:
+        return None
+    try:
+        return json.loads(result.stdout.strip().splitlines()[-1])
+    except (json.JSONDecodeError, IndexError):
+        return None
+
+
+def wait_snapshot_checkpoint(env_file: Path, config: str, timeout: float = 240, required_day: int | None = None) -> dict[str, Any]:
+    deadline = time.time() + timeout
+    last: dict[str, Any] | None = None
+    while time.time() < deadline:
+        last = checkpoint_status(env_file, config)
+        if last and last.get("snapshotter_ready") and not last.get("pending") and last.get("last_checkpoint_id") and (required_day is None or last.get("checkpointed_day") == required_day):
+            return last
+        time.sleep(1)
+    raise RuntimeError(f"snapshotter did not produce/acknowledge a durable checkpoint: {last}")
+
+
 def healthy(env_file: Path, config: str) -> bool:
     result = compose(
         env_file,
@@ -139,7 +181,7 @@ def provider_probe(env_file: Path) -> dict[str, Any]:
 def archive(target: Path, metadata: dict[str, Any]) -> None:
     target.mkdir(parents=True, exist_ok=False)
     (target / "run_metadata.json").write_text(json.dumps(metadata, indent=2, sort_keys=True) + "\n", encoding="utf-8")
-    for name in ("data-v2", "agent-state-v2", "gateway-data-v2"):
+    for name in ("data-v2", "agent-state-v2", "gateway-data-v2", "snapshots-v2"):
         source = ROOT / name
         if source.exists():
             shutil.move(str(source), target / name)
@@ -149,6 +191,9 @@ def archive(target: Path, metadata: dict[str, Any]) -> None:
     run_id = metadata.get("run_id")
     if isinstance(run_id, str) and run_id:
         archive_recovery_evidence(target, run_id)
+    amendment = ROOT / "RECOVERY_AMENDMENT.json"
+    if amendment.exists():
+        shutil.copy2(amendment, target / "RECOVERY_AMENDMENT.json")
 
 
 def archive_recovery_evidence(target: Path, run_id: str) -> None:
@@ -239,10 +284,32 @@ def write_clean_candidate(spec: dict[str, Any], accepted: dict[str, Any]) -> Non
     temporary.replace(EVIDENCE_STATUS)
 
 
-def validate_clean_candidate(accepted: dict[str, Any]) -> None:
+def validate_resume_evidence(accepted: dict[str, Any]) -> None:
     status = load_json(EVIDENCE_STATUS)
-    if status.get("run_id") != accepted.get("run_id") or status.get("evidence_classification") != "clean_candidate":
-        raise RuntimeError("resumed clean series lacks its matching clean_candidate evidence status")
+    if status.get("run_id") != accepted.get("run_id"):
+        raise RuntimeError("resumed series lacks matching evidence status")
+    if status.get("evidence_classification") == "clean_candidate":
+        return
+    if status.get("evidence_classification") != "trace_reconstructed_recovery_candidate":
+        raise RuntimeError("resumed series evidence status is not an approved clean or trace-reconstructed candidate")
+    amendment_path = ROOT / "RECOVERY_AMENDMENT.json"
+    if not amendment_path.is_file():
+        raise RuntimeError("trace-reconstructed resume lacks its recovery amendment")
+    amendment = load_json(amendment_path)
+    if amendment.get("schema") != "authority-world-v2-trace-recovery-v1" or amendment.get("source_run_id") != accepted.get("run_id"):
+        raise RuntimeError("trace recovery amendment does not match the resumed run")
+
+
+def validate_snapshot_checkpoint(state: dict[str, Any]) -> None:
+    snapshot_id = state.get("last_checkpoint_id")
+    if not isinstance(snapshot_id, str) or not snapshot_id:
+        raise RuntimeError("experiment resume refused: durable state has no acknowledged checkpoint")
+    manifest_path = ROOT / "snapshots-v2" / snapshot_id / "MANIFEST.json"
+    if not manifest_path.is_file():
+        raise RuntimeError("experiment resume refused: the referenced checkpoint manifest is missing")
+    manifest = load_json(manifest_path)
+    if manifest.get("run_id") != state.get("run_id") or manifest.get("snapshot_id") != snapshot_id:
+        raise RuntimeError("experiment resume refused: checkpoint manifest does not match durable state")
 
 
 def read_active(spec: dict[str, Any]) -> dict[str, Any] | None:
@@ -363,11 +430,14 @@ def main() -> None:
             raise RuntimeError(f"missing provider environment file: {env_file}")
         accepted = read_active(spec)
         resuming = accepted is not None
+        require_snapshot_compose(env_file, spec["config"])
         if resuming:
             if not STATE.exists() or not EVENTS.exists():
                 raise RuntimeError("active run marker exists but durable world data is incomplete")
             validate_resumed_state(spec, accepted)
-            validate_clean_candidate(accepted)
+            resumed_state = validate_resumed_state(spec, accepted)
+            validate_resume_evidence(accepted)
+            validate_snapshot_checkpoint(resumed_state)
         elif STATE.exists() or EVENTS.exists():
             raise RuntimeError("unarchived v2 data exists without an active run marker; refusing to mix worlds")
         if not resuming:
@@ -376,10 +446,14 @@ def main() -> None:
         compose(env_file, spec["config"], "up", "-d", "--build")
         try:
             wait_health(env_file, spec["config"])
+            checkpoint = wait_snapshot_checkpoint(env_file, spec["config"])
+            log(f"snapshotter ready last_checkpoint_id={checkpoint['last_checkpoint_id']} day={checkpoint.get('checkpointed_day')}")
             if not resuming:
                 accepted = start_world(spec["seed"], env_file, spec["config"])
                 write_active(spec, accepted)
                 write_clean_candidate(spec, accepted)
+                checkpoint = wait_snapshot_checkpoint(env_file, spec["config"], required_day=1)
+                log(f"initial checkpoint durable id={checkpoint['last_checkpoint_id']}")
                 log(f"started {spec['phase']} model={spec['model']} seed={spec['seed']} run_id={accepted['run_id']}")
             else:
                 log(f"resumed {spec['phase']} model={spec['model']} seed={spec['seed']} run_id={accepted['run_id']}")
@@ -409,6 +483,8 @@ def main() -> None:
                             log(f"restored unhealthy stack for run_id={accepted['run_id']} from durable state")
                             health_failures = 0
                     time.sleep(args.poll_seconds); continue
+                final_checkpoint = wait_snapshot_checkpoint(env_file, spec["config"], required_day=int(state.get("day", 0)))
+                log(f"terminal checkpoint durable id={final_checkpoint['last_checkpoint_id']} day={final_checkpoint.get('checkpointed_day')}")
                 metadata = {
                     **spec,
                     **accepted,

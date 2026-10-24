@@ -32,6 +32,12 @@ def auth(value: str | None) -> None:
 def audit(value: dict[str, Any]) -> None:
     with AUDIT.open("a", encoding="utf-8") as handle:
         handle.write(json.dumps({"at": datetime.now(timezone.utc).isoformat(), **value}, ensure_ascii=False, sort_keys=True) + "\n")
+        handle.flush()
+        os.fsync(handle.fileno())
+
+
+def provenance(body: dict[str, Any]) -> dict[str, Any]:
+    return {key: body.get(key) for key in ("run_id", "agent_id", "turn_seq", "checkpoint_id", "checkpointed_day", "request_id")}
 
 
 app = FastAPI(title="Authority World Gateway")
@@ -143,6 +149,14 @@ async def generate(request: Request, authorization: str | None = Header(default=
     body = await request.json()
     if not isinstance(body.get("request_id"), str) or not isinstance(body.get("input"), list) or not isinstance(body.get("tools"), list):
         fail(400, "request_id, input and tools are required")
+    metadata = body.get("metadata") if isinstance(body.get("metadata"), dict) else {}
+    if metadata.get("world") == "authority-world-v2":
+        if not isinstance(body.get("run_id"), str) or not isinstance(body.get("agent_id"), str):
+            fail(400, "v2 model calls require run_id and agent_id")
+        if isinstance(body.get("turn_seq"), bool) or not isinstance(body.get("turn_seq"), int):
+            fail(400, "v2 model calls require an integer turn_seq")
+        if not isinstance(body.get("checkpoint_id"), str):
+            fail(400, "v2 model calls require a completed checkpoint_id")
     provider_timeout = _provider_timeout(body)
     provider_deadline = monotonic() + provider_timeout
     attempts = _provider_attempts()
@@ -151,8 +165,7 @@ async def generate(request: Request, authorization: str | None = Header(default=
         if remaining_timeout <= 0:
             audit({
                 "kind": "provider_error",
-                "request_id": body["request_id"],
-                "agent_id": body.get("agent_id"),
+                **provenance(body),
                 "attempts": attempt - 1,
                 "retryable": True,
                 "provider_timeout_seconds": provider_timeout,
@@ -207,8 +220,7 @@ async def generate(request: Request, authorization: str | None = Header(default=
             if retryable and attempt < attempts and delay < remaining_after_error:
                 audit({
                     "kind": "provider_retry",
-                    "request_id": body["request_id"],
-                    "agent_id": body.get("agent_id"),
+                    **provenance(body),
                     "attempt": attempt,
                     "max_attempts": attempts,
                     "retry_after_seconds": delay,
@@ -220,8 +232,7 @@ async def generate(request: Request, authorization: str | None = Header(default=
                 continue
             audit({
                 "kind": "provider_error",
-                "request_id": body["request_id"],
-                "agent_id": body.get("agent_id"),
+                **provenance(body),
                 "attempts": attempt,
                 "retryable": retryable,
                 "provider_timeout_seconds": provider_timeout,
@@ -230,5 +241,5 @@ async def generate(request: Request, authorization: str | None = Header(default=
             })
             fail(502, "provider request failed after bounded retries")
     result = {"text": text, "function_calls": calls, "model": getattr(response, "model", None) or os.getenv("MODEL", "dev/gpt-5.5")}
-    audit({"kind": "exchange", "request_id": body["request_id"], "agent_id": body.get("agent_id"), "request": {"model": os.getenv("MODEL", "dev/gpt-5.5"), "input": body["input"], "tools": body["tools"]}, "response": result})
+    audit({**provenance(body), "kind": "exchange", "request": {"model": os.getenv("MODEL", "dev/gpt-5.5"), "input": body["input"], "tools": body["tools"]}, "response": result})
     return result
