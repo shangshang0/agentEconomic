@@ -1,0 +1,14 @@
+{
+  "worlds": 3,
+  "model_requests": 2383,
+  "matched_gateway_pairs": 2383,
+  "missing_extra_duplicate_or_foreign": 0,
+  "transfer_decision_turns": 83,
+  "successful_transfer_tool_calls": 217,
+  "transfer_receipts_ok": 217,
+  "recipient_need_visible_before_transfer": 217,
+  "transfer_calls_in_final_context": 217,
+  "vote_decisions": 0,
+  "candidacy_decisions": 0,
+  "context_mean_chars_weighted": 10985.671422576585
+}
