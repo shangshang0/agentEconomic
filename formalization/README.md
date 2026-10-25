@@ -1,6 +1,6 @@
 # Formalization and case validation
 
-- [`agent-microfoundations/`](agent-microfoundations/) contains the Lean 4 theory, case-specific formalizations, audit files, and verification manifest.
+- [`agent-microfoundations/`](agent-microfoundations/) contains the latest Lean 4 theory, case-specific formalizations, three axiom audits, source manifest, and successful Miao Linux verification log `lake_check_miao_20261025_132906.log`.
 - [`../experiments/assumption-validation/`](../experiments/assumption-validation/) contains reproducible zero-API assumption and case-mapping experiments.
 
-The current Lean source snapshot was built on Miao's Linux Lean 4.35.0 environment. The module manifest and the included remote verification log record the kernel check.
+Lean 4.35.0 `lake build`, explicit auxiliary-module builds, Linux `lake check`, and theory, methods, and research-target audits passed.

@@ -1,6 +1,6 @@
 {
   "audit_type": "zero_api_case_assumption_validation",
-  "created_at_utc": "2026-10-25T05:26:59.257107+00:00",
+  "created_at_utc": "2026-10-25T05:32:53.255304+00:00",
   "principle": "definitions are not empirical assumptions; every case restriction is either directly audited, locally tested, or left unasserted",
   "source_sha256": {
     "theory_v3/analysis/ctf_case/results/world_summary.csv": "4a1dab98a76258e69149ed4ab7ec83d54d8349c7f4ea9eec4ae8843e7273223d",

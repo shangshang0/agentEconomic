@@ -31,15 +31,66 @@ def productionAmount : Event → Nat
   | .verifiedProduction amount => amount
   | _ => 0
 
+def externalSupplyAmount : Event → Nat
+  | .externalSupply amount => amount
+  | _ => 0
+
+/-- Total externally supplied resource recorded in an event list. -/
+def totalExternalSupply : List Event → Nat
+  | [] => 0
+  | event :: rest => externalSupplyAmount event + totalExternalSupply rest
+
 def eventResourceChange : List Event → Int
   | [] => 0
   | event :: rest => resourceDelta event + eventResourceChange rest
 
-def verifiedOutput (events : List Event) : Nat :=
-  events.foldl (fun total event => total + productionAmount event) 0
+def verifiedOutput : List Event → Nat
+  | [] => 0
+  | event :: rest => productionAmount event + verifiedOutput rest
 
 def endingPool (initialPool : Int) (events : List Event) : Int :=
   initialPool + eventResourceChange events
+
+theorem resourceDelta_le_recorded_positive_inflows (event : Event) :
+    resourceDelta event ≤
+      (productionAmount event : Int) + (externalSupplyAmount event : Int) := by
+  cases event <;> simp [resourceDelta, productionAmount, externalSupplyAmount] <;> omega
+
+theorem verifiedOutput_cons (event : Event) (rest : List Event) :
+    verifiedOutput (event :: rest) = productionAmount event + verifiedOutput rest := by
+  rfl
+
+theorem eventResourceChange_le_recorded_positive_inflows (events : List Event) :
+    eventResourceChange events ≤
+      (verifiedOutput events : Int) + (totalExternalSupply events : Int) := by
+  induction events with
+  | nil => simp [eventResourceChange, verifiedOutput, totalExternalSupply]
+  | cons event rest ih =>
+      rw [eventResourceChange, verifiedOutput_cons]
+      change resourceDelta event + eventResourceChange rest ≤
+        (productionAmount event : Int) + (verifiedOutput rest : Int) +
+          ((externalSupplyAmount event + totalExternalSupply rest : Nat) : Int)
+      have head := resourceDelta_le_recorded_positive_inflows event
+      have tail := ih
+      have combined := Int.add_le_add head tail
+      simpa [Int.natCast_add, Int.add_assoc, Int.add_left_comm, Int.add_comm] using combined
+
+/-- Aggregate resource cannot exceed initial stock plus verified production
+    and external supply. Internal transfers cancel in the population ledger;
+    costs and external drains lower the pool. This holds for every event order
+    and does not require agents to choose or produce rationally. -/
+theorem endingPool_le_initial_plus_verified_output_and_external_supply
+    (initialPool : Int) (events : List Event) :
+    endingPool initialPool events ≤
+      initialPool + (verifiedOutput events : Int) + (totalExternalSupply events : Int) := by
+  unfold endingPool
+  calc
+    initialPool + eventResourceChange events ≤
+        initialPool + ((verifiedOutput events : Int) + (totalExternalSupply events : Int)) :=
+      Int.add_le_add_left
+        (eventResourceChange_le_recorded_positive_inflows events) initialPool
+    _ = initialPool + (verifiedOutput events : Int) + (totalExternalSupply events : Int) := by
+      rw [Int.add_assoc]
 
 theorem internal_transfer_does_not_change_aggregate_pool (amount : Nat) :
     resourceDelta (.internalTransfer amount) = 0 := by

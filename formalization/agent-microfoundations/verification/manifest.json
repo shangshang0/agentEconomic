@@ -1,5 +1,5 @@
 {
-  "verified_at_utc": "2026-10-25T05:27:05.677259+00:00",
+  "verified_at_utc": "2026-10-25T05:32:57.111991+00:00",
   "theory_freeze": "0.5; theory/methods separation, case-level assumption audits, field-level CTF coverage, and Authority World v2 clock/election mechanics",
   "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
   "commands": [
@@ -52,9 +52,9 @@
     "AgentMicrofoundations/OpportunitySpecialization.lean": "1a5ba28cc49d06a1f5cf37688716930cd58ee14e103f45e0356627445e68947f",
     "AgentMicrofoundations/PopulationInputShift.lean": "961eb9c0bac761c02c9971477f47e1b90ff04b23fe58d681d1b183f6abeae9fd",
     "AgentMicrofoundations/PopulationTransport.lean": "e847471ba72f723b491ee5d53cdb9c5130e34ab6cefb5cc6d902d2029dd98b51",
-    "AgentMicrofoundations/ResearchTargets/ChoiceLawProblem.lean": "02c221fc3bc961433a047a45be466fffb794e96b1561e289b86c585475ab249e",
+    "AgentMicrofoundations/ResearchTargets/ChoiceLawProblem.lean": "9c61901c53d58332712fba0de5195556b698ff9015f5e1bc04a69961038fe7ab",
     "AgentMicrofoundations/ResourceBudgetComparativeStatics.lean": "c2fdce7de824a95f5db1d41b009384300558f7b45b72e1f6cd4875ec0a4258c4",
-    "AgentMicrofoundations/ResourceLedger.lean": "dbd2196971676daf7dd7324ee1d2b99b7d711aa278230750faf791b169d1ffe7",
+    "AgentMicrofoundations/ResourceLedger.lean": "a275145bf2fe6766c849a54ff81571b05b103ee32fcfe3d0e2d3269652b8bc27",
     "AgentMicrofoundations/ResourceSurvivalBound.lean": "ae211e22ca377feba2a8ed93ff48dfee2d1e3ebb671b701e52e3ffad612012df",
     "AgentMicrofoundations/ResourceThresholdPath.lean": "b1728cfae697cc02ff3d6820938ab51ba8ccf8ff91358aaf018eb353d65144e5",
     "AgentMicrofoundations/ResourceThresholdPersistence.lean": "85bbd931b2af004bd70d9d4be3d73599aa6349c98c37049ed8c411053a8ba5a7",
@@ -68,13 +68,13 @@
     "AgentMicrofoundations/TemporalIntersectionBounds.lean": "46d4d8fe79ebd07c1a1253368ef24e284e2cfcb21bd9a2f7ec5958c5b7b5129c",
     "AgentMicrofoundations/TokenAccounting.lean": "93acab7f0d3093aef4afbdb9f9f92bce7d940ea95a4e9009347822f857f3e276",
     "AgentMicrofoundations.lean": "43fea00eac6c90ecba6488a6c02412eb471234f064aafa28534bab889918dc79",
-    "Audit.lean": "61cafb2a0589ce3e2a2b00f178d066f70caeb3d0252966600a6f77638a6d666a",
+    "Audit.lean": "9b8a14d1cd8c73b9b1334981e27f7161587d2f3bc46f4d755e28b38504a65b80",
     "MethodsAudit.lean": "982eb069e4b73e6dcc2f3b481b34f7d767f5d4f7fb59bf2f1bb26ca12d6fe30d",
     "ResearchTargetsAudit.lean": "2ede837f7aefef7bed61c8b6a8f2208c613c36f2c97b52c2f586aa16c508fe34",
     "generate_case_studies.py": "043c9c38d9aa99d7bdc671839cfed857067433a7b2c692b2e29f3778e061b7d4",
     "generate_ctf_archive.py": "3511b6158797902ea16292a2421c50adb2b8658b5a053f6d57658848de5f861f",
     "generate_project_artifacts.py": "bfa002624ea8189d85718e1078266690dce1ee26a4bdff2effe1287c6283f670",
-    "THEORY_INDEX.md": "169eb45773562270783d9935c7702819d4318c1b442f378eb8d0d6e0c0b6c2e4",
+    "THEORY_INDEX.md": "75ca31218da717358fa2cd75458da6ecd5ba796373bcca0f03a26d0fdc388d75",
     "METHODS_INDEX.md": "dc5ff62958a056677b4350f11ae62c7992c6be9ccac907707d6c0c92180544a8",
     "lakefile.toml": "b3ac64d315a3f729c7815fd1c3418a00a61cf39a6cb275f048d7b3478ab5bc06",
     "lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
@@ -86,7 +86,7 @@
     "theory_v3/analysis/ctf_case/results/world_summary.csv": "4a1dab98a76258e69149ed4ab7ec83d54d8349c7f4ea9eec4ae8843e7273223d",
     "theory_v3/analysis/ctf_case/results/agent_day_panel.csv": "dd01ef579bdb9ad0a13a8ac3d76cab0e3ac9488604ab3261608a817186c89b54",
     "theory_v3/analysis/ctf_case/results/case_model_summary.json": "110eb46982b49d000ed7d61521e3586f3c1370e4ad9b14632febad8185831c2e",
-    "theory_v3/lean/verification/assumption_validation.json": "151a484a49af0ff7051e6c2c77d6c939706541fda75c38b36d52ca56d80fc352"
+    "theory_v3/lean/verification/assumption_validation.json": "767c4024807ca68366e603139e9fa3ac76e8b6ee7e18fb2132cdc58282677fdc"
   },
   "case_assumption_validator_sha256": {
     "theory_v3/analysis/validate_case_assumptions.py": "d3e3afb3907d24af0ceaceaee5113365dcaa44a56807b1db398a2597c078d6c0"
@@ -124,7 +124,7 @@
     "theory_v3/ASSUMPTION_VALIDATION.md": "72647366470816be8a4222d92ab5d3f26aa3a226a168681462255fd51e00aa2b"
   },
   "audit_output_sha256": {
-    "foundation_and_case_theory": "2a275b2513981470e5c3790d8d4142c093e759249b280bd390591a866b83a6f7",
+    "foundation_and_case_theory": "ec4ac09e7fe8bdf6015d2ebbf8aecaec73ad54466c61c6ed3c4deb9e5d7ab5d2",
     "auxiliary_methods": "13eda783eabf10b7fb426a8fdc7e971b9d303ac7467df2c14b6de29d470d8803"
   },
   "has_custom_axiom_sorry_or_admit": false,
@@ -137,9 +137,9 @@
   "additional_verification": [
     {
       "command": "./verify_miao.sh",
-      "log": "verification/lake_check_miao_20261025_132519.log",
-      "default_kernel_accepts_solution": false,
-      "log_sha256": "6e63d726ec31e981a01b14c97787d51bca53242b9fa99e8a0c27bae7df157e88"
+      "log": "verification/lake_check_miao_20261025_132906.log",
+      "default_kernel_accepts_solution": true,
+      "log_sha256": "d4a519205ac420981ff7f6d640820ecd11870e488428147994c1bfe11a7c782e"
     }
   ]
 }

@@ -82,6 +82,68 @@ def SolvesChoiceLawProblem {Context Token Proposal : Type} [DecidableEq Proposal
   Nonempty (SharpChoiceEffectLaw primitiveClass firstContext firstBudget
     secondContext secondBudget event)
 
+/-- One proposed structural primitive. It may constrain a constitution and a
+    pair of environments, but cannot take the target action event or its
+    probability as an argument. This type-level restriction prevents the most
+    direct form of writing the desired choice result into an assumption. -/
+abbrev ChoicePrimitive {Context Token Proposal : Type} [DecidableEq Proposal] :=
+  Constitution Context Token Proposal → Context → Nat → Context → Nat → Prop
+
+/-- The constitutions admitted by a finite package of structural primitives.
+    `Fin n` indexes the assumptions; `n` is explicit so that parsimony and
+    assumption-by-assumption ablation can be inspected. -/
+def SatisfiesPrimitivePackage
+    {Context Token Proposal : Type} [DecidableEq Proposal] {n : Nat}
+    (primitives : Fin n → ChoicePrimitive (Context := Context)
+      (Token := Token) (Proposal := Proposal))
+    (constitution : Constitution Context Token Proposal)
+    (firstContext : Context) (firstBudget : Nat)
+    (secondContext : Context) (secondBudget : Nat) : Prop :=
+  ∀ i, primitives i constitution firstContext firstBudget secondContext secondBudget
+
+/-- A completion certificate for the *research target*, not a new agent
+    economic axiom. A completed foundation must use one finite, event-blind
+    primitive package and derive a sharp, nontrivial choice-effect interval
+    uniformly for every action event whenever the package admits a model.
+    Each primitive must also be necessary: deleting it must permit both
+    extreme comparative-static effects for some event/environment, otherwise
+    that primitive is redundant. Empirical auditability and independent
+    motivation remain scientific obligations outside Lean. -/
+structure ChoiceFoundationCertificate
+    {Context Token Proposal : Type} [DecidableEq Proposal] (n : Nat) where
+  primitives : Fin n → ChoicePrimitive (Context := Context)
+    (Token := Token) (Proposal := Proposal)
+  uniformSharpLaw : ∀ (firstContext secondContext : Context)
+      (firstBudget secondBudget : Nat),
+    (∃ constitution, SatisfiesPrimitivePackage primitives constitution
+      firstContext firstBudget secondContext secondBudget) →
+    ∀ (event : Proposal → Bool),
+      Nonempty (SharpChoiceEffectLaw
+        (SatisfiesPrimitivePackage primitives)
+        firstContext firstBudget secondContext secondBudget event)
+  primitiveIrredundancy : ∀ (i : Fin n),
+    ∃ (constitutionLow constitutionHigh : Constitution Context Token Proposal)
+      (firstContext secondContext : Context) (firstBudget secondBudget : Nat)
+      (event : Proposal → Bool),
+      (∀ j, j ≠ i → primitives j constitutionLow firstContext firstBudget
+        secondContext secondBudget) ∧
+      (∀ j, j ≠ i → primitives j constitutionHigh firstContext firstBudget
+        secondContext secondBudget) ∧
+      eventProbabilityChange constitutionLow firstContext firstBudget
+        secondContext secondBudget event = -1 ∧
+      eventProbabilityChange constitutionHigh firstContext firstBudget
+        secondContext secondBudget event = 1
+
+/-- What would count as having built the requested theory: a Lean inhabitant
+    of the certificate for a concrete computational-agent model class, with
+    its primitive meanings independently audited. At present this predicate
+    is intentionally not inhabited by the general autoregressive model class;
+    the existing no-identification theorem explains why. -/
+def HasCompletedChoiceFoundation
+    {Context Token Proposal : Type} [DecidableEq Proposal] (n : Nat) : Prop :=
+  Nonempty (ChoiceFoundationCertificate (Context := Context)
+    (Token := Token) (Proposal := Proposal) (n := n))
+
 /-- Protocol-level primitive class for a controlled budget comparison: the
     token constitution is fixed, both budgets are positive, the complete
     prompts match, and the proposal parser commits from the first token. -/

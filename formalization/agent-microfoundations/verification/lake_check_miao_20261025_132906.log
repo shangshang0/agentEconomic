@@ -1,0 +1,1097 @@
+✔ [2/55] Built AgentMicrofoundations.MechanismFeedback (1.1s)
+✔ [3/55] Built AgentMicrofoundations.Symmetry (1.2s)
+✔ [4/55] Built AgentMicrofoundations.CausalInterface (1.3s)
+✔ [5/55] Built AgentMicrofoundations.Liquidity (1.4s)
+✔ [6/55] Built AgentMicrofoundations.FiniteCoalitions (1.4s)
+✔ [7/55] Built AgentMicrofoundations.GroupProbability (1.5s)
+✔ [8/55] Built AgentMicrofoundations.ResourceLedger (1.6s)
+✔ [9/55] Built AgentMicrofoundations.Specialization (1.0s)
+✔ [10/55] Built AgentMicrofoundations.OpportunityRationing (1000ms)
+✔ [11/55] Built AgentMicrofoundations.Ontology (2.3s)
+✔ [12/55] Built AgentMicrofoundations.ResourceThresholdPath (866ms)
+✔ [13/55] Built AgentMicrofoundations.AllocationIdentification (1.2s)
+✔ [14/55] Built AgentMicrofoundations.OntologyExamples (1.4s)
+✔ [15/55] Built AgentMicrofoundations.FiniteDynamics (1.4s)
+✔ [16/55] Built AgentMicrofoundations.Commitments (1.3s)
+✔ [17/55] Built AgentMicrofoundations.SurvivalCurrency (1.5s)
+✔ [18/55] Built AgentMicrofoundations.ContextualResponse (1.6s)
+✔ [19/55] Built AgentMicrofoundations.CaseStudies.CTFAllocation (1.3s)
+⚠ [20/55] Built AgentMicrofoundations.ResponseIdentification (1.7s)
+warning: AgentMicrofoundations/ResponseIdentification.lean:159:19: This simp argument is unused:
+  firstValue
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [secondValue, Bool.false_eq_true, ↓reduceIte]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: AgentMicrofoundations/ResponseIdentification.lean:159:31: This simp argument is unused:
+  secondValue
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [firstValue, Bool.false_eq_true, ↓reduceIte]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: AgentMicrofoundations/ResponseIdentification.lean:293:19: This simp argument is unused:
+  firstValue
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [secondValue, Bool.false_eq_true, ↓reduceIte]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: AgentMicrofoundations/ResponseIdentification.lean:293:31: This simp argument is unused:
+  secondValue
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [firstValue, Bool.false_eq_true, ↓reduceIte]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [21/55] Built AgentMicrofoundations.Accounting (1.9s)
+warning: AgentMicrofoundations/Accounting.lean:124:43: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: AgentMicrofoundations/Accounting.lean:141:45: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: AgentMicrofoundations/Accounting.lean:149:45: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: AgentMicrofoundations/Accounting.lean:141:45: This simp argument is unused:
+  if_pos rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [sumOver, List.foldr_cons]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [22/55] Built AgentMicrofoundations.SequentialBounds (1.5s)
+✔ [23/55] Built AgentMicrofoundations.Settlement (1.5s)
+✔ [24/55] Built AgentMicrofoundations.ResourceSurvivalBound (1.4s)
+✔ [25/55] Built AgentMicrofoundations.CaseAnalysis (1.5s)
+✔ [26/55] Built AgentMicrofoundations.AnonymousAllocation (1.6s)
+✔ [27/55] Built AgentMicrofoundations.TemporalIntersectionBounds (1.6s)
+⚠ [28/55] Built AgentMicrofoundations.AutoregressiveResponse (2.4s)
+warning: AgentMicrofoundations/AutoregressiveResponse.lean:106:32: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: AgentMicrofoundations/AutoregressiveResponse.lean:125:30: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: AgentMicrofoundations/AutoregressiveResponse.lean:279:53: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+✔ [29/55] Built AgentMicrofoundations.CaseStudies.CTFTraceModel (882ms)
+✔ [30/55] Built AgentMicrofoundations.OpportunitySpecialization (968ms)
+✔ [31/55] Built AgentMicrofoundations.CouplingComparativeStatics (1.4s)
+✔ [32/55] Built AgentMicrofoundations.AllocationFeedback (1.6s)
+✔ [33/55] Built AgentMicrofoundations.AutoregressiveContext (1.1s)
+⚠ [34/55] Built AgentMicrofoundations.TokenAccounting (1.2s)
+warning: AgentMicrofoundations/TokenAccounting.lean:29:36: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: AgentMicrofoundations/TokenAccounting.lean:39:36: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: AgentMicrofoundations/TokenAccounting.lean:56:34: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+✔ [35/55] Built AgentMicrofoundations.AutoregressiveIdentification (1.3s)
+✔ [36/55] Built AgentMicrofoundations.CaseStudies.CTFArchive (2.2s)
+✔ [37/55] Built AgentMicrofoundations.ResourceThresholdPersistence (1.3s)
+✔ [38/55] Built AgentMicrofoundations.AutoregressiveCouplingSensitivity (1.3s)
+✔ [39/55] Built AgentMicrofoundations.GroupPrediction (982ms)
+✔ [40/55] Built AgentMicrofoundations.CaseStudies.CTFModel (1.3s)
+✔ [41/55] Built AgentMicrofoundations.CaseStudies.ResourceSignalPilot (1.4s)
+✔ [42/55] Built AgentMicrofoundations.PopulationTransport (849ms)
+✔ [43/55] Built AgentMicrofoundations.ResourceBudgetComparativeStatics (915ms)
+✔ [44/55] Built AgentMicrofoundations.ComputationalEconomy (1.1s)
+⚠ [45/55] Built AgentMicrofoundations.PopulationInputShift (1.2s)
+warning: AgentMicrofoundations/PopulationInputShift.lean:135:51: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+✔ [46/55] Built AgentMicrofoundations.ScenarioSimulation (600ms)
+✔ [47/55] Built AgentMicrofoundations.MechanismCounterfactual (540ms)
+✔ [48/55] Built AgentMicrofoundations.CaseStudies.CTFParameterizedSimulation (956ms)
+✔ [49/55] Built AgentMicrofoundations.CaseStudies.AuthorityDesign (1.2s)
+✔ [50/55] Built AgentMicrofoundations.CaseStudies.AuthorityWorldV2Clock (682ms)
+⚠ [51/55] Built AgentMicrofoundations.CaseStudies.AuthorityMechanics (625ms)
+warning: AgentMicrofoundations/CaseStudies/AuthorityMechanics.lean:150:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: AgentMicrofoundations/CaseStudies/AuthorityMechanics.lean:150:28: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+✔ [52/55] Built AgentMicrofoundations.CaseStudies.CTFResourceSimulation (961ms)
+✔ [53/55] Built AgentMicrofoundations.CaseStudies.AuthorityWorldV2Election (537ms)
+✔ [54/55] Built AgentMicrofoundations (995ms)
+Build completed successfully (55 jobs).
+⚠ [3/9] Replayed AgentMicrofoundations.ResponseIdentification
+warning: AgentMicrofoundations/ResponseIdentification.lean:159:19: This simp argument is unused:
+  firstValue
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [secondValue, Bool.false_eq_true, ↓reduceIte]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: AgentMicrofoundations/ResponseIdentification.lean:159:31: This simp argument is unused:
+  secondValue
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [firstValue, Bool.false_eq_true, ↓reduceIte]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: AgentMicrofoundations/ResponseIdentification.lean:293:19: This simp argument is unused:
+  firstValue
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [secondValue, Bool.false_eq_true, ↓reduceIte]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: AgentMicrofoundations/ResponseIdentification.lean:293:31: This simp argument is unused:
+  secondValue
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [firstValue, Bool.false_eq_true, ↓reduceIte]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [6/9] Replayed AgentMicrofoundations.AutoregressiveResponse
+warning: AgentMicrofoundations/AutoregressiveResponse.lean:106:32: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: AgentMicrofoundations/AutoregressiveResponse.lean:125:30: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: AgentMicrofoundations/AutoregressiveResponse.lean:279:53: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+✔ [7/9] Built AgentMicrofoundations.ResearchTargets.ChoiceLawProblem (521ms)
+✔ [8/9] Built AgentMicrofoundations.Methods.ExactTwoEventCoupling (609ms)
+✔ [9/9] Built AgentMicrofoundations.Methods (394ms)
+Build completed successfully (9 jobs).
+Resolving dependencies
+Building and exporting
+Running Lean default kernel on solution
+⚠ [5/55] Replayed AgentMicrofoundations.ResponseIdentification
+warning: AgentMicrofoundations/ResponseIdentification.lean:159:19: This simp argument is unused:
+  firstValue
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [secondValue, Bool.false_eq_true, ↓reduceIte]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: AgentMicrofoundations/ResponseIdentification.lean:159:31: This simp argument is unused:
+  secondValue
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [firstValue, Bool.false_eq_true, ↓reduceIte]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: AgentMicrofoundations/ResponseIdentification.lean:293:19: This simp argument is unused:
+  firstValue
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [secondValue, Bool.false_eq_true, ↓reduceIte]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: AgentMicrofoundations/ResponseIdentification.lean:293:31: This simp argument is unused:
+  secondValue
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [firstValue, Bool.false_eq_true, ↓reduceIte]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [6/55] Replayed AgentMicrofoundations.AutoregressiveResponse
+warning: AgentMicrofoundations/AutoregressiveResponse.lean:106:32: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: AgentMicrofoundations/AutoregressiveResponse.lean:125:30: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: AgentMicrofoundations/AutoregressiveResponse.lean:279:53: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+⚠ [9/55] Replayed AgentMicrofoundations.TokenAccounting
+warning: AgentMicrofoundations/TokenAccounting.lean:29:36: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: AgentMicrofoundations/TokenAccounting.lean:39:36: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: AgentMicrofoundations/TokenAccounting.lean:56:34: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+⚠ [10/55] Replayed AgentMicrofoundations.Accounting
+warning: AgentMicrofoundations/Accounting.lean:124:43: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: AgentMicrofoundations/Accounting.lean:141:45: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: AgentMicrofoundations/Accounting.lean:149:45: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: AgentMicrofoundations/Accounting.lean:141:45: This simp argument is unused:
+  if_pos rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [sumOver, List.foldr_cons]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [16/55] Replayed AgentMicrofoundations.PopulationInputShift
+warning: AgentMicrofoundations/PopulationInputShift.lean:135:51: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+⚠ [50/55] Replayed AgentMicrofoundations.CaseStudies.AuthorityMechanics
+warning: AgentMicrofoundations/CaseStudies/AuthorityMechanics.lean:150:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: AgentMicrofoundations/CaseStudies/AuthorityMechanics.lean:150:28: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+Lean default kernel accepts the solution
+Uses axioms: propext, Quot.sound, Classical.choice
+'AgentMicrofoundations.Accounting.sumOver_zero' depends on axioms: [propext]
+'AgentMicrofoundations.Accounting.sumOver_congr' depends on axioms: [propext]
+'AgentMicrofoundations.Accounting.sumOver_add' depends on axioms: [propext, Quot.sound]
+'AgentMicrofoundations.Accounting.sumOver_sub' depends on axioms: [propext, Quot.sound]
+'AgentMicrofoundations.Accounting.sumOver_eqIndicator_of_not_mem' depends on axioms: [propext]
+'AgentMicrofoundations.Accounting.sumOver_eqIndicator_of_mem_nodup' depends on axioms: [propext]
+'AgentMicrofoundations.Accounting.net_recorded_delta_append' depends on axioms: [propext, Quot.sound]
+'AgentMicrofoundations.Accounting.internal_transfer_is_population_neutral' depends on axioms: [propext, Quot.sound]
+'AgentMicrofoundations.Accounting.internal_transfer_log_is_population_neutral' depends on axioms: [propext, Quot.sound]
+'AgentMicrofoundations.Accounting.internal_transfer_pairwise_balance_neutral' depends on axioms: [propext, Quot.sound]
+'AgentMicrofoundations.Accounting.internal_transfer_spares_third_party' depends on axioms: [propext]
+'AgentMicrofoundations.Accounting.internal_transfer_does_not_change_other_resource' depends on axioms: [propext]
+'AgentMicrofoundations.Accounting.closed_ledger_internal_transfer_preserves_pair_balance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.Accounting.closed_ledger_internal_transfer_preserves_population_balance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AllocationFeedback.success_marginal_eq_productive_exposure_of_requires_assignment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AllocationFeedback.productive_exposure_bounded_by_assignment_and_success_marginals' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AllocationFeedback.group_productive_exposure_bounded_by_marginal_masses' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AllocationFeedback.productive_profile_respects_joint_swap' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.AllocationFeedback.joint_swap_invariance_implies_productive_lottery_invariance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AllocationFeedback.heterogeneous_threshold_response_matches_productive_recipient' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.AllocationFeedback.heterogeneous_next_action_probability_eq_productive_exposure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AllocationFeedback.heterogeneous_group_next_active_mass_eq_expected_productive_count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AllocationFeedback.anonymous_fixed_productivity_predicts_group_next_activity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AllocationFeedback.heterogeneous_group_next_active_mass_eq_success_marginal_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AllocationFeedback.heterogeneous_group_any_next_active_probability_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AllocationFeedback.failed_task_at_threshold_breaks_productive_response_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AllocationFeedback.stochastic_threshold_response_matches_productive_recipient' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.AllocationFeedback.stochastic_next_action_probability_eq_productive_exposure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AllocationFeedback.aggregate_next_active_mass_eq_expected_productive_count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AllocationFeedback.stochastic_production_and_response_follow_expected_productive_count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AllocationFeedback.stochastic_next_action_rate_le_expected_opportunity_count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AllocationFeedback.threshold_crossing_makes_next_action_equal_assignment' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.AllocationFeedback.next_action_probability_equals_exposure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AllocationFeedback.symmetric_assignment_crossing_predicts_next_action_rate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AllocationIdentification.sharp_group_exposure_bounds' depends on axioms: [propext, Quot.sound]
+'AgentMicrofoundations.AllocationIdentification.lower_group_exposure_bound_is_feasible' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.AllocationIdentification.upper_group_exposure_bound_is_feasible' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.AllocationIdentification.individual_exposure_endpoints_unidentified_under_scarcity' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.AllocationIdentification.nominal_capacity_can_reach_group_but_actual_assignment_exposes_none' does not depend on any axioms
+'AgentMicrofoundations.AllocationIdentification.empirical_group_exposure_bounds' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.AllocationIdentification.population_exposure_conservation' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.AllocationIdentification.weighted_group_exposure_bounds' depends on axioms: [propext, Quot.sound]
+'AgentMicrofoundations.AllocationIdentification.weighted_group_lower_expectation_is_sharp' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.AllocationIdentification.weighted_group_upper_expectation_is_sharp' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.AnonymousAllocation.any_congr_on_members' depends on axioms: [propext]
+'AgentMicrofoundations.AnonymousAllocation.expectedSelectionMass_mapEntries' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AnonymousAllocation.expectedProfileCount_mono' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AnonymousAllocation.selectedCount_intersection_le' depends on axioms: [propext, Quot.sound]
+'AgentMicrofoundations.AnonymousAllocation.ratSumOver_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AgentMicrofoundations.AnonymousAllocation.ratSumOver_congr' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AgentMicrofoundations.AnonymousAllocation.ratSumOver_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AgentMicrofoundations.AnonymousAllocation.ratSumOver_one_eq_length' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AnonymousAllocation.ratSumOver_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AgentMicrofoundations.AnonymousAllocation.ratSumOver_indicator_eq_weighted_count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AnonymousAllocation.expectedSelectionMass_eq_fixed_count_mul_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AnonymousAllocation.aggregate_selection_mass_eq_expected_count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AnonymousAllocation.eventFold_any_selected_le_expected_count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AnonymousAllocation.probability_any_selected_le_expected_count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AnonymousAllocation.individual_selection_mass_le_probability_any_selected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AnonymousAllocation.swap_invariant_lottery_implies_equal_marginal_exposure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AnonymousAllocation.ratSumOver_eq_card_mul_reference_of_equal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AnonymousAllocation.symmetric_lottery_exposure_eq_expected_count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AnonymousAllocation.anonymous_fixed_assignments_imply_individual_exposure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AnonymousAllocation.symmetric_lottery_group_exposure_scales_with_group_size' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AutoregressiveContext.equal_prompt_budget_implies_context_mixture_invariance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AutoregressiveCouplingSensitivity.autoregressive_context_event_shift_bounded_by_prefix_coupling' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AutoregressiveIdentification.every_probability_realizable_by_autoregressive_constitution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AutoregressiveIdentification.autoregressive_event_probability_endpoints_realizable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AutoregressiveResponse.eventMass_of_constant_event' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AutoregressiveResponse.first_token_step_law' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AutoregressiveResponse.first_token_law_independent_of_positive_budget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AutoregressiveResponse.token_prefix_law_independent_of_larger_budget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AutoregressiveResponse.proposal_event_within_prefix_parser_disagreement' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AutoregressiveResponse.first_token_sufficient_parser_proposal_law_budget_invariant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AutoregressiveResponse.prefix_sufficient_parser_proposal_law_invariant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AutoregressiveResponse.proposal_event_budget_sensitivity_bounded_by_prefix_disagreement' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AutoregressiveResponse.first_token_sufficient_response_law_invariant_across_states' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AutoregressiveResponse.same_prompt_preserves_first_token_law_across_resource_budgets' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AutoregressiveResponse.equal_prompt_implies_equal_proposal_law' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AutoregressiveResponse.different_proposal_law_requires_different_prompt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AutoregressiveResponse.equal_encoded_input_implies_equal_model_response' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.AutoregressiveResponse.different_model_response_requires_prompt_or_budget_change' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.CaseAnalysis.exact_case_test_controls_rejection_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.CaseAnalysis.rejected_sample_point_mass_le_level' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.CaseAnalysis.fitted_foundation_invariant_to_holdout' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.CaseAnalysis.held_out_excess_exceeds_descriptive_band' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.CaseAnalysis.held_out_shortfall_exceeds_descriptive_band' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.CaseStudies.AuthorityDesign.elected_random_configs_differ_only_by_allocator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.CaseStudies.AuthorityDesign.elected_random_configs_change_allocator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.CaseStudies.AuthorityDesign.elected_random_conditions_change_visible_input' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.CaseStudies.AuthorityMechanics.random_allocator_removes_campaign_and_election' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.CaseStudies.AuthorityMechanics.successful_assignment_obeys_platform_gate' depends on axioms: [propext]
+'AgentMicrofoundations.CaseStudies.AuthorityMechanics.successful_assignment_increments_recipient_count' depends on axioms: [propext]
+'AgentMicrofoundations.CaseStudies.AuthorityMechanics.successful_assignment_respects_winner_limit' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.CaseStudies.AuthorityMechanics.elected_task_allocator_has_decision_phase' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.CaseStudies.AuthorityWorldV2Clock.assignment_and_production_windows_disjoint' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.CaseStudies.AuthorityWorldV2Clock.no_production_before_allocation_closes' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.CaseStudies.AuthorityWorldV2Clock.work_cutoff_precedes_election_window' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.CaseStudies.AuthorityWorldV2Clock.expiry_day_is_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.CaseStudies.AuthorityWorldV2Clock.not_expired_before_lifetime' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.CaseStudies.AuthorityWorldV2Clock.elected_discretion_clock_is_valid' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.CaseStudies.AuthorityWorldV2Clock.allocation_open_on_last_second' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.CaseStudies.AuthorityWorldV2Clock.allocation_closed_at_cutoff' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.CaseStudies.AuthorityWorldV2Clock.work_opens_at_allocation_cutoff' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.CaseStudies.AuthorityWorldV2Clock.work_closed_at_cutoff' depends on axioms: [propext, Quot.sound]
+'AgentMicrofoundations.CaseStudies.AuthorityWorldV2Clock.election_opens_at_registration_cutoff' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.CaseStudies.AuthorityWorldV2Clock.task_lifetime_three_expires_on_third_day' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.CaseStudies.AuthorityWorldV2Clock.task_lifetime_three_not_expired_on_second_day' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.CaseStudies.AuthorityWorldV2Election.plurality_output_is_a_candidate' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.CaseStudies.AuthorityWorldV2Election.no_candidate_branch_is_seed_choice' depends on axioms: [propext]
+'AgentMicrofoundations.CaseStudies.AuthorityWorldV2Election.all_candidates_branch_is_seed_choice' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.CaseStudies.CTFAllocation.six_agents_three_exclusive_tasks_leave_three_unassigned' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.CaseStudies.CTFAllocation.clock_can_increase_daily_rationing' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.CaseStudies.CTFAllocation.six_agents_three_assignments_four_bloc' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.CaseStudies.CTFAllocation.six_agents_three_assignments_two_bloc' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.CaseStudies.CTFAllocation.four_two_bloc_counts_sum_to_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.CaseStudies.CTFArchive.calibration_counts_are_archive_consistent' does not depend on any axioms
+'AgentMicrofoundations.CaseStudies.CTFArchive.heldout_counts_are_archive_consistent' does not depend on any axioms
+'AgentMicrofoundations.CaseStudies.CTFArchive.raw_stage_counts' does not depend on any axioms
+'AgentMicrofoundations.CaseStudies.CTFArchive.gpt_i1_small_menu_forecast' does not depend on any axioms
+'AgentMicrofoundations.CaseStudies.CTFArchive.gpt_i1_hard_menu_forecast' does not depend on any axioms
+'AgentMicrofoundations.CaseStudies.CTFArchive.out_of_calibration_task_supply_is_rejected' does not depend on any axioms
+'AgentMicrofoundations.CaseStudies.CTFArchive.calibration_tier_exposure_is_balanced' does not depend on any axioms
+'AgentMicrofoundations.CaseStudies.CTFArchive.frozen_stage2_point_predictions' does not depend on any axioms
+'AgentMicrofoundations.CaseStudies.CTFArchive.assignment_forecast_exceeds_five_point_screen_in_all_holdout_cells' does not depend on any axioms
+'AgentMicrofoundations.CaseStudies.CTFArchive.verified_success_screen_flags_only_deepseek_i1' does not depend on any axioms
+'AgentMicrofoundations.CaseStudies.CTFArchive.heldout_world_counts_are_valid' does not depend on any axioms
+'AgentMicrofoundations.CaseStudies.CTFArchive.observed_holdout_totals_by_world' does not depend on any axioms
+'AgentMicrofoundations.CaseStudies.CTFArchive.archive_world_split_is_complete' does not depend on any axioms
+'AgentMicrofoundations.CaseStudies.CTFArchive.every_world_has_agent_trace_join' does not depend on any axioms
+'AgentMicrofoundations.CaseStudies.CTFArchive.every_world_resource_ledger_replays_to_terminal_state' does not depend on any axioms
+'AgentMicrofoundations.CaseStudies.CTFModel.fourBlocActivityPrediction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.CaseStudies.CTFModel.twoBlocActivityPrediction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.CaseStudies.CTFModel.fourBlocActivityIsTwiceTwoBlocActivity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.CaseStudies.CTFModel.fourBlocActivityFromSuccessMarginals' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.CaseStudies.CTFModel.twoBlocActivityFromSuccessMarginals' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.CaseStudies.CTFModel.fourBlocAnyActivityBounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.CaseStudies.CTFModel.twoBlocAnyActivityBounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.CaseStudies.CTFParameterizedSimulation.simulated_population_is_design_population' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.CaseStudies.CTFParameterizedSimulation.indexed_simulated_population_is_design_population' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.CaseStudies.CTFResourceSimulation.symbolic_path_matches_additive_ledger' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.CaseStudies.CTFResourceSimulation.fixture_clock_is_admissible' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.CaseStudies.CTFTraceModel.filter_bool_complement_partition' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.CaseStudies.CTFTraceModel.filter_bool_refinement_partition' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.CaseStudies.CTFTraceModel.arbitrary_group_assignment_partition' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.CaseStudies.CTFTraceModel.arbitrary_group_verified_output_partition' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.CaseStudies.ResourceSignalPilot.paired_count_difference_bounded_by_disagreement' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.CaseStudies.ResourceSignalPilot.raw_pilot_counts' does not depend on any axioms
+'AgentMicrofoundations.CaseStudies.ResourceSignalPilot.pilot_count_bound_is_sharp_on_observed_sample' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.CausalInterface.countWhere_mono' depends on axioms: [propext, Quot.sound]
+'AgentMicrofoundations.CausalInterface.verified_count_le_execution_count' depends on axioms: [propext, Quot.sound]
+'AgentMicrofoundations.CausalInterface.execution_count_le_proposal_count' depends on axioms: [propext, Quot.sound]
+'AgentMicrofoundations.CausalInterface.closed_gate_prevents_verified_production' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.CausalInterface.open_gate_output_is_proposal_times_fixed_production' does not depend on any axioms
+'AgentMicrofoundations.CausalInterface.closed_gate_observational_equivalence_example' does not depend on any axioms
+'AgentMicrofoundations.Commitments.same_base_agent_state_different_commitments_change_payment_feasibility' depends on axioms: [propext]
+'AgentMicrofoundations.ComputationalEconomy.joint_proposal_marginal_is_autoregressive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ComputationalEconomy.generated_trace_charge_fits_subject_balance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ContextualResponse.eventMassList_append' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ContextualResponse.eventMassList_scaleEntries' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ContextualResponse.eventMassList_eq_foldr' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ContextualResponse.eventMassList_bindEntries' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ContextualResponse.eventMass_bindDistribution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ContextualResponse.weightedContextEventMass_congr' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ContextualResponse.weightedContextEventMass_mapDistribution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ContextualResponse.eventMass_map_bindDistribution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ContextualResponse.weightedContextEventMass_pure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ContextualResponse.weightedContextEventMass_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ContextualResponse.weightedContextEventMass_upper' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ContextualResponse.weightedContextEventMass_eq_constant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ContextualResponse.contextual_event_probability_eq_if_constant_on_support' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ContextualResponse.contextual_event_probability_respects_uniform_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.CouplingComparativeStatics.event_probability_difference_bounded_by_coupling_disagreement' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.CouplingComparativeStatics.event_probability_mono_under_support_monotone_coupling' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.CouplingComparativeStatics.event_probability_mono_under_common_seed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.FiniteCoalitions.countTrials_mono' depends on axioms: [propext, Quot.sound]
+'AgentMicrofoundations.FiniteCoalitions.countTrials_le_sample_count' depends on axioms: [propext, Quot.sound]
+'AgentMicrofoundations.FiniteCoalitions.member_success_implies_coalition_success' depends on axioms: [propext]
+'AgentMicrofoundations.FiniteCoalitions.member_success_count_le_coalition_success_count' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.FiniteCoalitions.any_success_implies_positive_member_count' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.FiniteCoalitions.coalition_success_count_le_total_member_success_count' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.FiniteCoalitions.coalition_success_count_le_sample_count' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.FiniteCoalitions.coalition_success_finite_sample_bounds' depends on axioms: [propext, Quot.sound]
+'AgentMicrofoundations.FiniteCoalitions.equal_marginals_do_not_identify_coalition_output' depends on axioms: [propext]
+'AgentMicrofoundations.FiniteDynamics.supported_trajectory_has_positive_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.FiniteDynamics.initial_support_and_supported_trajectory_have_positive_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.GroupPrediction.arbitrary_group_activity_equals_productive_exposure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.GroupPrediction.positive_group_activity_requires_positive_productive_exposure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.GroupPrediction.group_case_bridge_is_supported' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.GroupProbability.team_success_frechet_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.Liquidity.solvent_timeline_implies_nonnegative_terminal_balance' does not depend on any axioms
+'AgentMicrofoundations.Liquidity.later_receipt_cannot_retroactively_prevent_default' depends on axioms: [propext]
+'AgentMicrofoundations.MechanismCounterfactual.same_disclosure_preserves_first_round_proposal_law' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.MechanismCounterfactual.same_disclosure_preserves_first_round_proposal_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.MechanismFeedback.verified_opportunity_changes_resource_by_net_output' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.MechanismFeedback.net_opportunity_surplus_crossing_threshold_changes_response' depends on axioms: [propext]
+'AgentMicrofoundations.MechanismFeedback.same_side_of_threshold_preserves_next_response' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.MechanismFeedback.task_assignment_feedback_changes_next_action' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.Ontology.mass_append' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AgentMicrofoundations.Ontology.mass_scaleEntries' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AgentMicrofoundations.Ontology.mass_mapEntries' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AgentMicrofoundations.Ontology.mass_bindEntries' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AgentMicrofoundations.Ontology.bindMass_eq_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AgentMicrofoundations.Ontology.bindEntries_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AgentMicrofoundations.Ontology.eventMassEntries_mapEntries' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AgentMicrofoundations.Ontology.eventMass_mapDistribution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AgentMicrofoundations.Ontology.supports_mapDistribution_of_supports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.Ontology.bindEntries_contains_supported_pair' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.Ontology.supports_bindDistribution_of_supports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.Ontology.state_sufficient_iff_law_factors_through_encoding' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.Ontology.equal_constitution_equal_response' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.Ontology.compatible_execution_support_is_feasible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.Ontology.kernel_supported_resource_feedback_implies_resource_relevant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.Ontology.menu_change_implies_supported_executable_set_change' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.Ontology.equal_disclosure_implies_equal_proposal_law' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.Ontology.supported_stages_have_positive_one_period_path' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.Ontology.kernel_supported_resource_feedback_yields_one_period_path' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.Ontology.initial_support_composes_with_one_period_path' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.OntologyExamples.static_resource_relevance_does_not_imply_kernel_supported_feedback' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.OntologyExamples.resource_relevance_does_not_imply_resource_sensitive_proposals' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.OpportunityRationing.effective_capacity_bounds_assignments' depends on axioms: [propext]
+'AgentMicrofoundations.OpportunityRationing.exclusive_opportunity_rationing_bound' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.OpportunityRationing.scarcity_implies_at_least_one_unassigned' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.OpportunityRationing.task_allocation_resource_gap_is_output_minus_incremental_cost' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.OpportunityRationing.positive_net_task_output_raises_recipient_resource' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.OpportunitySpecialization.eventFold_eq_mass_of_positive_support' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.OpportunitySpecialization.eventMass_eq_one_when_event_holds_on_positive_support' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.OpportunitySpecialization.positive_selected_count_has_selected_witness' depends on axioms: [propext]
+'AgentMicrofoundations.OpportunitySpecialization.selected_count_below_population_has_unselected_witness' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.OpportunitySpecialization.partial_opportunity_allocation_creates_persistent_role_split' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.OpportunitySpecialization.every_positive_support_outcome_generates_a_role_split' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.OpportunitySpecialization.partial_opportunity_lottery_predicts_role_split_probability_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.OpportunitySpecialization.reinforcing_response_turns_partial_opportunity_into_persistent_split' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.PopulationInputShift.fixed_kernel_event_rate_shift_bounded_by_changed_inputs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.PopulationInputShift.autoregressive_event_rate_shift_bounded_by_changed_inputs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.PopulationTransport.proposal_probability_at_reference_population' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.PopulationTransport.proposal_probability_at_other_population' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.PopulationTransport.arbitrary_response_pair_across_population_sizes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.PopulationTransport.fixed_constitution_can_reverse_population_response' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ResourceBudgetComparativeStatics.unit_budget_productive_probability_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ResourceBudgetComparativeStatics.larger_budget_can_lower_productive_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ResourceBudgetComparativeStatics.no_universal_budget_monotonicity_for_productive_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ResourceBudgetComparativeStatics.budget_counterexample_rules_out_productivity_nested_couplings' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ResourceBudgetComparativeStatics.resource_increase_can_lower_productive_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ResourceLedger.internal_transfer_does_not_change_aggregate_pool' does not depend on any axioms
+'AgentMicrofoundations.ResourceLedger.appending_internal_transfer_preserves_aggregate_pool' depends on axioms: [propext]
+'AgentMicrofoundations.ResourceLedger.terminal_pool_is_invariant_to_two_event_order' depends on axioms: [propext]
+'AgentMicrofoundations.ResourceLedger.balance_change_does_not_identify_production_source' depends on axioms: [propext]
+'AgentMicrofoundations.ResourceLedger.scale_resource_delta' depends on axioms: [propext]
+'AgentMicrofoundations.ResourceLedger.event_resource_change_scales' depends on axioms: [propext]
+'AgentMicrofoundations.ResourceLedger.denomination_scaling_preserves_ending_pool' depends on axioms: [propext]
+'AgentMicrofoundations.ResourceSurvivalBound.totalRatStock_nonnegative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ResourceSurvivalBound.weightedEventRequirement_eq_amount_mul_eventFold' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ResourceSurvivalBound.viableRatLoad_eq_count_mul_reserve' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ResourceSurvivalBound.viableRatLoad_le_totalStock' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ResourceSurvivalBound.expectedViabilityRequirement_le_expectedStock_aux' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ResourceSurvivalBound.probability_at_least_target_viable_bounded_by_expected_stock' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ResourceSurvivalBound.sum_replicate_rat_eq_count_mul_value' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ResourceSurvivalBound.rational_resource_survival_bound_is_sharp' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ResourceThresholdPath.dead_state_is_absorbing' depends on axioms: [propext]
+'AgentMicrofoundations.ResourceThresholdPath.dead_run_is_absorbing' depends on axioms: [propext]
+'AgentMicrofoundations.ResourceThresholdPath.viable_path_matches_additive_ledger' depends on axioms: [propext]
+'AgentMicrofoundations.ResourceThresholdPath.equal_net_flow_can_produce_different_survival' does not depend on any axioms
+'AgentMicrofoundations.ResourceThresholdPersistence.productive_threshold_action_iff_margin_covers_depletion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ResourceThresholdPersistence.productive_resource_margin_exhaustion_ends_active_role' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ResourceThresholdPersistence.resource_threshold_split_persists_through_horizon' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.ResourceThresholdPersistence.productive_exposure_creates_finite_horizon_role_split' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.ResourceThresholdPersistence.productive_lottery_predicts_finite_horizon_split_probability_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ResponseIdentification.eventFold_nonnegative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ResponseIdentification.eventFold_le_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ResponseIdentification.eventMass_nonnegative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ResponseIdentification.eventMass_le_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ResponseIdentification.eventFold_mono_of_support_inclusion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ResponseIdentification.eventFold_union_le_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ResponseIdentification.event_probability_difference_bounded_by_mismatch' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ResponseIdentification.eventFold_sum_le_mass_add_intersection' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ResponseIdentification.finite_event_intersection_frechet_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ResponseIdentification.every_probability_compatible_with_two_feasible_outcomes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ResponseIdentification.resource_production_feasibility_does_not_point_identify_behavior' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ResponseIdentification.sharp_feasibility_only_identified_set' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.SequentialBounds.weightedStateValue_le_weightedContextEventMass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.SequentialBounds.weightedStateValue_ge_weightedContextEventMass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.SequentialBounds.weightedIndicatorValue_eq_amount_mul_eventMassEntries' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.SequentialBounds.weightedStateValue_eq_weightedIndicatorValue' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.SequentialBounds.eventMass_false' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AgentMicrofoundations.SequentialBounds.pathEventMass_succ_eq_weightedContext' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.SequentialBounds.continuation_event_mass_eq_indicator_mul_path_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.SequentialBounds.pathEventMass_lower_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.SequentialBounds.pathEventMass_upper_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.SequentialBounds.pathEventMass_equals_power_of_constant_conditional_rate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.Settlement.canSettle_iff_within_spendable_balance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.Settlement.executed_transfer_preserves_total_tokens' depends on axioms: [propext, Quot.sound]
+'AgentMicrofoundations.Settlement.executed_transfer_preserves_due_commitments' depends on axioms: [propext]
+'AgentMicrofoundations.Settlement.accepted_transfer_keeps_payer_solvent' depends on axioms: [propext, Quot.sound]
+'AgentMicrofoundations.Settlement.rejected_transfer_changes_no_account' depends on axioms: [propext]
+'AgentMicrofoundations.Settlement.settled_due_payment_preserves_total_tokens' depends on axioms: [propext, Quot.sound]
+'AgentMicrofoundations.Settlement.settled_due_payment_reduces_claim' depends on axioms: [propext]
+'AgentMicrofoundations.Settlement.settled_due_payment_preserves_spendable_balance' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.Settlement.rejected_due_payment_changes_no_account' depends on axioms: [propext]
+'AgentMicrofoundations.Specialization.role_persists_in_forward_invariant_region' does not depend on any axioms
+'AgentMicrofoundations.Specialization.two_invariant_regions_imply_persistent_role_split' does not depend on any axioms
+'AgentMicrofoundations.Specialization.positive_context_stays_positive' depends on axioms: [propext, Quot.sound]
+'AgentMicrofoundations.Specialization.negative_context_stays_negative' depends on axioms: [propext, Quot.sound]
+'AgentMicrofoundations.Specialization.opposite_first_exposures_create_persistent_role_split' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.SurvivalCurrency.viable_rat_threshold_load_le_stock' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.SurvivalCurrency.all_viable_rat_requirements_fit_stock' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.SurvivalCurrency.rat_upward_threshold_crossing_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.SurvivalCurrency.rat_downward_threshold_crossing_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.SurvivalCurrency.executed_rat_transfer_continuation_change' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.SurvivalCurrency.viable_count_times_reserve_le_total_stock' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.SurvivalCurrency.internal_transfer_preserves_currency_stock' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.SurvivalCurrency.redistribution_can_restore_a_viable_subject' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.SurvivalCurrency.aggregate_shortfall_rules_out_full_viability' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.Symmetry.equal_complete_input_same_action' does not depend on any axioms
+'AgentMicrofoundations.Symmetry.divergent_actions_require_input_difference' does not depend on any axioms
+'AgentMicrofoundations.Symmetry.same_policy_allows_context_conditioned_role_split' depends on axioms: [propext]
+'AgentMicrofoundations.TemporalIntersectionBounds.eventFold_false' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.TemporalIntersectionBounds.event_and_complement_mass_eq_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.TemporalIntersectionBounds.any_failure_mass_le_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.TemporalIntersectionBounds.not_allEvents_eq_anyFailure' depends on axioms: [Quot.sound]
+'AgentMicrofoundations.TemporalIntersectionBounds.persistent_event_probability_lower_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.TemporalIntersectionBounds.persistent_event_probability_le_each_period' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.TemporalIntersectionBounds.persistent_event_probability_le_minimum_period_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.TemporalIntersectionBounds.absorbing_persistence_equals_terminal_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.TemporalIntersectionBounds.case_persistence_lower_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.TemporalIntersectionBounds.case_persistence_upper_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.TokenAccounting.affordable_budget_respects_technical_cap' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.TokenAccounting.affordable_budget_cost_fits_balance' depends on axioms: [propext]
+'AgentMicrofoundations.TokenAccounting.affordable_budget_is_maximal' depends on axioms: [propext]
+'AgentMicrofoundations.TokenAccounting.affordable_budget_monotone_in_balance' depends on axioms: [propext, Quot.sound]
+'AgentMicrofoundations.TokenAccounting.affordable_budget_saturates_at_technical_cap' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.TokenAccounting.saturated_balances_same_prompt_imply_equal_proposal_law' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.TokenAccounting.decision_prefix_balance_suffices_for_full_cap_choice_law' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.TokenAccounting.affordable_balance_change_proposal_event_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.TokenAccounting.generated_proposal_charge_fits_balance' does not depend on any axioms
+'AgentMicrofoundations.TokenAccounting.affordable_generation_debit_closes_account' depends on axioms: [propext]
+'AgentMicrofoundations.TokenAccounting.resource_bounded_generation_fits_account' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.reserves_cover_viable_population' depends on axioms: [propext, Quot.sound]
+'AgentMicrofoundations.expected_net_nonnegative_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AgentMicrofoundations.capability_improves_expected_gross_output' does not depend on any axioms
+'AgentMicrofoundations.capability_improves_expected_net_output_at_fixed_cost' depends on axioms: [propext, Quot.sound]
+'AgentMicrofoundations.extra_compute_is_resource_positive_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.same_marginal_success_different_context_persistence_changes_survival' depends on axioms: [propext]
+'AgentMicrofoundations.three_period_markov_survival_mass' depends on axioms: [propext, Quot.sound]
+'AgentMicrofoundations.same_marginals_nonmonotone_survival_across_context_dynamics' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.positive_expected_drift_does_not_guarantee_pathwise_survival' does not depend on any axioms
+'AgentMicrofoundations.balanced_transfers_preserve_aggregate_resource' depends on axioms: [propext, Quot.sound]
+'AgentMicrofoundations.balanced_transfers_cannot_cross_population_viability_boundary' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.sum_replicate_nat' depends on axioms: [propext, Quot.sound]
+'AgentMicrofoundations.population_viability_iff_pool_covers_threshold' depends on axioms: [propext, Quot.sound]
+'AgentMicrofoundations.binary_context_shift_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AgentMicrofoundations.no_executed_event_does_not_identify_intention' does not depend on any axioms
+'AgentMicrofoundations.opening_execution_gate_separates_intentions' does not depend on any axioms
+'AgentMicrofoundations.individual_marginals_do_not_identify_team_success_probability' does not depend on any axioms
+'AgentMicrofoundations.Methods.ExactTwoEventCoupling.sub_nonnegative_of_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.Methods.ExactTwoEventCoupling.coupling_mass_normalized' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.Methods.ExactTwoEventCoupling.couplingLaw_first_marginal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.Methods.ExactTwoEventCoupling.couplingLaw_second_marginal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.Methods.ExactTwoEventCoupling.couplingLaw_intersection' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.Methods.ExactTwoEventCoupling.joint_mass_feasible_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.Methods.ExactTwoEventCoupling.lower_boundary_zero_is_feasible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.Methods.ExactTwoEventCoupling.lower_boundary_excess_is_feasible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.Methods.ExactTwoEventCoupling.upper_boundary_p_is_feasible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.Methods.ExactTwoEventCoupling.upper_boundary_q_is_feasible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ResearchTargets.ChoiceLawProblem.firstToken_budget_effect_has_sharp_zero_law' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
