@@ -37,19 +37,21 @@ def productiveProfile {Agent : Type}
   productiveRecipientProfile round.2
 
 /-- Proposal, assignment, and production are ordered as executable events.
-    Eligibility is a resource-account condition derived from the minimum
-    decision-prefix cost `tokenPrice * decisionPrefix`. Restrictions apply
+    Eligibility is an agent-specific resource-account condition derived from
+    the minimum decision-prefix cost `tokenPrice * decisionPrefix agent`.
+    This permits heterogeneous response protocols and action serialization
+    lengths within the same population. Restrictions apply
     only to positive-mass support; zero-mass rows are irrelevant. -/
 def RoundCausalOrder {Agent : Type}
     (group : FinitePopulation Agent)
     (lottery : FiniteDistribution (ChoiceAllocationProductionRound Agent))
-    (spendableBalance : Agent → Nat) (tokenPrice decisionPrefix : Nat) : Prop :=
+    (spendableBalance decisionPrefix : Agent → Nat) (tokenPrice : Nat) : Prop :=
   ∀ round weight, (round, weight) ∈ lottery.outcomes → 0 < weight →
     (∀ agent, agent ∈ group.members →
       assignmentProfile round agent = true → proposedProfile round agent = true) ∧
     (∀ agent, agent ∈ group.members →
       proposedProfile round agent = true →
-        tokenPrice * decisionPrefix ≤ spendableBalance agent)
+        tokenPrice * decisionPrefix agent ≤ spendableBalance agent)
 
 theorem selectedCount_mono_of_profile_inclusion
     {Agent : Type} (population : List Agent)
@@ -170,8 +172,8 @@ theorem resource_opportunity_production_cascade
     (parameters : Agent → AgentThresholdResources)
     (thresholdConditions : ∀ agent, agent ∈ group.members →
       ThresholdCrossing (parameters agent))
-    (spendableBalance : Agent → Nat) (tokenPrice decisionPrefix : Nat)
-    (causalOrder : RoundCausalOrder group lottery spendableBalance tokenPrice decisionPrefix) :
+    (spendableBalance decisionPrefix : Agent → Nat) (tokenPrice : Nat)
+    (causalOrder : RoundCausalOrder group lottery spendableBalance decisionPrefix tokenPrice) :
     expectedProfileCount group.members (nextActiveProfile parameters) lottery.outcomes =
         expectedProfileCount group.members productiveProfile lottery.outcomes ∧
       expectedProfileCount group.members (nextActiveProfile parameters) lottery.outcomes ≤
@@ -180,7 +182,8 @@ theorem resource_opportunity_production_cascade
         expectedProfileCount group.members proposedProfile lottery.outcomes ∧
       expectedProfileCount group.members proposedProfile lottery.outcomes ≤
         (selectedCount group.members
-          (fun agent => decide (tokenPrice * decisionPrefix ≤ spendableBalance agent)) : Rat) := by
+          (fun agent => decide
+            (tokenPrice * decisionPrefix agent ≤ spendableBalance agent)) : Rat) := by
   unfold RoundCausalOrder at causalOrder
   have assignmentRequiresProposal : ∀ round weight,
       (round, weight) ∈ lottery.outcomes → 0 < weight →
@@ -192,7 +195,7 @@ theorem resource_opportunity_production_cascade
       (round, weight) ∈ lottery.outcomes → 0 < weight →
       ∀ agent, agent ∈ group.members →
         proposedProfile round agent = true →
-          tokenPrice * decisionPrefix ≤ spendableBalance agent := by
+          tokenPrice * decisionPrefix agent ≤ spendableBalance agent := by
     intro round weight member positive
     exact (causalOrder round weight member positive).2
   have activeLeAssignment := expectedProfileCount_mono_on_support group.members
@@ -240,7 +243,7 @@ theorem resource_opportunity_production_cascade
       intro round weight member positive agent inGroup assigned
       exact assignmentRequiresProposal round weight member positive agent inGroup assigned)
   let eligible : Allocation Agent :=
-    fun agent => decide (tokenPrice * decisionPrefix ≤ spendableBalance agent)
+    fun agent => decide (tokenPrice * decisionPrefix agent ≤ spendableBalance agent)
   have proposalLeEligible := expectedProfileCount_mono_on_support group.members
     proposedProfile (fun _ => eligible) lottery.outcomes lottery.nonnegative
     (by

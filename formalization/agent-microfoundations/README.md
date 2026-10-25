@@ -32,6 +32,3 @@ The source was built with Lean 4.35.0. `Audit.lean` prints the axiom dependencie
 ## Scope
 
 The Lean proofs establish mathematical implications under their explicit assumptions. They do not by themselves establish that a particular empirical case satisfies those assumptions, nor do they prove empirical causal claims. Case-data validation and analysis remain separate artifacts in the paper project. Generic probability lemmas and experiment-admission rules are not counted as economic primitives or behavior laws; the latter live outside Lean in the case-validation scripts and reports.
-
-
-Latest remote verification: Miao Linux log `verification/lake_check_miao_20261025_140451.log`; the manifest records source and log hashes.
