@@ -1,0 +1,6 @@
+name = "agent_microfoundations"
+version = "0.2.0"
+defaultTargets = ["AgentMicrofoundations"]
+
+[[lean_lib]]
+name = "AgentMicrofoundations"

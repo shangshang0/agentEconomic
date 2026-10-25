@@ -1,0 +1,97 @@
+{
+  "verified_at_utc": "2026-10-25T04:06:49.203246+00:00",
+  "theory_freeze": "0.3; definitions separated from case restrictions, with zero-API restriction audit",
+  "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "commands": [
+    "lake build",
+    "lake env lean Audit.lean"
+  ],
+  "source_sha256": {
+    "AgentMicrofoundations/Accounting.lean": "16a5451b9d7bb4e04121e5781679d37cd67da6161d524a7900fef07d3b5d7692",
+    "AgentMicrofoundations/AllocationFeedback.lean": "a71f7ad650984c0918dbe2de5234a4f466f25ef309c1de0ba317830482ab374c",
+    "AgentMicrofoundations/AllocationIdentification.lean": "781bd3e1df4dfa9065694218eaaa4fdbbcc8127067de02fbfb265f25d968c988",
+    "AgentMicrofoundations/AnonymousAllocation.lean": "224171f3fb57a3838203d6da3f50acef3e0b598ee864772e16a19c81f2861ac2",
+    "AgentMicrofoundations/AutoregressiveContext.lean": "acb3ea20eef7ead2cec5df273ba454fb6aaff81686c0332aabc1acc54f938727",
+    "AgentMicrofoundations/AutoregressiveCouplingSensitivity.lean": "3a3d960670cb7641af78aeb1719d673cc260a09140a537e9806fa3aad8e43cc3",
+    "AgentMicrofoundations/AutoregressiveIdentification.lean": "71af19bd50c7aac62145337d771818a17f15aaffbe0fe572a575e93f67fe8b4f",
+    "AgentMicrofoundations/AutoregressiveResponse.lean": "95d59740ea58faa6878273596394ac7d6db0be2049b1d88d5b7e32c65aad404c",
+    "AgentMicrofoundations/CaseAnalysis.lean": "8b9c2ffea26e85200757cbedfd65426a2a828c5f9c358b0b4e5725157d567bd3",
+    "AgentMicrofoundations/CaseStudies/AuthorityDesign.lean": "74bdb302062c49ef101af588c4f9c2b40d0468d7bbccd527838e8554e37a1baf",
+    "AgentMicrofoundations/CaseStudies/AuthorityMechanics.lean": "e4102710bbcb37afc53843a2fa685168e270e2e6bebd3bd366739a686f75ce21",
+    "AgentMicrofoundations/CaseStudies/CTFAllocation.lean": "f2f060286c76272d584690eb6ed358e5e20f44a683fe90638ef19316e64a1f51",
+    "AgentMicrofoundations/CaseStudies/CTFArchive.lean": "4d921391cc05992ba77d2468507b0e0b1af314e44872c67a83c3c9c9548ea14b",
+    "AgentMicrofoundations/CaseStudies/CTFModel.lean": "bebf8c9643e67ff02df2d3d6bf830e943c53d7e2c4ebba175f23a9112fe85c10",
+    "AgentMicrofoundations/CaseStudies/CTFParameterizedSimulation.lean": "554a9a946b089ed1b5df3dba69af6c18a93c977408f5c6693413769442ded68a",
+    "AgentMicrofoundations/CaseStudies/CTFResourceSimulation.lean": "3ed5b0aaee642c0c79e87d57f011823b689f08b2e1099de407e91ef171228226",
+    "AgentMicrofoundations/CaseStudies/CTFTraceModel.lean": "9068c816f76bd7826f43005fcd004e1d27686a9f38c74bf40559470ccd6e7e20",
+    "AgentMicrofoundations/CaseStudies/ResourceSignalPilot.lean": "d95d15d0019f35bebfa795fbae6785eef1564ec6c62bdc1b5c139ac04fa82718",
+    "AgentMicrofoundations/CausalInterface.lean": "e02083ef7745d6492b92d651dddaf51534e7f6e8bf95eebe919bbbb1e99fe407",
+    "AgentMicrofoundations/Commitments.lean": "d7192c390c78c3de6da8d175cc2aa90ffe1931fcfbda936f0d72fb9d2972c786",
+    "AgentMicrofoundations/ComputationalEconomy.lean": "10213aaef49f913bf1ae35fe2d226607e132512c4543da99c9e8f807bcd8a5b8",
+    "AgentMicrofoundations/ContextualResponse.lean": "083ece892c2a61acc13bd56498b5c89c194adfdf13efd025bf5cbf610dd4a411",
+    "AgentMicrofoundations/CouplingComparativeStatics.lean": "238ca7e008c8894e6026e69de5835c91e74ac28bbc3df64369e678fb145b7e50",
+    "AgentMicrofoundations/FiniteCoalitions.lean": "f56ed38f7a546cac44b0ba700c767b607afa51afa426bfc3f81d5631fd64051e",
+    "AgentMicrofoundations/FiniteDynamics.lean": "3cc9c56b97b4df697c13fce3a82d34ff61191fbc45418441aaba31b1a4f6b9dc",
+    "AgentMicrofoundations/GroupPrediction.lean": "dbaed17fc9c3cc1b4fd8233fed8b02a6739785a2aeb6666d108beccf60b3dbb6",
+    "AgentMicrofoundations/GroupProbability.lean": "1ca291aefea370431d316344b8f9a755ed362500b4061297e6aedd9045818643",
+    "AgentMicrofoundations/Liquidity.lean": "d0de81ee3c25512b43e0191738bfca275a80aca79fd68f771f1ec090b1762859",
+    "AgentMicrofoundations/MechanismCounterfactual.lean": "e10f0479a481c6b4d669fe04b01f409026418609e988a2bea80b5d1bfd42551f",
+    "AgentMicrofoundations/MechanismFeedback.lean": "cca3303629042570ba8d8a34276c6e33bcbb91a29c9f01a171ec26cf076002bd",
+    "AgentMicrofoundations/Ontology.lean": "156269f893790517826998b65d374961e369944a87ece043c400846ed9ca61bd",
+    "AgentMicrofoundations/OntologyExamples.lean": "c5871419e33fe3eeed8a320dab442149c06b54ab91ef18a9fd4ae0b48f075019",
+    "AgentMicrofoundations/OpportunityRationing.lean": "00b68e92655bae3c80e8abdf1432aea50291cc5b256a47e1c2cde47dc4d4f73a",
+    "AgentMicrofoundations/OpportunitySpecialization.lean": "1a5ba28cc49d06a1f5cf37688716930cd58ee14e103f45e0356627445e68947f",
+    "AgentMicrofoundations/PopulationInputShift.lean": "961eb9c0bac761c02c9971477f47e1b90ff04b23fe58d681d1b183f6abeae9fd",
+    "AgentMicrofoundations/PopulationTransport.lean": "e847471ba72f723b491ee5d53cdb9c5130e34ab6cefb5cc6d902d2029dd98b51",
+    "AgentMicrofoundations/ResourceBudgetComparativeStatics.lean": "c2fdce7de824a95f5db1d41b009384300558f7b45b72e1f6cd4875ec0a4258c4",
+    "AgentMicrofoundations/ResourceLedger.lean": "dbd2196971676daf7dd7324ee1d2b99b7d711aa278230750faf791b169d1ffe7",
+    "AgentMicrofoundations/ResourceSurvivalBound.lean": "5269605244f8e86a341405bf09ffe62c5669a86d25a1e67e5d5c257a0f6f69c1",
+    "AgentMicrofoundations/ResourceThresholdPath.lean": "b1728cfae697cc02ff3d6820938ab51ba8ccf8ff91358aaf018eb353d65144e5",
+    "AgentMicrofoundations/ResourceThresholdPersistence.lean": "85bbd931b2af004bd70d9d4be3d73599aa6349c98c37049ed8c411053a8ba5a7",
+    "AgentMicrofoundations/ResponseIdentification.lean": "f0a712b8892595417a9c5e36f6e17b1ec1f7a21f0b8473a4c649ae08a6deade3",
+    "AgentMicrofoundations/ScenarioSimulation.lean": "c618a4b2e9aef256f9eb208afe2c3c08e7cb67f9656859591aaaec47235b2a6e",
+    "AgentMicrofoundations/SequentialBounds.lean": "f803e46961019cc070492e82ce12b7dee4d0289d8df5ab095d70e4feb377d217",
+    "AgentMicrofoundations/Settlement.lean": "10a65c2e3bf53965a821a5d2431c75ef4032e2098e99d41e4ede7d15902481e6",
+    "AgentMicrofoundations/Specialization.lean": "25b1b71532f1c127f7000bc914e409488f35b2a5d7f2ae931218a233a239b4df",
+    "AgentMicrofoundations/SurvivalCurrency.lean": "722d2c3b57ceefc3b095c6f2d90feb6994e68797235f85ad7fce2b6aab7c35d2",
+    "AgentMicrofoundations/Symmetry.lean": "3854ca872a669c11e6443a73f379a17fea885226d77291c107391ae3818af0a3",
+    "AgentMicrofoundations/TokenAccounting.lean": "10d88b5d20f9fcb95f72c23b35627184a46cfa3f9acb7b912e5a25208fffd8ab",
+    "AgentMicrofoundations.lean": "a3ccd024dee5e02f0050ddcf61bdcefd44a35520b6168ad2b785604646421872",
+    "Audit.lean": "7ddbb9c92bdd75340267ba0e62cc9a67f737b36ed3e6502427d2c3f9cee826fa"
+  },
+  "case_data_sha256": {
+    "WWW2027_submission/appendix/pilot/pilot_v2.jsonl": "e7a0b8975f767baf10ba2cfee9acc078d55353b1b91a7cbffe7ea449ebd0e91d",
+    "theory_v3/analysis/ctf_case/results/task_panel.csv": "fbdaa9b06554e87273711b08d1bab463fd9b77400b7a7abf6a806bc915e72396",
+    "theory_v3/analysis/ctf_case/results/world_summary.csv": "4a1dab98a76258e69149ed4ab7ec83d54d8349c7f4ea9eec4ae8843e7273223d",
+    "theory_v3/analysis/ctf_case/results/agent_day_panel.csv": "dd01ef579bdb9ad0a13a8ac3d76cab0e3ac9488604ab3261608a817186c89b54",
+    "theory_v3/analysis/ctf_case/results/case_model_summary.json": "110eb46982b49d000ed7d61521e3586f3c1370e4ad9b14632febad8185831c2e",
+    "theory_v3/lean/verification/assumption_validation.json": "acab3cc26379c01fe17276a18b086e9a7544ec4681b374a11cb07e03008aa8b3"
+  },
+  "case_assumption_validator_sha256": {
+    "theory_v3/analysis/validate_case_assumptions.py": "90178400f6f7e28f66f9d7dc93c99f4943e637eb6e061ba08094fb0d0c8ea02c"
+  },
+  "case_pipeline_sha256": {
+    "theory_v3/analysis/ctf_case/build_ctf_case.py": "33500043e442aa857857855a36ab5ef5746b691716f69edac1e22b71030e4e1e"
+  },
+  "theory_freeze_sha256": {
+    "theory_v3/THEORY_FREEZE_0.3.md": "a07757c425a1b4317dc1027850af2dd73688e149961d09a5b2d6dcd53d5968a8",
+    "theory_v3/THEORY_PROJECT.md": "0de56232cd624e6402b75d28f8030b3188966ca128eaeed5ec1d3da8afb97953"
+  },
+  "audit_output_sha256": "46b67546af52cc83751a2e773b5289a08c4494ae6e891045accb90b63f5b0863",
+  "has_custom_axiom_sorry_or_admit": false,
+  "axiom_policy": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "result": "PASS",
+  "additional_verification": [
+    {
+      "command": "./verify_miao.sh",
+      "log": "verification/lake_check_miao_20261025_102715.log",
+      "default_kernel_accepts_solution": true,
+      "log_sha256": "548e86d96ae9b7cd6c25f783b2bda692237e728b06e81f947d4b0a45a98bc843"
+    }
+  ],
+  "verification_scope": "All Lean source modules build; Audit.lean completed. No custom axiom, sorry, or admit declarations found in Lean source."
+}

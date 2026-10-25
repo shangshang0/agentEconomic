@@ -1,0 +1,110 @@
+{
+  "audit_type": "zero_api_case_assumption_validation",
+  "created_at_utc": "2026-10-25T03:53:31.263745+00:00",
+  "principle": "definitions are not empirical assumptions; every case restriction is either directly audited, locally tested, or left unasserted",
+  "source_sha256": {
+    "theory_v3/analysis/ctf_case/results/world_summary.csv": "4a1dab98a76258e69149ed4ab7ec83d54d8349c7f4ea9eec4ae8843e7273223d",
+    "theory_v3/analysis/ctf_case/results/agent_day_panel.csv": "dd01ef579bdb9ad0a13a8ac3d76cab0e3ac9488604ab3261608a817186c89b54",
+    "theory_v3/analysis/ctf_case/results/stage1_frozen_stage2_predictions.csv": "f449e50a2e69edf8538c060efee59b1b5d62a58f659dce9b833fbf8760c35713",
+    "theory_v3/analysis/ctf_case/results/full-input-reconstruction/full_input_signature_summary.json": "8dbc3196ddabb7067517c53bbc63bbfbbf15b884d96864a4544deb8448963d71",
+    "WWW2027_submission/appendix/pilot/pilot_v2.jsonl": "e7a0b8975f767baf10ba2cfee9acc078d55353b1b91a7cbffe7ea449ebd0e91d",
+    "\u4ee3\u7801/authority_world/backend/world_engine_v2.py": "cea37e28faeb49b855f38071dbb8731e2d9166379eaa885dd18a3637c2053322"
+  },
+  "archive_integrity": {
+    "worlds": 24,
+    "agent_day_rows": 2430,
+    "ledger_replay_pass": "24/24",
+    "complete_task_menu_join": "24/24",
+    "verified_outcomes_from_events": "24/24",
+    "status": "PASS"
+  },
+  "input_reconstruction": {
+    "gateway_exchanges_with_complete_input_payload": 45180,
+    "unique_full_request_signatures": 45180,
+    "reused_signatures_across_worlds": 0,
+    "interpretation": "input reconstruction is complete for archived gateway exchanges; exact-input response variation is not estimable because signatures are unique",
+    "status": "INPUT_AUDITED_RESPONSE_REPEAT_UNIDENTIFIED"
+  },
+  "backend_threshold_rule": {
+    "source": "\u4ee3\u7801/authority_world/backend/world_engine_v2.py",
+    "source_lines": "215-220 (manually inspected source; substring guard prevents silent drift)",
+    "operational_rule": "alive agent with energy <= 0 is terminated at _deaths check",
+    "symbolic_rule": "_deaths returns without applying the energy mortality gate",
+    "status": "SOURCE_RULE_AUDITED"
+  },
+  "resource_survival_case_restriction": {
+    "non_symbolic_regimes": [
+      "I1",
+      "I3",
+      "neutral-language",
+      "objective-none"
+    ],
+    "operational_alive_with_negative_start_balance": 0,
+    "operational_alive_with_negative_end_balance": 0,
+    "symbolic_energy_alive_with_negative_start_balance": 331,
+    "symbolic_energy_alive_with_negative_end_balance": 354,
+    "interpretation": "panel and backend source jointly validate this case-specific execution rule; symbolic-energy directly falsifies universal coupling",
+    "status": "CASE_SCOPED_ONLY"
+  },
+  "tier_frequency_assignment_law": {
+    "evaluation": "retrospective diagnostic; not a prospectively registered confirmation",
+    "screen": "reject a cell if absolute assignment-rate error exceeds 5 percentage points",
+    "cells": [
+      {
+        "family": "GPT",
+        "regime": "I1",
+        "offered_slots": 66,
+        "absolute_assignment_rate_error": 0.06287878787878788,
+        "exceeds_retrospective_5pp_screen": true
+      },
+      {
+        "family": "GPT",
+        "regime": "I3",
+        "offered_slots": 36,
+        "absolute_assignment_rate_error": 0.17982455555555557,
+        "exceeds_retrospective_5pp_screen": true
+      },
+      {
+        "family": "DeepSeek",
+        "regime": "I1",
+        "offered_slots": 36,
+        "absolute_assignment_rate_error": 0.1111111111111111,
+        "exceeds_retrospective_5pp_screen": true
+      },
+      {
+        "family": "DeepSeek",
+        "regime": "I3",
+        "offered_slots": 45,
+        "absolute_assignment_rate_error": 0.32280702222222224,
+        "exceeds_retrospective_5pp_screen": true
+      }
+    ],
+    "rejected_cells": 4,
+    "total_cells": 4,
+    "status": "REJECTED_AS_CASE_POINT_FORECAST"
+  },
+  "pilot_response_restriction": {
+    "valid_calls": 40,
+    "calls_per_displayed_energy": {
+      "2": 20,
+      "5": 20
+    },
+    "work_proposals_by_displayed_energy": {
+      "2": 15,
+      "5": 20
+    },
+    "identical_work_proposals_accepted_by_execution_replay": {
+      "true_energy_2": 0,
+      "true_energy_5": 35,
+      "work_proposals": 35
+    },
+    "interpretation": "local pilot evidence only; does not license a general monotone response axiom",
+    "status": "LOCAL_DIAGNOSTIC_ONLY"
+  },
+  "unvalidated_behavioral_restrictions": [
+    "rational choice or stable preferences",
+    "agent independence, exchangeability, or anonymity",
+    "a universal mapping from resource balance to survival or action",
+    "a response law transported across population sizes, prompts, or mechanisms"
+  ]
+}
