@@ -19,7 +19,7 @@ The source was built with Lean 4.35.0. `Audit.lean` prints the axiom dependencie
 
 - `AgentMicrofoundations/` — formal theory and case-study implementations.
 - `AgentMicrofoundations/Methods/` — general mathematical utilities, excluded from the theory aggregate.
-- `AgentMicrofoundations/ResearchTargets/` — Lean specifications of open theory goals and their current conditional instances; excluded from the theory aggregate until they become established core results.
+- `AgentMicrofoundations/ResearchTargets/` — Lean specifications of open theory goals and their current conditional instances; excluded from the theory aggregate until they become established core results. `ChoiceLawProblem.lean` defines the acceptance target for a completed choice foundation: one finite, event-blind, irredundant primitive package with uniform sharp choice laws. This target is not itself an economic axiom or a completed result.
 - `AgentMicrofoundations.lean` — aggregate import.
 - `AgentMicrofoundations/FoundationCore.lean` — curated theory-core import without pilot or backend case modules.
 - `Audit.lean` — axiom-dependency audit for the exported theorem set.
@@ -32,3 +32,6 @@ The source was built with Lean 4.35.0. `Audit.lean` prints the axiom dependencie
 ## Scope
 
 The Lean proofs establish mathematical implications under their explicit assumptions. They do not by themselves establish that a particular empirical case satisfies those assumptions, nor do they prove empirical causal claims. Case-data validation and analysis remain separate artifacts in the paper project. Generic probability lemmas and experiment-admission rules are not counted as economic primitives or behavior laws; the latter live outside Lean in the case-validation scripts and reports.
+
+
+Latest remote verification: Miao Linux log `verification/lake_check_miao_20261025_140451.log`; the manifest records source and log hashes.

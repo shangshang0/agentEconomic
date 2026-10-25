@@ -20,6 +20,7 @@ import AgentMicrofoundations.MechanismCounterfactual
 import AgentMicrofoundations.SequentialBounds
 import AgentMicrofoundations.AnonymousAllocation
 import AgentMicrofoundations.AllocationFeedback
+import AgentMicrofoundations.ResourceOpportunityCascade
 import AgentMicrofoundations.GroupPrediction
 import AgentMicrofoundations.Accounting
 import AgentMicrofoundations.Commitments

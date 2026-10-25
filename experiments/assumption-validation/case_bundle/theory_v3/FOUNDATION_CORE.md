@@ -19,13 +19,14 @@
 | 结果 | 额外条件 | 可推出的限制 | 低成本拒绝方法 |
 |---|---|---|---|
 | 资源限制自回归计算 | 主体拥有可支配余额；固定 token 单价；实际生成 token 数被记账 | 可支付 token 预算随余额单调且不超过技术上限；这不推出经济行动概率单调 | 核对账本与 token 用量；检查余额是否进入实际额度 |
-| 决策前缀的资源阈值 | 固定 prompt 和 token constitution；parser 只依赖长度为 L 的生成前缀；技术上限 C≥L | 余额足以支付 cL 时，余额限制下的提议事件分布等于完整 C 预算下的分布；预算经 L 后对提议律饱和 | 检查 parser 是否只读 L 个 token、账户是否按 c 计费、prompt 是否固定；配对重放预算 L 与 C，事件分布变化即拒绝该映射 |
+| 决策前缀资源—选择阈值律 | 固定 prompt 和 token constitution；技术上限 C≥L；parser 只依赖前 L token；目标行动在少于 L token 的 trace 上不可解析；固定 token 价 c | 余额 r<cL 时行动概率精确为 0；r≥cL 时行动概率等于完整 C 预算下的概率。行动可行性在 cL 处跃迁，超过阈值后预算通道饱和 | 审查 parser/协议是否确实需要 L token、账户是否按 c 计费、运行时是否执行额度；在阈值两侧做少量固定输入重放。若低于阈值出现该行动，或阈值以上分布仍随余额变化，则拒绝这个案例映射 |
+| 资源—提议—分配—生产—续存群体链 | 任意有限组；每个体满足 idle/失败低于阈值、成功跨阈值；分配只能执行已提议行动；提议须先满足可支付决策前缀 | 期望下一期活跃人数等于成功获配人数，且不超过期望分配数、期望提议数、能支付前缀成本的成员数；不需匿名、固定名额或 agent 独立 | 对账提议/分配/验证产出与余额，检查逐体阈值条件及正概率支持上的事件顺序；违反任一包含关系或阈值响应预测，即拒绝该案例映射 |
 | 前缀决策预算不变性 | 相同 prompt、token 核、停止规则与 parser；parser 只依赖长度为 L 的前缀；两种预算均 ≥ L | proposal 分布完全相同，新增尾部预算不能改变决策 | 固定 checkpoint/input，仅切换输出上限做配对 replay；检验完整提议分布 |
 | 资源可行性上界 | 非负资源；每个继续账户至少要有共同储备 (d)；联合资源分布已给定 | 至少 (k) 个账户可继续的概率满足 (kd,P(Nge k)le E[S])，且界可达 | 重放账本与真实继续门槛；若任何可行路径违反上界，拒绝该映射 |
 | 随机配给群体界 | 总人口 (N)、组大小 (g)、每次恰有 (m) 个不同主体获配 | 组获配人数在 ([max(0,m-(N-g)),min(m,g)])；不要求谁获配均匀或独立 | 从赋值事件按身份去重，核验 (N,g,m)；任一结果越界即拒绝 |
 | 同净资源流可有不同存活路径 | 事件中途检查续存门槛，且死亡吸收 | 相同总净流量与期末账面不保证相同续存结果；事件顺序必须进入状态模型 | 对齐逐事件时间戳、扣费/产出和门槛检查，直接对照路径 |
 
-相应 Lean 证明见 [`THEORY_INDEX.md`](lean/THEORY_INDEX.md) 中的 `TokenAccounting`、`AutoregressiveResponse`、`ResourceSurvivalBound`、`AllocationIdentification` 和 `ResourceThresholdPath` 模块。`decision_prefix_balance_suffices_for_full_cap_choice_law` 把账户余额、可支付生成预算和响应解析器前缀连接成一条资源—选择饱和结论；它是 protocol-level 条件结果，不是一般 LLM 的行为偏好定律。随机配给定理只对总获配数给出 sharp range，不预测具体身份；任意联合概率边界可进一步限制集合，但通用概率工具单列在 [`METHODS_INDEX.md`](lean/METHODS_INDEX.md)。
+相应 Lean 证明见 [`THEORY_INDEX.md`](lean/THEORY_INDEX.md) 中的 `TokenAccounting`、`ResourceOpportunityCascade`、`AllocationFeedback`、`ResourceSurvivalBound`、`AllocationIdentification` 和 `ResourceThresholdPath` 模块。`resource_limited_proposal_event_has_decision_cost_threshold` 将低于最低决策生成成本的行动不可能性，与阈值以上的预算饱和合并成一个精确的选择概率阶跃律。`resource_opportunity_production_cascade` 再将逐体阈值响应、随机分配与资源可行的提议链合成有限群体预测：期望活跃人数受本期可支付决策成本的成员数约束，允许任意依赖且不要求匿名。它们都不要求 agent 理性；前者只覆盖固定 prompt/kernel/parser 的预算通道，后者还需要可核验的阈值响应和事件顺序，因此均不是一般 LLM 偏好定律。随机配给定理只对总获配数给出 sharp range，不预测具体身份；任意联合概率边界可进一步限制集合，但通用概率工具单列在 [`METHODS_INDEX.md`](lean/METHODS_INDEX.md)。
 
 ## 地基现在还不能推出什么
 

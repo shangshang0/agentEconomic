@@ -1,22 +1,21 @@
-✔ [2/55] Built AgentMicrofoundations.MechanismFeedback (1.1s)
-✔ [3/55] Built AgentMicrofoundations.Symmetry (1.2s)
-✔ [4/55] Built AgentMicrofoundations.CausalInterface (1.3s)
-✔ [5/55] Built AgentMicrofoundations.Liquidity (1.4s)
-✔ [6/55] Built AgentMicrofoundations.FiniteCoalitions (1.4s)
-✔ [7/55] Built AgentMicrofoundations.GroupProbability (1.5s)
-✔ [8/55] Built AgentMicrofoundations.ResourceLedger (1.6s)
-✔ [9/55] Built AgentMicrofoundations.Specialization (1.0s)
-✔ [10/55] Built AgentMicrofoundations.OpportunityRationing (1000ms)
-✔ [11/55] Built AgentMicrofoundations.Ontology (2.3s)
-✔ [12/55] Built AgentMicrofoundations.ResourceThresholdPath (866ms)
-✔ [13/55] Built AgentMicrofoundations.AllocationIdentification (1.2s)
-✔ [14/55] Built AgentMicrofoundations.OntologyExamples (1.4s)
-✔ [15/55] Built AgentMicrofoundations.FiniteDynamics (1.4s)
-✔ [16/55] Built AgentMicrofoundations.Commitments (1.3s)
-✔ [17/55] Built AgentMicrofoundations.SurvivalCurrency (1.5s)
-✔ [18/55] Built AgentMicrofoundations.ContextualResponse (1.6s)
-✔ [19/55] Built AgentMicrofoundations.CaseStudies.CTFAllocation (1.3s)
-⚠ [20/55] Built AgentMicrofoundations.ResponseIdentification (1.7s)
+✔ [2/56] Built AgentMicrofoundations.MechanismFeedback (1.0s)
+✔ [3/56] Built AgentMicrofoundations.CausalInterface (1.1s)
+✔ [4/56] Built AgentMicrofoundations.Symmetry (1.1s)
+✔ [5/56] Built AgentMicrofoundations.Liquidity (1.2s)
+✔ [6/56] Built AgentMicrofoundations.FiniteCoalitions (1.2s)
+✔ [7/56] Built AgentMicrofoundations.GroupProbability (1.2s)
+✔ [8/56] Built AgentMicrofoundations.ResourceLedger (1.5s)
+✔ [9/56] Built AgentMicrofoundations.Specialization (876ms)
+✔ [10/56] Built AgentMicrofoundations.OpportunityRationing (910ms)
+✔ [11/56] Built AgentMicrofoundations.Ontology (2.1s)
+✔ [12/56] Built AgentMicrofoundations.AllocationIdentification (1.1s)
+✔ [13/56] Built AgentMicrofoundations.ResourceThresholdPath (864ms)
+✔ [14/56] Built AgentMicrofoundations.OntologyExamples (1.3s)
+✔ [15/56] Built AgentMicrofoundations.Commitments (1.4s)
+✔ [16/56] Built AgentMicrofoundations.ContextualResponse (1.6s)
+✔ [17/56] Built AgentMicrofoundations.FiniteDynamics (1.8s)
+✔ [18/56] Built AgentMicrofoundations.CaseStudies.CTFAllocation (1.5s)
+⚠ [19/56] Built AgentMicrofoundations.ResponseIdentification (1.9s)
 warning: AgentMicrofoundations/ResponseIdentification.lean:159:19: This simp argument is unused:
   firstValue
 
@@ -45,7 +44,8 @@ Hint: Omit it from the simp argument list.
   [apply] simp only [firstValue, Bool.false_eq_true, ↓reduceIte]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [21/55] Built AgentMicrofoundations.Accounting (1.9s)
+✔ [20/56] Built AgentMicrofoundations.SurvivalCurrency (1.8s)
+⚠ [21/56] Built AgentMicrofoundations.Accounting (2.3s)
 warning: AgentMicrofoundations/Accounting.lean:124:43: `if_neg` has been deprecated: Use `ite_eq_right` instead
 
 Hint: Replace the deprecated name:
@@ -65,13 +65,14 @@ Hint: Omit it from the simp argument list.
   [apply] simp only [sumOver, List.foldr_cons]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [22/55] Built AgentMicrofoundations.SequentialBounds (1.5s)
-✔ [23/55] Built AgentMicrofoundations.Settlement (1.5s)
-✔ [24/55] Built AgentMicrofoundations.ResourceSurvivalBound (1.4s)
-✔ [25/55] Built AgentMicrofoundations.CaseAnalysis (1.5s)
-✔ [26/55] Built AgentMicrofoundations.AnonymousAllocation (1.6s)
-✔ [27/55] Built AgentMicrofoundations.TemporalIntersectionBounds (1.6s)
-⚠ [28/55] Built AgentMicrofoundations.AutoregressiveResponse (2.4s)
+✔ [22/56] Built AgentMicrofoundations.Settlement (1.4s)
+✔ [23/56] Built AgentMicrofoundations.SequentialBounds (1.6s)
+✔ [24/56] Built AgentMicrofoundations.CaseAnalysis (1.4s)
+✔ [25/56] Built AgentMicrofoundations.ResourceSurvivalBound (1.6s)
+✔ [26/56] Built AgentMicrofoundations.TemporalIntersectionBounds (1.6s)
+✔ [27/56] Built AgentMicrofoundations.AnonymousAllocation (1.7s)
+✔ [28/56] Built AgentMicrofoundations.CaseStudies.CTFTraceModel (802ms)
+⚠ [29/56] Built AgentMicrofoundations.AutoregressiveResponse (2.4s)
 warning: AgentMicrofoundations/AutoregressiveResponse.lean:106:32: `if_pos` has been deprecated: Use `ite_eq_left` instead
 
 Hint: Replace the deprecated name:
@@ -84,12 +85,12 @@ warning: AgentMicrofoundations/AutoregressiveResponse.lean:279:53: `if_neg` has 
 
 Hint: Replace the deprecated name:
   i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
-✔ [29/55] Built AgentMicrofoundations.CaseStudies.CTFTraceModel (882ms)
-✔ [30/55] Built AgentMicrofoundations.OpportunitySpecialization (968ms)
-✔ [31/55] Built AgentMicrofoundations.CouplingComparativeStatics (1.4s)
-✔ [32/55] Built AgentMicrofoundations.AllocationFeedback (1.6s)
-✔ [33/55] Built AgentMicrofoundations.AutoregressiveContext (1.1s)
-⚠ [34/55] Built AgentMicrofoundations.TokenAccounting (1.2s)
+✔ [30/56] Built AgentMicrofoundations.CouplingComparativeStatics (1.1s)
+✔ [31/56] Built AgentMicrofoundations.OpportunitySpecialization (1.1s)
+✔ [32/56] Built AgentMicrofoundations.AllocationFeedback (1.2s)
+✔ [33/56] Built AgentMicrofoundations.AutoregressiveContext (937ms)
+✔ [34/56] Built AgentMicrofoundations.AutoregressiveIdentification (1.1s)
+⚠ [35/56] Built AgentMicrofoundations.TokenAccounting (1.1s)
 warning: AgentMicrofoundations/TokenAccounting.lean:29:36: `if_neg` has been deprecated: Use `ite_eq_right` instead
 
 Hint: Replace the deprecated name:
@@ -102,27 +103,31 @@ warning: AgentMicrofoundations/TokenAccounting.lean:56:34: `if_neg` has been dep
 
 Hint: Replace the deprecated name:
   i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
-✔ [35/55] Built AgentMicrofoundations.AutoregressiveIdentification (1.3s)
-✔ [36/55] Built AgentMicrofoundations.CaseStudies.CTFArchive (2.2s)
-✔ [37/55] Built AgentMicrofoundations.ResourceThresholdPersistence (1.3s)
-✔ [38/55] Built AgentMicrofoundations.AutoregressiveCouplingSensitivity (1.3s)
-✔ [39/55] Built AgentMicrofoundations.GroupPrediction (982ms)
-✔ [40/55] Built AgentMicrofoundations.CaseStudies.CTFModel (1.3s)
-✔ [41/55] Built AgentMicrofoundations.CaseStudies.ResourceSignalPilot (1.4s)
-✔ [42/55] Built AgentMicrofoundations.PopulationTransport (849ms)
-✔ [43/55] Built AgentMicrofoundations.ResourceBudgetComparativeStatics (915ms)
-✔ [44/55] Built AgentMicrofoundations.ComputationalEconomy (1.1s)
-⚠ [45/55] Built AgentMicrofoundations.PopulationInputShift (1.2s)
+warning: AgentMicrofoundations/TokenAccounting.lean:219:15: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+✔ [36/56] Built AgentMicrofoundations.CaseStudies.CTFArchive (2.2s)
+✔ [37/56] Built AgentMicrofoundations.ResourceThresholdPersistence (1.3s)
+✔ [38/56] Built AgentMicrofoundations.CaseStudies.CTFModel (1.2s)
+✔ [39/56] Built AgentMicrofoundations.AutoregressiveCouplingSensitivity (1.4s)
+✔ [40/56] Built AgentMicrofoundations.CaseStudies.ResourceSignalPilot (1.4s)
+✔ [41/56] Built AgentMicrofoundations.GroupPrediction (1.0s)
+✔ [42/56] Built AgentMicrofoundations.PopulationTransport (1.1s)
+✔ [43/56] Built AgentMicrofoundations.ResourceOpportunityCascade (1.2s)
+⚠ [44/56] Built AgentMicrofoundations.PopulationInputShift (1.3s)
 warning: AgentMicrofoundations/PopulationInputShift.lean:135:51: `if_neg` has been deprecated: Use `ite_eq_right` instead
 
 Hint: Replace the deprecated name:
   i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
-✔ [46/55] Built AgentMicrofoundations.ScenarioSimulation (600ms)
-✔ [47/55] Built AgentMicrofoundations.MechanismCounterfactual (540ms)
-✔ [48/55] Built AgentMicrofoundations.CaseStudies.CTFParameterizedSimulation (956ms)
-✔ [49/55] Built AgentMicrofoundations.CaseStudies.AuthorityDesign (1.2s)
-✔ [50/55] Built AgentMicrofoundations.CaseStudies.AuthorityWorldV2Clock (682ms)
-⚠ [51/55] Built AgentMicrofoundations.CaseStudies.AuthorityMechanics (625ms)
+✔ [45/56] Built AgentMicrofoundations.ResourceBudgetComparativeStatics (869ms)
+✔ [46/56] Built AgentMicrofoundations.ComputationalEconomy (1.1s)
+✔ [47/56] Built AgentMicrofoundations.ScenarioSimulation (592ms)
+✔ [48/56] Built AgentMicrofoundations.MechanismCounterfactual (519ms)
+✔ [49/56] Built AgentMicrofoundations.CaseStudies.CTFParameterizedSimulation (973ms)
+✔ [50/56] Built AgentMicrofoundations.CaseStudies.AuthorityDesign (1.2s)
+✔ [51/56] Built AgentMicrofoundations.CaseStudies.AuthorityWorldV2Clock (629ms)
+⚠ [52/56] Built AgentMicrofoundations.CaseStudies.AuthorityMechanics (613ms)
 warning: AgentMicrofoundations/CaseStudies/AuthorityMechanics.lean:150:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
 
 Hint: Replace the deprecated name:
@@ -131,10 +136,10 @@ warning: AgentMicrofoundations/CaseStudies/AuthorityMechanics.lean:150:28: `if_n
 
 Hint: Replace the deprecated name:
   i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
-✔ [52/55] Built AgentMicrofoundations.CaseStudies.CTFResourceSimulation (961ms)
-✔ [53/55] Built AgentMicrofoundations.CaseStudies.AuthorityWorldV2Election (537ms)
-✔ [54/55] Built AgentMicrofoundations (995ms)
-Build completed successfully (55 jobs).
+✔ [53/56] Built AgentMicrofoundations.CaseStudies.CTFResourceSimulation (932ms)
+✔ [54/56] Built AgentMicrofoundations.CaseStudies.AuthorityWorldV2Election (535ms)
+✔ [55/56] Built AgentMicrofoundations (966ms)
+Build completed successfully (56 jobs).
 ⚠ [3/9] Replayed AgentMicrofoundations.ResponseIdentification
 warning: AgentMicrofoundations/ResponseIdentification.lean:159:19: This simp argument is unused:
   firstValue
@@ -177,14 +182,14 @@ warning: AgentMicrofoundations/AutoregressiveResponse.lean:279:53: `if_neg` has 
 
 Hint: Replace the deprecated name:
   i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
-✔ [7/9] Built AgentMicrofoundations.ResearchTargets.ChoiceLawProblem (521ms)
-✔ [8/9] Built AgentMicrofoundations.Methods.ExactTwoEventCoupling (609ms)
-✔ [9/9] Built AgentMicrofoundations.Methods (394ms)
+✔ [7/9] Built AgentMicrofoundations.Methods.ExactTwoEventCoupling (572ms)
+✔ [8/9] Built AgentMicrofoundations.ResearchTargets.ChoiceLawProblem (840ms)
+✔ [9/9] Built AgentMicrofoundations.Methods (425ms)
 Build completed successfully (9 jobs).
 Resolving dependencies
 Building and exporting
 Running Lean default kernel on solution
-⚠ [5/55] Replayed AgentMicrofoundations.ResponseIdentification
+⚠ [5/56] Replayed AgentMicrofoundations.ResponseIdentification
 warning: AgentMicrofoundations/ResponseIdentification.lean:159:19: This simp argument is unused:
   firstValue
 
@@ -213,7 +218,7 @@ Hint: Omit it from the simp argument list.
   [apply] simp only [firstValue, Bool.false_eq_true, ↓reduceIte]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [6/55] Replayed AgentMicrofoundations.AutoregressiveResponse
+⚠ [6/56] Replayed AgentMicrofoundations.AutoregressiveResponse
 warning: AgentMicrofoundations/AutoregressiveResponse.lean:106:32: `if_pos` has been deprecated: Use `ite_eq_left` instead
 
 Hint: Replace the deprecated name:
@@ -226,7 +231,7 @@ warning: AgentMicrofoundations/AutoregressiveResponse.lean:279:53: `if_neg` has 
 
 Hint: Replace the deprecated name:
   i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
-⚠ [9/55] Replayed AgentMicrofoundations.TokenAccounting
+⚠ [9/56] Replayed AgentMicrofoundations.TokenAccounting
 warning: AgentMicrofoundations/TokenAccounting.lean:29:36: `if_neg` has been deprecated: Use `ite_eq_right` instead
 
 Hint: Replace the deprecated name:
@@ -239,7 +244,11 @@ warning: AgentMicrofoundations/TokenAccounting.lean:56:34: `if_neg` has been dep
 
 Hint: Replace the deprecated name:
   i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
-⚠ [10/55] Replayed AgentMicrofoundations.Accounting
+warning: AgentMicrofoundations/TokenAccounting.lean:219:15: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+⚠ [10/56] Replayed AgentMicrofoundations.Accounting
 warning: AgentMicrofoundations/Accounting.lean:124:43: `if_neg` has been deprecated: Use `ite_eq_right` instead
 
 Hint: Replace the deprecated name:
@@ -259,12 +268,12 @@ Hint: Omit it from the simp argument list.
   [apply] simp only [sumOver, List.foldr_cons]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [16/55] Replayed AgentMicrofoundations.PopulationInputShift
+⚠ [16/56] Replayed AgentMicrofoundations.PopulationInputShift
 warning: AgentMicrofoundations/PopulationInputShift.lean:135:51: `if_neg` has been deprecated: Use `ite_eq_right` instead
 
 Hint: Replace the deprecated name:
   i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
-⚠ [50/55] Replayed AgentMicrofoundations.CaseStudies.AuthorityMechanics
+⚠ [51/56] Replayed AgentMicrofoundations.CaseStudies.AuthorityMechanics
 warning: AgentMicrofoundations/CaseStudies/AuthorityMechanics.lean:150:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
 
 Hint: Replace the deprecated name:
@@ -835,6 +844,16 @@ Uses axioms: propext, Quot.sound, Classical.choice
 'AgentMicrofoundations.ResourceBudgetComparativeStatics.resource_increase_can_lower_productive_probability' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
+'AgentMicrofoundations.ResourceLedger.resourceDelta_le_recorded_positive_inflows' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ResourceLedger.verifiedOutput_cons' depends on axioms: [propext]
+'AgentMicrofoundations.ResourceLedger.eventResourceChange_le_recorded_positive_inflows' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ResourceLedger.endingPool_le_initial_plus_verified_output_and_external_supply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
 'AgentMicrofoundations.ResourceLedger.internal_transfer_does_not_change_aggregate_pool' does not depend on any axioms
 'AgentMicrofoundations.ResourceLedger.appending_internal_transfer_preserves_aggregate_pool' depends on axioms: [propext]
 'AgentMicrofoundations.ResourceLedger.terminal_pool_is_invariant_to_two_event_order' depends on axioms: [propext]
@@ -842,6 +861,17 @@ Uses axioms: propext, Quot.sound, Classical.choice
 'AgentMicrofoundations.ResourceLedger.scale_resource_delta' depends on axioms: [propext]
 'AgentMicrofoundations.ResourceLedger.event_resource_change_scales' depends on axioms: [propext]
 'AgentMicrofoundations.ResourceLedger.denomination_scaling_preserves_ending_pool' depends on axioms: [propext]
+'AgentMicrofoundations.ResourceOpportunityCascade.selectedCount_mono_of_profile_inclusion' depends on axioms: [propext,
+ Quot.sound]
+'AgentMicrofoundations.ResourceOpportunityCascade.expectedProfileCount_mono_on_support' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ResourceOpportunityCascade.expectedProfileCount_constant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ResourceOpportunityCascade.resource_opportunity_production_cascade' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
 'AgentMicrofoundations.ResourceSurvivalBound.totalRatStock_nonnegative' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
@@ -1033,6 +1063,12 @@ Uses axioms: propext, Quot.sound, Classical.choice
 'AgentMicrofoundations.TokenAccounting.decision_prefix_balance_suffices_for_full_cap_choice_law' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
+'AgentMicrofoundations.TokenAccounting.underfunded_budget_makes_prefix_required_event_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.TokenAccounting.resource_limited_proposal_event_has_decision_cost_threshold' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
 'AgentMicrofoundations.TokenAccounting.affordable_balance_change_proposal_event_bound' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
@@ -1093,5 +1129,11 @@ Uses axioms: propext, Quot.sound, Classical.choice
  Classical.choice,
  Quot.sound]
 'AgentMicrofoundations.ResearchTargets.ChoiceLawProblem.firstToken_budget_effect_has_sharp_zero_law' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ResearchTargets.ChoiceLawProblem.unrestricted_context_kernels_realize_both_extreme_effects' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AgentMicrofoundations.ResearchTargets.ChoiceLawProblem.no_strict_choice_law_without_context_restrictions' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]

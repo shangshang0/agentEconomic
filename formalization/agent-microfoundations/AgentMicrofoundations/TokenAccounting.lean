@@ -155,6 +155,155 @@ theorem decision_prefix_balance_suffices_for_full_cap_choice_law
       context (affordableGenerationBudget balance tokenPrice technicalCap) technicalCap
       affordableBudgetCoversPrefix prefixWithinTechnicalCap event
 
+/-- Protocol-level feasibility condition for a named proposal event: the
+    parser cannot emit that event on a trace shorter than the specified
+    decision prefix. This is checked from the protocol/parser semantics; it is
+    not a claim about what the model prefers to emit. -/
+def ProposalEventRequiresPrefix
+    {Context Token Proposal : Type}
+    (constitution : AutoregressiveConstitution Context Token Proposal)
+    (prefixLength : Nat) (event : Proposal → Bool) : Prop :=
+  ∀ {budget : Nat} (trace : BudgetedTokenTrace Token budget),
+    trace.tokens.length < prefixLength →
+      event (constitution.parseProposal trace) = false
+
+/-- Below the cost of the minimum decision prefix, an event that the protocol
+    cannot encode in a shorter trace has exactly zero probability. This is a
+    hard feasibility result, independent of the token probabilities. -/
+theorem underfunded_budget_makes_prefix_required_event_impossible
+    {Context Token Proposal : Type}
+    (constitution : AutoregressiveConstitution Context Token Proposal)
+    (context : Context) (generationBudget prefixLength : Nat)
+    (budgetBelowPrefix : generationBudget < prefixLength)
+    (event : Proposal → Bool)
+    (requiresPrefix : ProposalEventRequiresPrefix constitution prefixLength event) :
+    eventMass (proposalLaw constitution context generationBudget) event = 0 := by
+  have constantEvent : ∀ trace : BudgetedTokenTrace Token generationBudget,
+      event (constitution.parseProposal trace) = false := by
+    intro trace
+    exact requiresPrefix trace
+      (Nat.lt_of_le_of_lt trace.withinBudget budgetBelowPrefix)
+  have massZero := eventMass_of_constant_event
+    (generatedTokenTrace constitution.nextToken constitution.stopToken generationBudget
+      (constitution.prompt context))
+    (fun trace => event (constitution.parseProposal trace)) false constantEvent
+  simpa [proposalLaw, eventMass_mapDistribution] using massZero
+
+/-- **Resource-to-choice threshold law.** Suppose the parser both commits from
+    the first `L` generated tokens and cannot emit event `E` on a shorter
+    trace. With a fixed context and constitution, linear token price `c`, and
+    technical cap covering `L`, the account-constrained event probability is
+    exactly zero below balance `cL`, then equals its full-cap probability at
+    and above `cL`. No utility maximization or rationality assumption enters;
+    the discontinuity is caused by executable generation feasibility.
+
+    This predicts the budget-only channel. If balance also changes prompt,
+    token kernel, parser, price schedule, or execution rule, those require a
+    separately specified case model. -/
+theorem resource_limited_proposal_event_has_decision_cost_threshold
+    {Context Token Proposal : Type}
+    (constitution : AutoregressiveConstitution Context Token Proposal)
+    (prefixLength : Nat)
+    (prefixParser : PrefixSufficientParser constitution prefixLength)
+    (event : Proposal → Bool)
+    (requiresPrefix : ProposalEventRequiresPrefix constitution prefixLength event)
+    (context : Context) (balance tokenPrice technicalCap : Nat)
+    (prefixWithinTechnicalCap : prefixLength ≤ technicalCap) :
+    eventMass
+        (proposalLaw constitution context
+          (affordableGenerationBudget balance tokenPrice technicalCap)) event =
+      if tokenPrice * prefixLength ≤ balance then
+        eventMass (proposalLaw constitution context technicalCap) event
+      else 0 := by
+  by_cases fundsDecision : tokenPrice * prefixLength ≤ balance
+  · simp only [if_pos fundsDecision]
+    exact decision_prefix_balance_suffices_for_full_cap_choice_law
+      constitution prefixLength prefixParser context balance tokenPrice technicalCap
+      prefixWithinTechnicalCap fundsDecision event
+  · have affordableBudgetBelow :
+        affordableGenerationBudget balance tokenPrice technicalCap < prefixLength := by
+      by_cases prefixAffordable : prefixLength ≤
+          affordableGenerationBudget balance tokenPrice technicalCap
+      · have costFits := affordable_budget_cost_fits_balance
+          balance tokenPrice technicalCap
+        have thresholdAffordable : tokenPrice * prefixLength ≤ balance :=
+          Nat.le_trans (Nat.mul_le_mul_left tokenPrice prefixAffordable) costFits
+        exact False.elim (fundsDecision thresholdAffordable)
+      · exact Nat.not_le.mp prefixAffordable
+    have massZero := underfunded_budget_makes_prefix_required_event_impossible
+      constitution context (affordableGenerationBudget balance tokenPrice technicalCap)
+      prefixLength affordableBudgetBelow event requiresPrefix
+    rw [massZero]
+    simp [fundsDecision]
+
+/-- **Action-specific affordability is an extensive-margin effect.** Consider
+    two proposal events whose parsers need different minimum prefixes. If a
+    lower balance funds the cheaper event but not the more expensive one, and
+    a higher balance funds both, then the cheaper event keeps exactly its
+    full-cap probability at both balances, while the expensive event enters
+    from probability zero to its full-cap probability.
+
+    This is a testable distinction between a change in the executable choice
+    set and a change in the underlying response kernel: under fixed prompt,
+    kernel and parser rules, crossing the expensive event's compute-cost
+    threshold changes the extensive margin but not the already-feasible
+    event's probability. The two event predicates need not be exhaustive or
+    disjoint; claims about shares among mutually exclusive choices additionally
+    require that semantic relation from the case model. -/
+theorem resource_threshold_crossing_changes_only_newly_affordable_event
+    {Context Token Proposal : Type}
+    (constitution : AutoregressiveConstitution Context Token Proposal)
+    (cheapPrefix expensivePrefix : Nat)
+    (cheapParser : PrefixSufficientParser constitution cheapPrefix)
+    (expensiveParser : PrefixSufficientParser constitution expensivePrefix)
+    (cheapEvent expensiveEvent : Proposal → Bool)
+    (cheapRequiresPrefix : ProposalEventRequiresPrefix constitution cheapPrefix cheapEvent)
+    (expensiveRequiresPrefix : ProposalEventRequiresPrefix constitution expensivePrefix expensiveEvent)
+    (context : Context)
+    (lowBalance highBalance tokenPrice technicalCap : Nat)
+    (prefixesOrdered : cheapPrefix ≤ expensivePrefix)
+    (balancesOrdered : lowBalance ≤ highBalance)
+    (cheapAffordableAtLow : tokenPrice * cheapPrefix ≤ lowBalance)
+    (expensiveUnaffordableAtLow : ¬ tokenPrice * expensivePrefix ≤ lowBalance)
+    (expensiveAffordableAtHigh : tokenPrice * expensivePrefix ≤ highBalance)
+    (expensivePrefixWithinCap : expensivePrefix ≤ technicalCap) :
+    eventMass
+        (proposalLaw constitution context
+          (affordableGenerationBudget lowBalance tokenPrice technicalCap)) cheapEvent =
+      eventMass (proposalLaw constitution context technicalCap) cheapEvent ∧
+    eventMass
+        (proposalLaw constitution context
+          (affordableGenerationBudget highBalance tokenPrice technicalCap)) cheapEvent =
+      eventMass (proposalLaw constitution context technicalCap) cheapEvent ∧
+    eventMass
+        (proposalLaw constitution context
+          (affordableGenerationBudget lowBalance tokenPrice technicalCap)) expensiveEvent = 0 ∧
+    eventMass
+        (proposalLaw constitution context
+          (affordableGenerationBudget highBalance tokenPrice technicalCap)) expensiveEvent =
+      eventMass (proposalLaw constitution context technicalCap) expensiveEvent := by
+  have cheapAffordableAtHigh : tokenPrice * cheapPrefix ≤ highBalance :=
+    Nat.le_trans cheapAffordableAtLow balancesOrdered
+  have cheapWithinCap : cheapPrefix ≤ technicalCap :=
+    Nat.le_trans prefixesOrdered expensivePrefixWithinCap
+  have cheapAtLow := resource_limited_proposal_event_has_decision_cost_threshold
+    constitution cheapPrefix cheapParser cheapEvent cheapRequiresPrefix context
+    lowBalance tokenPrice technicalCap cheapWithinCap
+  have cheapAtHigh := resource_limited_proposal_event_has_decision_cost_threshold
+    constitution cheapPrefix cheapParser cheapEvent cheapRequiresPrefix context
+    highBalance tokenPrice technicalCap cheapWithinCap
+  have expensiveAtLow := resource_limited_proposal_event_has_decision_cost_threshold
+    constitution expensivePrefix expensiveParser expensiveEvent expensiveRequiresPrefix context
+    lowBalance tokenPrice technicalCap expensivePrefixWithinCap
+  have expensiveAtHigh := resource_limited_proposal_event_has_decision_cost_threshold
+    constitution expensivePrefix expensiveParser expensiveEvent expensiveRequiresPrefix context
+    highBalance tokenPrice technicalCap expensivePrefixWithinCap
+  rw [if_pos cheapAffordableAtLow] at cheapAtLow
+  rw [if_pos cheapAffordableAtHigh] at cheapAtHigh
+  rw [if_neg expensiveUnaffordableAtLow] at expensiveAtLow
+  rw [if_pos expensiveAffordableAtHigh] at expensiveAtHigh
+  exact ⟨cheapAtLow, cheapAtHigh, expensiveAtLow, expensiveAtHigh⟩
+
 /-- End-to-end partial identification from an agent-owned balance to a
     proposal event. Hold the complete encoded context and autoregressive
     constitution fixed, derive each generation horizon from the corresponding

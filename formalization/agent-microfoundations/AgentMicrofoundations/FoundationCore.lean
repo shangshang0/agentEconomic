@@ -7,6 +7,7 @@ import AgentMicrofoundations.FiniteDynamics
 import AgentMicrofoundations.CausalInterface
 import AgentMicrofoundations.AllocationIdentification
 import AgentMicrofoundations.AllocationFeedback
+import AgentMicrofoundations.ResourceOpportunityCascade
 import AgentMicrofoundations.ResourceThresholdPath
 import AgentMicrofoundations.ResourceSurvivalBound
 

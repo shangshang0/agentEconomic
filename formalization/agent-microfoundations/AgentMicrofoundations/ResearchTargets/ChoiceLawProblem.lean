@@ -40,6 +40,46 @@ def eventProbabilityChange {Context Token Proposal : Type} [DecidableEq Proposal
   eventProbability constitution secondContext secondBudget event -
     eventProbability constitution firstContext firstBudget event
 
+/-- A one-token subject can condition its emitted proposal on a context bit.
+    This tiny constitution is used only as a countermodel to any purported
+    context-comparative law that has no structural restrictions on the token
+    kernel. -/
+def contextEchoConstitution (reverse : Bool) :
+    Constitution Bool Bool Bool := {
+  prompt := fun context => [context]
+  nextToken := fun tokenPrefix =>
+    pureDistribution (if reverse then !(tokenPrefix.headD false) else tokenPrefix.headD false)
+  stopToken := fun _ => true
+  parseProposal := fun {_budget} trace => trace.tokens.headD false
+}
+
+theorem contextEcho_event_probability (reverse context : Bool) :
+    eventProbability (contextEchoConstitution reverse) context 1 id =
+      if (if reverse then !context else context) then (1 : Rat) else 0 := by
+  cases reverse <;> cases context <;>
+    simp [eventProbability, contextEchoConstitution, proposalLaw,
+      generatedTokenTrace, extendGeneratedTrace, bindDistribution, bindEntries,
+      mapDistribution, mapEntries, scaleEntries, pureDistribution, eventMass,
+      Rat.add_zero] <;> try exact Rat.add_zero 1
+
+/-- With an unrestricted context-sensitive token kernel, the same fixed
+    protocol can produce either sign of the full [-1,1] comparative effect.
+    Thus no strict choice-effect interval follows from computational form and
+    parsing alone; at least one independently motivated structural restriction
+    is mathematically necessary. -/
+theorem unrestricted_context_kernels_realize_both_extreme_effects :
+    eventProbabilityChange (contextEchoConstitution false) false 1 true 1 id = 1 ∧
+    eventProbabilityChange (contextEchoConstitution true) false 1 true 1 id = -1 := by
+  constructor
+  · simp only [eventProbabilityChange, contextEcho_event_probability]
+    calc
+      1 - 0 = 1 + -0 := Rat.sub_eq_add_neg _ _
+      _ = 1 := by rw [Rat.neg_zero, Rat.add_zero]
+  · simp only [eventProbabilityChange, contextEcho_event_probability]
+    calc
+      0 - 1 = 0 + -1 := Rat.sub_eq_add_neg _ _
+      _ = -1 := Rat.zero_add _
+
 /-- A sharp interval law induced by a primitive class. The class may inspect
     the constitution and the pair of conditions/budgets, but does not receive
     the target proposal event or its probability as an argument. -/
@@ -71,6 +111,52 @@ structure SharpChoiceEffectLaw
         secondContext secondBudget event = upper
   strict_restriction : upper - lower < 2
 
+/-- The primitive-free model class cannot satisfy the sharp, strict-range
+    choice-law target for this context comparison. The two context-echo
+    constitutions attain both logical extremes, so at least one independently
+    motivated structural restriction is mathematically necessary. -/
+theorem no_strict_choice_law_without_context_restrictions :
+    ¬ Nonempty (SharpChoiceEffectLaw
+      (fun (_ : Constitution Bool Bool Bool) (_ : Bool) (_ : Nat)
+        (_ : Bool) (_ : Nat) => True)
+      false 1 true 1 id) := by
+  intro lawExists
+  obtain ⟨law⟩ := lawExists
+  have effects := unrestricted_context_kernels_realize_both_extreme_effects
+  have lowerBound : law.lower ≤ -1 := by
+    have h := (law.sound (contextEchoConstitution true) trivial).1
+    rw [effects.2] at h
+    exact h
+  have upperBound : 1 ≤ law.upper := by
+    have h := (law.sound (contextEchoConstitution false) trivial).2
+    rw [effects.1] at h
+    exact h
+  have lowerNegated : 1 ≤ -law.lower := by
+    exact Rat.neg_le_neg lowerBound
+  have widthLower : (2 : Rat) ≤ 1 + -law.lower := by
+    have h := (Rat.add_le_add_left (a := 1) (b := -law.lower) (c := 1)).mpr
+      lowerNegated
+    have natEq : (2 : Nat) = 1 + 1 := by omega
+    have twoEq : (2 : Rat) = 1 + 1 := by
+      calc
+        (2 : Rat) = ((2 : Nat) : Rat) := rfl
+        _ = ((1 + 1 : Nat) : Rat) := congrArg (fun n : Nat => (n : Rat)) natEq
+        _ = (1 : Rat) + 1 := Rat.natCast_add 1 1
+    rw [twoEq]
+    exact h
+  have widthUpper : 1 + -law.lower ≤ law.upper + -law.lower :=
+    (Rat.add_le_add_right (a := 1) (b := law.upper) (c := -law.lower)).mpr
+      upperBound
+  have fullWidth : (2 : Rat) ≤ law.upper - law.lower := by
+    simpa [Rat.sub_eq_add_neg] using Rat.le_trans widthLower widthUpper
+  have widthAtMostTwo : law.upper - law.lower ≤ 2 :=
+    Rat.le_of_lt law.strict_restriction
+  have widthEqTwo : law.upper - law.lower = 2 :=
+    Rat.le_antisymm widthAtMostTwo fullWidth
+  have strictWidth := law.strict_restriction
+  rw [widthEqTwo] at strictWidth
+  exact Rat.lt_irrefl strictWidth
+
 /-- Completion criterion for a comparative choice question: derive a sharp,
     nontrivial restriction on a probability change from token-level primitives. -/
 def SolvesChoiceLawProblem {Context Token Proposal : Type} [DecidableEq Proposal]
@@ -82,24 +168,47 @@ def SolvesChoiceLawProblem {Context Token Proposal : Type} [DecidableEq Proposal
   Nonempty (SharpChoiceEffectLaw primitiveClass firstContext firstBudget
     secondContext secondBudget event)
 
-/-- One proposed structural primitive. It may constrain a constitution and a
-    pair of environments, but cannot take the target action event or its
-    probability as an argument. This type-level restriction prevents the most
-    direct form of writing the desired choice result into an assumption. -/
-abbrev ChoicePrimitive {Context Token Proposal : Type} [DecidableEq Proposal] :=
-  Constitution Context Token Proposal → Context → Nat → Context → Nat → Prop
+/-- The allowed syntax of a primitive in the research certificate.
+
+    This is intentionally a closed grammar rather than an arbitrary predicate:
+    an unrestricted `Constitution → ... → Prop` could hide a choice law inside
+    a predicate even if it never receives the target event as an argument.
+    Constructors are added only when their operational meaning is independently
+    auditable. The current grammar contains protocol facts, not preference
+    directions. -/
+inductive ChoicePrimitive where
+  | sameCompletePrompt
+  | firstBudgetPositive
+  | secondBudgetPositive
+  | firstTokenSufficientParser
+  deriving DecidableEq, Repr
+
+/-- Operational meaning of the current primitive grammar. -/
+def ChoicePrimitive.holds
+    {Context Token Proposal : Type} [DecidableEq Proposal]
+    (primitive : ChoicePrimitive)
+    (constitution : Constitution Context Token Proposal)
+    (firstContext : Context) (firstBudget : Nat)
+    (secondContext : Context) (secondBudget : Nat) : Prop :=
+  match primitive with
+  | .sameCompletePrompt =>
+      constitution.prompt firstContext = constitution.prompt secondContext
+  | .firstBudgetPositive => 0 < firstBudget
+  | .secondBudgetPositive => 0 < secondBudget
+  | .firstTokenSufficientParser =>
+      Nonempty (FirstTokenSufficientParser constitution)
 
 /-- The constitutions admitted by a finite package of structural primitives.
     `Fin n` indexes the assumptions; `n` is explicit so that parsimony and
     assumption-by-assumption ablation can be inspected. -/
 def SatisfiesPrimitivePackage
     {Context Token Proposal : Type} [DecidableEq Proposal] {n : Nat}
-    (primitives : Fin n → ChoicePrimitive (Context := Context)
-      (Token := Token) (Proposal := Proposal))
+    (primitives : Fin n → ChoicePrimitive)
     (constitution : Constitution Context Token Proposal)
     (firstContext : Context) (firstBudget : Nat)
     (secondContext : Context) (secondBudget : Nat) : Prop :=
-  ∀ i, primitives i constitution firstContext firstBudget secondContext secondBudget
+  ∀ i, (primitives i).holds constitution firstContext firstBudget
+    secondContext secondBudget
 
 /-- A completion certificate for the *research target*, not a new agent
     economic axiom. A completed foundation must use one finite, event-blind
@@ -111,34 +220,38 @@ def SatisfiesPrimitivePackage
     motivation remain scientific obligations outside Lean. -/
 structure ChoiceFoundationCertificate
     {Context Token Proposal : Type} [DecidableEq Proposal] (n : Nat) where
-  primitives : Fin n → ChoicePrimitive (Context := Context)
-    (Token := Token) (Proposal := Proposal)
+  primitives : Fin n → ChoicePrimitive
   uniformSharpLaw : ∀ (firstContext secondContext : Context)
       (firstBudget secondBudget : Nat),
-    (∃ constitution, SatisfiesPrimitivePackage primitives constitution
+    (∃ constitution, @SatisfiesPrimitivePackage Context Token Proposal inferInstance n
+      primitives constitution
       firstContext firstBudget secondContext secondBudget) →
     ∀ (event : Proposal → Bool),
       Nonempty (SharpChoiceEffectLaw
-        (SatisfiesPrimitivePackage primitives)
+        (@SatisfiesPrimitivePackage Context Token Proposal inferInstance n primitives)
         firstContext firstBudget secondContext secondBudget event)
   primitiveIrredundancy : ∀ (i : Fin n),
     ∃ (constitutionLow constitutionHigh : Constitution Context Token Proposal)
       (firstContext secondContext : Context) (firstBudget secondBudget : Nat)
       (event : Proposal → Bool),
-      (∀ j, j ≠ i → primitives j constitutionLow firstContext firstBudget
+      (∀ j, j ≠ i → (primitives j).holds constitutionLow firstContext firstBudget
         secondContext secondBudget) ∧
-      (∀ j, j ≠ i → primitives j constitutionHigh firstContext firstBudget
+      ¬ (primitives i).holds constitutionLow firstContext firstBudget secondContext secondBudget ∧
+      (∀ j, j ≠ i → (primitives j).holds constitutionHigh firstContext firstBudget
         secondContext secondBudget) ∧
+      ¬ (primitives i).holds constitutionHigh firstContext firstBudget secondContext secondBudget ∧
       eventProbabilityChange constitutionLow firstContext firstBudget
         secondContext secondBudget event = -1 ∧
       eventProbabilityChange constitutionHigh firstContext firstBudget
         secondContext secondBudget event = 1
 
 /-- What would count as having built the requested theory: a Lean inhabitant
-    of the certificate for a concrete computational-agent model class, with
-    its primitive meanings independently audited. At present this predicate
-    is intentionally not inhabited by the general autoregressive model class;
-    the existing no-identification theorem explains why. -/
+    of the certificate for a concrete computational-agent model class, using
+    only the closed primitive grammar above. At present this predicate is
+    intentionally not inhabited by the general autoregressive model class;
+    the existing no-identification theorem explains why. A Lean inhabitant
+    still does not establish that a primitive's operational interpretation
+    matches a deployed agent; that is a separate audit obligation. -/
 def HasCompletedChoiceFoundation
     {Context Token Proposal : Type} [DecidableEq Proposal] (n : Nat) : Prop :=
   Nonempty (ChoiceFoundationCertificate (Context := Context)
