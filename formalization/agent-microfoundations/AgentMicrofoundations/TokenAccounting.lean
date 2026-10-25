@@ -121,6 +121,40 @@ theorem saturated_balances_same_prompt_imply_equal_proposal_law
   exact equal_prompt_implies_equal_proposal_law constitution firstContext secondContext
     technicalCap samePrompt
 
+/-- Decision-prefix resource threshold. If the protocol's proposal parser is
+    determined by the first `prefixLength` generated tokens, then an account
+    that can fund that prefix induces exactly the same proposal-event law as
+    the full technical cap. Thus the resource-to-choice channel saturates at
+    the decision-completion cost, even when the technical output cap is larger.
+
+    This is a sufficient threshold for the budget-only channel. It requires a
+    fixed context/constitution: if balance changes the prompt, model state,
+    parser, or token kernel, this theorem does not apply. -/
+theorem decision_prefix_balance_suffices_for_full_cap_choice_law
+    {Context Token Proposal : Type}
+    (constitution : AutoregressiveConstitution Context Token Proposal)
+    (prefixLength : Nat)
+    (parser : PrefixSufficientParser constitution prefixLength)
+    (context : Context) (balance tokenPrice technicalCap : Nat)
+    (prefixWithinTechnicalCap : prefixLength ≤ technicalCap)
+    (balanceFundsDecisionPrefix : tokenPrice * prefixLength ≤ balance) :
+    ∀ event : Proposal → Bool,
+      eventMass
+          (proposalLaw constitution context
+            (affordableGenerationBudget balance tokenPrice technicalCap)) event =
+        eventMass (proposalLaw constitution context technicalCap) event := by
+  intro event
+  by_cases priceZero : tokenPrice = 0
+  · simp [affordableGenerationBudget, priceZero]
+  · have pricePositive : 0 < tokenPrice := Nat.pos_of_ne_zero priceZero
+    have affordableBudgetCoversPrefix : prefixLength ≤
+        affordableGenerationBudget balance tokenPrice technicalCap :=
+      affordable_budget_is_maximal balance tokenPrice technicalCap prefixLength
+        pricePositive prefixWithinTechnicalCap balanceFundsDecisionPrefix
+    exact prefix_sufficient_parser_proposal_law_invariant constitution prefixLength parser
+      context (affordableGenerationBudget balance tokenPrice technicalCap) technicalCap
+      affordableBudgetCoversPrefix prefixWithinTechnicalCap event
+
 /-- End-to-end partial identification from an agent-owned balance to a
     proposal event. Hold the complete encoded context and autoregressive
     constitution fixed, derive each generation horizon from the corresponding

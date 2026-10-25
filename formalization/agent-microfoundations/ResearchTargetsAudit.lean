@@ -1,0 +1,3 @@
+import AgentMicrofoundations.ResearchTargets.ChoiceLawProblem
+
+#print axioms AgentMicrofoundations.ResearchTargets.ChoiceLawProblem.firstToken_budget_effect_has_sharp_zero_law

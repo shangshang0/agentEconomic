@@ -87,7 +87,7 @@ theorem viableRatLoad_eq_count_mul_reserve
       · have countEq : viableRatCount reserve (balance :: rest) =
             viableRatCount reserve rest + 1 := by
           simp [viableRatCount, meets]
-        simp only [viableRatLoad, if_pos meets]
+        simp only [viableRatLoad, ite_eq_left meets]
         rw [ih, countEq]
         rw [Rat.natCast_add, Rat.add_mul]
         simp only [Rat.natCast_ofNat, Rat.one_mul]
@@ -96,7 +96,7 @@ theorem viableRatLoad_eq_count_mul_reserve
       · have countEq : viableRatCount reserve (balance :: rest) =
             viableRatCount reserve rest := by
           simp [viableRatCount, meets]
-        simp only [viableRatLoad, if_neg meets]
+        simp only [viableRatLoad, ite_eq_right meets]
         rw [ih, countEq]
 
 /-- The reserve assigned to viable accounts cannot exceed total stock. This
@@ -222,20 +222,22 @@ theorem expectedViabilityRequirement_le_expectedStock_aux
     mechanism attains the bound. The nonnegative-balance and common-reserve
     conditions are explicit and directly auditable in a case. -/
 theorem probability_at_least_target_viable_bounded_by_expected_stock
-    (reserve target : Rat) (lottery : FiniteDistribution (List Rat))
+    (reserve : Rat) (target : Nat) (lottery : FiniteDistribution (List Rat))
     (reserveNonnegative : 0 ≤ reserve)
     (balancesNonnegative : ∀ balances weight, (balances, weight) ∈ lottery.outcomes →
       ∀ balance, balance ∈ balances → 0 ≤ balance) :
-    (target * reserve) *
+    ((target : Rat) * reserve) *
         eventMass lottery
-          (fun balances => decide (target ≤ (viableRatCount reserve balances : Rat))) ≤
+          (fun balances => decide ((target : Rat) ≤
+            (viableRatCount reserve balances : Rat))) ≤
       expectedRatStock lottery.outcomes := by
-  change (target * reserve) *
+  change ((target : Rat) * reserve) *
       eventFold lottery.outcomes
-        (fun balances => decide (target ≤ (viableRatCount reserve balances : Rat))) ≤
+        (fun balances => decide ((target : Rat) ≤
+          (viableRatCount reserve balances : Rat))) ≤
     expectedRatStock lottery.outcomes
   rw [← weightedEventRequirement_eq_amount_mul_eventFold]
-  exact expectedViabilityRequirement_le_expectedStock_aux reserve target
+  exact expectedViabilityRequirement_le_expectedStock_aux reserve (target : Rat)
     lottery.outcomes reserveNonnegative balancesNonnegative lottery.nonnegative
 
 theorem sum_replicate_rat_eq_count_mul_value (count : Nat) (value : Rat) :

@@ -27,6 +27,7 @@ import AgentMicrofoundations.Liquidity
 import AgentMicrofoundations.ResourceLedger
 import AgentMicrofoundations.SurvivalCurrency
 import AgentMicrofoundations.ResourceSurvivalBound
+import AgentMicrofoundations.TemporalIntersectionBounds
 import AgentMicrofoundations.Settlement
 import AgentMicrofoundations.CausalInterface
 import AgentMicrofoundations.FiniteCoalitions
@@ -47,6 +48,8 @@ import AgentMicrofoundations.CaseStudies.CTFParameterizedSimulation
 import AgentMicrofoundations.CaseStudies.CTFResourceSimulation
 import AgentMicrofoundations.CaseStudies.AuthorityDesign
 import AgentMicrofoundations.CaseStudies.AuthorityMechanics
+import AgentMicrofoundations.CaseStudies.AuthorityWorldV2Clock
+import AgentMicrofoundations.CaseStudies.AuthorityWorldV2Election
 import AgentMicrofoundations.CaseStudies.ResourceSignalPilot
 
 /-!

@@ -1,6 +1,6 @@
 {
   "audit_type": "zero_api_case_assumption_validation",
-  "created_at_utc": "2026-10-25T03:53:31.263745+00:00",
+  "created_at_utc": "2026-10-25T05:26:59.257107+00:00",
   "principle": "definitions are not empirical assumptions; every case restriction is either directly audited, locally tested, or left unasserted",
   "source_sha256": {
     "theory_v3/analysis/ctf_case/results/world_summary.csv": "4a1dab98a76258e69149ed4ab7ec83d54d8349c7f4ea9eec4ae8843e7273223d",
@@ -8,11 +8,17 @@
     "theory_v3/analysis/ctf_case/results/stage1_frozen_stage2_predictions.csv": "f449e50a2e69edf8538c060efee59b1b5d62a58f659dce9b833fbf8760c35713",
     "theory_v3/analysis/ctf_case/results/full-input-reconstruction/full_input_signature_summary.json": "8dbc3196ddabb7067517c53bbc63bbfbbf15b884d96864a4544deb8448963d71",
     "WWW2027_submission/appendix/pilot/pilot_v2.jsonl": "e7a0b8975f767baf10ba2cfee9acc078d55353b1b91a7cbffe7ea449ebd0e91d",
-    "\u4ee3\u7801/authority_world/backend/world_engine_v2.py": "cea37e28faeb49b855f38071dbb8731e2d9166379eaa885dd18a3637c2053322"
+    "\u4ee3\u7801/authority_world/backend/world_engine_v2.py": "cea37e28faeb49b855f38071dbb8731e2d9166379eaa885dd18a3637c2053322",
+    "theory_v3/analysis/audit_authority_v2_clock.py": "7bb0df4557fbcbddd856c38d593bcdedb06da6dde6ed601303f912dfe849fe67",
+    "theory_v3/lean/verification/authority_v2_clock_audit.json": "ad2f13c9d5e4c0107e9dc3a69a86cb3d1b26b8a3add18252e7bda9cf5dc421b2",
+    "theory_v3/analysis/audit_authority_v2_election.py": "6641e4628ec3b7aadebfc560bb29a1a2a5c669d7d8e0fff394608652cba5852c",
+    "theory_v3/lean/verification/authority_v2_election_audit.json": "70ec0bd8cc6e809d3db67fa9b5614de7be395b8b397d424b037a5635057f33a9"
   },
   "archive_integrity": {
     "worlds": 24,
     "agent_day_rows": 2430,
+    "unique_world_day_profiles": 405,
+    "six_distinct_agent_identities_per_profile": true,
     "ledger_replay_pass": "24/24",
     "complete_task_menu_join": "24/24",
     "verified_outcomes_from_events": "24/24",
@@ -41,6 +47,8 @@
     ],
     "operational_alive_with_negative_start_balance": 0,
     "operational_alive_with_negative_end_balance": 0,
+    "non_symbolic_negative_balance_observations": 0,
+    "verified_balance_domain_for_positive_reserve_bound": true,
     "symbolic_energy_alive_with_negative_start_balance": 331,
     "symbolic_energy_alive_with_negative_end_balance": 354,
     "interpretation": "panel and backend source jointly validate this case-specific execution rule; symbolic-energy directly falsifies universal coupling",
@@ -106,5 +114,651 @@
     "agent independence, exchangeability, or anonymity",
     "a universal mapping from resource balance to survival or action",
     "a response law transported across population sizes, prompts, or mechanisms"
-  ]
+  ],
+  "assumption_registry": [
+    {
+      "id": "MATH-FINITE-LAW",
+      "kind": "mathematical_interface_invariant",
+      "verification_cost": "FORMAL_ONLY",
+      "restriction": "A finite probability law has nonnegative rational weights summing to one.",
+      "check": "Lean FiniteDistribution constructor and kernel build; no empirical fitting assumption.",
+      "reject_rule": "A law that is not normalized/nonnegative cannot be instantiated as FiniteDistribution.",
+      "failure_action": "Reject the mathematical input; do not run numerical forecast.",
+      "status": "ENFORCED_BY_LEAN_TYPE",
+      "evidence": "Ontology.lean: FiniteDistribution",
+      "used_for_case_prediction": false
+    },
+    {
+      "id": "CASE-LEDGER-CLOSURE",
+      "kind": "case_mapping_restriction",
+      "verification_cost": "ZERO_API_ARCHIVE_REPLAY",
+      "restriction": "Recorded resource changes equal event-level replay for every archived world.",
+      "check": "Zero-API replay and world-level ledger comparison.",
+      "reject_rule": "Any world has resource_ledger_replay_match != 1.",
+      "failure_action": "Reject the resource-to-agent case mapping before interpreting predictions.",
+      "status": "PASS",
+      "evidence": "24/24 worlds; source data SHA-256 recorded",
+      "used_for_case_prediction": true
+    },
+    {
+      "id": "CASE-FULL-INPUT",
+      "kind": "case_measurement_restriction",
+      "verification_cost": "ZERO_API_ARCHIVE_AUDIT",
+      "restriction": "Each archived gateway request can be reconstructed with its full agent-visible payload.",
+      "check": "Count complete request signatures and compare with gateway exchanges.",
+      "reject_rule": "Any request lacks payload, or signature count differs from exchange count.",
+      "failure_action": "Refuse same-input response claims for unreconstructable requests.",
+      "status": "PASS",
+      "evidence": "45180/45180 complete; exact signatures reused across worlds=0",
+      "used_for_case_prediction": false
+    },
+    {
+      "id": "CASE-OPERATIONAL-DEATH-GATE",
+      "kind": "case-execution-rule",
+      "verification_cost": "ZERO_API_SOURCE_AND_TRACE_AUDIT",
+      "restriction": "The CTF backend terminates an alive agent at energy <= 0 in non-symbolic regimes and bypasses this gate in symbolic-energy.",
+      "check": "Static backend source guard plus alive/energy trace cross-check.",
+      "reject_rule": "Backend branch changes or any non-symbolic alive observation contradicts the replayed gate.",
+      "failure_action": "Withdraw the energy-survival case mapping; do not use survival-currency results.",
+      "status": "PASS",
+      "evidence": "source guards pass; operational negative-alive observations=0; symbolic negative-alive observations=685",
+      "used_for_case_prediction": true
+    },
+    {
+      "id": "CASE-NONNEGATIVE-BALANCE",
+      "kind": "case-domain-restriction",
+      "verification_cost": "ZERO_API_TRACE_SCAN",
+      "restriction": "Every balance in the stochastic resource upper-bound application is nonnegative.",
+      "check": "Direct scan of all archived non-symbolic agent-day start/end balances.",
+      "reject_rule": "Any scanned balance is negative.",
+      "failure_action": "Do not instantiate ResourceSurvivalBound for that regime; use a signed-resource model instead.",
+      "status": "PASS_FOR_NON_SYMBOLIC_TRACE",
+      "evidence": "negative observations=0; symbolic negative-alive start/end=331/354",
+      "used_for_case_prediction": false
+    },
+    {
+      "id": "CASE-POSITIVE-CONTINUATION-RESERVE",
+      "kind": "case-domain-restriction",
+      "verification_cost": "ZERO_API_SOURCE_AND_EVENT_SCAN",
+      "restriction": "A positive common reserve d is enforced before the continuation event being predicted.",
+      "check": "Read the backend death threshold and scheduled mandatory costs from the actual event sequence.",
+      "reject_rule": "No positive enforced reserve exists, or the checking point does not match the modeled next-period event.",
+      "failure_action": "Do not report the positive-reserve probability bound as a CTF survival prediction.",
+      "status": "NOT_SATISFIED_ZERO_DEATH_THRESHOLD",
+      "evidence": "Backend death gate is energy <= 0; direct reserve d=0 makes the positive-reserve bound uninformative.",
+      "used_for_case_prediction": false
+    },
+    {
+      "id": "CASE-RESPONSE-KERNEL",
+      "kind": "behavioral-restriction",
+      "verification_cost": "SMALL_PAIRED_API_DIAGNOSTIC_REQUIRED_NOT_YET_RUN",
+      "restriction": "A frozen response kernel maps complete inputs and states to proposal probabilities.",
+      "check": "Exact-input repeats, or a preregistered low-cost paired replay experiment with fixed inputs and controlled conditions.",
+      "reject_rule": "Held-out proposal frequencies fall outside the predeclared predictive interval, or the supposedly fixed input/configuration changes.",
+      "failure_action": "Reject that response restriction; do not add post-hoc state variables to rescue it.",
+      "status": "NOT_IDENTIFIED_EXACT_INPUTS_UNIQUE",
+      "evidence": "45180 complete archived requests; 0 exact signatures reused across worlds; existing pilot is vignette-local only.",
+      "used_for_case_prediction": false
+    },
+    {
+      "id": "CASE-ALLOCATION-PRODUCTION-JOINT-LAW",
+      "kind": "behavioral-production-restriction",
+      "verification_cost": "ZERO_API_EVENT_JOIN_AND_WORLD_HOLDOUT",
+      "restriction": "A frozen joint law predicts assignment and verified production, preserving arbitrary dependence.",
+      "check": "Use agent-task event joins; fit on calibration worlds and score world-level holdouts with a frozen rule.",
+      "reject_rule": "Any predeclared holdout statistic exceeds the frozen tolerance; current tier-frequency screen already fails 4/4 retrospective cells.",
+      "failure_action": "Reject that candidate law; retain only identified bounds or collect a new minimal calibration sample.",
+      "status": "NO_ACCEPTED_FROZEN_LAW",
+      "evidence": "retrospective tier-frequency baseline rejected in 4/4 cells; this is diagnostic, not a prospective test.",
+      "used_for_case_prediction": false
+    },
+    {
+      "id": "CASE-ANONYMITY-INDEPENDENCE",
+      "kind": "behavioral-restriction",
+      "verification_cost": "CONTROLLED_API_POPULATION_TEST_REQUIRED_NOT_ADMITTED",
+      "restriction": "Exchangeability/anonymity or cross-agent independence.",
+      "check": "Would require identity permutation or joint-response tests over repeated controlled populations.",
+      "reject_rule": "Any label-permutation or dependence diagnostic violates the preregistered tolerance.",
+      "failure_action": "Never impose this restriction for CTF forecasts without the test; current general interfaces allow asymmetry and dependence.",
+      "status": "EXCLUDED_NOT_REQUIRED",
+      "evidence": "Lean population interfaces and joint lotteries permit arbitrary identities and dependence.",
+      "used_for_case_prediction": false
+    },
+    {
+      "id": "CASE-PERSISTENCE-DECOMPOSITION",
+      "kind": "case-event-restriction",
+      "verification_cost": "ZERO_API_AGENT_PATH_SCAN",
+      "restriction": "For a fixed horizon, persistence is the conjunction of period-level alive events; with absorbing exits, it equals terminal alive status.",
+      "check": "For each world and each of its six identities, compare all alive_end flags on days 1..8 to day-8 alive_end and scan for exit followed by re-entry.",
+      "reject_rule": "Any path in the positive-support case sample disagrees, or backend uses an unrecorded reset/revival event.",
+      "failure_action": "Do not use temporal intersection bounds for survival; retain only the full path simulator or redefine the event from audited state transitions.",
+      "status": "PASS_DESCRIPTIVE_24/24_WORLD_PATHS",
+      "evidence": "H=8; six named agents per world; no-reentry=24/24; persistence equals terminal alive share=24/24; interval contains persistence=24/24. Descriptive finite-population shares only, not a cross-world forecast.",
+      "used_for_case_prediction": false
+    },
+    {
+      "id": "CASE-AUTHORITY-V2-CLOCK-MAPPING",
+      "kind": "case-execution-rule",
+      "verification_cost": "ZERO_API_BACKEND_CONFIG_BOUNDARY_AUDIT",
+      "restriction": "Lean AuthorityWorldV2Clock reproduces the v2 backend's day phase, allocation/work half-open windows, election registration gate, and inclusive task-lifetime boundary.",
+      "check": "Execute the actual Python config parser and runtime gate functions at open/close boundaries for every checked-in agent_econ_*.json; guard the corresponding backend source rules.",
+      "reject_rule": "Any source guard changes, any config violates the encoded ordering, or any runtime gate differs from the Lean boundary fixture.",
+      "failure_action": "Withdraw the v2 clock-to-opportunity mapping; do not use the Lean timing module for that backend until the semantics are reconciled.",
+      "status": "PASS",
+      "evidence": "8 configs; zero API; source and config hashes recorded in authority_v2_clock_audit.json",
+      "used_for_case_prediction": false
+    },
+    {
+      "id": "CASE-AUTHORITY-V2-ELECTION-MAPPING",
+      "kind": "case-execution-rule",
+      "verification_cost": "ZERO_API_BACKEND_BRANCH_AUDIT",
+      "restriction": "Given the recorded alive set, candidate set, explicit ballots, and seed-conditioned choices, the Lean election map reproduces no-candidate, all-candidate, missing-ballot, plurality, and tie branches.",
+      "check": "Run the actual Python _finalize_election on boundary profiles and guard its branch semantics against the Lean case model; retain source/config hashes.",
+      "reject_rule": "Any backend branch, seed tag, vote-imputation rule, or tested outcome differs from the encoded case map.",
+      "failure_action": "Withdraw this v2 election mapping and do not use it to simulate office selection until reconciled.",
+      "status": "PASS",
+      "evidence": "Zero-API synthetic branch audit; no-candidate and all-candidate paths plus a Lean-matched four-agent 1:1 plurality tie with one imputed ballot.",
+      "used_for_case_prediction": false
+    }
+  ],
+  "prediction_admissibility": {
+    "all_empirical_restrictions_have_low_cost_check_and_reject_rule": true,
+    "untested_or_rejected_restrictions_used_in_case_forecast": 0,
+    "positive_reserve_survival_forecast_admissible_for_current_ctf": false,
+    "point_forecast_from_behavioral_kernel_admissible": false,
+    "reason": "positive enforced reserve and accepted frozen joint response-production kernel are both absent; report execution facts, case diagnostics, or identified bounds only"
+  },
+  "temporal_persistence_case": {
+    "horizon_days": 8,
+    "unit": "six explicitly named agents within each world; empirical finite-population share, not iid or superpopulation probability",
+    "worlds": 24,
+    "no_reentry_worlds": 24,
+    "absorbing_identity_worlds": 24,
+    "general_intersection_interval_contains_observed_persistence": 24,
+    "interval_exact_worlds": 20,
+    "max_interval_width": "1/3",
+    "cases": [
+      {
+        "run_id": "v2-2026074001-b6e9badd2971",
+        "period_marginals": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "5/6"
+        ],
+        "lower": "5/6",
+        "upper": "5/6",
+        "persistence_share": "5/6",
+        "terminal_share": "5/6",
+        "no_reentry": true,
+        "inside_distribution_free_interval": true,
+        "absorbing_identity_holds": true
+      },
+      {
+        "run_id": "v2-2026074002-0298faa9cdc0",
+        "period_marginals": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        "lower": "1",
+        "upper": "1",
+        "persistence_share": "1",
+        "terminal_share": "1",
+        "no_reentry": true,
+        "inside_distribution_free_interval": true,
+        "absorbing_identity_holds": true
+      },
+      {
+        "run_id": "v2-2026074201-6ec8ab953f00",
+        "period_marginals": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        "lower": "1",
+        "upper": "1",
+        "persistence_share": "1",
+        "terminal_share": "1",
+        "no_reentry": true,
+        "inside_distribution_free_interval": true,
+        "absorbing_identity_holds": true
+      },
+      {
+        "run_id": "v2-2026074202-ebd76e6c85a1",
+        "period_marginals": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        "lower": "1",
+        "upper": "1",
+        "persistence_share": "1",
+        "terminal_share": "1",
+        "no_reentry": true,
+        "inside_distribution_free_interval": true,
+        "absorbing_identity_holds": true
+      },
+      {
+        "run_id": "v2-2026074101-fb453f8b983b",
+        "period_marginals": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "2/3",
+          "0"
+        ],
+        "lower": "0",
+        "upper": "0",
+        "persistence_share": "0",
+        "terminal_share": "0",
+        "no_reentry": true,
+        "inside_distribution_free_interval": true,
+        "absorbing_identity_holds": true
+      },
+      {
+        "run_id": "v2-2026074102-13f0d2b0e943",
+        "period_marginals": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1/6"
+        ],
+        "lower": "1/6",
+        "upper": "1/6",
+        "persistence_share": "1/6",
+        "terminal_share": "1/6",
+        "no_reentry": true,
+        "inside_distribution_free_interval": true,
+        "absorbing_identity_holds": true
+      },
+      {
+        "run_id": "v2-2026074301-26881fca8fc1",
+        "period_marginals": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1/3"
+        ],
+        "lower": "1/3",
+        "upper": "1/3",
+        "persistence_share": "1/3",
+        "terminal_share": "1/3",
+        "no_reentry": true,
+        "inside_distribution_free_interval": true,
+        "absorbing_identity_holds": true
+      },
+      {
+        "run_id": "v2-2026074302-0aefd8ef2718",
+        "period_marginals": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1/2"
+        ],
+        "lower": "1/2",
+        "upper": "1/2",
+        "persistence_share": "1/2",
+        "terminal_share": "1/2",
+        "no_reentry": true,
+        "inside_distribution_free_interval": true,
+        "absorbing_identity_holds": true
+      },
+      {
+        "run_id": "v2-2026074003-bddc842128c5",
+        "period_marginals": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "2/3",
+          "1/2"
+        ],
+        "lower": "1/6",
+        "upper": "1/2",
+        "persistence_share": "1/2",
+        "terminal_share": "1/2",
+        "no_reentry": true,
+        "inside_distribution_free_interval": true,
+        "absorbing_identity_holds": true
+      },
+      {
+        "run_id": "v2-2026074203-b60bc3738bba",
+        "period_marginals": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        "lower": "1",
+        "upper": "1",
+        "persistence_share": "1",
+        "terminal_share": "1",
+        "no_reentry": true,
+        "inside_distribution_free_interval": true,
+        "absorbing_identity_holds": true
+      },
+      {
+        "run_id": "v2-2026074103-012aa056d4b9",
+        "period_marginals": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "2/3",
+          "1/2"
+        ],
+        "lower": "1/6",
+        "upper": "1/2",
+        "persistence_share": "1/2",
+        "terminal_share": "1/2",
+        "no_reentry": true,
+        "inside_distribution_free_interval": true,
+        "absorbing_identity_holds": true
+      },
+      {
+        "run_id": "v2-2026074303-bc9733d127ab",
+        "period_marginals": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1/6"
+        ],
+        "lower": "1/6",
+        "upper": "1/6",
+        "persistence_share": "1/6",
+        "terminal_share": "1/6",
+        "no_reentry": true,
+        "inside_distribution_free_interval": true,
+        "absorbing_identity_holds": true
+      },
+      {
+        "run_id": "v2-2026074001-781c74a2fcf9",
+        "period_marginals": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "2/3"
+        ],
+        "lower": "2/3",
+        "upper": "2/3",
+        "persistence_share": "2/3",
+        "terminal_share": "2/3",
+        "no_reentry": true,
+        "inside_distribution_free_interval": true,
+        "absorbing_identity_holds": true
+      },
+      {
+        "run_id": "v2-2026074002-0ad83b141155",
+        "period_marginals": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        "lower": "1",
+        "upper": "1",
+        "persistence_share": "1",
+        "terminal_share": "1",
+        "no_reentry": true,
+        "inside_distribution_free_interval": true,
+        "absorbing_identity_holds": true
+      },
+      {
+        "run_id": "v2-2026074001-723220e4928f",
+        "period_marginals": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        "lower": "1",
+        "upper": "1",
+        "persistence_share": "1",
+        "terminal_share": "1",
+        "no_reentry": true,
+        "inside_distribution_free_interval": true,
+        "absorbing_identity_holds": true
+      },
+      {
+        "run_id": "v2-2026074002-b36c94b9f03d",
+        "period_marginals": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "5/6"
+        ],
+        "lower": "5/6",
+        "upper": "5/6",
+        "persistence_share": "5/6",
+        "terminal_share": "5/6",
+        "no_reentry": true,
+        "inside_distribution_free_interval": true,
+        "absorbing_identity_holds": true
+      },
+      {
+        "run_id": "v2-2026074001-bd9e77d4d9fb",
+        "period_marginals": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        "lower": "1",
+        "upper": "1",
+        "persistence_share": "1",
+        "terminal_share": "1",
+        "no_reentry": true,
+        "inside_distribution_free_interval": true,
+        "absorbing_identity_holds": true
+      },
+      {
+        "run_id": "v2-2026074002-9f8e3ee32439",
+        "period_marginals": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        "lower": "1",
+        "upper": "1",
+        "persistence_share": "1",
+        "terminal_share": "1",
+        "no_reentry": true,
+        "inside_distribution_free_interval": true,
+        "absorbing_identity_holds": true
+      },
+      {
+        "run_id": "v2-2026074101-ccc1196be2f0",
+        "period_marginals": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "5/6",
+          "1/6"
+        ],
+        "lower": "0",
+        "upper": "1/6",
+        "persistence_share": "1/6",
+        "terminal_share": "1/6",
+        "no_reentry": true,
+        "inside_distribution_free_interval": true,
+        "absorbing_identity_holds": true
+      },
+      {
+        "run_id": "v2-2026074102-d5c6ff72c971",
+        "period_marginals": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "5/6",
+          "5/6",
+          "1/2"
+        ],
+        "lower": "1/6",
+        "upper": "1/2",
+        "persistence_share": "1/2",
+        "terminal_share": "1/2",
+        "no_reentry": true,
+        "inside_distribution_free_interval": true,
+        "absorbing_identity_holds": true
+      },
+      {
+        "run_id": "v2-2026074101-505f7c6b692c",
+        "period_marginals": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1/2"
+        ],
+        "lower": "1/2",
+        "upper": "1/2",
+        "persistence_share": "1/2",
+        "terminal_share": "1/2",
+        "no_reentry": true,
+        "inside_distribution_free_interval": true,
+        "absorbing_identity_holds": true
+      },
+      {
+        "run_id": "v2-2026074102-3835110f3425",
+        "period_marginals": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1/3"
+        ],
+        "lower": "1/3",
+        "upper": "1/3",
+        "persistence_share": "1/3",
+        "terminal_share": "1/3",
+        "no_reentry": true,
+        "inside_distribution_free_interval": true,
+        "absorbing_identity_holds": true
+      },
+      {
+        "run_id": "v2-2026074101-5fab751a635a",
+        "period_marginals": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        "lower": "1",
+        "upper": "1",
+        "persistence_share": "1",
+        "terminal_share": "1",
+        "no_reentry": true,
+        "inside_distribution_free_interval": true,
+        "absorbing_identity_holds": true
+      },
+      {
+        "run_id": "v2-2026074102-316694fc8d5b",
+        "period_marginals": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        "lower": "1",
+        "upper": "1",
+        "persistence_share": "1",
+        "terminal_share": "1",
+        "no_reentry": true,
+        "inside_distribution_free_interval": true,
+        "absorbing_identity_holds": true
+      }
+    ],
+    "interpretation": "For these archived traces, no re-entry makes persistence through day 8 exactly equal terminal alive share; observed shares lie in the distribution-free intersection interval. This is a descriptive case audit, not an ex ante forecast or a population-level inference."
+  }
 }

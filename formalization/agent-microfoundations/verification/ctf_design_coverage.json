@@ -1,0 +1,384 @@
+{
+  "source": "lean/AgentMicrofoundations/CaseStudies/CTFParameterizedSimulation.lean",
+  "resource_replay_source": "lean/AgentMicrofoundations/CaseStudies/CTFResourceSimulation.lean",
+  "field_count": 46,
+  "status_counts": {
+    "POPULATION_INTERFACE": 1,
+    "REQUIRES_CASE_KERNEL_BINDING": 23,
+    "PARTIAL_RESOURCE_CONSUMER": 1,
+    "CLOCK_VALIDATOR_ONLY": 11,
+    "SCENARIO_ARGUMENT_ONLY": 1,
+    "OPERATIONAL_RESOURCE_REPLAY": 9
+  },
+  "fields": [
+    {
+      "field": "population",
+      "status": "POPULATION_INTERFACE",
+      "current_consumer": "CTFScenarioFamily.populationMatchesDesign",
+      "zero_api_case_check": "Compare the design identities with the simulated population.",
+      "evidence_file": "lean/AgentMicrofoundations/CaseStudies/CTFParameterizedSimulation.lean",
+      "evidence_symbol": "populationMatchesDesign"
+    },
+    {
+      "field": "officeSelection",
+      "status": "REQUIRES_CASE_KERNEL_BINDING",
+      "current_consumer": "Authority World v2 has a separate exact case mapping; CTFScenarioFamily does not compile a universal office-selection law.",
+      "zero_api_case_check": "Bind the selected case mechanism and seed outcomes to backend office events.",
+      "evidence_file": "lean/AgentMicrofoundations/CaseStudies/CTFParameterizedSimulation.lean",
+      "evidence_symbol": "CTFScenarioFamily"
+    },
+    {
+      "field": "allocationRule",
+      "status": "REQUIRES_CASE_KERNEL_BINDING",
+      "current_consumer": "Passed as a design value; allocation behavior is supplied by the case family.",
+      "zero_api_case_check": "Replay proposals and assignments under each allocator rule.",
+      "evidence_file": "lean/AgentMicrofoundations/CaseStudies/CTFParameterizedSimulation.lean",
+      "evidence_symbol": "CTFScenarioFamily"
+    },
+    {
+      "field": "voteRule",
+      "status": "REQUIRES_CASE_KERNEL_BINDING",
+      "current_consumer": "Authority World v2 plurality execution has a separate exact case mapping; voter response and arbitrary vote rules are not universalized.",
+      "zero_api_case_check": "Replay ballots, eligibility, tally, seeded tie-break, and office result.",
+      "evidence_file": "lean/AgentMicrofoundations/CaseStudies/CTFParameterizedSimulation.lean",
+      "evidence_symbol": "CTFScenarioFamily"
+    },
+    {
+      "field": "governanceMode",
+      "status": "REQUIRES_CASE_KERNEL_BINDING",
+      "current_consumer": "Passed as a design value; no universal governance transition is compiled.",
+      "zero_api_case_check": "Compare the active backend branch and resulting event sequence.",
+      "evidence_file": "lean/AgentMicrofoundations/CaseStudies/CTFParameterizedSimulation.lean",
+      "evidence_symbol": "CTFScenarioFamily"
+    },
+    {
+      "field": "auditMode",
+      "status": "REQUIRES_CASE_KERNEL_BINDING",
+      "current_consumer": "Passed as a design value; audit effects must be supplied by the institution kernel.",
+      "zero_api_case_check": "Replay audit-trigger and rejection events.",
+      "evidence_file": "lean/AgentMicrofoundations/CaseStudies/CTFParameterizedSimulation.lean",
+      "evidence_symbol": "CTFScenarioFamily"
+    },
+    {
+      "field": "offeredTasks",
+      "status": "PARTIAL_RESOURCE_CONSUMER",
+      "current_consumer": "Task indices expose configured opening costs and rewards to resource events; opportunity-menu generation is external.",
+      "zero_api_case_check": "Check task-menu joins and event-to-task indices.",
+      "evidence_file": "lean/AgentMicrofoundations/CaseStudies/CTFResourceSimulation.lean",
+      "evidence_symbol": "eventDelta"
+    },
+    {
+      "field": "dayTicks",
+      "status": "CLOCK_VALIDATOR_ONLY",
+      "current_consumer": "Used in validCTFClock ordering; no timed transition consumes the value.",
+      "zero_api_case_check": "Check phase boundaries and tick units against runtime logs.",
+      "evidence_file": "lean/AgentMicrofoundations/CaseStudies/CTFParameterizedSimulation.lean",
+      "evidence_symbol": "validCTFClock"
+    },
+    {
+      "field": "prestartTicks",
+      "status": "CLOCK_VALIDATOR_ONLY",
+      "current_consumer": "Used in validCTFClock ordering only.",
+      "zero_api_case_check": "Check prestart boundary against backend timestamps.",
+      "evidence_file": "lean/AgentMicrofoundations/CaseStudies/CTFParameterizedSimulation.lean",
+      "evidence_symbol": "validCTFClock"
+    },
+    {
+      "field": "campaignOpensAt",
+      "status": "CLOCK_VALIDATOR_ONLY",
+      "current_consumer": "Used in validCTFClock ordering only.",
+      "zero_api_case_check": "Check campaign event timestamps against configured boundary.",
+      "evidence_file": "lean/AgentMicrofoundations/CaseStudies/CTFParameterizedSimulation.lean",
+      "evidence_symbol": "validCTFClock"
+    },
+    {
+      "field": "campaignClosesAt",
+      "status": "CLOCK_VALIDATOR_ONLY",
+      "current_consumer": "Used in validCTFClock ordering only.",
+      "zero_api_case_check": "Check campaign event timestamps against configured boundary.",
+      "evidence_file": "lean/AgentMicrofoundations/CaseStudies/CTFParameterizedSimulation.lean",
+      "evidence_symbol": "validCTFClock"
+    },
+    {
+      "field": "votingOpensAt",
+      "status": "CLOCK_VALIDATOR_ONLY",
+      "current_consumer": "Used in validCTFClock ordering only.",
+      "zero_api_case_check": "Check voting event timestamps against configured boundary.",
+      "evidence_file": "lean/AgentMicrofoundations/CaseStudies/CTFParameterizedSimulation.lean",
+      "evidence_symbol": "validCTFClock"
+    },
+    {
+      "field": "votingClosesAt",
+      "status": "CLOCK_VALIDATOR_ONLY",
+      "current_consumer": "Used in validCTFClock ordering only.",
+      "zero_api_case_check": "Check voting event timestamps against configured boundary.",
+      "evidence_file": "lean/AgentMicrofoundations/CaseStudies/CTFParameterizedSimulation.lean",
+      "evidence_symbol": "validCTFClock"
+    },
+    {
+      "field": "assignmentOpensAt",
+      "status": "CLOCK_VALIDATOR_ONLY",
+      "current_consumer": "Used in validCTFClock ordering only.",
+      "zero_api_case_check": "Check assignment event timestamps against configured boundary.",
+      "evidence_file": "lean/AgentMicrofoundations/CaseStudies/CTFParameterizedSimulation.lean",
+      "evidence_symbol": "validCTFClock"
+    },
+    {
+      "field": "assignmentClosesAt",
+      "status": "CLOCK_VALIDATOR_ONLY",
+      "current_consumer": "Used in validCTFClock ordering only.",
+      "zero_api_case_check": "Check assignment event timestamps against configured boundary.",
+      "evidence_file": "lean/AgentMicrofoundations/CaseStudies/CTFParameterizedSimulation.lean",
+      "evidence_symbol": "validCTFClock"
+    },
+    {
+      "field": "productionOpensAt",
+      "status": "CLOCK_VALIDATOR_ONLY",
+      "current_consumer": "Used in validCTFClock ordering only.",
+      "zero_api_case_check": "Check production event timestamps against configured boundary.",
+      "evidence_file": "lean/AgentMicrofoundations/CaseStudies/CTFParameterizedSimulation.lean",
+      "evidence_symbol": "validCTFClock"
+    },
+    {
+      "field": "productionClosesAt",
+      "status": "CLOCK_VALIDATOR_ONLY",
+      "current_consumer": "Used in validCTFClock ordering only.",
+      "zero_api_case_check": "Check production event timestamps against configured boundary.",
+      "evidence_file": "lean/AgentMicrofoundations/CaseStudies/CTFParameterizedSimulation.lean",
+      "evidence_symbol": "validCTFClock"
+    },
+    {
+      "field": "registrationOpensAt",
+      "status": "CLOCK_VALIDATOR_ONLY",
+      "current_consumer": "Used in validCTFClock ordering only.",
+      "zero_api_case_check": "Check registration event timestamps against configured boundary.",
+      "evidence_file": "lean/AgentMicrofoundations/CaseStudies/CTFParameterizedSimulation.lean",
+      "evidence_symbol": "validCTFClock"
+    },
+    {
+      "field": "idleCognitionTicks",
+      "status": "REQUIRES_CASE_KERNEL_BINDING",
+      "current_consumer": "No idle-time state or response transition consumes this value.",
+      "zero_api_case_check": "Compare idle intervals with model-call and action timestamps.",
+      "evidence_file": "lean/AgentMicrofoundations/CaseStudies/CTFParameterizedSimulation.lean",
+      "evidence_symbol": "CTFScenarioFamily"
+    },
+    {
+      "field": "maxSleepTicks",
+      "status": "REQUIRES_CASE_KERNEL_BINDING",
+      "current_consumer": "No sleep/availability state transition consumes this value.",
+      "zero_api_case_check": "Compare sleep/availability events with the runtime state.",
+      "evidence_file": "lean/AgentMicrofoundations/CaseStudies/CTFParameterizedSimulation.lean",
+      "evidence_symbol": "CTFScenarioFamily"
+    },
+    {
+      "field": "taskTimeoutTicks",
+      "status": "REQUIRES_CASE_KERNEL_BINDING",
+      "current_consumer": "Resource replay does not enforce task timeouts.",
+      "zero_api_case_check": "Replay start/deadline/timeout events and verify the backend cutoff.",
+      "evidence_file": "lean/AgentMicrofoundations/CaseStudies/CTFParameterizedSimulation.lean",
+      "evidence_symbol": "CTFScenarioFamily"
+    },
+    {
+      "field": "taskOutputLimit",
+      "status": "REQUIRES_CASE_KERNEL_BINDING",
+      "current_consumer": "No output-size execution gate consumes this value.",
+      "zero_api_case_check": "Compare submitted output sizes with backend accept/reject results.",
+      "evidence_file": "lean/AgentMicrofoundations/CaseStudies/CTFParameterizedSimulation.lean",
+      "evidence_symbol": "CTFScenarioFamily"
+    },
+    {
+      "field": "taskPrewarmTicks",
+      "status": "REQUIRES_CASE_KERNEL_BINDING",
+      "current_consumer": "No prewarm transition consumes this value.",
+      "zero_api_case_check": "Check prewarm start/end events in runtime logs.",
+      "evidence_file": "lean/AgentMicrofoundations/CaseStudies/CTFParameterizedSimulation.lean",
+      "evidence_symbol": "CTFScenarioFamily"
+    },
+    {
+      "field": "taskLifetimePeriods",
+      "status": "REQUIRES_CASE_KERNEL_BINDING",
+      "current_consumer": "No task-expiry transition consumes this value.",
+      "zero_api_case_check": "Check expiry and late-submission events against the configured lifetime.",
+      "evidence_file": "lean/AgentMicrofoundations/CaseStudies/CTFParameterizedSimulation.lean",
+      "evidence_symbol": "CTFScenarioFamily"
+    },
+    {
+      "field": "horizonPeriods",
+      "status": "SCENARIO_ARGUMENT_ONLY",
+      "current_consumer": "The caller supplies forecast periods separately; this field does not set it automatically.",
+      "zero_api_case_check": "Assert requested forecast horizon equals the design horizon.",
+      "evidence_file": "lean/AgentMicrofoundations/CaseStudies/CTFParameterizedSimulation.lean",
+      "evidence_symbol": "CTFScenarioFamily"
+    },
+    {
+      "field": "seedId",
+      "status": "REQUIRES_CASE_KERNEL_BINDING",
+      "current_consumer": "The finite law may encode a seed, but no PRNG/seed decoder is supplied by this interface.",
+      "zero_api_case_check": "Re-run the backend from the recorded seed and compare assignment/events.",
+      "evidence_file": "lean/AgentMicrofoundations/CaseStudies/CTFParameterizedSimulation.lean",
+      "evidence_symbol": "CTFScenarioFamily"
+    },
+    {
+      "field": "maxAssignments",
+      "status": "REQUIRES_CASE_KERNEL_BINDING",
+      "current_consumer": "No general assignment-count gate consumes this value.",
+      "zero_api_case_check": "Count executed assignment events and reject any over-limit trace.",
+      "evidence_file": "lean/AgentMicrofoundations/CaseStudies/CTFParameterizedSimulation.lean",
+      "evidence_symbol": "CTFScenarioFamily"
+    },
+    {
+      "field": "maxDistinctRecipients",
+      "status": "REQUIRES_CASE_KERNEL_BINDING",
+      "current_consumer": "No general distinct-recipient gate consumes this value.",
+      "zero_api_case_check": "Count unique recipients per window and compare with backend enforcement.",
+      "evidence_file": "lean/AgentMicrofoundations/CaseStudies/CTFParameterizedSimulation.lean",
+      "evidence_symbol": "CTFScenarioFamily"
+    },
+    {
+      "field": "correctWinnerLimit",
+      "status": "REQUIRES_CASE_KERNEL_BINDING",
+      "current_consumer": "No general winner-limit gate consumes this value.",
+      "zero_api_case_check": "Count verified winners and compare with backend enforcement.",
+      "evidence_file": "lean/AgentMicrofoundations/CaseStudies/CTFParameterizedSimulation.lean",
+      "evidence_symbol": "CTFScenarioFamily"
+    },
+    {
+      "field": "initialEnergy",
+      "status": "OPERATIONAL_RESOURCE_REPLAY",
+      "current_consumer": "Initializes each tracked balance.",
+      "zero_api_case_check": "Compare configured balances with reconstructed initial ledger.",
+      "evidence_file": "lean/AgentMicrofoundations/CaseStudies/CTFResourceSimulation.lean",
+      "evidence_symbol": "initialResourceState"
+    },
+    {
+      "field": "quotaSemantics",
+      "status": "OPERATIONAL_RESOURCE_REPLAY",
+      "current_consumer": "Selects metered vs unmetered request handling.",
+      "zero_api_case_check": "Compare quota mode with backend configuration and request counts.",
+      "evidence_file": "lean/AgentMicrofoundations/CaseStudies/CTFResourceSimulation.lean",
+      "evidence_symbol": "applyEvent"
+    },
+    {
+      "field": "initialApiQuota",
+      "status": "OPERATIONAL_RESOURCE_REPLAY",
+      "current_consumer": "Initializes requestsRemaining for each identity.",
+      "zero_api_case_check": "Reconcile initial quota and all request debits.",
+      "evidence_file": "lean/AgentMicrofoundations/CaseStudies/CTFResourceSimulation.lean",
+      "evidence_symbol": "initialResourceState"
+    },
+    {
+      "field": "modelRequestEnergyCost",
+      "status": "OPERATIONAL_RESOURCE_REPLAY",
+      "current_consumer": "Debited by modelRequest events.",
+      "zero_api_case_check": "Replay request costs and compare balance deltas.",
+      "evidence_file": "lean/AgentMicrofoundations/CaseStudies/CTFResourceSimulation.lean",
+      "evidence_symbol": "eventDelta"
+    },
+    {
+      "field": "basalEnergyDrain",
+      "status": "OPERATIONAL_RESOURCE_REPLAY",
+      "current_consumer": "Debited by basalDrain events.",
+      "zero_api_case_check": "Replay settlement events and compare daily drain.",
+      "evidence_file": "lean/AgentMicrofoundations/CaseStudies/CTFResourceSimulation.lean",
+      "evidence_symbol": "eventDelta"
+    },
+    {
+      "field": "taxRate",
+      "status": "REQUIRES_CASE_KERNEL_BINDING",
+      "current_consumer": "No tax event or tax arithmetic consumes this value.",
+      "zero_api_case_check": "Reconcile taxed transfers/resource events with backend ledger.",
+      "evidence_file": "lean/AgentMicrofoundations/CaseStudies/CTFParameterizedSimulation.lean",
+      "evidence_symbol": "CTFScenarioFamily"
+    },
+    {
+      "field": "resourcePacks",
+      "status": "REQUIRES_CASE_KERNEL_BINDING",
+      "current_consumer": "No resource-pack allocation event consumes this value.",
+      "zero_api_case_check": "Join pack declarations to executed grants and recipient balances.",
+      "evidence_file": "lean/AgentMicrofoundations/CaseStudies/CTFParameterizedSimulation.lean",
+      "evidence_symbol": "CTFScenarioFamily"
+    },
+    {
+      "field": "energySemantics",
+      "status": "OPERATIONAL_RESOURCE_REPLAY",
+      "current_consumer": "Selects whether a due zero-balance check terminates the agent.",
+      "zero_api_case_check": "Compare backend branch and alive/energy path.",
+      "evidence_file": "lean/AgentMicrofoundations/CaseStudies/CTFResourceSimulation.lean",
+      "evidence_symbol": "applyEvent"
+    },
+    {
+      "field": "deathCheck",
+      "status": "OPERATIONAL_RESOURCE_REPLAY",
+      "current_consumer": "Selects event-time/period-settlement threshold checks.",
+      "zero_api_case_check": "Replay check timing against backend event order.",
+      "evidence_file": "lean/AgentMicrofoundations/CaseStudies/CTFResourceSimulation.lean",
+      "evidence_symbol": "checksDeathAfter"
+    },
+    {
+      "field": "transfersEnabled",
+      "status": "OPERATIONAL_RESOURCE_REPLAY",
+      "current_consumer": "Gates transfer feasibility.",
+      "zero_api_case_check": "Compare enabled flag with executed/rejected transfer events.",
+      "evidence_file": "lean/AgentMicrofoundations/CaseStudies/CTFResourceSimulation.lean",
+      "evidence_symbol": "eventResourceFeasible"
+    },
+    {
+      "field": "transferFee",
+      "status": "OPERATIONAL_RESOURCE_REPLAY",
+      "current_consumer": "Applied to transfer send/receive deltas.",
+      "zero_api_case_check": "Reconcile transfer amounts, fees, and balance changes.",
+      "evidence_file": "lean/AgentMicrofoundations/CaseStudies/CTFResourceSimulation.lean",
+      "evidence_symbol": "eventDelta"
+    },
+    {
+      "field": "conditionId",
+      "status": "REQUIRES_CASE_KERNEL_BINDING",
+      "current_consumer": "Metadata only unless a case family maps it into the complete input signature.",
+      "zero_api_case_check": "Compare request signature condition labels with design condition.",
+      "evidence_file": "lean/AgentMicrofoundations/CaseStudies/CTFParameterizedSimulation.lean",
+      "evidence_symbol": "CTFScenarioFamily"
+    },
+    {
+      "field": "protocolVersion",
+      "status": "REQUIRES_CASE_KERNEL_BINDING",
+      "current_consumer": "Metadata only unless bound to prompt/parser/tool-schema inputs.",
+      "zero_api_case_check": "Hash and compare protocol artifacts used by each request.",
+      "evidence_file": "lean/AgentMicrofoundations/CaseStudies/CTFParameterizedSimulation.lean",
+      "evidence_symbol": "CTFScenarioFamily"
+    },
+    {
+      "field": "runtimeVersion",
+      "status": "REQUIRES_CASE_KERNEL_BINDING",
+      "current_consumer": "Metadata only unless bound to the executed runtime.",
+      "zero_api_case_check": "Record runtime commit/build and compare with design value.",
+      "evidence_file": "lean/AgentMicrofoundations/CaseStudies/CTFParameterizedSimulation.lean",
+      "evidence_symbol": "CTFScenarioFamily"
+    },
+    {
+      "field": "institutionSemantics",
+      "status": "REQUIRES_CASE_KERNEL_BINDING",
+      "current_consumer": "Institutional wording is not automatically inserted into agent input.",
+      "zero_api_case_check": "Compare assembled prompt disclosure with design wording condition.",
+      "evidence_file": "lean/AgentMicrofoundations/CaseStudies/CTFParameterizedSimulation.lean",
+      "evidence_symbol": "CTFScenarioFamily"
+    },
+    {
+      "field": "objectivePrompt",
+      "status": "REQUIRES_CASE_KERNEL_BINDING",
+      "current_consumer": "Objective label is not automatically inserted into agent input.",
+      "zero_api_case_check": "Hash complete prompts and check goal-text treatment.",
+      "evidence_file": "lean/AgentMicrofoundations/CaseStudies/CTFParameterizedSimulation.lean",
+      "evidence_symbol": "CTFScenarioFamily"
+    },
+    {
+      "field": "taskSuiteId",
+      "status": "REQUIRES_CASE_KERNEL_BINDING",
+      "current_consumer": "Task-suite label is not automatically joined to the opportunity menu.",
+      "zero_api_case_check": "Verify menu/task identifiers and suite version.",
+      "evidence_file": "lean/AgentMicrofoundations/CaseStudies/CTFParameterizedSimulation.lean",
+      "evidence_symbol": "CTFScenarioFamily"
+    }
+  ],
+  "interpretation": "A field recorded in CTFDesign is not automatically compiled into a scenario transition. Only listed operational consumers are executable in the current resource replay; other controls require an audited case-family binding before numeric forecasts may claim to vary them."
+}

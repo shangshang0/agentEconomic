@@ -1,10 +1,14 @@
 {
-  "verified_at_utc": "2026-10-25T04:06:49.203246+00:00",
-  "theory_freeze": "0.3; definitions separated from case restrictions, with zero-API restriction audit",
+  "verified_at_utc": "2026-10-25T05:27:05.677259+00:00",
+  "theory_freeze": "0.5; theory/methods separation, case-level assumption audits, field-level CTF coverage, and Authority World v2 clock/election mechanics",
   "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
   "commands": [
+    "python3 theory_v3/analysis/validate_case_assumptions.py",
     "lake build",
-    "lake env lean Audit.lean"
+    "lake build AgentMicrofoundations.FoundationCore",
+    "lake build AgentMicrofoundations.ResearchTargets.ChoiceLawProblem",
+    "lake env lean Audit.lean",
+    "lake env lean ResearchTargetsAudit.lean"
   ],
   "source_sha256": {
     "AgentMicrofoundations/Accounting.lean": "16a5451b9d7bb4e04121e5781679d37cd67da6161d524a7900fef07d3b5d7692",
@@ -18,6 +22,8 @@
     "AgentMicrofoundations/CaseAnalysis.lean": "8b9c2ffea26e85200757cbedfd65426a2a828c5f9c358b0b4e5725157d567bd3",
     "AgentMicrofoundations/CaseStudies/AuthorityDesign.lean": "74bdb302062c49ef101af588c4f9c2b40d0468d7bbccd527838e8554e37a1baf",
     "AgentMicrofoundations/CaseStudies/AuthorityMechanics.lean": "e4102710bbcb37afc53843a2fa685168e270e2e6bebd3bd366739a686f75ce21",
+    "AgentMicrofoundations/CaseStudies/AuthorityWorldV2Clock.lean": "4c3edfd51f5ca5a5265aead7eb31df6954b690f3966e98beaf1382a83f0ef688",
+    "AgentMicrofoundations/CaseStudies/AuthorityWorldV2Election.lean": "6f3c2dc8dc50738e15d751045b682feeddd092995a095097c0ba2eea0e23426b",
     "AgentMicrofoundations/CaseStudies/CTFAllocation.lean": "f2f060286c76272d584690eb6ed358e5e20f44a683fe90638ef19316e64a1f51",
     "AgentMicrofoundations/CaseStudies/CTFArchive.lean": "4d921391cc05992ba77d2468507b0e0b1af314e44872c67a83c3c9c9548ea14b",
     "AgentMicrofoundations/CaseStudies/CTFModel.lean": "bebf8c9643e67ff02df2d3d6bf830e943c53d7e2c4ebba175f23a9112fe85c10",
@@ -32,20 +38,24 @@
     "AgentMicrofoundations/CouplingComparativeStatics.lean": "238ca7e008c8894e6026e69de5835c91e74ac28bbc3df64369e678fb145b7e50",
     "AgentMicrofoundations/FiniteCoalitions.lean": "f56ed38f7a546cac44b0ba700c767b607afa51afa426bfc3f81d5631fd64051e",
     "AgentMicrofoundations/FiniteDynamics.lean": "3cc9c56b97b4df697c13fce3a82d34ff61191fbc45418441aaba31b1a4f6b9dc",
+    "AgentMicrofoundations/FoundationCore.lean": "266963fda3b22eb89d89ce7099ef4dc37426121c77d0a4e4ddfa82b1754185e9",
     "AgentMicrofoundations/GroupPrediction.lean": "dbaed17fc9c3cc1b4fd8233fed8b02a6739785a2aeb6666d108beccf60b3dbb6",
     "AgentMicrofoundations/GroupProbability.lean": "1ca291aefea370431d316344b8f9a755ed362500b4061297e6aedd9045818643",
     "AgentMicrofoundations/Liquidity.lean": "d0de81ee3c25512b43e0191738bfca275a80aca79fd68f771f1ec090b1762859",
     "AgentMicrofoundations/MechanismCounterfactual.lean": "e10f0479a481c6b4d669fe04b01f409026418609e988a2bea80b5d1bfd42551f",
     "AgentMicrofoundations/MechanismFeedback.lean": "cca3303629042570ba8d8a34276c6e33bcbb91a29c9f01a171ec26cf076002bd",
+    "AgentMicrofoundations/Methods/ExactTwoEventCoupling.lean": "5e2e9e4dda84021caa22e5adb8e979b22acd19de256ddeab56f26ab4f0ba7e29",
+    "AgentMicrofoundations/Methods.lean": "d6541af4b1fd606c393311d83a860fe635e5b6d6d8e37bdcc4f03e2ef8f73630",
     "AgentMicrofoundations/Ontology.lean": "156269f893790517826998b65d374961e369944a87ece043c400846ed9ca61bd",
     "AgentMicrofoundations/OntologyExamples.lean": "c5871419e33fe3eeed8a320dab442149c06b54ab91ef18a9fd4ae0b48f075019",
     "AgentMicrofoundations/OpportunityRationing.lean": "00b68e92655bae3c80e8abdf1432aea50291cc5b256a47e1c2cde47dc4d4f73a",
     "AgentMicrofoundations/OpportunitySpecialization.lean": "1a5ba28cc49d06a1f5cf37688716930cd58ee14e103f45e0356627445e68947f",
     "AgentMicrofoundations/PopulationInputShift.lean": "961eb9c0bac761c02c9971477f47e1b90ff04b23fe58d681d1b183f6abeae9fd",
     "AgentMicrofoundations/PopulationTransport.lean": "e847471ba72f723b491ee5d53cdb9c5130e34ab6cefb5cc6d902d2029dd98b51",
+    "AgentMicrofoundations/ResearchTargets/ChoiceLawProblem.lean": "02c221fc3bc961433a047a45be466fffb794e96b1561e289b86c585475ab249e",
     "AgentMicrofoundations/ResourceBudgetComparativeStatics.lean": "c2fdce7de824a95f5db1d41b009384300558f7b45b72e1f6cd4875ec0a4258c4",
     "AgentMicrofoundations/ResourceLedger.lean": "dbd2196971676daf7dd7324ee1d2b99b7d711aa278230750faf791b169d1ffe7",
-    "AgentMicrofoundations/ResourceSurvivalBound.lean": "5269605244f8e86a341405bf09ffe62c5669a86d25a1e67e5d5c257a0f6f69c1",
+    "AgentMicrofoundations/ResourceSurvivalBound.lean": "ae211e22ca377feba2a8ed93ff48dfee2d1e3ebb671b701e52e3ffad612012df",
     "AgentMicrofoundations/ResourceThresholdPath.lean": "b1728cfae697cc02ff3d6820938ab51ba8ccf8ff91358aaf018eb353d65144e5",
     "AgentMicrofoundations/ResourceThresholdPersistence.lean": "85bbd931b2af004bd70d9d4be3d73599aa6349c98c37049ed8c411053a8ba5a7",
     "AgentMicrofoundations/ResponseIdentification.lean": "f0a712b8892595417a9c5e36f6e17b1ec1f7a21f0b8473a4c649ae08a6deade3",
@@ -55,9 +65,20 @@
     "AgentMicrofoundations/Specialization.lean": "25b1b71532f1c127f7000bc914e409488f35b2a5d7f2ae931218a233a239b4df",
     "AgentMicrofoundations/SurvivalCurrency.lean": "722d2c3b57ceefc3b095c6f2d90feb6994e68797235f85ad7fce2b6aab7c35d2",
     "AgentMicrofoundations/Symmetry.lean": "3854ca872a669c11e6443a73f379a17fea885226d77291c107391ae3818af0a3",
-    "AgentMicrofoundations/TokenAccounting.lean": "10d88b5d20f9fcb95f72c23b35627184a46cfa3f9acb7b912e5a25208fffd8ab",
-    "AgentMicrofoundations.lean": "a3ccd024dee5e02f0050ddcf61bdcefd44a35520b6168ad2b785604646421872",
-    "Audit.lean": "7ddbb9c92bdd75340267ba0e62cc9a67f737b36ed3e6502427d2c3f9cee826fa"
+    "AgentMicrofoundations/TemporalIntersectionBounds.lean": "46d4d8fe79ebd07c1a1253368ef24e284e2cfcb21bd9a2f7ec5958c5b7b5129c",
+    "AgentMicrofoundations/TokenAccounting.lean": "93acab7f0d3093aef4afbdb9f9f92bce7d940ea95a4e9009347822f857f3e276",
+    "AgentMicrofoundations.lean": "43fea00eac6c90ecba6488a6c02412eb471234f064aafa28534bab889918dc79",
+    "Audit.lean": "61cafb2a0589ce3e2a2b00f178d066f70caeb3d0252966600a6f77638a6d666a",
+    "MethodsAudit.lean": "982eb069e4b73e6dcc2f3b481b34f7d767f5d4f7fb59bf2f1bb26ca12d6fe30d",
+    "ResearchTargetsAudit.lean": "2ede837f7aefef7bed61c8b6a8f2208c613c36f2c97b52c2f586aa16c508fe34",
+    "generate_case_studies.py": "043c9c38d9aa99d7bdc671839cfed857067433a7b2c692b2e29f3778e061b7d4",
+    "generate_ctf_archive.py": "3511b6158797902ea16292a2421c50adb2b8658b5a053f6d57658848de5f861f",
+    "generate_project_artifacts.py": "bfa002624ea8189d85718e1078266690dce1ee26a4bdff2effe1287c6283f670",
+    "THEORY_INDEX.md": "169eb45773562270783d9935c7702819d4318c1b442f378eb8d0d6e0c0b6c2e4",
+    "METHODS_INDEX.md": "dc5ff62958a056677b4350f11ae62c7992c6be9ccac907707d6c0c92180544a8",
+    "lakefile.toml": "b3ac64d315a3f729c7815fd1c3418a00a61cf39a6cb275f048d7b3478ab5bc06",
+    "lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lake-manifest.json": "36a1893737942ae27efd12e9944ff45efc67d26cdcb271bf42d43ef4ea9de6a8"
   },
   "case_data_sha256": {
     "WWW2027_submission/appendix/pilot/pilot_v2.jsonl": "e7a0b8975f767baf10ba2cfee9acc078d55353b1b91a7cbffe7ea449ebd0e91d",
@@ -65,19 +86,47 @@
     "theory_v3/analysis/ctf_case/results/world_summary.csv": "4a1dab98a76258e69149ed4ab7ec83d54d8349c7f4ea9eec4ae8843e7273223d",
     "theory_v3/analysis/ctf_case/results/agent_day_panel.csv": "dd01ef579bdb9ad0a13a8ac3d76cab0e3ac9488604ab3261608a817186c89b54",
     "theory_v3/analysis/ctf_case/results/case_model_summary.json": "110eb46982b49d000ed7d61521e3586f3c1370e4ad9b14632febad8185831c2e",
-    "theory_v3/lean/verification/assumption_validation.json": "acab3cc26379c01fe17276a18b086e9a7544ec4681b374a11cb07e03008aa8b3"
+    "theory_v3/lean/verification/assumption_validation.json": "151a484a49af0ff7051e6c2c77d6c939706541fda75c38b36d52ca56d80fc352"
   },
   "case_assumption_validator_sha256": {
-    "theory_v3/analysis/validate_case_assumptions.py": "90178400f6f7e28f66f9d7dc93c99f4943e637eb6e061ba08094fb0d0c8ea02c"
+    "theory_v3/analysis/validate_case_assumptions.py": "d3e3afb3907d24af0ceaceaee5113365dcaa44a56807b1db398a2597c078d6c0"
+  },
+  "ctf_design_coverage_sha256": {
+    "theory_v3/analysis/audit_ctf_design_coverage.py": "90d6a44d5092498973578d177989422d46a867f5de21acc406de8ae727d7627b",
+    "theory_v3/lean/verification/ctf_design_coverage.json": "cee3e243c8f9628677d48bff851c620430b7c60b57041cac91d5ad706ea16033"
+  },
+  "ctf_design_field_status_counts": {
+    "POPULATION_INTERFACE": 1,
+    "REQUIRES_CASE_KERNEL_BINDING": 23,
+    "PARTIAL_RESOURCE_CONSUMER": 1,
+    "CLOCK_VALIDATOR_ONLY": 11,
+    "SCENARIO_ARGUMENT_ONLY": 1,
+    "OPERATIONAL_RESOURCE_REPLAY": 9
+  },
+  "authority_v2_clock_audit_sha256": {
+    "theory_v3/analysis/audit_authority_v2_clock.py": "7bb0df4557fbcbddd856c38d593bcdedb06da6dde6ed601303f912dfe849fe67",
+    "theory_v3/lean/verification/authority_v2_clock_audit.json": "ad2f13c9d5e4c0107e9dc3a69a86cb3d1b26b8a3add18252e7bda9cf5dc421b2"
+  },
+  "authority_v2_clock_configs_checked": 8,
+  "authority_v2_election_audit_sha256": {
+    "theory_v3/analysis/audit_authority_v2_election.py": "6641e4628ec3b7aadebfc560bb29a1a2a5c669d7d8e0fff394608652cba5852c",
+    "theory_v3/lean/verification/authority_v2_election_audit.json": "70ec0bd8cc6e809d3db67fa9b5614de7be395b8b397d424b037a5635057f33a9"
   },
   "case_pipeline_sha256": {
     "theory_v3/analysis/ctf_case/build_ctf_case.py": "33500043e442aa857857855a36ab5ef5746b691716f69edac1e22b71030e4e1e"
   },
   "theory_freeze_sha256": {
-    "theory_v3/THEORY_FREEZE_0.3.md": "a07757c425a1b4317dc1027850af2dd73688e149961d09a5b2d6dcd53d5968a8",
-    "theory_v3/THEORY_PROJECT.md": "0de56232cd624e6402b75d28f8030b3188966ca128eaeed5ec1d3da8afb97953"
+    "theory_v3/THEORY_FREEZE_0.5.md": "8a308424317431f1779cf52737dcfb46b697f851488db02865e33265142a4fcd",
+    "theory_v3/FOUNDATION_CORE.md": "3bb9b49d28233d8e48dc0b7826b4f5bb50dc87ce09605229cc8582a4078bdf5d",
+    "theory_v3/THEORY_PROJECT.md": "e77c55a2e584ceb9527c956444833a0d4836cff4c4e617b095a2bee8760d7b75",
+    "theory_v3/FOUNDATION_BOUNDARY.md": "7eb83829b85593c0d4c4e548503f83f08756de94158dfdb6f3a8201c0ec40f89",
+    "theory_v3/EXPERIMENTAL_MODEL_ADMISSION.md": "376a4eca900f5a980b713f5c3b32f6e82684bc302134dc38cd106694c3537b3b",
+    "theory_v3/ASSUMPTION_VALIDATION.md": "72647366470816be8a4222d92ab5d3f26aa3a226a168681462255fd51e00aa2b"
   },
-  "audit_output_sha256": "46b67546af52cc83751a2e773b5289a08c4494ae6e891045accb90b63f5b0863",
+  "audit_output_sha256": {
+    "foundation_and_case_theory": "2a275b2513981470e5c3790d8d4142c093e759249b280bd390591a866b83a6f7",
+    "auxiliary_methods": "13eda783eabf10b7fb426a8fdc7e971b9d303ac7467df2c14b6de29d470d8803"
+  },
   "has_custom_axiom_sorry_or_admit": false,
   "axiom_policy": [
     "Classical.choice",
@@ -88,10 +137,9 @@
   "additional_verification": [
     {
       "command": "./verify_miao.sh",
-      "log": "verification/lake_check_miao_20261025_102715.log",
-      "default_kernel_accepts_solution": true,
-      "log_sha256": "548e86d96ae9b7cd6c25f783b2bda692237e728b06e81f947d4b0a45a98bc843"
+      "log": "verification/lake_check_miao_20261025_132519.log",
+      "default_kernel_accepts_solution": false,
+      "log_sha256": "6e63d726ec31e981a01b14c97787d51bca53242b9fa99e8a0c27bae7df157e88"
     }
-  ],
-  "verification_scope": "All Lean source modules build; Audit.lean completed. No custom axiom, sorry, or admit declarations found in Lean source."
+  ]
 }
