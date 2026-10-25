@@ -1,0 +1,40 @@
+{
+  "audit": "zero_api_execution_of_authority_v2_election_branches",
+  "backend_source_sha256": "cea37e28faeb49b855f38071dbb8731e2d9166379eaa885dd18a3637c2053322",
+  "config": "config/agent_econ_i1_elected_discretion_human.json",
+  "config_sha256": "7958fef21db8834616318d544f2d260403276aba0795eef5022e4d322b004c8b",
+  "lean_source": "lean/AgentMicrofoundations/CaseStudies/AuthorityWorldV2Election.lean",
+  "lean_source_sha256": "6f3c2dc8dc50738e15d751045b682feeddd092995a095097c0ba2eea0e23426b",
+  "source_guards": {
+    "no_candidate_seeded_choice": true,
+    "all_candidate_seeded_choice": true,
+    "missing_votes_imputed_only_for_non_candidates": true,
+    "missing_vote_seeded_choice": true,
+    "plurality_tally_and_tie_break": true,
+    "lean_has_exact_case_mapping": true
+  },
+  "branches": {
+    "no_candidates_seeded_choice": {
+      "pass": true,
+      "result": "A4"
+    },
+    "all_candidates_seeded_choice": {
+      "pass": true,
+      "result": "A2"
+    },
+    "plurality_tie_with_missing_vote": {
+      "pass": true,
+      "seed": 0,
+      "winner": "A1",
+      "vote_totals": {
+        "A1": 1,
+        "A2": 1
+      },
+      "explicit_votes": 1,
+      "imputed_votes": 1
+    }
+  },
+  "api_calls": 0,
+  "status": "PASS",
+  "interpretation": "The concrete Lean election function matches audited v2 branch semantics for supplied ballots and seeded choices; this does not predict candidacy or voting behavior."
+}

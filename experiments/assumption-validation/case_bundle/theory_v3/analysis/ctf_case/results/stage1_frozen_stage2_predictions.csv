@@ -1,0 +1,5 @@
+run_id,family,regime,offered_slots,coverage_complete,predicted_assignments,observed_assignments,assignment_error_observed_minus_predicted,predicted_verified_successes,observed_verified_successes,success_error_observed_minus_predicted,prediction_status
+v2-2026074003-bddc842128c5,GPT,I1,66,1,51.15,47,-4.15,11.0,8,-3.0,retrospective_stage2_holdout; no refit
+v2-2026074203-b60bc3738bba,GPT,I3,36,1,26.526316,33,6.473684,6.0,6,0.0,retrospective_stage2_holdout; no refit
+v2-2026074103-012aa056d4b9,DeepSeek,I1,36,1,24.0,28,4.0,0.705882,3,2.294118,retrospective_stage2_holdout; no refit
+v2-2026074303-bc9733d127ab,DeepSeek,I3,45,1,35.526316,21,-14.526316,2.368421,2,-0.368421,retrospective_stage2_holdout; no refit

@@ -1,0 +1,118 @@
+{
+  "audit": "zero_api_backend_execution_of_authority_v2_clock_boundaries",
+  "backend_source_sha256": {
+    "backend/world_engine_v2.py": "cea37e28faeb49b855f38071dbb8731e2d9166379eaa885dd18a3637c2053322",
+    "backend/world_config_v2.py": "95eef0f7f274a7630081fd388ef9a0b5d5de880d23f4f255ab3fccec140f9db6"
+  },
+  "lean_clock_source": "lean/AgentMicrofoundations/CaseStudies/AuthorityWorldV2Clock.lean",
+  "lean_clock_source_sha256": "4c3edfd51f5ca5a5265aead7eb31df6954b690f3966e98beaf1382a83f0ef688",
+  "lean_clock_symbols": [
+    "assignmentOpportunityOpen",
+    "productionOpportunityOpen",
+    "electionOpportunityOpen",
+    "taskExpired",
+    "phaseAt"
+  ],
+  "source_guards": {
+    "day_is_floor_of_elapsed_over_day_seconds": true,
+    "allocation_requires_day_two_and_pre_cutoff": true,
+    "work_is_half_open_interval": true,
+    "registration_requires_elected_and_cutoff": true,
+    "task_lifetime_uses_inclusive_day_count": true,
+    "config_requires_ordered_windows": true,
+    "config_requires_120_second_registration_window": true
+  },
+  "configs_checked": 8,
+  "configs": [
+    {
+      "config": "config/agent_econ_c1_elected_discretion_symbolic_energy.json",
+      "config_sha256": "86be4d0485a493b2f2b1be91a4af9912bead429e9b84c175cf688ab6f4c872ba",
+      "day_seconds": 900.0,
+      "allocation_seconds": 60.0,
+      "work_end_seconds": 780.0,
+      "registration_open_seconds": 780.0,
+      "task_lifetime_days": 3,
+      "max_world_days": 25,
+      "phase_and_gate_boundaries_pass": true
+    },
+    {
+      "config": "config/agent_econ_i1_elected_discretion_human.json",
+      "config_sha256": "7958fef21db8834616318d544f2d260403276aba0795eef5022e4d322b004c8b",
+      "day_seconds": 900.0,
+      "allocation_seconds": 60.0,
+      "work_end_seconds": 780.0,
+      "registration_open_seconds": 780.0,
+      "task_lifetime_days": 3,
+      "max_world_days": 25,
+      "phase_and_gate_boundaries_pass": true
+    },
+    {
+      "config": "config/agent_econ_i2_random_discretion_human.json",
+      "config_sha256": "5a5ef1cf2549fa7682160d9ce6c072faf86e98e80ac34debf30e796c7710def4",
+      "day_seconds": 900.0,
+      "allocation_seconds": 60.0,
+      "work_end_seconds": 780.0,
+      "registration_open_seconds": 780.0,
+      "task_lifetime_days": 3,
+      "max_world_days": 25,
+      "phase_and_gate_boundaries_pass": true
+    },
+    {
+      "config": "config/agent_econ_i3_elected_backend_random_human.json",
+      "config_sha256": "c534d446398c8271733b3ad97b92585c57d7a8f0fe7464faf4a4db03da6ef9dc",
+      "day_seconds": 900.0,
+      "allocation_seconds": 60.0,
+      "work_end_seconds": 780.0,
+      "registration_open_seconds": 780.0,
+      "task_lifetime_days": 3,
+      "max_world_days": 25,
+      "phase_and_gate_boundaries_pass": true
+    },
+    {
+      "config": "config/agent_econ_i4_no_office_backend_random.json",
+      "config_sha256": "3b431f90f7a8b235d10948c6d4e133318dafdf656838762889cb8d12a2940e8e",
+      "day_seconds": 900.0,
+      "allocation_seconds": 60.0,
+      "work_end_seconds": 780.0,
+      "registration_open_seconds": 780.0,
+      "task_lifetime_days": 3,
+      "max_world_days": 25,
+      "phase_and_gate_boundaries_pass": true
+    },
+    {
+      "config": "config/agent_econ_o2_elected_discretion_no_survival_objective.json",
+      "config_sha256": "5accc59252ee438dfc20028b37a9856ae904ca1d07562e7f7b12498e18637fa2",
+      "day_seconds": 900.0,
+      "allocation_seconds": 60.0,
+      "work_end_seconds": 780.0,
+      "registration_open_seconds": 780.0,
+      "task_lifetime_days": 3,
+      "max_world_days": 25,
+      "phase_and_gate_boundaries_pass": true
+    },
+    {
+      "config": "config/agent_econ_s1_elected_discretion_neutral.json",
+      "config_sha256": "cd6859b126bb581a3aba9d6964b8dd32095185e34b8cf39c549c1e734ccdc39a",
+      "day_seconds": 900.0,
+      "allocation_seconds": 60.0,
+      "work_end_seconds": 780.0,
+      "registration_open_seconds": 780.0,
+      "task_lifetime_days": 3,
+      "max_world_days": 25,
+      "phase_and_gate_boundaries_pass": true
+    },
+    {
+      "config": "config/agent_econ_s2_elected_discretion_encoded.json",
+      "config_sha256": "f7d6674f3594e0635f5bc94ddff40e5cab20d34654d43428fd61832a2dfc8761",
+      "day_seconds": 900.0,
+      "allocation_seconds": 60.0,
+      "work_end_seconds": 780.0,
+      "registration_open_seconds": 780.0,
+      "task_lifetime_days": 3,
+      "max_world_days": 25,
+      "phase_and_gate_boundaries_pass": true
+    }
+  ],
+  "status": "PASS",
+  "interpretation": "The Lean clock rules are compatible with the checked-in backend phase and gate boundaries for all checked formal v2 configs. This validates the execution clock mapping only, not an agent response or production law."
+}
